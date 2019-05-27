@@ -191,16 +191,16 @@
 
 	<target name="configure_stf" depends="check_systemtest">
 		<ant antfile="${SYSTEMTEST_ROOT}/stf/stf.build/build.xml" dir="${SYSTEMTEST_ROOT}/stf/stf.build/" target="configure" inheritAll="false">
-			<property name="java.home" value="${JAVA_BIN}/.." />
+			<property name="java.home" value="${TEST_JDK_HOME}" />
 		</ant>
 		<ant antfile="${SYSTEMTEST_ROOT}/openjdk-systemtest/openjdk.build/build.xml" dir="${SYSTEMTEST_ROOT}/openjdk-systemtest/openjdk.build/" target="configure" inheritAll="false">
-			<property name="java.home" value="${JAVA_BIN}/.." />
+			<property name="java.home" value="${TEST_JDK_HOME}" />
 		</ant>
 	</target>
 
 	<target name="compile_stf" depends="configure_stf">
 		<ant antfile="${SYSTEMTEST_ROOT}/openjdk-systemtest/openjdk.build/build.xml" dir="${SYSTEMTEST_ROOT}/openjdk-systemtest/openjdk.build" inheritAll="false">
-			<property name="java.home" value="${JAVA_BIN}/.." />
+			<property name="java.home" value="${TEST_JDK_HOME}" />
 		</ant>
 	</target>
 
@@ -270,10 +270,10 @@
 
 	<target name="clean">
 		<ant antfile="${SYSTEMTEST_ROOT}/openjdk-systemtest/openjdk.build/build.xml" dir="${SYSTEMTEST_ROOT}/openjdk-systemtest/openjdk.build" inheritAll="false" target="clean">
-			<property name="java.home" value="${JAVA_BIN}/.." />
+			<property name="java.home" value="${TEST_JDK_HOME}" />
 		</ant>
 		<ant antfile="${SYSTEMTEST_ROOT}/stf/stf.build/build.xml" dir="${SYSTEMTEST_ROOT}/stf/stf.build" inheritAll="false" target="clean">
-			<property name="java.home" value="${JAVA_BIN}/.." />
+			<property name="java.home" value="${TEST_JDK_HOME}" />
 		</ant>
 	</target>
 </project>
