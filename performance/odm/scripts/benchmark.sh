@@ -25,7 +25,7 @@ export LD_LIBRARY_PATH=/usr/local/staf/lib:$LD_LIBRARY_PATH
 benchmark_dir="${currentDir}"
 echo "benchmark_dir: $benchmark_dir"
 
-JDK_DIR=$JAVA_BIN/../..
+JDK_DIR=${TEST_JDK_HOME}
 export JDK_DIR=${JDK_DIR}
 
 ######### Generated Script #########
