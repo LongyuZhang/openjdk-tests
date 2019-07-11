@@ -293,7 +293,15 @@
 	</test>
 	<test>
 		<testCaseName>jdk_security1</testCaseName>
-		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
+		<command>
+		echo "TEMP was ${TEMP}"; \
+		echo "TMP was ${TMP}"; \
+		echo "SYSTEMROOT is ${SYSTEMROOT}"; \
+		set TEMP=C:\\cygwin64\\tmp; \
+		set TMP=C:\\cygwin64\\tmp; \
+        echo "TEMP is %TEMP%; \
+		echo "TMP is %TMP%; \
+		$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
 	$(JTREG_BASIC_OPTIONS)  -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
 	-w $(Q)$(REPORTDIR)$(D)work$(Q) \
 	-r $(Q)$(TEST_RESROOT)$(D)report$(Q) \
