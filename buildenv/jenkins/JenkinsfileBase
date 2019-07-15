@@ -101,6 +101,8 @@ def setupEnv() {
 	if( params.DOCKERIMAGE_TAG ) {
 		env.DOCKERIMAGE_TAG = params.DOCKERIMAGE_TAG
 	}
+	env.TMP = params.TMP ? params.TMP : "C:/cygwin64/tmp/"
+	env.TEMP = params.TEMP ? params.TEMP : "C:/cygwin64/tmp/"
 	sh 'printenv'
 }
 
