@@ -297,10 +297,14 @@
 		echo "TEMP was ${TEMP}"; \
 		echo "TMP was ${TMP}"; \
 		echo "SYSTEMROOT is ${SYSTEMROOT}"; \
-		set TEMP=C:\\cygwin64\\tmp; \
-		set TMP=C:\\cygwin64\\tmp; \
-        echo "TEMP is %TEMP%; \
-		echo "TMP is %TMP%; \
+		set TEMP=tmp; \
+		set TMP=tmp; \
+        echo ${TEMP}; \
+		echo %TMP%; \
+		export TEMP=tmp1; \
+		export TMP=tmp1; \
+		echo ${TEMP}; \
+		echo %TMP%; \
 		$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
 	$(JTREG_BASIC_OPTIONS)  -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
 	-w $(Q)$(REPORTDIR)$(D)work$(Q) \
