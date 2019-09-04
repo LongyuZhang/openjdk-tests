@@ -13,6 +13,7 @@ TestConfig
 functional
 !functional/SyntheticGCWorkload
 !functional/MBCS_Tests
+!functional/deepSmith
 
 Utils
 systemtest_prereqs/*
