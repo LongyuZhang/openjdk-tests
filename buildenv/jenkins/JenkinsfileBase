@@ -53,6 +53,7 @@ def setupEnv() {
 	env.KEEP_REPORTDIR = params.KEEP_REPORTDIR ? params.KEEP_REPORTDIR : ''
 	SDK_RESOURCE = params.SDK_RESOURCE ? params.SDK_RESOURCE : "upstream"
 	env.AUTO_DETECT = params.AUTO_DETECT
+	env.DEEPSMITH_URL = params.DEEPSMITH_URL? params.DEEPSMITH_URL : ""
 	
 	ITERATIONS = params.ITERATIONS ? "${params.ITERATIONS}".toInteger() : 1
 	
@@ -264,6 +265,10 @@ def setup() {
 				env.STF_BRANCH = params.STF_BRANCH
 			}
 
+			if (params.DEEPSMITH_URL_CREDENTIAL_ID) {
+				set_deepSmith_credential()
+			}
+
 			// vendor test
 			// expect VENDOR_TEST_* to be comma separated string parameters
 			VENDOR_TEST_REPOS = (params.VENDOR_TEST_REPOS) ? "--vendor_repos \"${params.VENDOR_TEST_REPOS}\"" : ""
@@ -299,6 +304,16 @@ def get_sources() {
 		}
 	} else {
 		sh "$GET_SH_CMD"
+	}
+}
+
+def set_deepSmith_credential() {
+	if (params.DEEPSMITH_URL_CREDENTIAL_ID) {
+		// USERNAME and PASSWORD reference with a withCredentials block will not be visible within job output
+		withCredentials([usernamePassword(credentialsId: "${params.DEEPSMITH_URL_CREDENTIAL_ID}", usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+			env.DEEPSMITH_USERNAME = USERNAME
+			env.DEEPSMITH_PASSWORD = PASSWORD
+		}
 	}
 }
 
