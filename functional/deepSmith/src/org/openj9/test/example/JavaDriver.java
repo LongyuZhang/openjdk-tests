@@ -26,9 +26,9 @@ import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
 @Test(groups={ "level.extended" })
-public class MyTest {
+public class JavaDriver {
 
-	private static Logger logger = Logger.getLogger(MyTest.class);
+	private static Logger logger = Logger.getLogger(JavaDriver.class);
 	
 	public void aTestExample() {
 		logger.info("running aTestExample: INFO and above level logging enabled");

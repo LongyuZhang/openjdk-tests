@@ -29,7 +29,7 @@
 	</listeners>
 	<test name="myTest">
 		<classes>
-			<class name="org.openj9.test.example.MyTest"/>
+			<class name="org.openj9.test.example.JavaDriver"/>
 		</classes>
 	</test>
 </suite> <!-- Suite -->
