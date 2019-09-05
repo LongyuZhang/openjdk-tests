@@ -27,9 +27,9 @@
 	<listeners>
 		<listener class-name="org.openj9.test.util.IncludeExcludeTestAnnotationTransformer"/>
 	</listeners>
-	<test name="myTest">
+	<test name="driverTest">
 		<classes>
-			<class name="org.openj9.test.example.JavaDriver"/>
+			<class name="org.openj9.test.driver.JavaDriver"/>
 		</classes>
 	</test>
 </suite> <!-- Suite -->
