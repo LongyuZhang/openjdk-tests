@@ -21,17 +21,18 @@
  *******************************************************************************/
 package org.openj9.test.driver;
 
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
+// import org.testng.AssertJUnit;
+// import org.testng.annotations.Test;
+// import org.testng.log4testng.Logger;
 
-@Test(groups={ "level.extended" })
+// @Test(groups={ "level.extended" })
 public class JavaDriver {
 
-	private static Logger logger = Logger.getLogger(JavaDriver.class);
-	
-	public void aTestExample() {
-		logger.info("running aTestExample: INFO and above level logging enabled");
-		AssertJUnit.assertEquals(4, 2+2);
+	// private static Logger logger = Logger.getLogger(JavaDriver.class);
+	public static void main(String[] args) throws Throwable {
+		System.out.println("Excellent Job: Running successfully!");
+		// logger.info("running aTestExample: INFO and above level logging enabled");
+		// AssertJUnit.assertEquals(4, 2+2);
+
 	}
 }
