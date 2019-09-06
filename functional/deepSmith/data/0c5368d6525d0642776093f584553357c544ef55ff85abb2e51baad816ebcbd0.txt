@@ -1,0 +1,12 @@
+public static double fn_A(double[] a,double[] b){
+  if (a.length != b.length) {
+    throw new RuntimeException("The domains of the two PMFs passed to " + "KLDivergence::discreteKL are not the same!");
+  }
+  double c=0;
+  for (int d=0; d < a.length; d++) {
+    if (Math.abs(a[d]) < 0.0001)     continue;
+    if (Math.abs(b[d]) < 0.0001)     continue;
+    c+=Math.log(a[d] / b[d]) * a[d];
+  }
+  return c;
+}

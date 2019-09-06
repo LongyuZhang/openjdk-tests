@@ -1,0 +1,19 @@
+public static double fn_A(int a){
+  double b;
+  if (a < 0) {
+    b=0.1;
+    a=-a;
+  }
+ else {
+    b=10;
+  }
+  double c=1;
+  while (a != 0) {
+    if (a % 2 != 0) {
+      c*=b;
+    }
+    b*=b;
+    a/=2;
+  }
+  return c;
+}

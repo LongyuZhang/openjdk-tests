@@ -1,0 +1,13 @@
+private static String fn_A(char a){
+switch (a) {
+case '"':
+    return "quot";
+case '&':
+  return "amp";
+case '<':
+return "lt";
+case '>':
+return "gt";
+}
+return null;
+}

@@ -1,0 +1,4 @@
+private static boolean fn_A(int a){
+  if (a < 0)   throw new IllegalStateException();
+  return a > 0;
+}

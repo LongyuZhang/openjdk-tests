@@ -1,0 +1,6 @@
+public static <T>T[] fn_A(T[] a,String b){
+  if (a.length == 0) {
+    throw new IllegalArgumentException(b + " must not be empty.");
+  }
+  return a;
+}

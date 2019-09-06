@@ -1,0 +1,5 @@
+public static void fn_A(final String a,final int b){
+  if (!(b > 0)) {
+    throw new IllegalArgumentException(a + " must be positive " + "(was "+ b+ ").");
+  }
+}

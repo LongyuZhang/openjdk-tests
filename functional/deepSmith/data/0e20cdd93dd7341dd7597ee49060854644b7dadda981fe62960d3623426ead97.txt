@@ -1,0 +1,11 @@
+public static byte[] fn_A(byte[] a){
+  if (a == null) {
+    return null;
+  }
+  int b=0, c=a.length;
+  byte[] d=new byte[c];
+  while (--c >= 0) {
+    d[c]=a[b++];
+  }
+  return d;
+}

@@ -1,0 +1,8 @@
+private static long fn_A(long a){
+  if (a < 0) {
+    return -a;
+  }
+ else {
+    return a;
+  }
+}

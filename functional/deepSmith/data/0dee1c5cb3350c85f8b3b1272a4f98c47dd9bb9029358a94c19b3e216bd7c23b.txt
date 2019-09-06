@@ -1,0 +1,12 @@
+private static long fn_A(byte[] a,int b){
+  int c=b;
+  long d=(a[c++] & 0x000000ffL);
+  d|=(a[c++] & 0x000000ffL) << 8;
+  d|=(a[c++] & 0x000000ffL) << 16;
+  d|=(a[c++] & 0x000000ffL) << 24;
+  d|=(a[c++] & 0x000000ffL) << 32;
+  d|=(a[c++] & 0x000000ffL) << 40;
+  d|=(a[c++] & 0x000000ffL) << 48;
+  d|=(a[c] & 0x000000ffL) << 56;
+  return d;
+}

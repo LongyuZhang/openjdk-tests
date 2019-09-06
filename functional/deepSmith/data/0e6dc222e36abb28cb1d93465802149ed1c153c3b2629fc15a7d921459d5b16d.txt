@@ -1,0 +1,8 @@
+public static final void fn_A(long[] a,double[] b,int c,int d){
+  long e=a[c];
+  double f=b[c];
+  a[c]=a[d];
+  b[c]=b[d];
+  a[d]=e;
+  b[d]=f;
+}

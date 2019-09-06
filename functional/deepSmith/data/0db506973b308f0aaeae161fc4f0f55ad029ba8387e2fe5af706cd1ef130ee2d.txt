@@ -1,0 +1,10 @@
+public static void main(String[] a){
+  boolean b=false;
+  int c=10;
+  if ((0 <= c && c < 10) || c % 2 == 0) {
+    System.out.println("Truthiness");
+  }
+ else {
+    System.out.println("Lies from beyond the outer realms!");
+  }
+}

@@ -1,0 +1,10 @@
+public static void main(String[] a){
+  int b=5;
+  System.out.printf("%d\n",-b);
+  System.out.printf("%d\n",0 - b);
+  System.out.printf("%d\n",a);
+  int c=0xffffee00;
+  System.out.printf("%d\n",-c);
+  System.out.printf("%d\n",0 - c);
+  System.out.printf("%d\n",b);
+}

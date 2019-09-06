@@ -1,0 +1,18 @@
+public static int fn_A(final int[] a,int b,int c,int d){
+  final int e=0x5bd1e995;
+  final int f=24;
+  final int g=c - b;
+  int h=d ^ g;
+  for (int i=b; i < c; i++) {
+    int j=a[i];
+    j*=e;
+    j^=j >>> f;
+    j*=e;
+    h*=e;
+    h^=j;
+  }
+  h^=h >>> 13;
+  h*=e;
+  h^=h >>> 15;
+  return h;
+}

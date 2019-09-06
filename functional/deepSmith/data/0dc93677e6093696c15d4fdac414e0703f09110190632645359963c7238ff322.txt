@@ -1,0 +1,6 @@
+public static boolean fn_A(int a,int b,int c){
+  if (b < a && a < b + c) {
+    return true;
+  }
+  return false;
+}

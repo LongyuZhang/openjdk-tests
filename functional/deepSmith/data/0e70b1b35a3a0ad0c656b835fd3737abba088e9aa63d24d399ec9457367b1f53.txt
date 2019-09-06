@@ -1,0 +1,5 @@
+private static double fn_A(final double a){
+  final double b=(a - 0.5) * Math.log(a + 4.5) - (a + 4.5);
+  final double c=1.0 + 76.18009173 / a - 86.50532033 / (a + 1.0) + 24.014092822 / (a + 2.0) - 1.231739516 / (a + 3.0) + 0.00120858003 / (a + 4.0) - 5.36382E-6 / (a + 5.0);
+  return b + Math.log(c * Math.sqrt(6.283185307179586));
+}

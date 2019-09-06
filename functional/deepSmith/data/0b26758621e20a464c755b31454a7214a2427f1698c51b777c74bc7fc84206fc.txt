@@ -1,0 +1,10 @@
+public static long fn_A(final long a,final long b,final long c){
+  if (b == 0) {
+    return a + 1;
+  }
+  long d=(long)(0.5 * a * (1 + (double)c / (double)b));
+  if (d <= a) {
+    return a + 1;
+  }
+  return d;
+}

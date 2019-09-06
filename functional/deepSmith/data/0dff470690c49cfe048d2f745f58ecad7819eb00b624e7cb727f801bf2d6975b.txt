@@ -1,0 +1,8 @@
+public static double fn_A(double a){
+  int b=(a < 0d) ? 1 : 0;
+  if (b == 1)   a*=-1d;
+  double c=(1d / (1d + 0.2316419 * a));
+  double d=((((1.330274429 * c - 1.821255978) * c + 1.781477937) * c - 0.356563782) * c + 0.319381530) * c;
+  d=1.0 - 0.398942280401 * Math.exp(-0.5 * a * a) * d;
+  return (1d - b) * d + b * (1d - d);
+}

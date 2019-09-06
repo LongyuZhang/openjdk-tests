@@ -1,0 +1,4 @@
+private static float fn_A(int a){
+  long b=a;
+  return (1.0f + ((float)b / 0x7fffffff));
+}

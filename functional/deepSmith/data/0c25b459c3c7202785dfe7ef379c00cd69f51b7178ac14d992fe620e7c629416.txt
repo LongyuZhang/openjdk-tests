@@ -1,0 +1,9 @@
+public static int fn_A(long a,long b){
+  long c=a ^ b;
+  int d=0;
+  while (c != 0) {
+    c&=c - 1;
+    ++d;
+  }
+  return d;
+}

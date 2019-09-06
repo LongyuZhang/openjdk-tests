@@ -1,0 +1,6 @@
+protected static double fn_A(double a,double b){
+  if (a <= b)   return 1.0;
+ else {
+    return Math.exp(5 * (b - a));
+  }
+}

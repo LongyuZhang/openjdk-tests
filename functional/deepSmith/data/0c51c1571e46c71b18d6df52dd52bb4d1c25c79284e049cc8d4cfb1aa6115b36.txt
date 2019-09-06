@@ -1,0 +1,13 @@
+private static void fn_A(double[] a,double[] b,double[] c){
+  if (b == null || c == null) {
+    throw new RuntimeException("Please set min and max boundary before inserting in the trees");
+  }
+  if (a.length != b.length) {
+    throw new RuntimeException("Values dimension mismatch");
+  }
+  for (int d=0; d < b.length; d++) {
+    if (a[d] < b[d] || a[d] > c[d]) {
+      throw new RuntimeException("Values should be between min, max!");
+    }
+  }
+}

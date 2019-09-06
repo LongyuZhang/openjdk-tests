@@ -1,0 +1,6 @@
+public static <T>T[] fn_A(T[] a,int b,int c){
+  T d=a[c];
+  a[c]=a[b];
+  a[b]=d;
+  return a;
+}

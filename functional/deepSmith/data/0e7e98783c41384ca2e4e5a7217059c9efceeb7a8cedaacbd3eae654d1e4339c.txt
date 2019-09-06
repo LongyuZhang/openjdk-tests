@@ -1,0 +1,9 @@
+private static double fn_A(float[] a,float[] b){
+  double c=a[1];
+  double d=a[2];
+  double e=b[1];
+  double f=b[2];
+  double g=Math.sqrt(c * c + d * d);
+  double h=Math.sqrt(e * e + f * f);
+  return g - h;
+}

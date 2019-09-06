@@ -1,0 +1,6 @@
+public static boolean fn_A(int a){
+  if (a > 400) {
+    return true;
+  }
+  return false;
+}

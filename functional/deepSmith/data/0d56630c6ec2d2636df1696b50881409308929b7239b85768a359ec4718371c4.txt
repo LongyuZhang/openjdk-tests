@@ -1,0 +1,5 @@
+private static Class<?> fn_A(){
+class B {
+  }
+  return B.class;
+}

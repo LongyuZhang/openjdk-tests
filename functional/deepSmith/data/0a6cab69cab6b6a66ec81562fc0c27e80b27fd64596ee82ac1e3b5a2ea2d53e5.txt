@@ -1,0 +1,18 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "reserved";
+case 1:
+  return "High";
+case 2:
+return "Spatially Scalable";
+case 3:
+return "SNR Scalable";
+case 4:
+return "Main";
+case 5:
+return "Simple";
+default :
+return "reserved";
+}
+}

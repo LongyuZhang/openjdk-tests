@@ -1,0 +1,7 @@
+public static boolean fn_A(long a,long b){
+  long c=a - b;
+  if (c < 0L) {
+    c=-c;
+  }
+  return c < 30000L;
+}

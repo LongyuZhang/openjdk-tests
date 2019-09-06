@@ -1,0 +1,5 @@
+public final static int fn_A(int a,int b){
+  int c=a / b;
+  if (c * b == a)   return a;
+ else   return c * b + b;
+}

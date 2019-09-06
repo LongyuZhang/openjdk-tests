@@ -1,0 +1,5 @@
+public static double fn_A(double a,double b){
+  double c=0.0D;
+  c=(0.2725D * (a / 60D)) / ((double)1 - Math.sin(((a / 60D) * Math.PI) / 180D) * Math.sin((b * Math.PI) / 180D));
+  return c;
+}

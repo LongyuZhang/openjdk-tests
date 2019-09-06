@@ -1,0 +1,6 @@
+public static <T>T fn_A(T a,String b){
+  if (a == null) {
+    throw new IllegalStateException(b);
+  }
+  return a;
+}

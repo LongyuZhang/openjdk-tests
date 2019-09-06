@@ -1,0 +1,5 @@
+private static int fn_A(char a){
+  if ((a >= 'a') && (a <= 'z'))   return a - 'a';
+  if ((a >= 'A') && (a <= 'Z'))   return a - 'A';
+  return -1;
+}

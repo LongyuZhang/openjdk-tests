@@ -1,0 +1,15 @@
+public static void fn_A(int[] a,int b,int c){
+  c+=b;
+  for (int d=b; d < c; d++) {
+    int e=a[d];
+    int f=(e >> 24) & 0xff;
+    int g=(e >> 16) & 0xff;
+    int h=(e >> 8) & 0xff;
+    int i=e & 0xff;
+    float j=f * (1.0f / 255.0f);
+    g*=j;
+    h*=j;
+    i*=j;
+    a[d]=(f << 24) | (g << 16) | (h << 8)| i;
+  }
+}

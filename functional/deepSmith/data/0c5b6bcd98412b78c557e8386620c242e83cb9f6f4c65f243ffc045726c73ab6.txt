@@ -1,0 +1,4 @@
+private static int fn_A(){
+  int a=Runtime.getRuntime().availableProcessors();
+  return Math.min(250,Math.max(1,a * 4));
+}

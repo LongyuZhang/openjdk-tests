@@ -1,0 +1,6 @@
+public static <T>List<T> fn_A(int a){
+  if (a == 0) {
+    return Collections.emptyList();
+  }
+  return new ArrayList<T>(a);
+}

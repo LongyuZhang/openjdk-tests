@@ -1,0 +1,9 @@
+private static double fn_A(double a,double b){
+  if (a > b) {
+    double c=a;
+    a=b;
+    b=c;
+  }
+  double d=b - a;
+  return ((int)(StrictMath.random() * (d + 1))) + a;
+}

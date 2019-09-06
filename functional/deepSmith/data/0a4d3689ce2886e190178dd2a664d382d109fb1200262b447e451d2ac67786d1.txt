@@ -1,0 +1,10 @@
+public static int fn_A(int a){
+  int b=0;
+  if (a == 2)   b=1;
+ else   if (a >= 3 && a <= 10)   b=2;
+ else   if (a >= 11 && a <= 18)   b=3;
+ else   if (a >= 19 && a <= 36)   b=4;
+ else   if (a >= 37 && a <= 54)   b=5;
+  if (a >= 21 && a <= 30 || a >= 39 && a <= 48)   b*=10;
+  return b;
+}

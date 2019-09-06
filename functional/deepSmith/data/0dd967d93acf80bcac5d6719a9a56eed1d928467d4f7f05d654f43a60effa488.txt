@@ -1,0 +1,10 @@
+public static boolean fn_A(String a){
+  boolean b=false;
+  if (new File(a).exists()) {
+    b=true;
+  }
+ else {
+    b=false;
+  }
+  return b;
+}

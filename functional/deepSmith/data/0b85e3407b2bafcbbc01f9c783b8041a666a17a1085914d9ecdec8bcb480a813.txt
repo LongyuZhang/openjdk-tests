@@ -1,0 +1,8 @@
+private static double fn_A(double a,int b){
+  double c=a, d=1.0;
+  for (int e=b; e > 0; e/=2) {
+    if (e % 2 == 1)     d*=c;
+    c=c * c;
+  }
+  return d;
+}

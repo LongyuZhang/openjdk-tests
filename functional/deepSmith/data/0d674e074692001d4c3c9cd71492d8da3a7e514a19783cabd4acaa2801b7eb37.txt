@@ -1,0 +1,9 @@
+public static int fn_A(final double a,final double b,final double c,final double d,final double e,final double f,final double g,final double h,final double i){
+  final double j=g - a;
+  final double k=h - b;
+  final double l=i - c;
+  final double m=d * j + e * k + f * l;
+  if (m > 0)   return 1;
+ else   if (m < 0)   return -1;
+ else   return 0;
+}

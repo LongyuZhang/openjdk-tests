@@ -1,0 +1,9 @@
+static int fn_A(int a){
+  int b=5381;
+  b=((b << 5) + b) + (a & 0xFF);
+  b=((b << 5) + b) + ((a >> 8) & 0xFF);
+  b=((b << 5) + b) + ((a >> 16) & 0xFF);
+  b=((b << 5) + b) + ((a >> 24) & 0xFF);
+  b&=0x7FFFFFFF;
+  return b;
+}

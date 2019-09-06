@@ -1,0 +1,13 @@
+public static int fn_A(final byte[] a,final byte[] b,final int c){
+  final int d=b.length;
+  if (d == 0)   return c;
+  final int e=a.length - d;
+  if (c > e)   return -1;
+  for (int f=c; f <= e; ++f) {
+    int g=0;
+    while (b[g] == a[f + g]) {
+      if (++g == d)       return f;
+    }
+  }
+  return -1;
+}

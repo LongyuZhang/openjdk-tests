@@ -1,0 +1,8 @@
+private static boolean fn_A(final boolean a,final boolean b,final boolean c){
+  if (c && !b) {
+    return false;
+  }
+ else {
+    return !b || a;
+  }
+}

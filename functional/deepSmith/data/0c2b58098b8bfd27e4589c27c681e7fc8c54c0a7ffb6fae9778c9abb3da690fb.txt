@@ -1,0 +1,7 @@
+public static String fn_A(String a,int b){
+  String c=a;
+  if (c == null) {
+    c="$subselect_" + b;
+  }
+  return c;
+}

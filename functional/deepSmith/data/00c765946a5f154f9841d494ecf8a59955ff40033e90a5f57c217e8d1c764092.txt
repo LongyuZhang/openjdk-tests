@@ -1,0 +1,10 @@
+public static String fn_A(int a){
+  String b="";
+  String c=b;
+  if (a > 0) {
+    a/=60;
+    c=b;
+    if (a > 0)     c=a + "";
+  }
+  return c;
+}

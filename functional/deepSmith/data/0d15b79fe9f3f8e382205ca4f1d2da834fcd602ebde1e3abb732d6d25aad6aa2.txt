@@ -1,0 +1,21 @@
+public static boolean fn_A(long a,long b,long c){
+  if (c < 0) {
+    return false;
+  }
+  if (a < b) {
+    if ((a < c) && (b <= c)) {
+      return false;
+    }
+    if ((a > c) && (b > c)) {
+      return false;
+    }
+    return true;
+  }
+  if (a > b) {
+    if ((a > c) && (b <= c)) {
+      return false;
+    }
+    return true;
+  }
+  return false;
+}

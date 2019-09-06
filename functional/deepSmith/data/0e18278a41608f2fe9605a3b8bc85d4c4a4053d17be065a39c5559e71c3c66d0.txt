@@ -1,0 +1,9 @@
+public static boolean fn_A(){
+  try {
+    Class.forName("org.spigotmc.ProtocolData");
+    return true;
+  }
+ catch (  ClassNotFoundException a) {
+    return false;
+  }
+}

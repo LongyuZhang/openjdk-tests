@@ -1,0 +1,4 @@
+public static double fn_A(long a,int b){
+  if (b == 0)   return a;
+  return a / (double)(1L << ((b - 1) * 10));
+}

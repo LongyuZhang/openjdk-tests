@@ -1,0 +1,9 @@
+private static double[] fn_A(final double[][] a,final int b){
+  double c=0;
+  double d=0;
+  for (int e=0; e < b; e++) {
+    c+=a[e][0];
+    d+=a[e][1];
+  }
+  return new double[]{c / b,d / b};
+}

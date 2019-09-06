@@ -1,0 +1,6 @@
+public static void fn_A(){
+  System.err.println("Usage: ExtractAbbrev [-options] <filename>");
+  System.err.println("       <filename> contains text from which abbreviations are extracted");
+  System.err.println("       -testlist <file> = list of true abbreviation definition pairs");
+  System.err.println("       -usage or -help = this message");
+}

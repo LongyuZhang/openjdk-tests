@@ -1,0 +1,9 @@
+static short fn_A(short[] a){
+  Short b=1;
+  Short c=new Short((short)1);
+  for (  Short d : a) {
+    b=(short)(b + d);
+    c=(short)(c + new Short((short)(d + 1)));
+  }
+  return (short)(b + c);
+}

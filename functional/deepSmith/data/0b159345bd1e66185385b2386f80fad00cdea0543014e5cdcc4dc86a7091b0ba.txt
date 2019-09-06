@@ -1,0 +1,4 @@
+public static Vector fn_A(HashMap a){
+  Vector b=new Vector();
+  return b;
+}

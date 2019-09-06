@@ -1,0 +1,4 @@
+public static String fn_A(){
+  File[] a=File.listRoots();
+  return a[0].toString();
+}

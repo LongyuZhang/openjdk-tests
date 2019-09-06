@@ -1,0 +1,4 @@
+public static final char fn_A(char a){
+  if (a >= 'A' && a <= 'Z')   return (char)(a | 0x20);
+  return a;
+}

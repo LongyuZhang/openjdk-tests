@@ -1,0 +1,6 @@
+public static double fn_A(double a,double b,boolean c){
+  if (a <= 0) {
+    return 0;
+  }
+  return Math.sqrt((a / b) * ((c) ? 2 : 1)) * b;
+}

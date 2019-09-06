@@ -1,0 +1,8 @@
+public static int fn_A(int a,int b){
+  short c=(short)(2 * a);
+  byte d=(byte)(b * 2);
+  char e=(char)(b + a);
+  int f=a + c;
+  int g=b + d;
+  return f + g + e;
+}

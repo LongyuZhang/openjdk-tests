@@ -1,0 +1,20 @@
+public static void fn_A(double[] a){
+  int b=0, c;
+  final int d=a.length;
+  double e;
+  try {
+    for (c=1; ; c++) {
+      e=a[c];
+      try {
+        for (b=c; a[b - 1] > e; b--) {
+          a[b]=a[b - 1];
+        }
+      }
+ catch (      ArrayIndexOutOfBoundsException f) {
+      }
+      a[b]=e;
+    }
+  }
+ catch (  ArrayIndexOutOfBoundsException f) {
+  }
+}

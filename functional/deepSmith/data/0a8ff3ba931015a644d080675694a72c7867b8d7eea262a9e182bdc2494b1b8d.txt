@@ -1,0 +1,6 @@
+private static char fn_A(int a){
+  char b;
+  if (a <= 9)   b=(char)(a + 0x30);
+ else   b=(char)(a + 0x37);
+  return b;
+}

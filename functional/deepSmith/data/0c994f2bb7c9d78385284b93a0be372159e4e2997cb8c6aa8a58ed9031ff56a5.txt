@@ -1,0 +1,9 @@
+private static byte[] fn_A(final long a){
+  byte[] b=new byte[10];
+  long c=a;
+  for (int d=b.length - 1; d >= 0; d--) {
+    b[d]=(byte)((c % 10) + '0');
+    c/=10;
+  }
+  return b;
+}

@@ -1,0 +1,4 @@
+private static int fn_A(int a){
+  a-=0x40400620;
+  return ((a >> 11) & 0xfe000) | ((a >> 10) & 0x1fc0) | ((a >> 8) & 0x3f);
+}

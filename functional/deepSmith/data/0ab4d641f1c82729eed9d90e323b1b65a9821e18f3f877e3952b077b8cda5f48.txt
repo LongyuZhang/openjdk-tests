@@ -1,0 +1,18 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "component";
+case 1:
+  return "PAL";
+case 2:
+return "NTSC";
+case 3:
+return "SECAM";
+case 4:
+return "MAC";
+case 5:
+return "Unspecified video format";
+default :
+return "reserved";
+}
+}

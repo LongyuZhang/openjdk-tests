@@ -1,0 +1,7 @@
+public static long fn_A(byte[] a,int b){
+  long c=0;
+  for (int d=0; d < a.length; d++) {
+    c+=(a[d] & 0xFF) << (8 * (b - d - 1));
+  }
+  return c;
+}

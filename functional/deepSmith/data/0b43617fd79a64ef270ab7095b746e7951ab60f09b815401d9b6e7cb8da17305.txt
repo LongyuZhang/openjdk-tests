@@ -1,0 +1,87 @@
+public static boolean fn_A(float[] a,float[] b,float[] c,float[] d){
+  float e=c[0];
+  float f=c[1];
+  float g=c[2];
+  final float h=d[0];
+  final float i=d[1];
+  final float j=d[2];
+  float k=i * g - j * f;
+  float l=j * e - h * g;
+  float m=h * f - i * e;
+  final float n=(float)Math.sqrt(k * k + l * l + m * m);
+  if (n < 0.1f) {
+    return false;
+  }
+  final float o=1.0f / n;
+  k*=o;
+  l*=o;
+  m*=o;
+  final float p=1.0f / (float)Math.sqrt(e * e + f * f + g * g);
+  e*=p;
+  f*=p;
+  g*=p;
+  final float q=f * m - g * l;
+  final float r=g * k - e * m;
+  final float s=e * l - f * k;
+  if (a != null) {
+    if (a.length == 9) {
+      a[0]=k;
+      a[1]=l;
+      a[2]=m;
+      a[3]=q;
+      a[4]=r;
+      a[5]=s;
+      a[6]=e;
+      a[7]=f;
+      a[8]=g;
+    }
+ else     if (a.length == 16) {
+      a[0]=k;
+      a[1]=l;
+      a[2]=m;
+      a[3]=0;
+      a[4]=q;
+      a[5]=r;
+      a[6]=s;
+      a[7]=0;
+      a[8]=e;
+      a[9]=f;
+      a[10]=g;
+      a[11]=0;
+      a[12]=0;
+      a[13]=0;
+      a[14]=0;
+      a[15]=1;
+    }
+  }
+  if (b != null) {
+    final float t=1.0f / (float)Math.sqrt(h * h + i * i + j * j);
+    final float u=(h * q + i * r + j * s) * t;
+    final float v=(h * e + i * f + j * g) * t;
+    if (b.length == 9) {
+      b[0]=1;
+      b[1]=0;
+      b[2]=0;
+      b[3]=0;
+      b[4]=u;
+      b[5]=v;
+      b[6]=0;
+      b[7]=-v;
+      b[8]=u;
+    }
+ else     if (b.length == 16) {
+      b[0]=1;
+      b[1]=0;
+      b[2]=0;
+      b[4]=0;
+      b[5]=u;
+      b[6]=v;
+      b[8]=0;
+      b[9]=-v;
+      b[10]=u;
+      b[3]=b[7]=b[11]=b[12]=b[13]=b[14]=0;
+      b[15]=1;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,6 @@
+public static Double fn_A(Double a,Double b){
+  if (a == null || b == null) {
+    return null;
+  }
+  return a * b;
+}

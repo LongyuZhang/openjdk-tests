@@ -1,0 +1,8 @@
+static void fn_A(short[] a,int[] b){
+  if (b.length * 2 > a.length)   return;
+  for (int c=0; c < b.length; c+=1) {
+    int d=b[c];
+    a[c * 2 + 0]=(short)(d & 0xFFFF);
+    a[c * 2 + 1]=(short)(d >> 16);
+  }
+}

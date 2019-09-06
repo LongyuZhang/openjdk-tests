@@ -1,0 +1,9 @@
+public static short fn_A(short a){
+  short b=a;
+  short c=(short)0xff;
+  short d=(short)(b & c);
+  d<<=8;
+  c<<=8;
+  d|=(b & c) >> 8;
+  return d;
+}

@@ -1,0 +1,14 @@
+public static String fn_A(final int a){
+switch (a & 0x0f) {
+case 4:
+    return "high level";
+case 6:
+  return "high 1440 level";
+case 8:
+return "main level";
+case 10:
+return "low level";
+default :
+return "reserved level";
+}
+}

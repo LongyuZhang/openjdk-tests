@@ -1,0 +1,13 @@
+public static int fn_A(final byte a){
+  int b=-1;
+switch ((int)a & 0xC0) {
+case 0x80:
+    b=2;
+  break;
+case 0xC0:
+b=5;
+break;
+default :
+}
+return b;
+}

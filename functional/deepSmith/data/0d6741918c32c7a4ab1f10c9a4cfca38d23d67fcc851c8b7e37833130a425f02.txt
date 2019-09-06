@@ -1,0 +1,4 @@
+public static double fn_A(final double a,final double b){
+  if (b == 0)   return a;
+  return Math.log10((a + Math.sqrt(a * a + b * b)) / 2.0);
+}

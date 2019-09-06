@@ -1,0 +1,17 @@
+static void fn_A(int[] a,int[] b,int c,int d,int e,int f,int g,int h,int i,int j){
+  int k=256 - j;
+  for (int l=-g; l < 0; ++l) {
+    for (int m=-f; m < 0; ++m) {
+      c=b[d++];
+      if (c != 0) {
+        int n=a[e];
+        a[e++]=((c & 16711935) * j + (n & 16711935) * k & -16711936) + ((c & '\uff00') * j + (n & '\uff00') * k & 16711680) >> 8;
+      }
+ else {
+        ++e;
+      }
+    }
+    e+=h;
+    d+=i;
+  }
+}

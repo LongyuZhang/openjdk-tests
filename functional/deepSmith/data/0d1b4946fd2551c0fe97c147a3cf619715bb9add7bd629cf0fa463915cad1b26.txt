@@ -1,0 +1,7 @@
+public static long fn_A(long a,long b){
+  if (b <= 0) {
+    throw new ArithmeticException("Modulus must be positive");
+  }
+  long c=a % b;
+  return (c >= 0) ? c : c + b;
+}

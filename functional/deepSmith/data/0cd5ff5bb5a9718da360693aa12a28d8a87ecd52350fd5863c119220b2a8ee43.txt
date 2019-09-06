@@ -1,0 +1,8 @@
+public static String fn_A(int[] a){
+  String b="{";
+  for (int c=0; c < a.length - 1; c++) {
+    b+=a[c] + ", ";
+  }
+  b+=a[a.length - 1] + "}";
+  return b;
+}

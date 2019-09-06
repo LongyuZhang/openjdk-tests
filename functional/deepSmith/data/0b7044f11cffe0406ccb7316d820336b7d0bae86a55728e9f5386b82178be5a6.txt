@@ -1,0 +1,21 @@
+private static int fn_A(char[] a,char[] b){
+  int c=a.length;
+  int d=b.length;
+  if (c == 0 || d == 0 || c < d) {
+    return -1;
+  }
+  if (a == b)   return 0;
+  int e=0, f=0;
+  while (e < c && f < d) {
+    if (a[e] == b[f]) {
+      e++;
+      f++;
+    }
+ else {
+      e=e - f + 1;
+      f=0;
+    }
+  }
+  if (f > d - 1)   return e - d;
+ else   return -1;
+}

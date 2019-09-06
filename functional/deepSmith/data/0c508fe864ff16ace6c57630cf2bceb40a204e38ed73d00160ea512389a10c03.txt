@@ -1,0 +1,9 @@
+public static Double fn_A(Object a){
+  if (a == null) {
+    return null;
+  }
+  if (!(a instanceof Double)) {
+    throw new IllegalStateException("");
+  }
+  return (Double)a;
+}

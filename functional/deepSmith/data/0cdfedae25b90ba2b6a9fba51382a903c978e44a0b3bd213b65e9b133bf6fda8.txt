@@ -1,0 +1,10 @@
+public static void fn_A(){
+  System.out.println("* =============================================================== *");
+  System.out.println("*    Simple Java HTTP Server for Deserialization Lab v0.01        *");
+  System.out.println("*    https://github.com/joaomatosf/JavaDeserH2HC                  *");
+  System.out.println("* =============================================================== *");
+  System.out.println("You can inject java serialized objects in the following formats:");
+  System.out.println("\n 1) Binary in HTTP POST (ie \\xAC\\xED). Ex:\n" + "    $ curl 127.0.0.1:8000 --data-binary @ObjectFile.ser\n" + "\n 2) Base64 or Gzip+Base64 via HTTP POST parameters. Ex:\n"+ "    $ curl 127.0.0.1:8000 -d \"ViewState=rO0ABXNy...\"\n"+ "    $ curl 127.0.0.1:8000 -d \"ViewState=H4sICAeH...\"\n"+ "\n 3) Base64 or Gzip+Base64 in cookies. Ex:\n"+ "    $ curl 127.0.0.1:8000 -H \"Cookie: JSESSIONID=rO0ABXNy...\"\n"+ "    $ curl 127.0.0.1:8000 -H \"Cookie: JSESSIONID=H4sICAeH...\"\n"+ "\n 4) Base64 of AES-CBC encrypted with hardcoded Apache Shiro key. Ex:\n"+ "    $ curl 127.0.0.1:8000 -H \"Cookie: rememberMe=MTIzNDU2Nzg...\"\n"+ "\n 5) XML for XStream RCE vulnerability/serialization. Ex:\n"+ "    $ curl 127.0.0.1:8000 -d @file.xml\n -H \"Content-Type: application/xml\"");
+  System.out.println("OBS: To test gadgets in specific libraries, run with -cp param. Ex:\n" + "$ java -cp .:commons-collections-3.2.1.jar VulnerableHTTPServer");
+  System.out.println("==================================================================");
+}

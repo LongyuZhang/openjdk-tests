@@ -1,0 +1,17 @@
+public static double fn_A(int a){
+  if (a <= 16)   return 0.15;
+ else   if (a <= 32)   return 0.20;
+ else   if (a <= 64)   return 0.30;
+ else   if (a <= 128)   return 0.40;
+ else   if (a <= 256)   return 0.58;
+ else   if (a <= 512)   return 0.59;
+ else   if (a <= 1024)   return 0.67;
+ else   if (a <= 2048)   return 0.80;
+ else   if (a <= 4096)   return 0.95;
+ else   if (a <= 8192)   return 1.15;
+ else   if (a <= 16384)   return 1.40;
+ else   if (a <= 32768)   return 1.65;
+ else   if (a <= 65536)   return 1.90;
+ else   if (a <= 131072)   return 2.20;
+ else   throw new RuntimeException("Missing measurements results for deserialization for bs = " + a + ".");
+}

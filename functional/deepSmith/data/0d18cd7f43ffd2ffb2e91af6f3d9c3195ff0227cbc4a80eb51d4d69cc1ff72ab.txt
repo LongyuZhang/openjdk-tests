@@ -1,0 +1,9 @@
+public static boolean fn_A(byte[] a){
+  if (a == null) {
+    return true;
+  }
+  if (a.length == 0) {
+    return true;
+  }
+  return false;
+}

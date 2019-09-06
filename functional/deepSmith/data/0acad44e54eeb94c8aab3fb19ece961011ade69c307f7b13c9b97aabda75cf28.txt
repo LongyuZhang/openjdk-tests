@@ -1,0 +1,7 @@
+private static int fn_A(double a){
+  int b=(int)a;
+  if (b < 0) {
+    return -1;
+  }
+  return b < 1900 ? 1900 + b : b;
+}

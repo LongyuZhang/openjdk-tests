@@ -1,0 +1,31 @@
+public static void fn_A(float[] a,int b){
+  float c, d, e, f, g, h, i, j, k, l, m, n, o, p;
+  c=a[b + 2];
+  d=a[b + 3];
+  e=a[b + 4];
+  f=a[b + 5];
+  g=a[b + 6];
+  h=a[b + 7];
+  i=a[b + 8];
+  j=a[b + 9];
+  k=a[b + 10];
+  l=a[b + 11];
+  m=a[b + 12];
+  n=a[b + 13];
+  o=a[b + 14];
+  p=a[b + 15];
+  a[b + 2]=o;
+  a[b + 3]=p;
+  a[b + 4]=g;
+  a[b + 5]=h;
+  a[b + 6]=k;
+  a[b + 7]=l;
+  a[b + 8]=c;
+  a[b + 9]=d;
+  a[b + 10]=m;
+  a[b + 11]=n;
+  a[b + 12]=e;
+  a[b + 13]=f;
+  a[b + 14]=i;
+  a[b + 15]=j;
+}

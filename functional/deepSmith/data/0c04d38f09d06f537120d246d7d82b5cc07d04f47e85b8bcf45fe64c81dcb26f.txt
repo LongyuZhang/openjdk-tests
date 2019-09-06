@@ -1,0 +1,9 @@
+public static final String fn_A(final String a,final int b){
+  if (a == null) {
+    throw new IllegalArgumentException();
+  }
+  if (b == -1) {
+    return a;
+  }
+  return a + "#" + b;
+}

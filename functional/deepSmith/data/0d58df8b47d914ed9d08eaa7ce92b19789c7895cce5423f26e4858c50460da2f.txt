@@ -1,0 +1,19 @@
+public static int fn_A(char[] a,int b,int c){
+  int d;
+  boolean e=false;
+  char f=a[b];
+  if (f == '-') {
+    b++;
+    e=true;
+  }
+  f=a[b];
+  d=(f - '0');
+  b++;
+  for (; b < c; b++) {
+    f=a[b];
+    if (f != '.') {
+      d=(d * 10) + (f - '0');
+    }
+  }
+  return e ? d * -1 : d;
+}

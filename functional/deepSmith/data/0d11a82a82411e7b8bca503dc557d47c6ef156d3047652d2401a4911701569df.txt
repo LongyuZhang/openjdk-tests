@@ -1,0 +1,6 @@
+public final static Byte fn_A(Object a){
+  if (a instanceof String) {
+    return Byte.parseByte((String)a);
+  }
+  return (Byte)a;
+}

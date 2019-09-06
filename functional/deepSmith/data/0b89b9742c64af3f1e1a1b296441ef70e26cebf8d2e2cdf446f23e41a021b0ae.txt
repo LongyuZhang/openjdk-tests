@@ -1,0 +1,5 @@
+static public void fn_A(double[][] a,int b,int c,double d){
+  if (b < 0 || b >= a.length)   return;
+  if (c < 0 || c >= a[0].length)   return;
+  a[b][c]=d;
+}

@@ -1,0 +1,9 @@
+public static void fn_A(double[][] a){
+  for (  double[] b : a) {
+    for (int c=0; c < a[0].length; c++) {
+      System.out.print("\t" + Math.round(b[c]));
+    }
+    System.out.println("\t");
+  }
+  System.out.println();
+}

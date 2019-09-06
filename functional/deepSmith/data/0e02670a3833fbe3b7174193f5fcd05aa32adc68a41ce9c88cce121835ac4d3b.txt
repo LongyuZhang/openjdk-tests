@@ -1,0 +1,6 @@
+private static final int fn_A(int a,long b){
+switch (a) {
+default :
+    return -1;
+}
+}

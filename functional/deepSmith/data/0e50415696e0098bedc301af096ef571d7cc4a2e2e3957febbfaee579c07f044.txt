@@ -1,0 +1,7 @@
+public static Double[] fn_A(String[] a){
+  Double[] b=new Double[a.length];
+  for (int c=0; c < a.length; c++) {
+    b[c]=Double.parseDouble(a[c].split("_")[0]);
+  }
+  return b;
+}

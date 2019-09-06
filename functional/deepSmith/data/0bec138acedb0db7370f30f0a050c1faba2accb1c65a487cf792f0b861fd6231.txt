@@ -1,0 +1,5 @@
+public static double fn_A(double a[],double b[]){
+  double c=a[0] - b[0];
+  double d=a[1] - b[1];
+  return Math.sqrt(c * c + d * d);
+}

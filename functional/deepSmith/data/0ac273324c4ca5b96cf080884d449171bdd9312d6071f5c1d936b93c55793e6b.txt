@@ -1,0 +1,13 @@
+public static String fn_A(byte[] a){
+  if (a != null) {
+    final char[] b="0123456789ABCDEF".toCharArray();
+    char[] c=new char[a.length * 2];
+    for (int d=0; d < a.length; d++) {
+      int e=a[d] & 0xFF;
+      c[d * 2]=b[e >>> 4];
+      c[d * 2 + 1]=b[e & 0x0F];
+    }
+    return new String(c);
+  }
+  return "";
+}

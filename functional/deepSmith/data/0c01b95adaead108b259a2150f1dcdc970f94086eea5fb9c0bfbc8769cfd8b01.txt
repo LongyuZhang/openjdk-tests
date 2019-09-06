@@ -1,0 +1,6 @@
+public static int[] fn_A(int[] a,int b){
+  if (a == null || a.length < b) {
+    return new int[b];
+  }
+  return a;
+}

@@ -1,0 +1,36 @@
+static public String fn_A(int a){
+  if (a == 0) {
+    return "Unknown";
+  }
+  if (a == 1) {
+    return "Path";
+  }
+  if (a == 2) {
+    return "Database";
+  }
+  if (a == 3) {
+    return "Table";
+  }
+  if (a == 4) {
+    return "Column Family";
+  }
+  if (a == 5) {
+    return "Column";
+  }
+  if (a == 6) {
+    return "VIEW";
+  }
+  if (a == 7) {
+    return "UDF";
+  }
+  if (a == 8) {
+    return "View Column";
+  }
+  if (a == 9) {
+    return "Topology";
+  }
+  if (a == 10) {
+    return "Service";
+  }
+  return null;
+}

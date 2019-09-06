@@ -1,0 +1,5 @@
+public static String fn_A(String a,String b){
+  String c=a + "_" + b+ "_userrole";
+  String d="DROP TABLE " + c;
+  return d;
+}

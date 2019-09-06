@@ -1,0 +1,11 @@
+private static boolean fn_A(int a){
+  int b=a;
+  int c;
+  int d=0;
+  while (b > 0) {
+    d=d * 10 + b % 10;
+    b/=10;
+  }
+  if (d == a)   return true;
+  return false;
+}

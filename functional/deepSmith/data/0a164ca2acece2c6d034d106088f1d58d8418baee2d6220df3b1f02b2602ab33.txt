@@ -1,0 +1,5 @@
+public final static void fn_A(double a,double b){
+  if ((-13.0 + a + ((5.0 - b) * b - 2.0) * b) + (-29.0 + a + ((b + 1.0) * b - 14.0) * b) == 0.0) {
+    System.out.println("Solved Freudenstein and Roth constraint");
+  }
+}

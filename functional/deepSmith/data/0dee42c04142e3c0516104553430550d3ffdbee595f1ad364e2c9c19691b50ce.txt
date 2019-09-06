@@ -1,0 +1,4 @@
+static public void fn_A(double[] a,int b){
+  double c=b;
+  for (int d=0; d < b; d++)   a[d]*=d / c;
+}

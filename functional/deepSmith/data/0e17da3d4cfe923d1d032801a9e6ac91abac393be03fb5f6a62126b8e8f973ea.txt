@@ -1,0 +1,8 @@
+public static String fn_A(){
+  final String a=System.getProperty("user.home");
+  final String b=a + "/.explorviz";
+  if (!new File(b).exists()) {
+    new File(b).mkdir();
+  }
+  return b;
+}

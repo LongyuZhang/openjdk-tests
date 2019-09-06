@@ -1,0 +1,7 @@
+private static int fn_A(int a){
+  int b;
+  for (b=0; a != 0; a^=b) {
+    b=a & -a;
+  }
+  return b;
+}

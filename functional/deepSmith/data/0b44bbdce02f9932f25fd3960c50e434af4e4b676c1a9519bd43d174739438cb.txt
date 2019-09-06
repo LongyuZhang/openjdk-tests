@@ -1,0 +1,5 @@
+public static double fn_A(final int a,double[] b){
+  double c=0;
+  for (int d=1; d < b.length; d++)   c+=(b[d] - b[d - 1]) / d;
+  return (double)a * (a - 1) / c;
+}

@@ -1,0 +1,13 @@
+public static Object fn_A(Object a,int b){
+  if (a instanceof Object[])   return ((Object[])a)[b];
+  if (a instanceof boolean[])   return ((boolean[])a)[b] ? Boolean.TRUE : Boolean.FALSE;
+  if (a instanceof byte[])   return new Byte(((byte[])a)[b]);
+  if (a instanceof char[])   return new Character(((char[])a)[b]);
+  if (a instanceof short[])   return new Short(((short[])a)[b]);
+  if (a instanceof int[])   return new Integer(((int[])a)[b]);
+  if (a instanceof long[])   return new Long(((long[])a)[b]);
+  if (a instanceof float[])   return new Float(((float[])a)[b]);
+  if (a instanceof double[])   return new Double(((double[])a)[b]);
+  if (a == null)   throw new NullPointerException();
+  throw new IllegalArgumentException();
+}

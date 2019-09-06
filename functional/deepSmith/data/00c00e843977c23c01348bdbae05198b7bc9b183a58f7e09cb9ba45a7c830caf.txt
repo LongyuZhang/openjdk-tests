@@ -1,0 +1,9 @@
+public static int fn_A(int[][] a,int b,int c,int d,int e){
+  int f=b + e - 1;
+  int g=c + d - 1;
+  int h=a[f][g];
+  h-=b > 0 ? a[b - 1][g] : 0;
+  h-=c > 0 ? a[f][c - 1] : 0;
+  h+=b > 0 && c > 0 ? a[b - 1][c - 1] : 0;
+  return h;
+}

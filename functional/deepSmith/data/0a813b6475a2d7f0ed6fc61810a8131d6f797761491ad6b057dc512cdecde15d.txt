@@ -1,0 +1,4 @@
+public static void fn_A(){
+  int[] a=new int[0];
+  System.out.println(a[0]);
+}

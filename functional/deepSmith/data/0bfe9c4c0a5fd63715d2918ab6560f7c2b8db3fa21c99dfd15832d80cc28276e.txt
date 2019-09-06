@@ -1,0 +1,12 @@
+static int fn_A(int a){
+  int b=0;
+  if (a < 0) {
+    b++;
+    a=(a & 0x7FFFFFFF);
+  }
+  while (a > 0) {
+    b+=(a & 1);
+    a>>=1;
+  }
+  return b;
+}

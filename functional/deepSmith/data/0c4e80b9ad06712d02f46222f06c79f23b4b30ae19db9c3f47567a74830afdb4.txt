@@ -1,0 +1,6 @@
+public static boolean fn_A(double a,double b,double c){
+  if (c < 0 || c > 1) {
+    throw new IllegalArgumentException("Tolerance must be between 0 and 1.");
+  }
+  return Math.abs(a - b) <= a * c;
+}

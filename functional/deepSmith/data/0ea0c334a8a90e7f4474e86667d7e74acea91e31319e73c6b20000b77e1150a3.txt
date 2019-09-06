@@ -1,0 +1,7 @@
+private static String fn_A(){
+  String a=System.getProperty("camelKarafFeatureVersion");
+  if (a == null) {
+    throw new RuntimeException("Please specify the maven artifact version to use for org.apache.camel.karaf/apache-camel through the camelKarafFeatureVersion System property");
+  }
+  return a;
+}

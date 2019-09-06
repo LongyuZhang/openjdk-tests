@@ -1,0 +1,41 @@
+public static int fn_A(long[] a,long b,int c){
+  int d=a.length;
+  int e=d - 1;
+  int f=0;
+  int g=e;
+  boolean h=d < 2 || a[0] < a[1];
+  if (c < d) {
+    g=(0 <= c) ? c : -(c + 1);
+    f=g - 1;
+    int i=1;
+    if (h) {
+      for (; 0 < f && b < a[f]; f-=i, i+=i)       g=f;
+      for (; g < e && a[g] < b; g+=i, i+=i)       f=g;
+    }
+ else {
+      for (; 0 < f && b > a[f]; f-=i, i+=i)       g=f;
+      for (; g < e && a[g] > b; g+=i, i+=i)       f=g;
+    }
+    if (f < 0)     f=0;
+    if (g > e)     g=e;
+  }
+  if (h) {
+    while (f <= g) {
+      int j=(f + g) >> 1;
+      long k=a[j];
+      if (k < b)       f=j + 1;
+ else       if (k > b)       g=j - 1;
+ else       return j;
+    }
+  }
+ else {
+    while (f <= g) {
+      int j=(f + g) >> 1;
+      long k=a[j];
+      if (k > b)       f=j + 1;
+ else       if (k < b)       g=j - 1;
+ else       return j;
+    }
+  }
+  return -(f + 1);
+}

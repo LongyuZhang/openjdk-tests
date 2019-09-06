@@ -1,0 +1,6 @@
+static public double fn_A(double a,double b){
+  if (b == 0d) {
+    return 0d;
+  }
+  return a / b;
+}

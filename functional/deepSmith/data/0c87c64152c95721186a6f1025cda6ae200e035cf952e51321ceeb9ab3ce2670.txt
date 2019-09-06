@@ -1,0 +1,16 @@
+public static double fn_A(int a,double b[][],int c,int d,int e){
+  double f;
+  int g, h, i, j;
+  f=0.0;
+  if (a <= 0)   return f;
+  h=a % 5;
+  i=h + c;
+  j=c + a - 1;
+  for (g=c; g < i; g++) {
+    f+=b[g][d] * b[g][e];
+  }
+  for (g=i; g <= j; g+=5) {
+    f+=b[g][d] * b[g][e] + b[g + 1][d] * b[g + 1][e] + b[g + 2][d] * b[g + 2][e] + b[g + 3][d] * b[g + 3][e] + b[g + 4][d] * b[g + 4][e];
+  }
+  return f;
+}

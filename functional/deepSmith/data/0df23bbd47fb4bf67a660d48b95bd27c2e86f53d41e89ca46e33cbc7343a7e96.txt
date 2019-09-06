@@ -1,0 +1,11 @@
+public static String fn_A(int[] a){
+  if (a == null || a.length != 3) {
+    return null;
+  }
+  if (a[0] > a[2]) {
+    int b=a[0];
+    a[0]=a[2];
+    a[2]=b;
+  }
+  return a[0] + " " + a[1]+ " "+ a[2];
+}

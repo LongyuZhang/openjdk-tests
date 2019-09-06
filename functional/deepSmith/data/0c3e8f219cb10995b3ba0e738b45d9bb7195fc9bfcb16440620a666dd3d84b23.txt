@@ -1,0 +1,4 @@
+private static int fn_A(int[] a,int[] b){
+  for (int c=0; c < a.length; c++)   if (a[c] != b[c])   return Integer.compare(a[c],b[c]);
+  return 0;
+}

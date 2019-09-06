@@ -1,0 +1,10 @@
+public static int fn_A(final int a) throws java.lang.Exception {
+  int b=a + 68569;
+  int c=4 * b / 146097;
+  int d=b - (146097 * c + 3) / 4;
+  int e=4000 * (d + 1) / 1461001;
+  int f=d - (1461 * e / 4) + 31;
+  int g=80 * f / 2447;
+  int h=g / 11;
+  return 100 * (c - 49) + e + h;
+}

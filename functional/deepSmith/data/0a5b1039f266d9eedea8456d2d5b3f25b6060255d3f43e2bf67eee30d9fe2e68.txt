@@ -1,0 +1,6 @@
+public static void fn_A(byte[] a,int b,byte c){
+  if (null == a) {
+    return;
+  }
+  a[b]=c;
+}

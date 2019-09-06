@@ -1,0 +1,13 @@
+public static long fn_A(String[] a){
+  long b;
+  if ("*".equals(a[1])) {
+    b=Long.MAX_VALUE;
+  }
+ else {
+    b=Long.parseLong(a[1]);
+    if ("true".equals(a[3])) {
+      b++;
+    }
+  }
+  return b;
+}

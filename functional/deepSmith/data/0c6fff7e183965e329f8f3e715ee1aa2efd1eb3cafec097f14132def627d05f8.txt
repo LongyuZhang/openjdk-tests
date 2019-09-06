@@ -1,0 +1,6 @@
+public static short fn_A(byte[] a,int b){
+  if (a.length < b + Short.BYTES) {
+    throw new ArrayIndexOutOfBoundsException("insufficient byte array length (length: " + a.length + ", offset: "+ b+ ")");
+  }
+  return (short)(((a[b] & 0xFF) << 8) | ((a[b + 1] & 0xFF)));
+}

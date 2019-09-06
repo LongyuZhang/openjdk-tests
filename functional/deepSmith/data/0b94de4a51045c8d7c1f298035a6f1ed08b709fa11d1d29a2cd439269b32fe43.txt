@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  int b=10;
+  if (b > 0)   System.out.println("I have Kiwis");
+ else   System.out.println("Do you have any kiwis?");
+  System.out.println("Sure, here you go");
+}

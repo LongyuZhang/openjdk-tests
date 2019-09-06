@@ -1,0 +1,6 @@
+public static void fn_A(long a){
+  double b=a;
+  b*=2;
+  long c=(long)b;
+  if (c != a)   throw new RuntimeException("expecting " + a + ", got "+ c);
+}

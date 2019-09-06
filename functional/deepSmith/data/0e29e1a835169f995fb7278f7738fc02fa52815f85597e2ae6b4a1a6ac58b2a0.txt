@@ -1,0 +1,7 @@
+private static void fn_A(long[] a,int[] b,int c){
+  for (int d=b.length; d < a.length; d++) {
+    long e=0;
+    for (int f=0; f < b.length; f++)     e+=a[d - 1 - f] * b[f];
+    a[d]+=e >> c;
+  }
+}

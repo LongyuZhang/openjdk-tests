@@ -1,0 +1,40 @@
+private static float fn_A(byte[] a,boolean b,int c){
+  float d=0.0f;
+  int e=0;
+  int f=a.length;
+  for (int g=0; g < a.length; g++, f--) {
+    e|=((int)(a[g] & 0xFF) << ((((b) ? f : (g + 1)) * 8) - 8));
+  }
+switch (c) {
+case 1:
+    if (e > 0x7F) {
+      e=~e;
+      e&=0x7F;
+      e=~e + 1;
+    }
+  d=(float)((float)e / (float)Byte.MAX_VALUE);
+break;
+case 2:
+if (e > 0x7FFF) {
+e=~e;
+e&=0x7FFF;
+e=~e + 1;
+}
+d=(float)((float)e / (float)Short.MAX_VALUE);
+break;
+case 3:
+if (e > 0x7FFFFF) {
+e=~e;
+e&=0x7FFFFF;
+e=~e + 1;
+}
+d=(float)((float)e / 8388608f);
+break;
+case 4:
+d=(float)((double)e / (double)Integer.MAX_VALUE);
+break;
+default :
+System.err.println("Format not accepted");
+}
+return d;
+}

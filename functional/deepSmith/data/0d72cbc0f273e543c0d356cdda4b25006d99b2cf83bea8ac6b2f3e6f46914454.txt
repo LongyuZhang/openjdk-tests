@@ -1,0 +1,8 @@
+private static double fn_A(final double a,final int b){
+  double c=1;
+  for (int d=1; d < b; d++) {
+    c*=d / (a + d);
+  }
+  c/=a;
+  return c;
+}

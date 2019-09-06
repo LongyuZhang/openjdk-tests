@@ -1,0 +1,4 @@
+public static double fn_A(double a){
+  double b=a * 72;
+  return b;
+}

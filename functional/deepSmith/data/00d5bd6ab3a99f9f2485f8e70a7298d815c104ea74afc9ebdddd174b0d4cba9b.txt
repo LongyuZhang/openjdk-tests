@@ -1,0 +1,11 @@
+public static String fn_A(){
+  String a;
+  try {
+    StackTraceElement[] b=Thread.currentThread().getStackTrace();
+    a=b[2].getClassName();
+  }
+ catch (  Exception c) {
+    a="";
+  }
+  return a;
+}

@@ -1,0 +1,11 @@
+public static double[] fn_A(double[] a,double[] b,int c){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("The dividend array and the divisor array must be the same length");
+  }
+  double[] d=new double[a.length];
+  for (int e=0; e < a.length; e++) {
+    d[e]=(a[e]) / (b[e] == 0 ? 1 : b[e]);
+    d[e]=new BigDecimal(d[e]).round(new MathContext(c,RoundingMode.HALF_UP)).doubleValue();
+  }
+  return d;
+}

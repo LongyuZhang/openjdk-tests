@@ -1,0 +1,9 @@
+private static String fn_A(float a,float b,float c){
+  if (a < b) {
+    return "must be greater than " + b;
+  }
+  if (a > c) {
+    return "must be less than " + c;
+  }
+  return null;
+}

@@ -1,0 +1,5 @@
+private static int fn_A(int a,int b){
+  int c=a % b;
+  if (c > 0)   return a + (b - c);
+ else   return a;
+}

@@ -1,0 +1,7 @@
+public static boolean fn_A(int a){
+  if (1 == a)   return false;
+  if (128 == a)   return false;
+  if (25 == a)   return false;
+  if (129 == a)   return false;
+  return true;
+}

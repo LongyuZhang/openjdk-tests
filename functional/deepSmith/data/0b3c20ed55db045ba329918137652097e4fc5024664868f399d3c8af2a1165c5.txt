@@ -1,0 +1,11 @@
+public static void fn_A(int a,String b,String c){
+  if (a > 0) {
+    System.out.println(b + " comes after " + c);
+  }
+ else   if (a < 0) {
+    System.out.println(b + " comes before " + c);
+  }
+ else {
+    System.out.println(b + " and " + c+ " are the same.");
+  }
+}

@@ -1,0 +1,9 @@
+private static Short[] fn_A(short[][] a){
+  Short[] b=new Short[a.length * a[0].length];
+  for (int c=0; c < a[0].length; c++) {
+    for (int d=0; d < a.length; d++) {
+      b[d + c * a.length]=a[d][c];
+    }
+  }
+  return b;
+}

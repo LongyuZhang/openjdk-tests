@@ -1,0 +1,40 @@
+protected static int[] fn_A(int a){
+  int[] b=new int[2];
+switch (a) {
+case 9:
+case 1:
+    b[0]=1;
+  break;
+case 2:
+case 10:
+b[0]=1;
+b[1]=1;
+break;
+case 3:
+case 11:
+b[1]=1;
+break;
+case 4:
+case 12:
+b[0]=-1;
+b[1]=1;
+break;
+case 5:
+b[0]=-1;
+break;
+case 6:
+b[0]=-1;
+b[1]=-1;
+break;
+case 7:
+case -1:
+b[1]=-1;
+break;
+case 0:
+case 8:
+b[0]=1;
+b[1]=-1;
+break;
+}
+return b;
+}

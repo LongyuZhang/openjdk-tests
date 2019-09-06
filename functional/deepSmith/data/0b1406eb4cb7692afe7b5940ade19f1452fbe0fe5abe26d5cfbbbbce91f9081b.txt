@@ -1,0 +1,9 @@
+public static void fn_A(double[][] a,double b,double c){
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[0].length; e++) {
+      if (a[d][e] < b) {
+        a[d][e]=c;
+      }
+    }
+  }
+}

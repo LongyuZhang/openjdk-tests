@@ -1,0 +1,4 @@
+public static int fn_A(int a,int b){
+  if (b <= a)   return a;
+  throw new IllegalArgumentException(a + " must not be smaller than " + b);
+}

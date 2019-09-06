@@ -1,0 +1,16 @@
+private static final int fn_A(double[] a,double b){
+  if (b <= a[0])   return 0;
+  if (b > a[a.length - 1])   return a.length;
+  int c=0;
+  int d=a.length - 1;
+  while (d - c > 1) {
+    int e=(c + d) / 2;
+    if (a[e] <= b) {
+      c=e;
+    }
+ else {
+      d=e;
+    }
+  }
+  return d;
+}

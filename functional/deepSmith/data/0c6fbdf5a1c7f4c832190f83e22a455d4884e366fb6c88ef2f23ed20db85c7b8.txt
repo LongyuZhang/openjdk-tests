@@ -1,0 +1,4 @@
+public static byte fn_A(byte a){
+  byte b=(byte)(a & 0x3F);
+  return b;
+}

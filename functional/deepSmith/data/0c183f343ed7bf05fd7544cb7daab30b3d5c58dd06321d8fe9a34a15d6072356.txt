@@ -1,0 +1,23 @@
+public static float fn_A(final float a,final float b,final float c,final float d,final float e,final float f,final float g,final float h,final float i){
+  final float j=g - d;
+  final float k=h - e;
+  final float l=i - f;
+  final float m=a - d;
+  final float n=b - e;
+  final float o=c - f;
+  final float p=(j * j) + (k * k) + (l * l);
+  if (p == 0) {
+    return (m * m) + (n * n) + (o * o);
+  }
+  final float q=((j * m) + (k * n) + (l * o)) / p;
+  if (q < 0) {
+    return (m * m) + (n * n) + (o * o);
+  }
+ else   if (q > 1) {
+    return ((a - g) * (a - g)) + ((b - h) * (b - h)) + ((c - i) * (c - i));
+  }
+  final float r=(d + (q * j)) - a;
+  final float s=(e + (q * k)) - b;
+  final float t=(f + (q * l)) - c;
+  return (r * r) + (s * s) + (t * t);
+}

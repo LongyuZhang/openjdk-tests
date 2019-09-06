@@ -1,0 +1,12 @@
+private static String fn_A(boolean a,String b,long c,long d){
+  if (c / d > 0) {
+    if (a) {
+      b=c / d < 10 ? "0" + c / d : c / d + "";
+    }
+ else {
+      b=c / d + "";
+    }
+    b+="";
+  }
+  return b;
+}

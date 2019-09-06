@@ -1,0 +1,13 @@
+public static int fn_A(long[] a,long b){
+  int c=0;
+  int d=a.length - 1;
+  int e=0;
+  while (c <= d) {
+    e=(c + d) >> 1;
+    final long f=a[e];
+    if (f == b)     return e;
+ else     if (f > b)     d=e - 1;
+ else     c=++e;
+  }
+  return -e - 1;
+}

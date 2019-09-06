@@ -1,0 +1,10 @@
+public static int fn_A(double[] a,double b){
+  int c=-1;
+  int d=a.length;
+  while (d - c > 1) {
+    int e=(d + c) / 2;
+    if (b - a[e] < 0)     d=e;
+ else     c=e;
+  }
+  return c;
+}

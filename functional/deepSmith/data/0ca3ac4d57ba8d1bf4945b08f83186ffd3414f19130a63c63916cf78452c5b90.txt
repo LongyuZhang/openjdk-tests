@@ -1,0 +1,5 @@
+private static void fn_A(){
+  System.err.println("\t\t 1. The full path to the NIHDB Lexicon database file e.g. C:\\NIHDB\\lexAccess2009 ");
+  System.err.println("\t\t 2. The full path to the list of baseforms and POS tags to include in the written out XML Lexicon file");
+  System.err.println("\t\t 3. The full path to the XML file that the XML Lexicon will be written out to.");
+}

@@ -1,0 +1,4 @@
+public static double fn_A(double a,double b){
+  if (a < b)   return a;
+  return b;
+}

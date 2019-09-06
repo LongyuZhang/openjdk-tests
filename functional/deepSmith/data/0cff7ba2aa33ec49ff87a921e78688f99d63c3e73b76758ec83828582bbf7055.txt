@@ -1,0 +1,36 @@
+public static boolean fn_A(Object a){
+  if (a == null) {
+    return false;
+  }
+  if (a instanceof String) {
+    if (((String)a).length() == 0) {
+      return false;
+    }
+  }
+  if (a instanceof Collection) {
+    if (((Collection)a).isEmpty()) {
+      return false;
+    }
+  }
+  if (a instanceof Object[]) {
+    if (((Object[])a).length == 0) {
+      return false;
+    }
+  }
+  if (a instanceof Map) {
+    if (((Map)a).size() == 0) {
+      return false;
+    }
+  }
+  if (a instanceof Number) {
+    if (((Number)a).toString().length() == 0) {
+      return false;
+    }
+  }
+  if (a instanceof Enum) {
+    if (((Enum)a).toString().length() == 0) {
+      return false;
+    }
+  }
+  return true;
+}

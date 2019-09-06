@@ -1,0 +1,7 @@
+public static double fn_A(int a,double b){
+  double c=1.0 / b;
+  for (int d=1; d <= a; d++) {
+    c*=(double)d;
+  }
+  return c;
+}

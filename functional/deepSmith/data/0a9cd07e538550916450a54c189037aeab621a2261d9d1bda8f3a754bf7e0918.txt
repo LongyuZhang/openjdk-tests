@@ -1,0 +1,10 @@
+public static String fn_A(String a,String[] b){
+  if (b == null)   return null;
+  if (b.length < 2)   return null;
+  for (int c=0; c < b.length - 1; c++) {
+    if (b[c].equalsIgnoreCase("-" + a) && (!b[c + 1].startsWith("-"))) {
+      return b[c + 1];
+    }
+  }
+  return null;
+}

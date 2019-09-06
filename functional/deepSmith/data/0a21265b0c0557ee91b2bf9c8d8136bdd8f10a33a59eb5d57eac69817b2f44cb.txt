@@ -1,0 +1,14 @@
+public static String fn_A(boolean[] a){
+  String b="";
+  if (a == null) {
+    b="null";
+  }
+ else {
+    b="[";
+    for (int c=0; c < a.length; c++) {
+      b+=a[c] + " ";
+    }
+    b+="]";
+  }
+  return b;
+}

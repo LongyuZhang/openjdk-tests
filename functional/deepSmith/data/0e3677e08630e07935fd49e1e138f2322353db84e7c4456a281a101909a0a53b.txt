@@ -1,0 +1,11 @@
+public static long fn_A(long a,int b){
+  int c=b;
+  int d=0;
+  if (b % 4 == 1) {
+    c=b - 1;
+    d=1;
+  }
+  a=((a >> d) << (c / 4 + d)) | (a >> (3 * c / 4 + d) << d) | (a & d);
+  a&=((1L << b) - 1);
+  return a;
+}

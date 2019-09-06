@@ -1,0 +1,16 @@
+public static String fn_A(int a){
+switch (a) {
+case 0:
+    return "Very negative";
+case 1:
+  return "Negative";
+case 2:
+return "Neutral";
+case 3:
+return "Positive";
+case 4:
+return "Very positive";
+default :
+return "Unknown sentiment label " + a;
+}
+}

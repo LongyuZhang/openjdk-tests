@@ -1,0 +1,5 @@
+public static final short fn_A(byte a[],int b,short c) throws ArrayIndexOutOfBoundsException, NullPointerException {
+  a[b]=(byte)(c >> 8);
+  a[b + 1]=(byte)c;
+  return (short)(b + 2);
+}

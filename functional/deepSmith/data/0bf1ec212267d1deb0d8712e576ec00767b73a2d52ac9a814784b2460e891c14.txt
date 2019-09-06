@@ -1,0 +1,12 @@
+public static long fn_A(long a,long b){
+  if (b < 0) {
+    throw new IllegalArgumentException("denomintor too big");
+  }
+  if (a >= 0) {
+    return a % b;
+  }
+  long c=a >>> 1;
+  long d=(c % b) << 1;
+  d+=(a & 1);
+  return d % b;
+}

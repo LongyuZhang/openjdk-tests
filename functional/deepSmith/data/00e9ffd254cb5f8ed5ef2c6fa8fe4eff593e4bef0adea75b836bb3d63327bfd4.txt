@@ -1,0 +1,4 @@
+static private Object fn_A(Object a){
+  if (a == null)   return new LinkedList();
+ else   return a;
+}

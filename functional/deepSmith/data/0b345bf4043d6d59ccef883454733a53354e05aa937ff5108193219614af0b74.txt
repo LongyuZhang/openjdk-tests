@@ -1,0 +1,7 @@
+@SuppressWarnings("unchecked") static Stack<Integer>[] fn_A(int a){
+  @SuppressWarnings("rawtypes") Stack[] b=new Stack[a];
+  for (int c=0; c < a; c++) {
+    b[c]=new Stack<Integer>();
+  }
+  return b;
+}

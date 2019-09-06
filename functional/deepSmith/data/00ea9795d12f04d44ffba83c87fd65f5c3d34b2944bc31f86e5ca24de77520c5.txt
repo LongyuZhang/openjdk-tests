@@ -1,0 +1,6 @@
+static int fn_A(int a,String b){
+  if (a < 0) {
+    throw new IllegalArgumentException(b + ": " + a+ " (expected: >= 0)");
+  }
+  return a;
+}

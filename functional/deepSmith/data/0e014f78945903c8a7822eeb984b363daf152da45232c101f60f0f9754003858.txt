@@ -1,0 +1,10 @@
+private static int fn_A(double a,double[] b){
+  if (a == b[b.length - 1]) {
+    return b.length - 2;
+  }
+  int c=b.length - 1;
+  while (b[c] > a) {
+    c--;
+  }
+  return c;
+}

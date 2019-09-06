@@ -1,0 +1,10 @@
+static long fn_A(long a){
+  long b=768614336404564650L;
+  long c=(a & b) >>> 1 & a;
+  long d=378672165735973200L;
+  long e=(c & d) >>> 4 & c;
+  long f=22540009865236500L;
+  long g=(e & f) >>> 2 & e;
+  long h=4508001973047300L;
+  return (g & h) >>> 2 & g;
+}

@@ -1,0 +1,16 @@
+public static double[] fn_A(double a){
+  if (a <= 0) {
+    throw new IllegalArgumentException("alpha must be strictly positive.");
+  }
+  double b;
+  double c;
+  if (a < 1) {
+    b=(1.0 + a) - (1.0 / 3.0);
+  }
+ else {
+    b=a - (1.0 / 3.0);
+  }
+  c=1.0 / Math.sqrt(9.0 * b);
+  double[] d={c,b};
+  return d;
+}

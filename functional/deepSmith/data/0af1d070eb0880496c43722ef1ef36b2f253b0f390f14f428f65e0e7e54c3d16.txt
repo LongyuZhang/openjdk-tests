@@ -1,0 +1,13 @@
+public static void fn_A(final int a,final int b,final int c){
+  if ((a < 0) || (a > b) || (b > c)) {
+    if (a < 0) {
+      throw new IndexOutOfBoundsException("Start index must not be smaller than 0, but was " + a + ".");
+    }
+ else     if (a > b) {
+      throw new IndexOutOfBoundsException("Start index must be greater than the end index, but " + a + " > "+ b+ ".");
+    }
+ else {
+      throw new IndexOutOfBoundsException("End index must not be greater than or equal to the size (" + c + "), but was "+ b+ ".");
+    }
+  }
+}

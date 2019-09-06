@@ -1,0 +1,12 @@
+private static int fn_A(byte[] a,int b,int c){
+  int d=a[b++] & 0xFF;
+switch (c) {
+case 4:
+    d=(d << 8) | (a[b++] & 0xFF);
+case 3:
+  d=(d << 8) | (a[b++] & 0xFF);
+case 2:
+d=(d << 8) | (a[b++] & 0xFF);
+}
+return d;
+}

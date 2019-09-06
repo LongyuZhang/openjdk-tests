@@ -1,0 +1,12 @@
+public static long[] fn_A(final long a,final int b){
+  long c=a;
+  long[] d=new long[b];
+  for (int e=0; e < d.length; e++) {
+    d[e]=a / b;
+    c-=d[e];
+  }
+  for (int e=0; e < c; e++) {
+    d[e]++;
+  }
+  return d;
+}

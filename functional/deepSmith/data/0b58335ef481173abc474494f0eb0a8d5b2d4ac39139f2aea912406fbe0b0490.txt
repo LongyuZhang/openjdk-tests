@@ -1,0 +1,5 @@
+public static final double[] fn_A(final double a,final double b,final double c,final double d,final double e){
+  double f=(d - b) / (c - a);
+  double g=(e - b) / f;
+  return new double[]{a + g,e};
+}

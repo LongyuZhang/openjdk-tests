@@ -1,0 +1,23 @@
+public static void main(String[] a){
+  System.out.println("Bievenidos a PC2");
+  byte b;
+  b=10;
+  short c=15;
+  int d=20;
+  long e=25;
+  System.out.println("Enteros: " + b + " "+ c+ " "+ d+ " "+ e);
+  float f=0.000005f;
+  double g=150.150;
+  System.out.println("Decimales: " + f + " "+ g);
+  char h='M';
+  String i="M";
+  System.out.println("Caracteres: " + h);
+  System.out.println("Cadenas: " + i);
+  boolean j=true;
+  System.out.println("Booleano: " + j);
+  System.out.println(1 + 2);
+  System.out.println(2 - 1);
+  System.out.println(2 * 2);
+  System.out.println(5 / 2.0);
+  System.out.println(5 % 2);
+}

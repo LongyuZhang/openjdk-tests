@@ -1,0 +1,5 @@
+public static int fn_A(int a){
+  int b=((a >>> 16) ^ (a & 0xFFFF));
+  b=((b << 8) & 0xFF00) | ((b >>> 8) & 0xFF);
+  return b;
+}

@@ -1,0 +1,5 @@
+public static void fn_A(Object a,int b,double c){
+  if (a instanceof double[])   ((double[])a)[b]=c;
+ else   if (a == null)   throw new NullPointerException();
+ else   throw new IllegalArgumentException();
+}

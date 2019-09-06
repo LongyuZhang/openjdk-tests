@@ -1,0 +1,22 @@
+static int fn_A(int a[]){
+  int b=a[0], c=a[0], d=a[0];
+  int e, f=0;
+  for (e=0; e < a.length; e++) {
+    if (a[e] > b && f == 0) {
+      b=a[e];
+      f++;
+    }
+ else     if (a[e] > b && f == 1) {
+      c=b;
+      b=a[e];
+      f++;
+    }
+ else     if (a[e] > b && f >= 2) {
+      d=c;
+      c=b;
+      b=a[e];
+      f++;
+    }
+  }
+  return d;
+}

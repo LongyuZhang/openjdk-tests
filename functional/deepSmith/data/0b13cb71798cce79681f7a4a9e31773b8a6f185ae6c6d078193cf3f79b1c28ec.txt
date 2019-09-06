@@ -1,0 +1,6 @@
+public static void fn_A(int a,char[] b,int c){
+  b[c++]=(char)((a >> 24) & 0XFF);
+  b[c++]=(char)((a >> 16) & 0XFF);
+  b[c++]=(char)((a >> 8) & 0XFF);
+  b[c++]=(char)(a & 0xFF);
+}

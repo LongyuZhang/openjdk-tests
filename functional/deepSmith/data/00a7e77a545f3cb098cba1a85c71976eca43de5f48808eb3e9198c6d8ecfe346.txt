@@ -1,0 +1,16 @@
+public static double[][] fn_A(double[][] a,double[][] b){
+  double[][] c=new double[a.length][a[0].length];
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[0].length; e++) {
+      double f=a[d][e] - b[d][e];
+      if (f > .1 || f < -.1) {
+        c[d][e]=1;
+        ;
+      }
+ else {
+        c[d][e]=0;
+      }
+    }
+  }
+  return c;
+}

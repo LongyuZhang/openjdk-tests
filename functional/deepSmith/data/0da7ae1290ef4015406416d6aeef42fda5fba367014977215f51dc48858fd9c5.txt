@@ -1,0 +1,12 @@
+public static double fn_A(double a){
+  if (a >= -180 && a <= 180) {
+    return a;
+  }
+  double b=a + 180;
+  if (b > 0) {
+    return (b % 360.0) - 180;
+  }
+ else {
+    return 180 - (-b % 360);
+  }
+}

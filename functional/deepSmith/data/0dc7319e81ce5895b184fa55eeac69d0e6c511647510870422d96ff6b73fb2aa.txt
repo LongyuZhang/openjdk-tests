@@ -1,0 +1,7 @@
+public static void fn_A(){
+  System.err.println("  getUserInfo  <email>");
+  System.err.println("  searchUserDocuments  <query>");
+  System.err.println("  getDocumentEventsForUser  ");
+  System.err.println("  sendWithRecipientSecurity <filename> <signer1_email> <signer1_password> <signer2_email> <signer2_password>");
+  System.err.println("  sendWithDifferentPasswords <filename> <signer1_email> <signer2_email> <internal_password> <external_password>");
+}

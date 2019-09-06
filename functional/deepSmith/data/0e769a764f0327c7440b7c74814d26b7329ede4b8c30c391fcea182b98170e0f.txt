@@ -1,0 +1,4 @@
+public static int fn_A(short a,short b){
+  if (a < 0 || b < 0)   throw new IllegalArgumentException("Java needs unsigned data types!");
+  return (int)a << 16 | (int)b;
+}

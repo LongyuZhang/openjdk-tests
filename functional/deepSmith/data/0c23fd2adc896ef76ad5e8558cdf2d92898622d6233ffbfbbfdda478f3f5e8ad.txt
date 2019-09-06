@@ -1,0 +1,10 @@
+public static boolean fn_A(BigInteger[] a,BigInteger[] b){
+  int c=0;
+  if (a.length != b.length) {
+    return false;
+  }
+  for (int d=0; d < a.length; d++) {
+    c|=a[d].compareTo(b[d]);
+  }
+  return c == 0;
+}

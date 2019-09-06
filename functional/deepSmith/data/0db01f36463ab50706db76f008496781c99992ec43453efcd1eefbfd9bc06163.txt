@@ -1,0 +1,6 @@
+public static double[] fn_A(double[] a,double[] b){
+  assert(a.length == b.length);
+  double[] c=new double[a.length];
+  for (int d=0; d < a.length; d++)   c[d]=a[d] + b[d];
+  return c;
+}

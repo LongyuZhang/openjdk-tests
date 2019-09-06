@@ -1,0 +1,9 @@
+public static void main(String a[]){
+  int b=5;
+  int c=8;
+  System.out.println("adding " + (b + c));
+  int d=19;
+  System.out.println("subtracting " + (d - c));
+  System.out.println("dividing " + (d / b));
+  System.out.println("multiplying " + (b * d));
+}

@@ -1,0 +1,16 @@
+public static void fn_A(Comparable<Object>[] a){
+  int b=a.length;
+  int c=1;
+  while (c < b / 3)   c=3 * c + 1;
+  while (c >= 1) {
+    for (int d=c; d < b; d++) {
+      Comparable e=a[d];
+      int f=d;
+      for (; f >= c && e.compareTo(a[f - c]) < 0; f-=c) {
+        a[f]=a[f - c];
+      }
+      a[f]=e;
+    }
+    c/=3;
+  }
+}

@@ -1,0 +1,4 @@
+public static boolean fn_A(double a){
+  int b=(int)a;
+  return b == a && b > 0;
+}

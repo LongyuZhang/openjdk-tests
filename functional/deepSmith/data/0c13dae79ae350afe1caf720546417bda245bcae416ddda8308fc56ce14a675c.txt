@@ -1,0 +1,5 @@
+public static boolean fn_A(Object a,int b){
+  if (a instanceof boolean[])   return ((boolean[])a)[b];
+  if (a == null)   throw new NullPointerException();
+  throw new IllegalArgumentException();
+}

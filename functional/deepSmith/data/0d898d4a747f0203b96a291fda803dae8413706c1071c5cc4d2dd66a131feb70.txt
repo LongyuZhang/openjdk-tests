@@ -1,0 +1,8 @@
+public static void fn_A(float[] a,float[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("Arrays lengths are different");
+  }
+  for (int c=0; c < a.length; c++) {
+    a[c]=a[c] * b[c];
+  }
+}

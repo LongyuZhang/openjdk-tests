@@ -1,0 +1,4 @@
+private final static int fn_A(final int a){
+  if (a < 4)   throw new IllegalArgumentException("There must be at least 16 registers per counter");
+  return a;
+}

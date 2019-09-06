@@ -1,0 +1,10 @@
+public static List<String> fn_A(String a){
+  List<String> b;
+  try {
+    b=Files.readAllLines(new File(a).toPath());
+  }
+ catch (  IOException c) {
+    b=Arrays.asList("Could not read the file: " + a);
+  }
+  return b;
+}

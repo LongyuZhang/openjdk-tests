@@ -1,0 +1,5 @@
+private static final void fn_A(final Object a){
+  if (a == null) {
+    throw new NullPointerException("invalid implementation");
+  }
+}

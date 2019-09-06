@@ -1,0 +1,8 @@
+private static String fn_A(byte[] a,String b){
+  try {
+    return new String(a,b);
+  }
+ catch (  UnsupportedEncodingException c) {
+  }
+  return null;
+}

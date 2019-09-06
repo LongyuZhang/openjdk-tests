@@ -1,0 +1,61 @@
+public static double[] fn_A(double a[],int b,int c,int d,int e,int f,int g,int h){
+  double i[]=new double[f * e * g];
+  int j=e * f;
+  int k=b * c;
+switch (h) {
+case 0:
+    for (int l=0; l < d; l++) {
+      for (int m=0; m < c; m++) {
+        for (int n=0; n < b; n++) {
+          i[n + m * e]=a[n + m * b];
+        }
+      }
+    }
+  break;
+case 1:
+int o=(e - b) / 2;
+int p=(f - c) / 2;
+int q=(g - d) / 2;
+for (int l=0; l < d; l++) {
+for (int m=0; m < c; m++) {
+for (int n=0; n < b; n++) {
+i[o + n + (m + p) * e + (l + q) * j]=a[n + m * b + l * k];
+}
+}
+}
+break;
+case -1:
+int r=b / 2;
+int s=c / 2;
+if (r != 0 || s != 0) {
+for (int m=0; m < s; m++) {
+for (int n=0; n < r; n++) {
+i[f - s + m + (e - r + n) * e]=a[n * b + m];
+}
+}
+}
+if (r != 0) {
+for (int m=0; m < s; m++) {
+for (int n=0; n < b - r; n++) {
+i[(f - s + m) * e + n]=a[m * b + n + r];
+}
+}
+}
+if (s != 0) {
+for (int m=0; m < c - s; m++) {
+for (int n=0; n < r; n++) {
+i[m * e + e - r + n]=a[(m + s) * b + n];
+}
+}
+}
+for (int m=0; m < c - s; m++) {
+for (int n=0; n < b - r; n++) {
+i[n + m * e]=a[(m + s) * b + n + r];
+}
+}
+break;
+default :
+System.out.println("bad value for keyword JUST");
+}
+return i;
+}

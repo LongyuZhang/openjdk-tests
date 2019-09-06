@@ -1,0 +1,8 @@
+public static double[][] fn_A(double[][] a){
+  if (a == null)   return null;
+  double[][] b=new double[a.length][a.length == 0 ? 0 : a[0].length];
+  for (int c=0; c < a.length; c++) {
+    System.arraycopy(a[c],0,b[c],0,a[c].length);
+  }
+  return b;
+}

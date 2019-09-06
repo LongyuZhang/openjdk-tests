@@ -1,0 +1,7 @@
+public static boolean fn_A(int a){
+  while (a > 0) {
+    if (a % 10 > 1)     return false;
+    a=a / 10;
+  }
+  return true;
+}

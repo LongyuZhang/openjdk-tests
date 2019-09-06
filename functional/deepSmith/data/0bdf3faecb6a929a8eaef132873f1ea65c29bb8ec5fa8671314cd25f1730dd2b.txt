@@ -1,0 +1,9 @@
+static public byte fn_A(boolean a,byte b,int c){
+  if (c > 7)   throw new RuntimeException("bitIndex <" + c + "> out of range.");
+  if (a) {
+    return (byte)(b | (1 << c));
+  }
+ else {
+    return (byte)(b & (~(1 << c)));
+  }
+}

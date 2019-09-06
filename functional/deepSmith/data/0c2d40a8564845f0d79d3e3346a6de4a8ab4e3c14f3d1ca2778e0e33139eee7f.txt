@@ -1,0 +1,9 @@
+static int fn_A(int a,int b,int c){
+  int d=0;
+  d+=3 + 4 + a;
+  d+=3 + 4 + b;
+  d+=3 + 4;
+  if (c > 0)   d+=3 + c;
+  d++;
+  return d;
+}

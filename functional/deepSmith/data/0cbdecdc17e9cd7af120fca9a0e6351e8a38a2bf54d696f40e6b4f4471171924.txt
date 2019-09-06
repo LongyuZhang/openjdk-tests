@@ -1,0 +1,10 @@
+public static int fn_A(int[] a){
+  int b=Integer.MIN_VALUE;
+  for (int c=0; c < a.length; c++) {
+    int d=a[c];
+    if (d > b) {
+      b=d;
+    }
+  }
+  return b;
+}

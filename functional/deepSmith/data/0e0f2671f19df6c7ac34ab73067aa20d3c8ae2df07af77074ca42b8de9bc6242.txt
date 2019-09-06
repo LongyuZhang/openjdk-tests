@@ -1,0 +1,9 @@
+static long fn_A(long a,long b,long c){
+  if (a > c) {
+    return Long.MAX_VALUE;
+  }
+  if (a < -c) {
+    return Long.MIN_VALUE;
+  }
+  return a * b;
+}

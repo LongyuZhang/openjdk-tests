@@ -1,0 +1,6 @@
+public static double fn_A(double a){
+  final double b=a % 360d;
+  if (b < -180d)   return 360d + b;
+  if (b > 180d)   return b - 360d;
+  return b;
+}

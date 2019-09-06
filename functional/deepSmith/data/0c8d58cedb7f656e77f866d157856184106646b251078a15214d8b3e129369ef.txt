@@ -1,0 +1,5 @@
+private static int fn_A(final int a,final int b,final int c){
+  final int d=a >>> c;
+  final int e=(1 << b) - 1;
+  return d & e;
+}

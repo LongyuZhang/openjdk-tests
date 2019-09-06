@@ -1,0 +1,9 @@
+public static void main(String[] a){
+  Object b=null;
+synchronized (b) {
+  }
+  b=b;
+  b=null;
+  b=b;
+  b=null;
+}

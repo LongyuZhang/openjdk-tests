@@ -1,0 +1,11 @@
+static void fn_A(){
+  long a=Runtime.getRuntime().freeMemory();
+  while (true) {
+    System.gc();
+    final long b=Runtime.getRuntime().freeMemory();
+    if (a == b) {
+      break;
+    }
+    a=b;
+  }
+}

@@ -1,0 +1,9 @@
+private static int fn_A(Object a){
+  if (a instanceof String) {
+    return Integer.parseInt((String)a);
+  }
+ else   if (a instanceof Integer) {
+    return (Integer)a;
+  }
+  throw new IllegalArgumentException("Could not parse " + a + " as an int");
+}

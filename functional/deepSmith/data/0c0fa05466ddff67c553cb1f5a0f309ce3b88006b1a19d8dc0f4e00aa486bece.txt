@@ -1,0 +1,5 @@
+public static double fn_A(int a,int b,int c,int d){
+  int e=c - a;
+  int f=d - b;
+  return Math.sqrt(e * e + f * f);
+}

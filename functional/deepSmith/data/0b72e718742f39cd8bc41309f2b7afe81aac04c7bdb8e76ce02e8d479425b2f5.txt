@@ -1,0 +1,11 @@
+public static double[] fn_A(double a[],double[] b){
+  int c=a.length + b.length;
+  double[] d=new double[c];
+  for (int e=0; e < a.length; e++) {
+    d[e]=a[e];
+  }
+  for (int e=b.length; e < c; e++) {
+    d[e]=b[e - b.length];
+  }
+  return d;
+}

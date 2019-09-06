@@ -1,0 +1,6 @@
+public static void fn_A(int a[],int b,int c){
+  if (a[0] < 0)   a[0]=0;
+  if (a[1] < 0)   a[1]=0;
+  if (a[2] > b)   a[2]=b;
+  if (a[3] > c)   a[3]=c;
+}

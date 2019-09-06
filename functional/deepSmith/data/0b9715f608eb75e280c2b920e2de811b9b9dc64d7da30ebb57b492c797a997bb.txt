@@ -1,0 +1,25 @@
+public static String fn_A(int a){
+  String b=null;
+  if (a == Calendar.MONDAY) {
+    b="mon";
+  }
+ else   if (a == Calendar.TUESDAY) {
+    b="tue";
+  }
+ else   if (a == Calendar.WEDNESDAY) {
+    b="wed";
+  }
+ else   if (a == Calendar.THURSDAY) {
+    b="thu";
+  }
+ else   if (a == Calendar.FRIDAY) {
+    b="fri";
+  }
+ else   if (a == Calendar.SATURDAY) {
+    b="sat";
+  }
+ else   if (a == Calendar.SUNDAY) {
+    b="sun";
+  }
+  return b;
+}

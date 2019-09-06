@@ -1,0 +1,173 @@
+private static String fn_A(int a){
+  String b=null;
+switch (a) {
+case 100:
+    b="Continue";
+  break;
+case 101:
+b="Switching Protocols";
+break;
+case 102:
+b="Processing";
+break;
+case 200:
+b="OK";
+break;
+case 201:
+b="Created";
+break;
+case 202:
+b="Accepted";
+break;
+case 203:
+b="Non-Authoritative Information";
+break;
+case 204:
+b="No Content";
+break;
+case 205:
+b="Reset Content";
+break;
+case 206:
+b="Partial Content";
+break;
+case 207:
+b="Multi-Status";
+break;
+case 300:
+b="Multiple Choices";
+break;
+case 301:
+b="Moved Permanently";
+break;
+case 302:
+b="Found";
+break;
+case 303:
+b="See Other";
+break;
+case 304:
+b="Not Modified";
+break;
+case 305:
+b="Use Proxy";
+break;
+case 306:
+b="Switch Proxy";
+break;
+case 307:
+b="Temporary Redirect";
+break;
+case 400:
+b="Bad Request";
+break;
+case 401:
+b="Unauthorized";
+break;
+case 402:
+b="Payment Required";
+break;
+case 403:
+b="Forbidden";
+break;
+case 404:
+b="Not Found";
+break;
+case 405:
+b="Method Not Allowed";
+break;
+case 406:
+b="Not Acceptable";
+break;
+case 407:
+b="Proxy Authentication Required";
+break;
+case 408:
+b="Request Timeout";
+break;
+case 409:
+b="Conflict";
+break;
+case 410:
+b="Gone";
+break;
+case 411:
+b="Length Required";
+break;
+case 412:
+b="Precondition Failed";
+break;
+case 413:
+b="Request Entity Too Large";
+break;
+case 414:
+b="Request URI Too Long";
+break;
+case 415:
+b="Unsupported Media Type";
+break;
+case 416:
+b="Requested Range Not Satisfiable";
+break;
+case 417:
+b="Expectation Failed";
+break;
+case 418:
+b="I'm a teapot";
+break;
+case 422:
+b="Unprocessable Entity";
+break;
+case 423:
+b="Locked";
+break;
+case 424:
+b="Failed Dependency";
+break;
+case 425:
+b="Unordered Collection";
+break;
+case 426:
+b="Upgrade Required";
+break;
+case 449:
+b="Retry With";
+break;
+case 450:
+b="Blocked by Windows Parental Controls";
+break;
+case 500:
+b="Internal Server Error";
+break;
+case 501:
+b="Not Implemented";
+break;
+case 502:
+b="Bad Gateway";
+break;
+case 503:
+b="Service Unavailable";
+break;
+case 504:
+b="Gateway Timeout";
+break;
+case 505:
+b="Version Not Supported";
+break;
+case 506:
+b="Variant Also Negotiates";
+break;
+case 507:
+b="Insufficient Storage";
+break;
+case 509:
+b="Bandwidth Limit Exceeded";
+break;
+case 510:
+b="Not Extended";
+break;
+default :
+b="UNKNOWN";
+}
+return b;
+}

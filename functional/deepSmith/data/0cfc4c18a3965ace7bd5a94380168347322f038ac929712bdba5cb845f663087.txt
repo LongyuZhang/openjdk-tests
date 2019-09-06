@@ -1,0 +1,10 @@
+public static double[][] fn_A(double[] a,boolean b){
+  double[][] c;
+  if (b)   c=new double[1][a.length];
+ else   c=new double[a.length][1];
+  for (int d=0; d < a.length; d++) {
+    if (b)     c[0][d]=a[d];
+ else     c[d][0]=a[d];
+  }
+  return c;
+}

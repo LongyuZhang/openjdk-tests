@@ -1,0 +1,4 @@
+public static double fn_A(double a){
+  a-=(1.0);
+  return (double)java.lang.Math.sqrt(1 - a * a);
+}

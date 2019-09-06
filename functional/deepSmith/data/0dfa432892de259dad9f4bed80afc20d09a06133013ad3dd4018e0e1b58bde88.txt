@@ -1,0 +1,10 @@
+private static char fn_A(int a){
+  int[] b=new int[]{90,180,270,425};
+  char[] c=new char[]{'t','r','s','m'};
+  for (int d=0; d < b.length; d++) {
+    if (b[d] >= a) {
+      return c[d];
+    }
+  }
+  return c[c.length - 1];
+}

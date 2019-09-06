@@ -1,0 +1,13 @@
+public final static double[][] fn_A(double a[][],int b,int c){
+  double[][] d=new double[b][c];
+  int e=b;
+  int f=c;
+  if (b > a.length)   e=a.length;
+  if (c > a[0].length)   f=a[0].length;
+  for (int g=0; g < e; g++) {
+    for (int h=0; h < f; h++) {
+      d[g][h]=a[g][h];
+    }
+  }
+  return d;
+}

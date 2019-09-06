@@ -1,0 +1,15 @@
+public static float fn_A(float a){
+  if (a < 1 / 2.75) {
+    return 7.5625f * a * a;
+  }
+ else   if (a < 2 / 2.75) {
+    a-=1.5f / 2.75f;
+    return 7.5625f * a * a + 0.75f;
+  }
+ else   if (a < 2.5 / 2.75) {
+    a-=2.25f / 2.75f;
+    return 7.5625f * a * a + 0.9375f;
+  }
+  a-=2.625f / 2.75f;
+  return 7.5625f * a * a + 0.984375f;
+}

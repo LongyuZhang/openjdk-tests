@@ -1,0 +1,9 @@
+private static void fn_A(int a,int b){
+  if (a <= 0 && b <= 0) {
+    throw new IllegalArgumentException("Destination image dimensions must not be less than " + "0 pixels.");
+  }
+ else   if (a <= 0 || b <= 0) {
+    String c=a == 0 ? "width" : "height";
+    throw new IllegalArgumentException("Destination image " + c + " must not be "+ "less than or equal to 0 pixels.");
+  }
+}

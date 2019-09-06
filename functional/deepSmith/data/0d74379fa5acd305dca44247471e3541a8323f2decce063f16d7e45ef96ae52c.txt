@@ -1,0 +1,9 @@
+public static double fn_A(int[] a,int[] b){
+  final int c=a[0];
+  final int d=b[0];
+  final int e=(c + d) >> 1;
+  final int f=c - d;
+  final int g=a[1] - b[1];
+  final int h=a[2] - b[2];
+  return (((512 + e) * f * f) >> 8) + 4 * g * g + (((767 - e) * h * h) >> 8);
+}

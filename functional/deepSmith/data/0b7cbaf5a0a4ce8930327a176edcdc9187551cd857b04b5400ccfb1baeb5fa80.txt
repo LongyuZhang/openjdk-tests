@@ -1,0 +1,21 @@
+private static int fn_A(long[] a,int b,int c,long d){
+  int e=b + c, f=b - 1, g;
+  while (e - f > 1) {
+    g=(e + f) / 2;
+    if (a[g] < d) {
+      f=g;
+    }
+ else {
+      e=g;
+    }
+  }
+  if (e == b + c) {
+    return ~(b + c);
+  }
+ else   if (a[e] == d) {
+    return e;
+  }
+ else {
+    return ~e;
+  }
+}

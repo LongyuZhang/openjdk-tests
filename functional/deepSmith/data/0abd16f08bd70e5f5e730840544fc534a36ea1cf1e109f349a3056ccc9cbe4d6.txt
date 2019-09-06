@@ -1,0 +1,11 @@
+public static long[][] fn_A(int[][] a){
+  int b=a.length;
+  int c=a[0].length;
+  long[][] d=new long[b][c];
+  for (int e=0; e < b; e++) {
+    for (int f=0; f < c; f++) {
+      d[e][f]=(long)a[e][f];
+    }
+  }
+  return d;
+}

@@ -1,0 +1,6 @@
+private static File fn_A(String a) throws IOException {
+  File b=new File(a);
+  try (FileWriter c=new FileWriter(b)){
+  }
+   return b;
+}

@@ -1,0 +1,7 @@
+public static int[] fn_A(int[] a,int b){
+  a=new int[b];
+  for (int c=0; c < b; ++c) {
+    a[c]=0;
+  }
+  return a;
+}

@@ -1,0 +1,45 @@
+static long fn_A(Long[] a,Long[] b){
+  int c=a.length;
+  if (c < 2) {
+    return 0;
+  }
+  if (c == 2) {
+    return a[0].longValue() == b[0].longValue() ? 0 : 1;
+  }
+  long[] d=new long[c];
+  long[] e=new long[c];
+  for (int f=0; f < c; f++) {
+    d[f]=a[f];
+    e[f]=b[f];
+  }
+  int g=0;
+  long h=0;
+  while (g < c - 1) {
+    while (c > 0 && d[c - 1] == e[c - 1]) {
+      c--;
+    }
+    if (c == 0) {
+      break;
+    }
+    if (d[g] == e[g]) {
+      g++;
+    }
+ else {
+      for (int i=g; i < c - 1; i++) {
+        int j=1;
+        if (d[i] == e[i]) {
+          while (i + j < c && d[i + j] == e[i + j]) {
+            j++;
+          }
+        }
+        if (i + j < c && !(d[i] == e[i] && d[i + j] == e[i + j])) {
+          long k=e[i];
+          e[i]=e[i + 1];
+          e[i + 1]=k;
+          h++;
+        }
+      }
+    }
+  }
+  return h;
+}

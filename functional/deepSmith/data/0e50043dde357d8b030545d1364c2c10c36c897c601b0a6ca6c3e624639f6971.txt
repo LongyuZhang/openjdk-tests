@@ -1,0 +1,5 @@
+static double fn_A(final double a,final double b,final double c,final double d){
+  final double e=c - a;
+  final double f=d - b;
+  return Math.sqrt(e * e + f * f);
+}

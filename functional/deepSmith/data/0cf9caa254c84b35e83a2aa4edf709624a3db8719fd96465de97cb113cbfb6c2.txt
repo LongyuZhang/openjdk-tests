@@ -1,0 +1,10 @@
+public static String fn_A(long a){
+  long b=a / 1000;
+  long c=b / 60;
+  b=b % 60;
+  a=a % 1000;
+  if (c > 0) {
+    return c + " minutes " + b+ " seconds "+ a+ " ms";
+  }
+  return b + " seconds " + a+ " ms";
+}

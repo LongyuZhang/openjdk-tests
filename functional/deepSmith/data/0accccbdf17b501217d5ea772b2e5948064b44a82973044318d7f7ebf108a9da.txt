@@ -1,0 +1,12 @@
+public static char[][] fn_A(char[][] a){
+  if (a == null) {
+    return null;
+  }
+  int b=a.length;
+  int c=a[0].length;
+  char[][] d=new char[b][c];
+  for (int e=0; e < b; e++) {
+    System.arraycopy(a[e],0,d[e],0,c);
+  }
+  return d;
+}

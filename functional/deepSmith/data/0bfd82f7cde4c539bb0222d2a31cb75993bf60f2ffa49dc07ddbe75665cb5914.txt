@@ -1,0 +1,11 @@
+private static int fn_A(int a){
+  if (a < Thread.MIN_PRIORITY) {
+    return Thread.MIN_PRIORITY;
+  }
+ else   if (a > Thread.MAX_PRIORITY) {
+    return Thread.MAX_PRIORITY;
+  }
+ else {
+    return a;
+  }
+}

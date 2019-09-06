@@ -1,0 +1,14 @@
+public static int[] fn_A(byte[] a){
+  int b=a.length >>> 2;
+  int[] c=new int[b];
+  for (int d=0; d < b; d++) {
+    int e=d << 2;
+    int f=0;
+    f+=(a[e++] & 0xff) << 0;
+    f+=(a[e++] & 0xff) << 8;
+    f+=(a[e++] & 0xff) << 16;
+    f+=(a[e++] & 0xff) << 24;
+    c[d]=f;
+  }
+  return c;
+}

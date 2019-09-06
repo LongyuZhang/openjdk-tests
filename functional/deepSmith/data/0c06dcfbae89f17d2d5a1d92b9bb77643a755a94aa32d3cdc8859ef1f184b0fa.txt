@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b){
+  int c=(a * 2000) / b - 1000;
+  return (c > 1000) ? 1000 : (c < -1000) ? -1000 : c;
+}

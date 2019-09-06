@@ -1,0 +1,13 @@
+public static int[] fn_A(byte[] a,int b,int c){
+  if (c % 4 != 0)   throw new IllegalArgumentException();
+  int[] d=new int[c / 4];
+  for (int e=0; e < d.length; e++) {
+    int f=0;
+    for (int g=3; g >= 0; g--) {
+      int h=(a[g + b + e * 4] & 0xff);
+      f=(f << 8) | h;
+    }
+    d[e]=f;
+  }
+  return d;
+}

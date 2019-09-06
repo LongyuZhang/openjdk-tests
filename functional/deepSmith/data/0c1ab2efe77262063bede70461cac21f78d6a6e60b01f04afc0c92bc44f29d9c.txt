@@ -1,0 +1,9 @@
+public static long fn_A(long a){
+  a|=(a >> 1L);
+  a|=(a >> 2L);
+  a|=(a >> 4L);
+  a|=(a >> 8L);
+  a|=(a >> 16L);
+  a|=(a >> 32L);
+  return a - (a >>> 1L);
+}

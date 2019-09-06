@@ -1,0 +1,7 @@
+static int fn_A(int a,int b,int c){
+  long d=1;
+  for (int e=0; e < b; e++) {
+    d=d * (a - e) / (e + 1);
+  }
+  return (int)(d % c);
+}

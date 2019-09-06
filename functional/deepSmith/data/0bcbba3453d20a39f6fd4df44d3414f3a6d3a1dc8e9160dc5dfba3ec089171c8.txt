@@ -1,0 +1,7 @@
+public static Path[] fn_A(String... a){
+  final Path[] b=new Path[a.length];
+  for (int c=0; c < b.length; c++) {
+    b[c]=Paths.get(a[c]);
+  }
+  return b;
+}

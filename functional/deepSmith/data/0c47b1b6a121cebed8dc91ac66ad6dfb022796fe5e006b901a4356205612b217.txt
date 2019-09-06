@@ -1,0 +1,21 @@
+public static boolean fn_A(int a){
+switch (a) {
+case -1:
+case '{':
+case '}':
+case '[':
+case ']':
+case '(':
+case ')':
+case ',':
+case '\"':
+case '\'':
+case ' ':
+case '\t':
+case '\n':
+case '\r':
+    return true;
+default :
+  return false;
+}
+}

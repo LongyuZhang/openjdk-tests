@@ -1,0 +1,18 @@
+public static void main(String[] a){
+  int b[]={5,12,14,6,78,19,1,23,26,35,37,7,52,86,47};
+  int c=0, d=0, e, f;
+  f=b.length;
+  for (c=0; c < f - 1; c++) {
+    for (d=0; d < f - c - 1; d++) {
+      if (b[d] > b[d + 1]) {
+        e=b[d];
+        b[d]=b[d + 1];
+        b[d + 1]=e;
+      }
+    }
+  }
+  System.out.println("sorted array is: ");
+  for (c=0; c < f; c++) {
+    System.out.println(b[c]);
+  }
+}

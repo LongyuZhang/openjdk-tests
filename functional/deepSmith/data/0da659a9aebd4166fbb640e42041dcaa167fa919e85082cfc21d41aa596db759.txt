@@ -1,0 +1,4 @@
+public static double fn_A(double a,double b){
+  if (a == 0)   return 1.0;
+  return Math.abs((a - b) / a);
+}

@@ -1,0 +1,5 @@
+static File fn_A(){
+  String a=System.getProperty("user.dir");
+  File b=new File(a);
+  return b;
+}

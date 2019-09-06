@@ -1,0 +1,12 @@
+public static int[] fn_A(int[] a){
+  int b=a.length;
+  int[] c=new int[b];
+  for (int d=0; d < b; d++) {
+    int e=d - 1;
+    while (e != -1 && a[e] >= a[d]) {
+      e=c[e];
+    }
+    c[d]=e;
+  }
+  return c;
+}

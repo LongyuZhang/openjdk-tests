@@ -1,0 +1,5 @@
+public static void fn_A(String a,String b,int c){
+  if (a.startsWith("hello") && a.indexOf('e') > -1) {
+    System.out.println("aa");
+  }
+}

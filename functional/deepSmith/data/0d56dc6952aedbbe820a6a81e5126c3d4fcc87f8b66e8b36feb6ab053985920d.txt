@@ -1,0 +1,5 @@
+public static int fn_A(int[] a,int b,int c){
+  int d=(int)0;
+  for (int e=b; e < c; e++)   d+=a[e];
+  return d;
+}

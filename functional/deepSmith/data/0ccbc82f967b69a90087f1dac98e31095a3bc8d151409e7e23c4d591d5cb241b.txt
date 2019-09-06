@@ -1,0 +1,8 @@
+private static byte[] fn_A(byte[] a){
+  int b=a.length;
+  byte[] c=new byte[b];
+  for (int d=0; d < a.length; d++) {
+    c[--b]=a[d];
+  }
+  return c;
+}

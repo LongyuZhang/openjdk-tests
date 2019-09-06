@@ -1,0 +1,16 @@
+public static void fn_A(){
+  int a=1;
+  while (true) {
+    int b, c, d;
+    for (int e=0; e < a; e++) {
+      b=((a * a) - (e * e));
+      c=2 * a * e;
+      d=((a * a) + (e * e));
+      if ((b + c + d) == 1000) {
+        System.out.println((b * c * d));
+        return;
+      }
+    }
+    a++;
+  }
+}

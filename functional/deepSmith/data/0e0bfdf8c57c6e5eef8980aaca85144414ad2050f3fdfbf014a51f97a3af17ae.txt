@@ -1,0 +1,6 @@
+private static int fn_A(int a,long b,long c){
+  double d=1.0 * b / c;
+  double e=d < 1 ? 0.9 + Math.pow(d - 0.7,2) : 0.45 + Math.pow(d - 0.25,2);
+  a*=e;
+  return a;
+}

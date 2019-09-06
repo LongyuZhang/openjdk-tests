@@ -1,0 +1,9 @@
+private static boolean fn_A(long a,long b,long c,long d){
+  if (b <= c) {
+    return false;
+  }
+  if (a >= d) {
+    return false;
+  }
+  return true;
+}

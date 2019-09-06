@@ -1,0 +1,6 @@
+public static float fn_A(float[] a,float b){
+  if (a.length == 0)   return 0;
+  float c=0;
+  for (int d=a.length; d-- > 0; )   c+=(a[d] * a[d]);
+  return (c / (float)a.length) - (b * b);
+}

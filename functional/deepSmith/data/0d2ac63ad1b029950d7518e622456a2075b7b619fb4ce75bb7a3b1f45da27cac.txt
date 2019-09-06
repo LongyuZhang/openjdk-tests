@@ -1,0 +1,50 @@
+private static int[][] fn_A(int[][] a){
+  int b=a.length;
+  int c=a[0].length;
+  int d=0;
+  a:   for (int e=0; e < c; e++) {
+    for (int f=0; f < b; f++) {
+      if (a[f][e] != 0) {
+        break a;
+      }
+    }
+    d++;
+  }
+  int g=0;
+  b:   for (int e=c - 1; e >= 0; e--) {
+    for (int f=0; f < b; f++) {
+      if (a[f][e] != 0) {
+        break b;
+      }
+    }
+    g++;
+  }
+  int h=0;
+  c:   for (int f=0; f < b; f++) {
+    for (int e=0; e < c; e++) {
+      if (a[f][e] != 0) {
+        break c;
+      }
+    }
+    h++;
+  }
+  int i=0;
+  d:   for (int f=b - 1; f >= 0; f--) {
+    for (int e=0; e < c; e++) {
+      if (a[f][e] != 0) {
+        break d;
+      }
+    }
+    i++;
+  }
+  if (g + d >= c || h + i >= b) {
+    return new int[0][0];
+  }
+  int[][] j=new int[b - h - i][c - d - g];
+  for (int e=d; e < c - g; e++) {
+    for (int f=h; f < b - i; f++) {
+      j[f - h][e - d]=a[f][e];
+    }
+  }
+  return j;
+}

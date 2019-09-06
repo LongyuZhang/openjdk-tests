@@ -1,0 +1,9 @@
+public static void main(String a[]){
+  int b=2008;
+  if ((b % 400 == 0) || (b % 4 == 0 && b % 100 != 0)) {
+    System.out.println(b + " is a leap year");
+  }
+ else {
+    System.out.println(b + " is NOT leap year");
+  }
+}

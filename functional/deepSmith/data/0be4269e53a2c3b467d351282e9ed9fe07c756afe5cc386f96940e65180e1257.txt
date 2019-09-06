@@ -1,0 +1,16 @@
+public static int[][] fn_A(int[][] a,int b){
+  if (b == 0) {
+    return a;
+  }
+  int c=a.length;
+  int d=a[0].length;
+  for (; b < 0; b+=d) {
+  }
+  int[][] e=new int[c][d];
+  for (int f=0; f < c; f++) {
+    for (int g=0; g < d; g++) {
+      e[f][(g + b) % d]=a[f][g];
+    }
+  }
+  return e;
+}

@@ -1,0 +1,7 @@
+public static void fn_A(byte[] a,int b,long c){
+  int d=b;
+  a[d++]=(byte)((c >>> 0) & 0xFF);
+  a[d++]=(byte)((c >>> 8) & 0xFF);
+  a[d++]=(byte)((c >>> 16) & 0xFF);
+  a[d++]=(byte)((c >>> 24) & 0xFF);
+}

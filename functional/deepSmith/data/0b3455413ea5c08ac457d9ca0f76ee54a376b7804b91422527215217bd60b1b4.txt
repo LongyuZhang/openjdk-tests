@@ -1,0 +1,8 @@
+private static boolean fn_A(byte[] a){
+  for (int b=a.length - 1; b > a.length - 6; b--) {
+    if (a[b] == 'Z' || a[b] == '-' || a[b] == '+') {
+      return false;
+    }
+  }
+  return true;
+}

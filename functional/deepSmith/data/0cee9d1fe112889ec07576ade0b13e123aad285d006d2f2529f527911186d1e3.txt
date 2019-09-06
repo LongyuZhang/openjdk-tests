@@ -1,0 +1,12 @@
+public static int[] fn_A(double a,double b){
+  int[] c=new int[2];
+  if (a > b) {
+    c[0]=(int)a;
+    c[1]=(int)b;
+  }
+ else {
+    c[0]=(int)b;
+    c[1]=(int)a;
+  }
+  return c;
+}

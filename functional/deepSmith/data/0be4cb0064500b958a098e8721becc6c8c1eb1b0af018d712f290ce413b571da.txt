@@ -1,0 +1,8 @@
+public static boolean fn_A(double[] a,double[] b,double[] c){
+  double d=0.0;
+  for (int e=0; e < a.length; e++) {
+    double f=(a[e] - b[e]) / c[e];
+    d+=f * f;
+  }
+  return d < 1.0;
+}

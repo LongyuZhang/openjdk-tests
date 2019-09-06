@@ -1,0 +1,6 @@
+public static float fn_A(int a,int b,int c,int d){
+  float e=0;
+  int f=a + b + c+ d;
+  if (f > 0)   e=(a * 300 + b * 100 + c * 50) / (f * 300f) * 100f;
+  return e;
+}

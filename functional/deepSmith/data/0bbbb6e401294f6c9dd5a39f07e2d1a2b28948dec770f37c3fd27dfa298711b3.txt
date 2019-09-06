@@ -1,0 +1,26 @@
+static void fn_A(final double[] a,final double[] b,final double[] c){
+  double d=a[0];
+  double e=a[1];
+  double f=a[2];
+  double g=a[3];
+  double h=a[4];
+  double i=a[5];
+  b[0]=d;
+  b[1]=e;
+  c[4]=h;
+  c[5]=i;
+  d=(d + f) / 2.0d;
+  e=(e + g) / 2.0d;
+  h=(h + f) / 2.0d;
+  i=(i + g) / 2.0d;
+  f=(d + h) / 2.0d;
+  g=(e + i) / 2.0d;
+  b[2]=d;
+  b[3]=e;
+  b[4]=f;
+  b[5]=g;
+  c[0]=f;
+  c[1]=g;
+  c[2]=h;
+  c[3]=i;
+}

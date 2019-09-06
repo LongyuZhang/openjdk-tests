@@ -1,0 +1,4 @@
+public static ClassLoader fn_A(){
+  ClassLoader a=Thread.currentThread().getContextClassLoader();
+  return a;
+}

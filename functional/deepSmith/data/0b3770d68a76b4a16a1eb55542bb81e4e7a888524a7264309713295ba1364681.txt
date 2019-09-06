@@ -1,0 +1,8 @@
+public static boolean fn_A(int[] a){
+  for (int b=1; b < a.length; b++) {
+    if (a[b] < a[b - 1]) {
+      return false;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,11 @@
+public static Integer fn_A(String a){
+  if (a == null) {
+    return null;
+  }
+  try {
+    return new Integer(a);
+  }
+ catch (  NumberFormatException b) {
+    return null;
+  }
+}

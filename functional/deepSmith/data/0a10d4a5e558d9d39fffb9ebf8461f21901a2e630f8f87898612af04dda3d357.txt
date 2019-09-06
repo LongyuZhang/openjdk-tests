@@ -1,0 +1,44 @@
+public static String fn_A(long a){
+  if (a > 0 && a <= 2000) {
+    return "early morning";
+  }
+  if (a > 2000 && a <= 3500) {
+    return "mid morning";
+  }
+  if (a > 3500 && a <= 5500) {
+    return "late morning";
+  }
+  if (a > 5500 && a <= 6500) {
+    return "around noon";
+  }
+  if (a > 6500 && a <= 8000) {
+    return "afternoon";
+  }
+  if (a > 8000 && a <= 10000) {
+    return "mid afternoon";
+  }
+  if (a > 10000 && a <= 12000) {
+    return "late afternoon";
+  }
+  if (a > 12000 && a <= 14000) {
+    return "twilight";
+  }
+  if (a > 14000 && a <= 16000) {
+    return "evening";
+  }
+  if (a > 16000 && a <= 17500) {
+    return "late evening";
+  }
+  if (a > 17500 && a <= 18500) {
+    return "around midnight";
+  }
+  if (a > 18500 && a <= 20000) {
+    return "the small hours";
+  }
+  if (a > 20000 && a <= 22000) {
+    return "the wee hours";
+  }
+ else {
+    return "pre-dawn";
+  }
+}

@@ -1,0 +1,12 @@
+public static double[][] fn_A(double[][] a,double[][] b){
+  if (a.length != b.length || a[0].length != b[0].length) {
+    throw new IllegalArgumentException("a and b has to be of equal dimensions");
+  }
+  double[][] c=new double[a.length][a[0].length];
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[0].length; e++) {
+      c[d][e]=a[d][e] * b[d][e];
+    }
+  }
+  return c;
+}

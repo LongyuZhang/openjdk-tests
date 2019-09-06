@@ -1,0 +1,8 @@
+public static int fn_A(Object[] a){
+  if (a == null) {
+    return 0;
+  }
+ else {
+    return a.length;
+  }
+}

@@ -1,0 +1,12 @@
+public static void fn_A(){
+  int a=0;
+  for (int b=1; b <= 100; b++) {
+    a+=((b) * (b));
+  }
+  int c=0;
+  for (int d=1; d <= 100; d++) {
+    c+=d;
+  }
+  c*=c;
+  System.out.println(c - a);
+}

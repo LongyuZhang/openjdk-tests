@@ -1,0 +1,8 @@
+public static long fn_A(int a,long[] b,int c,long d,long[] e,int f){
+  for (int g=0; g < a; ++g) {
+    long h=b[c + g];
+    e[f + g]=(h << 1) | (d >>> 63);
+    d=h;
+  }
+  return d >>> 63;
+}

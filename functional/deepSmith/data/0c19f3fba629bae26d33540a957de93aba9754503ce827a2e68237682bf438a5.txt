@@ -1,0 +1,19 @@
+private static String fn_A(int a,int b){
+  if (b == 2) {
+    if (a < 10) {
+      return "0" + a;
+    }
+  }
+ else   if (b == 4) {
+    if (a < 10) {
+      return "000" + a;
+    }
+ else     if (a < 100 && a > 10) {
+      return "00" + a;
+    }
+ else     if (a < 1000 && a > 100) {
+      return "0" + a;
+    }
+  }
+  return "" + a;
+}

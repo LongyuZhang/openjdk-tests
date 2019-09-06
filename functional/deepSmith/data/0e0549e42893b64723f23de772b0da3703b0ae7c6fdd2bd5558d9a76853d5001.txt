@@ -1,0 +1,27 @@
+public static boolean fn_A(final Object[] a,final Object[] b){
+  if (a == null) {
+    return (b == null);
+  }
+  if (b == null) {
+    return false;
+  }
+  if (a.length != b.length) {
+    return false;
+  }
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == null) {
+      if (b[c] != null) {
+        return false;
+      }
+    }
+    if (b[c] == null) {
+      if (a[c] != null) {
+        return false;
+      }
+    }
+    if (a[c] != b[c]) {
+      return false;
+    }
+  }
+  return true;
+}

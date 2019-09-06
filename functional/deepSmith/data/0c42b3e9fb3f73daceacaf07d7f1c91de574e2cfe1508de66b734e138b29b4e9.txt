@@ -1,0 +1,6 @@
+static String fn_A(String a,String b){
+  if (a == null) {
+    throw new RuntimeException("Full service name cannot be null");
+  }
+  return a + "/" + b;
+}

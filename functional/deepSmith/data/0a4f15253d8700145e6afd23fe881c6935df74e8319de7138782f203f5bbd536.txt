@@ -1,0 +1,5 @@
+public static String fn_A(int a){
+  double b=a / 1000.0;
+  String c="" + b;
+  return c;
+}

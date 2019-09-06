@@ -1,0 +1,6 @@
+public static Object fn_A(final Object[] a,final int b){
+  if (a == null || b >= a.length) {
+    return null;
+  }
+  return a[b];
+}

@@ -1,0 +1,6 @@
+public static int fn_A(int a,int b){
+  long c=a & 0xFFFFFFFFL;
+  long d=b & 0xFFFFFFFFL;
+  long e=c * d;
+  return (int)(e >> 32);
+}

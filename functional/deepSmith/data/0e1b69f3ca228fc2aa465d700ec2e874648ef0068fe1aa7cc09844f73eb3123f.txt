@@ -1,0 +1,10 @@
+private static int fn_A(int[] a,int b,int c,int d){
+  while (b < c) {
+    int e=(b + c) >>> 1;
+    int f=a[e];
+    if (f < d)     b=e + 1;
+ else     if (f > d)     c=e - 1;
+ else     return e;
+  }
+  return b;
+}

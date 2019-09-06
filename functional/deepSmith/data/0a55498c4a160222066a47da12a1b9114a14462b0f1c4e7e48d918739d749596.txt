@@ -1,0 +1,12 @@
+public static String fn_A(int a){
+switch (a) {
+case 1:
+    return "PV name or trigger value does not match";
+case 2:
+  return "Expressions do not match";
+case 3:
+return "Property ID does not match";
+default :
+return null;
+}
+}

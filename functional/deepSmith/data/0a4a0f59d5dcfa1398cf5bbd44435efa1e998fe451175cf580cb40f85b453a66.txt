@@ -1,0 +1,13 @@
+private static void fn_A(){
+  System.err.println("\nGenerates a single API file from the content of an SDK.");
+  System.err.println("Usage:");
+  System.err.println("\tApiCheck [--min-api=1] OutFile [SdkFolder | --pattern sdk/%/android.jar]+");
+  System.err.println("Options:");
+  System.err.println("--min-api <int> : The first API level to consider (>=1).");
+  System.err.println("--pattern <pattern>: Path pattern to find per-API android.jar files, where\n" + "            '%' is replaced by the API level.");
+  System.err.println("--current-jar <path>: Path pattern to find the current android.jar");
+  System.err.println("--current-version <int>: The API level for the current API");
+  System.err.println("--current-codename <name>: REL, if a release, or codename for previews");
+  System.err.println("SdkFolder: if given, this adds the pattern\n" + "           '$SdkFolder/platforms/android-%/android.jar'");
+  System.err.println("If multiple --pattern are specified, they are tried in the order given.\n");
+}

@@ -1,0 +1,4 @@
+public final static void fn_A(final long a,final byte[] b){
+  b[0]=(byte)(a >> 8);
+  b[1]=(byte)(a);
+}

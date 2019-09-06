@@ -1,0 +1,5 @@
+public static double fn_A(double a,double b,double c){
+  if (a < b)   return (0.0);
+  if (a > c)   return (1.0);
+  return ((a - b) / (c - b));
+}

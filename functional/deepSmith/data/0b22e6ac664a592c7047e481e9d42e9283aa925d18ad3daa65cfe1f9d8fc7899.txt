@@ -1,0 +1,9 @@
+public static double[] fn_A(double[][][] a){
+  if (a.length == 0 || a[0].length == 0 || a[0][0].length == 0)   return new double[0];
+  double[] b=new double[a.length * a[0].length * a[0][0].length];
+  int c=0;
+  for (int d=0; d < a.length; d++)   for (int e=0; e < a[0].length; e++)   for (int f=0; f < a[0][0].length; f++) {
+    b[c++]=a[d][e][f];
+  }
+  return b;
+}

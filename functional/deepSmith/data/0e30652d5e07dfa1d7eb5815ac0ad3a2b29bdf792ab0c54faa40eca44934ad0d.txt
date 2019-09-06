@@ -1,0 +1,7 @@
+public static int fn_A(int a,int b){
+  int c=a - b;
+  if ((a ^ c) < 0 && (a ^ b) < 0) {
+    throw new ArithmeticException("Subtraction overflows an int: " + a + " - "+ b);
+  }
+  return c;
+}

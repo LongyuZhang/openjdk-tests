@@ -1,0 +1,22 @@
+static String fn_A(long a){
+  int b=0;
+  int c=1;
+  while (a > 1) {
+    long d=1l;
+    while (d <= a) {
+      d*=2;
+    }
+    d/=2;
+    if (d != a) {
+      a=a - d;
+    }
+ else {
+      a=a / 2;
+    }
+    b++;
+  }
+  if (b % 2 == 0) {
+    return "Richard";
+  }
+  return "Louise";
+}

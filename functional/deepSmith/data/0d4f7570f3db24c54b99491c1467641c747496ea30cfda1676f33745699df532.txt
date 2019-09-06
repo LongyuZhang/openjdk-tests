@@ -1,0 +1,8 @@
+static void fn_A(){
+  System.out.println("HeapTracker - a JPF listener tool to report and check heap utilization");
+  System.out.println("usage: java gov.nasa.jpf.tools.HeapTracker <jpf-options> <heapTracker-options> <class>");
+  System.out.println("       +heap.size_limit=<num> : report property violation if heap exceeds <num> bytes");
+  System.out.println("       +heap.live_limit=<num> : report property violation if more than <num> live objects");
+  System.out.println("       +heap.classes=<regEx> : only report instances of classes matching <regEx>");
+  System.out.println("       +heap.throw_exception=<bool>: throw a OutOfMemoryError instead of reporting property violation");
+}

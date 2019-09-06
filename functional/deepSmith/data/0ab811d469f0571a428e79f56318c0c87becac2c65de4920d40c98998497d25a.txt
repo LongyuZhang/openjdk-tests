@@ -1,0 +1,12 @@
+public static boolean fn_A(Object a){
+  if (a instanceof Boolean) {
+    return (Boolean)a;
+  }
+ else   if (a instanceof String) {
+    return Boolean.parseBoolean((String)a);
+  }
+ else   if (a instanceof Number) {
+    return ((Number)a).longValue() > 0;
+  }
+  return false;
+}

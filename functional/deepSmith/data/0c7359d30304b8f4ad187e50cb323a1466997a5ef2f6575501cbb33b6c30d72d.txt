@@ -1,0 +1,6 @@
+public static int fn_A(final int a,final int b){
+  if (a < b) {
+    throw new IllegalArgumentException("Value should be at least " + b + " but was "+ a);
+  }
+  return a;
+}

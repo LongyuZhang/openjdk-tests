@@ -1,0 +1,16 @@
+public static int fn_A(double a){
+  if (a >= 1.5 && a < 1.75) {
+    a=1.75;
+  }
+ else   if (a >= 2.5 && a < 2.85) {
+    a=2.85;
+  }
+  final int b=(int)(a * a) + 1;
+  final int c=(int)(Math.sqrt(b + 1e-10));
+  int d=2 * c + 1;
+  for (int e=1; e <= c; e++) {
+    final int f=(int)(Math.sqrt(b - e * e + 1e-10));
+    d+=4 * f + 2;
+  }
+  return d;
+}

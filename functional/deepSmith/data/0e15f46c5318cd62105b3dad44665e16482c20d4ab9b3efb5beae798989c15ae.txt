@@ -1,0 +1,9 @@
+public static double fn_A(double a,double b){
+  if (a == b) {
+    return 0.0;
+  }
+  if (a == Double.NEGATIVE_INFINITY) {
+    return a;
+  }
+  return a - b;
+}

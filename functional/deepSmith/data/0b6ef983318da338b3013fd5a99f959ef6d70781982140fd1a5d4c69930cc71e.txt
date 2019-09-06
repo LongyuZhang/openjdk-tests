@@ -1,0 +1,10 @@
+public static void fn_A(float[] a,int b,float[] c,int d,int e,float f){
+  int g=b + e;
+  while (b < g) {
+    float h=a[b];
+    float i=c[d];
+    a[b]=h + (i - h) * f;
+    ++b;
+    ++d;
+  }
+}

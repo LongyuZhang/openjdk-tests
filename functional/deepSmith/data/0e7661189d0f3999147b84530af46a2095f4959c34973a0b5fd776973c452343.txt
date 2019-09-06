@@ -1,0 +1,8 @@
+public static double[] fn_A(double[] a,double b,double[] c,double d){
+  if (a.length != c.length)   throw new RuntimeException("diff lengths: " + a.length + " "+ c.length);
+  double[] e=new double[a.length];
+  for (int f=0; f < e.length; f++) {
+    e[f]=a[f] * b + c[f] * d;
+  }
+  return e;
+}

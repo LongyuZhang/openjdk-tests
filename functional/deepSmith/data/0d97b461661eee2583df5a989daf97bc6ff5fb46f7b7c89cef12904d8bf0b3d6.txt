@@ -1,0 +1,6 @@
+public static String fn_A(int a){
+  String b="";
+  if (a >= 0)   b="" + (a + 1) + "D";
+  if (a < 0)   b="" + (-a) + "K";
+  return b;
+}

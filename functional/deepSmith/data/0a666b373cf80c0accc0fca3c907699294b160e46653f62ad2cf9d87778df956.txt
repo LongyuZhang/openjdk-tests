@@ -1,0 +1,10 @@
+private static int fn_A(int a,int b,int c,int d){
+switch (a) {
+case -1:
+    return d > c ? c : d;
+case 0:
+  return b;
+default :
+return d > a ? a : d;
+}
+}

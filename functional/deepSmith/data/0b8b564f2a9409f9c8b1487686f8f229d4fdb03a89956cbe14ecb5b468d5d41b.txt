@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  Thread.currentThread().interrupt();
+  System.out.println("Thread.interrupted()1=" + Thread.interrupted());
+  System.out.println("Thread.interrupted()2=" + Thread.interrupted());
+  System.out.println("end");
+}

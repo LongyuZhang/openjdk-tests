@@ -1,0 +1,14 @@
+private static boolean fn_A(int a,boolean[] b){
+  int c=a / 8;
+  int d=c * 8;
+  int e=(c + 1) * 8 - 1;
+  for (int f=d; f <= e; f++) {
+    if (f == a) {
+      continue;
+    }
+    if (b[f]) {
+      return false;
+    }
+  }
+  return true;
+}

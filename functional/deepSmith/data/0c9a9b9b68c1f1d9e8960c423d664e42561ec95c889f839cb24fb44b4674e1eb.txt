@@ -1,0 +1,7 @@
+public static final int fn_A(int a,int b) throws ArithmeticException {
+  if (a >= 0) {
+    if (b >= 0)     a%=b;
+  }
+ else   if (b >= 0 && (a=(((a >>> 1) % b) << 1) | a & 1) < 0 || a >= b)   a-=b;
+  return a;
+}

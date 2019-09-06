@@ -1,0 +1,5 @@
+public static int fn_A(byte a,byte b){
+  int c;
+  c=((a << 8) & 0x0000ff00) | ((b) & 0x000000ff);
+  return c;
+}

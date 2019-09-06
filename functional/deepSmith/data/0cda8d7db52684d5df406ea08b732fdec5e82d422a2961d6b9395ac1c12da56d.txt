@@ -1,0 +1,10 @@
+public static String fn_A(int[][] a){
+  String b="";
+  for (int c=0; c < 256; c++) {
+    b+=a[0][c] + " ";
+    b+=a[1][c] + " ";
+    b+=a[2][c] + " ";
+    b+=a[3][c] + "|";
+  }
+  return b;
+}

@@ -1,0 +1,12 @@
+public static long fn_A(byte[] a,int b){
+  long c=0;
+  c|=(0xFFL & a[b + 0]) << 0;
+  c|=(0xFFL & a[b + 1]) << 8;
+  c|=(0xFFL & a[b + 2]) << 16;
+  c|=(0xFFL & a[b + 3]) << 24;
+  c|=(0xFFL & a[b + 4]) << 32;
+  c|=(0xFFL & a[b + 5]) << 40;
+  c|=(0xFFL & a[b + 6]) << 48;
+  c|=(0xFFL & a[b + 7]) << 56;
+  return c;
+}

@@ -1,0 +1,55 @@
+public static long fn_A(int a){
+switch (a) {
+case 0:
+    return 0x3c0f03c0f03c0fL;
+case 1:
+  return 0x3c0f03c0f03c0eL;
+case 2:
+return 0x3c0f03c0f0380eL;
+case 3:
+return 0x3c0f03c0e0380eL;
+case 4:
+return 0x3c0f0380e0380eL;
+case 5:
+return 0x3c0e0380e0380eL;
+case 6:
+return 0x380e0380e0380eL;
+case 7:
+return 0x380e0380e0380cL;
+case 8:
+return 0x380e0380e0300cL;
+case 9:
+return 0x380e0380c0300cL;
+case 10:
+return 0x380e0300c0300cL;
+case 11:
+return 0x380c0300c0300cL;
+case 12:
+return 0x300c0300c0300cL;
+case 13:
+return 0x300c0300c03008L;
+case 14:
+return 0x300c0300c02008L;
+case 15:
+return 0x300c0300802008L;
+case 16:
+return 0x300c0200802008L;
+case 17:
+return 0x30080200802008L;
+case 18:
+return 0x20080200802008L;
+case 19:
+return 0x20080200802000L;
+case 20:
+return 0x20080200800000L;
+case 21:
+return 0x20080200000000L;
+case 22:
+return 0x20080000000000L;
+case 23:
+return 0x20000000000000L;
+case 24:
+return 0L;
+}
+throw new IllegalArgumentException("No reachable: y=" + a);
+}

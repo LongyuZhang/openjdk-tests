@@ -1,0 +1,4 @@
+public synchronized static void fn_A(){
+  System.out.println("" + Thread.currentThread().getName() + " time:"+ System.currentTimeMillis());
+  System.out.println("" + Thread.currentThread().getName() + " time:"+ System.currentTimeMillis());
+}

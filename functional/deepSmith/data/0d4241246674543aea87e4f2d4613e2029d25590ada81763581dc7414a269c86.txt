@@ -1,0 +1,9 @@
+private static int fn_A(char[] a,int b,int c){
+  if (a == null)   return 0;
+  int d=0;
+  int e=b + c;
+  for (int f=b; f < e; f++) {
+    d=31 * d + a[f];
+  }
+  return d;
+}

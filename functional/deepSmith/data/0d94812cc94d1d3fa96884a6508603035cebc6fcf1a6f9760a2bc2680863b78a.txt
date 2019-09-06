@@ -1,0 +1,18 @@
+public static double[] fn_A(double[] a,int b){
+  int c=a.length;
+  if (b <= c || c <= 1)   return a;
+  int d=b - c;
+  int e=d / (c - 1);
+  double[] f=new double[b];
+  int g=0;
+  int h=d - e * (c - 1);
+  for (int i=0; i < c - 1; ++i) {
+    double j=a[i];
+    double k=a[i + 1] - j;
+    int l=e + (i < h ? 1 : 0);
+    f[g++]=j;
+    for (int m=0; m < l; ++m)     f[g++]=j + (m + 0.5) / l * k;
+  }
+  f[g]=a[c - 1];
+  return f;
+}

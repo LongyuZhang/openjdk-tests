@@ -1,0 +1,10 @@
+public static float fn_A(double a,float b,float c,double d){
+  a/=d / 2;
+  if (a < 1) {
+    return (float)(c / 2 * a * a + b);
+  }
+ else {
+    --a;
+    return (float)(-c / 2 * ((a) * (a - 2) - 1) + b);
+  }
+}

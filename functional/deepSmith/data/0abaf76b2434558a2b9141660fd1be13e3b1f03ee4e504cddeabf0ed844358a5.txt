@@ -1,0 +1,8 @@
+public static long fn_A(long a,long... b){
+  for (int c=0; c < b.length; c++) {
+    if ((a & b[c]) != 0) {
+      a-=b[c];
+    }
+  }
+  return a;
+}

@@ -1,0 +1,10 @@
+public static void fn_A(float[][] a){
+  int b=a.length;
+  int c=a[0].length;
+  for (int d=0; d < b; d++) {
+    System.out.println("\n\nColumn: " + d);
+    for (int e=0; e < c; e++) {
+      System.out.println("Row: " + e + "\tValue: "+ a[d][e]);
+    }
+  }
+}

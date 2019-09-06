@@ -1,0 +1,10 @@
+public static String fn_A(byte[] a){
+  String b="";
+  char c;
+  int d=a.length;
+  for (int e=0; e < d; e++) {
+    c=(char)a[e];
+    b+=c;
+  }
+  return b;
+}

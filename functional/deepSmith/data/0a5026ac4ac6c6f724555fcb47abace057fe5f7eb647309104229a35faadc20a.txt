@@ -1,0 +1,16 @@
+public static int fn_A(int a,int b){
+  a+=(a << 15) ^ 0xffffcd7d;
+  a^=(a >>> 10);
+  a+=(a << 3);
+  a^=(a >>> 6);
+  a+=(a << 2) + (a << 14);
+  int c=0;
+  int d=1;
+  while (d < b) {
+    ++c;
+    d<<=1;
+  }
+  int e=32 - c;
+  int f=d - 1;
+  return (a >>> e) & f;
+}

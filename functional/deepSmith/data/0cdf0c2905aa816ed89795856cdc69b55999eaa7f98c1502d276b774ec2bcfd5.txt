@@ -1,0 +1,7 @@
+public static long fn_A(long a,long b){
+  long c=a + b;
+  if ((a | b | c) < 0) {
+    return Long.MAX_VALUE;
+  }
+  return c;
+}

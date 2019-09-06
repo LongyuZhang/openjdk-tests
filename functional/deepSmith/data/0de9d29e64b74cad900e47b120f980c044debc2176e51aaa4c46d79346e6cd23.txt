@@ -1,0 +1,20 @@
+private static double[][] fn_A(double[] a,double[] b,double[] c){
+  double d=a[0], e=a[1], f=a[2];
+  double g=b[0], h=b[1], i=b[2];
+  double j=c[0], k=c[1], l=c[2];
+  double[][] m=new double[3][3];
+  double n=d + e + f;
+  e=n - d - f;
+  d-=e;
+  f-=e;
+  m[0][0]=d * g * g + f * j * j + e;
+  m[0][1]=d * g * h + f * j * k;
+  m[0][2]=d * g * i + f * j * l;
+  m[1][0]=m[0][1];
+  m[1][1]=d * h * h + f * k * k + e;
+  m[1][2]=d * h * i + f * k * l;
+  m[2][0]=m[0][2];
+  m[2][1]=m[1][2];
+  m[2][2]=d * i * i + f * l * l + e;
+  return m;
+}

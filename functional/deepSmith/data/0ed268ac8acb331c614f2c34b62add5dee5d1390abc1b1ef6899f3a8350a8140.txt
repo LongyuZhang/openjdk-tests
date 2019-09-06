@@ -1,0 +1,4 @@
+private static String[] fn_A(String a,String b,String c,String d){
+  String[] e={"-classpath",a,"-Djava.security.manager","-Djava.security.policy=" + b,"PrivilegeTest",c,d};
+  return e;
+}

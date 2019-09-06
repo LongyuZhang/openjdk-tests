@@ -1,0 +1,10 @@
+private static int fn_A(int a,int b){
+  if (0 <= a && a < b) {
+    return a;
+  }
+  a=a % b;
+  if (a < 0) {
+    a+=b;
+  }
+  return a;
+}

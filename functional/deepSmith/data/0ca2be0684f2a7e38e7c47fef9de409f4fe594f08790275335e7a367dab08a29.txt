@@ -1,0 +1,5 @@
+private static void fn_A(byte[] a,int[] b){
+  for (int c=0, d=0; d < 16; d++) {
+    b[d]=((((int)(a[c++] & 0xff))) | (((int)(a[c++] & 0xff)) << 8) | (((int)(a[c++] & 0xff)) << 16)| (((int)(a[c++] & 0xff)) << 24));
+  }
+}

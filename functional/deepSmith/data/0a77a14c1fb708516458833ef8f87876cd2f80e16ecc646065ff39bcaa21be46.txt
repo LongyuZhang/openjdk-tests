@@ -1,0 +1,34 @@
+static void fn_A(float a,float b[],int c,float d[],int e,float f[],int g){
+  float h=b[c + 0];
+  float i=b[c + 1];
+  float j=b[c + 2];
+  float k=b[c + 3];
+  float l=b[c + 4];
+  float m=b[c + 5];
+  if (d != null) {
+    d[e + 0]=h;
+    d[e + 1]=i;
+  }
+  if (f != null) {
+    f[g + 4]=l;
+    f[g + 5]=m;
+  }
+  h=h + a * (j - h);
+  i=i + a * (k - i);
+  l=j + a * (l - j);
+  m=k + a * (m - k);
+  j=h + a * (l - h);
+  k=i + a * (m - i);
+  if (d != null) {
+    d[e + 2]=h;
+    d[e + 3]=i;
+    d[e + 4]=j;
+    d[e + 5]=k;
+  }
+  if (f != null) {
+    f[g + 0]=j;
+    f[g + 1]=k;
+    f[g + 2]=l;
+    f[g + 3]=m;
+  }
+}

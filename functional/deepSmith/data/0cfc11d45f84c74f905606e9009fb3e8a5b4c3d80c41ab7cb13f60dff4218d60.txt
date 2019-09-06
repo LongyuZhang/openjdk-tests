@@ -1,0 +1,19 @@
+public static void fn_A(){
+  System.out.println("Usage: ");
+  System.out.println("TFIDF -h         % show this help info");
+  System.out.println("      -f name    % read data file and match to SUMO");
+  System.out.println("      -inf       % find questionable values via theorem proving");
+  System.out.println("      -i         % interactive commands");
+  System.out.println("        cd name               % change corpus directory below system CORPORA dir");
+  System.out.println("        in name               % change input file name");
+  System.out.println("        mn name               % change match file name");
+  System.out.println("        read                  % read data file");
+  System.out.println("        load                  % load match file");
+  System.out.println("        save                  % save match file");
+  System.out.println("        test                  % find questionable values");
+  System.out.println("        clean                 % find and fix bad values");
+  System.out.println("        match                 % run and print match");
+  System.out.println("        map col ont           % change the mapping of colum name 'col' to relation 'ont' in SUMO");
+  System.out.println("        mval col val ont    % change the mapping of value 'val' in column 'col' to term 'ont' in SUMO");
+  System.out.println("        quit     % stop this application");
+}

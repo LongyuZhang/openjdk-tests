@@ -1,0 +1,14 @@
+private static String fn_A(long[] a) throws Exception {
+  if (a == null) {
+    return "(0,0)";
+  }
+  long b=0;
+  for (int c=0; c < a.length / 2; ++c) {
+    b+=a[c];
+  }
+  long d=0;
+  for (int c=a.length / 2; c < a.length; ++c) {
+    d+=a[c];
+  }
+  return "(" + b + ","+ d+ ")";
+}

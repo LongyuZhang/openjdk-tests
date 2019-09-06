@@ -1,0 +1,15 @@
+public static double fn_A(final double a,final double b){
+  double c;
+  if (Math.abs(a) > Math.abs(b)) {
+    c=b / a;
+    c=Math.abs(a) * Math.sqrt(1 + c * c);
+  }
+ else   if (b != 0) {
+    c=a / b;
+    c=Math.abs(b) * Math.sqrt(1 + c * c);
+  }
+ else {
+    c=0.0;
+  }
+  return c;
+}

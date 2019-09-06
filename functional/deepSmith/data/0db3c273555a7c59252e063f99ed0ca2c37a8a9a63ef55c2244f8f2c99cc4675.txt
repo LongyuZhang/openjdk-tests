@@ -1,0 +1,4 @@
+static final boolean fn_A(Object a,Object b){
+  if (a == null || b == null)   return a == b;
+ else   return a.equals(b);
+}

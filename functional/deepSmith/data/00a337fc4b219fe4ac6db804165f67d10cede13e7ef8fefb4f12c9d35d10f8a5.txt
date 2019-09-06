@@ -1,0 +1,49 @@
+private static int fn_A(int a,String b,String c) throws UnsupportedEncodingException {
+  byte[] d=(b + c).getBytes("UTF-8");
+  int[] e=new int[d.length];
+  for (int f=0; f < d.length; f++) {
+    e[f]=d[f] & 0xff;
+  }
+  int g=0, h=0, i=0;
+  g=(a & 0xFF00) >> 8;
+  if ((a & 0xFF0000) == 0) {
+    i=0xFF & ~g;
+  }
+ else {
+    i=0xFF & ((a & 0x00FF0000) >> 16);
+  }
+  i=i | ((0xFF & a) << 8);
+  i=i << 8;
+  i=i | (0xFF & g);
+  i=i << 8;
+  if ((a & 0xFF000000) == 0) {
+    i=i | (0xFF & (~a));
+  }
+ else {
+    i=i | (0xFF & (a >> 24));
+  }
+  int j=d.length - 1;
+  while (j >= 0) {
+    int k=e[j];
+    if (k >= 0x80)     k=k - 0x100;
+    g=k + h;
+    h=h << (j % 2 + 4);
+    h=g + h;
+    j-=1;
+  }
+  j=0;
+  g=0;
+  while (j <= d.length - 1) {
+    int k=e[j];
+    if (k >= 128)     k=k - 256;
+    int l=k + g;
+    g=g << (j % 2 + 3);
+    g=g + l;
+    j+=1;
+  }
+  int m=h ^ i;
+  m=m + (g | a);
+  m=m * (g | i);
+  m=m * (h ^ a);
+  return m;
+}

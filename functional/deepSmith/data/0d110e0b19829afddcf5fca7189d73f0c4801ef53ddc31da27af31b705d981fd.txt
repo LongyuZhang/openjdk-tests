@@ -1,0 +1,6 @@
+public static long fn_A(long a,long b) throws ArithmeticException {
+  if (b > 0 ? a > Long.MAX_VALUE / b || a < Long.MIN_VALUE / b : (b < -1 ? a > Long.MIN_VALUE / b || a < Long.MAX_VALUE / b : b == -1 && a == Long.MIN_VALUE)) {
+    throw new ArithmeticException("Integer overflow");
+  }
+  return a * b;
+}

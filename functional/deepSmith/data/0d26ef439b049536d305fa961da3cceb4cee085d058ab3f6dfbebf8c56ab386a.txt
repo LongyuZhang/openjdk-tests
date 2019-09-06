@@ -1,0 +1,8 @@
+public static void fn_A(String a,String b,int c){
+  if (a.startsWith("a")) {
+    if (a.startsWith("b")) {
+      System.out.println("boo");
+      throw new RuntimeException("This should not happen");
+    }
+  }
+}

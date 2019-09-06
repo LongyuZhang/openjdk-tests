@@ -1,0 +1,7 @@
+private static byte[] fn_A(int a,int b){
+  byte[] c=new byte[b];
+  for (int d=0; d < b; d++) {
+    c[d]=(byte)((a + d) % 127);
+  }
+  return c;
+}

@@ -1,0 +1,15 @@
+private static String fn_A(String a,boolean b,String c){
+  String d="";
+  d+="<div class='commands'>";
+  d+="<span class='widthCommands'><a href='javascript:void(0);' class='" + a + "|widthDown'>-</a><a href='javascript:void(0);' class='"+ a+ "|widthExact'>width</a><a href='javascript:void(0);' class='"+ a+ "|widthUp'>+</a></span>";
+  d+="<span class='heightCommands'><a href='javascript:void(0);' class='" + a + "|heightDown'>-</a><a href='javascript:void(0);' class='"+ a+ "|heightExact'>height</a><a href='javascript:void(0);' class='"+ a+ "|heightUp'>+</a></span>";
+  if (b) {
+    d+="<a href='javascript:void(0);' class='" + a + "|copy'>copy</a> ";
+    d+="<a href='javascript:void(0);' class='" + a + "|xmlFormat'>indent</a>";
+  }
+  if (c != null) {
+    d+=" " + c;
+  }
+  d+="</div>";
+  return d;
+}

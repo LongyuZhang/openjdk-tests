@@ -1,0 +1,15 @@
+static boolean fn_A(String[] a){
+  if (a.length != 4) {
+    return false;
+  }
+  if (!a[0].startsWith("--workspace_root=")) {
+    return false;
+  }
+  if (!a[1].startsWith("--install_base=")) {
+    return false;
+  }
+  if (!a[2].startsWith("--output_base=")) {
+    return false;
+  }
+  return true;
+}

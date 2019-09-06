@@ -1,0 +1,24 @@
+static boolean fn_A(int[] a,int b,int c){
+  int d, e, f;
+  for (d=b; a[d] != d; d=a[d])   ;
+  for (e=c; a[e] != e; e=a[e])   ;
+  boolean g=d != e;
+  f=d < e ? d : e;
+  for (; ; ) {
+    int h=a[b];
+    a[b]=f;
+    if (b == h) {
+      break;
+    }
+    b=h;
+  }
+  for (; ; ) {
+    int h=a[c];
+    a[c]=f;
+    if (c == h) {
+      break;
+    }
+    c=h;
+  }
+  return g;
+}

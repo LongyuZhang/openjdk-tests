@@ -1,0 +1,10 @@
+private static void fn_A(long a,byte[] b,int c){
+  b[c]=(byte)(a >>> 56);
+  b[c + 1]=(byte)((a >>> 48) & 0x0ff);
+  b[c + 2]=(byte)((a >>> 40) & 0x0ff);
+  b[c + 3]=(byte)((a >>> 32) & 0x0ff);
+  b[c + 4]=(byte)((a >>> 24) & 0x0ff);
+  b[c + 5]=(byte)((a >>> 16) & 0x0ff);
+  b[c + 6]=(byte)((a >>> 8) & 0x0ff);
+  b[c + 7]=(byte)a;
+}

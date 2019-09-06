@@ -1,0 +1,12 @@
+public static boolean fn_A(char a){
+switch (a) {
+case 10:
+case 12:
+case 13:
+case 32:
+case 9:
+    return true;
+default :
+  return false;
+}
+}

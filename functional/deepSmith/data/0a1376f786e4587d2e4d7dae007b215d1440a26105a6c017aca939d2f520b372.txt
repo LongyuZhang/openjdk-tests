@@ -1,0 +1,4 @@
+public static byte fn_A(short a){
+  if (a < 0 || a > 0xFF)   throw new RuntimeException("The provided short value is outside the range of an unsigned byte. [0,255]. Value: " + a);
+  return (byte)a;
+}

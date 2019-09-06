@@ -1,0 +1,9 @@
+private static boolean fn_A(){
+  try {
+    Class.forName("org.slf4j.bridge.SLF4JBridgeHandler");
+    return true;
+  }
+ catch (  ClassNotFoundException a) {
+    return false;
+  }
+}

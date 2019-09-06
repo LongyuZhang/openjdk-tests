@@ -1,0 +1,12 @@
+public static double fn_A(final int a,final int b){
+  double c=(double)a - (double)b;
+  if (b == 0) {
+    return Double.NaN;
+  }
+ else   if (c == 0) {
+    return Double.NaN;
+  }
+ else {
+    return Math.log10((c) / b);
+  }
+}

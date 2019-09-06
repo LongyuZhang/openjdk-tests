@@ -1,0 +1,4 @@
+static int fn_A(float[] a,double b){
+  for (int c=0; c < a.length; c++)   if (a[c] != b)   return c;
+  return a.length;
+}

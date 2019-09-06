@@ -1,0 +1,8 @@
+public static double fn_A(float[] a,float[] b){
+  assert(a.length == b.length);
+  double c=0d;
+  for (int d=0; d < a.length; d++) {
+    c+=(a[d] > 0 ? (a[d] / 2d) * Math.log((2d * a[d]) / (a[d] + b[d])) : 0) + (b[d] > 0 ? (b[d] / 2d) * Math.log((2d * b[d]) / (a[d] + b[d])) : 0);
+  }
+  return c;
+}

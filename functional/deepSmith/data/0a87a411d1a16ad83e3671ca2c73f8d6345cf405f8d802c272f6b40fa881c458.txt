@@ -1,0 +1,16 @@
+public static boolean fn_A(int a){
+switch (a) {
+case 14121002:
+case 14121001:
+case 14111020:
+case 14111021:
+case 14101021:
+case 14101020:
+case 14001020:
+case 14111023:
+case 14111022:
+    return true;
+default :
+  return false;
+}
+}

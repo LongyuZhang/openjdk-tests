@@ -1,0 +1,8 @@
+static public int fn_A(final byte[] a,final short[] b,final int c,final int d,final int e,final short f){
+  final int g=Math.min(e * 2,(c / 2) * 2);
+  for (int h=0; h < g; h+=2) {
+    final int i=(a[h] & 0xFF | (a[h + 1] << 8)) & f;
+    b[(h / 2) + d]=(short)i;
+  }
+  return g;
+}

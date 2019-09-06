@@ -1,0 +1,9 @@
+public static void main(String[] a){
+  int b=10;
+  for (int c=1; c <= 10; c++) {
+    for (int d=1; d <= 10; d++) {
+      System.out.printf("%4d",c * d);
+    }
+    System.out.println();
+  }
+}

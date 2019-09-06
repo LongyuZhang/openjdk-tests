@@ -1,0 +1,4 @@
+private static String fn_A(){
+  char a=java.io.File.separatorChar;
+  return System.getProperty("java.class.path");
+}

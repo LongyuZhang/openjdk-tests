@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b,double c){
+  int d=(int)((a * 5 + 45) * (1 + 0.07 * (a + b - a)));
+  return (int)(d * c);
+}

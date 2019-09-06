@@ -1,0 +1,18 @@
+public static int[][] fn_A(double[][] a){
+  if (a == null) {
+    return null;
+  }
+  int[][] b=new int[a.length][];
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == null) {
+      b[c]=null;
+    }
+ else {
+      b[c]=new int[a[c].length];
+      for (int d=0; d < a[c].length; d++) {
+        b[c][d]=(int)a[c][d];
+      }
+    }
+  }
+  return b;
+}

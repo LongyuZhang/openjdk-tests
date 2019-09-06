@@ -1,0 +1,10 @@
+public static void main(String a[]){
+  double[][] b=new double[5][5];
+  b[0][3]=25.0;
+  for (int c=0; c < 5; c++) {
+    for (int d=0; d < 5; d++) {
+      System.out.print(" " + b[c][d]);
+    }
+    System.out.println();
+  }
+}

@@ -1,0 +1,4 @@
+private static boolean fn_A(char a){
+  if (a == 'a' || a == 'e' || a == 'i' || a == 'u')   return true;
+ else   return false;
+}

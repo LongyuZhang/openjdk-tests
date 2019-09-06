@@ -1,0 +1,10 @@
+public static String fn_A(long a){
+  int b=(int)(a / (60 * 60));
+  int c=((int)a % (60 * 60)) / 60;
+  int d=((int)a % (60 * 60)) % 60;
+  String e="";
+  if (b != 0)   e=b + "h ";
+  if (c != 0)   e+=c + "m ";
+  e+=d + "s";
+  return e;
+}

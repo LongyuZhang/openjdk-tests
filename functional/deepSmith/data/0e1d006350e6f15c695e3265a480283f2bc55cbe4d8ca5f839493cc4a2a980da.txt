@@ -1,0 +1,14 @@
+public static String fn_A(int a){
+switch (a) {
+case 0:
+    return "Helmet";
+case 1:
+  return "Chestplate";
+case 2:
+return "Leggings";
+case 3:
+return "Boots";
+default :
+return "";
+}
+}

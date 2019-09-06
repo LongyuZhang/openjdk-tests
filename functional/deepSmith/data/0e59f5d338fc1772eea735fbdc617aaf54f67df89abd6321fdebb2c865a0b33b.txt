@@ -1,0 +1,12 @@
+public static short[] fn_A(byte[] a,int b,boolean c){
+  short d[]=new short[b / 2];
+  for (int e=0; e < b / 2; e++) {
+    if (!c) {
+      d[e]=(short)(((a[e * 2 + 1] & 0xff) << 8) | ((a[e * 2] & 0xff)));
+    }
+ else {
+      d[e]=(short)(((a[e * 2] & 0xff) << 8) | ((a[e * 2 + 1] & 0xff)));
+    }
+  }
+  return d;
+}

@@ -1,0 +1,57 @@
+public static boolean fn_A(char[][] a){
+  int[] b=new int[10];
+  for (int c=0; c < a.length; c++) {
+    for (int d=0; d < a[c].length; d++) {
+      int e=a[c][d];
+      if (e >= 48 && e <= 57) {
+        if (b[e - 48] == 1) {
+          return false;
+        }
+        b[e - 48]+=1;
+      }
+    }
+    for (int f=0; f < 10; f++) {
+      b[f]=0;
+    }
+  }
+  for (int c=0; c < 10; c++) {
+    b[c]=0;
+  }
+  for (int c=0; c < 9; c++) {
+    for (int d=0; d < 9; d++) {
+      int e=a[d][c];
+      if (e >= 48 && e <= 57) {
+        if (b[e - 48] == 1) {
+          return false;
+        }
+        b[e - 48]+=1;
+      }
+    }
+    for (int f=0; f < 10; f++) {
+      b[f]=0;
+    }
+  }
+  for (int c=0; c < 10; c++) {
+    b[c]=0;
+  }
+  for (int g=0; g < 9; g++) {
+    int h=g * 3;
+    int i=h % 9;
+    int j=h / 9;
+    for (int c=3 * j; c < 3 * j + 3; c++) {
+      for (int d=i; d < i + 3; d++) {
+        int e=a[c][d];
+        if (e >= 48 && e <= 57) {
+          if (b[e - 48] == 1) {
+            return false;
+          }
+          b[e - 48]+=1;
+        }
+      }
+    }
+    for (int f=0; f < 10; f++) {
+      b[f]=0;
+    }
+  }
+  return true;
+}

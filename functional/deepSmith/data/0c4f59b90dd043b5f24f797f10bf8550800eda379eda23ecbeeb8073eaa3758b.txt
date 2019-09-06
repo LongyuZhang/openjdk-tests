@@ -1,0 +1,23 @@
+public static String fn_A(long a){
+  if (a < 60 && a >= 0) {
+    return "1";
+  }
+ else   if (a >= 60 && a < 3600) {
+    return a / 60 + "";
+  }
+ else   if (a >= 3600 && a < 3600 * 24) {
+    return a / 3600 + "";
+  }
+ else   if (a >= 3600 * 24 && a < 3600 * 24 * 30) {
+    return a / 3600 / 24 + "";
+  }
+ else   if (a >= 3600 * 24 * 30 && a < 3600 * 24 * 30* 12) {
+    return a / 3600 / 24/ 30 + "";
+  }
+ else   if (a >= 3600 * 24 * 30* 12) {
+    return a / 3600 / 24/ 30/ 12 + "";
+  }
+ else {
+    return "1";
+  }
+}

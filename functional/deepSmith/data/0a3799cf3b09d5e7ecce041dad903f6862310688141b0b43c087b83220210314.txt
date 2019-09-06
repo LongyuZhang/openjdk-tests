@@ -1,0 +1,5 @@
+public static int fn_A(Object a,int b,int c){
+{
+    return 0;
+  }
+}

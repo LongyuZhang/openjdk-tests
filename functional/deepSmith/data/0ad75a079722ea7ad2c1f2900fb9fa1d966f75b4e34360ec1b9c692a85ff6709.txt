@@ -1,0 +1,4 @@
+static public final float[] fn_A(float a[],float b){
+  for (int c=0; c < a.length; c++)   a[c]=a[c] / b;
+  return a;
+}

@@ -1,0 +1,37 @@
+private static int fn_A(char[] a,int b,char c,int d,boolean e,int f){
+  int g;
+  if (!e) {
+    g=d;
+    if (b <= 0)     ;
+  }
+ else {
+    int h;
+    if ((!e) || (f < 3)) {
+      g=b;
+      h=d;
+      if (b <= 99)       ;
+    }
+ else {
+      g=b / 100;
+      a[d]=(char)(g + 48);
+      h=d + 1;
+      g=b - g * 100;
+    }
+    if (((!e) || (f < 2)) && (g <= 9)) {
+      f=g;
+      b=h;
+      if (d == h)       ;
+    }
+ else {
+      d=g / 10;
+      a[h]=(char)(d + 48);
+      b=h + 1;
+      f=g - d * 10;
+    }
+    a[b]=(char)(f + 48);
+    b+=1;
+    a[b]=c;
+    g=b + 1;
+  }
+  return g;
+}

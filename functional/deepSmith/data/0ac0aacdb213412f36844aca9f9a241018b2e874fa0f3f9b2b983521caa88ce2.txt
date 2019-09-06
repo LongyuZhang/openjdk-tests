@@ -1,0 +1,7 @@
+public static final int fn_A(int a,int b){
+  int c=2 * b;
+  if (a < 0)   a=c + a % c;
+  if (a >= c)   a=a % c;
+  if (a >= b)   a=b - a % b - 1;
+  return a;
+}

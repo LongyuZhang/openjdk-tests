@@ -1,0 +1,14 @@
+private static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "Twisted Pair 1";
+case 1:
+  return "Power-line 110";
+case 2:
+return "Radio Frequency";
+case 5:
+return "KNX IP";
+default :
+return "Type " + a;
+}
+}

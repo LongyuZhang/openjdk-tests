@@ -1,0 +1,9 @@
+private static void fn_A(char[] a,int b,long c,int d){
+  for (int e=d - 1; e >= 0; e--) {
+    long f=(c & (255L << (8 * e))) >>> (8 * e);
+    int g=(int)((f & 0xf0) >> 4);
+    a[b++]=(char)(g < 10 ? g + '0' : (g - 10) + 'a');
+    g=(int)(f & 0x0f);
+    a[b++]=(char)(g < 10 ? g + '0' : (g - 10) + 'a');
+  }
+}

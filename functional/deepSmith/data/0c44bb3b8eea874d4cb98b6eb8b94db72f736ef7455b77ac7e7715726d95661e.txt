@@ -1,0 +1,6 @@
+public static boolean fn_A(double a,double b,double c){
+  boolean d=false;
+  if (c < b)   d=a < c || a >= b;
+ else   d=a < c && a >= b;
+  return d;
+}

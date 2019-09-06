@@ -1,0 +1,7 @@
+public static double fn_A(double a,double b,double c,double d){
+  double e=a;
+  if (b > e)   e=b;
+  if (c > e)   e=c;
+  if (d > e)   e=d;
+  return e;
+}

@@ -1,0 +1,7 @@
+public static float fn_A(double[] a,float[] b,int[] c,int d){
+  float e=0;
+  for (int f=0; f < d; f++) {
+    e+=a[c[f] - 1] * b[c[f] - 1];
+  }
+  return e;
+}

@@ -1,0 +1,6 @@
+private static boolean fn_A(int a){
+  if (a == 0) {
+    return false;
+  }
+  return (a & (a - 1)) == 0;
+}

@@ -1,0 +1,55 @@
+public static void main(String[] a){
+  char b, c;
+  b='D';
+  c='C';
+  if (!(b >= 'A' && b <= 'D' && c >= 'A' && c <= 'D')) {
+    System.out.println("Invalid start or end");
+  }
+ else   if (b == c) {
+    System.out.println("Already there");
+  }
+ else   if (b == 'A') {
+    if (c == 'B') {
+      System.out.println("Go right");
+    }
+ else     if (c == 'C') {
+      System.out.println("Go right -> go down");
+    }
+ else     if (c == 'D') {
+      System.out.println("Go right -> go down -> go left");
+    }
+  }
+ else   if (b == 'B') {
+    if (c == 'A') {
+      System.out.println("Go down -> go left -> go up");
+    }
+ else     if (c == 'C') {
+      System.out.println("Go down");
+    }
+ else     if (c == 'D') {
+      System.out.println("Go down -> go left");
+    }
+  }
+ else   if (b == 'C') {
+    if (c == 'A') {
+      System.out.println("Go left -> go up");
+    }
+ else     if (c == 'B') {
+      System.out.println("Go left -> go up -> go right");
+    }
+ else     if (c == 'D') {
+      System.out.println("Go left");
+    }
+  }
+ else   if (b == 'D') {
+    if (c == 'A') {
+      System.out.println("Go up");
+    }
+ else     if (c == 'B') {
+      System.out.println("Go up -> go right");
+    }
+ else     if (c == 'C') {
+      System.out.println("Go up -> go right -> go down");
+    }
+  }
+}

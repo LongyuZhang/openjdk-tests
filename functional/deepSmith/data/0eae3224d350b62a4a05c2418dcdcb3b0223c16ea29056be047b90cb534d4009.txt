@@ -1,0 +1,8 @@
+public static double fn_A(double[] a,int b,double[] c,int d,int e){
+  double f=0.0;
+  for (int g=0; g < e; g++) {
+    double h=c[d + g];
+    f+=a[b + g] * h;
+  }
+  return f;
+}

@@ -1,0 +1,21 @@
+public static void fn_A(int a){
+  int[] b=new int[a + 1];
+  boolean[] c=new boolean[a + 1];
+  for (int d=0; d < a; d++) {
+    b[d]=d;
+    c[d]=true;
+  }
+  for (int d=2; d < a; d++) {
+    if (!c[d]) {
+      continue;
+    }
+    for (int e=d * 2; e < a; e=e + d) {
+      c[e]=false;
+    }
+  }
+  for (int d=2; d < a; d++) {
+    if (c[d]) {
+      System.out.println(b[d]);
+    }
+  }
+}

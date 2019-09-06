@@ -1,0 +1,18 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "reserved for future use";
+case 1:
+  return "initial Teletext page";
+case 2:
+return "Teletext subtitle page";
+case 3:
+return "additional information page";
+case 4:
+return "programme schedule page";
+case 5:
+return "Teletext subtitle page for hearing impaired people";
+default :
+return "reserved for future use";
+}
+}

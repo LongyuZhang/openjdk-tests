@@ -1,0 +1,14 @@
+public static double[] fn_A(String[] a){
+  int b=a.length;
+  double[] c=new double[b];
+  try {
+    for (int d=0; d < b; d++) {
+      c[d]=Double.parseDouble(a[d]);
+    }
+  }
+ catch (  Exception e) {
+    e.printStackTrace();
+    return null;
+  }
+  return c;
+}

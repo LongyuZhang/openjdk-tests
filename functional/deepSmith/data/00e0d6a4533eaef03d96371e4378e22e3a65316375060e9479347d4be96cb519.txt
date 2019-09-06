@@ -1,0 +1,9 @@
+public static boolean fn_A(int a,int b){
+  int c=a + b;
+  if (a == c) {
+    return true;
+  }
+ else {
+    return false;
+  }
+}

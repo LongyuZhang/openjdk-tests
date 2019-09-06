@@ -1,0 +1,7 @@
+private static Boolean fn_A(Object[] a){
+  boolean b=false;
+  if (null != a && 0 < a.length) {
+    b=true;
+  }
+  return b;
+}

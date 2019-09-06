@@ -1,0 +1,9 @@
+private static byte[] fn_A(long a){
+  byte[] b=new byte[4];
+  b[0]=10;
+  for (int c=3; c >= 1; c--) {
+    b[c]=(byte)(a & 0xff);
+    a>>=8;
+  }
+  return b;
+}

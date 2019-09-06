@@ -1,0 +1,7 @@
+private static InputStream fn_A(InputStream a){
+  return new FilterInputStream(a){
+    public void fn_B(){
+    }
+  }
+;
+}

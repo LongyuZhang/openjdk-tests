@@ -1,0 +1,36 @@
+public static boolean fn_A(int a){
+  if ((a >= 0x0041) && (a <= 0x005A)) {
+    return true;
+  }
+ else   if ((a >= 0x0061) && (a <= 0x007A)) {
+    return true;
+  }
+ else   if ((a >= 0x00C0) && (a <= 0x00D6)) {
+    return true;
+  }
+ else   if ((a >= 0x00D8) && (a <= 0x00DF)) {
+    return true;
+  }
+ else   if ((a >= 0x00E0) && (a <= 0x00F6)) {
+    return true;
+  }
+ else   if ((a >= 0x00F8) && (a <= 0x00FF)) {
+    return true;
+  }
+ else   if ((a >= 0x0100) && (a <= 0x017F)) {
+    return true;
+  }
+ else   if ((a >= 0x0180) && (a <= 0x024F)) {
+    return true;
+  }
+ else   if ((a >= 0x1E00) && (a <= 0x1EFF)) {
+    return true;
+  }
+ else   if ((a >= 0x2C60) && (a <= 0x2C7F)) {
+    return true;
+  }
+ else   if ((a >= 0xA720) && (a <= 0xA7FF)) {
+    return true;
+  }
+ else   return (a >= 0xFB00) && (a <= 0xFB0F);
+}

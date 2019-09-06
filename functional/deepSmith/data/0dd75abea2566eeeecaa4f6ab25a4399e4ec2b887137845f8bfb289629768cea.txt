@@ -1,0 +1,6 @@
+public static <T>Set<T> fn_A(Set<T> a){
+  if (a == null) {
+    return null;
+  }
+  return new TreeSet<T>(a);
+}

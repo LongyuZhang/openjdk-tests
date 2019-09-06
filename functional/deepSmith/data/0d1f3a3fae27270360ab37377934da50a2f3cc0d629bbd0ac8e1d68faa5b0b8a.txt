@@ -1,0 +1,9 @@
+public static String fn_A(int a){
+  a=a / 60;
+  int b=a % 60;
+  int c=a / 60;
+  if (c >= 24) {
+    c=c % 24;
+  }
+  return (c < 10 ? "0" + c : c) + ":" + (b < 10 ? "0" + b : b);
+}

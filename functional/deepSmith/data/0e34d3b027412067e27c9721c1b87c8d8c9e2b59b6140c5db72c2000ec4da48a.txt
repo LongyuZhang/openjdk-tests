@@ -1,0 +1,5 @@
+public static long fn_A(int a){
+  long b=(long)a;
+  b*=1000;
+  return b;
+}

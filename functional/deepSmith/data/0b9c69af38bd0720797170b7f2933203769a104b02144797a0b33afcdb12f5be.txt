@@ -1,0 +1,10 @@
+private final static int fn_A(int a,int b){
+  int c=0;
+  do {
+    c|=a & 1;
+    a>>>=1;
+    c<<=1;
+  }
+ while (--b > 0);
+  return c >>> 1;
+}

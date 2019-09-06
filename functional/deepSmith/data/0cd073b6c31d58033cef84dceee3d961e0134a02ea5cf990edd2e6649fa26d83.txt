@@ -1,0 +1,15 @@
+public static void main(String[] a){
+  for (char b='A'; b <= 'E'; b++) {
+    for (int c=1; c <= 3; c++) {
+      System.out.println(b + " " + c);
+    }
+  }
+  System.out.println("\n");
+  for (int d=1; d <= 3; d++) {
+    for (int e=1; e <= 3; e++) {
+      System.out.print(d + "-" + e+ " ");
+    }
+    System.out.println();
+  }
+  System.out.println("\n");
+}

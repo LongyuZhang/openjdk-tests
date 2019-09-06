@@ -1,0 +1,17 @@
+public static String fn_A(final int a){
+switch ((a & 0x7f) >> 4) {
+case 0:
+    return "reserved profile";
+case 1:
+  return "high profile";
+case 2:
+return "spatially scalable profile";
+case 3:
+return "snr scalable profile";
+case 4:
+return "main profile";
+case 5:
+return "simple profile";
+}
+return "";
+}

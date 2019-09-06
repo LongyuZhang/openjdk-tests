@@ -1,0 +1,7 @@
+private static <T extends Comparable<T>>void fn_A(T[] a,int b,int c){
+  if (b != c) {
+    T d=a[b];
+    a[b]=a[c];
+    a[c]=d;
+  }
+}

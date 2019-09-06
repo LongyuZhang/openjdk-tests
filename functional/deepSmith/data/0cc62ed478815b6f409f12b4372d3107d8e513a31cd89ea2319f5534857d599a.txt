@@ -1,0 +1,6 @@
+private static String fn_A(String a,int b){
+  if (a == null) {
+    throw new NullPointerException("host == null");
+  }
+  return a + "." + b;
+}

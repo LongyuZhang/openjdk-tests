@@ -1,0 +1,15 @@
+public static int fn_A(int a){
+  int b=a / 2;
+  if (b >= 720) {
+    return 720;
+  }
+ else   if (b >= 540) {
+    return 540;
+  }
+ else   if (b >= 360) {
+    return 360;
+  }
+ else {
+    return 360;
+  }
+}

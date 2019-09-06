@@ -1,0 +1,7 @@
+public static byte[] fn_A(int a,int b){
+  byte[] c=new byte[a * b];
+  for (int d=0; d < c.length; d++) {
+    c[d]=(byte)(d % b);
+  }
+  return c;
+}

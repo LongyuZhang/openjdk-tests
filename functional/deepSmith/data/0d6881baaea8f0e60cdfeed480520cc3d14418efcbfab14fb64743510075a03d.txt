@@ -1,0 +1,7 @@
+private static double fn_A(double a[],int b,double c){
+  double d=a[b];
+  while (--b >= 0) {
+    d=d * c + a[b];
+  }
+  return d;
+}

@@ -1,0 +1,6 @@
+static public byte fn_A(float a){
+  if (a >= Byte.MIN_VALUE && a <= Byte.MAX_VALUE) {
+    return (byte)a;
+  }
+  throw new IllegalArgumentException("Value out of range for byte: " + a);
+}

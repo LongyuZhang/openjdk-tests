@@ -1,0 +1,10 @@
+public static int fn_A(char a){
+switch (a) {
+case ';':
+    return -1;
+case '#':
+  return 1;
+default :
+return 0;
+}
+}

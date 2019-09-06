@@ -1,0 +1,9 @@
+public static boolean fn_A(int a){
+  if (a >= '0' && a <= '9') {
+    return true;
+  }
+  if ((a >= 'a' && a <= 'f') || (a >= 'A' && a <= 'F')) {
+    return true;
+  }
+  return false;
+}

@@ -1,0 +1,5 @@
+private static String fn_A(long a){
+  long b=a / 1024;
+  long c=b / 1024;
+  return c + " MB";
+}

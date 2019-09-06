@@ -1,0 +1,16 @@
+public static int[] fn_A(int[] a){
+  int[] b=new int[a.length];
+  for (int c=0; c < a.length; c++)   b[c]=a[c];
+  for (int c=0; c < b.length; c++) {
+    int d=b[c];
+    int e=c;
+    for (int f=c; f < b.length; f++)     if (b[f] < d) {
+      e=f;
+      d=b[f];
+    }
+    int g=b[c];
+    b[c]=b[e];
+    b[e]=g;
+  }
+  return b;
+}

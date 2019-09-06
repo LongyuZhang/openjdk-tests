@@ -1,0 +1,9 @@
+static long fn_A(char[] a){
+  long b=0xcbf29ce484222325L;
+  for (int c=0; c < a.length; ++c) {
+    char d=a[c];
+    b^=d;
+    b*=0x100000001b3L;
+  }
+  return b;
+}

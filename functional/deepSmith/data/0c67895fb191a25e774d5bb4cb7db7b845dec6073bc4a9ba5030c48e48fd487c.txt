@@ -1,0 +1,15 @@
+public static boolean[][] fn_A(double[][] a,double[][] b){
+  boolean[][] c=new boolean[a.length][a[0].length];
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("Dimensions does not match");
+  }
+  if (a[0].length != b[0].length) {
+    throw new IllegalArgumentException("Dimensions does not match");
+  }
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[0].length; e++) {
+      c[d][e]=Double.compare(a[d][e],b[d][e]) == 0;
+    }
+  }
+  return c;
+}

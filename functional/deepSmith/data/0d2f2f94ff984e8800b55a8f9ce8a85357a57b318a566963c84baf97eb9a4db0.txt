@@ -1,0 +1,9 @@
+public static char fn_A(final int a){
+  if (a >= 0x0a && a <= 0x0f) {
+    return (char)(0x57 + a);
+  }
+ else   if (a >= 0x00 && a <= 0x09) {
+    return (char)(0x30 + a);
+  }
+  return 0;
+}

@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b,int c,int d,int e,int f,int g){
+  a+=((b ^ c) ^ d) + e + g;
+  return ((a << f) | (a >>> (32 - f))) + b;
+}

@@ -1,0 +1,5 @@
+private static void fn_A(long[] a,int b,long c){
+  if (a != null) {
+    a[b]=a[b] + c;
+  }
+}

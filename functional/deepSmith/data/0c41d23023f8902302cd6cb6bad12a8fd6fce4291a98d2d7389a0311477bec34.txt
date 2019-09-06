@@ -1,0 +1,8 @@
+public static void fn_A(byte[] a,int b,int c,long d){
+  long e;
+  for (int f=0; f < c; f++) {
+    e=(long)Math.pow(256.0,(double)(c - 1 - f));
+    a[b + f]=(byte)(d / e);
+    d=d % e;
+  }
+}

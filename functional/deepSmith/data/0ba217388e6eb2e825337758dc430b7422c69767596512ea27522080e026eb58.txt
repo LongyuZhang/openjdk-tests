@@ -1,0 +1,8 @@
+public static void fn_A(float[] a,int b){
+  for (int c=0; c < 16; c++) {
+    a[b + c]=0;
+  }
+  for (int c=0; c < 16; c+=5) {
+    a[b + c]=1.0f;
+  }
+}

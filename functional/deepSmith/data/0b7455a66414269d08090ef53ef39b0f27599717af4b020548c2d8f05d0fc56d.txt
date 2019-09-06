@@ -1,0 +1,8 @@
+private static int fn_A(int a,int b,int c,int d,int e){
+  if (d == b) {
+    return a;
+  }
+ else {
+    return a + ((c - a) * (e - b)) / (d - b);
+  }
+}

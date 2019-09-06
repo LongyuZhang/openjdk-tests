@@ -1,0 +1,15 @@
+public static double[] fn_A(double[] a){
+  double b=a[0];
+  double c=a[1];
+  double d=a[2];
+  if (a[0] < -1000)   b=-1000;
+ else   if (a[0] > 1000)   b=1000;
+  if (a[1] < -1000)   c=-1000;
+ else   if (a[1] > 1000)   c=-1000;
+  if (a[2] < -1000)   d=-1000;
+ else   if (a[2] > 1000)   d=1000;
+  a[0]=b;
+  a[1]=c;
+  a[2]=d;
+  return a;
+}

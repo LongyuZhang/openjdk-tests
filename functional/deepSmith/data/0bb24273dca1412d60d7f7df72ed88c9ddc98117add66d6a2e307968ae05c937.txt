@@ -1,0 +1,6 @@
+public static BufferedOutputStream fn_A(final OutputStream a){
+  if (a == null) {
+    throw new NullPointerException();
+  }
+  return a instanceof BufferedOutputStream ? (BufferedOutputStream)a : new BufferedOutputStream(a);
+}

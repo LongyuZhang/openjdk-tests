@@ -1,0 +1,12 @@
+public static boolean fn_A(int a){
+  if (a < 0)   a*=-1;
+  Boolean b=true;
+  for (int c=2; c < a / 2 + 1; c++) {
+    if (a % c == 0) {
+      b=false;
+      break;
+    }
+  }
+  if (a == 0 || a == 1)   b=false;
+  return b;
+}

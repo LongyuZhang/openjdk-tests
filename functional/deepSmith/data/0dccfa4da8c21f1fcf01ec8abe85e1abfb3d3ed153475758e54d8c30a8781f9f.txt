@@ -1,0 +1,14 @@
+private static void fn_A(){
+  System.out.println();
+  System.out.println("CreateSelectedPlansTables:");
+  System.out.println();
+  System.out.println("Creates an agent-based table including all agent \n" + "attributes, the selected plan score and the plan and \n" + "leg travel times and distances and \n"+ "another table containing the aggregated values.");
+  System.out.println();
+  System.out.println("usage: CompareSelectedPlansTable args");
+  System.out.println(" arg 0: path to network file (required)");
+  System.out.println(" arg 1: path to plans file 0 (required)");
+  System.out.println(" arg 2: path to plans file 1 (optional)");
+  System.out.println("----------------");
+  System.out.println("2008, matsim.org");
+  System.out.println();
+}

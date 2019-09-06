@@ -1,0 +1,9 @@
+private static float fn_A(float[] a,int b,int[] c,int d,float e,float f){
+  for (int g=0; g < c.length; g++) {
+    for (int h=c[g++] + b; h <= c[g] + b - d; h++) {
+      float i=a[h] * f;
+      if (e < i)       e=i;
+    }
+  }
+  return e;
+}

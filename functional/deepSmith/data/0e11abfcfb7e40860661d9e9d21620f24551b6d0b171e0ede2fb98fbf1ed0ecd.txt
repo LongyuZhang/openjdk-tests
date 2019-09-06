@@ -1,0 +1,24 @@
+private static int[] fn_A(int[] a,int[] b){
+  int[] c=new int[a.length + b.length];
+  int d=0;
+  int e=0;
+  int f=0;
+  while (d < a.length && e < b.length) {
+    if (a[d] <= b[e]) {
+      c[f]=a[d++];
+    }
+ else {
+      c[f]=b[e++];
+    }
+    f++;
+  }
+  while (d < a.length) {
+    c[f]=a[d++];
+    f++;
+  }
+  while (e < b.length) {
+    c[f]=b[e++];
+    f++;
+  }
+  return c;
+}

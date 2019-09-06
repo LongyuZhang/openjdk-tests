@@ -1,0 +1,6 @@
+private static long fn_A(long a,final int b){
+  if ((a & (1 << b - 1)) != 0) {
+    a=-1 * ((1 << b - 1) - (a & ((1 << b - 1) - 1)));
+  }
+  return a;
+}

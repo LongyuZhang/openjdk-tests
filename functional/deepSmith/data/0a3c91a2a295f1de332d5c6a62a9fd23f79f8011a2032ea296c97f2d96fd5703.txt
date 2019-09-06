@@ -1,0 +1,29 @@
+static int fn_A(byte[][] a,byte[][] b,int[] c,int[] d,int[] e,int f,int g){
+  int h=c[f];
+  int i=h + e[f];
+  int j=c[g];
+  int k=j + e[g];
+  int l=h;
+  if (j > h) {
+    l=j;
+  }
+  int m=i;
+  if (k < i) {
+    m=k;
+  }
+  int n=d[f];
+  if (d[g] < n) {
+    n=d[g];
+  }
+  byte[] o=b[f];
+  byte[] p=a[g];
+  int q=l - h;
+  int r=l - j;
+  for (int s=l; s < m; ++s) {
+    int t=o[q++] + p[r++];
+    if (t < n) {
+      n=t;
+    }
+  }
+  return -n;
+}

@@ -1,0 +1,13 @@
+public static double fn_A(float[] a){
+  int b=0;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] != 0) {
+      b=c;
+      break;
+    }
+  }
+  int d=a.length - b;
+  int e=d / 2;
+  if (a.length % 2 == 1)   return a[b + e];
+  return ((double)a[b + e - 1] + (double)a[b + e]) / 2.0;
+}

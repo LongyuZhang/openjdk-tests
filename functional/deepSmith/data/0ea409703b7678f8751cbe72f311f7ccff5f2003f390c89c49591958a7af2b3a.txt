@@ -1,0 +1,5 @@
+public static short fn_A(int a){
+  long b=a & 0xFFFF0000L;
+  b>>=16;
+  return (short)b;
+}

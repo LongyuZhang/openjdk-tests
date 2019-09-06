@@ -1,0 +1,14 @@
+public static void fn_A(float[] a,int b,float[] c,int d){
+  if (b < 0 || d < 0 || b >= a.length || d >= c.length) {
+    System.err.println("Invalid input indexes");
+    throw new ArrayIndexOutOfBoundsException();
+  }
+  int e=c.length - d;
+  if (b + e > a.length) {
+    System.err.println("Float array cannot fit content");
+    throw new ArrayIndexOutOfBoundsException();
+  }
+  for (int f=0; b + f < a.length; f++) {
+    a[b + f]=c[d + f];
+  }
+}

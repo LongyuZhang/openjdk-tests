@@ -1,0 +1,9 @@
+public static void main(String[] a){
+  Object b=new Object();
+  int c=0;
+  try {
+    String d=(String)b;
+  }
+ catch (  ClassCastException e) {
+  }
+}

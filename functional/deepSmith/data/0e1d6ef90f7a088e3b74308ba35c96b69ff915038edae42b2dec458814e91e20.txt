@@ -1,0 +1,6 @@
+public static int[] fn_A(int a){
+  int[] b=new int[2];
+  b[0]=a % 16;
+  b[1]=a / 16;
+  return b;
+}

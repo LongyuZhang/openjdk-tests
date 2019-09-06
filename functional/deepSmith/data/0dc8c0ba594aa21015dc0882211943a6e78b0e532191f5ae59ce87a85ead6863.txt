@@ -1,0 +1,12 @@
+public static String fn_A(byte[] a){
+  if (a == null) {
+    return null;
+  }
+  int b=a.length;
+  String c="";
+  for (int d=0; d < b; d++) {
+    if ((a[d] & 0xFF) < 16)     c=c + "0" + java.lang.Integer.toHexString(a[d] & 0xFF);
+ else     c=c + java.lang.Integer.toHexString(a[d] & 0xFF);
+  }
+  return c;
+}

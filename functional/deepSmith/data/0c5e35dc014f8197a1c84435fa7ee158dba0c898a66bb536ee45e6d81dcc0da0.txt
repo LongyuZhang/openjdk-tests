@@ -1,0 +1,12 @@
+public static double fn_A(double[] a,double b,double c){
+  double d=a.length;
+  double e=d * (d + 1);
+  e/=((d - 1) * (d - 2) * (d - 3));
+  double f=0;
+  for (int g=0; g < a.length; g++) {
+    f+=Math.pow((a[g] - b) / c,4);
+  }
+  double h=3 * Math.pow((d - 1),2);
+  h/=(d - 2) * (d - 3);
+  return e * f - h;
+}

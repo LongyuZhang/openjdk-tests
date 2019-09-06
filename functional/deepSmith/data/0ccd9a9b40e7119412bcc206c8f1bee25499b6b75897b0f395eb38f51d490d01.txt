@@ -1,0 +1,6 @@
+public static final long fn_A(long a,byte[] b){
+  long c=0;
+  int d=b.length;
+  for (int e=0; e < d; e++)   c=(c << 1) | ((a >>> (63 - b[e])) & 1);
+  return c;
+}

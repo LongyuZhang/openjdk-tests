@@ -1,0 +1,6 @@
+public static int fn_A(int a,int b){
+  while (b-- > 0) {
+    a=a << 1 | ((a < 0) ? 1 : 0);
+  }
+  return a;
+}

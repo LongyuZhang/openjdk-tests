@@ -1,0 +1,10 @@
+private static float fn_A(float a,float b){
+  float c=(float)Math.toDegrees(Math.toRadians(a) - Math.toRadians(b));
+  if (c > 180) {
+    c-=360;
+  }
+  if (c < -180) {
+    c+=360;
+  }
+  return c;
+}

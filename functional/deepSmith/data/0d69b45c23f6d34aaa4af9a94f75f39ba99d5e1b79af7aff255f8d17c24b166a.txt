@@ -1,0 +1,36 @@
+public static void fn_A(int[] a,byte[] b,int c,int d) throws NullPointerException, IllegalArgumentException {
+  int e=c * d;
+  if (a == null)   throw new NullPointerException("buffer out is null");
+  if (a.length < e)   throw new IllegalArgumentException("buffer out size " + a.length + " < minimum "+ e);
+  if (b == null)   throw new NullPointerException("buffer 'fg' is null");
+  if (b.length < e)   throw new IllegalArgumentException("buffer fg size " + b.length + " < minimum "+ e * 3 / 2);
+  int f, g;
+  int h, i=0, j=0;
+  for (g=0; g < d; g++) {
+    int k=g * c;
+    final int l=g >> 1;
+    for (f=0; f < c; f++) {
+      h=b[k];
+      if (h < 0)       h+=255;
+      if ((f & 0x1) != 1) {
+        final int m=e + l * c + (f >> 1) * 2;
+        j=b[m];
+        if (j < 0)         j+=127;
+ else         j-=128;
+        i=b[m + 1];
+        if (i < 0)         i+=127;
+ else         i-=128;
+      }
+      int n=h + i + (i >> 2)+ (i >> 3)+ (i >> 5);
+      if (n < 0)       n=0;
+ else       if (n > 255)       n=255;
+      int o=h - (j >> 2) + (j >> 4) + (j >> 5) - (i >> 1) + (i >> 3) + (i >> 4) + (i >> 5);
+      if (o < 0)       o=0;
+ else       if (o > 255)       o=255;
+      int p=h + j + (j >> 1)+ (j >> 2)+ (j >> 6);
+      if (p < 0)       p=0;
+ else       if (p > 255)       p=255;
+      a[k++]=0xff000000 + (p << 16) + (o << 8)+ n;
+    }
+  }
+}

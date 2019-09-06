@@ -1,0 +1,13 @@
+public static double[] fn_A(double a,double b,int c){
+  double d=(b - a) / c;
+  double[] e=new double[c];
+  for (int f=0; f < e.length; f++) {
+    if (f == 0) {
+      e[f]=a + (d / 2);
+    }
+ else {
+      e[f]=e[f - 1] + d;
+    }
+  }
+  return e;
+}

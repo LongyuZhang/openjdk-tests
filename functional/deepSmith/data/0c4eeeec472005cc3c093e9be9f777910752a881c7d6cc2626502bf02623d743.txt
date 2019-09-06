@@ -1,0 +1,5 @@
+private static String fn_A(){
+  String a=System.getProperty("java.home");
+  String b=System.getenv("PATH");
+  return a + File.separator + "bin"+ File.separator+ File.pathSeparator+ b;
+}

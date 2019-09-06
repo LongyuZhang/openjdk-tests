@@ -1,0 +1,5 @@
+public static byte fn_A(byte[] a,short b,short c){
+  for (short d=(short)(c - 1); d >= 0; d--)   if (a[(short)(b + d)] != 0)   if ((a[(short)(b + d)] & 0xff) != 0x80)   return (byte)(c & 0xff);
+ else   return (byte)(d & 0xff);
+  return 0;
+}

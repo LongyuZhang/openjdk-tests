@@ -1,0 +1,9 @@
+public static String fn_A(byte[] a){
+  if (a == null) {
+    return null;
+  }
+  if (a.length == 0) {
+    return "";
+  }
+  return new String(a);
+}

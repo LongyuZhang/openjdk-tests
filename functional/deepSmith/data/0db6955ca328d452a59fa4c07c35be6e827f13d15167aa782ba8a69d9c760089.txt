@@ -1,0 +1,9 @@
+public static boolean fn_A(){
+  try {
+    final Class a=Class.forName("ch.braincell.viz.VizJS");
+    return true;
+  }
+ catch (  Exception b) {
+    return false;
+  }
+}

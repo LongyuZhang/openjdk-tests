@@ -1,0 +1,7 @@
+public static double fn_A(double a){
+  double b;
+  if (a >= 10000.01)   b=900.0 + (a - 10000.0) * 0.12;
+ else   if (a >= 5000.01)   b=400.0 + (a - 5000.0) * 0.1;
+ else   b=a * 0.08;
+  return b;
+}

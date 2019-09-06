@@ -1,0 +1,36 @@
+static void fn_A(byte[] a,int b,int c,int d,int e,int[] f){
+  int g=-1;
+  f[0]=-1;
+  f[1]=-1;
+  int h=b + c;
+  if (d < 0) {
+    int i=0;
+    for (int j=b; j != h; ++j) {
+      if ((a[j] & 0xc0) != 0x80) {
+        ++i;
+      }
+    }
+    if (-d > i) {
+      return;
+    }
+    d=i + d;
+  }
+  if (e == 0) {
+    return;
+  }
+  int k=d + e - 1;
+  for (int j=b; j != h; ++j) {
+    if ((a[j] & 0xc0) != 0x80) {
+      ++g;
+      if (g == d) {
+        f[0]=j;
+      }
+ else       if (g - 1 == k) {
+        f[1]=j - f[0];
+      }
+    }
+  }
+  if (f[1] == -1) {
+    f[1]=h - f[0];
+  }
+}

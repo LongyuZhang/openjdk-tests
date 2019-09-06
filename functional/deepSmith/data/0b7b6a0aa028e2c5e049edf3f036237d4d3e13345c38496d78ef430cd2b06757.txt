@@ -1,0 +1,4 @@
+public static File fn_A(){
+  String a=System.getenv("SECONDARY_STORAGE");
+  return a != null ? new File(a) : null;
+}

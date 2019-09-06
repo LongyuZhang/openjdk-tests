@@ -1,0 +1,9 @@
+public static String[][] fn_A(int a,String b){
+  String[][] c=new String[a][a];
+  for (int d=0; d < a; d++) {
+    for (int e=0; e < a; e++) {
+      c[d][e]=b;
+    }
+  }
+  return c;
+}

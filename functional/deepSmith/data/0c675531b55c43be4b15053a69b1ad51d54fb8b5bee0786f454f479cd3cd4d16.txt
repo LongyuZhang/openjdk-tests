@@ -1,0 +1,12 @@
+public static double fn_A(double... a){
+  if (a.length < 1) {
+    throw new IllegalArgumentException();
+  }
+  double b=a[0];
+  for (int c=1; c < a.length; c++) {
+    if (a[c] > b) {
+      b=a[c];
+    }
+  }
+  return b;
+}

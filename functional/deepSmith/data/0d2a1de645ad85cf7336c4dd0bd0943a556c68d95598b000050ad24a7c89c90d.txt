@@ -1,0 +1,10 @@
+public static byte[] fn_A(byte[] a,byte[] b){
+  int c=Math.max(a.length,b.length);
+  byte[] d=new byte[c];
+  for (int e=0; e < c; e++) {
+    int f=(int)a[(e % a.length)];
+    int g=(int)b[(e % b.length)];
+    d[e]=(byte)(f ^ g);
+  }
+  return d;
+}

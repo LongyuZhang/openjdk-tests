@@ -1,0 +1,31 @@
+public static void fn_A(byte[] a,int b,int c,int d,int e){
+  int f=c % 8;
+  int g=c / 8;
+  if (f != 0) {
+    g++;
+  }
+  int h=d % 8;
+  int i=d / 8;
+  if (h != 7) {
+    i--;
+  }
+  for (int j=g; j <= i; j++) {
+    a[(b / 8) * e + j]=(byte)0xFF;
+  }
+  byte k=(byte)(0xFF >> f);
+  byte l=(byte)~(0xFF >> (h + 1));
+  if ((c / 8) == (d / 8)) {
+    byte m=(byte)(k & l);
+    a[(b / 8) * e + (c / 8)]|=m;
+  }
+ else {
+    if (f != 0) {
+      int n=(b / 8) * e + g - 1;
+      a[n]|=k;
+    }
+    if (h != 7) {
+      int n=(b / 8) * e + i + 1;
+      a[n]|=l;
+    }
+  }
+}

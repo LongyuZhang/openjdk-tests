@@ -1,0 +1,28 @@
+public static boolean fn_A(final String[] a,final String[] b){
+  if (null == a) {
+    return null == b;
+  }
+  if (null == b) {
+    return false;
+  }
+  if (a.length != b.length) {
+    return false;
+  }
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == null) {
+      if (b[c] != null) {
+        return false;
+      }
+ else {
+        continue;
+      }
+    }
+    if (b[c] == null) {
+      return false;
+    }
+    if (!a[c].equalsIgnoreCase(b[c])) {
+      return false;
+    }
+  }
+  return true;
+}

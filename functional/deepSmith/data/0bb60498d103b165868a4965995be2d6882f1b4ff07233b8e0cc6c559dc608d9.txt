@@ -1,0 +1,17 @@
+private static int[] fn_A(int[] a,int[] b,int c){
+  int[] d=new int[Math.max(a.length,b.length) + 1];
+  int e=0;
+  for (int f=d.length - 1; f >= 0; f--) {
+    int g=e;
+    int h=d.length - f;
+    if (h <= a.length) {
+      g+=a[a.length - h];
+    }
+    if (h <= b.length) {
+      g+=b[b.length - h];
+    }
+    d[f]=g % c;
+    e=g / c;
+  }
+  return d;
+}

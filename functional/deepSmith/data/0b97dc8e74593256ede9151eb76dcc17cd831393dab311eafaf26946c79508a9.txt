@@ -1,0 +1,4 @@
+public static float fn_A(){
+  float a=3;
+  return a + 7;
+}

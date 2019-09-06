@@ -1,0 +1,4 @@
+private static double fn_A(int a,int b,int c){
+  double d=(a > b) ? a : b;
+  return d / (double)c;
+}

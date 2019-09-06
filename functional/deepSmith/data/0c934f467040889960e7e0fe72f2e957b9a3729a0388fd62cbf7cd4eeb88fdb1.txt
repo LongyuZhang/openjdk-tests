@@ -1,0 +1,14 @@
+public static void main(String[] a) throws Exception {
+  try {
+    Runtime.getRuntime().exec("");
+    throw new Exception("Expected IllegalArgumentException not thrown");
+  }
+ catch (  IllegalArgumentException b) {
+  }
+  try {
+    Runtime.getRuntime().exec(new String());
+    throw new Exception("Expected IllegalArgumentException not thrown");
+  }
+ catch (  IllegalArgumentException b) {
+  }
+}

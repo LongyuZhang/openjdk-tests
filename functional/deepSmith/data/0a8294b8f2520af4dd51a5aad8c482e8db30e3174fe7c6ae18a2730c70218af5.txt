@@ -1,0 +1,5 @@
+static boolean fn_A(long a,int b,long c){
+  long d;
+  d=a >> b;
+  return (d == c);
+}

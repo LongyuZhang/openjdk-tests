@@ -1,0 +1,57 @@
+private static int fn_A(byte[][] a){
+  int b=a[0].length;
+  int c=a.length;
+  int d;
+  int e;
+  int f;
+  int g=0;
+  for (int h=0; h < c; h++) {
+    for (int i=0; i < b; i++) {
+      if (a[h][i] == 1) {
+        d=h + 1;
+        System.out.println("a[" + d + "]["+ i+ "]");
+        while (true) {
+          if (d >= c || (a[d][i] == 0 && d < c)) {
+            e=d - 1;
+            System.out.println("verEnd = " + e);
+            break;
+          }
+          d++;
+          System.out.println("a[" + d + "]["+ i+ "]");
+        }
+        d=i + 1;
+        while (true) {
+          if (d >= b || (a[h][d] == 0 && d < b)) {
+            f=d - 1;
+            System.out.println("horEnd = " + f);
+            break;
+          }
+          d++;
+        }
+        boolean j=true;
+        for (int k=h; k <= e; k++) {
+          for (int l=i; l <= f; l++) {
+            if (a[k][l] != 1) {
+              j=false;
+              break;
+            }
+          }
+        }
+        if (j) {
+          System.out.println("startI = " + h);
+          System.out.println("startJ = " + i);
+          System.out.println("endI = " + e);
+          System.out.println("endJ = " + f);
+          for (int k=h; k <= e; k++) {
+            for (int l=i; l <= f; l++) {
+              a[k][l]=0;
+            }
+          }
+          g++;
+        }
+        System.out.println();
+      }
+    }
+  }
+  return g;
+}

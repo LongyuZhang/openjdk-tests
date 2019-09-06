@@ -1,0 +1,18 @@
+static int fn_A(int a,int b){
+  int c;
+  try {
+    return a / b;
+  }
+ catch (  Exception d) {
+    c=10;
+  }
+ finally {
+    try {
+      c=b / a + 3000;
+    }
+ catch (    Exception d) {
+      c=b;
+    }
+  }
+  return c;
+}

@@ -1,0 +1,15 @@
+private static int fn_A(int a,int b){
+  if (a == -1) {
+    return 12345678;
+  }
+ else {
+    b=(a & 127) * b / 128;
+    if (b < 2) {
+      b=2;
+    }
+ else     if (b > 126) {
+      b=126;
+    }
+    return (a & 65408) + b;
+  }
+}

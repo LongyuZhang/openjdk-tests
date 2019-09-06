@@ -1,0 +1,68 @@
+static void fn_A(int[] a,int[] b,int c,int d,int e){
+  final int f=e * 2 + 1;
+  final int g=e + 1;
+  int h;
+  int i;
+  int j;
+  int k;
+  int l=0;
+  int m;
+  int n;
+  int[] o=new int[256 * f];
+  for (int p=0; p < o.length; p++) {
+    o[p]=p / f;
+  }
+  int[] q=new int[g];
+  if (e < c) {
+    for (int p=0; p < q.length; p++) {
+      q[p]=p;
+    }
+  }
+ else {
+    for (int p=0; p < c; p++) {
+      q[p]=p;
+    }
+    for (int p=c; p < q.length; p++) {
+      q[p]=c - 1;
+    }
+  }
+  for (int r=0; r < d; r++) {
+    h=i=j=k=0;
+    m=r;
+    n=a[l];
+    h+=g * ((n >> 24) & 0xFF);
+    i+=g * ((n >> 16) & 0xFF);
+    j+=g * ((n >> 8) & 0xFF);
+    k+=g * (n & 0xFF);
+    for (int p=1; p <= e; p++) {
+      n=a[l + q[p]];
+      h+=(n >> 24) & 0xFF;
+      i+=(n >> 16) & 0xFF;
+      j+=(n >> 8) & 0xFF;
+      k+=n & 0xFF;
+    }
+    for (int s=0; s < c; s++) {
+      b[m]=o[h] << 24 | o[i] << 16 | o[j] << 8 | o[k];
+      m+=d;
+      int t=s + g;
+      if (t >= c) {
+        t=c - 1;
+      }
+      int u=s - e;
+      if (u < 0) {
+        u=0;
+      }
+      int v=a[l + t];
+      int w=a[l + u];
+      h+=(v >> 24) & 0xFF;
+      h-=(w >> 24) & 0xFF;
+      i+=(v >> 16) & 0xFF;
+      i-=(w >> 16) & 0xFF;
+      j+=(v >> 8) & 0xFF;
+      j-=(w >> 8) & 0xFF;
+      k+=v & 0xFF;
+      k-=w & 0xFF;
+    }
+    l+=c;
+  }
+}

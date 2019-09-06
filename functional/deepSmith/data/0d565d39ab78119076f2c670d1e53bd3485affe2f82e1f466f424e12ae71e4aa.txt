@@ -1,0 +1,20 @@
+public static void fn_A(int a){
+  int b=15;
+  try {
+    if (a % 2 == 0) {
+      b=b / a;
+      if (b - 3 == 4)       System.out.println("mmm");
+    }
+ else {
+      b=b * a;
+      System.out.println("qqq");
+    }
+  }
+ catch (  ArithmeticException c) {
+    if (b == 12)     System.out.println("test");
+ else {
+      a+=3 * b;
+      System.out.println("test2 " + a);
+    }
+  }
+}

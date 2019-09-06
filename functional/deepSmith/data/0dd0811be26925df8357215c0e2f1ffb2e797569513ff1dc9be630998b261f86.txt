@@ -1,0 +1,5 @@
+public static byte[][] fn_A(final byte[] a){
+  byte[][] b=new byte[1][];
+  b[0]=a;
+  return b;
+}

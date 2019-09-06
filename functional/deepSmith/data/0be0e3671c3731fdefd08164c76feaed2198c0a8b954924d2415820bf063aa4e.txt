@@ -1,0 +1,5 @@
+private static void fn_A(){
+  Object a="Jerry";
+  String b=(String)a;
+  System.out.println("Hello: " + b);
+}

@@ -1,0 +1,19 @@
+public static double fn_A(int a,int b){
+  final int c=a >> 16 & 255;
+  final int d=a >> 8 & 255;
+  final int e=a & 255;
+  final int f=b >> 16 & 255;
+  final int g=b >> 8 & 255;
+  final int h=b & 255;
+  final int i=(c + f) >> 1;
+  final int j=c - f;
+  final int k=d - g;
+  final int l=e - h;
+  final double m=(((512 + i) * j * j) >> 8) + 4 * k * k + (((767 - i) * l * l) >> 8);
+  final double n=(c + d + e) / 3.0;
+  final double o=(f + g + h) / 3.0;
+  final double p=Math.abs(n - c) + Math.abs(n - d) + Math.abs(n - e);
+  final double q=Math.abs(o - f) + Math.abs(o - g) + Math.abs(o - h);
+  final double r=p - q;
+  return m + (r * r / 10.0);
+}

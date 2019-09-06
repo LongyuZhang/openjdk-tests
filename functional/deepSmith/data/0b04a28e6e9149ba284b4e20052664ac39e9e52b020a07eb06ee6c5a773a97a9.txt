@@ -1,0 +1,6 @@
+public static boolean fn_A(byte[] a){
+  if (a.length < 4) {
+    return false;
+  }
+  return (0xff == (a[0] & 0xff)) && (0xd8 == (a[1] & 0xff)) && (0xff == (a[2] & 0xff))&& (0xdb <= (a[3] & 0xff));
+}

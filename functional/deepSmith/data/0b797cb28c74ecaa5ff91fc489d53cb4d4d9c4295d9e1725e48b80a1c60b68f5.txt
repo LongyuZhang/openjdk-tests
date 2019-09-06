@@ -1,0 +1,24 @@
+private static double fn_A(double[] a,double[] b,int c,double d){
+  double e=0;
+  double f=Math.max(0,a[c] - d);
+  double g=Math.min(1,a[c] + d);
+  int h=c;
+  for (int i=h; i-- > 0; ) {
+    if (a[i] < f) {
+      f=a[h];
+      break;
+    }
+    e+=(b[h] + b[i]) * 0.5 * (a[h] - a[i]);
+    h=i;
+  }
+  h=c;
+  for (int i=h; ++i < b.length; ) {
+    if (a[i] > g) {
+      g=a[h];
+      break;
+    }
+    e+=(b[h] + b[i]) * 0.5 * (a[i] - a[h]);
+    h=i;
+  }
+  return e / (g - f);
+}

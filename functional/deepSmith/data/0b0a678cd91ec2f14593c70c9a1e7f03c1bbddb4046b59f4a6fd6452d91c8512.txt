@@ -1,0 +1,9 @@
+private static boolean fn_A(String[] a,String[] b){
+  if (a == null && b == null)   return true;
+  if (a == null || b == null)   return false;
+  if (a.length != b.length)   return false;
+  for (int c=0; c < a.length; c++)   if (a[c] == b[c])   continue;
+ else   if (a[c] == null)   return false;
+ else   if (!a[c].equals(b[c]))   return false;
+  return true;
+}

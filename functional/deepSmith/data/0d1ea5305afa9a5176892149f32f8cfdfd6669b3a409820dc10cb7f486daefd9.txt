@@ -1,0 +1,11 @@
+public static void main(String[] a){
+  try {
+    throw new NullPointerException("");
+  }
+ catch (  Exception b) {
+    return;
+  }
+ finally {
+    System.out.println("I run even there is return in try or catch block \n" + "I will not run if it is instead System.exit(0)");
+  }
+}

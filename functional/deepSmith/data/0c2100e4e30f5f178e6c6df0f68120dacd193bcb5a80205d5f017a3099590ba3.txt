@@ -1,0 +1,12 @@
+public static long fn_A(Integer a,Integer b){
+  long c=(long)a;
+  long d=(long)b;
+  long e;
+  if (c < d) {
+    e=d * d + c;
+  }
+ else {
+    e=c * c + c + d;
+  }
+  return e;
+}

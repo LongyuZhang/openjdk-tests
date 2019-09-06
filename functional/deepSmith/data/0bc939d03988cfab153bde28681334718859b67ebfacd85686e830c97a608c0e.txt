@@ -1,0 +1,4 @@
+protected final static long fn_A(byte a){
+  long b=a & 0xFF;
+  return b;
+}

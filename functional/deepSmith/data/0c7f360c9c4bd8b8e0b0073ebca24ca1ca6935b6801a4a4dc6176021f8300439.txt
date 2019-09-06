@@ -1,0 +1,17 @@
+public static int fn_A(int[] a,int b){
+  int c=0;
+  int d=a.length - 1;
+  while (c <= d) {
+    int e=(c + d) / 2;
+    if (a[e] == b) {
+      return e;
+    }
+ else     if (a[e] > b) {
+      d=e - 1;
+    }
+ else {
+      c=e + 1;
+    }
+  }
+  return -1;
+}

@@ -1,0 +1,22 @@
+public static byte[] fn_A(int a,int b){
+  int c=a;
+  int d=(b - 1) / 8 + 1;
+  byte[] e=new byte[c * d + 8];
+  e[0]=0x1D;
+  e[1]=0x76;
+  e[2]=0x30;
+  e[3]=0x00;
+  e[4]=(byte)d;
+  e[5]=(byte)(d >> 8);
+  e[6]=(byte)c;
+  e[7]=(byte)(c >> 8);
+  int f=8;
+  byte g=(byte)0xAA;
+  for (int h=0; h < c; h++) {
+    g=(byte)~g;
+    for (int i=0; i < d; i++) {
+      e[f++]=g;
+    }
+  }
+  return e;
+}

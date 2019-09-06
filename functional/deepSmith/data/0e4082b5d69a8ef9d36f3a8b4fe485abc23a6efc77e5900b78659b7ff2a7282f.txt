@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  final long b=Runtime.getRuntime().maxMemory();
+  System.out.println("maxMemory: " + b / 2048 + " mb");
+}

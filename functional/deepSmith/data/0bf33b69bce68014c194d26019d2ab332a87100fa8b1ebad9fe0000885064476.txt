@@ -1,0 +1,32 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0x0:
+    return "undefined content";
+case 0x1:
+  return "Movie/Drama:";
+case 0x2:
+return "News/Current affairs:";
+case 0x3:
+return "Show/Game show:";
+case 0x4:
+return "Sports:";
+case 0x5:
+return "Children's/Youth programmes:";
+case 0x6:
+return "Music/Ballet/Dance:";
+case 0x7:
+return "Arts/Culture (without music)::";
+case 0x8:
+return "Social/Political issues/Economics:";
+case 0x9:
+return "Education/Science/Factual topics:";
+case 0xA:
+return "Leisure hobbies:";
+case 0xB:
+return "Special characteristics:";
+case 0xF:
+return "user defined";
+default :
+return "reserved for future use:";
+}
+}

@@ -1,0 +1,9 @@
+public static int fn_A(int a,int b,int c){
+  if (c > 100) {
+    c=100;
+  }
+ else   if (c < 0) {
+    c=0;
+  }
+  return c;
+}

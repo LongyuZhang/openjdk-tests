@@ -1,0 +1,15 @@
+public static int[][] fn_A(int[] a,int b,int c,int d) throws Exception {
+  if (c < b - 1) {
+    throw new Exception("Start point t=" + c + " is too early for a "+ b+ " length embedding vector");
+  }
+  if (d + c > a.length) {
+    throw new Exception("Too many embedding vectors " + d + " requested for the given startPoint "+ c+ " and time series length "+ a.length);
+  }
+  int[][] e=new int[d][b];
+  for (int f=c; f < d + c; f++) {
+    for (int g=0; g < b; g++) {
+      e[f - c][g]=a[f - g];
+    }
+  }
+  return e;
+}

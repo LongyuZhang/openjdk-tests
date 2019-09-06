@@ -1,0 +1,11 @@
+public static String fn_A(int a){
+switch (a) {
+case 0:
+    return "x";
+case 1:
+  return "y";
+case 2:
+return "z";
+}
+return "x";
+}

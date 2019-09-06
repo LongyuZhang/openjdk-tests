@@ -1,0 +1,11 @@
+static boolean fn_A(int[] a,int b){
+  if (b == 0)   return false;
+  for (int c=0; c < b; c++) {
+    for (int d=0; d < b; d++) {
+      if (c == d)       continue;
+      if (a[c] == a[d])       return true;
+      if (Math.abs(a[d] - a[c]) == Math.abs(d - c))       return true;
+    }
+  }
+  return false;
+}

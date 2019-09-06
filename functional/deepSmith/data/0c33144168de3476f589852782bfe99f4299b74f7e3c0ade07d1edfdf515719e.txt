@@ -1,0 +1,11 @@
+public static byte[] fn_A(int a){
+  byte[] b=new byte[1];
+  b=new byte[a];
+  b[0]='a';
+  int c=1;
+  for (; c < a - 1; c++) {
+    b[c]='X';
+  }
+  b[c]='z';
+  return b;
+}

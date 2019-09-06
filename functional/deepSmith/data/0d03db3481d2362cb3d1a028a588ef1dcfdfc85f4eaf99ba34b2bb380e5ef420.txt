@@ -1,0 +1,5 @@
+public static String fn_A(String a,String b){
+  String c="";
+  c+="select coalesce(max(" + b + ")+1,1) as \""+ b+ "\" from "+ a;
+  return c;
+}

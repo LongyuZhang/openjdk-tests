@@ -1,0 +1,11 @@
+public static Class fn_A(Class a){
+  if (a == Boolean.TYPE)   return Boolean.class;
+ else   if (a == Character.TYPE)   return Character.class;
+ else   if (a == Byte.TYPE)   return Byte.class;
+ else   if (a == Short.TYPE)   return Short.class;
+ else   if (a == Integer.TYPE)   return Integer.class;
+ else   if (a == Long.TYPE)   return Long.class;
+ else   if (a == Float.TYPE)   return Float.class;
+ else   if (a == Double.TYPE)   return Double.class;
+  throw new ClassCastException("Cannot convert class" + a + " to an object class");
+}

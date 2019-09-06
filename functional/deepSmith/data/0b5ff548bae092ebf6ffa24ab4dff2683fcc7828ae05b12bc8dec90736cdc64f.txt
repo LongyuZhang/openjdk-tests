@@ -1,0 +1,6 @@
+private static int fn_A(final byte a[],final int b,final int c){
+  if (a == null)   return 0;
+  int d=1;
+  for (int e=0; e < c; e++)   d=31 * d + a[b + e];
+  return d;
+}

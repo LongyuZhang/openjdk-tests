@@ -1,0 +1,6 @@
+private static boolean fn_A(long a){
+  for (long b=2; b <= a / 2; b++) {
+    if (a % b == 0)     return false;
+  }
+  return true;
+}

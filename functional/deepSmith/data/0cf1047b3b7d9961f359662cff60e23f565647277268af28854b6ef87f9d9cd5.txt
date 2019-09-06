@@ -1,0 +1,49 @@
+public static int[][] fn_A(int[][] a){
+  final int b=a.length;
+  final int c=a[0].length;
+  boolean d=false;
+  for (int e=0; e < c; e++) {
+    if (a[0][e] == 0) {
+      d=true;
+    }
+  }
+  boolean f=false;
+  for (int g=0; g < b; g++) {
+    if (a[g][0] == 0) {
+      f=true;
+    }
+  }
+  for (int g=1; g < b; g++) {
+    for (int e=1; e < c; e++) {
+      if (a[g][e] == 0) {
+        a[g][0]=0;
+        a[0][e]=0;
+      }
+    }
+  }
+  for (int e=1; e < c; e++) {
+    if (a[0][e] == 0) {
+      for (int g=1; g < b; g++) {
+        a[g][e]=0;
+      }
+    }
+  }
+  for (int g=1; g < b; g++) {
+    if (a[g][0] == 0) {
+      for (int e=1; e < c; e++) {
+        a[g][e]=0;
+      }
+    }
+  }
+  if (d) {
+    for (int e=0; e < c; e++) {
+      a[0][e]=0;
+    }
+  }
+  if (f) {
+    for (int g=0; g < b; g++) {
+      a[g][0]=0;
+    }
+  }
+  return a;
+}

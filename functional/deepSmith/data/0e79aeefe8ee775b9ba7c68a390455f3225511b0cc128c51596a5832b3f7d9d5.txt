@@ -1,0 +1,14 @@
+public static int fn_A(int a,int b){
+  int c=0;
+switch (b) {
+case 1:
+    c=a * 5 + 80;
+  break;
+case 2:
+c=a * 1 + 5;
+break;
+default :
+break;
+}
+return c;
+}

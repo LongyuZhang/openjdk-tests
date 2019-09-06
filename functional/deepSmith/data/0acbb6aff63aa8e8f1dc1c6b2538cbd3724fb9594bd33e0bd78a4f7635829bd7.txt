@@ -1,0 +1,6 @@
+private static boolean fn_A(int[] a){
+  if ((a[0] == 255) && (a[1] == 255) && (a[2] == 255)) {
+    return true;
+  }
+  return false;
+}

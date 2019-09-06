@@ -1,0 +1,9 @@
+public static double fn_A(double a,double b,double[][] c){
+  double d=0;
+  for (int e=0; e < c.length; e++) {
+    double f=c[e][0];
+    double g=c[e][1];
+    d+=(g - (b * f + a)) * (g - (b * f + a));
+  }
+  return d / (double)c.length;
+}

@@ -1,0 +1,41 @@
+static void fn_A(float[] a,float[] b,int c){
+  int d, e, f=c / 2;
+  float[] g=new float[f];
+  float[] h=new float[f];
+  float i;
+  float[] j=new float[f + 1];
+  float[] k=new float[f + 1];
+  float l;
+  float[] m=new float[f];
+  float[] n=new float[f];
+  float o;
+  for (d=0; d < f; d++) {
+    g[d]=(float)(-2. * Math.cos(a[d * 2]));
+    h[d]=(float)(-2. * Math.cos(a[d * 2 + 1]));
+  }
+  for (e=0; e < f; e++) {
+    j[e]=0.f;
+    k[e]=1.f;
+    m[e]=0.f;
+    n[e]=1.f;
+  }
+  k[e]=1.f;
+  j[e]=1.f;
+  for (d=1; d < c + 1; d++) {
+    l=0.f;
+    i=l;
+    for (e=0; e < f; e++) {
+      o=g[e] * k[e] + j[e];
+      j[e]=k[e];
+      k[e]=i;
+      i+=o;
+      o=h[e] * n[e] + m[e];
+      m[e]=n[e];
+      n[e]=l;
+      l+=o;
+    }
+    b[d - 1]=(i + k[e] + l - j[e]) / 2;
+    k[e]=i;
+    j[e]=l;
+  }
+}

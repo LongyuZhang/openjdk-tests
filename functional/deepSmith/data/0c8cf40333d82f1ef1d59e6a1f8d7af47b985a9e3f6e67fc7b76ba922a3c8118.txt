@@ -1,0 +1,12 @@
+protected static final int fn_A(final float[] a,final float[] b,String c){
+  if (a == null) {
+    throw new IllegalArgumentException("ptolemy.math." + c + "() : first input array is null.");
+  }
+  if (b == null) {
+    throw new IllegalArgumentException("ptolemy.math." + c + "() : second input array is null.");
+  }
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("ptolemy.math." + c + "() : input arrays must have the same length, "+ "but the first array has length "+ a.length+ " and the second array has length "+ b.length+ ".");
+  }
+  return a.length;
+}

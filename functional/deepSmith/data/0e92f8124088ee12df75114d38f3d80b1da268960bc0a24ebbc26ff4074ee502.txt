@@ -1,0 +1,7 @@
+private static char fn_A(int a){
+  if (a > 26 || a < 0) {
+    return '\0';
+  }
+  char b=(char)('A' + a - 1);
+  return b;
+}

@@ -1,0 +1,4 @@
+private static int fn_A(byte[] a,int b,int c,int d){
+  byte e=a[b], f=a[c], g=a[d];
+  return e < f ? (f < g ? c : (e < g ? d : b)) : (f > g ? c : (e > g ? d : b));
+}

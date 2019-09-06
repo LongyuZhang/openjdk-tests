@@ -1,0 +1,9 @@
+public static float fn_A(float a,float b,float c,float d,float e){
+  if (e < a) {
+    return c;
+  }
+  if (e > b) {
+    return d;
+  }
+  return (e - a) / (b - a) * (d - c) + c;
+}

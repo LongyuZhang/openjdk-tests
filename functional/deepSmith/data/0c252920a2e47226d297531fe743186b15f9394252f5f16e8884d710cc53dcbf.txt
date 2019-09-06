@@ -1,0 +1,8 @@
+public static boolean fn_A(){
+  try {
+    if ("true".equals(System.getProperty("jvarkit.progress.silent","")))     return true;
+  }
+ catch (  Throwable a) {
+  }
+  return false;
+}

@@ -1,0 +1,29 @@
+public static int[] fn_A(int[] a){
+  int b=a[0];
+  int c;
+  int d=0;
+  int e=0;
+  int f=0;
+  int g=b;
+  for (int h=1; h < a.length; h++) {
+    int i=b + a[h];
+    if (i > a[h]) {
+      c=i;
+    }
+ else {
+      d=h;
+      c=a[h];
+    }
+    if (c > g) {
+      g=c;
+      f=h;
+      e=d;
+    }
+    b=c;
+  }
+  int[] j=new int[3];
+  j[0]=g;
+  j[1]=e;
+  j[2]=f;
+  return j;
+}

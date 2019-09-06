@@ -1,0 +1,12 @@
+private static float fn_A(int a){
+  int b=(a & 0x8000) >> 15;
+  int c=(a & 0x7C00) >> 10;
+  int d=a & 0x03FF;
+  if (c == 0) {
+    return (float)((b != 0 ? -1 : 1) * Math.pow(2,-14) * (d / Math.pow(2,10)));
+  }
+ else   if (c == 0x1F) {
+    return d != 0 ? Float.NaN : (b != 0 ? -1 : 1) * Float.POSITIVE_INFINITY;
+  }
+  return (float)((b != 0 ? -1 : 1) * Math.pow(2,c - 15) * (1 + d / Math.pow(2,10)));
+}

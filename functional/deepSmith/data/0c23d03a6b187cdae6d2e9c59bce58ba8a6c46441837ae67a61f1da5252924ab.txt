@@ -1,0 +1,5 @@
+static int fn_A(char a,char[][] b){
+  int c=0;
+  for (int d=0; d < 3; d++)   for (int e=0; e < 3; e++)   if (b[d][e] == a)   c++;
+  return c;
+}

@@ -1,0 +1,22 @@
+public static String fn_A(Long a,Long b){
+  Long c=(b - a) / (24 * 60 * 60);
+  Long d=(b - a) % (24 * 60 * 60);
+  Long e=d / (60 * 60);
+  Long f=d % (60 * 60);
+  Long g=f / 60;
+  Long h=f % 60;
+  String i="";
+  if (c > 0) {
+    i+=c + "";
+  }
+  if (e > 0) {
+    i+=e + "";
+  }
+  if (g > 0) {
+    i+=g + "";
+  }
+  if (h > 0) {
+    i+=h + "";
+  }
+  return i;
+}

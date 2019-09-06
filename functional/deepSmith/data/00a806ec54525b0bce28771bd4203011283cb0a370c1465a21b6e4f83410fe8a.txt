@@ -1,0 +1,10 @@
+public static int fn_A(int a){
+  int b=0;
+  int c=0;
+  final int d=64;
+  while (b < d) {
+    c+=b * a;
+    b++;
+  }
+  return c;
+}

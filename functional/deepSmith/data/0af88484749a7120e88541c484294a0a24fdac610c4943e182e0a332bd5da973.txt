@@ -1,0 +1,31 @@
+public static int fn_A(char a){
+switch (a) {
+case '0':
+case '1':
+case '2':
+case '3':
+case '4':
+case '5':
+case '6':
+case '7':
+case '8':
+case '9':
+    return a - '0';
+case 'A':
+case 'B':
+case 'C':
+case 'D':
+case 'E':
+case 'F':
+  return a - 55;
+case 'a':
+case 'b':
+case 'c':
+case 'd':
+case 'e':
+case 'f':
+return a - 87;
+default :
+throw new IllegalArgumentException("Not a hex: " + a);
+}
+}

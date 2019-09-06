@@ -1,0 +1,9 @@
+static int fn_A(double[] a,int b){
+  int c=0;
+  for (int d=1; d < b; d++) {
+    if (a[d] > a[c]) {
+      c=d;
+    }
+  }
+  return c;
+}

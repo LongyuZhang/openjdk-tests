@@ -1,0 +1,8 @@
+public static final float[] fn_A(final double[] a){
+  int b=a.length;
+  float[] c=new float[b];
+  for (int d=0; d < b; d++) {
+    c[d]=(float)a[d];
+  }
+  return c;
+}

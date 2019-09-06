@@ -1,0 +1,11 @@
+static BufferedReader fn_A(File a){
+  BufferedReader b=null;
+  try {
+    b=new BufferedReader(new FileReader(a));
+  }
+ catch (  Exception c) {
+    System.err.println("Can't open '" + a + "' for input: "+ c);
+    System.exit(1);
+  }
+  return b;
+}

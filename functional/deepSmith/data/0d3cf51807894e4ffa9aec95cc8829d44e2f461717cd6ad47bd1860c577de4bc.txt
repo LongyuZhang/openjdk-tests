@@ -1,0 +1,9 @@
+static short fn_A(){
+  Short a=Short.valueOf((short)1);
+  for (int b=0; b < 1000; b++) {
+    if ((b & 1) == 0) {
+      a=(short)(a + 1);
+    }
+  }
+  return a;
+}

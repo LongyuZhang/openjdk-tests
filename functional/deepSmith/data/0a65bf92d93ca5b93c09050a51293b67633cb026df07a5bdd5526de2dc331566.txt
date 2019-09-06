@@ -1,0 +1,10 @@
+static void fn_A(float[] a,int b,int c){
+  for (int d=b + 1; d < b + c; d++) {
+    float e=a[d];
+    int f=d - 1;
+    for (; f >= b && a[f] > e; f--) {
+      a[f + 1]=a[f];
+    }
+    a[f + 1]=e;
+  }
+}

@@ -1,0 +1,6 @@
+public static long fn_A(long a){
+  a=((a & 0xFF00FF00FF00FF00L) >> 8) | ((a & 0x00FF00FF00FF00FFL) << 8);
+  a=((a & 0xFFFF0000FFFF0000L) >> 16) | ((a & 0x0000FFFF0000FFFFL) << 16);
+  a=(a >> 32) | (a << 32);
+  return a;
+}

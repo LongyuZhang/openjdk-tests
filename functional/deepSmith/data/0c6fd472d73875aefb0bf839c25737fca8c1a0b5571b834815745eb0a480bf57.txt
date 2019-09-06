@@ -1,0 +1,9 @@
+protected static String fn_A(int a){
+  if (a == 1)   return "oneTeam";
+ else   if (a == 2) {
+    return "twoTeams";
+  }
+ else {
+    return "multipleTeams";
+  }
+}

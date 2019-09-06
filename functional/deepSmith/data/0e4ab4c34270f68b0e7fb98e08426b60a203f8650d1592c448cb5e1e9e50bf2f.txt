@@ -1,0 +1,18 @@
+private static float fn_A(float a,float b,float c){
+  if (c < 0f) {
+    c++;
+  }
+  if (c > 1f) {
+    c--;
+  }
+  if ((6f * c) < 1f) {
+    return (a + (((b - a) * 6f) * c));
+  }
+  if ((2f * c) < 1f) {
+    return b;
+  }
+  if ((3f * c) < 2f) {
+    return (a + (((b - a) * (0.6666667f - c)) * 6f));
+  }
+  return a;
+}

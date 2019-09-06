@@ -1,0 +1,7 @@
+private final static int fn_A(final int a){
+  for (int b=1; ; b*=2) {
+    if (b >= a) {
+      return b;
+    }
+  }
+}

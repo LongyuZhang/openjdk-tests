@@ -1,0 +1,8 @@
+private static final long[] fn_A(){
+  long[] a=new long[8];
+  a[0]=-576460752303423496L;
+  for (int b=1; b <= 3; b++) {
+    a[b]=-1L;
+  }
+  return a;
+}

@@ -1,0 +1,16 @@
+private static double fn_A(int a,int b){
+  int c=1, d=1, e=1, f=a - b, g=b;
+  if (b > a - b) {
+    f=b;
+    g=a - b;
+  }
+  for (int h=1; h <= a; h++) {
+    if (h <= g) {
+      c*=h;
+      e*=h;
+    }
+ else     if (h <= f)     e*=h;
+    d*=h;
+  }
+  return d / (double)(c * e);
+}

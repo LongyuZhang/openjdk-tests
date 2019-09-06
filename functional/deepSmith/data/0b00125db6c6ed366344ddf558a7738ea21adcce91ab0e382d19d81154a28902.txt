@@ -1,0 +1,22 @@
+public static double[] fn_A(int[] a){
+  double[] b=new double[3];
+  double c=a[0] / 255D;
+  double d=a[1] / 255D;
+  double e=a[2] / 255D;
+  if (c > 0.04045)   c=(double)Math.pow(((c + 0.055D) / 1.055D),2.4D);
+ else   c/=12.92D;
+  if (d > 0.04045)   d=(double)Math.pow(((d + 0.055D) / 1.055D),2.4D);
+ else   d/=12.92D;
+  if (e > 0.04045)   e=(double)Math.pow(((e + 0.055D) / 1.055D),2.4D);
+ else   e/=12.92D;
+  c*=100;
+  d*=100;
+  e*=100;
+  double f=0.412453D * c + 0.35758D * d + 0.180423D * e;
+  double g=0.212671D * c + 0.71516D * d + 0.072169D * e;
+  double h=0.019334D * c + 0.119193D * d + 0.950227D * e;
+  b[0]=f;
+  b[1]=g;
+  b[2]=h;
+  return b;
+}

@@ -1,0 +1,8 @@
+public static void fn_A(byte a,byte[] b,int c,int d){
+  if (d > 4)   throw new IllegalArgumentException("Bit offset cannot be greater than 4");
+  int e=(byte)(a & 0x0f);
+  e=e << d;
+  int f=~(0x0f << d);
+  int g=b[c] & f;
+  b[c]=(byte)(g | e);
+}

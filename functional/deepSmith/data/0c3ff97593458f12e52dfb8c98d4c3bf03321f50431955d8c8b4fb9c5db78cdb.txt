@@ -1,0 +1,4 @@
+public static Double fn_A(Double a){
+  if (a == null)   return null;
+  return a * 0.3048;
+}

@@ -1,0 +1,8 @@
+public static long fn_A(byte[] a){
+  long b=0;
+  for (int c=0; c < 8; c++) {
+    b<<=8;
+    b^=a[c] & 0xFF;
+  }
+  return b;
+}

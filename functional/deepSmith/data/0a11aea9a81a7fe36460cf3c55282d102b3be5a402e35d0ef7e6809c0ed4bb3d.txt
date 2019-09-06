@@ -1,0 +1,5 @@
+public static void main(String[] a){
+  System.out.println("***********************************************************************************");
+  System.out.println("You need to start manually under ./target/server/bin just run ./artemis run");
+  System.out.println("***********************************************************************************");
+}

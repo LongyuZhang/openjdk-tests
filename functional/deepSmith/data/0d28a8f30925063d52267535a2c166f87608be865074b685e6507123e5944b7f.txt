@@ -1,0 +1,8 @@
+private static double[] fn_A(double[] a,int[] b){
+  final int c=a.length;
+  double[] d=new double[c];
+  for (int e=0; e < c; e++) {
+    d[e]=a[b[e]];
+  }
+  return d;
+}

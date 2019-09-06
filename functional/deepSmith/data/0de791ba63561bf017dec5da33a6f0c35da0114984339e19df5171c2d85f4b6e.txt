@@ -1,0 +1,6 @@
+public static BufferedReader fn_A(String a,BufferedReader b) throws FileNotFoundException, UnsupportedEncodingException {
+  File c=new File(a);
+  FileInputStream d=new FileInputStream(c);
+  b=new BufferedReader(new InputStreamReader(d,"UTF-8"));
+  return b;
+}

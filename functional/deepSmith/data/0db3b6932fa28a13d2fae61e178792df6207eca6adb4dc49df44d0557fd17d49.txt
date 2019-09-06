@@ -1,0 +1,9 @@
+static public BufferedReader fn_A(InputStream a){
+  InputStreamReader b=null;
+  try {
+    b=new InputStreamReader(a,"UTF-8");
+  }
+ catch (  UnsupportedEncodingException c) {
+  }
+  return new BufferedReader(b);
+}

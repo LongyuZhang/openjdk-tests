@@ -1,0 +1,9 @@
+public static long fn_A(long... a){
+  long b=a[0];
+  for (int c=1; c < a.length; c++) {
+    if (a[c] > b) {
+      b=a[c];
+    }
+  }
+  return b;
+}

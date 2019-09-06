@@ -1,0 +1,20 @@
+public static boolean[][] fn_A(char[] a,char[] b){
+  int c=a.length;
+  int d=b.length;
+  boolean[][] e=new boolean[c + 1][d + 1];
+  e[c][d]=true;
+  for (int f=d - 2; f > -1; f=f - 2) {
+    if (b[f] != '*' && b[f + 1] == '*') {
+      e[c][f]=true;
+    }
+ else {
+      break;
+    }
+  }
+  if (c > 0 && d > 0) {
+    if ((b[d - 1] == '.' || a[c - 1] == b[d - 1])) {
+      e[c - 1][d - 1]=true;
+    }
+  }
+  return e;
+}

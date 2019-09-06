@@ -1,0 +1,4 @@
+private static void fn_A(final float[] a,final float[] b){
+  if (a == null || b == null)   throw new NullPointerException();
+  if (a.length != b.length)   throw new IllegalArgumentException("Arrays don't have the same length");
+}

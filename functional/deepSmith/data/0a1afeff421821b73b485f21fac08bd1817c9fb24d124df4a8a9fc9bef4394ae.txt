@@ -1,0 +1,9 @@
+public static boolean fn_A(double[] a,int b,double[] c,int d,int e){
+  if (a == c)   return true;
+  if ((a == null) || (c == null))   return false;
+  int f=b + e;
+  for (int g=b, h=d; h < f; g++, h++) {
+    if (a[g] != c[h])     return false;
+  }
+  return true;
+}

@@ -1,0 +1,14 @@
+private static float fn_A(int a,int b){
+switch (a) {
+case 1:
+    if (b == 0)     return 0.6f;
+ else     return 0.75f;
+case 2:
+  return 0.9f;
+case 3:
+return 0.98f;
+default :
+if (b == 1) return 0.6f;
+ else return 0.0f;
+}
+}

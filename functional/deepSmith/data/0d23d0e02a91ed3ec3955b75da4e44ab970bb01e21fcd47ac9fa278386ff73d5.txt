@@ -1,0 +1,15 @@
+public static byte[] fn_A(float[] a){
+  byte[] b=new byte[a.length * 2];
+  for (int c=0; c < a.length; c++) {
+    int d;
+    if (a[c] < 0) {
+      d=(int)(-a[c] * Short.MIN_VALUE);
+    }
+ else {
+      d=(int)(a[c] * Short.MAX_VALUE);
+    }
+    b[c * 2]=(byte)(d & 0xff);
+    b[c * 2 + 1]=(byte)(d >>> 8);
+  }
+  return b;
+}

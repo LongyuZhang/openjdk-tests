@@ -1,0 +1,5 @@
+public static void main(String[] a){
+  System.out.println("\n*** LocationData handles results from the following query: ***\n");
+  System.out.println(" select CITY (string), STATE (string), GRAPHIC (string, url or graphic name), LATITUDE (float), LONGITUDE (float) from LOCATION_TABLE (tablename where data is stored)\n");
+  System.out.println("Note: Column names and tablename should reflect whatever is stored in the database.  Data types should match what this class is expecting, in the order listed here.\n");
+}

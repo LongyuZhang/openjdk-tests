@@ -1,0 +1,4 @@
+public static void fn_A(){
+  double a=100;
+  Math.sqrt(a);
+}

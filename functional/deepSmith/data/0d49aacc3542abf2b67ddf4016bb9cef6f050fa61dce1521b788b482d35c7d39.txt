@@ -1,0 +1,8 @@
+static int fn_A(int a,int b,int c){
+  if (a >= b && a <= c - 1) {
+    int d=c - b;
+    if (a < b + d / 2)     a=b + d / 2;
+ else     a=c - 1;
+  }
+  return a;
+}

@@ -1,0 +1,13 @@
+public static long[] fn_A(long a[]){
+  int b=a.length;
+  for (int c=1; c < b; c++) {
+    long d=a[c];
+    int e=c - 1;
+    while ((e > -1) && (a[e] > d)) {
+      a[e + 1]=a[e];
+      e--;
+    }
+    a[e + 1]=d;
+  }
+  return a;
+}

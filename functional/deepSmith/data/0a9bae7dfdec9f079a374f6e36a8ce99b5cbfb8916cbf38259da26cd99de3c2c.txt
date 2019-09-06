@@ -1,0 +1,23 @@
+public static double fn_A(double[][] a){
+  double[] b=new double[a.length];
+  double[] c=new double[a[0].length];
+  for (int d=0; d < b.length; d++) {
+    for (int e=0; e < a.length; e++) {
+      b[d]+=a[d][e];
+    }
+    b[d]/=a.length;
+  }
+  for (int e=0; e < c.length; e++) {
+    for (int d=0; d < a.length; d++) {
+      c[d]+=a[d][e];
+    }
+    c[e]/=a[0].length;
+  }
+  double f=0;
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[0].length; e++) {
+      f+=Math.pow((d - b[d]) + (e - c[e]),4) * a[d][e];
+    }
+  }
+  return f;
+}

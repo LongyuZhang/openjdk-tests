@@ -1,0 +1,8 @@
+private static Map<? extends Object,? extends Object> fn_A(Map<? extends Object,? extends Object> a){
+  if (a instanceof HashMap) {
+    return a;
+  }
+ else {
+    return new HashMap<>(a);
+  }
+}

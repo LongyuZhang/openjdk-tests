@@ -1,0 +1,4 @@
+private static int fn_A(int a){
+  int b=5;
+  return b - (a % 10);
+}

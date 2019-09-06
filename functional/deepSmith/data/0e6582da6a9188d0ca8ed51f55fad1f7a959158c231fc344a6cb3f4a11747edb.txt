@@ -1,0 +1,15 @@
+public static int fn_A(int a){
+  int[] b=new int[a];
+  for (int c=0; c < b.length; c++) {
+    b[c]=c;
+  }
+  int c=0;
+  int d=a - 1;
+  int e=0;
+  while (c < a) {
+    e+=(b[c] + b[d]) / 2;
+    d=c;
+    c++;
+  }
+  return e;
+}

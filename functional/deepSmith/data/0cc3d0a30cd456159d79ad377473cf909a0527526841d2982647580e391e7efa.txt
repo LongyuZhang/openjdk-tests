@@ -1,0 +1,19 @@
+private static float fn_A(short a){
+  int b=a & 0x03ff;
+  int c=a & 0x7c00;
+  if (c == 0x7c00)   c=0x3fc00;
+ else   if (c != 0) {
+    c+=0x1c000;
+    if (b == 0 && c > 0x1c400)     return Float.intBitsToFloat((a & 0x8000) << 16 | c << 13 | 0x3ff);
+  }
+ else   if (b != 0) {
+    c=0x1c400;
+    do {
+      b<<=1;
+      c-=0x400;
+    }
+ while ((b & 0x400) == 0);
+    b&=0x3ff;
+  }
+  return Float.intBitsToFloat((a & 0x8000) << 16 | (c | b) << 13);
+}

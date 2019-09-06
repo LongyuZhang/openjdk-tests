@@ -1,0 +1,6 @@
+private static String fn_A(String a,String b,boolean c){
+  String d="";
+  d=d + a + "=\""+ b+ "\"";
+  if (!c)   d+=", ";
+  return d;
+}

@@ -1,0 +1,4 @@
+public static int fn_A(int a,int b,int c,int d,int e){
+  int f=e + ((e % (c * d) == 0) ? 0 : ((c * d) - (e % (c * d))));
+  return f * (d * (a - 1) + b - 1) / (c * d) + 1;
+}

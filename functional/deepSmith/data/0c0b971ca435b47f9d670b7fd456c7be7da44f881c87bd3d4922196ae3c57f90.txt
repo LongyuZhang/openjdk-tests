@@ -1,0 +1,100 @@
+public static void main(String[] a){
+  System.out.println("const vec3 offset[125] = {");
+  for (int b=-2; b <= 2; b++) {
+    for (int c=-2; c <= 2; c++) {
+      for (int d=-2; d <= 2; d++) {
+        if (d != -2) {
+          System.out.print(",   \t");
+        }
+ else {
+          System.out.print("\t");
+        }
+        System.out.print("vec3(" + b + ", "+ d+ ", "+ c+ ")");
+      }
+      if (!(b == 2 && c == 2)) {
+        System.out.print(",");
+      }
+      System.out.println();
+    }
+    System.out.println("\n");
+  }
+  System.out.println("};\n");
+  System.out.println("const float xGradZH[125] = {");
+  for (int b=-2; b <= 2; b++) {
+    for (int c=-2; c <= 2; c++) {
+      for (int d=-2; d <= 2; d++) {
+        if (d != -2) {
+          System.out.print(",   \t");
+        }
+ else {
+          System.out.print("\t");
+        }
+        float e=(float)Math.sqrt(b * b + d * d + c * c);
+        if (e != 0f) {
+          System.out.print(b / e);
+        }
+ else {
+          System.out.print(0f);
+        }
+      }
+      if (!(b == 2 && c == 2)) {
+        System.out.print(",");
+      }
+      System.out.println();
+    }
+    System.out.println("\n");
+  }
+  System.out.println("};\n");
+  System.out.println("const float yGradZH[125] = {");
+  for (int b=-2; b <= 2; b++) {
+    for (int c=-2; c <= 2; c++) {
+      for (int d=-2; d <= 2; d++) {
+        if (d != -2) {
+          System.out.print(",   \t");
+        }
+ else {
+          System.out.print("\t");
+        }
+        float e=(float)Math.sqrt(b * b + d * d + c * c);
+        if (e != 0f) {
+          System.out.print(d / e);
+        }
+ else {
+          System.out.print(0f);
+        }
+      }
+      if (!(b == 2 && c == 2)) {
+        System.out.print(",");
+      }
+      System.out.println();
+    }
+    System.out.println("\n");
+  }
+  System.out.println("};\n");
+  System.out.println("const float zGradZH[125] = {");
+  for (int b=-2; b <= 2; b++) {
+    for (int c=-2; c <= 2; c++) {
+      for (int d=-2; d <= 2; d++) {
+        if (d != -2) {
+          System.out.print(",   \t");
+        }
+ else {
+          System.out.print("\t");
+        }
+        float e=(float)Math.sqrt(b * b + d * d + c * c);
+        if (e != 0f) {
+          System.out.print(c / e);
+        }
+ else {
+          System.out.print(0f);
+        }
+      }
+      if (!(b == 2 && c == 2)) {
+        System.out.print(",");
+      }
+      System.out.println();
+    }
+    System.out.println("\n");
+  }
+  System.out.println("};");
+}

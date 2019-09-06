@@ -1,0 +1,4 @@
+public static final void fn_A(long[] a,final long[] b){
+  final int c=Math.min(b.length,a.length);
+  for (int d=0; d < c; ++d)   a[d]=~(a[d] | b[d]);
+}

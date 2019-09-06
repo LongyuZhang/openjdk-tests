@@ -1,0 +1,5 @@
+protected static boolean fn_A(char a){
+  boolean b=a == '-' || a == '.' || a == ':' || a == '_';
+  boolean c=a == '\u00b7' || a == '\u0387' || a == '\u06dd' || a == '\u06de';
+  return b || c;
+}

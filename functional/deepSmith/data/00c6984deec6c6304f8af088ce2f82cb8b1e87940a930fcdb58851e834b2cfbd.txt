@@ -1,0 +1,9 @@
+public static RuntimeException fn_A(Throwable a){
+  if (a instanceof RuntimeException) {
+    return (RuntimeException)a;
+  }
+  if (a instanceof Error) {
+    throw (Error)a;
+  }
+  return new RuntimeException(a);
+}

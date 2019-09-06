@@ -1,0 +1,8 @@
+protected static Class<?> fn_A(){
+  try {
+    return Class.forName("org.neo4j.collections.graphdb.impl.NullaryEdgeTypeImpl");
+  }
+ catch (  ClassNotFoundException a) {
+    throw new RuntimeException(a);
+  }
+}
