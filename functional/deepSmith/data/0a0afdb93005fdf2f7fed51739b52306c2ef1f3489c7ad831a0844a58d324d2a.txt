@@ -1,0 +1,10 @@
+public static long fn_A(long a,int b){
+  long c=0;
+  while (b > 0) {
+    c<<=8;
+    c|=(a & 0xff);
+    a>>=8;
+    b-=1;
+  }
+  return c;
+}
