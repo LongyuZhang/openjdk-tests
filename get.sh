@@ -227,6 +227,32 @@ getBinaryOpenjdk()
 	chmod -R 755 j2sdk-image
 }
 
+getTestData()
+{
+	echo "get test data..."
+	cd $TESTDIR
+	mkdir -p data/src
+	cd data/src
+	data_url="https://na.artifactory.swg-devops.com:443/artifactory/sys-rt-generic-local/UploadFile/155/deepSmithData.tar.gz"
+	echo "curl -OLJks ${curl_options} ${data_url}"
+	curl -OLJks ${curl_options} ${data_url}
+	# file deepSmithData.tar.gz
+	# echo "current $PWD"
+
+	sources_file=`ls`
+	if [[ $sources_file == *zip || $sources_file == *jar ]]; then
+		unzip -q $sources_file -d .
+	else
+		gzip -cd $sources_file | tar xof -
+	fi
+	rm $sources_file
+	folder=`ls -d */`
+	mv $folder ../deepSmithData
+	cd ../
+	# echo "finally $PWD"
+	rm -rf src
+}
+
 getOpenJDKSources() {
 	echo "get jdk sources..."
 	cd $TESTDIR
@@ -378,6 +404,7 @@ parseCommandLineArgs "$@"
 if [[ "$SDKDIR" != "" ]]; then
 	getBinaryOpenjdk
 	testJavaVersion
+	getTestData
 fi
 if [ "$SDK_RESOURCE" == "customized" ] && [ "$CUSTOMIZED_SDK_SOURCE_URL" != "" ]; then
 	getOpenJDKSources
