@@ -247,6 +247,28 @@ getOpenJDKSources() {
 	rm -rf src
 }
 
+getTestData() {
+	echo "get deepSmith test data"
+	cd $TESTDIR
+	mkdir -p openjdk/src
+	cd openjdk/src
+	tmp_data_link="https://na.artifactory.swg-devops.com/artifactory/sys-rt-generic-local/UploadFile/153/deepSmithData.zip"
+	echo "curl -OLJks --retry 5 --retry-delay 300 ${curl_options} ${tmp_data_link}"
+	curl -OLJks --retry 5 --retry-delay 300 ${curl_options} ${tmp_data_link}
+	sources_file=`ls`
+	if [[ $sources_file == *zip || $sources_file == *jar ]]; then
+		unzip -q $sources_file -d .
+	else
+		gzip -cd $sources_file | tar xof -
+	fi
+	rm $sources_file
+	folder=`ls -d */`
+	mv $folder ../openjdk-tests
+	cd ../
+	echo "testing current directory is $PWD"
+	rm -rf src
+}
+
 getTestKitGenAndFunctionalTestMaterial()
 {
 	echo "get testKitGen and functional test material..."
@@ -381,6 +403,7 @@ if [[ "$SDKDIR" != "" ]]; then
 fi
 if [ "$SDK_RESOURCE" == "customized" ] && [ "$CUSTOMIZED_SDK_SOURCE_URL" != "" ]; then
 	getOpenJDKSources
+	getTestData
 fi
 
 

@@ -301,6 +301,8 @@ def get_sources() {
 	if (params.CUSTOMIZED_SDK_URL_CREDENTIAL_ID) {
 		// USERNAME and PASSWORD reference with a withCredentials block will not be visible within job output
 		withCredentials([usernamePassword(credentialsId: "${params.CUSTOMIZED_SDK_URL_CREDENTIAL_ID}", usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+			env.JENKINS_USERNAME = USERNAME
+			env.JENKINS_PASSWORD = PASSWORD
 			sh "$GET_SH_CMD"
 		}
 	} else {
