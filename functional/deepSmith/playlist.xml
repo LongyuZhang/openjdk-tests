@@ -25,7 +25,10 @@
 <playlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../TestConfig/playlist.xsd">
 	<test>
 		<testCaseName>deepSmith</testCaseName>
-		<command>$(JAVA_COMMAND) $(JVM_OPTIONS) \
+		<command>
+		chmod 755 $(TEST_RESROOT)$(D)getTestData.sh; \
+		$(TEST_RESROOT)$(D)getTestData.sh; \
+		$(JAVA_COMMAND) $(JVM_OPTIONS) \
 	-cp $(Q)$(TEST_RESROOT)$(D)deepSmith.jar$(Q) \
 	org.openj9.test.driver.JavaDriver;\
 	$(TEST_STATUS)</command>
