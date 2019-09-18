@@ -272,7 +272,7 @@ def setup() {
 			}
 
 			if (params.DEEPSMITH_URL_CREDENTIAL_ID) {
-				get_deepSmith_data()
+				set_deepSmith_credential()
 			}
 
 			// vendor test
@@ -313,15 +313,13 @@ def get_sources() {
 	}
 }
 
-def get_deepSmith_data() {
+def set_deepSmith_credential() {
 	if (params.DEEPSMITH_URL_CREDENTIAL_ID) {
 		// USERNAME and PASSWORD reference with a withCredentials block will not be visible within job output
 		withCredentials([usernamePassword(credentialsId: "${params.DEEPSMITH_URL_CREDENTIAL_ID}", usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
 			env.DEEPSMITH_USERNAME = USERNAME
 			env.DEEPSMITH_PASSWORD = PASSWORD
 		}
-		echo "deepSmith Username ${env.DEEPSMITH_USERNAME}"
-		echo "deepSmith Password ${env.DEEPSMITH_PASSWORD}"
 	}
 }
 

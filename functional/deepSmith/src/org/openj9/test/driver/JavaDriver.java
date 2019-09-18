@@ -631,17 +631,11 @@ public class JavaDriver {
 		long seed = 220;
 		JavaDriverConfiguration config = new JavaDriverConfiguration(mode, arrayLength, seed);
 	
-		JavaDriver javaDriver = new JavaDriver(config);
-	
-		// final String input = new String(ByteStreams.toByteArray(System.in));
+		JavaDriver javaDriver = new JavaDriver(config);	
 		final Path tmpDir = JavaDriver.CreateTemporaryDirectoryOrDie();
-
-		//System.out.println("Excellent Job: Running successfully!");
 		
 		/* Obtain path of test data folder */
 		File directory = new File(System.getProperty("user.dir"));
-		// String dataPath = directory.getParentFile().getParentFile().getParent() + "/data/deepSmithData";
-		// String dataPath = directory.getParentFile().getParentFile().getParent() + "/functional/deepSmith/data";
 		String dataPath = directory.toString() + "/data/deepSmithData";
 		System.out.println("Data folder path is: " + dataPath + "\n");
 		File testsFolder = new File(dataPath);
@@ -655,7 +649,6 @@ public class JavaDriver {
 					String curFileName = curFile.getName();
 					System.out.println("Current TEST_NAME is: " + curFileName);
 					String curFileAbsolutePath = testsFolder.toString() + File.separator + curFileName;
-					// System.out.println(curFileAbsolutePath);
 					StringBuilder inputString = new StringBuilder();
 
 					try(BufferedReader bufferReader = new BufferedReader(new FileReader(curFileAbsolutePath))) {
@@ -673,40 +666,11 @@ public class JavaDriver {
 
 					JavaDriverResult curOutput = javaDriver.Drive(tmpDir, inputString.toString());
 					System.out.println("Current TEST_OUTPUT is: \n" + curOutput.toString() + "\n");
-
-					/*** write the Output into files ***/ 
-					// String outputFileWithoutExtention = curFileName.replaceFirst("[.][^.]+$", "");
-					// String curFileOutputPath = testsFolder.toString() + File.separator + outputFileWithoutExtention + fileOutputSuffix;
-					// // System.out.println(outputFileWithoutExtention);
-					// try(FileWriter fileWriter = new FileWriter(curFileOutputPath)) {
-					//   fileWriter.write(curOutput.toString());
-					// } catch (IOException ex) {
-					//   System.out.println("Error writing file " + curFileOutputPath);
-					// }
 				}
 			}
 		} else {
 			System.out.println("No Test files in the data folder");
 		}
-
 		JavaDriver.DeleteTree(tmpDir.toFile());
-
-
-		// System.out.println(System.getProperty("user.dir"));
-		// //previous output is /home/jenkins/workspace/Grinder_Advanced/openjdk-tests/TestConfig/test_output_15677333447999/deepSmith_0
-
-		// System.out.println(directory.getCanonicalPath());
-		// System.out.println(directory.getAbsolutePath());
-
-		// File testsFolder = new File("/Users/longyuzhang/documents/repos/CasDeepSmith/DSTestTmp");
-		// File[] listofTestFiles = testsFolder.listFiles();
-		// if (listofTestFiles != null) {
-		//   for (File curFile : listofTestFiles) {
-		// 	  System.out.println(curFile.getName());
-		//   }
-		// }
-		// logger.info("running aTestExample: INFO and above level logging enabled");
-		// AssertJUnit.assertEquals(4, 2+2);
-
 	}
 }
