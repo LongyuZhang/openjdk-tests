@@ -44,6 +44,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import javax.tools.JavaCompiler;
 import javax.tools.JavaFileObject;
 import javax.tools.SimpleJavaFileObject;
@@ -518,13 +521,13 @@ public class JavaDriver {
 
 	// Driver methods.
 
-	public JavaDriverResult Drive(final Path workingDirectory, final String methodSrc) {
+	public JavaDriverResult Drive(final Path workingDirectory, final String methodSrc) throws Exception {
 		final String classSrc = WrapMethodInClassWithShim(methodSrc);
 		final JavaSourceFromString javaSrc = new JavaSourceFromString("A", classSrc);
 		return Drive(workingDirectory, javaSrc);
 	}
 
-	public JavaDriverResult Drive(final Path workingDirectory, final JavaFileObject javaSrc) {
+	public JavaDriverResult Drive(final Path workingDirectory, final JavaFileObject javaSrc) throws Exception {
 		Iterable<? extends JavaFileObject> fileObjects = Arrays.asList(javaSrc);
 
 		List<String> options = new ArrayList<String>();
@@ -575,7 +578,7 @@ public class JavaDriver {
 	 * @param method The method to drive.
 	 * @return A JavaDriverResult instance.
 	 */
-	public JavaDriverResult Drive(final Method method) {
+	public JavaDriverResult Drive(final Method method) throws Exception  {
 		JavaDriverResult result = new JavaDriverResult();
 		Class<?>[] parameterTypes = method.getParameterTypes();
 		try {
@@ -589,9 +592,45 @@ public class JavaDriver {
 				Object parameter = parameters[i];
 				result.AddParameterValue(parameter);
 			}
-			method.setAccessible(true);
-			result.SetReturnValue(method.invoke(instance, parameters));
-			
+			FutureTask<?> theTask = null;
+			Thread thr = null;
+			try {
+				// create new task
+				theTask = new FutureTask<Object>(new Runnable() {
+					public void run() {
+					  method.setAccessible(true);
+					  try {
+						// System.out.println("2nd");
+						// Thread.sleep(100000);
+						result.SetReturnValue(method.invoke(instance, parameters)); // do the method invocation
+						// System.out.println("3rd");
+					  } catch (IllegalAccessException e) {
+						e.printStackTrace();
+						result.SetInvalidDriverInput("Method is inaccessible");
+					  } catch (InvocationTargetException e) {
+						e.printStackTrace();
+						result.SetValidDriverFailure("Method threw exception: " + e);
+					  } catch (IllegalArgumentException e) {
+						e.printStackTrace();
+						result.SetValidDriverFailure("Method threw exception: " + e);
+					  } catch (SecurityException e) {
+						e.printStackTrace();
+						result.SetValidDriverFailure("Method threw exception: " + e);
+					  }
+				  }
+				}, null);
+	  
+				// start task in a new thread
+			   thr = new Thread(theTask);
+			   thr.setDaemon(true);
+			   thr.start();
+	  
+				// wait for the execution to finish, timeout after 3 secs 
+				theTask.get(3L, TimeUnit.SECONDS); 
+			}
+			catch (TimeoutException e) {
+				System.out.println("timed out");// handle timeout
+			} 	
 		} catch (InvalidDriverInputException e) {
 			e.printStackTrace();
 			result.SetInvalidDriverInput(e.getMessage());
