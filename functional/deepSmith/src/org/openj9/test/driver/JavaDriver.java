@@ -638,8 +638,18 @@ public class JavaDriver {
 		System.out.println("Data folder path is: " + dataPath + "\n");
 		File testsFolder = new File(dataPath);
 		if(!testsFolder.exists()) {
-			throw new FileNotFoundException("Cannot find test data folder!");
+			System.out.println("User provided data link does not work, read sample data instead.");
+			dataPath = directory.getParentFile().getParentFile().getParent() + "/functional/deepSmith/sampleData";
+			System.out.println("New data folder path is: " + dataPath + "\n");
+			testsFolder = new File(dataPath);
+			if(!testsFolder.exists()) {
+				throw new FileNotFoundException("Cannot find test data folder!");
+			}
 		}
+
+		String keywordForParser = "Running Java Driver:";
+		System.out.println(keywordForParser + "\n");
+
 		File[] listofTestFiles = testsFolder.listFiles();
 		if (listofTestFiles != null) {
 			for (File curFile : listofTestFiles) {
