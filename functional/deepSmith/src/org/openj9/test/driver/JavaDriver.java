@@ -51,6 +51,7 @@ import javax.tools.JavaCompiler;
 import javax.tools.JavaFileObject;
 import javax.tools.SimpleJavaFileObject;
 import javax.tools.ToolProvider;
+import java.security.Permission;
 
 public class JavaDriver {
 
@@ -657,6 +658,17 @@ public class JavaDriver {
 		return result;
 	}
 
+	// Security Manager is used to prevent Systime.exit() in test terminating JVM
+	public static class MySecurityManager extends SecurityManager {
+		@Override public void checkExit(int status) {
+			throw new SecurityException();
+		}
+		
+		@Override public void checkPermission(Permission perm) {
+			// Allow other activities by default
+		}
+	}
+
 	private JavaCompiler compiler_;
 	private final JavaDriverConfiguration config_;
 
@@ -686,6 +698,10 @@ public class JavaDriver {
 			}
 		}
 
+		// Security Manager is used to prevent Systime.exit() in test terminating JVM
+		MySecurityManager secManager = new MySecurityManager();
+		System.setSecurityManager(secManager);
+
 		String keywordForParser = "Running Java Driver:";
 		System.out.println(keywordForParser + "\n");
 
@@ -712,7 +728,7 @@ public class JavaDriver {
 					}
 
 					JavaDriverResult curOutput = javaDriver.Drive(tmpDir, inputString.toString());
-					System.out.println("Current TEST_OUTPUT is: \n" + curOutput.toString() + "\n");
+					System.out.println("Current TEST_OUTPUT is: \n" + curOutput.toString() + "\n");				
 				}
 			}
 		} else {

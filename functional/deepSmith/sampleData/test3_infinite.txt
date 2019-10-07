@@ -1,8 +1,0 @@
-public static long fn_A(long a,int b){
-  long c=1;
-  System.out.println("test1");
-  while (c > 0) {
-    a = b;
-  }
-  return c;
-}
