@@ -1,0 +1,5 @@
+public static Object fn_A(Object a){
+  if (a instanceof Character)   return new Integer(((Character)a).charValue());
+ else   if ((a instanceof Byte) || (a instanceof Short))   return new Integer(((Number)a).intValue());
+  return a;
+}

@@ -1,0 +1,19 @@
+private static float fn_A(final float a,final float b,final float c){
+  float d=c;
+  if (d < 0) {
+    d+=1;
+  }
+  if (d > 1) {
+    d-=1;
+  }
+  if (6 * d < 1) {
+    return a + ((b - a) * 6 * d);
+  }
+  if (2 * d < 1) {
+    return b;
+  }
+  if (3 * d < 2) {
+    return a + ((b - a) * 6 * ((2.0f / 3.0f) - d));
+  }
+  return a;
+}

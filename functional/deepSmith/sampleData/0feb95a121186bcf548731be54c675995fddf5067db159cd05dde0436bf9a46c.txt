@@ -1,0 +1,6 @@
+public static boolean fn_A(Object[] a){
+  if ((a == null) || (a.length == 0)) {
+    return true;
+  }
+  return false;
+}

@@ -1,0 +1,8 @@
+public final static String fn_A(){
+  try {
+    return new File(".").getCanonicalPath();
+  }
+ catch (  final IOException a) {
+    return new File(".").getAbsolutePath();
+  }
+}

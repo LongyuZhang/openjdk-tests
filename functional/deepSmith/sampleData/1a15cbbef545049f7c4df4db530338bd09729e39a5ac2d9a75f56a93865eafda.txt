@@ -1,0 +1,8 @@
+private static String fn_A(int a,float b,float c){
+  if (c == 1f) {
+    return a + "-" + b;
+  }
+ else {
+    return a + "-" + b+ "-"+ c;
+  }
+}

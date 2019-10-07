@@ -1,0 +1,4 @@
+@SuppressWarnings("unchecked") public static <K,V>Map<K,V> fn_A(Object a){
+  if (a != null && !(a instanceof Map))   return null;
+  return (Map<K,V>)a;
+}

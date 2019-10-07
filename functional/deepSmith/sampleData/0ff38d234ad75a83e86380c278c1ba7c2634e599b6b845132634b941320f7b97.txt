@@ -1,0 +1,12 @@
+private static boolean fn_A(char[] a,int b){
+  int c=0;
+  for (int d=b; d > -1; d--) {
+    if (a[d] == '\\') {
+      c++;
+    }
+ else {
+      return c % 2 == 0;
+    }
+  }
+  return c % 2 == 0;
+}

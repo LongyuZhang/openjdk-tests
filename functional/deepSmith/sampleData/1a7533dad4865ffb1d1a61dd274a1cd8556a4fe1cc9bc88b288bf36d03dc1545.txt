@@ -1,0 +1,9 @@
+private static boolean fn_A(byte[] a,byte[] b){
+  if (a == null && b == null) {
+    return false;
+  }
+ else {
+    boolean c=Arrays.equals(a,b);
+    return c;
+  }
+}

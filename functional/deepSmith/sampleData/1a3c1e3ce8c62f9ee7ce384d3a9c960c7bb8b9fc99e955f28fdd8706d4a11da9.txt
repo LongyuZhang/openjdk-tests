@@ -1,0 +1,10 @@
+public static float fn_A(float a){
+  float b=0.0f;
+  if (a < 0.09)   b++;
+  if (a < 0.05)   b++;
+  if (a < 0.02)   b++;
+  if (a > 0.6)   b++;
+  if (a > 0.9)   b++;
+  if (a > 1.2)   b++;
+  return b;
+}

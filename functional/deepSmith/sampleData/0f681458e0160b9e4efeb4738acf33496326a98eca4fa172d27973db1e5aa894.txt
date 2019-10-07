@@ -1,0 +1,13 @@
+public static boolean fn_A(double[] a,double[] b,int c){
+  boolean d=false;
+  for (int e=0; e < c; ++e) {
+    double f=a[e], g=b[e];
+    if (f > g) {
+      return false;
+    }
+    if (f < g) {
+      d=true;
+    }
+  }
+  return d;
+}

@@ -1,0 +1,6 @@
+private static int fn_A(int a){
+  if (a != 0) {
+    throw new IllegalStateException("helper2 can only be called if arg==0");
+  }
+  return 0;
+}

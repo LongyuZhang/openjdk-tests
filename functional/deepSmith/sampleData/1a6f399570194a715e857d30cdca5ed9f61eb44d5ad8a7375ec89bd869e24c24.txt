@@ -1,0 +1,7 @@
+public static double fn_A(float[] a){
+  double b=1.0;
+  double c=0.0;
+  for (int d=0; d < a.length; d++)   c+=a[d];
+  if (c != 0.0)   b=1.0 / c;
+  return b;
+}

@@ -1,0 +1,27 @@
+public static byte[] fn_A(int[] a,int b,int c){
+  final int d=b * c;
+  final int e=d / 4;
+  int f=0;
+  int g=d;
+  int h=d + e;
+  byte[] i=new byte[b * c * 3 / 2];
+  int j, k, l, m, n, o, p;
+  int q=0;
+  for (int r=0; r < c; r++) {
+    for (int s=0; s < b; s++) {
+      k=(a[q] & 0xff0000) >> 16;
+      l=(a[q] & 0xff00) >> 8;
+      m=(a[q] & 0xff) >> 0;
+      n=((66 * k + 129 * l + 25 * m + 128) >> 8) + 16;
+      o=((-38 * k - 74 * l + 112 * m + 128) >> 8) + 128;
+      p=((112 * k - 94 * l - 18 * m + 128) >> 8) + 128;
+      i[f++]=(byte)((n < 0) ? 0 : ((n > 255) ? 255 : n));
+      if (r % 2 == 0 && q % 2 == 0) {
+        i[h++]=(byte)((o < 0) ? 0 : ((o > 255) ? 255 : o));
+        i[g++]=(byte)((p < 0) ? 0 : ((p > 255) ? 255 : p));
+      }
+      q++;
+    }
+  }
+  return i;
+}

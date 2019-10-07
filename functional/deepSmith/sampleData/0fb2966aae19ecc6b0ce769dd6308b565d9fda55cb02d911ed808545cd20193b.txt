@@ -1,0 +1,6 @@
+private static Throwable fn_A(Throwable a){
+  if (a == null) {
+    throw new IllegalArgumentException("The value parameter of a failure cannot be null");
+  }
+  return a;
+}

@@ -1,0 +1,10 @@
+public static String fn_A(final double a){
+  final String b;
+  if (a > 0) {
+    b="E";
+  }
+ else {
+    b="W";
+  }
+  return b;
+}

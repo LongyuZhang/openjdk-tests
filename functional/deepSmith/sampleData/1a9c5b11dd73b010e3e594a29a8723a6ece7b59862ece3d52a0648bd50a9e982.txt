@@ -1,0 +1,13 @@
+private static int fn_A(int a){
+  int b=a, c=4;
+  while (b >= c) {
+    b>>=1;
+    c<<=1;
+  }
+  c>>=2;
+  while (b > c + 1) {
+    b=(b + c) >> 1;
+    c=a / b;
+  }
+  return b;
+}

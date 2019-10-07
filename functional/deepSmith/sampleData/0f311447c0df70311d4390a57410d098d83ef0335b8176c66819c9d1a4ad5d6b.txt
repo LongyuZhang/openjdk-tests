@@ -1,0 +1,14 @@
+public static void fn_A(int[] a,int b){
+  for (int c=0; c < b; c++) {
+    int d=c;
+    int e=-1;
+    while (a[d] != -1 && a[d] != d) {
+      int f=a[d];
+      a[d]=e;
+      e=d=f;
+    }
+    if (e != -1) {
+      a[d]=e;
+    }
+  }
+}

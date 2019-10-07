@@ -1,0 +1,25 @@
+public static float fn_A(final float[] a,int b,int c){
+  assert(b >= 0 && c <= a.length);
+  float d=0;
+  final int e=c - b;
+  final int f=e - e % 8;
+  final int g=(e / 8) * 8 - 1;
+  float h=0, i=0, j=0, k=0;
+  float l=0, m=0, n=0, o=0;
+  for (int p=b; p < b + g; p+=8) {
+    h+=a[p] * a[p];
+    i+=a[p + 1] * a[p + 1];
+    j+=a[p + 2] * a[p + 2];
+    k+=a[p + 3] * a[p + 3];
+    l+=a[p + 4] * a[p + 4];
+    m+=a[p + 5] * a[p + 5];
+    n+=a[p + 6] * a[p + 6];
+    o+=a[p + 7] * a[p + 7];
+  }
+  d+=h + i + j+ k;
+  d+=l + m + n+ o;
+  for (int p=b + f; p < c; ++p) {
+    d+=a[p] * a[p];
+  }
+  return d;
+}

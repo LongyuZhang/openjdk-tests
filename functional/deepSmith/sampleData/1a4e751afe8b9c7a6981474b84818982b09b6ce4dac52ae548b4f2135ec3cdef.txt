@@ -1,0 +1,14 @@
+public static boolean fn_A(byte[] a,int b,byte[] c,int d,int e){
+  int f;
+  int g;
+  f=b;
+  g=d;
+  for (int h=0; h < e; h++) {
+    if (a[f] != c[g]) {
+      return false;
+    }
+    f++;
+    g++;
+  }
+  return true;
+}

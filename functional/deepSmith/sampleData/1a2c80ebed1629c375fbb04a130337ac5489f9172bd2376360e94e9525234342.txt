@@ -1,0 +1,8 @@
+public static byte[] fn_A(byte[] a,int b){
+  byte[] c=new byte[a.length + (b % 8 == 0 ? 1 : 0)];
+  for (int d=0; d < b; d++) {
+    byte e=(byte)(a[d / 8] >> (7 - d % 8) & 0x01);
+    c[(d + 1) / 8]+=e << (7 - (d + 1) % 8);
+  }
+  return c;
+}

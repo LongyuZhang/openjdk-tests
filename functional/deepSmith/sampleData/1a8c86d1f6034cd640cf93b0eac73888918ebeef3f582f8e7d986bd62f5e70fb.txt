@@ -1,0 +1,7 @@
+private static char fn_A(char a){
+  if (a == '(')   return ')';
+  if (a == '[')   return ']';
+  if (a == '{')   return '}';
+  if (a == '<')   return '>';
+  return a;
+}

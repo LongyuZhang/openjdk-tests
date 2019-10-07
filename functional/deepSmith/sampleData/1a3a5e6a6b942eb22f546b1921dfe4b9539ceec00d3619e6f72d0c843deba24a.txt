@@ -1,0 +1,24 @@
+public static void fn_A(int[] a,int b,int c,int d){
+  int[] e=new int[a.length];
+  for (int f=0; f <= d; f++) {
+    e[f]=a[f];
+  }
+  int g=b;
+  int h=c + 1;
+  int i=b;
+  while (g <= c && h <= d) {
+    if (e[g] <= e[h]) {
+      a[i]=e[g];
+      g++;
+    }
+ else {
+      a[i]=e[h];
+      h++;
+    }
+    i++;
+  }
+  int j=c - g;
+  for (int f=0; f <= j; f++) {
+    a[i + f]=e[g + f];
+  }
+}

@@ -1,0 +1,15 @@
+public static long fn_A(byte[] a,int b,int c){
+  long d=0;
+  boolean e=true;
+  int f=b + c;
+  for (int g=b; g < f; ++g) {
+    if (a[g] == 0)     break;
+    if (a[g] == (byte)' ' || a[g] == '0') {
+      if (e)       continue;
+      if (a[g] == (byte)' ')       break;
+    }
+    e=false;
+    d=(d << 3) + (a[g] - '0');
+  }
+  return d;
+}

@@ -1,0 +1,39 @@
+public static int[] fn_A(double a,double b,double c){
+  int[] d=new int[3];
+  double e=(double)Math.floor(a / 60.0) % 6;
+  double f=(double)((a / 60.0) - Math.floor(a / 60.0));
+  double g=(double)(c * (1.0 - b));
+  double h=(double)(c * (1.0 - (f * b)));
+  double i=(double)(c * (1.0 - ((1.0 - f) * b)));
+  if (e == 0) {
+    d[0]=(int)(c * 255);
+    d[1]=(int)(i * 255);
+    d[2]=(int)(g * 255);
+  }
+ else   if (e == 1) {
+    d[0]=(int)(h * 255);
+    d[1]=(int)(c * 255);
+    d[2]=(int)(g * 255);
+  }
+ else   if (e == 2) {
+    d[0]=(int)(g * 255);
+    d[1]=(int)(c * 255);
+    d[2]=(int)(i * 255);
+  }
+ else   if (e == 3) {
+    d[0]=(int)(g * 255);
+    d[1]=(int)(c * 255);
+    d[2]=(int)(h * 255);
+  }
+ else   if (e == 4) {
+    d[0]=(int)(i * 255);
+    d[1]=(int)(c * 255);
+    d[2]=(int)(g * 255);
+  }
+ else   if (e == 5) {
+    d[0]=(int)(c * 255);
+    d[1]=(int)(g * 255);
+    d[2]=(int)(h * 255);
+  }
+  return d;
+}

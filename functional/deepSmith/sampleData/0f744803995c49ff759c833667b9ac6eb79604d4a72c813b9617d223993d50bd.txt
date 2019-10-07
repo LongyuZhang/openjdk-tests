@@ -1,0 +1,7 @@
+private static String fn_A(String[] a,int b,String c){
+  String d=c;
+  if (b < a.length) {
+    d=a[b];
+  }
+  return d;
+}

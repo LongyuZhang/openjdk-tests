@@ -1,0 +1,4 @@
+private static double fn_A(double a,int b){
+  double c=new BigDecimal(a / (1024 * 1024 * 1024d)).round(new MathContext(b)).doubleValue();
+  return c < 0.1 ? 0.1 : c;
+}

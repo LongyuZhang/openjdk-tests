@@ -1,0 +1,5 @@
+public static String fn_A(long a){
+  if (a >= 60000)   return String.format("%.1f min",((double)a) / 60000.0d);
+  if (a >= 1000)   return String.format("%.1f s",((double)a) / 1000.0d);
+  return a + " ms";
+}

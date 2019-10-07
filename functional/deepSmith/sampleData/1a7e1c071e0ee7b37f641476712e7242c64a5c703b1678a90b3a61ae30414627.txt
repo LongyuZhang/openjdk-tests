@@ -1,0 +1,9 @@
+public static double fn_A(double a){
+  double b=a;
+  if (b < 0) {
+    while (b < 0) {
+      b+=400;
+    }
+  }
+  return Math.abs(b % 400.0);
+}

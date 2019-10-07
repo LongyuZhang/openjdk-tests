@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b,int c,int d){
+  int e=(int)((100 - c) * a + c * d * b / 128.0) / 100;
+  return e < 0 ? 0 : e > 255 ? 255 : e;
+}

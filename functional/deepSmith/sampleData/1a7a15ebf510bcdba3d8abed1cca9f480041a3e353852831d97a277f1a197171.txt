@@ -1,0 +1,10 @@
+protected static void fn_A(float[] a,float[] b,float[] c){
+  float d=c[0];
+  float e=c[1];
+  float f=c[2];
+  float g=c.length < 4 ? 1.f : c[3];
+  a[0]=b[0] * d + b[4] * e + b[8] * f + b[12] * g;
+  a[1]=b[1] * d + b[5] * e + b[9] * f + b[13] * g;
+  a[2]=b[2] * d + b[6] * e + b[10] * f + b[14] * g;
+  a[3]=b[3] * d + b[7] * e + b[11] * f + b[15] * g;
+}

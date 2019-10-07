@@ -1,0 +1,22 @@
+private static String fn_A(int a){
+switch (a) {
+case -1:
+    return "Advisor";
+case 6:
+  return "6th Grader";
+case 7:
+return "7th Grader";
+case 8:
+return "8th Grader";
+case 9:
+return "Freshman";
+case 10:
+return "Sophomore";
+case 11:
+return "Junior";
+case 12:
+return "Senior";
+default :
+return "College";
+}
+}

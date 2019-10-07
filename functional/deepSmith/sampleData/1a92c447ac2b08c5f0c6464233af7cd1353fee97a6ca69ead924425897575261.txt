@@ -1,0 +1,10 @@
+private static int fn_A(byte[] a,int b,byte[] c){
+  int d=0;
+  while (b < a.length - 2 && d < c.length - 2) {
+    c[d++]=a[b + 2];
+    c[d++]=a[b + 1];
+    c[d++]=a[b + 0];
+    b+=3;
+  }
+  return b;
+}

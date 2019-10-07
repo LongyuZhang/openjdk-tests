@@ -1,0 +1,21 @@
+public static float[] fn_A(float a,float b,float c,float d,float e,float f){
+  float[] g=new float[16];
+  float h=(b - a), i=(d - c), j=(e - f);
+  g[0]=2 / h;
+  g[4]=0;
+  g[8]=0;
+  g[12]=(-a - b) / h;
+  g[1]=0;
+  g[5]=2 / i;
+  g[9]=0;
+  g[13]=(-d - c) / i;
+  g[2]=0;
+  g[6]=0;
+  g[10]=2 / j;
+  g[14]=(f + e) / j;
+  g[3]=0;
+  g[7]=0;
+  g[11]=0;
+  g[15]=1;
+  return g;
+}

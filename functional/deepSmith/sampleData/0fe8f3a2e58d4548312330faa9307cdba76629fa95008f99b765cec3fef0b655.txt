@@ -1,0 +1,5 @@
+public static void fn_A(long a,long b){
+  if (a == b) {
+    throw new RuntimeException();
+  }
+}

@@ -1,0 +1,4 @@
+private static float fn_A(float a,float b){
+  if (b != 0f)   return a / b;
+ else   return 0f;
+}

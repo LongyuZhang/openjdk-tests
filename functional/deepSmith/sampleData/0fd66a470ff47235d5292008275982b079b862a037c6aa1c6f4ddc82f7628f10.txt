@@ -1,0 +1,13 @@
+private static int fn_A(int[] a,int b,int c,int d){
+  while (c <= d) {
+    int e=c + ((d - c) / 2);
+    if (a[e] == b)     return e;
+    if (b > a[e]) {
+      c=e + 1;
+    }
+ else {
+      d=e - 1;
+    }
+  }
+  return -1;
+}

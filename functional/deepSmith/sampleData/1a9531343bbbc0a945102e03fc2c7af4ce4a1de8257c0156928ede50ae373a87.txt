@@ -1,0 +1,6 @@
+private static String fn_A(long a){
+  if (a >>> 24 == 1) {
+    return "android:";
+  }
+  return "";
+}

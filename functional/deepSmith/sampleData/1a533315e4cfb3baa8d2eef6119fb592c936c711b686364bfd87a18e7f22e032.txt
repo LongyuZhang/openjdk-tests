@@ -1,0 +1,8 @@
+public static final boolean fn_A(final long[] a,final long b){
+  for (int c=a.length - 1; c >= 0; c--) {
+    if (a[c] == b) {
+      return true;
+    }
+  }
+  return false;
+}

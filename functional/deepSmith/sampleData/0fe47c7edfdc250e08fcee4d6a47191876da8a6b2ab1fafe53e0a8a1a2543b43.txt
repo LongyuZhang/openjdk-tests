@@ -1,0 +1,8 @@
+public static void main(String a[]){
+  int[] b=new int[46];
+  b[0]=0;
+  b[1]=1;
+  b[2]=1;
+  for (int c=3; c < b.length; c++)   b[c]=b[c - 1] + b[c - 2];
+  System.out.println(b[new Scanner(System.in).nextInt()]);
+}

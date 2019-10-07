@@ -1,0 +1,16 @@
+public static String fn_A(int a){
+  String b;
+  if (a != 11 && a % 10 == 1) {
+    b=a + "st";
+  }
+ else   if (a != 12 && a % 10 == 2) {
+    b=a + "nd";
+  }
+ else   if (a != 13 && a % 10 == 3) {
+    b=a + "rd";
+  }
+ else {
+    b=a + "th";
+  }
+  return b;
+}

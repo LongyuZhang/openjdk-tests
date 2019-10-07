@@ -1,0 +1,13 @@
+public static final int fn_A(char[] a){
+  int b=0;
+  int c=0;
+  int d=a.length;
+  if (d < 16) {
+    for (int e=d; e > 0; e--)     b=(b * 37) + a[c++];
+  }
+ else {
+    int f=d / 8;
+    for (int e=d; e > 0; e-=f, c+=f)     b=(b * 39) + a[c];
+  }
+  return b & 0x7FFFFFFF;
+}

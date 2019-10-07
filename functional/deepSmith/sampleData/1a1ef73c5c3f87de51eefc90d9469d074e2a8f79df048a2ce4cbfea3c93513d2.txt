@@ -1,0 +1,15 @@
+public static int fn_A(byte[] a){
+  int b=a.length;
+  if (b < 251) {
+    return 1 + b;
+  }
+ else   if (b < 0x10000L) {
+    return 3 + b;
+  }
+ else   if (b < 0x1000000L) {
+    return 4 + b;
+  }
+ else {
+    return 9 + b;
+  }
+}

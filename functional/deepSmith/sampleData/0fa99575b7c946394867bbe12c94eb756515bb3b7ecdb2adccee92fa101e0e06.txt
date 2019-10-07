@@ -1,0 +1,13 @@
+public static int fn_A(String a,String b){
+  int c=0;
+  try {
+    c=1;
+    a.toString();
+    c=2;
+    b.toString();
+  }
+ catch (  NullPointerException d) {
+    return c;
+  }
+  return -1;
+}

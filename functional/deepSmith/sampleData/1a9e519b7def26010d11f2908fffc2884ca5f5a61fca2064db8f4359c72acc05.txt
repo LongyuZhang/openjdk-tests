@@ -1,0 +1,4 @@
+static double fn_A(double a){
+  double b=a % 24;
+  return b < 0 ? 24 + b : b;
+}

@@ -1,0 +1,4 @@
+public static byte fn_A(byte a,int b){
+  byte c=(byte)(1 << b);
+  return (byte)(a ^ c);
+}

@@ -1,0 +1,12 @@
+public static int fn_A(double[] a,double b,double c){
+  double d=Double.MAX_VALUE;
+  int e=-1;
+  for (int f=0; f < a.length; f++) {
+    final double g=Math.abs(a[f] - b);
+    if (g <= c && g <= d) {
+      d=g;
+      e=f;
+    }
+  }
+  return e;
+}

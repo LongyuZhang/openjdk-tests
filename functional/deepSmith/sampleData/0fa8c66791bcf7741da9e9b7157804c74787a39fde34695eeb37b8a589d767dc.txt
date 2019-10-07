@@ -1,0 +1,18 @@
+public static void fn_A(String a) throws IOException {
+  try {
+    new ProcessBuilder("nautilus",a).start();
+  }
+ catch (  IOException b) {
+    try {
+      new ProcessBuilder("gnome-open",a).start();
+    }
+ catch (    IOException c) {
+      try {
+        new ProcessBuilder("kde-open",a).start();
+      }
+ catch (      IOException d) {
+        new ProcessBuilder("caja",a).start();
+      }
+    }
+  }
+}

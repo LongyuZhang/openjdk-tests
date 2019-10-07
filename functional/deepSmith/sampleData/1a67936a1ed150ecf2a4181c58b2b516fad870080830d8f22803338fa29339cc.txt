@@ -1,0 +1,8 @@
+public static char fn_A(char a){
+  if (a >= 'a' && a <= 'z') {
+    return (char)((a - 'a') + 'A');
+  }
+ else {
+    return a;
+  }
+}

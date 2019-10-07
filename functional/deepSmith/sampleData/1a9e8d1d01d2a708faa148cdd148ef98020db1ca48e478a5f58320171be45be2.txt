@@ -1,0 +1,6 @@
+static short fn_A(byte[] a,int b){
+  int c=0xff & a[b];
+  int d=0xff & a[b + 1];
+  int e=(short)(c << 8 | d);
+  return (short)e;
+}

@@ -1,0 +1,4 @@
+static int fn_A(int a){
+  a^=(a >>> 20) ^ (a >>> 12);
+  return a ^ (a >>> 7) ^ (a >>> 4);
+}

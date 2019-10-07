@@ -1,0 +1,4 @@
+public static void fn_A(int[] a,char b){
+  int c;
+  for (c=b; c < 256; ++c)   --a[c];
+}

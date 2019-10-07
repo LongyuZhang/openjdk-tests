@@ -1,0 +1,8 @@
+public static long[] fn_A(final byte[] a,final int b,final int c){
+  final int d=c >>> 3;
+  final long[] e=new long[d];
+  for (int f=0, g=b; f < d; f++, g+=8) {
+    e[f]=(a[g + 7] & 0xFFL) + ((a[g + 6] & 0xFFL) << 8) + ((a[g + 5] & 0xFFL) << 16)+ ((a[g + 4] & 0xFFL) << 24)+ ((a[g + 3] & 0xFFL) << 32)+ ((a[g + 2] & 0xFFL) << 40)+ ((a[g + 1] & 0xFFL) << 48)+ (((long)a[g]) << 56);
+  }
+  return e;
+}

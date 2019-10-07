@@ -1,0 +1,6 @@
+public static <K,V>Map<K,V> fn_A(HashMap<K,V> a){
+  if (a == null) {
+    a=new HashMap();
+  }
+  return a;
+}

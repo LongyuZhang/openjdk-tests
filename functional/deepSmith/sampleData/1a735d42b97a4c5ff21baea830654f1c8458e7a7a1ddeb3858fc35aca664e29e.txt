@@ -1,0 +1,5 @@
+public static double fn_A(double a){
+  double b=(1.0 - a / (0.84 * 0.84));
+  double c=1.0 / (b * b);
+  return -1.91 * c;
+}

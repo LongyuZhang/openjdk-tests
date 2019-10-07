@@ -1,0 +1,19 @@
+public static double fn_A(double[] a,double[] b){
+  double c=0;
+  double d=0;
+  double e=0;
+  double f=0;
+  double g=0;
+  for (int h=0; h < a.length; h++) {
+    c+=a[h];
+    d+=b[h];
+  }
+  if (c == 0 && d == 0)   return 0d;
+  if (c == 0 || d == 0)   return 100d;
+  for (int h=0; h < a.length; h++) {
+    e+=(b[h] / d) * (a[h] / c);
+    f+=(a[h] / c) * (a[h] / c);
+    g+=(b[h] / d) * (b[h] / d);
+  }
+  return (100d - 100d * (e / (f + g - e)));
+}

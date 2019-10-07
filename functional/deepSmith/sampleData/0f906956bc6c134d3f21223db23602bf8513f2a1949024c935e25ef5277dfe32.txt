@@ -1,0 +1,8 @@
+private static void fn_A(){
+  try (AutoCloseable a=null){
+    return;
+  }
+ catch (  Exception b) {
+    throw new AssertionError("Should not be reached",b);
+  }
+}

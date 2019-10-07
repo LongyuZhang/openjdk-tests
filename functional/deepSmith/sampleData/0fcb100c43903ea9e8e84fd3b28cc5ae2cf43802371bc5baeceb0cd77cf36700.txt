@@ -1,0 +1,6 @@
+public static double fn_A(double a){
+  double b=0.0D;
+  b=1.0D / Math.tan(Math.toRadians(a + 7.31D / (a + 4.4D)));
+  b-=0.06D * Math.sin(Math.toRadians((14.7D * b + 13D) / 60D));
+  return b;
+}

@@ -1,0 +1,23 @@
+public static void fn_A(int[] a,int[] b,int c,int d,int e){
+  for (int f=c; f <= e; f++) {
+    b[f]=a[f];
+  }
+  int g=c;
+  int h=d + 1;
+  int i=c;
+  while (g <= d && h <= e) {
+    if (b[g] <= b[h]) {
+      a[i]=b[g];
+      g++;
+    }
+ else {
+      a[i]=b[h];
+      h++;
+    }
+    i++;
+  }
+  int j=d - g;
+  for (int f=0; f <= j; f++) {
+    a[i + f]=b[g + f];
+  }
+}

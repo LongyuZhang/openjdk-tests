@@ -1,0 +1,4 @@
+public static int fn_A(int a,int b){
+  if (b < 0)   return -a;
+  return (int)((double)a * Math.sqrt((double)b * 1.220703125E-4) + 0.5);
+}

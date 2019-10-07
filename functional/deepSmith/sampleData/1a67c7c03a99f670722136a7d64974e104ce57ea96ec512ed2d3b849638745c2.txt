@@ -1,0 +1,14 @@
+public static boolean fn_A(String a[],String b[]){
+  boolean c=true;
+  if (a.length != b.length) {
+    System.err.println("\nString array lengths differ: " + a.length + " != "+ b.length);
+    c=false;
+  }
+  for (int d=0; d < a.length; d++) {
+    if (!a[d].equals(b[d])) {
+      System.err.println("\nString array contents differ at index " + d + ": "+ a[d]+ " != "+ b[d]);
+      c=false;
+    }
+  }
+  return c;
+}

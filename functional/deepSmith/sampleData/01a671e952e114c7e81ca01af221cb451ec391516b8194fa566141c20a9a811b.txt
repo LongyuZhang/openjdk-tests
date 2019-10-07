@@ -1,0 +1,8 @@
+public static double fn_A(double[] a,int b,int c){
+  if (b < 0 || c >= a.length || b > c)   throw new RuntimeException("Subarray indices out of bounds");
+  double d=Double.POSITIVE_INFINITY;
+  for (int e=b; e <= c; e++) {
+    if (a[e] < d)     d=a[e];
+  }
+  return d;
+}

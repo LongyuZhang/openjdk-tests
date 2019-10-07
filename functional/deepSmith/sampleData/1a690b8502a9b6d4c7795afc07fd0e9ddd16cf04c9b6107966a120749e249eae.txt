@@ -1,0 +1,9 @@
+static final int fn_A(final byte[] a,final int b){
+  int c=b + 2;
+  int d=a[c++] & 0xFF;
+  while (d != 0 && c < a.length) {
+    c+=d;
+    d=a[c++] & 0xFF;
+  }
+  return c;
+}

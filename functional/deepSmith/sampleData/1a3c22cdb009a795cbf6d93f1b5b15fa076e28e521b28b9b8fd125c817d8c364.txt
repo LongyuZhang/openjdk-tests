@@ -1,0 +1,18 @@
+static byte[] fn_A(double[] a,int b){
+  int c=b % 8 == 0 ? b / 8 : b / 8 + 1;
+  int d=1 << b - 1;
+  byte[] e=new byte[a.length * c];
+  for (int f=0; f < a.length; f++) {
+    int g;
+    if (a[f] < 0) {
+      g=(int)(-a[f] * d);
+    }
+ else {
+      g=(int)(a[f] * d);
+    }
+    for (int h=0; h < c; h++) {
+      e[f * c + h]=(byte)((g >>> h * 8) & 0xff);
+    }
+  }
+  return e;
+}

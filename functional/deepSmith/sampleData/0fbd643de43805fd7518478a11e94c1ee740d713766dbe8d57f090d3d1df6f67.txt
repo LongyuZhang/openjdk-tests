@@ -1,0 +1,5 @@
+static int fn_A(int[] a,int b){
+  int c=b;
+  while (a[c] != -1)   c=a[c];
+  return c;
+}

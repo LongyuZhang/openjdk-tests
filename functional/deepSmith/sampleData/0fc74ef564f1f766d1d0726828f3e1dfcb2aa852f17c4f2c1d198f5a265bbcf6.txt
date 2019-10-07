@@ -1,0 +1,19 @@
+public static long fn_A(final byte[] a,final int b){
+  final int c=(a[b] & 0xff);
+  final int d=(a[b + 1] & 0xff);
+  final int e=(a[b + 2] & 0xff);
+  final int f=(a[b + 3] & 0xff);
+  final int g=(a[b + 4] & 0xff);
+  final int h=(a[b + 5] & 0xff);
+  final int i=(a[b + 6] & 0xff);
+  final int j=(a[b + 7] & 0xff);
+  long k=((long)j << 56);
+  k|=(long)i << 48;
+  k|=(long)h << 40;
+  k|=(long)g << 32;
+  k|=(long)f << 24;
+  k|=(long)e << 16;
+  k|=(long)d << 8;
+  k|=(long)c;
+  return k;
+}

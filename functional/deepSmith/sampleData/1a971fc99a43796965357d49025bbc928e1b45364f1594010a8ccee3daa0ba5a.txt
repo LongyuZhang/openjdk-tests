@@ -1,0 +1,48 @@
+private static byte[] fn_A(byte[] a){
+  try {
+    byte[] b=new byte[a.length * 4];
+    int c=0;
+    int d=0;
+    while (a[d] < 33 || a[d] > 126)     d++;
+    if (a[d] == '<' && a[d + 1] == '~')     d+=2;
+    int e=0;
+    int f=0;
+    for (; d < a.length; d++) {
+      if (a[d] == '~')       break;
+ else       if (a[d] == 'z') {
+        b[c++]=0;
+        b[c++]=0;
+        b[c++]=0;
+        b[c++]=0;
+      }
+ else       if (a[d] > 32 && a[d] < 127) {
+        e*=85;
+        e+=a[d] - '!';
+        f++;
+        if (f == 5) {
+          b[c++]=(byte)(e >>> 24);
+          b[c++]=(byte)(e >>> 16);
+          b[c++]=(byte)(e >>> 8);
+          b[c++]=(byte)(e >>> 0);
+          e=0;
+          f=0;
+        }
+      }
+    }
+    if (f > 0) {
+      e*=85;
+      e+=85;
+      for (int g=f + 1; g < 5; g++)       e*=85;
+      if (f > 1)       b[c++]=(byte)(e >>> 24);
+      if (f > 2)       b[c++]=(byte)(e >>> 16);
+      if (f > 3)       b[c++]=(byte)(e >>> 8);
+      if (f > 4)       b[c++]=(byte)(e >>> 0);
+    }
+    byte[] h=new byte[c];
+    while ((c--) > 0)     h[c]=b[c];
+    return h;
+  }
+ catch (  ArrayIndexOutOfBoundsException i) {
+    return a;
+  }
+}

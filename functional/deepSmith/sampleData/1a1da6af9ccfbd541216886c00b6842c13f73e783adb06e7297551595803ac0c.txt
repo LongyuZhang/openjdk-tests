@@ -1,0 +1,12 @@
+static int fn_A(float[] a,float b,int c){
+  int d=0;
+  int e=a.length / c - 2;
+  if (e == 0)   return c;
+  int f=e >>> 1;
+  while (true) {
+    if (a[(f + 1) * c] <= b)     d=f + 1;
+ else     e=f;
+    if (d == e)     return (d + 1) * c;
+    f=(d + e) >>> 1;
+  }
+}
