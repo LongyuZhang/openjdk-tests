@@ -1,0 +1,46 @@
+private static String fn_A(int a){
+  String b="";
+  if (a == 0) {
+    b="B";
+  }
+ else   if (a == 1) {
+    b="C";
+  }
+ else   if (a == 2) {
+    b="D";
+  }
+ else   if (a == 3) {
+    b="E";
+  }
+ else   if (a == 4) {
+    b="F";
+  }
+ else   if (a == 5) {
+    b="G";
+  }
+ else   if (a == 6) {
+    b="H";
+  }
+ else   if (a == 7) {
+    b="I";
+  }
+ else   if (a == 8) {
+    b="J";
+  }
+ else   if (a == 9) {
+    b="K";
+  }
+ else   if (a == 10) {
+    b="L";
+  }
+ else   if (a == 11) {
+    b="M";
+  }
+ else   if (a == 12) {
+    b="N";
+  }
+ else   if (a == 13) {
+    b="O";
+  }
+  return b;
+}

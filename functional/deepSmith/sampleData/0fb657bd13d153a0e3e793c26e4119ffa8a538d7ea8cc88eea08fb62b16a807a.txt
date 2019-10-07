@@ -1,0 +1,20 @@
+public static Map[] fn_A(String a,Integer b,Integer c){
+  if ((b == null) || (b == 0)) {
+    return new Map[0];
+  }
+  int d=b;
+  if (c > 1) {
+    d*=c;
+  }
+  Map[] e=new Map[d];
+  int f=0;
+  for (int g=0; g < b; g++) {
+    for (int h=0; h < c; h++) {
+      e[f]=new HashMap<String,String>();
+      e[f].put("val",a + Integer.toString(g + 1) + "_"+ h);
+      e[f].put("index",g + 1);
+      f++;
+    }
+  }
+  return e;
+}

@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  System.out.println("What the F-*bleep*, Java?");
+  System.out.print("Oops, ");
+  System.out.printf("my bad.\n");
+  System.out.println("Java, for the win!");
+}

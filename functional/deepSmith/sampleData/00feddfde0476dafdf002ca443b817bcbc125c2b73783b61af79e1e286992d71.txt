@@ -1,0 +1,20 @@
+private static void fn_A(int a,float[] b,float[] c){
+  int d=0;
+  for (int e=0; e < a; e++) {
+    if (e > d) {
+      float f;
+      f=b[d];
+      b[d]=b[e];
+      b[e]=f;
+      f=c[d];
+      c[d]=c[e];
+      c[e]=f;
+    }
+    int g=a >> 1;
+    while (d >= g && g >= 2) {
+      d-=g;
+      g>>=1;
+    }
+    d+=g;
+  }
+}

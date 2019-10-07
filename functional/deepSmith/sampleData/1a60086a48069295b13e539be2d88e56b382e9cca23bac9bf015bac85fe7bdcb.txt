@@ -1,0 +1,8 @@
+private static char[] fn_A(int[] a){
+  int b=a.length;
+  char[] c=new char[b];
+  for (int d=0; d < b; ++d) {
+    c[d]=(char)a[d];
+  }
+  return c;
+}

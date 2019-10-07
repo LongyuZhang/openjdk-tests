@@ -1,0 +1,20 @@
+private static int fn_A(int[] a){
+  int b=a.length - 1;
+  for (int c=30; c >= 0; c--) {
+    int d=0;
+    int e=a[0];
+    for (int f=0; f <= b; f++) {
+      if (((1 << c) & a[f]) > 0) {
+        a[d]=a[f];
+        d++;
+      }
+    }
+    if (d > 1) {
+      b=d - 1;
+    }
+ else {
+      a[0]=e;
+    }
+  }
+  return a[0] & a[1];
+}

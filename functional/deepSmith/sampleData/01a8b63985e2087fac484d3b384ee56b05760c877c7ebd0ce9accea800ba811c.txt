@@ -1,0 +1,8 @@
+public static final void fn_A(double[] a,double[] b) throws NullPointerException {
+  int c=a.length, d;
+  if (a != b) {
+    if ((d=b.length) <= c)     c=d;
+    while (c-- > 0)     a[c]-=b[c];
+  }
+  while (c-- > 0)   a[c]=0.0D;
+}

@@ -1,0 +1,7 @@
+static final String fn_A(byte[] a,int b){
+  String c="" + (a[b] & 0xFF);
+  for (int d=b + 1; d < b + 4; d++) {
+    c+="." + (a[d] & 0xFF);
+  }
+  return c;
+}

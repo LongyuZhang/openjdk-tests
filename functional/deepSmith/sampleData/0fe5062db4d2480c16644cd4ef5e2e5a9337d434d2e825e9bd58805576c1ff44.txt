@@ -1,0 +1,12 @@
+private static double fn_A(double[] a){
+  double b=0.0;
+  double c=a[0];
+  double d=a[1];
+  double e=a[2];
+  double f=a[3];
+  double g=a[4];
+  double h=a[5];
+  double i=a[6];
+  b=-0.0118 * c - 0.1859 * d - 0.0752 * e - 8.1697 * f - 0.2278 * g - 0.0041 * h + 0.0175 * i + 11.4835;
+  return b;
+}

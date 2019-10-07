@@ -1,0 +1,18 @@
+private static String fn_A(int a){
+switch (a) {
+case 1:
+    return "Habb Yakk";
+case 2:
+  return "Dobara";
+case 3:
+return "Dousa";
+case 4:
+return "Dorgy";
+case 5:
+return "Dabash";
+case 6:
+return "Dosh";
+default :
+return "";
+}
+}

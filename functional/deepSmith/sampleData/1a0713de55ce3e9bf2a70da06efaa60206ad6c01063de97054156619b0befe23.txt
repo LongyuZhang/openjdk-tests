@@ -1,0 +1,11 @@
+public static String fn_A(Boolean a){
+  if (a == null) {
+    return "Unknown";
+  }
+ else   if (a) {
+    return "True";
+  }
+ else {
+    return "False";
+  }
+}

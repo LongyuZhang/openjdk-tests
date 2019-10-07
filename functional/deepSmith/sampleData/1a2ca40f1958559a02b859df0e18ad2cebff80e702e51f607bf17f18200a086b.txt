@@ -1,0 +1,10 @@
+public static final int fn_A(int a,int b){
+  int c=((((a >> 24) & 0xFF) * (((b >> 24) & 0xFF) + 1)) & 0xFF00) << 16;
+  if ((b & 0xFFFFFF) == 0xFFFFFF) {
+    return c | (a & 0xFFFFFF);
+  }
+  int d=((((a >> 16) & 0xFF) * (((b >> 16) & 0xFF) + 1)) & 0xFF00) << 8;
+  int e=(((a >> 8) & 0xFF) * (((b >> 8) & 0xFF) + 1)) & 0xFF00;
+  int f=(((a & 0xFF) * ((b & 0xFF) + 1)) >> 8) & 0xFF;
+  return c | d | e| f;
+}

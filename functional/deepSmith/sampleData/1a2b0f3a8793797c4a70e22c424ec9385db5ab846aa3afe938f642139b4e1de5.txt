@@ -1,0 +1,9 @@
+private static File fn_A(){
+  String a=System.getProperty("java.util.logging.config.file");
+  if (a != null) {
+    return new File(a);
+  }
+ else {
+    return new File(System.getProperty("java.home"),"lib" + File.separator + "logging.properties");
+  }
+}

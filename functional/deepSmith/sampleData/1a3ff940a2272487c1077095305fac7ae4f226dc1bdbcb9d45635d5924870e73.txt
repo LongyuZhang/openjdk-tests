@@ -1,0 +1,11 @@
+public static String fn_A(int a){
+  char b=(char)(a & 255);
+  a=a >> 8;
+  char c=(char)(a & 255);
+  a=a >> 8;
+  char d=(char)(a & 255);
+  a=a >> 8;
+  char e=(char)(a & 255);
+  String f=b + "" + c+ ""+ d+ ""+ e;
+  return f;
+}

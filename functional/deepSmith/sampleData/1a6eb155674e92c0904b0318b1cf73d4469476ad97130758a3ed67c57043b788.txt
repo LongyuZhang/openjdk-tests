@@ -1,0 +1,18 @@
+public static String fn_A(long a){
+  String b="";
+  String c="";
+  int d=(int)(a / (1000 * 60 * 60));
+  int e=(int)(a % (1000 * 60 * 60)) / (1000 * 60);
+  int f=(int)((a % (1000 * 60 * 60)) % (1000 * 60) / 1000);
+  if (d > 0) {
+    b=d + ":";
+  }
+  if (f < 10) {
+    c="0" + f;
+  }
+ else {
+    c="" + f;
+  }
+  b=b + e + ":"+ c;
+  return b;
+}

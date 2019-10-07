@@ -1,0 +1,6 @@
+private static void fn_A(long[] a,int b){
+  int c=b / 64;
+  int d=b % 64;
+  long e=1L << d;
+  a[c]|=e;
+}

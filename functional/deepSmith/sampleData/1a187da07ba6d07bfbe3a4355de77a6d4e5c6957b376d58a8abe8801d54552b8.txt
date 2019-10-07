@@ -1,0 +1,14 @@
+public static long fn_A(byte[] a,long b,long c){
+  if (a == null) {
+    return 0;
+  }
+  if (b == 0) {
+    throw new IllegalArgumentException("Prime cannot be 0");
+  }
+  long d=c;
+  final int e=a.length;
+  for (int f=0; f < e; f++) {
+    d=(d * b) + a[f];
+  }
+  return d;
+}

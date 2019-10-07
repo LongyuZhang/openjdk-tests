@@ -1,0 +1,7 @@
+public static double[][] fn_A(double[][] a){
+  double b[][]=new double[3][];
+  b[0]=a[0];
+  b[1]=a[1];
+  b[2]=a[2];
+  return b;
+}

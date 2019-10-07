@@ -1,0 +1,12 @@
+public static Object fn_A(Object a){
+  if (a == null || a instanceof java.sql.Timestamp)   return a;
+ else   if (a instanceof java.sql.Date) {
+    return new java.sql.Timestamp(((java.sql.Date)a).getTime());
+  }
+ else   if (a instanceof java.util.Date) {
+    return new java.sql.Timestamp(((java.util.Date)a).getTime());
+  }
+ else {
+    return a;
+  }
+}

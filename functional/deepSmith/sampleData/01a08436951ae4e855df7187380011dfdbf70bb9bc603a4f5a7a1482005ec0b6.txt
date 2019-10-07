@@ -1,0 +1,13 @@
+static protected int fn_A(final int a,final int b,final int c){
+  final int d, e;
+  if (b > a) {
+    d=(b - a);
+    e=(a + c - b);
+  }
+ else {
+    d=(a - b);
+    e=(b + c - a);
+  }
+  if (d > e)   return e;
+ else   return d;
+}

@@ -1,0 +1,14 @@
+public static String fn_A(long a){
+  if (a > 60000) {
+    long b=a / 60000;
+    long c=(a - (b * 60000)) / 1000;
+    return b + " m " + c+ " s";
+  }
+ else   if (a > 1000) {
+    long c=a / 1000;
+    return c + " s";
+  }
+ else {
+    return a + " ms";
+  }
+}

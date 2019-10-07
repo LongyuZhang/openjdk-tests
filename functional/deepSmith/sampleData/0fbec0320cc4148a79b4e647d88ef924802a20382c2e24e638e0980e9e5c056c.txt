@@ -1,0 +1,7 @@
+public static double[] fn_A(final boolean[] a){
+  final double[] b=new double[a.length];
+  for (int c=0; c < b.length; c++) {
+    b[c]=a[c] ? 1.0 : 0.0;
+  }
+  return b;
+}

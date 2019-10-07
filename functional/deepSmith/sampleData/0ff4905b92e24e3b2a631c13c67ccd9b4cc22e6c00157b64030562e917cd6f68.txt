@@ -1,0 +1,18 @@
+public static void main(final String a[]){
+  final String b[]={"Clubs","Diamonds","Hearts","Spades"};
+  final String c[]={"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+  final int d=b.length;
+  final int e=c.length;
+  final int f=d * e;
+  final String g[]=new String[f];
+  for (int h=0, i=0; h < e; ++h, i+=d) {
+    for (int j=0; j < d; ++j)     g[i + j]=c[h] + " of " + b[j];
+  }
+  for (int k=0; k < f; ++k) {
+    final int l=k + (int)(Math.random() * (f - k));
+    final String m=g[l];
+    g[l]=g[k];
+    g[k]=m;
+  }
+  for (int k=0; k < f; ++k)   System.out.println(g[k]);
+}

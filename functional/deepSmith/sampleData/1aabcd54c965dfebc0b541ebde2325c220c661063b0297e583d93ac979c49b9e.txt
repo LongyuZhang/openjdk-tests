@@ -1,0 +1,4 @@
+public static void fn_A(final int a,final byte[] b,final int c){
+  b[c]=(byte)((a >>> 8) & 0xFF);
+  b[c + 1]=(byte)((a >>> 0) & 0xFF);
+}

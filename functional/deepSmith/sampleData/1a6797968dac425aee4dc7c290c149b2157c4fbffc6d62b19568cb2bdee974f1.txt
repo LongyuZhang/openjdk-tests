@@ -1,0 +1,18 @@
+public static boolean fn_A(char[] a,char[] b){
+  if (b.length > a.length) {
+    return false;
+  }
+  for (int c=0; c < a.length - b.length + 1; c++) {
+    boolean d=true;
+    for (int e=0; e < b.length; e++) {
+      if (a[c + e] != b[e]) {
+        d=false;
+        break;
+      }
+    }
+    if (d) {
+      return true;
+    }
+  }
+  return false;
+}

@@ -1,0 +1,5 @@
+static Object[] fn_A(int a,Object[][] b){
+  Object[] c=new Object[b.length];
+  for (int d=0; d < c.length; d++)   c[d]=b[d][a];
+  return c;
+}

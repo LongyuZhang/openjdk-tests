@@ -1,0 +1,14 @@
+private static void fn_A(){
+  System.out.println("usage: input_file output_file user_password owner_password permissions 128|40 [new info string pairs]");
+  System.out.println("permissions is 8 digit long 0 or 1. Each digit has a particular security function:");
+  System.out.println();
+  System.out.println("AllowPrinting");
+  System.out.println("AllowModifyContents");
+  System.out.println("AllowCopy");
+  System.out.println("AllowModifyAnnotations");
+  System.out.println("AllowFillIn (128 bit only)");
+  System.out.println("AllowScreenReaders (128 bit only)");
+  System.out.println("AllowAssembly (128 bit only)");
+  System.out.println("AllowDegradedPrinting (128 bit only)");
+  System.out.println("Example permissions to copy and print would be: 10100000");
+}

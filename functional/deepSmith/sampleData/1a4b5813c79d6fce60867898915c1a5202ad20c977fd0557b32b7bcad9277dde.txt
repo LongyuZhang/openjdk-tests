@@ -1,0 +1,16 @@
+public static float fn_A(int a){
+switch (a) {
+case 0x0000:
+    return 0.0f;
+case 0x7c00:
+  return Float.POSITIVE_INFINITY;
+case 0x7e00:
+return Float.NaN;
+case 0x8000:
+return -0.0f;
+case 0xfc00:
+return Float.NEGATIVE_INFINITY;
+default :
+return Float.intBitsToFloat(((a & 0x8000) << 16) | (((a & 0x7c00) + 0x1C000) << 13) | ((a & 0x03FF) << 13));
+}
+}

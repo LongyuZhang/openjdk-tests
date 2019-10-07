@@ -1,0 +1,15 @@
+public static <E>String[] fn_A(final E[] a){
+  String[] b=null;
+  if (a != null) {
+    b=new String[a.length];
+    for (int c=0; c < a.length; c++) {
+      if (a[c] != null) {
+        b[c]=a[c].toString();
+      }
+ else {
+        b[c]=null;
+      }
+    }
+  }
+  return b;
+}

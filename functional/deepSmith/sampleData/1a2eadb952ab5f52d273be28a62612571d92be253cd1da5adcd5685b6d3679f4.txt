@@ -1,0 +1,8 @@
+public static int fn_A(int a){
+  int b=1;
+  while ((a & 0x7F) != a) {
+    b++;
+    a>>>=7;
+  }
+  return b;
+}

@@ -1,0 +1,5 @@
+private static void fn_A(final double a){
+  if (a * 0 != 0) {
+    throw new IllegalStateException("Value is a NaN");
+  }
+}

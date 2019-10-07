@@ -1,0 +1,4 @@
+private static String fn_A(String a){
+  String b=a;
+  return b;
+}

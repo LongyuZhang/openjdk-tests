@@ -1,0 +1,6 @@
+private static double fn_A(double a){
+  double b, c;
+  b=a * a;
+  c=0.6961663 * b / (b - 0.0684043 * 0.0684043) + 0.4079426 * b / (b - 0.1162414 * 0.1162414) + 0.8974794 * b / (b - 9.896161 * 9.896161);
+  return (Math.sqrt(c + 1.0));
+}

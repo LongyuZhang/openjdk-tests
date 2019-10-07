@@ -1,0 +1,11 @@
+public static int fn_A(char[] a,int b,char c){
+  int d=0;
+  int e=0;
+  while (d < b) {
+    if (a[d] == c) {
+      e++;
+    }
+    d++;
+  }
+  return e;
+}

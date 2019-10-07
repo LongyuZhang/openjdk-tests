@@ -1,0 +1,7 @@
+public static int fn_A(byte[] a,int b){
+  if ((a.length * 8) - 1 < b)   throw new Error("outside byte array limit, pos: " + b);
+  int c=a.length - 1 - b / 8;
+  int d=b % 8;
+  byte e=a[c];
+  return Math.min(1,((e & 0xff) & (1 << (d))));
+}

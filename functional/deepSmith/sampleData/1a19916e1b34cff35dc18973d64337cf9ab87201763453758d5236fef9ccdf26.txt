@@ -1,0 +1,5 @@
+public static String fn_A(long a){
+  String b="";
+  long c=a / 60000;
+  return c + "";
+}

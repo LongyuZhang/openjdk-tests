@@ -1,0 +1,17 @@
+public static Class<?> fn_A(String a,String b){
+  try {
+    Class<?>[] c=Class.forName(a + ".R").getDeclaredClasses();
+    for (int d=0; d < c.length; d++) {
+      if (c[d].getName().indexOf("$" + b) != -1) {
+        return c[d];
+      }
+    }
+  }
+ catch (  SecurityException e) {
+    e.printStackTrace();
+  }
+catch (  ClassNotFoundException e) {
+    e.printStackTrace();
+  }
+  return null;
+}

@@ -1,0 +1,5 @@
+private static boolean fn_A(double a){
+  if (a < 0)   return false;
+  if (a != Math.rint(a))   return false;
+  return true;
+}

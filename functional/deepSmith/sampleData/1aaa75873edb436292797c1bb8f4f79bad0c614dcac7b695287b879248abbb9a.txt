@@ -1,0 +1,11 @@
+public static String fn_A(){
+  if (new File("/sys/class/misc/backlightnotification/enabled").exists()) {
+    return "/sys/class/misc/backlightnotification/enabled";
+  }
+ else   if (new File("/sys/class/leds/button-backlight/blink_buttons").exists()) {
+    return "/sys/class/leds/button-backlight/blink_buttons";
+  }
+ else {
+    return null;
+  }
+}

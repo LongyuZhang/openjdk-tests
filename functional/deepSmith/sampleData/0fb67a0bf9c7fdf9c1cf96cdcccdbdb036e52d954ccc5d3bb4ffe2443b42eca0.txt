@@ -1,0 +1,8 @@
+private static byte[] fn_A(int a){
+  byte[] b=new byte[4];
+  for (int c=0; c < 4; ++c) {
+    int d=c << 3;
+    b[3 - c]=(byte)((a & (0xff << d)) >>> d);
+  }
+  return b;
+}

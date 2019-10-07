@@ -1,0 +1,7 @@
+public static float fn_A(int a,int b,float c[][],float d,float e){
+  d*=(c.length - 1) * 1f / a;
+  e*=(c[0].length - 1) * 1f / b;
+  final int f=(int)d, g=(int)e;
+  final float h=d % 1, i=e % 1;
+  return (c[f][g] * (1 - h) * (1 - i)) + (c[f + 1][g] * h * (1 - i)) + (c[f][g + 1] * (1 - h) * i)+ (c[f + 1][g + 1] * h * i);
+}

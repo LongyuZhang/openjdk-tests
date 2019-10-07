@@ -1,0 +1,19 @@
+public static double[] fn_A(double[] a,int b){
+  double[] c=new double[a.length];
+  double d;
+  for (int e=0; e < b; e++) {
+    for (int f=0; f <= e; f++) {
+      if (f == e) {
+        d=1.0;
+      }
+ else {
+        d=0.0;
+      }
+      for (int g=f; g < e; g++) {
+        d-=a[(b * e) + g] * c[(b * g) + f];
+      }
+      c[(b * e) + f]=d / a[(b * e) + e];
+    }
+  }
+  return c;
+}

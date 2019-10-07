@@ -1,0 +1,10 @@
+public static <T>List<T> fn_A(Collection<T> a){
+  if (a == null) {
+    return null;
+  }
+  if (a instanceof List<?>) {
+    return (List<T>)a;
+  }
+  List<T> b=new ArrayList<>(a);
+  return b;
+}

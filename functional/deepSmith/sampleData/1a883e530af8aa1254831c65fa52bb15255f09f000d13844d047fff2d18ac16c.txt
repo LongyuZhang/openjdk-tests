@@ -1,0 +1,22 @@
+public static float fn_A(){
+  System.out.println("Start computation of pi");
+  float a=0.0F;
+  int b=1;
+  float c=4.0F;
+  boolean d=true;
+  while (c > 0.1E-5) {
+    if (d) {
+      a+=c;
+      b+=2;
+      c=4.0F / b;
+      d=false;
+    }
+ else {
+      a-=c;
+      b+=2;
+      c=4.0F / b;
+      d=true;
+    }
+  }
+  return a;
+}

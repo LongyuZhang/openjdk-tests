@@ -1,0 +1,9 @@
+public static void main(String[] a){
+  int[][] b={{34,546,34},{546,345,64},{324,567,45,546}};
+  for (int c=0; c < b.length; c++) {
+    for (int d=0; d < b[c].length; d++) {
+      System.out.print(b[c][d] + "\t");
+    }
+    System.out.println();
+  }
+}

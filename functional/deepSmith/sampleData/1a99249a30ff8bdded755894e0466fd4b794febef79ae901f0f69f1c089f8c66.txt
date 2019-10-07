@@ -1,0 +1,20 @@
+public static char fn_A(char a){
+switch (a) {
+case '\\':
+case '\"':
+case '\'':
+    return a;
+case 'n':
+  return '\n';
+case 'r':
+return '\r';
+case 's':
+return ' ';
+case 't':
+return '\t';
+case 'f':
+return '\f';
+default :
+return a;
+}
+}

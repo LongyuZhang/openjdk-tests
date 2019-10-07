@@ -1,0 +1,12 @@
+public static String fn_A(long a){
+  if (a < 1024) {
+    return a + " B";
+  }
+  if (a < 1024 * 1024) {
+    return Math.round(a / 1024f) + " KB";
+  }
+  if (a < 1024 * 1024 * 1024) {
+    return Math.round(a / 1024f / 1024f) + " MB";
+  }
+  return Math.round(a / 1024f / 1024f/ 1024f) + " GB";
+}

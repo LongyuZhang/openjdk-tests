@@ -1,0 +1,11 @@
+public static String fn_A(){
+  String a="test/rules/";
+  if (!new File(a).exists()) {
+    String b=Paths.get("..").toAbsolutePath().normalize().toString();
+    a=b + "/" + a;
+  }
+  if (!new File(a).exists()) {
+    a="";
+  }
+  return a;
+}

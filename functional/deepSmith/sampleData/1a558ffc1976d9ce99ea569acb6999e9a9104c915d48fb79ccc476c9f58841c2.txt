@@ -1,0 +1,5 @@
+protected static void fn_A(byte[] a,int b){
+  if (b >= 0 && b < a.length) {
+    a[b]=0;
+  }
+}

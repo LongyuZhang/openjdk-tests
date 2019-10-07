@@ -1,0 +1,10 @@
+private static char fn_A(String[] a,char b){
+  if (a.length > 0) {
+    try {
+      return (char)Integer.valueOf(a[0]).intValue();
+    }
+ catch (    NumberFormatException c) {
+    }
+  }
+  return b;
+}

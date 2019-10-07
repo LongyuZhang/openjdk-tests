@@ -1,0 +1,9 @@
+private static Float fn_A(final Float[] a,final boolean[] b){
+  float c=0.0f;
+  for (int d=0; d < a.length; d++) {
+    if (!b[d])     continue;
+    if (a[d] == null)     continue;
+    c+=a[d].floatValue();
+  }
+  return new Float(c);
+}

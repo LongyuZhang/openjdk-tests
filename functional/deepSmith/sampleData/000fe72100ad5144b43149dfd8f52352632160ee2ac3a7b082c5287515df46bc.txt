@@ -1,0 +1,19 @@
+public static int fn_A(float a,boolean b){
+  int c=1;
+  float d=1.f;
+  while (d >= a) {
+    if (b) {
+      c*=2;
+    }
+ else {
+      c+=1;
+    }
+    d=d / c;
+  }
+  if (b) {
+    return c / 2;
+  }
+ else {
+    return c - 1;
+  }
+}

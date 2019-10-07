@@ -1,0 +1,44 @@
+public static void fn_A(java.awt.geom.Rectangle2D.Float a,java.awt.geom.Rectangle2D.Float b,float c,float d){
+  b.x+=c;
+  b.y+=d;
+  if (a.width < 0) {
+    float e=a.width;
+    a.x=a.x + a.width;
+    a.width=-e;
+  }
+  if (a.height < 0) {
+    float e=a.height;
+    a.y=a.y + a.height;
+    a.height=-e;
+  }
+  if (b.width < 0) {
+    float e=b.width;
+    b.x=b.x + b.width;
+    b.width=-e;
+  }
+  if (b.height < 0) {
+    float e=b.height;
+    b.y=b.y + b.height;
+    b.height=-e;
+  }
+  if (b.x < a.x) {
+    float f=a.x - b.x;
+    b.x+=f;
+    b.width-=f;
+  }
+  if (b.y < a.y) {
+    float g=a.y - b.y;
+    b.y+=g;
+    b.height-=g;
+  }
+  if (b.x + b.width > a.x + a.width) {
+    float h=(b.x + b.width) - (a.x + a.width);
+    b.width-=h;
+  }
+  if (b.y + b.height > a.y + a.height) {
+    float h=(b.y + b.height) - (a.y + a.height);
+    b.height-=h;
+  }
+  b.x-=c;
+  b.y-=d;
+}

@@ -1,0 +1,12 @@
+static void fn_A(int a[],int b,int c,int d,int e[]){
+  int f=b, g=c + 1;
+  int h=c, i=d;
+  int j=0;
+  while (f <= h && g <= i) {
+    if (a[f] <= a[g])     e[j++]=a[f++];
+ else     e[j++]=a[g++];
+  }
+  while (f <= h)   e[j++]=a[f++];
+  while (g <= i)   e[j++]=a[g++];
+  for (f=0; f < j; f++)   a[b + f]=e[f];
+}

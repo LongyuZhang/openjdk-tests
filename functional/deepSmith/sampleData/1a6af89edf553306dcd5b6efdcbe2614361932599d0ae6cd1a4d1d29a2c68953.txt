@@ -1,0 +1,7 @@
+public static void fn_A(){
+  System.out.println("short " + Short.SIZE);
+  System.out.println("java.lang.Short");
+  System.out.println("Short.MIN_VALUE=" + Short.MIN_VALUE);
+  System.out.println("Short.MAX_VALUE=" + Short.MAX_VALUE);
+  System.out.println();
+}

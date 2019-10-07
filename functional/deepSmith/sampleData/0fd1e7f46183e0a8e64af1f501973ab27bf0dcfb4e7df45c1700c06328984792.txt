@@ -1,0 +1,10 @@
+public static synchronized String fn_A(){
+  String a;
+  try {
+    a=ResourceBundle.getBundle("ApplicationResources",Locale.getDefault()).getString("date.format");
+  }
+ catch (  MissingResourceException b) {
+    a="MM/dd/yyyy";
+  }
+  return a;
+}

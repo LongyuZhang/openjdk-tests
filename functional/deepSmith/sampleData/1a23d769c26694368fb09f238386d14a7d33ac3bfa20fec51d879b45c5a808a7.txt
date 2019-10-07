@@ -1,0 +1,16 @@
+public static java.lang.String fn_A(int a){
+switch (a) {
+case 1:
+    return "sqlQuery";
+case 2:
+  return "logicalPlan";
+case 3:
+return "physicalPlan";
+case 4:
+return "javaExecutor";
+case 5:
+return "distributedCache";
+default :
+return null;
+}
+}

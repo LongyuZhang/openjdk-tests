@@ -1,0 +1,12 @@
+static int fn_A(int a,int b){
+  int c=0;
+  for (int d=1; d <= a; d++) {
+    for (int e=d + 1; e <= a; e++) {
+      int f=d & e;
+      if (f > c && f < b) {
+        c=f;
+      }
+    }
+  }
+  return c;
+}

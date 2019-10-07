@@ -1,0 +1,14 @@
+static void fn_A(byte[] a,short b) throws IllegalArgumentException {
+  int c=b / 8;
+  int d=b % 8;
+  if (c < a.length) {
+    if ((a[c] & (0xFF >> d)) != 0) {
+      throw new IllegalArgumentException("host bits not all zero in netmask: " + b);
+    }
+  }
+  for (int e=c + 1; e < a.length; ++e) {
+    if (a[e] != 0) {
+      throw new IllegalArgumentException("host bits not all zero in netmask: " + b);
+    }
+  }
+}

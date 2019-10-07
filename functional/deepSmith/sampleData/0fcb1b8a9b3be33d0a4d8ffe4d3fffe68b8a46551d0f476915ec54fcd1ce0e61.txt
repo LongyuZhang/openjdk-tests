@@ -1,0 +1,6 @@
+public static byte[] fn_A(long a){
+  int b=Long.SIZE / 8;
+  byte[] c=new byte[b];
+  for (int d=0; d < b; d++)   c[d]=(byte)((a >> ((b - d - 1) * 8)) & 255);
+  return c;
+}
