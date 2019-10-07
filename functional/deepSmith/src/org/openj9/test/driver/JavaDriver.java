@@ -711,8 +711,16 @@ public class JavaDriver {
 						System.out.println("Error reading file " + curFileAbsolutePath);
 					}
 
-					JavaDriverResult curOutput = javaDriver.Drive(tmpDir, inputString.toString());
-					System.out.println("Current TEST_OUTPUT is: \n" + curOutput.toString() + "\n");
+					try {
+						JavaDriverResult curOutput = javaDriver.Drive(tmpDir, inputString.toString());
+						if (curOutput != null) {
+							System.out.println("Current TEST_OUTPUT is: \n" + curOutput.toString() + "\n");
+						}
+					} catch (Exception expt) {
+						System.out.println("catch all exceptions");
+					} finally {
+						System.out.println("finally catch all exceptions");
+					}					
 				}
 			}
 		} else {
