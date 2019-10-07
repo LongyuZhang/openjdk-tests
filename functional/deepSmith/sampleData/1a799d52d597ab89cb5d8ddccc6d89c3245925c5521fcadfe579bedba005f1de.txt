@@ -1,0 +1,15 @@
+public final static int[] fn_A(byte[] a,int b,int c,int d){
+  if (a == null) {
+    System.err.println("Converter: input null (byte -> int)");
+    return null;
+  }
+  if (a.length % 4 != 0) {
+    System.err.println("Converter bytes2int invalid length %4");
+    System.exit(1);
+  }
+  int[] e=new int[a.length / 4];
+  for (int f=0; f < e.length; f++) {
+    e[f]=((a[f * 4] & 0xFF) << 24) | ((a[f * 4 + 1] & 0xFF) << 16) | ((a[f * 4 + 2] & 0xFF) << 8)| (a[f * 4 + 3] & 0xFF);
+  }
+  return e;
+}
