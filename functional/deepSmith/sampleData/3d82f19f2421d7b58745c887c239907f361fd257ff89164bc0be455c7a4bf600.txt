@@ -1,0 +1,31 @@
+private static String fn_A(char a){
+  if (a == 0x9 || a == 0xA || a == 0xD || (a >= 0x20 && a <= 0xD7FF) || (a >= 0xE000 && a <= 0xFFFD) || (a >= 0x10000 && a <= 0x10FFFF)) {
+switch (a) {
+case '{':
+      return "00";
+case '}':
+    return "01";
+case '.':
+  return "02";
+case '/':
+return "03";
+case ':':
+return "04";
+case '[':
+return "05";
+case ']':
+return "06";
+case '|':
+return "07";
+case '*':
+return "08";
+case '%':
+return "09";
+default :
+return null;
+}
+}
+ else {
+throw new UnsupportedOperationException();
+}
+}

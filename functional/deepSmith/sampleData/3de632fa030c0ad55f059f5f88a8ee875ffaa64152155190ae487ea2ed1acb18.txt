@@ -1,0 +1,11 @@
+public static String fn_A(long a){
+  if ((a < 0) || (a >= 36)) {
+    throw new RuntimeException("convertLongToCharSmall() " + " invalid input (not >=0 && <36: " + a);
+  }
+ else   if (a < 26) {
+    return "" + (char)('A' + a);
+  }
+ else {
+    return "" + (char)('0' + (a - 26));
+  }
+}

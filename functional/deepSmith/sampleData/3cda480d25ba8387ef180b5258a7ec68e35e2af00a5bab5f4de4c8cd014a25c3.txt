@@ -1,0 +1,5 @@
+public static void fn_A(float[][] a){
+  float b=a[1][0];
+  a[1][0]=(a[1][1] - 0.5F) * -1F + 0.5F;
+  a[1][1]=(b - 0.5F) * -1F + 0.5F;
+}

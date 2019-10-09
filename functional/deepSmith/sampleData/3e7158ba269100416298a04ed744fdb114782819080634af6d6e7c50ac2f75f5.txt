@@ -1,0 +1,15 @@
+public static boolean fn_A(String[] a,String[] b){
+  boolean c=false;
+  if (a != null && b != null && b.length >= a.length) {
+    c=true;
+    for (int d=0; d < a.length; d++) {
+      if (a[d] != null) {
+        if (b[d] == null || !b[d].matches(a[d])) {
+          c=false;
+          break;
+        }
+      }
+    }
+  }
+  return c;
+}

@@ -1,0 +1,4 @@
+static byte fn_A(byte a,Byte b){
+  if ((a & 1) == 0)   b=new Byte((byte)(a + 1));
+  return b;
+}

@@ -1,0 +1,13 @@
+public static double fn_A(final int a,final int b,final int c){
+  final double d;
+  if (a < b) {
+    d=0.0;
+  }
+ else   if (a > c) {
+    d=1.0;
+  }
+ else {
+    d=(a - b + 1.0) / (c - b + 1.0);
+  }
+  return d;
+}

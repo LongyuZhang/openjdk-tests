@@ -1,0 +1,11 @@
+public static boolean fn_A(double[] a,double[] b,double c){
+  if (a.length != b.length) {
+    return false;
+  }
+  for (int d=0; d < a.length; d++) {
+    if ((a[d] - b[d]) * (a[d] - b[d]) >= c) {
+      return false;
+    }
+  }
+  return true;
+}

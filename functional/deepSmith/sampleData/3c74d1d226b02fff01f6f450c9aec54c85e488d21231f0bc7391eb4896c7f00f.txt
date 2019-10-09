@@ -1,0 +1,5 @@
+private final static boolean fn_A(char[] a,int b,char[] c){
+  if (a.length < b + c.length)   return false;
+  for (int d=1; d < c.length; d++)   if (a[b + d] != c[d])   return false;
+  return true;
+}

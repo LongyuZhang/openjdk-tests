@@ -1,0 +1,7 @@
+public static final byte[] fn_A(short a,int b){
+  byte[] c=new byte[b];
+  for (int d=0; d < b && d < 2; d++) {
+    c[b - 1 - d]=(byte)(a >>> (d * 8));
+  }
+  return c;
+}

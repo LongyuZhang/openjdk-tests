@@ -1,0 +1,5 @@
+public static void fn_A(){
+  long a=Runtime.getRuntime().totalMemory();
+  long b=a - Runtime.getRuntime().freeMemory();
+  System.out.println("Memory: " + b / 1000000 + " MB / " + a / 1000000 + " MB.");
+}

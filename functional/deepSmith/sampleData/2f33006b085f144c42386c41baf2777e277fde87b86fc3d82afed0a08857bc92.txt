@@ -1,0 +1,4 @@
+public static long fn_A(Object a){
+  if (a instanceof Long)   return (long)a;
+  return (int)a;
+}

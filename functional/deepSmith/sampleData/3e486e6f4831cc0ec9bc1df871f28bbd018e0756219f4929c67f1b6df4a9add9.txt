@@ -1,0 +1,13 @@
+static byte[] fn_A(byte[] a,int b){
+  int c=(a.length - b - 1) / 8 * 7;
+  if ((a.length - b - 1) % 8 > 0)   c+=((a.length - b - 1) % 8 - 1);
+  byte[] d=new byte[c];
+  int e=0;
+  for (int f=b; f < a.length; f+=8) {
+    for (int g=0; g < 7; g++) {
+      if (e + g < d.length)       d[e + g]=(byte)(a[f + g + 1] | (byte)(((a[f] >>> g) & 0x1) << 7));
+    }
+    e+=7;
+  }
+  return d;
+}

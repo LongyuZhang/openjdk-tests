@@ -1,0 +1,7 @@
+public static double fn_A(double a,double b){
+  if (b == 0.0) {
+    if (a >= 0.0)     return Math.PI / 2;
+ else     return -Math.PI / 2;
+  }
+  return Math.atan(a / b);
+}

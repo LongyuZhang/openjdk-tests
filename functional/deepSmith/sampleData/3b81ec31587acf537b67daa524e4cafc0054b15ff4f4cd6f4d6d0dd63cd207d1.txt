@@ -1,0 +1,8 @@
+private static FileInputStream fn_A(final String a){
+  try {
+    return new FileInputStream(a);
+  }
+ catch (  final Exception b) {
+    throw new IllegalArgumentException("File not found: " + a,b);
+  }
+}

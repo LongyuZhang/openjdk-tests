@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  System.out.println("TESTING Expression Class");
+  if (a.length > 0)   System.out.println("Loading File: " + a[0]);
+}

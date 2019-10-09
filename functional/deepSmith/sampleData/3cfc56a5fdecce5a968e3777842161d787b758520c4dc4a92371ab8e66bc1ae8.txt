@@ -1,0 +1,7 @@
+public static long fn_A(long a,long b){
+  long c=a - b;
+  if ((a ^ c) < 0 && (a ^ b) < 0) {
+    throw new ArithmeticException("Subtraction overflows a long: " + a + " - "+ b);
+  }
+  return c;
+}

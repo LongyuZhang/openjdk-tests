@@ -1,0 +1,9 @@
+static double[][] fn_A(double[] a,int b,int c){
+  double[][] d=new double[b][c];
+  for (int e=0; e < c; e++) {
+    for (int f=0; f < b; f++) {
+      d[f][e]=a[f + e * b];
+    }
+  }
+  return (d);
+}

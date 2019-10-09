@@ -1,0 +1,5 @@
+static byte[] fn_A(){
+  byte[] a=new byte[16];
+  a[0]=(byte)0x80;
+  return a;
+}

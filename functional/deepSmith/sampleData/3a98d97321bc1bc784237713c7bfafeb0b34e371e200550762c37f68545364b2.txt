@@ -1,0 +1,12 @@
+public static int fn_A(int a,int b){
+  int c=0, d, e;
+  d=(a > b) ? a : b;
+  e=(a < b) ? a : b;
+  c=e;
+  while (d % e != 0) {
+    c=d % e;
+    d=e;
+    e=c;
+  }
+  return c;
+}

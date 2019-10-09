@@ -1,0 +1,18 @@
+protected static double[] fn_A(final double[] a,final double[] b){
+  double[] c=new double[(a.length - 1) + (b.length - 1) + 1];
+  for (int d=0; d < c.length; d++) {
+    c[d]=0;
+  }
+  for (int e=0; e < a.length; e++) {
+    for (int f=0; f < b.length; f++) {
+      final int g=e + f;
+      if (c[g] == 0) {
+        c[g]=a[e] * b[f];
+      }
+ else {
+        c[g]+=a[e] * b[f];
+      }
+    }
+  }
+  return c;
+}

@@ -1,0 +1,8 @@
+private static int fn_A(int a){
+  char[][] b=new char[a][a];
+  char[][][] c=new char[a][a][a];
+  char[][][][] d=new char[a][a][a][a];
+  char[][][][][] e=new char[a][a][a][a][a];
+  char[][][][][][] f=new char[a][a][a][a][a][a];
+  return b.length + c.length + d.length+ e.length+ f.length;
+}

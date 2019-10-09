@@ -1,0 +1,9 @@
+public static Object[] fn_A(Object a){
+  if (a instanceof Map) {
+    return ((Map)a).keySet().toArray();
+  }
+ else   if (a instanceof Hashtable) {
+    return ((Hashtable)a).keySet().toArray();
+  }
+  return null;
+}

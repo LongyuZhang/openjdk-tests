@@ -1,0 +1,4 @@
+public static int fn_A(final int[] a,final int[] b){
+  for (int c=0; c < a.length && c < b.length; c++)   if (a[c] != b[c])   return a[c] - b[c];
+  return 0;
+}

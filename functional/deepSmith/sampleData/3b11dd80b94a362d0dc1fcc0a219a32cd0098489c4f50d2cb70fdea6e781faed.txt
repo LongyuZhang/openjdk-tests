@@ -1,0 +1,4 @@
+public static String fn_A(boolean a){
+  if (a)   return "1.00";
+  return "0.00";
+}

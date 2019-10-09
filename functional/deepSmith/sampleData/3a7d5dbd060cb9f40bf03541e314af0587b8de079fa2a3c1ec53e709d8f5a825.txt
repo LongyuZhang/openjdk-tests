@@ -1,0 +1,4 @@
+public static void fn_A(byte[] a,int b,short c){
+  a[b]=(byte)(c & 0xff);
+  a[b + 1]=(byte)((c & 0xff00) >> 8);
+}

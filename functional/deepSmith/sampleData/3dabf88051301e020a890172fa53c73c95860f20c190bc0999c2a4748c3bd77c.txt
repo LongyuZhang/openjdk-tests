@@ -1,0 +1,13 @@
+public static String fn_A(long a){
+  String b="";
+  if (a >= 0 && a < 1024) {
+    b=a + " KB/s";
+  }
+ else   if (a >= 1024 && a < (1024 * 1024)) {
+    b=Long.toString(a / 1024) + " KB/s";
+  }
+ else   if (a >= (1024 * 1024) && a < (1024 * 1024 * 1024)) {
+    b=Long.toString(a / (1024 * 1024)) + " MB/s";
+  }
+  return b;
+}

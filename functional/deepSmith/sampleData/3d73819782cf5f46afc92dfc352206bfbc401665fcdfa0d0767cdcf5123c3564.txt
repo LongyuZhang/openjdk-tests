@@ -1,0 +1,6 @@
+public static double fn_A(double a,double b,int c){
+  if (b <= 0 || a == 0) {
+    return 0.0;
+  }
+  return Math.min(99.99,b / (a * c));
+}

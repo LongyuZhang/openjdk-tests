@@ -1,0 +1,16 @@
+public static void fn_A(int[] a,int b,int c,int d,int[] e){
+  int[] f=e;
+  int g=0;
+  float h=b / 2.0f;
+  float i=h * h;
+  float j=-h;
+  int k=b * d + c;
+  for (int l=c; l < k; l+=d) {
+    float m=(j < 0) ? -j : j;
+    j++;
+    float n=1.0f - ((m * m) / (i));
+    double o=((double)a[l]) * n;
+    o=(o > 0) ? o + 0.5 : o - 0.5;
+    f[g++]=(int)o;
+  }
+}

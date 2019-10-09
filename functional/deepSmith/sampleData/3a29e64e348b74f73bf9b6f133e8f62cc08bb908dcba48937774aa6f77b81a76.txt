@@ -1,0 +1,4 @@
+public static int fn_A(long a,int b){
+  int c=(int)Math.ceil(a * 1d / b);
+  return (c == 0) ? 1 : c;
+}

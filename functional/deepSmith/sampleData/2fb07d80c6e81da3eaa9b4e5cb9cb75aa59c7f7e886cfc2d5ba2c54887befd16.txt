@@ -1,0 +1,4 @@
+public static Object fn_A(){
+  Object[][][] a=new Object[4][1][];
+  return a;
+}

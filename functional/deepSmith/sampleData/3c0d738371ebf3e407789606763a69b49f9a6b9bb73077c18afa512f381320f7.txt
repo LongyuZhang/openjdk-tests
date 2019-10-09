@@ -1,0 +1,12 @@
+public static Boolean fn_A(Object a){
+  if (a == null) {
+    return Boolean.FALSE;
+  }
+ else   if (a instanceof Boolean) {
+    return ((Boolean)a);
+  }
+ else   if (a instanceof String) {
+    return Boolean.valueOf((String)a);
+  }
+  return Boolean.FALSE;
+}

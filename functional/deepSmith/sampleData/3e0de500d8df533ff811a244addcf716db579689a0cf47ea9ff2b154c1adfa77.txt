@@ -1,0 +1,11 @@
+public static void main(String[] a){
+  System.out.println(Math.min(Double.MIN_VALUE,0.0d));
+  System.out.println(1.0 / 0.0);
+  System.out.println(-1.0 / 0.0);
+  System.out.println(-0.0);
+  System.out.println(0.0 / 0.0);
+  System.out.println(1 == Double.NaN);
+  System.out.println(Double.NaN == Double.NaN);
+  System.out.println(Double.isNaN(0));
+  System.out.println(Double.isNaN(Double.NaN));
+}

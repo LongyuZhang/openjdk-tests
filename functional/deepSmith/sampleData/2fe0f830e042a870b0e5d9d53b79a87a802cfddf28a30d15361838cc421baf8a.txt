@@ -1,0 +1,11 @@
+public static double[] fn_A(double[] a,double b,double c){
+  for (int d=0; d < a.length; d++) {
+    if (a[d] < b) {
+      a[d]=b;
+    }
+    if (a[d] > c) {
+      a[d]=c;
+    }
+  }
+  return a;
+}

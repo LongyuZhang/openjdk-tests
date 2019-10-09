@@ -1,0 +1,22 @@
+private static int fn_A(int a,int b[],int c,int d[],int e,int f[],int g){
+  int h=a;
+  int i=c;
+  for (int j=0; j < g; j++) {
+    for (int k=0; k < f[j + e] - 2; k++) {
+      if ((k & 0x01) == 0) {
+        b[h * 3 + 0]=d[i + 0];
+        b[h * 3 + 1]=d[i + 1];
+        b[h * 3 + 2]=d[i + 2];
+      }
+ else {
+        b[h * 3 + 0]=d[i + 1];
+        b[h * 3 + 1]=d[i + 0];
+        b[h * 3 + 2]=d[i + 2];
+      }
+      h++;
+      i++;
+    }
+    i+=2;
+  }
+  return h;
+}

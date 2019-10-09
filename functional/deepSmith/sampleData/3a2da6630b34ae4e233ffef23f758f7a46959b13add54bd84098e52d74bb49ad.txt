@@ -1,0 +1,14 @@
+public static void fn_A(final short[] a,final long[] b,final long[] c){
+  int d=0;
+  if (b.length != c.length) {
+    throw new IllegalArgumentException("not supported");
+  }
+  for (int e=0; e < b.length; ++e) {
+    long f=b[e] & (~c[e]);
+    while (f != 0) {
+      long g=f & -f;
+      a[d++]=(short)(e * 64 + Long.bitCount(g - 1));
+      f^=g;
+    }
+  }
+}

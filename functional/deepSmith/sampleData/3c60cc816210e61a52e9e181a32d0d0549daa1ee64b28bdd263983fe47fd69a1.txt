@@ -1,0 +1,6 @@
+private static boolean fn_A(int[] a){
+  for (int b=1; b <= 9; b++) {
+    if (a[20 - b * 2] != b)     return false;
+  }
+  return a[0] == 0;
+}

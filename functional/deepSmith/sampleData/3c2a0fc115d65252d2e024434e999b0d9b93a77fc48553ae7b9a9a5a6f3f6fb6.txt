@@ -1,0 +1,5 @@
+public static float[] fn_A(float[] a){
+  float b=(float)Math.hypot(a[0],a[1]);
+  float[] c={a[0] / b,a[1] / b};
+  return c;
+}

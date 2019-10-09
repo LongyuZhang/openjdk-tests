@@ -1,0 +1,12 @@
+public static float[] fn_A(float a,float b,float c,float d,float e){
+  float[] f=new float[2];
+  if (!((e > b && e < d && b < d) || (e < b && e > d && b > d) || e == b || e == d)) {
+    return null;
+  }
+  f[0]=a + (e - b) * (c - a) / (d - b);
+  f[1]=e;
+  if (!((f[0] > a && f[0] < c && a < c) || (f[0] < a && f[0] > c && a > c) || f[0] == a || f[0] == c)) {
+    return null;
+  }
+  return f;
+}

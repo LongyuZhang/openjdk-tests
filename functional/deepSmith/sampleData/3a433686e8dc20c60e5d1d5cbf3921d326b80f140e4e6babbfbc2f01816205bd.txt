@@ -1,0 +1,8 @@
+static double fn_A(int a){
+  double b=10 * 1048576.0;
+  while (a > 1) {
+    b*=10;
+    a--;
+  }
+  return b;
+}

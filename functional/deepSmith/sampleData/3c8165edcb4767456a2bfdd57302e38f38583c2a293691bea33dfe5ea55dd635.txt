@@ -1,0 +1,10 @@
+static long fn_A(int a){
+  long[] b=new long[Math.max(4,a + 1)];
+  b[1]=1;
+  b[2]=2;
+  b[3]=4;
+  for (int c=4; c <= a; c++) {
+    b[c]=b[c - 1] + b[c - 2] + b[c - 3];
+  }
+  return b[a];
+}

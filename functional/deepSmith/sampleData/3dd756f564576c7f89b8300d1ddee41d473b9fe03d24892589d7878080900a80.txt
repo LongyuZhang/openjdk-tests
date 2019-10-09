@@ -1,0 +1,7 @@
+private static String fn_A(long a){
+  int b=(int)((System.currentTimeMillis() - a) / 1000);
+  int c=(int)(b / 60);
+  int d=(int)(c / 60);
+  int e=(int)(d / 24);
+  return e + " days " + (d % 24)+ " hours "+ (c % 60)+ " mins";
+}

@@ -1,0 +1,11 @@
+public static int fn_A(byte[] a){
+  int b=0;
+  if (a == null || a.length != 8) {
+    throw new IllegalArgumentException("Need 8 bytes");
+  }
+  b=(a[3] ^ a[7]) & 0xFF;
+  b|=(((a[2] ^ a[6]) << 8) & 0xFF00);
+  b|=(((a[1] ^ a[5]) << 16) & 0xFF0000);
+  b|=(((a[0] ^ a[4]) << 24) & 0xFF000000);
+  return b;
+}

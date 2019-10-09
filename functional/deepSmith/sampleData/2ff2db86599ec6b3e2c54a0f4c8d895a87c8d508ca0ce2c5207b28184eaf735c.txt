@@ -1,0 +1,8 @@
+public static int fn_A(int a,int b){
+  a^=(b & 0xFF);
+  a^=(a << 4) & 0xFF;
+  b=((a << 8) & 0xFFFF) | (b >> 8);
+  b^=(a >> 4);
+  b^=(a << 3) & 0xFFFF;
+  return b;
+}

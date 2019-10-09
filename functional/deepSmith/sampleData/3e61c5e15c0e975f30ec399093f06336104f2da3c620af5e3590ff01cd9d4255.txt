@@ -1,0 +1,14 @@
+public static byte[] fn_A(final char[] a){
+  final int b=a.length / 2;
+  final byte[] c=new byte[b];
+  for (int d=0; d < b; d++) {
+    final int e=Character.digit(a[d * 2],16);
+    final int f=Character.digit(a[d * 2 + 1],16);
+    int g=(e << 4) | f;
+    if (g > 127) {
+      g-=256;
+    }
+    c[d]=(byte)g;
+  }
+  return c;
+}

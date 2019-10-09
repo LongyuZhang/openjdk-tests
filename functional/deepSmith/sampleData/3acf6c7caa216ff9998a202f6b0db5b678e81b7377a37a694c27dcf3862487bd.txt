@@ -1,0 +1,13 @@
+public static boolean fn_A(byte[] a){
+  if (a.length < 9 || a.length > 73)   return false;
+  if ((a[0] & 0xff) != 0x30 || (a[1] & 0xff) != a.length - 3)   return false;
+  int b=a[3] & 0xff;
+  if (5 + b >= a.length || b == 0)   return false;
+  int c=a[5 + b] & 0xff;
+  if (b + c + 7 != a.length || c == 0)   return false;
+  if (a[4 - 2] != 0x02 || (a[4] & 0x80) == 0x80)   return false;
+  if (b > 1 && a[4] == 0x00 && (a[4 + 1] & 0x80) != 0x80)   return false;
+  if (a[6 + b - 2] != 0x02 || (a[6 + b] & 0x80) == 0x80)   return false;
+  if (c > 1 && a[6 + b] == 0x00 && (a[6 + b + 1] & 0x80) != 0x80)   return false;
+  return true;
+}

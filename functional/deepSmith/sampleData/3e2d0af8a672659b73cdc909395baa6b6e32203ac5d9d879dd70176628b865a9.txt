@@ -1,0 +1,4 @@
+static public BigDecimal fn_A(String a){
+  BigDecimal b=new BigDecimal(a);
+  return b;
+}

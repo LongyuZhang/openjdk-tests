@@ -1,0 +1,4 @@
+static byte fn_A(byte[] a,int b){
+  if ((b & 1) == 0)   return (byte)(a[b / 2] & 0x0f);
+ else   return (byte)((a[b / 2] & 0xf0) >>> 4);
+}

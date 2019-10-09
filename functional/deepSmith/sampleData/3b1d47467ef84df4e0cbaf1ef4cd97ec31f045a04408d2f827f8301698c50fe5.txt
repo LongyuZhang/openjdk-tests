@@ -1,0 +1,4 @@
+public final static double fn_A(final int a,final int b){
+  final double c=a, d=b;
+  return c * d;
+}

@@ -1,0 +1,12 @@
+private static double fn_A(double[] a,double[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("Arrays are not the same size");
+  }
+  double c=0;
+  double d;
+  for (int e=0; e < a.length; e++) {
+    d=(a[e] - b[e]);
+    c+=d * d;
+  }
+  return Math.sqrt(c / a.length);
+}

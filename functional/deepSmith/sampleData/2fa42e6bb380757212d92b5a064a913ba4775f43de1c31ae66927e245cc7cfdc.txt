@@ -1,0 +1,7 @@
+private static String fn_A(int a){
+  char[] b=new char[a];
+  for (int c=0; c < a; c++) {
+    b[c]=' ';
+  }
+  return new String(b);
+}
