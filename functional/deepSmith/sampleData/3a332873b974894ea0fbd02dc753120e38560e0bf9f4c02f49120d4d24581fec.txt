@@ -1,0 +1,7 @@
+private static Integer[] fn_A(int a){
+  Integer[] b=new Integer[a];
+  for (int c=0; c < a; c++) {
+    b[c]=c;
+  }
+  return b;
+}

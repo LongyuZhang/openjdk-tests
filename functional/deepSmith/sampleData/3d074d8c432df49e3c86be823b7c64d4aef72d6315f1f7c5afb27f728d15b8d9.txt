@@ -1,0 +1,11 @@
+static boolean fn_A(int a,int[] b,int c){
+  if (c < 1) {
+    throw new IllegalArgumentException("top must be at least 1");
+  }
+  for (int d=0; d < c; d++) {
+    if (b[d] == a) {
+      return true;
+    }
+  }
+  return false;
+}

@@ -1,0 +1,5 @@
+public static int fn_A(int a){
+  int b=(int)Math.ceil(a / 7.0);
+  b+=(int)(Math.random() * 5);
+  return b;
+}

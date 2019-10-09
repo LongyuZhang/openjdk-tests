@@ -1,0 +1,6 @@
+public static final void fn_A(final int a,final byte[] b){
+  b[0]=(byte)(0xff & (a >> 24));
+  b[1]=(byte)(0xff & (a >> 16));
+  b[2]=(byte)(0xff & (a >> 8));
+  b[3]=(byte)(0xff & (a));
+}

@@ -1,0 +1,7 @@
+private static void fn_A(){
+  System.out.println("Program Menu:");
+  System.out.println("1. Add product to list");
+  System.out.println("2. Remove product from list");
+  System.out.println("3. Print list to console");
+  System.out.println("4. Exit");
+}

@@ -1,0 +1,4 @@
+private static byte fn_A(final byte a){
+  if (a >= 0)   return (byte)(Math.abs(a - Byte.MAX_VALUE));
+ else   return (byte)(Byte.MIN_VALUE - a - 1);
+}

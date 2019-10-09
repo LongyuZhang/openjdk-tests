@@ -1,0 +1,15 @@
+private static boolean fn_A(int a,byte b){
+  if ((a & b) != 0) {
+    return true;
+  }
+  if ((a & 16) != 0) {
+    return true;
+  }
+  if ((a & 32) != 0) {
+    return true;
+  }
+  if ((a & 64) != 0) {
+    return true;
+  }
+  return false;
+}

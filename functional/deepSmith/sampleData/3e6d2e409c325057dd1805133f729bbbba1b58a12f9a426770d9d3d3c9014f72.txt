@@ -1,0 +1,10 @@
+public static BufferedReader fn_A(InputStream a){
+  try {
+    DataInputStream b=new DataInputStream(a);
+    BufferedReader c=new BufferedReader(new InputStreamReader(b,"UTF-8"));
+    return c;
+  }
+ catch (  Exception d) {
+    return null;
+  }
+}

@@ -1,0 +1,4 @@
+static int fn_A(int a,int b,int c){
+  final int d=a * b;
+  return (c * d + 7) / 8;
+}

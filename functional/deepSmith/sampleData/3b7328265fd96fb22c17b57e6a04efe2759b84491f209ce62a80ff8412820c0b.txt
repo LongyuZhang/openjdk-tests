@@ -1,0 +1,7 @@
+public static int fn_A(long a,long b,long c,long d,long e,long f){
+  c-=a;
+  d-=b;
+  e-=a;
+  f-=b;
+  return Long.signum(c * f - d * e);
+}

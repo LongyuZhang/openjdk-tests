@@ -1,0 +1,6 @@
+private static boolean fn_A(int a){
+  for (int b=2; 2 * b < a; b++) {
+    if (a % b == 0)     return false;
+  }
+  return true;
+}

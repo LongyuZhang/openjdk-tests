@@ -1,0 +1,19 @@
+private static boolean fn_A(int[] a,int[] b,int[] c,int[] d){
+  for (int e=0; e < 4; ++e) {
+    int f=e + 1 & 3;
+    int g=a[e] - a[f];
+    int h=b[e] - b[f];
+    int i=-h;
+    int j=g;
+    if (i != 0 || g != 0) {
+      for (int k=0; k < 4; ++k) {
+        int l=i * (c[k] - a[f]) + j * (d[k] - b[f]);
+        if (l < 0) {
+          continue;
+        }
+      }
+      return true;
+    }
+  }
+  return false;
+}

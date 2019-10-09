@@ -1,0 +1,5 @@
+public static int fn_A(long[] a){
+  int b=1;
+  for (int c=2; c < a.length; ++c)   b*=a[c];
+  return b;
+}

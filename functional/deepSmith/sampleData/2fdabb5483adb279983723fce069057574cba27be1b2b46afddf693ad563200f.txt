@@ -1,0 +1,5 @@
+private static <T>boolean fn_A(Enum<? super T> a,Enum<? super T> b){
+  int c=(a != null) ? a.ordinal() : 0;
+  int d=(b != null) ? b.ordinal() : 0;
+  return c == d;
+}

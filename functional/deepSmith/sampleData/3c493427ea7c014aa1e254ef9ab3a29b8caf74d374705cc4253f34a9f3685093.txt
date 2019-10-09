@@ -1,0 +1,4 @@
+static long fn_A(long a,long b){
+  while (b != 0)   b^=a^=b^=a%=b;
+  return a;
+}

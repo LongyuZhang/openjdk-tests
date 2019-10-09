@@ -1,0 +1,17 @@
+public static byte[] fn_A(int a,int b){
+  byte[] c=new byte[b];
+  if (b == 1) {
+    c[0]=(byte)(0xff & a);
+  }
+ else   if (b == 2) {
+    c[0]=(byte)((a >>> 8) & 0xff);
+    c[1]=(byte)(a & 0xff);
+  }
+ else {
+    c[0]=(byte)((a >>> 24) & 0xff);
+    c[1]=(byte)((a >>> 16) & 0xff);
+    c[2]=(byte)((a >>> 8) & 0xff);
+    c[3]=(byte)(a & 0xff);
+  }
+  return c;
+}

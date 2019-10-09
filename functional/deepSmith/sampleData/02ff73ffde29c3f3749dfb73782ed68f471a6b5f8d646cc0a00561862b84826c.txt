@@ -1,0 +1,5 @@
+public static double fn_A(Object a,Object b){
+  double c=((Number)a).doubleValue();
+  double d=((Number)b).doubleValue();
+  return (c - d) * 100.0d / d;
+}

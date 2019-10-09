@@ -1,0 +1,9 @@
+private static void fn_A(float[] a){
+  for (int b, c=1; c < a.length; c++) {
+    float d=a[c];
+    for (b=c - 1; b >= 0 && d < a[b]; b--) {
+      a[b + 1]=a[b];
+    }
+    a[b + 1]=d;
+  }
+}

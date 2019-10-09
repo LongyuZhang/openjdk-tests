@@ -1,0 +1,6 @@
+private static void fn_A(){
+  System.out.println("Commands:");
+  System.out.println("\tlistHDFS");
+  System.out.println("\tlistLocalFs");
+  System.out.println("\tmigrate");
+}

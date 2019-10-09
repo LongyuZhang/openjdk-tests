@@ -1,0 +1,7 @@
+public static float[] fn_A(float[] a){
+  float[] b=new float[a.length];
+  for (int c=0; c < a.length; c++) {
+    b[c]=a[c];
+  }
+  return b;
+}

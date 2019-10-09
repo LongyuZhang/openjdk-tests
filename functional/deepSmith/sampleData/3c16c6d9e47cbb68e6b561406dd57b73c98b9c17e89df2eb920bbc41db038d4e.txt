@@ -1,0 +1,10 @@
+public static int fn_A(int[] a,int b,int c){
+  int d=-Integer.MAX_VALUE;
+  for (int e=0; e < c; e++) {
+    int f=a[b + e];
+    if (f > d) {
+      d=f;
+    }
+  }
+  return d;
+}

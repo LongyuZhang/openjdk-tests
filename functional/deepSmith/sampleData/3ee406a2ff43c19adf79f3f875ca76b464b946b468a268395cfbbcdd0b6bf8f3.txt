@@ -1,0 +1,12 @@
+public static String fn_A(final String[] a,final String b,final int c){
+  String d="";
+  if (a != null) {
+    for (int e=c; e < a.length; ++e) {
+      d+=a[e];
+      if (e + 1 < a.length) {
+        d+=b;
+      }
+    }
+  }
+  return d;
+}

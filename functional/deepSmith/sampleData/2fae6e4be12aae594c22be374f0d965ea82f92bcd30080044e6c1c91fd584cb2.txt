@@ -1,0 +1,4 @@
+private static void fn_A(String a){
+  String b=Thread.currentThread().getName();
+  System.err.println(b + ": " + a);
+}

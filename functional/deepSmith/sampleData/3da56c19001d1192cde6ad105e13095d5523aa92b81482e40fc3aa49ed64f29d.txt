@@ -1,0 +1,13 @@
+private static void fn_A(String[] a,String[] b,int c,int d,String e){
+  int f=0;
+  for (int g=0; g < c; g++) {
+    a[f]=b[g];
+    f++;
+  }
+  a[f]=e;
+  f++;
+  for (int g=d + 1; g < b.length; g++) {
+    a[f]=b[g];
+    f++;
+  }
+}

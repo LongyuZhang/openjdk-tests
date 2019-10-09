@@ -1,0 +1,9 @@
+private static long fn_A(){
+  long a=Runtime.getRuntime().maxMemory();
+  if (a == Long.MAX_VALUE || a < (long)(256 * 1024 * 1024)) {
+    return (long)(32 * 1024 * 1024);
+  }
+ else {
+    return Math.max(a / 8L,(long)(256 * 1024 * 1024));
+  }
+}

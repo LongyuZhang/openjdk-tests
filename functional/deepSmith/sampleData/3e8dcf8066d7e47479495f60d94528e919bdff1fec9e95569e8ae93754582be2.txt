@@ -1,0 +1,10 @@
+public static boolean fn_A(int a){
+  boolean b;
+  if (a > 0) {
+    b=true;
+  }
+ else {
+    b=false;
+  }
+  return b;
+}

@@ -1,0 +1,9 @@
+private static void fn_A(){
+  System.out.println("Usage: $HADOOP_PREFIX/bin/hadoop jar hadoop-streaming.jar" + " [options]");
+  System.out.println("Options:");
+  System.out.println("  dumptb <glob-pattern> Dumps all files that match the" + " given pattern to ");
+  System.out.println("                        standard output as typed " + "bytes.");
+  System.out.println("  loadtb <path> Reads typed bytes from standard input" + " and stores them in");
+  System.out.println("                a sequence file in the specified path");
+  System.out.println("  [streamjob] <args> Runs streaming job with given" + " arguments");
+}

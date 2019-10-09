@@ -1,0 +1,7 @@
+public static int fn_A(int a,int b,int c){
+  a+=b;
+  if (a > c) {
+    a=c;
+  }
+  return a;
+}

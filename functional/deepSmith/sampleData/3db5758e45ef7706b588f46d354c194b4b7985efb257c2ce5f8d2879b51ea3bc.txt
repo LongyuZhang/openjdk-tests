@@ -1,0 +1,6 @@
+public static boolean fn_A(int a){
+  if (a >= 13 && a <= 19) {
+    return true;
+  }
+  return false;
+}

@@ -1,0 +1,9 @@
+public static boolean[][] fn_A(int a,int b,boolean c){
+  boolean[][] d=new boolean[a][b];
+  for (int e=0; e < a; e++) {
+    for (int f=0; f < b; f++) {
+      d[e][f]=c;
+    }
+  }
+  return d;
+}

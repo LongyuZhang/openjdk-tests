@@ -1,0 +1,13 @@
+public static boolean fn_A(String[] a){
+  if (a.length < 5) {
+    return false;
+  }
+  if (!(a[0].compareToIgnoreCase("-all") == 0 || a[0].compareToIgnoreCase("-trn") == 0 || a[0].compareToIgnoreCase("-tst") == 0) || a[0].compareToIgnoreCase("-cont") == 0) {
+    return false;
+  }
+  if (a[1].compareToIgnoreCase("-d") != 0) {
+    return false;
+  }
+  if (a[3].compareToIgnoreCase("-o") != 0)   return false;
+  return true;
+}

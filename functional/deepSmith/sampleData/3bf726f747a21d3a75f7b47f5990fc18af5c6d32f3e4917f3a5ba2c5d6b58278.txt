@@ -1,0 +1,6 @@
+public static String fn_A(byte[] a,int b,int c){
+  if (a.length == 0 || a[0] == 0)   return "";
+  int d;
+  for (d=b; (d - b) < c && a[d] != 0; d++)   ;
+  return new String(a,b,d - b);
+}

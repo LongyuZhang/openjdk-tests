@@ -1,0 +1,10 @@
+private static double fn_A(int a,boolean b,double c){
+  double d;
+  if (b) {
+    d=(1.2 * c) / Math.sqrt(1 << a);
+  }
+ else {
+    d=(0.9 * c) / Math.sqrt(1 << a);
+  }
+  return d;
+}

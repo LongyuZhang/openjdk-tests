@@ -1,0 +1,9 @@
+public static boolean fn_A(long[] a,long[] b){
+  if (a.length == 0 && b.length == 1 && b[0] == 1) {
+    return true;
+  }
+ else   if (b.length == 0 && a.length == 1 && a[0] == 1) {
+    return true;
+  }
+  return false;
+}

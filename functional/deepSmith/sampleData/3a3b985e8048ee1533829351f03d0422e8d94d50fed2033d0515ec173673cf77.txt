@@ -1,0 +1,6 @@
+public static double[] fn_A(double[] a,double[] b,double c){
+  for (int d=0; d < a.length; d++) {
+    a[d]+=c * b[d];
+  }
+  return a;
+}

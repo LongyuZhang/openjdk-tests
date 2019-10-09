@@ -1,0 +1,5 @@
+public static void main(String[] a){
+  String[] b="1,2".split(",");
+  String c=b[0];
+  int d=b.length + 12;
+}

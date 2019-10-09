@@ -1,0 +1,22 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "undefined";
+case 1:
+  return "not running";
+case 2:
+return "starts in a few seconds (e.g. for video recording)";
+case 3:
+return "pausing";
+case 4:
+return "running";
+case 5:
+return "service off-air";
+case 6:
+return "reserved for future use";
+case 7:
+return "reserved for future use";
+default :
+return "Illegal value";
+}
+}

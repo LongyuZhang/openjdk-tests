@@ -1,0 +1,8 @@
+static boolean fn_A(Integer[] a,int b){
+  for (int c=0; c < a.length; ++c) {
+    if (a[c].intValue() == b) {
+      return true;
+    }
+  }
+  return false;
+}

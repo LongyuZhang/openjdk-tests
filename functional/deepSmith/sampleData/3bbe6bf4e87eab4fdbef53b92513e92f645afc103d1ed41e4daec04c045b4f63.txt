@@ -1,0 +1,16 @@
+private static String[] fn_A(String[] a,String b,int c){
+  if (a == null || a.length == 0)   return new String[]{b};
+  String[] d=new String[a.length + 1];
+  for (int e=0; e < d.length; e++) {
+    if (e == c) {
+      d[e]=b;
+    }
+ else     if (e < c) {
+      d[e]=a[e];
+    }
+ else {
+      d[e]=a[e - 1];
+    }
+  }
+  return d;
+}

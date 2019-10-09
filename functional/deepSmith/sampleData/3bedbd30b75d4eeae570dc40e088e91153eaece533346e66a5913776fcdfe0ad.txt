@@ -1,0 +1,5 @@
+public static int fn_A(byte[] a,int b){
+  int c=a[b] & 0xff;
+  c|=(a[++b] & 0xff) << 8;
+  return c;
+}

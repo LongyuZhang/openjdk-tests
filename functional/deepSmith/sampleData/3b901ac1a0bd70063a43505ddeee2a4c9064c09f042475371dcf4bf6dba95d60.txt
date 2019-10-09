@@ -1,0 +1,4 @@
+public static boolean fn_A(boolean a,String b){
+  if (!a)   throw new IllegalArgumentException("assertion failed; " + b);
+  return a;
+}

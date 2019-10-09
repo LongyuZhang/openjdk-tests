@@ -1,0 +1,15 @@
+static boolean fn_A(byte[] a,byte[] b,int c){
+  int d=0;
+  byte e, f;
+  while (d < c) {
+    e=a[d];
+    f=b[d];
+    if ('Z' >= e && e >= 'A')     e=(byte)(e - 'A' + 'a');
+    if ('Z' >= f && f >= 'A')     f=(byte)(f - 'A' + 'a');
+    if (e != f) {
+      return false;
+    }
+    d++;
+  }
+  return true;
+}

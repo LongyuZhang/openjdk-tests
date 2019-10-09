@@ -1,0 +1,9 @@
+public static int fn_A(int[] a){
+  int[] b=new int[a.length + 1];
+  b[0]=0;
+  b[1]=a[0];
+  for (int c=2; c <= a.length; ++c) {
+    b[c]=Math.max(b[c - 1],b[c - 2] + a[c - 1]);
+  }
+  return b[a.length];
+}

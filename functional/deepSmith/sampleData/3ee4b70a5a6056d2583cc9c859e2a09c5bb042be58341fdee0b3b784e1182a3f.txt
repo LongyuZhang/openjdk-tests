@@ -1,0 +1,29 @@
+private static int fn_A(char[][] a){
+  if (a == null)   return 0;
+  int b=a.length;
+  int c=0;
+  if (b != 0) {
+    c=a[0].length;
+  }
+  int[][] d=new int[b][c];
+  if (b == 0)   return 0;
+  if (c == 0)   return 0;
+  int e=0;
+  for (int f=0; f < b; f++) {
+    for (int g=0; g < c; g++) {
+      if (f == 0 || g == 0) {
+        if (a[f][g] == '1') {
+          d[f][g]=1;
+        }
+ else {
+          d[f][g]=0;
+        }
+      }
+ else       if (a[f][g] == '1') {
+        d[f][g]=Math.min(Math.min(d[f - 1][g],d[f][g - 1]),d[f - 1][g - 1]) + 1;
+      }
+      if (e < d[f][g])       e=d[f][g];
+    }
+  }
+  return e * e;
+}

@@ -1,0 +1,4 @@
+public static void fn_A(){
+  System.err.println("See build/ql/tmp/hive.log, " + "or try \"ant test ... -Dtest.silent=false\" to get more logs.");
+  System.err.flush();
+}

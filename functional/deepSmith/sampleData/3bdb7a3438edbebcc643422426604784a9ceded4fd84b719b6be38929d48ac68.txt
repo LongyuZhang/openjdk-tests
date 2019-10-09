@@ -1,0 +1,17 @@
+private final static long fn_A(final byte[] a,int b,int c){
+  if (c == 0)   throw new NumberFormatException("Empty number");
+  int d=1;
+  if (a[b] == '-') {
+    d=-1;
+    b++;
+    c--;
+  }
+  long e=0;
+  for (int f=0; f < c; f++) {
+    final byte g=a[b + f];
+    if (g < '0' || g > '9')     throw new NumberFormatException("Not a digit: " + (char)g);
+    e*=10;
+    e+=g - '0';
+  }
+  return d * e;
+}

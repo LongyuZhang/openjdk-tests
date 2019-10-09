@@ -1,0 +1,5 @@
+protected static int[] fn_A(int a){
+  int[] b=new int[a];
+  for (int c=0; c < a; c++)   b[c]=c;
+  return b;
+}

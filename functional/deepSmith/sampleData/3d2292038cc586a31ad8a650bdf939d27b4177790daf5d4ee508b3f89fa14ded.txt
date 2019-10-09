@@ -1,0 +1,7 @@
+private static int fn_A(final int a){
+  int b=0xe3400000;
+  b|=(a >> 12) << 16;
+  b|=(12 & 0xf) << 12;
+  b|=a & 0xfff;
+  return b;
+}

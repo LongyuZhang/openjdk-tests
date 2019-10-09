@@ -1,0 +1,19 @@
+public static int fn_A(int a){
+  int b=16;
+  int c=0;
+  int d=0;
+  int e=a;
+  int f=15 + b / 2;
+  do {
+    d=(d << 2) | (e >>> 30);
+    e<<=2;
+    c<<=1;
+    int g=(c << 1) + 1;
+    if (d >= g) {
+      d-=g;
+      c++;
+    }
+  }
+ while (f-- != 0);
+  return c;
+}

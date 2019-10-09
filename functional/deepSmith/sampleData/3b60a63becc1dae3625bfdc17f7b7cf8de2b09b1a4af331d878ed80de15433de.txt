@@ -1,0 +1,10 @@
+public static int fn_A(long[] a){
+  for (int b=0, c=a.length - 1; ; b++, c--) {
+    if (b == a.length) {
+      return b * Long.SIZE;
+    }
+    if (a[c] != 0) {
+      return Long.numberOfLeadingZeros(a[c]) + b * Long.SIZE;
+    }
+  }
+}

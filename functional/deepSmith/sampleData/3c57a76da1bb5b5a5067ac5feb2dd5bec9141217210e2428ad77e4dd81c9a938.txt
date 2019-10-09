@@ -1,0 +1,23 @@
+public static int[] fn_A(String[] a,String[] b){
+  int c=-1;
+  int d=-1;
+  for (int e=0; e < a.length; e++) {
+    for (int f=0; f < b.length; f++) {
+      if (a[e].equals(b[f])) {
+        int g=1;
+        int h=e;
+        int i=e + 1;
+        while (e + g < a.length && f + g < b.length && a[e + g].equals(b[f + g])) {
+          g++;
+          i=e + g;
+        }
+        if (i - h > d - c) {
+          c=h;
+          d=i;
+        }
+      }
+    }
+  }
+  int[] j={c,d};
+  return j;
+}

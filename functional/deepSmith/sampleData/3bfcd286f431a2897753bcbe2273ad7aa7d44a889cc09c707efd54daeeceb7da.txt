@@ -1,0 +1,24 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "forbidden";
+case 1:
+  return "23,976";
+case 2:
+return "24";
+case 3:
+return "25";
+case 4:
+return "29,97";
+case 5:
+return "30";
+case 6:
+return "50";
+case 7:
+return "59,94";
+case 8:
+return "60";
+default :
+return "reserved";
+}
+}

@@ -1,0 +1,7 @@
+private static byte fn_A(byte a,byte b){
+  byte c=Byte.decode("0x" + new String(new byte[]{a})).byteValue();
+  c=(byte)(c << 4);
+  byte d=Byte.decode("0x" + new String(new byte[]{b})).byteValue();
+  byte e=(byte)(c ^ d);
+  return e;
+}

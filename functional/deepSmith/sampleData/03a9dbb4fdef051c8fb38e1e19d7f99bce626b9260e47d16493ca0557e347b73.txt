@@ -1,0 +1,6 @@
+public static void fn_A(){
+  int a=1;
+  int b=2;
+  System.out.println("1 + 2 = " + 1 + 2);
+  System.out.println("1 + 2 = " + (1 + 2));
+}

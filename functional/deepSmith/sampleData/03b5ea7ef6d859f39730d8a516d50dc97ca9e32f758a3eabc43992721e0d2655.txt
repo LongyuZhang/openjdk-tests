@@ -1,0 +1,7 @@
+private static final String fn_A(){
+  String a=null;
+  if (a == null) {
+    a=System.getProperty("java.version") + " (" + System.getProperty("java.runtime.version")+ ")";
+  }
+  return a;
+}
