@@ -1,0 +1,5 @@
+public static boolean fn_A(Object a){
+  if (a == null)   return false;
+  if (a instanceof Boolean)   return true;
+  return false;
+}

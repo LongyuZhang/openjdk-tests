@@ -1,0 +1,20 @@
+public static double fn_A(double[] a,double[] b){
+  final double c=1.0e-20;
+  int d, e=a.length;
+  Double f, g, h, i;
+  Double j=0.0, k=0.0, l=0.0, m=0.0, n=0.0;
+  for (d=0; d < e; d++) {
+    n+=a[d];
+    m+=b[d];
+  }
+  n/=e;
+  m/=e;
+  for (d=0; d < e; d++) {
+    g=a[d] - n;
+    f=b[d] - m;
+    l+=g * g;
+    j+=f * f;
+    k+=g * f;
+  }
+  return k / (Math.sqrt(l * j) + c);
+}

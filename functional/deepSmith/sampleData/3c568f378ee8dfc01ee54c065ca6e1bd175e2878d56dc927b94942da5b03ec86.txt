@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  short b=9;
+  System.out.println("s: " + b);
+}

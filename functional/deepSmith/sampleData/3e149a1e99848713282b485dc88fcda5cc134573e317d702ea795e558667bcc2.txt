@@ -1,0 +1,6 @@
+public static short fn_A(byte[] a,int b){
+  if (a.length >= b + 2) {
+    return (short)(((short)(((short)((a[b + 1] & 255))) << 8)) | (a[b] & 255));
+  }
+  return (short)0;
+}

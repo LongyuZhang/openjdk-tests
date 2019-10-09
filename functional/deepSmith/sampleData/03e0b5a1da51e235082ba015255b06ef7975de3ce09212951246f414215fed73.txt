@@ -1,0 +1,5 @@
+public static int fn_A(int a,int b,int c,boolean d){
+  c=c << 1;
+  if (d)   return (a >= b) ? c : c + 1;
+  return (a > b) ? c + 1 : c;
+}

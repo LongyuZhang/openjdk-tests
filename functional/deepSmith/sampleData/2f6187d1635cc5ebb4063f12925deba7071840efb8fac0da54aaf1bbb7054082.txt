@@ -1,0 +1,14 @@
+public static double[] fn_A(double[] a){
+  double[] b=new double[9];
+  double c=(a[0] * a[2]) - (Math.pow(a[3],2));
+  b[0]=(((a[1] - a[2]) * a[2]) - (Math.pow(a[3],2))) / c;
+  b[1]=(a[0] - a[1] + a[2]) * a[3] / c;
+  b[2]=a[2] / c;
+  b[3]=a[3] / c;
+  b[4]=(a[2] - a[0]) / a[1];
+  b[5]=a[3] / a[1];
+  b[6]=1 / a[1];
+  b[7]=(a[0] * (a[0] - a[1]) + (Math.pow(a[3],2))) / c;
+  b[8]=a[0] / c;
+  return b;
+}

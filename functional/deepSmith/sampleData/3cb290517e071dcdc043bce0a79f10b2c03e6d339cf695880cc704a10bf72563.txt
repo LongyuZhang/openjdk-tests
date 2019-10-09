@@ -1,0 +1,22 @@
+public static float[] fn_A(float a,float b,float c,int d,int e,int f){
+  float g=a * c;
+  float h=b * c;
+  float i=a / b;
+  if (d != 0 && e != 0) {
+    g=d;
+    h=e;
+  }
+ else   if (d == 0 && e != 0) {
+    g=e * i;
+    h=e;
+  }
+ else   if (d != 0 && e == 0) {
+    h=d / i;
+    g=d;
+  }
+  if (f != 100) {
+    g*=f / 100f;
+    h*=f / 100f;
+  }
+  return new float[]{g,h};
+}

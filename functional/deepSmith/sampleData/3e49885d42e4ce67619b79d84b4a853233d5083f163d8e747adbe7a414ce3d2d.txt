@@ -1,0 +1,11 @@
+public static double[][] fn_A(double a[],double b[]){
+  if (a.length != b.length) {
+    throw new IllegalStateException("The two arrays need to have the same length (rows)");
+  }
+  double c[][]=new double[a.length][2];
+  for (int d=0; d < c.length; d++) {
+    c[d][0]=a[d];
+    c[d][1]=b[d];
+  }
+  return c;
+}

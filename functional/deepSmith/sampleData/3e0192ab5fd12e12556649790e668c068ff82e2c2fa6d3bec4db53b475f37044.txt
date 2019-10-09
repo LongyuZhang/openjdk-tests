@@ -1,0 +1,8 @@
+static long fn_A(final long[] a){
+  long b=0;
+  final int c=a.length;
+  for (int d=0; d < c; d++) {
+    b+=Long.bitCount(a[d]);
+  }
+  return b;
+}

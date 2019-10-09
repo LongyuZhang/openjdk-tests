@@ -1,0 +1,12 @@
+public static int fn_A(int[][] a){
+  int[][] b=new int[2][a.length + 1];
+  for (int c=1; c <= a.length; ++c) {
+    for (int d=1; d <= a.length; ++d) {
+      b[1][d]=Math.max(b[0][d],b[1][d - 1]) + a[c - 1][d - 1];
+    }
+    for (int d=1; d <= a.length; ++d) {
+      b[0][d]=b[1][d];
+    }
+  }
+  return b[1][a.length];
+}

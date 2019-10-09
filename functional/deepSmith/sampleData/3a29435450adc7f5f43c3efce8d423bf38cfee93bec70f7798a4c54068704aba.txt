@@ -1,0 +1,13 @@
+public static void fn_A(int[] a,int b,int c){
+  a[b]=c;
+  while (true) {
+    int d=(b - 1) / 2;
+    if (b == 0 || a[d] > a[b]) {
+      break;
+    }
+    int e=a[b];
+    a[b]=a[d];
+    a[d]=e;
+    b=d;
+  }
+}

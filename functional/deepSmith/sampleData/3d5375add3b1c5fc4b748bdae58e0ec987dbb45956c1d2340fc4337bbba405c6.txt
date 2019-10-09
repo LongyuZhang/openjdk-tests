@@ -1,0 +1,8 @@
+public static String fn_A(String[] a){
+  double b=Double.valueOf(a[0]);
+  double c=Double.valueOf(a[1]);
+  double d=Double.valueOf(a[2]);
+  double e=Double.valueOf(a[3]);
+  double f=Math.sqrt((1 / (d + 1)) * ((c * c) + ((e - b) * (e - b))));
+  return "" + f;
+}

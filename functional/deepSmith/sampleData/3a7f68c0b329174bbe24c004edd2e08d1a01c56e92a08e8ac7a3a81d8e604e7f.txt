@@ -1,0 +1,9 @@
+public static BufferedWriter fn_A(OutputStream a,String b){
+  OutputStreamWriter c=null;
+  try {
+    c=new OutputStreamWriter(a,b);
+  }
+ catch (  UnsupportedEncodingException d) {
+  }
+  return new BufferedWriter(c,0x10000);
+}

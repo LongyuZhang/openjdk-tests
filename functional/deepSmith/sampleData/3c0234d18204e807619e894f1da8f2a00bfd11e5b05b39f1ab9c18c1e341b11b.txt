@@ -1,0 +1,5 @@
+private static void fn_A(boolean a) throws IOException {
+  if (a) {
+    throw new IOException();
+  }
+}

@@ -1,0 +1,7 @@
+private static Object[] fn_A(int a){
+  Object[] b=new Object[a];
+  for (int c=0; c < a; c++) {
+    b[c]="";
+  }
+  return b;
+}

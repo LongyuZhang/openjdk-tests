@@ -1,0 +1,9 @@
+private static double fn_A(double[] a,double[] b,double c){
+  int d=b.length;
+  double e=0.0;
+  for (int f=0; f < d; f++) {
+    double g=a[f] - b[f];
+    e+=g * g;
+  }
+  return Math.exp(-e / (c * c));
+}

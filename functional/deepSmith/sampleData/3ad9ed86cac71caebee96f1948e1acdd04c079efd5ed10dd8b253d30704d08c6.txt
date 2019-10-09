@@ -1,0 +1,15 @@
+public static boolean fn_A(int[] a,int b,int c){
+  int d=0;
+  int e=a[b];
+  int f=e;
+  while (d < f) {
+    int g=(d + f) >> 1;
+    if (c > a[(g << 1) + 2 + b]) {
+      d=g + 1;
+    }
+ else {
+      f=g;
+    }
+  }
+  return d < e && c >= a[(d << 1) + 1 + b];
+}

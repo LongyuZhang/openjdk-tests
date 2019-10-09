@@ -1,0 +1,7 @@
+private static double fn_A(final double a,final double b){
+  final double c=(a + b) / 2;
+  final double d=c * 100000;
+  final int e=(int)d;
+  final double f=d - e >= 0.5 ? e + 1 : e;
+  return f / 100000;
+}

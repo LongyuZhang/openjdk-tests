@@ -1,0 +1,33 @@
+public static void main(String[] a){
+  int[][] b={{10,20,30,40,50},{10,20,30,40},{10,20,30,40,50,60,70}};
+  System.out.println("arr is: " + b);
+  System.out.println("arr size is: " + b.length);
+  System.out.println("arr[0] is: " + b[0]);
+  System.out.println("arr[0] size is: " + b[0].length);
+  for (int c=0; c < b.length; c++) {
+    System.out.println("arr[" + c + "] is: "+ b[c]);
+  }
+  System.out.println(b[0][1]);
+  System.out.println(b[2][2]);
+  int[][][] d={{{10,20,30,40,50},{10,20,30,40},{10,20,30,40,50,60,70}},{{10,20,30,40,50},{10,20,30,40},{10,20,30,40,50,60,70}}};
+  for (int c=0; c < b.length; c++) {
+    for (int e=0; e < b[c].length; e++) {
+      System.out.print(b[c][e] + " ");
+    }
+    System.out.println();
+  }
+  System.out.println("****************");
+  for (int c=0; c < d.length; c++) {
+    for (int e=0; e < d[c].length; e++) {
+      for (int f=0; f < d[c][e].length; f++) {
+        System.out.print(d[c][e][f] + " ");
+      }
+      System.out.println();
+    }
+    System.out.println();
+  }
+  System.out.println("****************");
+  System.out.println(d.length);
+  System.out.println(d[0].length);
+  System.out.println(d[0][1][2]);
+}

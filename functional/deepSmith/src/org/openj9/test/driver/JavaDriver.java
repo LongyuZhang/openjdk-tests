@@ -594,7 +594,7 @@ public class JavaDriver {
 				result.AddParameterValue(parameter);
 			}
 			FutureTask<?> theTask = null;
-			Thread thr = null;
+			Thread driveThread = null;
 			try {
 				// create new task
 				theTask = new FutureTask<Object>(new Runnable() {
@@ -622,12 +622,12 @@ public class JavaDriver {
 				}, null);
 	  
 				// start task in a new thread
-			   thr = new Thread(theTask);
-			   thr.setDaemon(true);
-			   thr.start();
-	  
+				driveThread = new Thread(theTask);
+				driveThread.setDaemon(true);
+				driveThread.start();
+				long driveThreadTimeLimit = 8L;	  
 				// wait for the execution to finish, timeout after 3 secs 
-				theTask.get(3L, TimeUnit.SECONDS); 
+				theTask.get(driveThreadTimeLimit, TimeUnit.SECONDS); 
 			}
 			catch (TimeoutException e) {
 				System.out.println("timed out");// handle timeout
@@ -706,11 +706,13 @@ public class JavaDriver {
 		System.out.println(keywordForParser + "\n");
 
 		File[] listofTestFiles = testsFolder.listFiles();
+		int curTestNum = 0;
 		if (listofTestFiles != null) {
-			for (File curFile : listofTestFiles) {
+			for (File curFile : listofTestFiles) {				
 				if (curFile.isFile() && curFile.toString().contains(".txt")) {
+					curTestNum += 1;
 					String curFileName = curFile.getName();
-					System.out.println("Current TEST_NAME is: " + curFileName);
+					System.out.println("Current TEST " + curTestNum + " NAME is: " + curFileName);
 					String curFileAbsolutePath = testsFolder.toString() + File.separator + curFileName;
 					StringBuilder inputString = new StringBuilder();
 

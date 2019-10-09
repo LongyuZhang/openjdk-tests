@@ -1,0 +1,8 @@
+public static Integer fn_A(Integer a,Integer b){
+  if (a == null && b == null) {
+    return null;
+  }
+  if (a == null)   return b;
+  if (b == null)   return a;
+  return a + b;
+}

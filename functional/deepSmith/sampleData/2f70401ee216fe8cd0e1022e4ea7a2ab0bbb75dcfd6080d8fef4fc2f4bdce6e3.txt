@@ -1,0 +1,6 @@
+private static int fn_A(char a){
+  if (a < '\u0080') {
+    return a >= '0' && a <= '9' ? a - '0' : -1;
+  }
+  return Character.digit((int)a,10);
+}

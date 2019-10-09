@@ -1,0 +1,10 @@
+public static final boolean fn_A(char[] a,char[] b,int c,boolean d){
+  int e=a.length;
+  if (b.length < e + c)   return false;
+  if (d) {
+    for (int f=e; --f >= 0; )     if (a[f] != b[f + c])     return false;
+    return true;
+  }
+  for (int f=e; --f >= 0; )   if (Character.toLowerCase(a[f]) != Character.toLowerCase(b[f + c]))   return false;
+  return true;
+}

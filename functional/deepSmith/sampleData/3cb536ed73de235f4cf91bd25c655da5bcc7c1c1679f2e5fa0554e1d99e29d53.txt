@@ -1,0 +1,9 @@
+public static String fn_A(float[] a,String b){
+  String c="";
+  if (a != null) {
+    for (int d=0; d < a.length; d++) {
+      c+=a[d] + (d < a.length - 1 ? b : "");
+    }
+  }
+  return c;
+}

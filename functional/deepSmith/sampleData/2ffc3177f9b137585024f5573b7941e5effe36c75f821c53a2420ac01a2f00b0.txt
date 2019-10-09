@@ -1,0 +1,9 @@
+public static int[] fn_A(Integer[] a,int b){
+  if (a == null)   return null;
+  final int[] c=new int[a.length];
+  for (int d=0; d < a.length; d++) {
+    Integer e=a[d];
+    c[d]=(e == null ? b : e);
+  }
+  return c;
+}

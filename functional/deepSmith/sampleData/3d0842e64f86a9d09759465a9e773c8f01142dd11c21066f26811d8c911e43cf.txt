@@ -1,0 +1,9 @@
+public static double[] fn_A(final double[] a){
+  double[] b=new double[a.length];
+  for (int c=1; c < a.length - 1; c++) {
+    b[c]=((a[c] - a[c - 1]) + (a[c + 1] - a[c - 1]) / 2) / 2;
+  }
+  b[0]=b[1];
+  b[a.length - 1]=b[a.length - 2];
+  return b;
+}

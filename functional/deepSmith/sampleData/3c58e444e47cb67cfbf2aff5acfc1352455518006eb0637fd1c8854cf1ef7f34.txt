@@ -1,0 +1,6 @@
+public static void fn_A(int a,float b,float c,float d,float[] e,int f){
+  int g=(a + f) * 7;
+  e[g]=b;
+  e[g + 1]=c;
+  e[g + 2]=d;
+}

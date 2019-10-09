@@ -1,0 +1,39 @@
+private static void fn_A(int a,int b,int c,byte[] d){
+  int e=0;
+  int f=0;
+  a: {
+    a=a & (0xFFFFFFFF >>> 32 - b);
+    boolean g=(c % 8 == 0);
+    int h=(c % 8 + b) - 32;
+    if (h > 0) {
+      a=a >>> h;
+      e=a;
+      f=h;
+      b-=h;
+    }
+    int i=c / 8;
+    int j=d[i++] << 24 | d[i++] << 16 | d[i++] << 8 | d[i];
+    if (!g) {
+      a=a << 32 - (c % 8 + b);
+      int k=j;
+      k=k & (0xFFFFFFFF << c % 8);
+      k=k | a;
+      a=k >>> 32 - (c % 8 + b);
+      b=b + c % 8;
+    }
+    a=a << (32 - b);
+    int k=j;
+    k=k & (0xFFFFFFFF >>> b);
+    k=k | a;
+    i=c / 8;
+    d[i++]=(byte)(k >>> 24);
+    d[i++]=(byte)(k >>> 16);
+    d[i++]=(byte)(k >>> 8);
+    d[i++]=(byte)(k);
+    if (f > 0) {
+      b=f;
+      a=e;
+      break a;
+    }
+  }
+}

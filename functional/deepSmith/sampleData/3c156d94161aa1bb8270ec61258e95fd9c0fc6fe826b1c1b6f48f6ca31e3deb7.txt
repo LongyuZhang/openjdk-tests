@@ -1,0 +1,12 @@
+public static double[] fn_A(double[] a){
+  double b=0;
+  boolean c=true;
+  for (int d=0; d < a.length; d++) {
+    if (a[d] > 0)     c=false;
+    b+=Math.abs(a[d]);
+  }
+  if (b == 0)   b=1;
+  if (c)   b*=-1;
+  for (int d=0; d < a.length; d++)   a[d]/=b;
+  return a;
+}

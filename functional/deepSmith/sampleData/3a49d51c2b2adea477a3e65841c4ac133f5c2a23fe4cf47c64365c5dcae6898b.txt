@@ -1,0 +1,4 @@
+public static void fn_A(double a,double b,double c,double d,double[] e){
+  e[0]=a * c - b * d;
+  e[1]=b * c + a * d;
+}

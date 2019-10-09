@@ -1,0 +1,33 @@
+static void fn_A(int[] a,int[] b,int c,int d,float e,int f){
+  int g=0;
+  int h, i, j;
+  int k, l, m;
+  e*=1.6f;
+  for (int n=0; n < d; n++) {
+    for (int o=0; o < c; o++) {
+      int p=a[g];
+      h=(p >> 16) & 0xFF;
+      j=(p >> 8) & 0xFF;
+      i=(p) & 0xFF;
+      int q=b[g];
+      k=(q >> 16) & 0xFF;
+      m=(q >> 8) & 0xFF;
+      l=(q) & 0xFF;
+      if (Math.abs(h - k) >= f) {
+        h=(int)(e * (h - k) + h);
+        h=h > 255 ? 255 : h < 0 ? 0 : h;
+      }
+      if (Math.abs(j - m) >= f) {
+        j=(int)(e * (j - m) + j);
+        j=j > 255 ? 255 : j < 0 ? 0 : j;
+      }
+      if (Math.abs(i - l) >= f) {
+        i=(int)(e * (i - l) + i);
+        i=i > 255 ? 255 : i < 0 ? 0 : i;
+      }
+      int r=p & 0xFF000000;
+      b[g]=r | (h << 16) | (j << 8)| i;
+      g++;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+public static byte[] fn_A(byte[] a,int b,int c){
+  if (b >= a.length) {
+    return null;
+  }
+  byte[] d=new byte[c];
+  for (int e=0; (e < c) && (b + e < a.length); e++) {
+    d[e]=a[b + e];
+  }
+  return d;
+}

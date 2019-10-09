@@ -1,0 +1,4 @@
+public static double fn_A(double a){
+  if (a < 0)   return 0.5 * (Math.exp(-a) + Math.exp(a));
+ else   return 0.5 * (Math.exp(a) + Math.exp(-a));
+}

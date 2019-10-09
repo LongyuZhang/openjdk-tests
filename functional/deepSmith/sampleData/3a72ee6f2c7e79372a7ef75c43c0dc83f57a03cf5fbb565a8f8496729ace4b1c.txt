@@ -1,0 +1,12 @@
+public static void fn_A(int a){
+  if ((a & 16) == 2)   System.out.println("warn");
+  if ((a & 16) != 2)   System.out.println("warn");
+  if ((a | 16) == 2)   System.out.println("warn");
+  if ((a | 16) != 2)   System.out.println("warn");
+  if ((a & 16) < 2)   System.out.println("unsupp");
+  if ((a | 16) < 2)   System.out.println("unsupp");
+  if ((a & 3) == 2)   System.out.println("bogus");
+  if ((a & 3) != 2)   System.out.println("bogus");
+  if ((a | 3) == 7)   System.out.println("bogus");
+  if ((a | 3) == 7)   System.out.println("bogus");
+}

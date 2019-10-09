@@ -1,0 +1,6 @@
+public static double fn_A(double[] a){
+  double b=-Double.MAX_VALUE;
+  int c=a.length;
+  for (int d=0; d < c; ++d)   if (a[d] > b)   b=a[d];
+  return b;
+}

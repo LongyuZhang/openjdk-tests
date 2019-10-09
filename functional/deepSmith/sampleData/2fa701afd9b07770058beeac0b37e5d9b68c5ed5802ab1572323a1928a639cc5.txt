@@ -1,0 +1,5 @@
+private static void fn_A(byte[] a,int b,short c){
+  for (int d=0; d < Short.BYTES; d++) {
+    a[b + d]=(byte)(c >> (d * 8));
+  }
+}

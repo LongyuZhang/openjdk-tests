@@ -1,0 +1,4 @@
+public static List<String> fn_A(){
+  List<String> a=Arrays.asList(TimeZone.getAvailableIDs());
+  return a;
+}

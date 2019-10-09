@@ -1,0 +1,6 @@
+public static String fn_A(String[] a){
+  int b=Integer.parseInt(a[0]);
+  int c=Integer.parseInt(a[1]);
+  int d=b + c + 2;
+  return "" + d;
+}

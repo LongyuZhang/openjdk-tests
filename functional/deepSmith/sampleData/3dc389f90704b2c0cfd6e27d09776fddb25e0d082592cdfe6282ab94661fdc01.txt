@@ -1,0 +1,9 @@
+public static int fn_A(byte[] a){
+  int b=0;
+  b|=(a[0] & 0xFF);
+  b<<=8;
+  b|=(a[1] & 0xFF);
+  b<<=8;
+  b|=(a[2] & 0xFF);
+  return b;
+}

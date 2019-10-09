@@ -1,0 +1,8 @@
+public static boolean fn_A(float a,float b,float c,float d,float e){
+  float f=e / 2;
+  float g=a - (b * f);
+  float h=a + (b * f);
+  float i=c - (d * f);
+  float j=c + (d * f);
+  return !((h < i) || (g > j));
+}

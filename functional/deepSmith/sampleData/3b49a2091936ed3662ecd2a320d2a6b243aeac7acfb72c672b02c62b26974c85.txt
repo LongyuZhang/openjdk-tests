@@ -1,0 +1,21 @@
+private static void fn_A(boolean a){
+  if (a)   System.out.println("Error! Unknown argument sequence.");
+  System.out.println("Mill - Mx* language implementation made with love by abcdabcd987");
+  System.out.println("Usage: mill [options] [input]");
+  System.out.println("Options:");
+  System.out.println("  -help              Print this help message");
+  System.out.println("  -o <file>          Write output to <file>");
+  System.out.println("  -reg-alloc <val>   Set register allocator to <val>");
+  System.out.println("                     Available register allocators:");
+  System.out.println("                       no:    Don't allocate at all. (CISC-like)");
+  System.out.println("                       local: Local bottom-up allocator");
+  System.out.println("                       color: Global allocation by interference graph coloring");
+  System.out.println("  -print-ast         Print the abstract semantic tree");
+  System.out.println("  -print-ir          Print the intermediate representation");
+  System.out.println("  -print-ssa-ir      Print the intermediate representation after SSA transforms");
+  System.out.println("  -no-inline         Disable function inlining");
+  System.out.println("  -no-ssa            Disable single static assignment analysis and transforms");
+  System.out.println("  -no-naive-dce      Disable naive dead code elimination");
+  System.out.println("  -no-scp            Disable simple constant propagate");
+  System.exit(a ? 1 : 0);
+}

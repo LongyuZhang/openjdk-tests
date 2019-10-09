@@ -1,0 +1,6 @@
+private static float fn_A(final int a,final float b,final float c){
+  final int d=a & 0x3F;
+  final float e=d < 4 ? b : c;
+  final float f=d < 4 ? c : b;
+  return ((d & 1) == 1 ? -e : e) + ((d & 2) == 1 ? -2.0F * f : 2.0F * f);
+}

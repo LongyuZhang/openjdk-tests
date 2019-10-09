@@ -1,0 +1,12 @@
+private static char[] fn_A(char[] a){
+  int b=0;
+  int c=a.length - 1;
+  while (b <= c) {
+    char d=a[c];
+    a[c]=a[b];
+    a[b]=d;
+    b++;
+    c--;
+  }
+  return a;
+}

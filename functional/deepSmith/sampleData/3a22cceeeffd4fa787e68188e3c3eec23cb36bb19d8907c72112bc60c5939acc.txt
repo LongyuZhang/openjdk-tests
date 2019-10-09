@@ -1,0 +1,6 @@
+private static boolean fn_A(final int a){
+  if ((a >= 0xC0) && (a <= 0xDF)) {
+    return true;
+  }
+  return false;
+}

@@ -1,0 +1,10 @@
+public static int fn_A(final short[] a,final int b,final int c){
+  if (a == null) {
+    return 0;
+  }
+  int d=1;
+  for (int e=b; e < c; e++) {
+    d=31 * d + a[e];
+  }
+  return d;
+}

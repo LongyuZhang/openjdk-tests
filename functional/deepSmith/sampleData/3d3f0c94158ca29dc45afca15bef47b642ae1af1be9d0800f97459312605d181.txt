@@ -1,0 +1,22 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "(forbidden)";
+case 1:
+  return "Recommendation ITU-R BT.709";
+case 2:
+return "Unspecified Video";
+case 3:
+return "reserved";
+case 4:
+return "Recommendation ITU-R BT.470-2 System M";
+case 5:
+return "Recommendation ITU-R BT.470-2 System B, G";
+case 6:
+return "SMPTE 170M";
+case 7:
+return "SMPTE 240M (1987)";
+default :
+return "reserved";
+}
+}

@@ -1,0 +1,4 @@
+public static int fn_A(){
+  StackTraceElement[] a=new Throwable().getStackTrace();
+  return a[1].getLineNumber();
+}

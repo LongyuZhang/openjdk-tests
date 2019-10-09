@@ -1,0 +1,11 @@
+@SuppressWarnings("unchecked") public static List<String> fn_A(Object a){
+  if (a == null) {
+    return new ArrayList<>();
+  }
+ else   if (a instanceof List) {
+    return (List<String>)a;
+  }
+ else {
+    throw new IllegalArgumentException("Failed to convert " + a + " to List<String>");
+  }
+}

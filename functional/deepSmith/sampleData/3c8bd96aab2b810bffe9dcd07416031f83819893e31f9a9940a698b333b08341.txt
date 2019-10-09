@@ -1,0 +1,8 @@
+public static String fn_A(double a){
+  if (a < 1000D)   return a + " B/s";
+  if (a < 1000000D)   return a / 1000D + " KB/s";
+  if (a < 1000000000D)   return a / 1000000D + " MB/s";
+  if (a < 100000000000D)   return a / 1000000000D + "GB/s";
+  if (a < 100000000000000D)   return a / 1000000000000D + "TB/s";
+  return "speed Error!";
+}

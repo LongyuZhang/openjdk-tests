@@ -1,0 +1,9 @@
+private static int[] fn_A(int[] a){
+  int[] b=new int[a.length];
+  int c=0;
+  for (int d=a.length - 1; d > -1; d--) {
+    c+=a[d];
+    b[d]=c;
+  }
+  return b;
+}

@@ -1,0 +1,8 @@
+public static String fn_A(long a){
+  String b="";
+  b+=String.valueOf((a >>> 24)) + ".";
+  b+=String.valueOf((a & 0x00FFFFFF) >>> 16) + ".";
+  b+=String.valueOf((a & 0x0000FFFF) >>> 8) + ".";
+  b+=String.valueOf((a & 0x000000FF));
+  return b;
+}

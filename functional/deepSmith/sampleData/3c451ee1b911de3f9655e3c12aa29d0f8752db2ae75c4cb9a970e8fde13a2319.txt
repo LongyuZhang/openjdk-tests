@@ -1,0 +1,7 @@
+private static BitSet[] fn_A(int a,int b){
+  BitSet[] c=new BitSet[a];
+  for (int d=0; d < a; d++) {
+    c[d]=new BitSet(b);
+  }
+  return c;
+}

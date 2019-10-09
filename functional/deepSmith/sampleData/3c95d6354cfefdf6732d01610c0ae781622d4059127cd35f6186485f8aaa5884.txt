@@ -1,0 +1,59 @@
+private static char[][] fn_A(int[][] a,int b,int c){
+  char[][] d=new char[b + 2][c + 2];
+  char e='a';
+  int f=b * c;
+  while (f > 0) {
+    a:     for (int g=1; g <= b; g++) {
+      for (int h=1; h <= c; h++) {
+        if (d[g][h] == 0) {
+          d[g][h]=e++;
+          f--;
+          break a;
+        }
+      }
+    }
+    int i;
+    do {
+      i=f;
+      for (int g=1; g <= b; g++) {
+        for (int h=1; h <= c; h++) {
+          int j=a[g][h];
+          int k=j;
+          int l=0, m=0;
+          if ((a[g - 1][h] < k)) {
+            l=g - 1;
+            m=h;
+            k=a[l][m];
+          }
+          if ((a[g][h - 1] < k)) {
+            l=g;
+            m=h - 1;
+            k=a[l][m];
+          }
+          if ((a[g][h + 1] < k)) {
+            l=g;
+            m=h + 1;
+            k=a[l][m];
+          }
+          if ((a[g + 1][h] < k)) {
+            l=g + 1;
+            m=h;
+            k=a[l][m];
+          }
+          if (k != j) {
+            if (d[g][h] == 0 && d[l][m] != 0) {
+              d[g][h]=d[l][m];
+              f--;
+            }
+ else             if (d[l][m] == 0 && d[g][h] != 0) {
+              d[l][m]=d[g][h];
+              f--;
+            }
+          }
+        }
+      }
+    }
+ while (i != f);
+  }
+  return d;
+}

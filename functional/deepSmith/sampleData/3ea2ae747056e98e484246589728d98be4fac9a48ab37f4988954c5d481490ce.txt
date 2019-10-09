@@ -1,0 +1,19 @@
+public static String fn_A(final String a,final int b,final String c,final String d,final String e){
+  String f;
+  f="rbd:" + e;
+  f+=":mon_host=" + a;
+  if (b != 6789) {
+    f+="\\\\:" + b;
+  }
+  if (c == null) {
+    f+=":auth_supported=none";
+  }
+ else {
+    f+=":auth_supported=cephx";
+    f+=":id=" + c;
+    f+=":key=" + d;
+  }
+  f+=":rbd_default_format=2";
+  f+=":client_mount_timeout=30";
+  return f;
+}

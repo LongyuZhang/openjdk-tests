@@ -1,0 +1,52 @@
+public static int[] fn_A(int a,int b,int c,int d,int e){
+  int f=(c + 1) * (d + 1) * (d + 1);
+  int g=(c + 1) * (d + 1) * e;
+  int h=(c + 1) * (d - 1) * e;
+  int[] i=null;
+  if (a < e) {
+    i=new int[4 * d];
+    int j=0;
+    for (int k=0; k < d + 1; k++) {
+      i[j]=f + (c + 1) * (d + 1) * (e - 1 - a) + k * (c + 1) + b;
+      j++;
+    }
+    for (int k=d + 1; k < 2 * (d + 1); k++) {
+      i[j]=f + (c + 1) * (d + 1) * (e - 1 + a) + k * (c + 1) + b;
+      j++;
+    }
+    for (int k=0; k < d - 1; k++) {
+      i[j]=f + 2 * g + (c + 1) * a + k * (c + 1) * e + b;
+      j++;
+    }
+    for (int k=0; k < d - 1; k++) {
+      i[j]=f + 2 * g + h + (c + 1) * (e - 1 - a) + k * (c + 1) * e + b;
+      j++;
+    }
+  }
+ else   if (a < (e + ((int)d / 2) + d % 2)) {
+    int l=a - e;
+    i=new int[4 * (d - 2 * l)];
+    int j=0;
+    for (int k=l; k <= d - l; k++) {
+      i[j]=(d - l) * (c + 1) * (d + 1) + k * (c + 1) + b;
+      j++;
+    }
+    for (int k=l; k <= d - l; k++) {
+      i[j]=l * (c + 1) * (d + 1) + k * (c + 1) + b;
+      j++;
+    }
+    for (int k=l + 1; k < d - l; k++) {
+      i[j]=l * (c + 1) + k * (c + 1) * (d + 1) + b;
+      j++;
+    }
+    for (int k=l + 1; k < d - l; k++) {
+      i[j]=(d - l) * (c + 1) + k * (c + 1) * (d + 1) + b;
+      j++;
+    }
+  }
+ else   if (d % 2 == 0) {
+    i=new int[1];
+    i[0]=(c + 1) * (d + 1) * (d / 2) + (c + 1) * (d / 2) + b;
+  }
+  return i;
+}

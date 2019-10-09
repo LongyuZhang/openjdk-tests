@@ -1,0 +1,5 @@
+public static final short fn_A(byte[] a,int b){
+  int c=a[b + 0] & 255;
+  int d=a[b + 1] & 255;
+  return (short)(c | (d << 8));
+}

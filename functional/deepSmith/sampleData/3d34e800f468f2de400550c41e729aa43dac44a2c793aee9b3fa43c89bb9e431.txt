@@ -1,0 +1,10 @@
+public static final double fn_A(final double a){
+  double b;
+  if (a < 0) {
+    b=-Math.log(-a + Math.sqrt(a * a + 1));
+  }
+ else {
+    b=Math.log(a + Math.sqrt(a * a + 1));
+  }
+  return b;
+}

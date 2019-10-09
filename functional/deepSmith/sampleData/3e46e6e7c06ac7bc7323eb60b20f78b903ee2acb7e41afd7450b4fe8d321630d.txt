@@ -1,0 +1,22 @@
+public static String fn_A(final int a){
+switch (a) {
+case 1:
+    return "4:3 full format";
+case 8:
+  return "14:9 letterbox centre";
+case 4:
+return "14:9 letterbox top";
+case 13:
+return "16:9 letterbox centre";
+case 2:
+return "16:9 letterbox top";
+case 11:
+return "> 16:9 letterbox centre";
+case 7:
+return "14:9 full format";
+case 14:
+return "16:9 full format";
+default :
+return "Parity error";
+}
+}

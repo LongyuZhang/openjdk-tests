@@ -1,0 +1,15 @@
+public static int fn_A(int a,boolean b){
+switch (a) {
+default :
+    return -1;
+case 4097:
+  if (b)   return 1;
+return 2;
+case 8194:
+if (b) return 3;
+return 4;
+case 4099:
+}
+if (b) return 5;
+return 6;
+}

@@ -1,0 +1,5 @@
+static void fn_A(){
+  if (System.getProperty("h2.implicitRelativePath") == null) {
+    System.setProperty("h2.implicitRelativePath","true");
+  }
+}

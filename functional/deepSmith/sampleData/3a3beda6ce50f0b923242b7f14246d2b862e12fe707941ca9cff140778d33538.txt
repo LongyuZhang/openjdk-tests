@@ -1,0 +1,5 @@
+public static int fn_A(long a,long b){
+  long c=a - b;
+  int d=(int)(c / 24L / 60L/ 60L/ 1000L);
+  return d;
+}

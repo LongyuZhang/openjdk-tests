@@ -1,0 +1,8 @@
+public static int[] fn_A(byte[] a){
+  int[] b=new int[a.length / 3];
+  int c=0;
+  for (int d=0; d < b.length; d++) {
+    b[d]=0xFF << 24 | (a[c++] & 0xFF) << 16 | (a[c++] & 0xFF) << 8 | (a[c++] & 0xFF);
+  }
+  return b;
+}
