@@ -1,0 +1,32 @@
+public static int fn_A(int a,int b,final char[] c){
+  final int d=b;
+  final char e=c[b--];
+  a:   while (true) {
+    while (a <= b) {
+      final char f=c[a];
+      if (f >= e)       break;
+      ++a;
+    }
+    if (a > b)     break;
+    while (true) {
+      final char g=c[b];
+      if (g < e) {
+        final char h=c[a];
+        c[a]=c[b];
+        c[b]=h;
+        ++a;
+        --b;
+        break;
+      }
+ else       if (b == a) {
+        break a;
+      }
+      --b;
+    }
+  }
+  if (a != d) {
+    c[d]=c[a];
+    c[a]=e;
+  }
+  return a;
+}

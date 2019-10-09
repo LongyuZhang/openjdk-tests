@@ -1,0 +1,10 @@
+static int fn_A(int a,int b){
+  int c, d, e;
+  if (a < b)   return 0;
+  if (b > a / 2)   b=a - b;
+  for (e=1, c=a, d=1; c != a - b; c--, d++) {
+    e*=c;
+    e/=d;
+  }
+  return e;
+}

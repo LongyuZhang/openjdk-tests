@@ -1,0 +1,6 @@
+public static int[] fn_A(final long a){
+  final int[] b=new int[2];
+  b[0]=(int)a;
+  b[1]=(int)(a >> 32);
+  return b;
+}

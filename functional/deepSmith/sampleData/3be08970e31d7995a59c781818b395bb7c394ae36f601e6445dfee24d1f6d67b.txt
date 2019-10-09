@@ -1,0 +1,13 @@
+static int[] fn_A(int a){
+  System.out.println("IntMath.lit8Test");
+  int[] b=new int[8];
+  b[0]=a + 10;
+  b[1]=10 - a;
+  b[2]=a * 10;
+  b[3]=a / 10;
+  b[4]=a % 10;
+  b[5]=a & 10;
+  b[6]=a | -10;
+  b[7]=a ^ -10;
+  return b;
+}

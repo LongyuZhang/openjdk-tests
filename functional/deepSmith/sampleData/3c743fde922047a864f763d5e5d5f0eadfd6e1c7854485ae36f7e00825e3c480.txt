@@ -1,0 +1,4 @@
+private static String fn_A(int a){
+  if (a >= 0 && a < 12)   return "AM";
+ else   return "PM";
+}

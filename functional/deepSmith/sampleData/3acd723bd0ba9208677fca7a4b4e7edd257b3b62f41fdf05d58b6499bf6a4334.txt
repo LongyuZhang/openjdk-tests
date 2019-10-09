@@ -1,0 +1,11 @@
+static int fn_A(int a){
+  int b=4;
+  while (true) {
+    int c=a;
+    if (b < 32) {
+      if (a <= (1 << b) - 12)       c=(1 << b) - 12;
+    }
+ else     return c;
+    b+=1;
+  }
+}

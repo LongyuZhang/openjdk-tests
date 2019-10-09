@@ -1,0 +1,8 @@
+public static boolean fn_A(double[] a){
+  for (int b=0; b < a.length; b++) {
+    if ((a[b] < 0.0) || (a[b] > 1.0)) {
+      return false;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,4 @@
+public static float fn_A(final int a){
+  final int b=a & 0xFF;
+  return b / 255f;
+}

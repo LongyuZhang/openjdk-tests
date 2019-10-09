@@ -1,0 +1,10 @@
+static int fn_A(int a,int b,int c){
+  int d=a / b;
+  int e=d;
+  while (e >= c) {
+    int f=e / c;
+    d+=f;
+    e=e - (f * c) + f;
+  }
+  return d;
+}

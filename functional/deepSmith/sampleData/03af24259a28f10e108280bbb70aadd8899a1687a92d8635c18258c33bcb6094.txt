@@ -1,0 +1,6 @@
+private static String fn_A(String[] a){
+  if (a.length < 1) {
+    return "info";
+  }
+  return a[0];
+}

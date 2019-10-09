@@ -1,0 +1,6 @@
+@SuppressWarnings("unchecked") public static <T>List<? extends T> fn_A(Collection<? extends T> a){
+  if (a instanceof List && a instanceof RandomAccess) {
+    return (List<? extends T>)a;
+  }
+  return new ArrayList<>(a);
+}

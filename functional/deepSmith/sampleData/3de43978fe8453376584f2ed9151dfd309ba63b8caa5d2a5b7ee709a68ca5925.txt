@@ -1,0 +1,8 @@
+private static int fn_A(BigDecimal a,BigDecimal b,int c){
+  int d=a.compareTo(b);
+  int e=(d == c) ? 0 : 1;
+  if (e == 1) {
+    System.err.println("(" + a + ").compareTo("+ b+ ") => "+ d+ "\n\tExpected "+ c);
+  }
+  return e;
+}

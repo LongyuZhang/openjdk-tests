@@ -1,0 +1,13 @@
+public static long fn_A(long a,long b){
+  long c=10L;
+  if (a > b) {
+    c=500L;
+  }
+ else   if (b > a) {
+    c=7000L;
+  }
+ else   if (b == a) {
+    c=1000L;
+  }
+  return c;
+}

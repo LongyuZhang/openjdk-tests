@@ -1,0 +1,18 @@
+public static long[] fn_A(byte[] a){
+  byte[] b=a;
+  int c=b.length / 8;
+  long[] d=new long[c];
+  for (int e=0, f=0; f < c; f++) {
+    long g=0;
+    g|=(b[e++] & 0xFFL) << 56;
+    g|=(b[e++] & 0xFFL) << 48;
+    g|=(b[e++] & 0xFFL) << 40;
+    g|=(b[e++] & 0xFFL) << 32;
+    g|=(b[e++] & 0xFFL) << 24;
+    g|=(b[e++] & 0xFFL) << 16;
+    g|=(b[e++] & 0xFFL) << 8;
+    g|=(b[e++] & 0xFFL);
+    d[f]=g;
+  }
+  return d;
+}

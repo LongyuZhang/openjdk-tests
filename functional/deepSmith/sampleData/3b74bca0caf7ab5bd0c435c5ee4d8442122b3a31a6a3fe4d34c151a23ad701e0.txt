@@ -1,0 +1,8 @@
+public static String fn_A(float a,boolean b){
+  if (b) {
+    return a + "";
+  }
+ else {
+    return ((int)a) + "";
+  }
+}

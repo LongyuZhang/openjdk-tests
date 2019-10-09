@@ -1,0 +1,14 @@
+static int fn_A(int[] a,int b){
+  int c=a[0], d=32 - b;
+  a[0]=c >>> b;
+  int e=c << d;
+  c=a[1];
+  a[1]=(c >>> b) | e;
+  e=c << d;
+  c=a[2];
+  a[2]=(c >>> b) | e;
+  e=c << d;
+  c=a[3];
+  a[3]=(c >>> b) | e;
+  return c << d;
+}

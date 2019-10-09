@@ -1,0 +1,6 @@
+public static int fn_A(double a){
+  if (a < 0.0) {
+    a+=360.0;
+  }
+  return (int)(a * 182.044444444);
+}

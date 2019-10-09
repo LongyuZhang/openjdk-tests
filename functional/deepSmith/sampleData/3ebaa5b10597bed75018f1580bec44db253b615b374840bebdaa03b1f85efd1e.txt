@@ -1,0 +1,5 @@
+public static int fn_A(int a,int b,int c,int d){
+  int e=0x88;
+  int f=0x55;
+  return ((((a - b) - c) + d) + e + f);
+}

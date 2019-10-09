@@ -1,0 +1,4 @@
+public static boolean fn_A(char a){
+  int b=a;
+  return (97 <= b && b <= 122);
+}

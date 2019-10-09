@@ -1,0 +1,21 @@
+private static void fn_A(){
+  System.out.println("");
+  System.out.println("Usage:  java [...java args...] hex.genmodel.tools.BuildPipeline ");
+  System.out.println("             --mapping <inputMapping1> <inputMapping2> ... --output <outputFile> --input <inputFile1> <inputFile2> ...");
+  System.out.println("");
+  System.out.println("     --mapping Mapping of model predictions to main model inputs.");
+  System.out.println("               Example: Specify 'CLUSTER=clustering:0' to use a model defined in a MOJO file 'clustering.zip'");
+  System.out.println("                        and map the predicted cluster (output 0) to input column 'CLUSTER' of the main model.");
+  System.out.println("     --input   List of input MOJO files representing both the main model and the prerequisite models.");
+  System.out.println("     --output  Name of the generated MOJO pipeline file.");
+  System.out.println("");
+  System.out.println("     Input mappings are specified in format '<columnName>=<modelAlias>:<predictionIndex>'.");
+  System.out.println("");
+  System.out.println("     Model alias is based on the name of the MOJO file.");
+  System.out.println("     For example, a MOJO stored in 'glm_model.zip' will have the alias 'glm_model'.");
+  System.out.println("");
+  System.out.println("Note: There is no need to specify which of the MOJO model represents the main model. The tool");
+  System.out.println("automatically identifies the main model as the one that doesn't have any output mappings.");
+  System.out.println("");
+  System.exit(1);
+}

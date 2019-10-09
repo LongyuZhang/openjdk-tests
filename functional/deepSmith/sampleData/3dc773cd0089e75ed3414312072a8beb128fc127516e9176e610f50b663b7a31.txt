@@ -1,0 +1,7 @@
+public static String[] fn_A(String[] a,int b,String c,String d){
+  if (a.length != b) {
+    System.err.println("Usage: " + c + " "+ d);
+    System.exit(-1);
+  }
+  return a;
+}

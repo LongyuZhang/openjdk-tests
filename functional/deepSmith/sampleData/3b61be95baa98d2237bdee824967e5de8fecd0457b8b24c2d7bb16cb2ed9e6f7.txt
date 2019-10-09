@@ -1,0 +1,16 @@
+public static int[] fn_A(final Integer[] a,final int b){
+  if (a != null) {
+    int c=a.length;
+    int[] d=new int[c];
+    for (int e=0; e < c; e++) {
+      try {
+        d[e]=a[e];
+      }
+ catch (      Exception f) {
+        d[e]=b;
+      }
+    }
+    return d;
+  }
+  return null;
+}

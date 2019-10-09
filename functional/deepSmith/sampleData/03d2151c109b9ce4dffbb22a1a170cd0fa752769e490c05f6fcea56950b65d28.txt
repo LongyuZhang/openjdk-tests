@@ -1,0 +1,26 @@
+private static int fn_A(String[] a,String[] b){
+  int c=0;
+  if (b.length == 0) {
+    return Integer.MAX_VALUE;
+  }
+  while (true) {
+    if ((a.length > c) && (b.length > c)) {
+      if (!(a[c].equals(b[c]))) {
+        return 0;
+      }
+    }
+ else {
+      if (a.length <= c) {
+        if (b.length > c) {
+          return 0;
+        }
+        return Integer.MAX_VALUE - c - 1;
+      }
+    }
+    if (b.length <= c) {
+      break;
+    }
+    c++;
+  }
+  return Integer.MAX_VALUE - c - 1;
+}

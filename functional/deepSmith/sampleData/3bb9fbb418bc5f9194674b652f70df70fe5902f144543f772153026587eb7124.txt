@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  List<Object> b=new ArrayList<Object>();
+  List<String> c=new ArrayList<String>();
+}

@@ -1,0 +1,12 @@
+public static boolean fn_A(int a,long b,long c,long d,int e,int f,long g,long h,long i,int j){
+  if (a == 0) {
+    return (f == 0);
+  }
+  if (a != f) {
+    return false;
+  }
+  if (e != j) {
+    return false;
+  }
+  return (b == g && c == h && d == i);
+}

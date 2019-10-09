@@ -1,0 +1,19 @@
+public static boolean fn_A(byte[] a,byte[] b){
+  if (a == null && b == null) {
+    return true;
+  }
+  if (a == null || b == null) {
+    return false;
+  }
+  if (a.length != b.length) {
+    return false;
+  }
+  for (int c=0; c < a.length; c++) {
+    byte d=a[c];
+    byte e=b[c];
+    if (d != e) {
+      return false;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,19 @@
+public static String fn_A(int a){
+  String b="";
+  String c="";
+  int d=a % 60;
+  int e=(a % (60 * 60)) / 60;
+  if (d < 10) {
+    b="0" + d;
+  }
+ else {
+    b="" + d;
+  }
+  if (e < 10) {
+    c="0" + e;
+  }
+ else {
+    c="" + e;
+  }
+  return c + ":" + b;
+}

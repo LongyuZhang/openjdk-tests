@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.err.println("Usage: java serialvm <pid1> <pid2>");
+  System.exit(1);
+}

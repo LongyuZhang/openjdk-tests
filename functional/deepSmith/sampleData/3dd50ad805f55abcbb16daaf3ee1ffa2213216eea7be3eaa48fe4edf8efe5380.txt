@@ -1,0 +1,11 @@
+public static double fn_A(double[][] a,double[][] b){
+  double c=0, d=0, e=0;
+  for (int f=0; f < b.length; f++) {
+    for (int g=f + 1; g < b.length; g++) {
+      c+=a[f][g] * b[f][g];
+      d+=a[f][g] * a[f][g];
+      e+=b[f][g] * b[f][g];
+    }
+  }
+  return c / Math.sqrt(d * e);
+}

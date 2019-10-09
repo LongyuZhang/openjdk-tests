@@ -1,0 +1,12 @@
+public static long[][] fn_A(long[][] a){
+  if (a == null) {
+    return null;
+  }
+  int b=a.length;
+  int c=a[0].length;
+  long[][] d=new long[b][c];
+  for (int e=0; e < b; e++) {
+    System.arraycopy(a[e],0,d[e],0,c);
+  }
+  return d;
+}

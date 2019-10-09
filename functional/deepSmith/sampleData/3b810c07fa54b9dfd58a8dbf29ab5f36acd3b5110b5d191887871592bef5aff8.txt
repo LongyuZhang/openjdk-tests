@@ -1,0 +1,13 @@
+public static double[] fn_A(int a,int b,int c){
+  double[] d=new double[3];
+  double e=a / 255f;
+  double f=b / 255f;
+  double g=c / 255f;
+  double h=0.213f * e + 0.419f * f + 0.081f * g;
+  double i=-0.131f * e - 0.256f * f + 0.387f * g + 0.612f;
+  double j=0.373f * e - 0.312f * e - 0.061f * g + 0.537f;
+  d[0]=h;
+  d[1]=i;
+  d[2]=j;
+  return d;
+}

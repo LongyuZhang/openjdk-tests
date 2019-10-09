@@ -1,0 +1,36 @@
+public static boolean fn_A(byte[] a,int b){
+  if (b < 6) {
+    return false;
+  }
+  if (a[0] == 0x71 && (a[1] & 0xFF) == 0xc7) {
+    return true;
+  }
+  if (a[1] == 0x71 && (a[0] & 0xFF) == 0xc7) {
+    return true;
+  }
+  if (a[0] != 0x30) {
+    return false;
+  }
+  if (a[1] != 0x37) {
+    return false;
+  }
+  if (a[2] != 0x30) {
+    return false;
+  }
+  if (a[3] != 0x37) {
+    return false;
+  }
+  if (a[4] != 0x30) {
+    return false;
+  }
+  if (a[5] == 0x31) {
+    return true;
+  }
+  if (a[5] == 0x32) {
+    return true;
+  }
+  if (a[5] == 0x37) {
+    return true;
+  }
+  return false;
+}

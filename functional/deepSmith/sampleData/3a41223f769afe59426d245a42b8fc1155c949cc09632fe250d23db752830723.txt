@@ -1,0 +1,16 @@
+static void fn_A(int[] a,int b){
+  int c=b - 2;
+  int d=1;
+  int e=b;
+  int f=2;
+  while (e > 0) {
+    int g=c;
+    while ((g > 0) && (a[g - 1] >= c))     g--;
+    final int h=c - g;
+    final int i=f - h;
+    for (int j=0; j < i; j++)     a[--e]=d;
+    f=h << 1;
+    c=g;
+    d++;
+  }
+}

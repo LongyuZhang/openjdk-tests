@@ -1,0 +1,6 @@
+static int fn_A(int[] a,int b){
+  int c=0;
+  for (int d=0; d < a.length; d++)   if (a[d] <= a[b] && d < b)   c++;
+ else   if (a[d] < a[b] && d > b)   c++;
+  return c;
+}

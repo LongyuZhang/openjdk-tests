@@ -1,0 +1,4 @@
+public static void fn_A(){
+  System.out.println("--------------------------------------------");
+  System.out.println("Prelimary Test of: Random, Encoder, SP, TM, Classifier, Anomaly: \n");
+}

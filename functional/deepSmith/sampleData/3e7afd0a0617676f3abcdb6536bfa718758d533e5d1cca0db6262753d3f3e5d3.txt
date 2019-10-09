@@ -1,0 +1,11 @@
+static long fn_A(char[] a){
+  if (a == null)   return 0;
+  long b=-3750763034362895579L, c=a.length;
+  for (int d=0; d < c; d++) {
+    b^=a[d] & 0xff;
+    b*=1099511628211L;
+    b^=a[d] >>> 8;
+    b*=1099511628211L;
+  }
+  return b;
+}

@@ -1,0 +1,7 @@
+public static long fn_A(byte a,byte b,byte c,byte d){
+  long e=(int)a & 0xff;
+  e|=((int)b & 0xff) << 8;
+  e|=((int)c & 0xff) << 16;
+  e|=((int)d & 0xff) << 24;
+  return e & 0xFFFFFFFFL;
+}

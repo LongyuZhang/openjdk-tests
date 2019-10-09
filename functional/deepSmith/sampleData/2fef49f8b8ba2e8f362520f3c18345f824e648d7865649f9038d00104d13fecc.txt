@@ -1,0 +1,6 @@
+public static long fn_A(long a,int b){
+  if (b >= 64) {
+    return 0;
+  }
+  return a << b;
+}

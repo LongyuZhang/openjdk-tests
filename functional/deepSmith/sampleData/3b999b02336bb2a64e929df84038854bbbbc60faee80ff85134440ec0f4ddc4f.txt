@@ -1,0 +1,10 @@
+public static String[] fn_A(long[] a){
+  if (a == null) {
+    return null;
+  }
+  String[] b=new String[a.length];
+  for (int c=0; c < a.length; c++) {
+    b[c]=Long.toString(a[c]);
+  }
+  return b;
+}

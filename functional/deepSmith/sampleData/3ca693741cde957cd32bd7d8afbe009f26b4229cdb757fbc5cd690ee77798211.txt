@@ -1,0 +1,7 @@
+static long fn_A(double a){
+  final double b=((long)-1) >>> 1;
+  if (a < b) {
+    return (long)a;
+  }
+  return ((long)-1) >>> 1;
+}

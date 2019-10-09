@@ -1,0 +1,15 @@
+public static String fn_A(byte[] a){
+  String b="";
+  if (a == null || a.length == 0) {
+    return b;
+  }
+  for (int c=0; c < a.length; c++) {
+    byte d=a[c];
+    int e=d & 0xF;
+    e+=(e < 10) ? 48 : 55;
+    int f=(d & 0xF0) >> 4;
+    f+=(f < 10) ? 48 : 55;
+    b=b + (char)f + (char)e;
+  }
+  return b;
+}

@@ -1,0 +1,6 @@
+private static boolean fn_A(char a){
+  if (a == ' ' || a == '\n' || a == '\t' || a == '\r') {
+    return true;
+  }
+  return false;
+}

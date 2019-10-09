@@ -1,0 +1,4 @@
+public static Character fn_A(){
+  Character a='a';
+  return a;
+}

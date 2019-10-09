@@ -1,0 +1,14 @@
+private static byte[] fn_A(int[] a,boolean b){
+  byte[] c=new byte[a.length * 3];
+  int d=0;
+  for (int e=0; e < a.length; e++) {
+    byte f=(byte)((a[e] >> 16) & 0xff);
+    byte g=(byte)((a[e] >> 8) & 0xff);
+    byte h=(byte)(a[e] & 0xff);
+    c[d++]=h;
+    c[d++]=g;
+    c[d++]=f;
+  }
+  long i=System.currentTimeMillis();
+  return c;
+}

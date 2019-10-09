@@ -1,0 +1,9 @@
+public static int fn_A(int[] a,int[] b){
+  int c=0;
+  for (int d=0; d < b.length; d++) {
+    int e=a[d];
+    c+=e * b[d];
+  }
+  c+=a[a.length - 1];
+  return c;
+}

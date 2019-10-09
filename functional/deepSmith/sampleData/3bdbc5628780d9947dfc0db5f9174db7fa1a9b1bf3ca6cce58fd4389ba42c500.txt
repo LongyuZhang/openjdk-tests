@@ -1,0 +1,7 @@
+public static double[][] fn_A(double[][] a,int b,int c){
+  double[][] d=new double[c - b + 1][a[0].length];
+  for (int e=0; e < c - b + 1; e++) {
+    System.arraycopy(a[e + b],0,d[e],0,a[e + b].length);
+  }
+  return d;
+}

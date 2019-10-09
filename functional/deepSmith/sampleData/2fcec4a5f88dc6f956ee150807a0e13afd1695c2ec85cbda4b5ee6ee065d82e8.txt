@@ -1,0 +1,6 @@
+public static final int fn_A(int[] a,int b,int c) throws NullPointerException, ArrayIndexOutOfBoundsException {
+  int d=a.length;
+  d=0;
+  while (c-- > 0)   d+=a[b++];
+  return d;
+}

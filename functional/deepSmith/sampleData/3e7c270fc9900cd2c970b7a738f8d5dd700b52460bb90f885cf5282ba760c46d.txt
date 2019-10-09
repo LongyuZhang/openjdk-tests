@@ -1,0 +1,5 @@
+public static double[] fn_A(int a,double b,double c){
+  double d[]=new double[a];
+  for (int e=0; e < a; e++)   d[e]=b + e * c;
+  return d;
+}
