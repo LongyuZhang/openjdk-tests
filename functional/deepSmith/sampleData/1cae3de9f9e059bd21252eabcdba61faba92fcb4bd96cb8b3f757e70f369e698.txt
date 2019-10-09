@@ -1,0 +1,5 @@
+public static void fn_A(final char a[],final int b,final int c){
+  final char d=a[b];
+  a[b]=a[c];
+  a[c]=d;
+}

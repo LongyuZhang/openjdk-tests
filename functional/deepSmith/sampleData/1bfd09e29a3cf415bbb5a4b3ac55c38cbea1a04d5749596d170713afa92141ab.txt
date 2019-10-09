@@ -1,0 +1,7 @@
+public static String fn_A(int[] a){
+  StringBuilder b=new StringBuilder("(");
+  for (int c=0; c < a.length; ++c) {
+    b.append(a[c]).append(c == a.length - 1 ? "" : ", ");
+  }
+  return b.append(")").toString();
+}

@@ -1,0 +1,23 @@
+public static void fn_A(byte[] a,int[] b) throws ArrayStoreException, ArrayIndexOutOfBoundsException {
+  int c;
+  int d;
+  int e;
+  int f;
+  int g;
+  c=0;
+  d=0;
+  for (d=0; d < b.length; ) {
+    e=a[c++];
+    if (e >= 0) {
+      ++e;
+      g=d + e;
+      for (; d < g; ++d, c+=2)       b[d]=(((a[c] & 0xFF) << 8) + (a[c + 1] & 0xFF)) & 0xFFFF;
+    }
+ else     if (e != -128) {
+      f=(((a[c] & 0xff) << 8) + (a[c + 1] & 0xFF)) & 0xFFFF;
+      c+=2;
+      g=d - e + 1;
+      for (; d < g; ++d)       b[d]=f;
+    }
+  }
+}

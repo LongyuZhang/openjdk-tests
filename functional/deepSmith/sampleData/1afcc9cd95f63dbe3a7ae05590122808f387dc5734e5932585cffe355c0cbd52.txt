@@ -1,0 +1,7 @@
+public static void fn_A(int a[],int[] b,int[] c){
+  for (int d=0; d < a.length; d++) {
+    a[d]=d;
+    b[d]=2;
+    c[d]=a[d];
+  }
+}

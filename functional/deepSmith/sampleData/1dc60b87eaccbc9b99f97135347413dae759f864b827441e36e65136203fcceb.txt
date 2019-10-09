@@ -1,0 +1,9 @@
+@SuppressWarnings("JavaReflectionMemberAccess") private static boolean fn_A(){
+  try {
+    Class.class.getMethod("getModule");
+    return true;
+  }
+ catch (  Throwable a) {
+    return false;
+  }
+}

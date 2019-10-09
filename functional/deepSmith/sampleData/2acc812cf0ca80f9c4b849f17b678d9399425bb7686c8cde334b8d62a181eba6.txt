@@ -1,0 +1,8 @@
+private static String fn_A(String a,int b){
+  if (a == null) {
+    return "on line " + b;
+  }
+ else {
+    return "on line " + b + " of "+ a;
+  }
+}

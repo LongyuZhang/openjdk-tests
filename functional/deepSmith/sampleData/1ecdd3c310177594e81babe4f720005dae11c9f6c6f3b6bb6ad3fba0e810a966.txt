@@ -1,0 +1,18 @@
+public static String fn_A(long a){
+  byte[] b=new byte[8];
+  b[0]=(byte)((a >> 56) & 0xFF);
+  b[1]=(byte)((a >> 48) & 0xFF);
+  b[2]=(byte)((a >> 40) & 0xFF);
+  b[3]=(byte)((a >> 32) & 0xFF);
+  b[4]=(byte)((a >> 24) & 0xFF);
+  b[5]=(byte)((a >> 16) & 0xFF);
+  b[6]=(byte)((a >> 8) & 0xFF);
+  b[7]=(byte)((a >> 0) & 0xFF);
+  boolean c=(((b[0] >= (byte)0x00 && b[0] < (byte)0x20) || (b[0] == (byte)0x7F) || (b[0] >= (byte)0x80 && b[0] < (byte)0xA0)) || ((b[1] >= (byte)0x00 && b[1] < (byte)0x20) || (b[1] == (byte)0x7F) || (b[1] >= (byte)0x80 && b[1] < (byte)0xA0)) || ((b[2] >= (byte)0x00 && b[2] < (byte)0x20) || (b[2] == (byte)0x7F) || (b[2] >= (byte)0x80 && b[2] < (byte)0xA0))|| ((b[3] >= (byte)0x00 && b[3] < (byte)0x20) || (b[3] == (byte)0x7F) || (b[3] >= (byte)0x80 && b[3] < (byte)0xA0))|| ((b[4] >= (byte)0x00 && b[4] < (byte)0x20) || (b[4] == (byte)0x7F) || (b[4] >= (byte)0x80 && b[4] < (byte)0xA0))|| ((b[5] >= (byte)0x00 && b[5] < (byte)0x20) || (b[5] == (byte)0x7F) || (b[5] >= (byte)0x80 && b[5] < (byte)0xA0))|| ((b[6] >= (byte)0x00 && b[6] < (byte)0x20) || (b[6] == (byte)0x7F) || (b[6] >= (byte)0x80 && b[6] < (byte)0xA0))|| ((b[7] >= (byte)0x00 && b[7] < (byte)0x20) || (b[7] == (byte)0x7F) || (b[7] >= (byte)0x80 && b[7] < (byte)0xA0)));
+  try {
+    return new String(b,c ? "UTF-16BE" : "ISO-8859-1");
+  }
+ catch (  UnsupportedEncodingException d) {
+    return new String(b);
+  }
+}

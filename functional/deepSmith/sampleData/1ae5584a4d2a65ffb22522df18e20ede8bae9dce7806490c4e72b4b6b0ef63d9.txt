@@ -1,0 +1,10 @@
+public static <T>int fn_A(T[] a,T b){
+  if (a != null && a.length > 0) {
+    for (int c=0; c < a.length; c++) {
+      if (a[c] == b) {
+        return c;
+      }
+    }
+  }
+  return -1;
+}

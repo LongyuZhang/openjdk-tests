@@ -1,0 +1,18 @@
+public static float fn_A(float a,float b,float c,int d,int e){
+  float f;
+  if (b == c || a <= b) {
+    f=d;
+  }
+ else   if (a > c) {
+    f=e;
+  }
+ else {
+    float g=(a - b) / (c - b);
+    f=d + g * (e - d);
+  }
+  float h=f % 360.0f;
+  if (h >= 360.0 || h < 0) {
+    h=0;
+  }
+  return h;
+}

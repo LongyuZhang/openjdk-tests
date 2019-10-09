@@ -1,0 +1,9 @@
+protected static char[] fn_A(final byte[] a,final char[] b){
+  final int c=a.length;
+  final char[] d=new char[c << 1];
+  for (int e=0, f=0; e < c; e++) {
+    d[f++]=b[(0xF0 & a[e]) >>> 4];
+    d[f++]=b[0x0F & a[e]];
+  }
+  return d;
+}

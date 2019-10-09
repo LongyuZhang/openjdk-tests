@@ -1,0 +1,12 @@
+public static boolean fn_A(int a){
+  if (a == '\n')   return true;
+  if (a == '\r')   return true;
+  if (a == '\t')   return true;
+  if (a < 0x20)   return false;
+  if (a <= 0xD7FF)   return true;
+  if (a < 0xE000)   return false;
+  if (a <= 0xFFFD)   return true;
+  if (a < 0x10000)   return false;
+  if (a <= 0x10FFFF)   return true;
+  return false;
+}

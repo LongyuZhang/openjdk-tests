@@ -1,0 +1,4 @@
+public static byte[] fn_A(byte[] a,int b){
+  if (a == null)   return new byte[b];
+  return a;
+}

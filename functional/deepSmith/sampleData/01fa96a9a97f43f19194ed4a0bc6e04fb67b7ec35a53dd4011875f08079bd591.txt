@@ -1,0 +1,10 @@
+private static short fn_A(String[] a,short b){
+  if (a.length > 0) {
+    try {
+      return (short)Integer.valueOf(a[0]).intValue();
+    }
+ catch (    NumberFormatException c) {
+    }
+  }
+  return b;
+}

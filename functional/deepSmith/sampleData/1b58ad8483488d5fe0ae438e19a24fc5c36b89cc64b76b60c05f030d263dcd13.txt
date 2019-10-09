@@ -1,0 +1,7 @@
+public static double fn_A(float[] a){
+  double b=0;
+  for (int c=0; c < a.length; c++) {
+    b+=a[c];
+  }
+  return b;
+}

@@ -1,0 +1,5 @@
+public static int fn_A(int a,int b){
+  int c=a + b * 57;
+  c^=c << 13;
+  return ((c * (c * c * 15731 + 789221) + 1376312589) & Integer.MAX_VALUE) >> 19 & 255;
+}

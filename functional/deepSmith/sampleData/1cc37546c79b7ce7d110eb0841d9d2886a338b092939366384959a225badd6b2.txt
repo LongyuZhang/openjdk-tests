@@ -1,0 +1,11 @@
+public static float[] fn_A(float[] a,int b){
+  if (a == null) {
+    return new float[0];
+  }
+  float[] c=new float[a.length];
+  int d=a.length;
+  for (int e=0; e < d; e++) {
+    c[e]=a[e] / b;
+  }
+  return c;
+}

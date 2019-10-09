@@ -1,0 +1,9 @@
+public static int fn_A(){
+  int a=1;
+  try {
+    a=Integer.parseInt(System.getProperty("testng.threadCount"));
+  }
+ catch (  NumberFormatException b) {
+  }
+  return a;
+}

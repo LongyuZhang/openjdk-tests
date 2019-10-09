@@ -1,0 +1,22 @@
+static int fn_A(int a,int b){
+  int c=0;
+  int d=0;
+  int e=0;
+  while (e < b) {
+    boolean f=false;
+    final int g=c;
+    if (((d == 0) && (e > (b * 0.5f))) || ((d == 1) && (e > (b * 0.8f))) || ((d == 2) && (e > (b * 1.05)))) {
+      f=true;
+    }
+    c+=a;
+    if (f) {
+      d++;
+      if (((d == 1) && (e <= (0.487f * b))) || ((d == 2) && (e <= (0.78f * b)))) {
+        d--;
+        c=g;
+      }
+    }
+    e++;
+  }
+  return c;
+}

@@ -1,0 +1,8 @@
+static void fn_A(){
+  try {
+    new BufferedReader(new InputStreamReader(System.in)).readLine();
+  }
+ catch (  IOException a) {
+    throw new RuntimeException(a);
+  }
+}

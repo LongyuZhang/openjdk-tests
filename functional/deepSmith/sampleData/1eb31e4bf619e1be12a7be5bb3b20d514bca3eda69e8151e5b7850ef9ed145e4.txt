@@ -1,0 +1,11 @@
+public static int fn_A(int a){
+  int b=(a >>> 24) & 0xFF;
+  int c=(a >>> 16) & 0xFF;
+  int d=(a >>> 8) & 0xFF;
+  int e=a & 0xFF;
+  float f=b * (1.0f / 255.0f);
+  c=(int)(c * f);
+  d=(int)(d * f);
+  e=(int)(e * f);
+  return (b << 24) | (c << 16) | (d << 8)| e;
+}

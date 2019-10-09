@@ -1,0 +1,6 @@
+private static byte[] fn_A(String a){
+  byte[] b=new BigInteger("10" + a,16).toByteArray();
+  byte[] c=new byte[b.length - 1];
+  for (int d=0; d < c.length; d++)   c[d]=b[d + 1];
+  return c;
+}

@@ -1,0 +1,4 @@
+public static boolean fn_A(){
+  boolean a=true;
+  return a;
+}

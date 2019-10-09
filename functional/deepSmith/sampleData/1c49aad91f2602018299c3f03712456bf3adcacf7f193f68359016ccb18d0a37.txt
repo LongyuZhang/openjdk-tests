@@ -1,0 +1,18 @@
+private static int fn_A(int[] a,int b,int c){
+  int d=a[b];
+  int e=b + 1, f=c;
+  while (e <= f) {
+    if (a[e] <= d)     e++;
+ else     if (d < a[f])     f--;
+ else {
+      int g=a[e];
+      a[e]=a[f];
+      a[f]=g;
+      e++;
+      f--;
+    }
+  }
+  a[b]=a[f];
+  a[f]=d;
+  return f;
+}

@@ -1,0 +1,12 @@
+public static double[] fn_A(double a,double b,double c){
+  int d=(int)Math.floor(((b - a) / c)) + 1;
+  double[] e=new double[d];
+  int f=0;
+  double g=a;
+  while (f < d) {
+    e[f]=g;
+    g=g + c;
+    f++;
+  }
+  return e;
+}

@@ -1,0 +1,8 @@
+public static long[] fn_A(float[] a){
+  int b=a.length;
+  long[] c=new long[b];
+  for (int d=0; d < b; d++) {
+    c[d]=Math.round(a[d]);
+  }
+  return c;
+}

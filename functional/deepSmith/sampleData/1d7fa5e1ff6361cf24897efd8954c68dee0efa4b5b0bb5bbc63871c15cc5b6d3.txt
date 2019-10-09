@@ -1,0 +1,6 @@
+public static boolean fn_A(Long a,Long b,double c){
+  if (((double)(Math.abs(a - b))) / b < c) {
+    return true;
+  }
+  return false;
+}

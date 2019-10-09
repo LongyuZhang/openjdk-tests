@@ -1,0 +1,12 @@
+private static void fn_A(boolean a){
+  if (!a) {
+    System.err.println("*********************************");
+  }
+  System.err.println();
+  System.err.println();
+  System.err.println();
+  System.err.println();
+  if (a) {
+    System.err.println("*********************************");
+  }
+}

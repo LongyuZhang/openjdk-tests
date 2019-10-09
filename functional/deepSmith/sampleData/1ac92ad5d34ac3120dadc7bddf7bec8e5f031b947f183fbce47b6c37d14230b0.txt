@@ -1,0 +1,4 @@
+public static int fn_A(final int a){
+  final int b=(a >>> 31) & 1;
+  return (a ^ (~b + 1)) + b;
+}

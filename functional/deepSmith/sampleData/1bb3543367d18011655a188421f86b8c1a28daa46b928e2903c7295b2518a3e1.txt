@@ -1,0 +1,10 @@
+public static boolean[] fn_A(byte a,int b){
+  if (b > 8) {
+    throw new IllegalArgumentException("count is greater than 8");
+  }
+  boolean[] c=new boolean[b];
+  for (int d=0; d < b; d++) {
+    c[d]=(a & (1 << d)) != 0;
+  }
+  return c;
+}

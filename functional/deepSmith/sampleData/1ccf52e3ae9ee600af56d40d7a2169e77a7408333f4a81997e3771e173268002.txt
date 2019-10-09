@@ -1,0 +1,19 @@
+public static String fn_A(int a,int b){
+  String[] c=new String[12];
+  c[0]="SOLDIER";
+  c[1]="ARCHER";
+  c[2]="ELEMENTAL";
+  c[3]="SORCERESS";
+  c[4]="WISP";
+  c[5]="DIRE_WOLF";
+  c[6]="GOLEM";
+  c[7]="CATAPULT";
+  c[8]="DRAGON";
+  c[10]="SKELETON";
+  c[11]="CRYSTAL";
+  if (a == 9) {
+    String[] d={"KING_GALAMAR","KING_DEMONLORD","KING_VALADORN","KING_SAETH"};
+    return d[b];
+  }
+ else   return c[a];
+}

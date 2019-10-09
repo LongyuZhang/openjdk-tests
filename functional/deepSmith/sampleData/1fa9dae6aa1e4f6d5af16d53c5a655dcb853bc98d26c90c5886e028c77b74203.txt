@@ -1,0 +1,17 @@
+static String fn_A(long a){
+  char b[]=new char[16];
+  char c[]=new char[18];
+  int d=0;
+  do {
+    long e=a & 0xf;
+    b[d++]=(char)((e < 10) ? ('0' + e) : ('a' + e - 10));
+  }
+ while ((a>>>=4) > 0);
+  c[0]='0';
+  c[1]='x';
+  int f=2;
+  while (--d >= 0) {
+    c[f++]=b[d];
+  }
+  return new String(c,0,f);
+}

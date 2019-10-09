@@ -1,0 +1,20 @@
+public static int[][] fn_A(int a){
+  if (a <= 0)   return new int[0][0];
+  int[][] b=new int[a][a];
+  int c=1;
+  int d=0;
+  int e=0;
+  int f=a - 1;
+  int g=a - 1;
+  while (d <= f && e <= g) {
+    for (int h=e; h <= g; h++)     b[d][h]=c++;
+    d++;
+    for (int h=d; h <= f; h++)     b[h][g]=c++;
+    g--;
+    for (int h=g; h >= e; h--)     b[f][h]=c++;
+    f--;
+    for (int h=f; h >= d; h--)     b[h][e]=c++;
+    e++;
+  }
+  return b;
+}

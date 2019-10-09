@@ -1,0 +1,8 @@
+public static String[] fn_A(String[] a){
+  if (a == null || a.length == 0)   return null;
+  String[] b=new String[a.length - 1];
+  for (int c=0; c < a.length - 1; c++) {
+    b[c]=a[c];
+  }
+  return b;
+}

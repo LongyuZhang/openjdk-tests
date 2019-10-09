@@ -1,0 +1,4 @@
+public static Object fn_A(Object... a){
+  System.out.println("this is a decorator for " + a[0]);
+  return null;
+}

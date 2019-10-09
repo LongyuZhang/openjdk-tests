@@ -1,0 +1,6 @@
+public static int fn_A(int a){
+  int b=a;
+  b=(b * ((2 - a * b) & 0xFFFFFF)) & 0xFFFFFF;
+  b=(b * ((2 - a * b) & 0xFFFFFF)) & 0xFFFFFF;
+  return (b * ((2 - a * b) & 0xFFFFFF)) & 0xFFFFFF;
+}

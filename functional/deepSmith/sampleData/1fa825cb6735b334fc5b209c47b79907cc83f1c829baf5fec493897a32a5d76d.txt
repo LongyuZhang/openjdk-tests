@@ -1,0 +1,4 @@
+public static int fn_A(boolean a){
+  int b=a ? 0x7FFFFFF0 : 0x7FFFFF00;
+  return b >>> 8;
+}

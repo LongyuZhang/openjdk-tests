@@ -1,0 +1,14 @@
+public static void fn_A(long a){
+  long b=System.currentTimeMillis();
+  long c=b;
+  while (true) {
+    try {
+      Thread.sleep(a - (c - b));
+      break;
+    }
+ catch (    InterruptedException d) {
+      c=System.currentTimeMillis();
+      continue;
+    }
+  }
+}

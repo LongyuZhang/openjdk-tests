@@ -1,0 +1,10 @@
+public static byte[] fn_A(byte[] a,byte[] b,int c){
+  if (a == null)   throw new IllegalArgumentException("self");
+  if (b == null)   throw new IllegalArgumentException("other");
+  if (a.length > b.length - c)   throw new IllegalArgumentException("self and other lengths do not match");
+  byte[] d=new byte[a.length];
+  for (int e=0; e < a.length; e++) {
+    d[e]=(byte)(a[e] | b[c + e]);
+  }
+  return d;
+}

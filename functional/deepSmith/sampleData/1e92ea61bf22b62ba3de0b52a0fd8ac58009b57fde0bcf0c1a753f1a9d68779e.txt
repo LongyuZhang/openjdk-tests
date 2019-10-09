@@ -1,0 +1,14 @@
+public static String fn_A(int a){
+switch (a) {
+case 1:
+    return "ALL";
+case 2:
+  return "NO_INDEX";
+case 4:
+return "NO_FOLLOW";
+case 8:
+return "NO_ARCHIVE";
+default :
+return "";
+}
+}

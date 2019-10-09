@@ -1,0 +1,5 @@
+private static void fn_A(Object a,Object b,Object c){
+  if (a != b || a != c) {
+    throw new InternalError();
+  }
+}

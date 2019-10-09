@@ -1,0 +1,30 @@
+public static Class<?> fn_A(Class<?> a){
+  if (a == boolean.class) {
+    return Boolean.class;
+  }
+ else   if (a == byte.class) {
+    return Byte.class;
+  }
+ else   if (a == char.class) {
+    return Character.class;
+  }
+ else   if (a == short.class) {
+    return Short.class;
+  }
+ else   if (a == int.class) {
+    return Integer.class;
+  }
+ else   if (a == long.class) {
+    return Long.class;
+  }
+ else   if (a == float.class) {
+    return Float.class;
+  }
+ else   if (a == double.class) {
+    return Double.class;
+  }
+ else   if (a == void.class) {
+    return Void.class;
+  }
+  throw new IllegalArgumentException("Unexpected argument: " + a);
+}

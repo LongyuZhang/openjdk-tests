@@ -1,0 +1,4 @@
+public static void fn_A(){
+  System.err.println("Usage: run_truss_decomp.sh input_path output_path delimiter");
+  System.err.println("delimiter should be one of [tab, space, comma]");
+}

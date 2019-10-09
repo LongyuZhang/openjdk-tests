@@ -1,0 +1,16 @@
+protected static double fn_A(double a,double b,double c,double d){
+  if (d > 0) {
+    b=Math.floor(b / d) * d;
+    a=Math.ceil(a / d) * d;
+    c=Math.round(c / d) * d;
+  }
+  if (c >= b) {
+    return b;
+  }
+ else   if (c <= a) {
+    return a;
+  }
+ else {
+    return c;
+  }
+}

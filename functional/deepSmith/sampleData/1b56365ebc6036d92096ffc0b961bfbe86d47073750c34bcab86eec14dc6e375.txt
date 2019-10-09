@@ -1,0 +1,10 @@
+private static byte[] fn_A(long a){
+  byte[] b=new byte[8];
+  for (int c=0; c < 8; c++) {
+    long d=a;
+    for (int e=c; e > 0; e--)     d=d >> 8;
+    d=d & 0xff;
+    b[c]=(byte)d;
+  }
+  return b;
+}

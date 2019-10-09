@@ -1,0 +1,10 @@
+private static char[] fn_A(){
+  char[] a=new char[64];
+  int b;
+  for (b=0; b < 26; b++)   a[b]=(char)('A' + b);
+  for (b=26; b < 52; b++)   a[b]=(char)('a' + (b - 26));
+  for (b=52; b < 62; b++)   a[b]=(char)('0' + (b - 52));
+  a[62]='+';
+  a[63]='/';
+  return a;
+}

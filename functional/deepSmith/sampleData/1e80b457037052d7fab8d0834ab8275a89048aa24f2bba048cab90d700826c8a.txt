@@ -1,0 +1,18 @@
+private static boolean[] fn_A(boolean[] a,boolean[] b){
+  int c=Math.min(a.length,b.length);
+  boolean[] d=new boolean[c];
+  for (int e=1; e < c - 1; e++) {
+    boolean f=a[e];
+    boolean g=false;
+    for (int h=e - 1; h >= 0; h--) {
+      if (b[h])       break;
+      if (a[h]) {
+        g=true;
+        break;
+      }
+    }
+    if (g)     f=false;
+    d[e]=f;
+  }
+  return d;
+}

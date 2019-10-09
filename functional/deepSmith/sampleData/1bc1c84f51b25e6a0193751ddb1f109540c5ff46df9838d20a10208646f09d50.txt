@@ -1,0 +1,4 @@
+private static boolean fn_A(Object a){
+  if (a instanceof String)   return ((String)a).contains("</a>");
+ else   return false;
+}

@@ -1,0 +1,35 @@
+public static double[] fn_A(double a[],double b[],int c,double d,double e){
+  double f[]=new double[c + 1];
+  double g[]=new double[c + 1];
+  double h, i, j, k;
+  int l, m;
+  l=0;
+  m=l + 1;
+  if (d > 1e30d) {
+    f[l]=0d;
+    g[l]=0d;
+  }
+ else {
+    f[l]=-0.5d;
+    g[l]=(3d / (a[m] - a[l])) * ((b[m] - b[l]) / (a[m] - a[l]) - d);
+  }
+  for (int n=m; n <= c - 1; n++) {
+    h=(a[n] - a[n - 1]) / (a[n + 1] - a[n - 1]);
+    i=h * f[n - 1] + 2d;
+    f[n]=(h - 1d) / i;
+    g[n]=(6d * ((b[n + 1] - b[n]) / (a[n + 1] - a[n]) - (b[n] - b[n - 1]) / (a[n] - a[n - 1])) / (a[n + 1] - a[n - 1]) - h * g[n - 1]) / i;
+  }
+  if (e > 1e30d) {
+    k=0d;
+    j=0d;
+  }
+ else {
+    k=0.5d;
+    j=(3d / (a[c] - a[c - 1])) * (e - (b[c] - b[c - 1]) / (a[c] - a[c - 1]));
+  }
+  f[c]=(j - k * g[c - 1]) / (k * f[c - 1] + 1d);
+  for (int o=c - 1; o >= l; o--) {
+    f[o]=f[o] * f[o + 1] + g[o];
+  }
+  return f;
+}

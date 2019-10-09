@@ -1,0 +1,18 @@
+public static byte fn_A(byte a){
+  byte b;
+  if (a < 0x7a) {
+    if (a == 0x39) {
+      b=0x41;
+    }
+ else     if (a == 0x5a) {
+      b=0x61;
+    }
+ else {
+      b=++a;
+    }
+  }
+ else {
+    b=0x30;
+  }
+  return b;
+}

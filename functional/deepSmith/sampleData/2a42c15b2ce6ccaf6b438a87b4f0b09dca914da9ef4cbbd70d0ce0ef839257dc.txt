@@ -1,0 +1,6 @@
+public static String fn_A(Boolean a){
+  if (a == null) {
+    return null;
+  }
+  return a ? "T" : "F";
+}

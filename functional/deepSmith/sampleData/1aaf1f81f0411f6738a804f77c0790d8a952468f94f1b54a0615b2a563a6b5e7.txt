@@ -1,0 +1,4 @@
+static public float fn_A(float a,float b){
+  float c=b - a;
+  return (c < 0f) ? (c + 360f) : c;
+}

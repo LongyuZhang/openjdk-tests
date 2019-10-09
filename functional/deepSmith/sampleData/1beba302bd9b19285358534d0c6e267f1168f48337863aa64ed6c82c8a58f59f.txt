@@ -1,0 +1,4 @@
+public static final float fn_A(float a,float b){
+  int c=(int)(a * 255), d=(int)(b * 255);
+  return (float)(c * 256 + d);
+}

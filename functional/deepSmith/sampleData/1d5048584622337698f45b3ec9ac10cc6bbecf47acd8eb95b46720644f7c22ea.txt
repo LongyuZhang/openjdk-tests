@@ -1,0 +1,119 @@
+public static void main(String a[]) throws Exception {
+  boolean b=false;
+  try {
+    List c=Arrays.asList(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("Arrays.asList");
+  b=false;
+  try {
+    Collection e=Collections.unmodifiableCollection(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("unmodifiableCollection");
+  b=false;
+  try {
+    Set e=Collections.unmodifiableSet(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("unmodifiableSet");
+  b=false;
+  try {
+    List e=Collections.unmodifiableList(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("unmodifiableList");
+  b=false;
+  try {
+    Map e=Collections.unmodifiableMap(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("unmodifiableMap");
+  b=false;
+  try {
+    SortedSet e=Collections.unmodifiableSortedSet(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("unmodifiableSortedSet");
+  b=false;
+  try {
+    SortedMap e=Collections.unmodifiableSortedMap(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("unmodifiableSortedMap");
+  b=false;
+  try {
+    Collection e=Collections.synchronizedCollection(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("synchronizedCollection");
+  b=false;
+  try {
+    Set e=Collections.synchronizedSet(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("synchronizedSet");
+  b=false;
+  try {
+    List e=Collections.synchronizedList(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("synchronizedList");
+  b=false;
+  try {
+    Map e=Collections.synchronizedMap(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("synchronizedMap");
+  b=false;
+  try {
+    SortedSet e=Collections.synchronizedSortedSet(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("synchronizedSortedSet");
+  b=false;
+  try {
+    SortedMap e=Collections.synchronizedSortedMap(null);
+  }
+ catch (  NullPointerException d) {
+    b=true;
+  }
+  if (!b)   throw new Exception("synchronizedSortedMap");
+  List c=Arrays.asList(new Object[0]);
+  Collection e=Collections.unmodifiableCollection(Collections.EMPTY_SET);
+  Set f=Collections.unmodifiableSet(Collections.EMPTY_SET);
+  c=Collections.unmodifiableList(Collections.EMPTY_LIST);
+  Map g=Collections.unmodifiableMap(Collections.EMPTY_MAP);
+  SortedSet h=Collections.unmodifiableSortedSet(new TreeSet());
+  SortedMap i=Collections.unmodifiableSortedMap(new TreeMap());
+  e=Collections.synchronizedCollection(Collections.EMPTY_SET);
+  f=Collections.synchronizedSet(Collections.EMPTY_SET);
+  c=Collections.synchronizedList(Collections.EMPTY_LIST);
+  g=Collections.synchronizedMap(Collections.EMPTY_MAP);
+  h=Collections.synchronizedSortedSet(new TreeSet());
+  i=Collections.synchronizedSortedMap(new TreeMap());
+}

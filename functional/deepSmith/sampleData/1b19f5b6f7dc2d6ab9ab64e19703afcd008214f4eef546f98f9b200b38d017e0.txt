@@ -1,0 +1,11 @@
+private static final boolean fn_A(char a){
+  if ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z') || (a >= '0' && a <= '9'))   return true;
+switch (a) {
+case '.':
+case '$':
+case '_':
+    return true;
+default :
+  return false;
+}
+}

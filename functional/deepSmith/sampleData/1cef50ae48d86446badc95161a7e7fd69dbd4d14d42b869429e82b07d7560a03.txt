@@ -1,0 +1,13 @@
+private static float fn_A(final int a,final int b,final int c){
+  final float d=2.59807621135f;
+  final int e=a * b;
+  final float f=(float)Math.sqrt(e / (d * c));
+  float g=0.9f;
+  if (c < 50) {
+    g=0.85f;
+  }
+  if (c < 15) {
+    g=0.8f;
+  }
+  return f * g;
+}

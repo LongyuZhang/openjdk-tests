@@ -1,0 +1,10 @@
+public static float[][] fn_A(float[][] a,float[][] b){
+  int c=a.length;
+  int d=a[0].length;
+  int e=b.length;
+  int f=b[0].length;
+  if (d != e)   throw new RuntimeException("Illegal matrix dimensions: " + c + "x"+ d+ " * "+ e+ "x"+ f);
+  float[][] g=new float[c][f];
+  for (int h=0; h < c; h++)   for (int i=0; i < f; i++)   for (int j=0; j < d; j++)   g[h][i]+=a[h][j] * b[j][i];
+  return g;
+}

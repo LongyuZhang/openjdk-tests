@@ -1,0 +1,105 @@
+public static String fn_A(int a){
+  String b="UNKNOWN";
+switch (a) {
+case -7:
+{
+      b="BIT";
+      break;
+    }
+case -6:
+{
+    b="TINYINT";
+    break;
+  }
+case -5:
+{
+  b="BIGINT";
+  break;
+}
+case -4:
+{
+b="LONGVARBINARY";
+break;
+}
+case -3:
+{
+b="VARBINARY";
+break;
+}
+case -2:
+{
+b="BINARY";
+break;
+}
+case -1:
+{
+b="LONGVARCHAR";
+break;
+}
+case 0:
+{
+b="NULL";
+break;
+}
+case 1:
+{
+b="CHAR";
+break;
+}
+case 2:
+{
+b="NUMERIC";
+break;
+}
+case 3:
+{
+b="DECIMAL";
+break;
+}
+case 4:
+{
+b="INTEGER";
+break;
+}
+case 5:
+{
+b="SMALLINT";
+break;
+}
+case 6:
+{
+b="FLOAT";
+break;
+}
+case 7:
+{
+b="REAL";
+break;
+}
+case 8:
+{
+b="DOUBLE";
+break;
+}
+case 12:
+{
+b="VARCHAR";
+break;
+}
+case 91:
+{
+b="DATE";
+break;
+}
+case 92:
+{
+b="TIME";
+break;
+}
+case 93:
+{
+b="TIMESTAMP";
+}
+}
+return b;
+}

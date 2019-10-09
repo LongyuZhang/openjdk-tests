@@ -1,0 +1,7 @@
+private static int fn_A(int[] a){
+  float b=a[0] / (float)0xFF;
+  int c=a[1];
+  int d=a[2];
+  float e=((1 - b) * d + b * c);
+  return ((int)e) & 0xFF;
+}

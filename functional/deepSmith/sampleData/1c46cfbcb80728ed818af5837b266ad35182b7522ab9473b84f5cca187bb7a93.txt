@@ -1,0 +1,9 @@
+private static String[] fn_A(List<String> a,List<String> b){
+  if (a == null)   a=new ArrayList<>();
+  if (b == null)   b=new ArrayList<>();
+  String[] c=new String[a.size() + b.size()];
+  int d=0;
+  for (  String e : a)   c[d++]=e;
+  for (  String f : b)   c[d++]=f;
+  return c;
+}

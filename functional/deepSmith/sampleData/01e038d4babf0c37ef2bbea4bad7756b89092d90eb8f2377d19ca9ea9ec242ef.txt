@@ -1,0 +1,9 @@
+public static Boolean fn_A(Boolean a,Boolean b){
+  if (a == null || b == null) {
+    if ((a != null && a) || (b != null && b)) {
+      return true;
+    }
+    return null;
+  }
+  return (a || b);
+}

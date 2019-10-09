@@ -1,0 +1,7 @@
+private static boolean fn_A(final String a,final double b){
+  final int c=(int)Math.floor((b) + 0.5);
+  if ((c <= -100000) || (c >= 1000000)) {
+    throw new IllegalArgumentException("Unable to write UTM easting " + c + " for corner "+ a+ "being outside of valid range.");
+  }
+  return true;
+}

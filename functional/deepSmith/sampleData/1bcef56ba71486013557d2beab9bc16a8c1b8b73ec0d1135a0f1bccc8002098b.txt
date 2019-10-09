@@ -1,0 +1,22 @@
+static private int fn_A(int a,int b,boolean c,int d){
+  if (a > 999) {
+    int e=0;
+    while (a != 0) {
+      e++;
+      a/=10;
+    }
+    return e + b;
+  }
+ else {
+    if (a > 99 || (c && d >= 3)) {
+      return 3 + b;
+    }
+    if (a > 9 || (c && d >= 2)) {
+      return 2 + b;
+    }
+    if (c || a > 0) {
+      return 1 + b;
+    }
+  }
+  return 0;
+}

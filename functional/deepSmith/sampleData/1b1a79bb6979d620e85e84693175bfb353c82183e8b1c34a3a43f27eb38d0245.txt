@@ -1,0 +1,25 @@
+public static String fn_A(int a,int b,int c){
+  String d;
+  String e;
+  String f;
+  if (a < 10) {
+    d="0" + a;
+  }
+ else {
+    d="" + a;
+  }
+  if (b < 10) {
+    e="0" + b;
+  }
+ else {
+    e="" + b;
+  }
+  if (c < 10) {
+    f="0" + c;
+  }
+ else {
+    f="" + c;
+  }
+  if (c == 0)   return d + ":" + e;
+ else   return d + ":" + e+ ":"+ f;
+}

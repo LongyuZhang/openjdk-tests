@@ -1,0 +1,7 @@
+public static int fn_A(int a){
+  int b=0;
+  for (int c=5; c <= a; c*=5) {
+    b+=a / c;
+  }
+  return b;
+}

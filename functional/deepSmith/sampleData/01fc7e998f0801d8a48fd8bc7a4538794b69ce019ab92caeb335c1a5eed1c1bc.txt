@@ -1,0 +1,11 @@
+public static final byte fn_A(int a){
+  int b, c;
+  c=a;
+  c=c - ((c >> 1) & 0x55555555);
+  b=((c >> 2) & 0x33333333);
+  c=(c & 0x33333333) + b;
+  c=(c + (c >> 4)) & 0x0F0F0F0F;
+  c=c + (c >> 8);
+  c=c + (c >> 16);
+  return (byte)c;
+}

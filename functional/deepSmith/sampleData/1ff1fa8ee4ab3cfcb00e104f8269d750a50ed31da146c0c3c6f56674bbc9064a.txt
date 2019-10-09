@@ -1,0 +1,5 @@
+public static void fn_A(int a){
+  System.out.println("In secondMethod(), at first " + "aNumber is " + a);
+  a=862;
+  System.out.println("In secondMethod(), after an assignment " + "aNumber is " + a);
+}

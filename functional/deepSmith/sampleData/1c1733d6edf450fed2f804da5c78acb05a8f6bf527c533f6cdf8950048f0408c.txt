@@ -1,0 +1,12 @@
+public static long fn_A(byte[] a){
+  if (a == null)   throw new NullPointerException("Byte array cannot be null.");
+  if (a.length == 0)   return 0;
+  byte[] b=a;
+  if (a.length < 8) {
+    b=new byte[8];
+    int c=b.length - a.length;
+    for (int d=0; d < c; d++)     b[d]=0;
+    for (int d=c; d < b.length; d++)     b[d]=a[d - c];
+  }
+  return ((long)b[0] << 56) + ((long)(b[1] & 0xFF) << 48) + ((long)(b[2] & 0xFF) << 40)+ ((long)(b[3] & 0xFF) << 32)+ ((long)(b[4] & 0xFF) << 24)+ ((b[5] & 0xFF) << 16)+ ((b[6] & 0xFF) << 8)+ (b[7] & 0xFF);
+}

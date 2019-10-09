@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  Date b=new Date();
+  System.out.println("d = " + b);
+}

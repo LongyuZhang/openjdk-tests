@@ -1,0 +1,16 @@
+public static String fn_A(int a,boolean b,boolean c){
+  int d=a / 1000;
+  int e=(int)Math.floor(d / 3600f);
+  int f=(int)Math.floor(d % 3600f / 60f);
+  int g=(int)Math.floor(d % 3600f % 60);
+  int h=(int)Math.floor((a % 1000) / 10);
+  String i=(e < 10 ? "0" : "") + e;
+  String j=(f < 10 ? "0" : "") + f;
+  String k=(g < 10 ? "0" : "") + g;
+  String l=(h < 10 ? "0" : "") + h;
+  String m="";
+  if (b == true)   m+=i + ':';
+  m+=j + ':' + k;
+  if (c == true)   m+=':' + l;
+  return m;
+}

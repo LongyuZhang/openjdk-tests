@@ -1,0 +1,11 @@
+public static Long[] fn_A(){
+  long a=16123432898849345L;
+  long b=78234569989880099L;
+  long c=-64289238928934943L;
+  for (int d=0; d < 10; d++) {
+    a^=b;
+    b^=c;
+    c^=a;
+  }
+  return new Long[]{new Long(Long.MAX_VALUE),new Long(Long.MIN_VALUE),new Long(Long.MAX_VALUE),new Long(Long.MIN_VALUE),new Long(a),new Long(b),new Long(c)};
+}

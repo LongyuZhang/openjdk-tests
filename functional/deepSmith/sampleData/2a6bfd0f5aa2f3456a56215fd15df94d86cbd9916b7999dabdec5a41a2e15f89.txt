@@ -1,0 +1,23 @@
+public static double fn_A(int a){
+  if (a >= 2500) {
+    return 0.065;
+  }
+ else   if (a >= 2400) {
+    return 0.078;
+  }
+ else   if (a >= 2300) {
+    return 0.091;
+  }
+ else   if (a >= 2251) {
+    return 0.0975;
+  }
+ else   if (a >= 2201) {
+    return 0.1105;
+  }
+ else   if (a >= 2151) {
+    return 0.1235;
+  }
+ else {
+    return 0.143;
+  }
+}

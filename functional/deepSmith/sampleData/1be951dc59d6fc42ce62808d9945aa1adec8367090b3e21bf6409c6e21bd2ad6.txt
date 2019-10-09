@@ -1,0 +1,9 @@
+private static boolean fn_A(){
+  try {
+    Class.forName("org.bukkit.inventory.ItemFlag");
+    return true;
+  }
+ catch (  Exception a) {
+    return false;
+  }
+}

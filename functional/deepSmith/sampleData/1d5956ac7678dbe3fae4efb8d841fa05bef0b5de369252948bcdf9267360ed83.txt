@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  int b=10;
+  int c=--b;
+  System.out.println("Idade: " + b);
+  System.out.println("Nova idade: " + c);
+}

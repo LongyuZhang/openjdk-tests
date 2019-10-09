@@ -1,0 +1,25 @@
+public static int fn_A(int[] a,int b){
+  int c=0;
+  if (a == null || a.length == 0 || b <= 0) {
+    return c;
+  }
+  int[] d=new int[a.length];
+  for (int e=0; e < a.length; e++) {
+    for (int f=0; f < d.length; f++) {
+      int g=a[e];
+      int h=d[f];
+      int i=h + g;
+      if (i % b == 0) {
+        int j=i / b;
+        if (j > c) {
+          c=j;
+        }
+      }
+      d[f]=i;
+      if (h == 0) {
+        break;
+      }
+    }
+  }
+  return c;
+}

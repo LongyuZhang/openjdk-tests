@@ -1,0 +1,25 @@
+private static int fn_A(long a,int b){
+  int c;
+  if (b < 4) {
+    c=1;
+  }
+ else   if (b < 8) {
+    c=2;
+  }
+ else   if (b < 16) {
+    c=3;
+  }
+ else   if (b < 32) {
+    c=4;
+  }
+ else {
+    c=5;
+  }
+  int d=0;
+  do {
+    a>>>=c;
+    d++;
+  }
+ while (a != 0);
+  return d;
+}

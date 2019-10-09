@@ -1,0 +1,9 @@
+public static boolean fn_A(Double a){
+  if (a == null) {
+    return false;
+  }
+  if (a < -90D || a > 90D) {
+    return false;
+  }
+  return true;
+}

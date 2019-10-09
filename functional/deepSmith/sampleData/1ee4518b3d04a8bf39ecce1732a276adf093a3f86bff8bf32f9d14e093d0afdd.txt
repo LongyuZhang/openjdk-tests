@@ -1,0 +1,13 @@
+protected static void fn_A(double[] a,double[] b,int c,int d,int e,final int f,final int g,final int h){
+  for (int i=0; i < g; i++) {
+    for (int j=0; j < f; j++) {
+      double k=a[j * g + i + c];
+      int l=j * h + d + i;
+      int m=i * h + e + i;
+      int n=(m - i) + h;
+      while (m != n) {
+        b[m++]-=k * a[l++];
+      }
+    }
+  }
+}

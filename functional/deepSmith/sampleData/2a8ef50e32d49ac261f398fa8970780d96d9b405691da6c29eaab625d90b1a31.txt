@@ -1,0 +1,4 @@
+private static String[] fn_A(){
+  StackTraceElement[] a=(new Exception()).getStackTrace();
+  return new String[]{a[3].getClassName(),a[3].getMethodName()};
+}

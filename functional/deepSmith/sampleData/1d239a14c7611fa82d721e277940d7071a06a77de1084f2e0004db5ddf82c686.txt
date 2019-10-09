@@ -1,0 +1,6 @@
+public static <T>T fn_A(final String a,final T b){
+  if (b == null) {
+    throw new IllegalArgumentException("Parameter named '" + a + "' should be not null!");
+  }
+  return b;
+}

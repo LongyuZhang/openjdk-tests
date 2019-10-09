@@ -1,0 +1,6 @@
+public static long fn_A(long a) throws ArithmeticException {
+  if (a == Long.MIN_VALUE) {
+    throw new ArithmeticException("Integer overflow");
+  }
+  return Math.abs(a);
+}

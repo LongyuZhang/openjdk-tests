@@ -1,0 +1,6 @@
+static boolean fn_A(final byte[] a){
+  if ((a.length < 7) || (a[0] != '!') || (a[1] != '<')|| (a[2] != 'a')|| (a[3] != 'r')|| (a[4] != 'c')|| (a[5] != 'h')|| (a[6] != '>')) {
+    return false;
+  }
+  return true;
+}

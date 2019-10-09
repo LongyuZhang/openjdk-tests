@@ -1,0 +1,4 @@
+public static long fn_A(long a){
+  long b=a / 60 * 1000;
+  return b - (long)(b / 60.0) * 60;
+}

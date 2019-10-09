@@ -1,0 +1,6 @@
+private static <T>T fn_A(T a){
+  if (a == null) {
+    throw new IllegalArgumentException("Parameter not set");
+  }
+  return a;
+}

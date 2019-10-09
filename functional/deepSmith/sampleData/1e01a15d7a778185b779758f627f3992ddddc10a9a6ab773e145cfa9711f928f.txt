@@ -1,0 +1,25 @@
+private static String fn_A(int a){
+  int b=a / 100;
+  int c=a % 100;
+  String d="";
+  String e="";
+  if (c < 10) {
+    d+="0" + c;
+  }
+ else {
+    d+=c;
+  }
+  if (b % 12 == 0) {
+    e="12:" + d;
+  }
+ else {
+    e=(b % 12) + ":" + d;
+  }
+  if (b <= 12) {
+    e+=" AM";
+  }
+ else {
+    e+=" PM";
+  }
+  return e;
+}

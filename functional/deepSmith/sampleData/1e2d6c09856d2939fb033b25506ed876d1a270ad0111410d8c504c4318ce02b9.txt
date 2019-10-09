@@ -1,0 +1,4 @@
+public static byte fn_A(boolean a){
+  int b=(a) ? 1 : 0;
+  return (byte)b;
+}

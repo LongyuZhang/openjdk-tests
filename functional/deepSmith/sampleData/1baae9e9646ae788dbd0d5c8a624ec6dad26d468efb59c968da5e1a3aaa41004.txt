@@ -1,0 +1,17 @@
+public static void fn_A(){
+  for (; ; ) {
+    break;
+  }
+  for (int a=0; ; ) {
+    break;
+  }
+  for (int a=0; ; ) {
+    break;
+  }
+  for (int a=0; a < 10; ) {
+    break;
+  }
+  for (int a=0; a < 10; ) {
+    break;
+  }
+}

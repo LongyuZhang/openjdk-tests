@@ -1,0 +1,5 @@
+private static char fn_A(final char a){
+  if (a >= 'a')   return (char)(a - 'a' + 10);
+ else   if (a >= 'A')   return (char)(a - 'A' + 10);
+ else   return (char)(a - '0');
+}

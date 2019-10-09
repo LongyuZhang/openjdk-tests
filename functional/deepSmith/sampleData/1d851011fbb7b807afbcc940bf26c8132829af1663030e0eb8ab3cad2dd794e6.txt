@@ -1,0 +1,10 @@
+private static short fn_A(boolean[] a,int b,int c){
+  int d=(1 << c);
+  int e=b + 1;
+  for (int f=e; f < d + e; f++) {
+    if (a[f]) {
+      return (short)(f + 1 - e);
+    }
+  }
+  return (short)(d + 1);
+}

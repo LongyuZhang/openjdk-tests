@@ -1,0 +1,22 @@
+public static double fn_A(float[] a,float[] b){
+  assert(a.length == b.length);
+  double c=0d;
+  double d=0d;
+  double e=0d;
+  double f=0, g=0, h=0;
+  for (int i=0; i < a.length; i++) {
+    d+=a[i];
+    e+=b[i];
+  }
+  if (d == 0 && e == 0)   return 0;
+  if (d == 0 || e == 0)   return 100;
+  if (d > 0 && e > 0) {
+    for (int i=0; i < a.length; i++) {
+      f+=(a[i] / d) * (b[i] / e);
+      g+=(b[i] / e) * (b[i] / e);
+      h+=(a[i] / d) * (a[i] / d);
+    }
+    c=(100 - 100 * (f / (g + h - f)));
+  }
+  return c;
+}

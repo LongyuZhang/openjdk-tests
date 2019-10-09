@@ -1,0 +1,5 @@
+public static byte[] fn_A(int a){
+  byte b=(byte)0x80;
+  byte c=(byte)a;
+  return new byte[]{b,c,0,0};
+}

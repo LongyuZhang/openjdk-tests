@@ -1,0 +1,12 @@
+public static long[] fn_A(long a){
+  long[] b=new long[3];
+  long c=a / (1000 * 60 * 60);
+  a-=c * 1000 * 60* 60;
+  long d=a / (1000 * 60);
+  a-=d * 1000 * 60;
+  long e=a / 1000;
+  b[0]=c;
+  b[1]=d;
+  b[2]=e;
+  return b;
+}

@@ -1,0 +1,9 @@
+private static int fn_A(byte a,byte[] b){
+  int c=0;
+  for (int d=b.length; --d >= 0; ) {
+    if (b[d] == a) {
+      c++;
+    }
+  }
+  return c;
+}

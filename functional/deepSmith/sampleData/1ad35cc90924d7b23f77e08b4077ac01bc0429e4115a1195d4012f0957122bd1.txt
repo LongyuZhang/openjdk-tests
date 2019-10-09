@@ -1,0 +1,7 @@
+public static boolean fn_A(int a){
+  boolean b=false;
+  if (((a % 4) == 0) && ((a < 1582) || ((a % 100) != 0) || ((a % 400) == 0))) {
+    b=true;
+  }
+  return b;
+}

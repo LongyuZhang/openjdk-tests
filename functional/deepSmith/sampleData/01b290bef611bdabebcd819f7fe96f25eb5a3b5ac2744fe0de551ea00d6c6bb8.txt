@@ -1,0 +1,6 @@
+private static OutputStream fn_A(OutputStream a){
+  if (!(a instanceof BufferedOutputStream || a instanceof ByteArrayOutputStream)) {
+    a=new BufferedOutputStream(a);
+  }
+  return a;
+}

@@ -1,0 +1,5 @@
+public static String fn_A(int a,int b){
+  long c=Math.max(a - 1,0) * b;
+  int d=b + 1;
+  return " limit " + c + ", "+ d;
+}

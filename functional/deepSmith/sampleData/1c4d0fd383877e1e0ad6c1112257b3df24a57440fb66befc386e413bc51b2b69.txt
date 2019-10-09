@@ -1,0 +1,19 @@
+private static String fn_A(long a){
+  float b=a / 1000;
+  if (b < 1.0f) {
+    return a + "ms";
+  }
+  float c=b / 60;
+  if (c < 1.0f) {
+    return b + "sec";
+  }
+  float d=c / 60;
+  if (d < 1.0f) {
+    return c + "min";
+  }
+  float e=d / 24;
+  if (e < 1.0f) {
+    return d + "hr";
+  }
+  return e + "days";
+}

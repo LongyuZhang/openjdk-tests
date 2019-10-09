@@ -1,0 +1,8 @@
+private static void fn_A(int a){
+  if (a < 0) {
+    throw new IllegalArgumentException("ptolemy.math.SignalProcessing : order of transform " + "must be non-negative.");
+  }
+ else   if (a > 31) {
+    throw new IllegalArgumentException("ptolemy.math.SignalProcessing : order of transform " + "must be less than 32.");
+  }
+}

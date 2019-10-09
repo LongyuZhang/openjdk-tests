@@ -1,0 +1,5 @@
+public static long fn_A(String... a){
+  int b=a[0].hashCode();
+  int c=a[1].hashCode();
+  return (long)b << 32 | c & 0xFFFFFFFFL;
+}

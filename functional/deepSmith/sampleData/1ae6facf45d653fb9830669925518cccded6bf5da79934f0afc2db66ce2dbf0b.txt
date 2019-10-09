@@ -1,0 +1,5 @@
+public static short fn_A(short a,short b,short c){
+  a=(short)(a - (a - b) / (c - b) * (c - b));
+  if (a < 0)   a=(short)(a + c - b);
+  return a;
+}

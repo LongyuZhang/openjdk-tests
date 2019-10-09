@@ -1,0 +1,15 @@
+static void fn_A(int[] a,int[] b,int c,int d,int e,int f,int g,int h){
+  for (int i=-f; i < 0; ++i) {
+    int j;
+    for (j=d + e - 3; d < j; a[d++]=b[c++]) {
+      a[d++]=b[c++];
+      a[d++]=b[c++];
+      a[d++]=b[c++];
+    }
+    for (j+=3; d < j; a[d++]=b[c++]) {
+      ;
+    }
+    d+=g;
+    c+=h;
+  }
+}

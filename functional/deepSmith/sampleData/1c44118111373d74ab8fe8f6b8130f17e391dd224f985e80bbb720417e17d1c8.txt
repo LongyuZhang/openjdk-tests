@@ -1,0 +1,14 @@
+public static int fn_A(byte[] a){
+switch (a.length) {
+case 0:
+    return 0x20202020;
+case 1:
+  return (((a[0] & 0xFF) << 24) | 0x202020);
+case 2:
+return (((((a[0] & 0xFF) << 8) | (a[1] & 0xFF)) << 16) | 0x2020);
+case 3:
+return (((((((a[0] & 0xFF) << 8) | (a[1] & 0xFF)) << 8) | (a[2] & 0xFF)) << 8) | 0x20);
+default :
+return (((((((a[0] & 0xFF) << 8) | (a[1] & 0xFF)) << 8) | (a[2] & 0xFF)) << 8) | (a[3] & 0xFF));
+}
+}

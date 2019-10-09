@@ -1,0 +1,8 @@
+private static File fn_A(){
+  String a=System.getenv("JAVA_HOME");
+  if (a != null) {
+    return new File(a);
+  }
+  System.err.println("No JAVA_HOME environment variable found. Must point to a local JDK installation.");
+  return null;
+}

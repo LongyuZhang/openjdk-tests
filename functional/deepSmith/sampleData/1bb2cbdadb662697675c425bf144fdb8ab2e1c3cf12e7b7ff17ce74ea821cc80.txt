@@ -1,0 +1,10 @@
+private final static float fn_A(float a,final float b,final float c,final float d){
+  a+=b;
+  if (a < c) {
+    return c;
+  }
+ else   if (a > d) {
+    return d;
+  }
+  return a;
+}

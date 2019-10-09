@@ -1,0 +1,6 @@
+private static boolean fn_A(Integer a,Integer b){
+  if ((a == null) || (b == null)) {
+    return false;
+  }
+  return (a >= b);
+}

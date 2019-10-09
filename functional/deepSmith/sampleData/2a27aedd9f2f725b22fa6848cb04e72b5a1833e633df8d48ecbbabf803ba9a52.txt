@@ -1,0 +1,11 @@
+public static Object[] fn_A(Object[] a){
+  if (a == null) {
+    return null;
+  }
+  int b=a.length;
+  Object[] c=new Object[b];
+  for (int d=0; d < b; d++) {
+    c[d]=a[b - 1 - d];
+  }
+  return c;
+}

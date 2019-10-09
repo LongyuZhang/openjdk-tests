@@ -1,0 +1,5 @@
+private static int fn_A(int a){
+  if (a < 0)   return 0;
+  if (a > 16256)   return 16256;
+  return a;
+}

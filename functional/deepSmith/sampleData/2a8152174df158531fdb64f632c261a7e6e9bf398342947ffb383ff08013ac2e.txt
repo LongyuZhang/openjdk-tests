@@ -1,0 +1,17 @@
+public static int fn_A(int a,int b){
+  if (b <= 0) {
+    return 0;
+  }
+ else   if (b >= 255) {
+    return 0xff000000 | a;
+  }
+ else {
+    int c=(a >> 16) & 0xff;
+    int d=(a >> 8) & 0xff;
+    int e=a & 0xff;
+    c=(b * c + 127) / 255;
+    d=(b * d + 127) / 255;
+    e=(b * e + 127) / 255;
+    return (b << 24) | (c << 16) | (d << 8)| e;
+  }
+}

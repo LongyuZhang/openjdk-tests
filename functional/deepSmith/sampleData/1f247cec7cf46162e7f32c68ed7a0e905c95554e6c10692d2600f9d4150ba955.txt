@@ -1,0 +1,4 @@
+public static String fn_A(String a,boolean b){
+  if (!b)   return a;
+  return a == null ? "" : a;
+}

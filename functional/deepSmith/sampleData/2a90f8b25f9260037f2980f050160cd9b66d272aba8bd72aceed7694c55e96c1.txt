@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b,int c){
+  int d=((a >>> c) & 0xff);
+  return (d > b ? d - b : 0) << c;
+}

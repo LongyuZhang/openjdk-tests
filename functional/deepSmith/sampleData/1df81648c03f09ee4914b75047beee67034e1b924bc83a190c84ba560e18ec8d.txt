@@ -1,0 +1,5 @@
+static void fn_A(Object a,Object b,String c) throws Exception {
+  if (!a.equals(b)) {
+    throw new Exception("FAILED: " + c + " does not return the "+ "same object that was set");
+  }
+}

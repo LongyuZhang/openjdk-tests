@@ -1,0 +1,54 @@
+public static long fn_A(int[] a){
+  int b=0x510fb60d;
+  int c=0xa4cb30d9 + (a.length);
+  int d=0x9e3779b9;
+  int e;
+  int f=a.length - 2;
+  for (e=0; e < f; e+=3) {
+    b+=a[e];
+    c+=a[e + 1];
+    d+=a[e + 2];
+    b-=d;
+    b^=(d << 4) ^ (d >>> 28);
+    d+=c;
+    c-=b;
+    c^=(b << 6) ^ (b >>> 26);
+    b+=d;
+    d-=c;
+    d^=(c << 8) ^ (c >>> 24);
+    c+=b;
+    b-=d;
+    b^=(d << 16) ^ (d >>> 16);
+    d+=c;
+    c-=b;
+    c^=(b << 19) ^ (b >>> 13);
+    b+=d;
+    d-=c;
+    d^=(c << 4) ^ (c >>> 28);
+    c+=b;
+  }
+switch (a.length - e) {
+case 2:
+    d+=a[a.length - 2];
+  c+=a[a.length - 1];
+break;
+case 1:
+c+=a[a.length - 1];
+break;
+}
+d^=c;
+d-=(c << 14) ^ (c >>> 18);
+b^=d;
+b-=(d << 11) ^ (d >>> 21);
+c^=b;
+c-=(b << 25) ^ (b >>> 7);
+d^=c;
+d-=(c << 16) ^ (c >>> 16);
+b^=d;
+b-=(d << 4) ^ (d >>> 28);
+c^=b;
+c-=(b << 14) ^ (b >>> 18);
+d^=c;
+d-=(c << 24) ^ (c >>> 8);
+return ((long)d << 32) ^ c ^ b;
+}

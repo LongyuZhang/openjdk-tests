@@ -1,0 +1,5 @@
+private static void fn_A(double a,double b,double c){
+  if (Math.abs(a - b) > c) {
+    throw new IllegalStateException("Expected " + a + " but got "+ b);
+  }
+}

@@ -1,0 +1,9 @@
+public static String fn_A(Collection<?> a){
+  if (a instanceof List) {
+    return "]";
+  }
+  if (a instanceof Set) {
+    return "}";
+  }
+  return ")";
+}

@@ -1,0 +1,10 @@
+public static java.lang.String fn_A(int a){
+switch (a) {
+case 1:
+    return "key";
+case 2:
+  return "value";
+default :
+return null;
+}
+}

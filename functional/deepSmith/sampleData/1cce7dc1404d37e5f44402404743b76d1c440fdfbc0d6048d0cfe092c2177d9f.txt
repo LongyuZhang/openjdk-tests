@@ -1,0 +1,4 @@
+public static long fn_A(){
+  double a=-78.1d;
+  return (long)a;
+}

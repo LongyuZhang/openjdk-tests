@@ -1,0 +1,7 @@
+public static final double fn_A(){
+  double a=0.5;
+  while (1.0 + a > 1.0) {
+    a*=0.5;
+  }
+  return a;
+}

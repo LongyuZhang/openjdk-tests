@@ -1,0 +1,5 @@
+private static String fn_A(int a){
+  String b="";
+  for (int c=0; c < a; c++)   b=b + "\t";
+  return b;
+}

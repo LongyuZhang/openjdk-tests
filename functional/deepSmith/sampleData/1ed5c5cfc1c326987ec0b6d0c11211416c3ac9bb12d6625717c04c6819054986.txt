@@ -1,0 +1,5 @@
+public static float[] fn_A(float[] a,float... b){
+  float[] c=Arrays.copyOf(a,a.length + b.length);
+  for (int d=b.length - 1; d >= 0; d--)   c[c.length - (d + 1)]=b[d];
+  return c;
+}

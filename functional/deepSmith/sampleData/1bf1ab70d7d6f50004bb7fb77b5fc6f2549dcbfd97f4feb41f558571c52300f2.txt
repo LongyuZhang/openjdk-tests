@@ -1,0 +1,8 @@
+private static void fn_A(final Integer a){
+  if (a == null) {
+    return;
+  }
+  if (a < 0 || a > 0xFFFF) {
+    throw new IllegalArgumentException("repetitionDelay not in [0..65535]");
+  }
+}

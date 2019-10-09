@@ -1,0 +1,8 @@
+public static void fn_A(byte[] a,byte[] b){
+  if (a.length != b.length) {
+    throw new RuntimeException("a1.length != a2.length");
+  }
+  for (int c=0; c < a.length; c++) {
+    a[c]^=b[c];
+  }
+}

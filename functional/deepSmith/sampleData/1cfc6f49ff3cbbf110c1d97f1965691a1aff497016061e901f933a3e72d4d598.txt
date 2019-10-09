@@ -1,0 +1,11 @@
+private static float fn_A(final float[] a,int b,int c){
+  float d=Float.POSITIVE_INFINITY;
+  float e=Float.NEGATIVE_INFINITY;
+  while (--c >= 0) {
+    float f=a[b];
+    if (f < d)     d=f;
+    if (f > e)     e=f;
+    b+=2;
+  }
+  return e - d;
+}

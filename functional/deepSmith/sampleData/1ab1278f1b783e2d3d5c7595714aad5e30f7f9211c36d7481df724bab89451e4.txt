@@ -1,0 +1,7 @@
+static int fn_A(int a){
+  int b=a + (a >>> 1) + 1;
+  if (b < a)   throw new OutOfMemoryError();
+  int c=8;
+  while (c < b)   c<<=1;
+  return c;
+}

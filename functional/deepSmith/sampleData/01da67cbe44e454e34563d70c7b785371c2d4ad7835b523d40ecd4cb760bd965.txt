@@ -1,0 +1,4 @@
+public static double[] fn_A(double[] a,int b){
+  int c=b * 4;
+  return new double[]{a[c],a[c + 1],a[c + 2],a[c + 3]};
+}

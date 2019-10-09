@@ -1,0 +1,14 @@
+private static Integer[] fn_A(final int a){
+  final Integer[] b;
+  if (a > 1) {
+    b=new Integer[a];
+    int c=a;
+    for (int d=0; d < a; d++) {
+      b[d]=--c;
+    }
+  }
+ else {
+    b=new Integer[]{0};
+  }
+  return b;
+}

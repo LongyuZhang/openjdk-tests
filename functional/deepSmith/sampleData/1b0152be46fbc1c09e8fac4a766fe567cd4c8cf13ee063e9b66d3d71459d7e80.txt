@@ -1,0 +1,7 @@
+public static long[] fn_A(long[] a,int[] b){
+  long[] c=new long[b.length];
+  for (int d=0; d < b.length; d++) {
+    c[d]=a[b[d]];
+  }
+  return c;
+}

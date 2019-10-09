@@ -1,0 +1,13 @@
+public static String fn_A(int a){
+switch (a) {
+case 1:
+    return "testGetData";
+case 2:
+  return "testSetData";
+case 3:
+return "testDisplay";
+case 4:
+return "testNullData";
+}
+throw new IllegalStateException("Unexpected index");
+}

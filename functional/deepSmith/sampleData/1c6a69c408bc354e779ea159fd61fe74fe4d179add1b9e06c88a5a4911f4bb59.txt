@@ -1,0 +1,30 @@
+private static String fn_A(char a){
+  String b;
+switch ((int)a) {
+case 0xe4:
+    b="&auml;";
+  break;
+case 0xf6:
+b="&ouml;";
+break;
+case 0xfc:
+b="&uuml;";
+break;
+case 0xc4:
+b="&Auml;";
+break;
+case 0xd6:
+b="&Ouml;";
+break;
+case 0xdc:
+b="&Uuml;";
+break;
+case 0xdf:
+b="&szlig;";
+break;
+default :
+b="&#" + Integer.toString((int)a) + ";";
+break;
+}
+return b;
+}

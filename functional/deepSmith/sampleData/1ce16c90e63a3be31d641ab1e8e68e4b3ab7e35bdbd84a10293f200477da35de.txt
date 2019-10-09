@@ -1,0 +1,14 @@
+static int fn_A(double[] a,int[] b){
+  double c=Double.NEGATIVE_INFINITY;
+  int d=-1;
+  for (int e=0; e < a.length; ++e) {
+    if (b[e] > 0) {
+      continue;
+    }
+    if (c < a[e]) {
+      d=e;
+      c=a[e];
+    }
+  }
+  return d;
+}

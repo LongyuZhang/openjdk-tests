@@ -1,0 +1,5 @@
+public static int fn_A(Object a){
+  int[] b=(int[])a;
+  b[0]=123;
+  return b[0];
+}

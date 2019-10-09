@@ -1,0 +1,9 @@
+public static Date fn_A(double a){
+  try {
+    long b=Math.round(a * 1000);
+    return new Date(b);
+  }
+ catch (  Exception c) {
+    return null;
+  }
+}

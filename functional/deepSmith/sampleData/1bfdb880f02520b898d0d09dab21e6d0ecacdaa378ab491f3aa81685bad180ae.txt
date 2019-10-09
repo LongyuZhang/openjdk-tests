@@ -1,0 +1,5 @@
+public static void fn_A(){
+  System.out.println("FreeMemory:" + Runtime.getRuntime().freeMemory() / 1024 / 1024 + "M");
+  System.out.println("MaxMemory:" + Runtime.getRuntime().maxMemory() / 1024 / 1024 + "M");
+  System.out.println("TotalMemory:" + Runtime.getRuntime().totalMemory() / 1024 / 1024 + "M");
+}

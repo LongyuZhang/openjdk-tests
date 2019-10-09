@@ -1,0 +1,12 @@
+public static void fn_A(float a,final float[] b,float[] c){
+  final float d, e;
+  d=a * b[2 + 2 * 4] + b[2 + 3 * 4];
+  e=a * b[3 + 2 * 4] + b[3 + 3 * 4];
+  if (e <= 0.0f) {
+    c[0]=0.0f;
+  }
+ else {
+    c[0]=d / e;
+    c[0]=c[0] * 0.5f + 0.5f;
+  }
+}

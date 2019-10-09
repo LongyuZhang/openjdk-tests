@@ -1,0 +1,15 @@
+private static boolean fn_A(int a,int b,byte[] c,byte[] d){
+  boolean e=true;
+  if (c == d) {
+    e=true;
+  }
+ else   if (c == null || d == null) {
+    e=false;
+  }
+ else {
+    for (int f=a; e && f < a + b; f++) {
+      e=c[f] == d[f];
+    }
+  }
+  return e;
+}

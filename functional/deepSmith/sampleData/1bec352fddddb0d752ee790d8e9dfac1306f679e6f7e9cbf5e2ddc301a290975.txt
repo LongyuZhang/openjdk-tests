@@ -1,0 +1,4 @@
+private static byte fn_A(byte a){
+  int b=a & 0xff;
+  return b >= 'a' && b <= 'z' ? (byte)(b - (int)'a' + (int)'A') : a;
+}

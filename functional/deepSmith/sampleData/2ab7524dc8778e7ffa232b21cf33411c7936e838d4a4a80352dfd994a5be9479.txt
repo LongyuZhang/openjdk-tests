@@ -1,0 +1,11 @@
+public static void fn_A(final long[] a,final int b,final int c){
+  if (a == null) {
+    return;
+  }
+  final int d=c / 2, e=c - 1;
+  for (int f=0; f < d; f++) {
+    long g=a[f];
+    a[f]=a[e - f];
+    a[e - f]=g;
+  }
+}

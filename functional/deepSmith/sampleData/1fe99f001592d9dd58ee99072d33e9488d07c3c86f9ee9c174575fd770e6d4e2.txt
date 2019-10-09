@@ -1,0 +1,14 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0x00:
+    return "Main profile";
+case 0x01:
+  return "Low Complexity profile (LC)";
+case 0x02:
+return "Scalable Sampling Rate profile (SSR)";
+case 0x03:
+return "Reserved";
+default :
+return "Unknown";
+}
+}

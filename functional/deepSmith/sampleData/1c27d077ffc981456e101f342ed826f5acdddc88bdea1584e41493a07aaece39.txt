@@ -1,0 +1,28 @@
+public static double[][] fn_A(double[][] a,int b,int c,int d){
+  int e=a.length;
+  int f=a[0].length;
+  int g=((e - b + d - 1) / d) + 1;
+  int h=((f - c + d - 1) / d) + 1;
+  double[][] i=new double[g][h];
+  int j=0;
+  for (int k=0; k < g; k++) {
+    int l=0;
+    for (int m=0; m < h; m++) {
+      double n=0;
+      int o=j;
+      for (int p=0; p < b && o < e; p++) {
+        int q=l;
+        for (int r=0; r < c && q < f; r++) {
+          double s=a[o][q];
+          q++;
+          if (s > n)           n=s;
+        }
+        o++;
+      }
+      i[k][m]=n;
+      l+=d;
+    }
+    j+=d;
+  }
+  return i;
+}

@@ -1,0 +1,37 @@
+public static boolean fn_A(float a,float b,float c,float d,float e,float f,float g,float h,float i){
+  float j=a - d, k=b - e;
+  float l=j * j + k * k - c;
+  if (l <= 0.0f)   return true;
+  float m=a - f, n=b - g;
+  float o=m * m + n * n - c;
+  if (o <= 0.0f)   return true;
+  float p=a - h, q=b - i;
+  float r=p * p + q * q - c;
+  if (r <= 0.0f)   return true;
+  float s=f - d, t=g - e;
+  float u=h - f, v=i - g;
+  float w=d - h, x=e - i;
+  if (s * k - t * j >= 0.0f && u * n - v * m >= 0.0f && w * q - x * p >= 0.0f)   return true;
+  float y=j * s + k * t;
+  if (y >= 0.0f) {
+    float z=s * s + t * t;
+    if (y <= z) {
+      if (l * z <= y * y)       return true;
+    }
+  }
+  y=m * u + n * v;
+  if (y > 0.0f) {
+    float z=u * u + v * v;
+    if (y <= z) {
+      if (o * z <= y * y)       return true;
+    }
+  }
+  y=p * w + q * x;
+  if (y >= 0.0f) {
+    float z=w * w + x * x;
+    if (y < z) {
+      if (r * z <= y * y)       return true;
+    }
+  }
+  return false;
+}

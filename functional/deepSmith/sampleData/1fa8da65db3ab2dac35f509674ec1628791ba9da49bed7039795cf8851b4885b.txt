@@ -1,0 +1,16 @@
+private static String fn_A(final int a){
+switch (a) {
+case 1:
+    return "Self";
+case 2:
+  return "Health Care Professional";
+case 3:
+return "Lab test";
+case 4:
+return "Casual (snacks, drinks, etc.)";
+case 15:
+return "Tester value not available";
+default :
+return "Reserved for future use (" + a + ")";
+}
+}

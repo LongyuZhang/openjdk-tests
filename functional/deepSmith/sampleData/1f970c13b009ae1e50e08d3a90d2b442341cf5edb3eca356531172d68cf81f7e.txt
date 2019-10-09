@@ -1,0 +1,4 @@
+public static void fn_A(){
+  System.setProperty("javax.net.ssl.trustStore",Thread.currentThread().getContextClassLoader().getResource("keystore.jks").getPath());
+  System.setProperty("javax.net.ssl.trustStorePassword","password");
+}

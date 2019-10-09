@@ -1,0 +1,9 @@
+protected static boolean fn_A(int[] a){
+  final int b=a[0];
+  for (int c=1; c < a.length; c++) {
+    if (a[c] != b) {
+      return false;
+    }
+  }
+  return true;
+}

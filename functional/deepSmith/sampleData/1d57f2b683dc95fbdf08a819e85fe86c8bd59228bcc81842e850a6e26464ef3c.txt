@@ -1,0 +1,8 @@
+private static <K,V>Map<K,V> fn_A(Map<K,V> a){
+  if (a == null) {
+    return new HashMap<K,V>();
+  }
+synchronized (a) {
+    return new HashMap<K,V>(a);
+  }
+}

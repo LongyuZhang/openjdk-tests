@@ -1,0 +1,11 @@
+public static int fn_A(int a){
+  if (a < 16) {
+    return 17;
+  }
+ else   if (a < 31) {
+    return 3 * a - 31;
+  }
+ else {
+    return 7 * a - 155;
+  }
+}

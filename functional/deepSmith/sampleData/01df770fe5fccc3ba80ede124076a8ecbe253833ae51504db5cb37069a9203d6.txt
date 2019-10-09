@@ -1,0 +1,21 @@
+static public double[][] fn_A(double[] a){
+  final int b=a.length;
+  final double c=1 / (double)b;
+  int d=1;
+  for (int e=1; e < b; e++) {
+    if (a[e] != a[e - 1])     d++;
+  }
+  double[] f=new double[d];
+  double[] g=new double[d];
+  int h=0;
+  for (int e=1; e < b; e++) {
+    if (a[e] != a[e - 1]) {
+      f[h]=a[e - 1];
+      g[h]=e * c;
+      h++;
+    }
+  }
+  f[h]=a[b - 1];
+  g[h]=1.0;
+  return new double[][]{f,g};
+}

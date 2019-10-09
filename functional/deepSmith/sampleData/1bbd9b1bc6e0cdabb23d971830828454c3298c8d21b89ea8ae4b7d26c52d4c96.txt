@@ -1,0 +1,14 @@
+private static void fn_A(long[] a,int b,int c,long d){
+  int e=b + (c >>> 6);
+  int f=c & 0x3F;
+  if (f == 0) {
+    a[e]^=d;
+  }
+ else {
+    a[e]^=d << f;
+    d>>>=(64 - f);
+    if (d != 0) {
+      a[++e]^=d;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+public static void fn_A(){
+  System.setProperty("norm.jdbcUrl","jdbc:mysql://localhost:3306/mydb?useSSL=false");
+  System.setProperty("norm.user","root");
+  System.setProperty("norm.password","rootpassword");
+}

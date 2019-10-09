@@ -1,0 +1,12 @@
+public static double fn_A(int[] a,int b,int c,int d,double[] e,int[][] f,double[][] g,double h,double i){
+  double j=a[c];
+  double k=a[d];
+  double l=e[d];
+  double m=e[c];
+  double n=f[b][c];
+  double o=f[b][d];
+  double p=g[d][b] * (h + k) * (i + n)* l;
+  double q=g[c][b] * (h + j) * (i + o)* m;
+  double r=p / q;
+  return r;
+}

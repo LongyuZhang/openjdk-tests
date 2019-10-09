@@ -1,0 +1,5 @@
+public static void fn_A(float[] a){
+  if (Float.isNaN(a[0]) || Float.isNaN(a[1])) {
+    throw new RuntimeException("mat not a number");
+  }
+}

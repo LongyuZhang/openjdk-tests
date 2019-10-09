@@ -1,0 +1,12 @@
+public static Short fn_A(Short a,Short b){
+  if (a == null && b != null) {
+    return (short)-b;
+  }
+ else   if (a == null) {
+    return null;
+  }
+ else   if (b == null) {
+    return a;
+  }
+  return (short)(a - b);
+}

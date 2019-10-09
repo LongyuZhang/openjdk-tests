@@ -1,0 +1,20 @@
+public static double fn_A(double[] a,double b){
+  if (a.length == 1) {
+    return a[0];
+  }
+  double c=0;
+  int d=a.length;
+  if (((int)(d * b)) == (d * b)) {
+    int e=(int)(d * b) - 1;
+    int f=e + 1;
+    if (e < 0) {
+      throw new RuntimeException("Fraction to small.");
+    }
+    c=(a[e] + a[f]) / 2.0;
+  }
+ else {
+    int e=(int)(d * b);
+    c=a[e];
+  }
+  return c;
+}

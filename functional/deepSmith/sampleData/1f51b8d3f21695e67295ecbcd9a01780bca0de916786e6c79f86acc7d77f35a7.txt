@@ -1,0 +1,4 @@
+private static int fn_A(int a){
+  int b=(int)(Math.sqrt(0.25 + 2 * a) - 0.5);
+  return a - b * (b + 1) / 2;
+}

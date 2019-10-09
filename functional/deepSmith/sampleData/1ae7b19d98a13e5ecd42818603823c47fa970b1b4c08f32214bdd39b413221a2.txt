@@ -1,0 +1,6 @@
+public static String fn_A(final String a,final String b,final String c,final boolean d){
+  if (a == null || b == null || c == null) {
+    return null;
+  }
+  return '@' + a + '\n'+ b+ '\n'+ '+'+ (d ? a : "")+ '\n'+ c;
+}

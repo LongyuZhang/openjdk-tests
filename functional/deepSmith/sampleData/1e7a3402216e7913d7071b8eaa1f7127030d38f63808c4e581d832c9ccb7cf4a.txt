@@ -1,0 +1,13 @@
+public static boolean fn_A(int[] a){
+  if (a.length > 2) {
+    for (int b=1; b < a.length; b++) {
+      if (a[b] != a[b - 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+ else {
+    return a.length != 2 || a[0] == a[1];
+  }
+}

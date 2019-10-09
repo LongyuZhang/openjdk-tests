@@ -1,0 +1,8 @@
+static final boolean fn_A(final char a,final char[] b,int c){
+  while (c < b.length) {
+    if (a == b[c++]) {
+      return true;
+    }
+  }
+  return false;
+}

@@ -1,0 +1,20 @@
+private static void fn_A(long[] a,long[] b,byte[] c,int d,byte[] e){
+  long[] f=new long[8], g=new long[8];
+  a[8]=0x5555555555555555L;
+  for (int h=0; h < 8; f[h]=g[h] + a[h], a[8]^=a[h], h++)   for (int i=7; i >= 0; i--)   g[h]=(g[h] << 8) + (c[d + h * 8 + i] & 255);
+  f[5]+=b[0];
+  f[6]+=b[1];
+  b[2]=b[0] ^ b[1];
+  for (int j=1, k=0; j <= 18; j++, k^=16) {
+    for (int h=0; h < 16; h++) {
+      int l=2 * ((h + (1 + h + h) * (h / 4)) & 3);
+      int m=(1 + h + h) & 7, n=e[k + h] - 32;
+      f[m]=((f[m] << n) | (f[m] >>> (64 - n))) ^ (f[l]+=f[m]);
+    }
+    for (int h=0; h < 8; h++)     f[h]+=a[(j + h) % 9];
+    f[5]+=b[j % 3];
+    f[6]+=b[(j + 1) % 3];
+    f[7]+=j;
+  }
+  for (int h=0; h < 8; h++)   a[h]=g[h] ^ f[h];
+}

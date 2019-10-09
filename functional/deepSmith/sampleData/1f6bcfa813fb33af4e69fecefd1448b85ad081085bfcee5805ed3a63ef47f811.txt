@@ -1,0 +1,9 @@
+public static double fn_A(double[] a,boolean b){
+  double c=Double.NEGATIVE_INFINITY;
+  int d=a.length - (b ? 1 : 0);
+  for (int e=0; e < d; ++e) {
+    if (a[e] > c)     c=a[e];
+    if (-a[e] > c)     c=-a[e];
+  }
+  return c;
+}

@@ -1,0 +1,4 @@
+public static int fn_A(byte[] a,int b){
+  int c=(a[b] & 0xFF) | ((a[b + 1] & 0xFF) << 8) | ((a[b + 2] & 0xFF) << 16);
+  return c;
+}

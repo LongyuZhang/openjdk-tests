@@ -1,0 +1,5 @@
+private static char fn_A(int a){
+  if (a < 0 || a > 15)   throw new IllegalArgumentException("Nibble value out of range: " + a);
+  if (a <= 9)   return (char)('0' + a);
+  return (char)('A' + (a - 10));
+}

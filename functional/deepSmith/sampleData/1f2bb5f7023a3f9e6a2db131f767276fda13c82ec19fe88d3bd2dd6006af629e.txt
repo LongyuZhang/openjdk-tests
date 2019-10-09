@@ -1,0 +1,9 @@
+static private int fn_A(long[] a,final int b,final int c){
+  final int d=b >>> 6;
+  final int e=b & 0x3f;
+  int f=(int)(a[d] >>> e);
+  if (64 - e < c) {
+    f|=(int)a[d + 1] << (64 - e);
+  }
+  return f & (0xffffffff >>> (32 - c));
+}

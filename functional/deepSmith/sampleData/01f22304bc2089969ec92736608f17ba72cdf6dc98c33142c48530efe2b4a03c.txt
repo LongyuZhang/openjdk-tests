@@ -1,0 +1,7 @@
+public static String fn_A(double[] a,double[] b){
+  String c="";
+  for (int d=0; d < a.length; d++) {
+    c+=Double.toString(a[d]) + "," + Double.toString(b[d])+ "\n";
+  }
+  return c;
+}

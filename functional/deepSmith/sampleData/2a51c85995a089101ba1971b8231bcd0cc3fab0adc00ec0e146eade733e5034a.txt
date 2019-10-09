@@ -1,0 +1,10 @@
+private static int fn_A(int a,int b){
+  int c=0;
+  while (a != b) {
+    a>>=1;
+    b>>=1;
+    c++;
+  }
+  System.out.println(a << c);
+  return a << c;
+}

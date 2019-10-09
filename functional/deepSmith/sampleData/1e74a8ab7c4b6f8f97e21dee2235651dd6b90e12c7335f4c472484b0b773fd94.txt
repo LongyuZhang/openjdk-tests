@@ -1,0 +1,7 @@
+public static int fn_A(Integer[] a){
+  int b=0;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] > b)     b=a[c];
+  }
+  return b;
+}

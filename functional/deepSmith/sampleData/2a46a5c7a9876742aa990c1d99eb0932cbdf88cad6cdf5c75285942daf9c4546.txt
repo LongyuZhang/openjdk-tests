@@ -1,0 +1,5 @@
+public static double fn_A(double a,int b){
+  double c=a * Math.cos(Math.PI / b);
+  double d=Math.sqrt(a * a - c * c);
+  return d / 2;
+}

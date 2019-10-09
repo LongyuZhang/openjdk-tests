@@ -1,0 +1,11 @@
+public static int fn_A(int a) throws InterruptedException {
+  int b=Integer.MAX_VALUE;
+  int c=0;
+  for (int d=Integer.MAX_VALUE - 5; d <= b; d++) {
+    c++;
+    if (c > 100000) {
+      return 95;
+    }
+  }
+  return 97;
+}

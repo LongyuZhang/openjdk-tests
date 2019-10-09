@@ -1,0 +1,9 @@
+public static int[] fn_A(int[] a){
+  int b=-a[2];
+  int c=-a[0];
+  int d=-a[1];
+  a[0]=b;
+  a[1]=c;
+  a[2]=d;
+  return a;
+}

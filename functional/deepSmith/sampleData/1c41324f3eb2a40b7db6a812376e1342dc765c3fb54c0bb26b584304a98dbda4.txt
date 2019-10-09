@@ -1,0 +1,4 @@
+public static void fn_A(Object a,String b){
+  if (a != null)   throw new IllegalArgumentException(b);
+ else   return;
+}

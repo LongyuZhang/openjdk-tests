@@ -1,0 +1,6 @@
+protected static String fn_A() throws IOException {
+  String a;
+  a=new File(".").getCanonicalPath();
+  a+="/Composed/";
+  return a;
+}

@@ -1,0 +1,8 @@
+private static int fn_A(final char[] a,int b,final char[] c,int d){
+  for (; a[b] == c[d]; b++, d++) {
+    if (a[b] == 0) {
+      return 0;
+    }
+  }
+  return a[b] - c[d];
+}

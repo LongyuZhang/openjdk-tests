@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("Usage: genyris [-h] [-eval (expression) args...] [- args...] [filename args... ] ");
+  System.exit(-1);
+}

@@ -1,0 +1,18 @@
+private static byte fn_A(int a,int b,int c,int d){
+  int e=b + c - d;
+  int f=Math.abs(e - b);
+  int g=Math.abs(e - c);
+  int h=Math.abs(e - d);
+  final int i;
+  if (f <= g && f <= h) {
+    i=b;
+  }
+ else   if (g <= h) {
+    i=c;
+  }
+ else {
+    i=d;
+  }
+  int j=a - i;
+  return (byte)(j);
+}

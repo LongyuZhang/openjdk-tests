@@ -1,0 +1,5 @@
+public static Long fn_A(){
+  long a=System.currentTimeMillis();
+  Long b=Long.parseLong(String.valueOf(a / 1000));
+  return b;
+}

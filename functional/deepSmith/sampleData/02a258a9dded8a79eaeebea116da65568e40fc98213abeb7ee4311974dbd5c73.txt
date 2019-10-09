@@ -1,0 +1,7 @@
+public final static float fn_A(final float[][] a){
+  float b=0;
+  for (int c=a.length; c-- > 0; ) {
+    for (int d=a[c].length; d-- > 0; )     b+=a[c][d];
+  }
+  return b;
+}

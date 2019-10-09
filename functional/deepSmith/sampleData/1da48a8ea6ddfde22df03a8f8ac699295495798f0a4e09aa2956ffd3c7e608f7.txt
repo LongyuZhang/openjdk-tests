@@ -1,0 +1,7 @@
+public static final int fn_A(int a){
+  int b=1;
+  while (b < a) {
+    b*=2;
+  }
+  return b;
+}

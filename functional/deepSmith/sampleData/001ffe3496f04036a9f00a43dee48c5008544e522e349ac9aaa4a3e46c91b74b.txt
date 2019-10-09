@@ -1,0 +1,4 @@
+protected static final Serializable fn_A(Object a){
+  if (a instanceof Serializable)   return (Serializable)a;
+ else   return null;
+}

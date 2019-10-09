@@ -1,0 +1,8 @@
+private static final String fn_A(String a){
+  if (a == null) {
+    return "";
+  }
+ else {
+    return a;
+  }
+}

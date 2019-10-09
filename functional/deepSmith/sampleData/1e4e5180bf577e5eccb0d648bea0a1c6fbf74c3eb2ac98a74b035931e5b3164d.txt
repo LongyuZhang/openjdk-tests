@@ -1,0 +1,4 @@
+public static int[][] fn_A(final int a){
+  assert(a >= 1);
+  return new int[a][2];
+}

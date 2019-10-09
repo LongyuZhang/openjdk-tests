@@ -1,0 +1,5 @@
+static void fn_A(){
+  System.err.println("java Copy [-ip] source... target");
+  System.err.println("java Copy -r [-ip] source-dir... target");
+  System.exit(-1);
+}

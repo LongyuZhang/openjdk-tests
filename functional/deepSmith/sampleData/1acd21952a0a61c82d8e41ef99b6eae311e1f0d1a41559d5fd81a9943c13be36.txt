@@ -1,0 +1,8 @@
+public static void fn_A(float[] a,float[] b,float[] c,double d){
+  int e=a.length;
+  if (a == null || b == null || c == null)   throw new NullPointerException();
+  if (e != b.length && e != c.length)   throw new IllegalArgumentException();
+  for (int f=0; f < e; f++) {
+    a[f]=(float)(b[f] + ((c[f] - b[f]) * d));
+  }
+}

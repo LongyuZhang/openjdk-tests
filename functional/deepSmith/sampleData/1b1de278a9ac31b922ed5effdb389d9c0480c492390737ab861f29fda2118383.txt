@@ -1,0 +1,8 @@
+private static void fn_A(byte[] a){
+  byte b=0;
+  for (int c=a.length; c > 0; --c) {
+    final int d=a[c - 1] & 0xff;
+    a[c - 1]=(byte)((d << 1) | b);
+    b=(byte)(d >>> 7);
+  }
+}

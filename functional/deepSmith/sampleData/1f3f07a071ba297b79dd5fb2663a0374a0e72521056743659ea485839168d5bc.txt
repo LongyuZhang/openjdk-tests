@@ -1,0 +1,8 @@
+public static double fn_A(int a,double b){
+  double c=0.0;
+  if (b != 0) {
+    double d=(double)a / 60;
+    c=d / b;
+  }
+  return c;
+}

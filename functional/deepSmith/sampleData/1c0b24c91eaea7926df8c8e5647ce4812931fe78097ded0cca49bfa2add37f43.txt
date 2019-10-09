@@ -1,0 +1,6 @@
+public static long fn_A(long a,long b){
+  if (0 == a) {
+    return b;
+  }
+  return a;
+}

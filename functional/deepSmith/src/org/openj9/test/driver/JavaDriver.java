@@ -706,11 +706,13 @@ public class JavaDriver {
 		System.out.println(keywordForParser + "\n");
 
 		File[] listofTestFiles = testsFolder.listFiles();
+		int curTestNum = 0;
 		if (listofTestFiles != null) {
 			for (File curFile : listofTestFiles) {
+				curTestNum += 1;
 				if (curFile.isFile() && curFile.toString().contains(".txt")) {
 					String curFileName = curFile.getName();
-					System.out.println("Current TEST_NAME is: " + curFileName);
+					System.out.println("Current " + curTestNum + " TEST_NAME is: " + curFileName);
 					String curFileAbsolutePath = testsFolder.toString() + File.separator + curFileName;
 					StringBuilder inputString = new StringBuilder();
 

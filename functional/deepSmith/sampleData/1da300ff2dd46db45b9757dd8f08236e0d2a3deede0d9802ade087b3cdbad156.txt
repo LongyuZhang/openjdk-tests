@@ -1,0 +1,17 @@
+public static int fn_A(int a){
+  if (a < 10) {
+    if (a < 8) {
+      if (a <= 2)       return 32;
+ else       if (a == 3)       return 20;
+ else       if (a == 4)       return 16;
+ else       return 18 - a;
+    }
+ else     return 10;
+  }
+ else   if (a < 12)   return 9;
+ else   if (a <= 16)   return 8;
+ else   if (a <= 23)   return 7;
+ else   if (a <= 40)   return 6;
+ else   if (a <= 256)   return 4;
+ else   return 1;
+}

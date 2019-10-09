@@ -1,0 +1,5 @@
+static void fn_A(String a,boolean b){
+  if (!b) {
+    throw new AssertionError(a);
+  }
+}

@@ -1,0 +1,20 @@
+static boolean fn_A(Object a){
+  if (a != null) {
+    if (a instanceof Boolean) {
+      return ((Boolean)a).booleanValue();
+    }
+ else     if (a instanceof String) {
+      return ((String)a).length() > 0;
+    }
+ else     if (a instanceof Number) {
+      return ((Number)a).intValue() != 0;
+    }
+ else     if (a instanceof Collection) {
+      return !((Collection)a).isEmpty();
+    }
+ else {
+      return true;
+    }
+  }
+  return false;
+}

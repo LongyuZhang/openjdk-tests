@@ -1,0 +1,6 @@
+public static final short fn_A(byte a[],short b,short c,byte d) throws ArrayIndexOutOfBoundsException, NullPointerException {
+  for (short e=0; e < c; e++) {
+    a[b + e]=d;
+  }
+  return (short)(b + c);
+}

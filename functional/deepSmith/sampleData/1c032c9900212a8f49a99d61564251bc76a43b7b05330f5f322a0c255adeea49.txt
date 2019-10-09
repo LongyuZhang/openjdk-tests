@@ -1,0 +1,13 @@
+public static String fn_A(long a,long b){
+  long c=Math.round((b - a) / 1000.0);
+  int d=(int)(c / 3600.0);
+  int e=(int)(c % (3600.0));
+  int f=(int)(e / 60.0);
+  c=(int)(c - (d * 3600 + f * 60));
+  String g="" + d;
+  String h="" + f;
+  String i="" + c;
+  if (f < 10)   h="0" + h;
+  if (c < 10)   i="0" + i;
+  return g + "h:" + h+ ":"+ i+ "";
+}

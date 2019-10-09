@@ -1,0 +1,10 @@
+public static boolean fn_A(double[] a){
+  boolean b=true;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] != 0) {
+      b=false;
+      break;
+    }
+  }
+  return b;
+}

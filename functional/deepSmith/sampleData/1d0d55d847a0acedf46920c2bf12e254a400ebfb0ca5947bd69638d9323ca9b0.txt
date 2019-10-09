@@ -1,0 +1,4 @@
+public static byte[] fn_A(byte a){
+  final byte[] b={a};
+  return b;
+}

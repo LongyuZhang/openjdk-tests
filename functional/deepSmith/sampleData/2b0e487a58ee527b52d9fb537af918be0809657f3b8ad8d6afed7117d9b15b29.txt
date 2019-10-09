@@ -1,0 +1,9 @@
+protected static double fn_A(double[] a,double[][] b,double[] c,int d){
+  double e=0;
+  for (int f=0; f < d; f++) {
+    for (int g=0; g < d; g++) {
+      e+=a[f] * b[f][g] * c[g];
+    }
+  }
+  return e;
+}

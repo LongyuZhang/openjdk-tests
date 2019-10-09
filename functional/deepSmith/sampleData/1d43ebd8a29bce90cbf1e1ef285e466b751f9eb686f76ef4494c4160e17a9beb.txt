@@ -1,0 +1,10 @@
+static String fn_A(int a){
+  assert(a >= 0);
+  String b="";
+  while (a >= 0) {
+    b=(char)('A' + a % 26) + b;
+    a/=26;
+    a--;
+  }
+  return b;
+}

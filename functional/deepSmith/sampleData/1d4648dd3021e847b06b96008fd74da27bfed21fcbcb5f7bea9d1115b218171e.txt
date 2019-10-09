@@ -1,0 +1,4 @@
+public static Long fn_A(long a,boolean b){
+  if (b || a == 0)   return null;
+ else   return new Long(a);
+}

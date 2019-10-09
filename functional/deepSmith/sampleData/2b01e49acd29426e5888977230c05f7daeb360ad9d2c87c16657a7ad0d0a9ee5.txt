@@ -1,0 +1,14 @@
+public static float[][] fn_A(double a[][]){
+  if (a == null)   return null;
+  if (a.length == 0) {
+    System.err.println("Conversion::getDouble2DArray(float[][]): x-dimension is zero");
+    return null;
+  }
+  float b[][]=new float[a.length][a[0].length];
+  for (int c=0; c < a.length; c++) {
+    for (int d=0; d < a.length; d++) {
+      b[c][d]=(float)a[c][d];
+    }
+  }
+  return b;
+}

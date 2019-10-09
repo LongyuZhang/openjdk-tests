@@ -1,0 +1,4 @@
+public static boolean fn_A(double a){
+  long b=(long)a;
+  return b == a && ((int)b & 0xffffffff) == b;
+}

@@ -1,0 +1,5 @@
+public static void fn_A(){
+  System.setProperty("python.path","src/org/csstudio/scan");
+  System.setProperty("python.verbose","debug");
+  System.setProperty("python.import.site","false");
+}

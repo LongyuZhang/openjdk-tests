@@ -1,0 +1,8 @@
+public static boolean fn_A(byte a,byte[] b,short c){
+  for (byte d=0; d < a; d++) {
+    if (b[(short)(c + d)] != 0) {
+      return false;
+    }
+  }
+  return true;
+}

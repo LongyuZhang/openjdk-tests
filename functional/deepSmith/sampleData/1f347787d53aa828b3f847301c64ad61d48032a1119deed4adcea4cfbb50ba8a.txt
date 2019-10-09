@@ -1,0 +1,10 @@
+public static double[] fn_A(double[] a,double[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("Vectors not same length!");
+  }
+  double[] c=new double[a.length];
+  for (int d=0; d < c.length; d++) {
+    c[d]=a[d] - b[d];
+  }
+  return c;
+}

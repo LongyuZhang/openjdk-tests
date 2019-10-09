@@ -1,0 +1,4 @@
+public static int[] fn_A(final int[] a){
+  if (a == null)   return null;
+  return new int[a.length];
+}

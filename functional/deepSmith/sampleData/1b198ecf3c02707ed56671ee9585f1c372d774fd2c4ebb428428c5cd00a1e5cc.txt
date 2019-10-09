@@ -1,0 +1,7 @@
+protected static String fn_A(int a){
+  StringBuilder b=new StringBuilder();
+  for (int c=0; c < a; c++) {
+    b.append('\t');
+  }
+  return b.toString();
+}

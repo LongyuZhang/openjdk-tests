@@ -1,0 +1,13 @@
+public static float[][] fn_A(float[][] a){
+  if (a == null)   return null;
+  int b=a.length;
+  float[][] c=new float[b][];
+  for (int d=0; d < b; d++) {
+    int e=a[d].length;
+    c[d]=new float[e];
+    for (int f=0; f < e; f++) {
+      c[d][f]=a[d][f];
+    }
+  }
+  return c;
+}

@@ -1,0 +1,12 @@
+public static String fn_A(String[] a){
+  int b=0;
+  try {
+    b=new Random().nextInt(a.length);
+    return a[b];
+  }
+ catch (  Exception c) {
+    System.out.println("Random Int: " + b);
+    System.out.println("List Size: " + a.length);
+    return null;
+  }
+}

@@ -1,0 +1,8 @@
+private static int fn_A(Class<?> a){
+  if (a == long.class || a == double.class) {
+    return 2;
+  }
+ else {
+    return 1;
+  }
+}

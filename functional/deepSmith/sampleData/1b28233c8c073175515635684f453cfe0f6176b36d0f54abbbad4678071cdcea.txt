@@ -1,0 +1,10 @@
+private static <T extends Comparable<T>>int fn_A(T a,T b){
+  int c=0;
+  if (a == null && b != null) {
+    c=-1;
+  }
+ else   if (a != null && b == null) {
+    c=1;
+  }
+  return c;
+}

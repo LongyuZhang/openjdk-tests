@@ -1,0 +1,4 @@
+public static double fn_A(double a,double b,double c){
+  if (Math.abs(a - b) < c)   return 1;
+ else   return 0;
+}

@@ -1,0 +1,4 @@
+private static String fn_A(String a,int b,double... c){
+  System.out.println(c[0] + ", " + c[1]+ ", "+ c[2]);
+  return a;
+}

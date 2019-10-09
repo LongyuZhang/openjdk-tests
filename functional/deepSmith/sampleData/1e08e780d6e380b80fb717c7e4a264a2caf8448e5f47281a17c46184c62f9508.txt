@@ -1,0 +1,9 @@
+private static double fn_A(double a,double b){
+  if (a == 0) {
+    return Double.MAX_VALUE;
+  }
+  if (a == Double.POSITIVE_INFINITY || a == Double.NaN) {
+    return 0;
+  }
+  return b / a;
+}

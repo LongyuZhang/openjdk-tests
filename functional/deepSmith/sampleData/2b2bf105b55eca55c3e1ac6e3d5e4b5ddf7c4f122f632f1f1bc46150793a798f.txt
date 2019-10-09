@@ -1,0 +1,31 @@
+public static float[][] fn_A(float[][] a,int b){
+  float[][] c=new float[b][a[0].length];
+  c[0]=a[0];
+  float d;
+  float[] e=new float[b];
+  for (int f=0; f < a[0].length; f++) {
+    e[0]+=c[0][f] * c[0][f];
+  }
+  for (int f=0; f < a[0].length; f++) {
+    c[0][f]/=e[0];
+  }
+  for (int g=1; g < b; g++) {
+    c[g]=a[g];
+    for (int h=0; h < g; h++) {
+      d=0f;
+      for (int f=0; f < a[g].length; f++) {
+        d+=a[g][f] * c[h][f];
+      }
+      for (int f=0; f < a[g].length; f++) {
+        c[g][f]-=d * c[h][f];
+      }
+    }
+    for (int f=0; f < a[g].length; f++) {
+      e[g]+=c[g][f] * c[g][f];
+    }
+    for (int f=0; f < a[0].length; f++) {
+      c[g][f]/=e[g];
+    }
+  }
+  return c;
+}

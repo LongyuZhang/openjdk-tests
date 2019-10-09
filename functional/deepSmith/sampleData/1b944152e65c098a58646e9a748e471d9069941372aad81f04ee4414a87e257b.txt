@@ -1,0 +1,5 @@
+private static void fn_A(byte[] a,int b,byte[] c,int d,int e){
+  for (int f=0; f < e; f++) {
+    c[d + f]=a[b + f];
+  }
+}

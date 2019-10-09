@@ -1,0 +1,15 @@
+private static int fn_A(float a,float b,float c,float d){
+  if (d == 0 || c == 0)   return 1;
+  int e=1;
+  if (b > d || a > c) {
+    final int f=Math.round(b / d);
+    final int g=Math.round(a / c);
+    e=f < g ? f : g;
+  }
+  final float h=a * b;
+  final float i=c * d * 2;
+  while (h / (e * e) > i) {
+    e++;
+  }
+  return e;
+}

@@ -1,0 +1,13 @@
+private static final double fn_A(final double[] a) throws java.lang.Exception {
+  if (null == a)   throw new java.lang.Exception("SingleSegmentLagrangePolynomial::CalcMinDifference => Invalid Inputs");
+  int b=a.length;
+  if (1 >= b)   throw new java.lang.Exception("SingleSegmentLagrangePolynomial::CalcMinDifference => Invalid Inputs");
+  double c=java.lang.Math.abs(a[0] - a[1]);
+  for (int d=0; d < b; ++d) {
+    for (int e=d + 1; e < b; ++e) {
+      double f=java.lang.Math.abs(a[d] - a[e]);
+      c=c > f ? f : c;
+    }
+  }
+  return c;
+}

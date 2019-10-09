@@ -1,0 +1,14 @@
+public static int fn_A(char a){
+switch (a) {
+case '+':
+case '-':
+    return 0;
+case '*':
+case '/':
+  return 1;
+default :
+System.out.println("Error in precedence: non-operator");
+System.exit(1);
+}
+return -1;
+}

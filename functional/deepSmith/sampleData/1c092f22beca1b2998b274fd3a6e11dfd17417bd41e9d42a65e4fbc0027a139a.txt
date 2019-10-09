@@ -1,0 +1,12 @@
+public static void fn_A(double[] a){
+  double b=0.0;
+  double c=0.0;
+  for (int d=0; d < a.length; d++) {
+    b+=a[d];
+    c+=a[d] * a[d];
+  }
+  double e=b / a.length;
+  double f=Math.sqrt(c / a.length - e * e);
+  double g=1.0 / f;
+  for (int d=0; d < a.length; d++)   a[d]=(a[d] - e) * g;
+}

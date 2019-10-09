@@ -1,0 +1,6 @@
+public static void main(String... a){
+  int b=new Scanner(System.in).nextInt();
+  int c=((b % 12 + 8) % 12) + 'A';
+  int d=((b % 10 + 5) % 10) + 1;
+  System.out.println((char)(c) + "" + d % 10);
+}

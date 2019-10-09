@@ -1,0 +1,7 @@
+private static boolean fn_A(String[] a){
+  if (a.length < 1) {
+    System.err.println("There has to be at least one input parameter\n" + " - an output file.");
+    return false;
+  }
+  return true;
+}

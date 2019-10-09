@@ -1,0 +1,51 @@
+public static double[] fn_A(double[] a,double[] b,double[] c,double d){
+  double e, f;
+  double g=a[0];
+  double h=a[1];
+  double i=b[0];
+  double j=b[1];
+  double k=c[0];
+  double l=c[1];
+  if (i != k) {
+    double m=(l - j) / (k - i);
+    double n=-2 * (g + m * m * i - m * (j - h)) / (m * m + 1);
+    double o=((j - h) * (j - h) + m * m * i* i + g * g - 2 * m * i* (j - h) - d * d) / (m * m + 1);
+    double p=b[0];
+    double q=c[0];
+    double r=b[1];
+    double s=c[1];
+    if (p > q) {
+      p=c[0];
+      q=b[0];
+    }
+    if (r > s) {
+      r=c[1];
+      s=b[1];
+    }
+    if (i < k) {
+      e=-n / 2 + Math.sqrt((n / 2) * (n / 2) - o);
+    }
+ else {
+      e=-n / 2 - Math.sqrt((n / 2) * (n / 2) - o);
+    }
+    f=(e - i) * m + j;
+  }
+ else {
+    e=i;
+    double r=b[1];
+    double s=c[1];
+    if (r > s) {
+      r=c[1];
+      s=b[1];
+    }
+    double n=-2 * h;
+    double o=h * h + (i - g) * (i - g) - d * d;
+    if (j > l) {
+      f=-n / 2 - Math.sqrt((n / 2) * (n / 2) - o);
+    }
+ else {
+      f=-n / 2 + Math.sqrt((n / 2) * (n / 2) - o);
+    }
+  }
+  return new double[]{e,f};
+}

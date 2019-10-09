@@ -1,0 +1,5 @@
+public static void fn_A(int a,String b,int c){
+  if (a >= c) {
+    throw new IllegalArgumentException("Requires '" + b + "' in the range 0 to "+ (c - 1));
+  }
+}

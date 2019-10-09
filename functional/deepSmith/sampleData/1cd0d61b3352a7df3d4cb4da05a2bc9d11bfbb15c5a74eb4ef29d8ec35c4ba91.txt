@@ -1,0 +1,10 @@
+public static int fn_A(long[] a,int b,long c){
+  int d=0;
+  int e=b;
+  while (d < e) {
+    int f=(d + e) / 2;
+    if (c <= a[f])     e=f;
+ else     d=f + 1;
+  }
+  return d;
+}

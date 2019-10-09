@@ -1,0 +1,28 @@
+public static void fn_A(double[][] a){
+  final int b=a.length;
+  double[] c=new double[b];
+  for (int d=0; d < a.length; d++) {
+    final double[] e=a[d];
+    double f=c[d] - c[d] / (d + 1);
+    for (int g=d + 1; g < e.length; g++) {
+      final double h=e[g];
+      final double i=h - f, j=h - c[g];
+      f+=i / (g + 1);
+      c[g]+=j / (d + 1);
+    }
+    c[d]=f;
+  }
+  double k=c[0];
+  for (int d=1; d < b; d++) {
+    double l=c[d] - k;
+    k+=l / (d + 1);
+  }
+  for (int d=0; d < b; d++) {
+    a[d][d]=-2. * c[d] + k;
+    for (int g=d + 1; g < b; g++) {
+      final double h=a[d][g] - c[d] - c[g] + k;
+      a[d][g]=h;
+      a[g][d]=h;
+    }
+  }
+}

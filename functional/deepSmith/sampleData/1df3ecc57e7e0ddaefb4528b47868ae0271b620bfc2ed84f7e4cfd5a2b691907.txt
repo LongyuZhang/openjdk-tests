@@ -1,0 +1,15 @@
+public static double[] fn_A(double a,double b,double c){
+  double[] d=new double[2];
+  double e=Math.sqrt((b * b) - (4 * a * c));
+  double f=((-1 * b) + e) / (2 * a);
+  double g=((-1 * b) - e) / (2 * a);
+  if (f < g) {
+    d[0]=f;
+    d[1]=g;
+  }
+ else {
+    d[0]=g;
+    d[1]=f;
+  }
+  return d;
+}

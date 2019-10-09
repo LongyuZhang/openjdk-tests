@@ -1,0 +1,8 @@
+public static double[] fn_A(double[][] a,double[] b){
+  int c=a.length;
+  int d=a[0].length;
+  if (b.length != d)   throw new RuntimeException("Illegal matrix dimensions.");
+  double[] e=new double[c];
+  for (int f=0; f < c; f++)   for (int g=0; g < d; g++)   e[f]+=(a[f][g] * b[g]);
+  return e;
+}

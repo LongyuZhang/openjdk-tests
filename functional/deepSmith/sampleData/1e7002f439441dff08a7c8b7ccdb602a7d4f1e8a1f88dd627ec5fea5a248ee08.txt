@@ -1,0 +1,10 @@
+public static long fn_A(char[] a,int b,int c){
+  if (c > 8)   throw new IllegalArgumentException("string is too long");
+  long d=0;
+  for (int e=0; e < c; e++) {
+    char f=a[b + e];
+    if (f > 0xFF)     throw new IllegalArgumentException("string contains illegal character");
+    if (f != 0)     d=(d << 8) | f;
+  }
+  return d;
+}

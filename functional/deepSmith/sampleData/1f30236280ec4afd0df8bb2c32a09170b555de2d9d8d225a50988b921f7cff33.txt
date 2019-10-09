@@ -1,0 +1,5 @@
+public static void fn_A(int a,int b,double[] c,int d,double e){
+  for (int f=a; f < b; f++) {
+    c[f + d]/=e;
+  }
+}

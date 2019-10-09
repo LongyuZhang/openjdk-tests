@@ -1,0 +1,9 @@
+private static boolean fn_A(boolean a,boolean b,boolean c){
+  if (c) {
+    return true;
+  }
+  if (a || b) {
+    return false;
+  }
+  return true;
+}

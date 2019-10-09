@@ -1,0 +1,14 @@
+public static String fn_A(int a,int b){
+  int c=8;
+  String d="";
+  int e=Math.min(c - 1,(int)((float)b / (float)a * (float)c));
+  for (int f=0; f < c; f++) {
+    if (f == e) {
+      d+=":large_orange_diamond:";
+    }
+ else {
+      d+="";
+    }
+  }
+  return d;
+}

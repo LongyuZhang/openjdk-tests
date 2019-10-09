@@ -1,0 +1,4 @@
+private static String fn_A(){
+  StackTraceElement[] a=java.lang.Thread.currentThread().getStackTrace();
+  return a[4].getClassName() + "." + a[4].getMethodName();
+}

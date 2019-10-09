@@ -1,0 +1,7 @@
+public static final void fn_A(byte[] a,int b,int c){
+  int d=((a[b] & 0xff) + (c & 0xff)) >>> 8;
+  a[b]+=c & 0xff;
+  if ((d > 0) || ((c & 0xff00) != 0)) {
+    a[b + 1]+=((c >>> 8) & 0xff) + d;
+  }
+}

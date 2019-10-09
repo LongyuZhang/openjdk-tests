@@ -1,0 +1,6 @@
+public static int fn_A(long[] a,int b,long c){
+  for (int d=0; d < b; d++) {
+    if (c == a[d])     return d;
+  }
+  return -1;
+}

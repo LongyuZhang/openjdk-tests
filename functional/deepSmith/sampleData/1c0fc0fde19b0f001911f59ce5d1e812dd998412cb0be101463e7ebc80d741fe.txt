@@ -1,0 +1,9 @@
+public static double fn_A(double[][] a,int b){
+  double c=0;
+  for (int d=1; d < a.length; d++) {
+    for (int e=1; e < a[0].length; e++) {
+      c+=a[d][e] * e * e* d* d;
+    }
+  }
+  return c / b;
+}

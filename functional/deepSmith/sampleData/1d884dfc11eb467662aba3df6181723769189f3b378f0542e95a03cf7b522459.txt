@@ -1,0 +1,8 @@
+public static boolean fn_A(final byte[] a,final int b){
+  for (int c=0; c < b; c++) {
+    if (a[c] != 0) {
+      return false;
+    }
+  }
+  return true;
+}

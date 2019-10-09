@@ -1,0 +1,11 @@
+public static boolean fn_A(int a[],int b,int c){
+  for (int d=0; d < b; d++) {
+    for (int e=d + 1; e < b; e++) {
+      if (Math.abs(a[d] - a[e]) == c) {
+        System.out.println("The pair is:: " + a[d] + " & "+ a[e]);
+        return true;
+      }
+    }
+  }
+  return false;
+}

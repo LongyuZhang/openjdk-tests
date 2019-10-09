@@ -1,0 +1,23 @@
+public static void main(String a[]) throws Exception {
+  FileInputStream b=null;
+  try {
+    b=new FileInputStream(".");
+    throw new Exception("FileInputStream.open should not work on dirs");
+  }
+ catch (  IOException c) {
+  }
+  FileOutputStream d=null;
+  try {
+    d=new FileOutputStream(".");
+    throw new Exception("FileOutputStream.open should'nt work on dirs");
+  }
+ catch (  IOException c) {
+  }
+  RandomAccessFile e=null;
+  try {
+    e=new RandomAccessFile(".","r");
+    throw new Exception("RandomAccessFile.open should'nt work on dirs");
+  }
+ catch (  IOException c) {
+  }
+}

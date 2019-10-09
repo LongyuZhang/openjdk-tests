@@ -1,0 +1,5 @@
+static Object fn_A(Object a){
+{
+    return null;
+  }
+}

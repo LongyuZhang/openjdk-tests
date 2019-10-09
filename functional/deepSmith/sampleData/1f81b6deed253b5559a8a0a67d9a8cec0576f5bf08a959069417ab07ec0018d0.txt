@@ -1,0 +1,7 @@
+private static boolean fn_A(final int[] a,final int[] b,final int c){
+  if (a.length < c || b.length < c)   return false;
+  for (int d=0; d < c; d++) {
+    if (a[d] != b[d])     return false;
+  }
+  return true;
+}

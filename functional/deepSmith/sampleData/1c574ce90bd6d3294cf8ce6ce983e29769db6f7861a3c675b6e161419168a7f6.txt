@@ -1,0 +1,4 @@
+public static double fn_A(double[] a,int b,double c){
+  if (a.length > b)   return a[b];
+  return c;
+}

@@ -1,0 +1,13 @@
+public static int fn_A(int a,char[] b,int c){
+  if (0 <= a && a <= 0xFFFF) {
+    b[c]=(char)a;
+    return 1;
+  }
+ else {
+    assert(0x10000 <= a && a <= 0x10FFFF);
+    final int d=(a - 0x10000);
+    b[c]=(char)(0x0000D800 | (d >> 10));
+    b[c]=(char)(0x0000DC00 | (d & 0x000003FF));
+    return 2;
+  }
+}

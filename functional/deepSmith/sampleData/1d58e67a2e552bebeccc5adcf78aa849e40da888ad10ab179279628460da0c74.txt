@@ -1,0 +1,5 @@
+public static final double fn_A(double a,double b,double c){
+  a=(a > c) ? c : a;
+  a=(a < b) ? b : a;
+  return a;
+}

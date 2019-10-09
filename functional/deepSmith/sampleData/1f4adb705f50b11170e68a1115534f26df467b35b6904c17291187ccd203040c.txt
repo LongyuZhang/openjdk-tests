@@ -1,0 +1,10 @@
+private static short[][] fn_A(short[][] a){
+  short[][] b=new short[a.length][a[0].length];
+  if (b.length == 0) {
+    return new short[0][0];
+  }
+  for (int c=0; c < b.length; c++) {
+    System.arraycopy(a[c],0,b[c],0,b[0].length);
+  }
+  return b;
+}

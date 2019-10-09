@@ -1,0 +1,13 @@
+public static int fn_A(int a,byte[] b,int c){
+  if (a <= 0x7F) {
+    b[c++]=(byte)a;
+    return c;
+  }
+  do {
+    b[c++]=(byte)(0x80 + (a & 0x7F));
+    a=a >> 7;
+  }
+ while (a > 0x7F);
+  b[c++]=(byte)a;
+  return c;
+}

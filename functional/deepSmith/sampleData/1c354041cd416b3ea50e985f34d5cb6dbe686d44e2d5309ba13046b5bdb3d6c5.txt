@@ -1,0 +1,12 @@
+public static double fn_A(int a,int b,double c){
+  double d;
+  double e=(double)b;
+  double f=(double)a;
+  if (a > b / 2) {
+    d=c * (f - e) / e;
+  }
+ else {
+    d=c * f / e;
+  }
+  return d;
+}

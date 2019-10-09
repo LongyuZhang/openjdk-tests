@@ -1,0 +1,7 @@
+public static double fn_A(double a,double b,double c,double d,double e,double f,double g,double h){
+  double i=a - e;
+  double j=b - f;
+  double k=c - g;
+  double l=d - h;
+  return i * i + j * j + k * k + l * l;
+}

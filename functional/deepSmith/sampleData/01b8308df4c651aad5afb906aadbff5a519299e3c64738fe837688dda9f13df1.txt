@@ -1,0 +1,19 @@
+public static void fn_A(double[][] a,double[] b,double[][] c,double[] d,double[][] e){
+  for (int f=0; f < 3; f++) {
+    double[] g=a[f];
+    double[] h=e[f];
+    for (int i=0; i < 3; i++) {
+      double[] j=a[i];
+      d[f]+=g[i] * b[i];
+      if (i < f) {
+        h[i]=e[i][f];
+      }
+ else {
+        for (int k=0; k < 3; k++) {
+          double[] l=c[k];
+          h[i]+=g[k] * (j[0] * l[0] + j[1] * l[1] + j[2] * l[2]);
+        }
+      }
+    }
+  }
+}

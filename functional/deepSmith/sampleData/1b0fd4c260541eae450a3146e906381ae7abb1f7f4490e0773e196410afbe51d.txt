@@ -1,0 +1,4 @@
+private static String fn_A(String a){
+  String b="CN=" + a + ", OU=Test, O=CyberVillainsCA, L=Seattle, S=Washington, C=US";
+  return b;
+}

@@ -1,0 +1,24 @@
+private static String fn_A(int a){
+switch (a) {
+case 1:
+    return "MOBILE_ALL";
+case 2:
+  return "MOBILE_3G_LOWER";
+case 3:
+return "MOBILE_4G";
+case 4:
+return "WIFI";
+case 5:
+return "ETHERNET";
+case 6:
+return "MOBILE_WILDCARD";
+case 7:
+return "WIFI_WILDCARD";
+case 8:
+return "BLUETOOTH";
+case 9:
+return "MATCH_MOBILE_ENT1";
+default :
+return "UNKNOWN";
+}
+}

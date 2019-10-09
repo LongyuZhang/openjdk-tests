@@ -1,0 +1,25 @@
+public static int fn_A(char[] a,int b,int c,int d,int e){
+  int f=a.length;
+  int g=b + c;
+  if (b < 0 || c < 0 || g > f || d < b || d > g)   throw new IndexOutOfBoundsException();
+  int h=e;
+  int i=d;
+  int j=1;
+  if (h >= 0) {
+    for (; h > 0; i++) {
+      h--;
+      if (Character.isHighSurrogate(a[i]) && (i + 1) < f && Character.isLowSurrogate(a[i + 1]))       i++;
+    }
+    return i;
+  }
+ else {
+    h*=-1;
+    for (; h > 0; ) {
+      h--;
+      i--;
+      if (Character.isLowSurrogate(a[i]) && (i - 1) >= 0 && Character.isHighSurrogate(a[i - 1]))       i--;
+      if (i < b)       throw new IndexOutOfBoundsException();
+    }
+    return i;
+  }
+}

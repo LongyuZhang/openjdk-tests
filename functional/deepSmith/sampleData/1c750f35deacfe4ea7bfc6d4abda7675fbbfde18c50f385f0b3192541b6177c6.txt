@@ -1,0 +1,8 @@
+public static long fn_A(long a){
+  long b=1;
+  while (a > 0) {
+    b*=a;
+    a--;
+  }
+  return b;
+}

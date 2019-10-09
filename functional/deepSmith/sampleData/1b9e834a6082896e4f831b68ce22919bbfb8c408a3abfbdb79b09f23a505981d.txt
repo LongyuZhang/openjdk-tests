@@ -1,0 +1,15 @@
+public static long fn_A(long a){
+  int[] b={1,2};
+  if (a < 2) {
+    return b[(int)a];
+  }
+  long c=1;
+  long d=0;
+  long e=0;
+  for (int f=2; f <= a; ++f) {
+    e=c + d;
+    d=c;
+    c=e;
+  }
+  return e;
+}

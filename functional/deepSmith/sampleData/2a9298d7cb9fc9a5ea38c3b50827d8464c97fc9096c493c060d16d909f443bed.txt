@@ -1,0 +1,10 @@
+private static final long[] fn_A(){
+  long[] a=new long[3072];
+  a[0]=288054471471136768L;
+  a[1]=576460745995190270L;
+  for (int b=2; b <= 1022; b++) {
+    a[b]=-1L;
+  }
+  a[1023]=9223372036854775807L;
+  return a;
+}

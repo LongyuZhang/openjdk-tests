@@ -1,0 +1,8 @@
+public static File fn_A(String a){
+  try {
+    return new File(a);
+  }
+ catch (  Exception b) {
+    return null;
+  }
+}

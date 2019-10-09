@@ -1,0 +1,16 @@
+public static double[] fn_A(int a){
+  double[] b=new double[a];
+  if (a % 2 == 0) {
+    int c=(int)((a - 1) / 2);
+    for (int d=-c; d < a / 2 + 1; d++) {
+      b[d + c]=Math.cos(((double)d * Math.PI) / ((double)a + 1.0d));
+    }
+  }
+ else {
+    int c=(int)a / 2;
+    for (int d=-c; d < c + 1; d++) {
+      b[d + c]=Math.cos(((double)d * Math.PI) / ((double)a + 1.0d));
+    }
+  }
+  return b;
+}

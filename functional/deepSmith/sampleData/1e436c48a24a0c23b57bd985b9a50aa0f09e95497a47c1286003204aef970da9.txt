@@ -1,0 +1,15 @@
+static int fn_A(int a,int[] b){
+  int c=0;
+  int[][] d=new int[b.length + 1][a + 1];
+  for (int e=0; e < a + 1; e++)   d[0][e]=0;
+  for (int e=0; e < b.length + 1; e++)   d[e][0]=0;
+  for (int e=1; e < b.length + 1; e++) {
+    for (int f=1; f < a + 1; f++) {
+      if (b[e - 1] > f)       d[e][f]=d[e - 1][f];
+ else {
+        d[e][f]=Math.max(d[e - 1][f],d[e - 1][f - b[e - 1]] + b[e - 1]);
+      }
+    }
+  }
+  return d[b.length][a];
+}

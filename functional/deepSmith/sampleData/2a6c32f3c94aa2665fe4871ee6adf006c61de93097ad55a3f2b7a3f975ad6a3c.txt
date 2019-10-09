@@ -1,0 +1,6 @@
+public static long fn_A(String a,long b){
+  long c=System.nanoTime();
+  double d=(c - b) / (1000000.0d);
+  System.out.println(a + d + " miliSecond");
+  return c;
+}

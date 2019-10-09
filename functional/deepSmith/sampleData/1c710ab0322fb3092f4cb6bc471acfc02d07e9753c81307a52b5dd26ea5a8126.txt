@@ -1,0 +1,6 @@
+public static float fn_A(float a,float b,float c,float d){
+  a/=d / 2;
+  if (a < 1)   return (float)(c / 2 * Math.pow(2,10 * (a - 1)) + b);
+  a--;
+  return (float)(c / 2 * (-Math.pow(2,-10 * a) + 2) + b);
+}

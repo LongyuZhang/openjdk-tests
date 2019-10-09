@@ -1,0 +1,5 @@
+public static final int fn_A(int a,int b){
+  a%=b;
+  if (a < 0)   a+=b;
+  return a;
+}

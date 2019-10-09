@@ -1,0 +1,12 @@
+public static boolean fn_A(int[] a,int b){
+  for (int c=0; c < a.length; c++) {
+    int d=a[c];
+    int e=c + 1 + b < a.length ? c + 1 + b : a.length;
+    for (int f=c + 1; f < e; f++) {
+      if (d == a[f]) {
+        return true;
+      }
+    }
+  }
+  return false;
+}

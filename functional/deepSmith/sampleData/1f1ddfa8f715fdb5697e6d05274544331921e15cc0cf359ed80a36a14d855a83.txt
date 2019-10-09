@@ -1,0 +1,19 @@
+public static int fn_A(int a[][],int b,int c){
+  int d=-999;
+  if (b == 0 || b == 5) {
+    return d;
+  }
+ else   if (c == 0 || c == 5) {
+    return d;
+  }
+ else {
+    d=a[b - 1][c - 1];
+    d+=a[b][c - 1];
+    d+=a[b + 1][c - 1];
+    d+=a[b][c];
+    d+=a[b - 1][c + 1];
+    d+=a[b][c + 1];
+    d+=a[b + 1][c + 1];
+    return d;
+  }
+}

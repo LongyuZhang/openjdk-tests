@@ -1,0 +1,10 @@
+private static String fn_A(byte[] a,int b){
+  int c=0;
+  while (true) {
+    if (a[b + c] == 0) {
+      break;
+    }
+    c++;
+  }
+  return new String(a,b,c,StandardCharsets.UTF_8);
+}

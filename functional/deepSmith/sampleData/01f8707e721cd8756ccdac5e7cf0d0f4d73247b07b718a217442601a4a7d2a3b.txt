@@ -1,0 +1,9 @@
+public static boolean fn_A(int a,int b,int c){
+  final int d=0x0000ff00;
+  b&=0x00ffffff;
+  if (c < 0)   c=0;
+ else   if (c > 255)   c=255;
+  boolean e=(((a >>> 24) & 0xff) < (255 - c));
+  a&=0x00ffffff;
+  return (a == b || (e && b == d));
+}

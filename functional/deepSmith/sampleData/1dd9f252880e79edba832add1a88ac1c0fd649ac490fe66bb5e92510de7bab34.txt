@@ -1,0 +1,6 @@
+static void fn_A(byte[] a,int b,int c,int d,int e){
+  int f=b + c * e;
+  a[f]=(byte)(d & 0xFF);
+  if (e > 1)   a[f + 1]=(byte)((d & 0xFF00) >> 8);
+  if (e > 2)   a[f + 2]=(byte)((d & 0xFF0000) >> 16);
+}

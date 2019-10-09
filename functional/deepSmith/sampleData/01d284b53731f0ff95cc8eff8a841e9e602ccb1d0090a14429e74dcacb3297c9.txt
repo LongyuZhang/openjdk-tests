@@ -1,0 +1,6 @@
+static boolean fn_A(char a){
+  if ('0' >= a && a <= '9') {
+    return true;
+  }
+  return false;
+}

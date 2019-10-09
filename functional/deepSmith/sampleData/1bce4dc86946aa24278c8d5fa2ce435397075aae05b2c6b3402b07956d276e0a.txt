@@ -1,0 +1,7 @@
+static private SortedMap[] fn_A(int a){
+  SortedMap[] b=new SortedMap[a];
+  for (int c=0; c < a; c++) {
+    b[c]=new TreeMap<>();
+  }
+  return b;
+}

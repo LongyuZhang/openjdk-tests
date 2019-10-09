@@ -1,0 +1,14 @@
+public static String fn_A(int a){
+  if (a < 1024) {
+    return a + "B";
+  }
+ else   if (a < 1024 * 1024) {
+    return String.format("%.1fKB",a / 1024.0f);
+  }
+ else   if (a < 1024 * 1024 * 1024) {
+    return String.format("%.1fMB",a / (1024.0f * 1024.0f));
+  }
+ else {
+    return String.format("%.1fGB",a / (1024.0f * 1024.0f * 1024.0f));
+  }
+}

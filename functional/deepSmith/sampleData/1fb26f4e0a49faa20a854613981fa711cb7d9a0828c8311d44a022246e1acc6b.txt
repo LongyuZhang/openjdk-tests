@@ -1,0 +1,9 @@
+private static int fn_A(int[] a,int b,int c,int d){
+  int e=b;
+  int f=d * c + b;
+  while (e < d && (a[f] >>> 24) > 0) {
+    e++;
+    f++;
+  }
+  return e;
+}

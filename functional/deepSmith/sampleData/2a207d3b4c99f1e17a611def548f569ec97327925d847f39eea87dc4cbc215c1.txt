@@ -1,0 +1,30 @@
+private static boolean fn_A(int a,int b,int c){
+switch (b) {
+case Character.UNASSIGNED:
+case Character.SPACE_SEPARATOR:
+case Character.LINE_SEPARATOR:
+case Character.PARAGRAPH_SEPARATOR:
+    return true;
+}
+switch (a) {
+case Character.UPPERCASE_LETTER:
+  if (c == Character.UPPERCASE_LETTER) {
+    return true;
+  }
+case Character.TITLECASE_LETTER:
+return b != Character.UPPERCASE_LETTER;
+case Character.LOWERCASE_LETTER:
+return b > Character.OTHER_LETTER || b <= Character.UNASSIGNED;
+case Character.DECIMAL_DIGIT_NUMBER:
+case Character.LETTER_NUMBER:
+case Character.OTHER_NUMBER:
+return !(b == Character.DECIMAL_DIGIT_NUMBER || b == Character.LETTER_NUMBER || b == Character.OTHER_NUMBER);
+case Character.MATH_SYMBOL:
+case Character.CURRENCY_SYMBOL:
+case Character.OTHER_PUNCTUATION:
+case Character.DASH_PUNCTUATION:
+return true;
+default :
+return b == Character.UNASSIGNED;
+}
+}

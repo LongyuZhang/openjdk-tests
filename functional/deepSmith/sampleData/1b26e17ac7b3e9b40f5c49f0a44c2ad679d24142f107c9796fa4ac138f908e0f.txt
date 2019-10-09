@@ -1,0 +1,11 @@
+final static boolean fn_A(){
+  try {
+    if ((Locale.getDefault().equals(Locale.CANADA)) || (Locale.getDefault().equals(Locale.US))) {
+      return true;
+    }
+  }
+ catch (  final Exception a) {
+    return false;
+  }
+  return false;
+}

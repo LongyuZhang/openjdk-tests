@@ -1,0 +1,14 @@
+private static int fn_A(byte[] a,int b,byte[] c,int d,int e){
+switch (e - d) {
+case 4:
+    a[b++]=c[d++];
+case 3:
+  a[b++]=c[d++];
+case 2:
+a[b++]=c[d++];
+case 1:
+a[b++]=c[d++];
+default :
+}
+return b;
+}

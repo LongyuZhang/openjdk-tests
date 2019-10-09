@@ -1,0 +1,11 @@
+public static boolean fn_A(String a[]){
+  try {
+    if (a == null || a.length <= 0) {
+      return true;
+    }
+    return false;
+  }
+ catch (  Exception b) {
+    return false;
+  }
+}

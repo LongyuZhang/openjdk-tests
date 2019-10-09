@@ -1,0 +1,7 @@
+public static final boolean fn_A(final double a){
+  double b=a;
+  while (b > 9 && b % 10 == 0) {
+    b/=10;
+  }
+  return b == 1;
+}

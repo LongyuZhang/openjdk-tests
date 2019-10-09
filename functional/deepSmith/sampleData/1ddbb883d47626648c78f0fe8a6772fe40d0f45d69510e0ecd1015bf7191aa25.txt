@@ -1,0 +1,6 @@
+public static void fn_A(float[] a,float[] b,float[] c){
+  float d=b[0], e=b[1], f=b[2];
+  c[0]=a[0] * d + a[4] * e + a[8] * f + a[12];
+  c[1]=a[1] * d + a[5] * e + a[9] * f + a[13];
+  c[2]=a[2] * d + a[6] * e + a[10] * f + a[14];
+}

@@ -1,0 +1,7 @@
+private static boolean fn_A(int a,int b,int[] c){
+  int d=c[0];
+  int e=c[1];
+  int f=c[0] + c[2];
+  int g=c[1] + c[3];
+  return a >= d && b >= e && a < f && b < g;
+}

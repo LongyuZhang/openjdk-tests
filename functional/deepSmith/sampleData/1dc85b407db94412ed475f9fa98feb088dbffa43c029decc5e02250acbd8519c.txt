@@ -1,0 +1,6 @@
+private static int fn_A(int a){
+  if (a > Integer.MAX_VALUE / 2 || a < Integer.MIN_VALUE / 2) {
+    return Integer.MAX_VALUE;
+  }
+  return a * a;
+}

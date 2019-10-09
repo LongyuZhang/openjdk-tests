@@ -1,0 +1,4 @@
+protected static double fn_A(double a){
+  double b=2 * a;
+  return Math.sqrt((b * b - 1) / 12);
+}

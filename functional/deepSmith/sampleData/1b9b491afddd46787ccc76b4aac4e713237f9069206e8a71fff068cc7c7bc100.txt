@@ -1,0 +1,9 @@
+public static boolean fn_A(byte[] a){
+  if (a.length < 2) {
+    return false;
+  }
+  if ((a[0] == 73 && a[1] == 73) || (a[0] == 77 && a[1] == 77)) {
+    return true;
+  }
+  return false;
+}

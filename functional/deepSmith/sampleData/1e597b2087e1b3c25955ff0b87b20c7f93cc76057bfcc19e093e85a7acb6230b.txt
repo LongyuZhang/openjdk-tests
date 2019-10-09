@@ -1,0 +1,8 @@
+public static boolean fn_A(int[] a,int b){
+  for (int c=0; c < a.length; ++c) {
+    for (int d=c + 1; d < a.length; ++d) {
+      if (a[c] + a[d] == b)       return true;
+    }
+  }
+  return false;
+}

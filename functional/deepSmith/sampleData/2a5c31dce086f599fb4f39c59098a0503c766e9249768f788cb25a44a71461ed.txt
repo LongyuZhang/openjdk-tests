@@ -1,0 +1,6 @@
+public static void fn_A(long[] a,long[] b){
+  for (int c=0; c < a.length; c++) {
+    System.out.print(Long.toHexString(a[c] | b[c]) + ", ");
+  }
+  System.out.println();
+}

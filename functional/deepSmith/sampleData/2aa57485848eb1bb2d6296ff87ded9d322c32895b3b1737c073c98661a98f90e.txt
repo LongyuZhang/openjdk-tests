@@ -1,0 +1,13 @@
+public static boolean fn_A(int a){
+  if (a < 0)   return false;
+  int b=1;
+  while (a / b >= 10)   b*=10;
+  while (a != 0) {
+    int c=a / b;
+    int d=a % 10;
+    if (c != d)     return false;
+    a=(a % b) / 10;
+    b/=100;
+  }
+  return true;
+}

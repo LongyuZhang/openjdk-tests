@@ -1,0 +1,9 @@
+public static String fn_A(String a,String b,String c){
+  String d="<video controls ";
+  if (b != null)   d+="width='" + b + "' ";
+  if (c != null)   d+="height='" + c + "' ";
+  d+=">";
+  d+="<source src='" + a + "' />";
+  d+="</video>";
+  return d;
+}

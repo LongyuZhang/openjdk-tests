@@ -1,0 +1,10 @@
+private static String fn_A(byte[] a){
+  String b="";
+  for (int c=0; c < a.length; c++) {
+    if (c > 0) {
+      b+=".";
+    }
+    b+=a[c] & 0xFF;
+  }
+  return b;
+}

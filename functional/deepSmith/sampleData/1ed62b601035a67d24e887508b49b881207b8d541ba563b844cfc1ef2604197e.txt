@@ -1,0 +1,6 @@
+private static void fn_A(double a,double b,int c,int d,double[] e){
+  double f=(b - a) / (d + 1);
+  for (int g=c; g < c + d; g++) {
+    e[g]=a + f * (g - c + 1);
+  }
+}

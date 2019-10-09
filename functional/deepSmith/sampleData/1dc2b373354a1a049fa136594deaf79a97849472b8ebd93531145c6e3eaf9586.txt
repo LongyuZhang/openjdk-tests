@@ -1,0 +1,6 @@
+public static String[] fn_A(){
+  final String a="EUR Discounting";
+  final String b="Forward EURIBOR3M";
+  final String c="Forward EURIBOR6M";
+  return new String[]{a,b,c};
+}

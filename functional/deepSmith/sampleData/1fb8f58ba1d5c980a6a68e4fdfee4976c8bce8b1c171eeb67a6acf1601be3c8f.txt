@@ -1,0 +1,15 @@
+public static String[] fn_A(Object[] a){
+  if (a == null) {
+    return null;
+  }
+  String[] b=new String[a.length];
+  for (int c=0; c < a.length; c++) {
+    if (a[c] instanceof String) {
+      b[c]=(String)a[c];
+    }
+ else {
+      return null;
+    }
+  }
+  return b;
+}

@@ -1,0 +1,26 @@
+public static String fn_A(int a){
+switch (a) {
+case 0x1:
+    return "MOVIES";
+case 0x2:
+  return "NEWS";
+case 0x3:
+return "GAMING";
+case 0x4:
+return "SPORTS";
+case 0x5:
+return "FAMILY_KIDS";
+case 0x6:
+return "DRAMA";
+case 0x7:
+return "EDUCATION";
+case 0x8:
+return "NEWS";
+case 0x9:
+return "EDUCATION";
+case 0xA:
+return "TRAVEL";
+default :
+return "ANIMAL_WILDLIFE";
+}
+}

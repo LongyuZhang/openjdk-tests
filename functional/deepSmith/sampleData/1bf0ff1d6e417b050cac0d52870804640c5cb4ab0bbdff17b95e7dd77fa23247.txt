@@ -1,0 +1,6 @@
+private static int fn_A(boolean a,boolean b){
+  int c=0;
+  if (a)   c+=2;
+  if (b)   c+=1;
+  return c;
+}

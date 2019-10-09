@@ -1,0 +1,5 @@
+public static void fn_A(final boolean a[],final int b,final int c){
+  final boolean d=a[b];
+  a[b]=a[c];
+  a[c]=d;
+}

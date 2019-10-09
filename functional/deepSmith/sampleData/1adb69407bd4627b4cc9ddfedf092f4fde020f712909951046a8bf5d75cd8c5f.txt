@@ -1,0 +1,17 @@
+private static Collection fn_A(Object a){
+  if (a != null) {
+    if (a instanceof List) {
+      return (List)a;
+    }
+ else     if (a instanceof Set) {
+      return (Set)a;
+    }
+ else     if (a instanceof Map) {
+      return new ArrayList(((Map)a).values());
+    }
+ else     if (a instanceof Object[]) {
+      return new ArrayList(Arrays.asList((Object[])a));
+    }
+  }
+  return new ArrayList();
+}

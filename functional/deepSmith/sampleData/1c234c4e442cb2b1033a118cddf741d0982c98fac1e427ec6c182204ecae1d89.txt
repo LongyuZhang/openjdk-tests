@@ -1,0 +1,5 @@
+private static boolean fn_A(float a,float[][][] b,int c,int d,int e,int f){
+  float[][] g=b[c - 1], h=b[c], i=b[c + 1];
+  int j=d - f, k=d + f, l=e - f, m=e + f;
+  return (a >= g[j][l] && a >= g[j][e] && a >= g[j][m] && a >= g[d][l] && a >= g[d][e] && a >= g[d][m] && a >= g[k][l] && a >= g[k][e] && a >= g[k][m] && a >= h[j][l] && a >= h[j][e] && a >= h[j][m] && a >= h[d][l] && a >= h[d][m] && a >= h[k][l] && a >= h[k][e] && a >= h[k][m] && a >= i[j][l] && a >= i[j][e] && a >= i[j][m] && a >= i[d][l] && a >= i[d][e] && a >= i[d][m] && a >= i[k][l] && a >= i[k][e] && a >= i[k][m]);
+}

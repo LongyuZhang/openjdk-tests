@@ -1,0 +1,4 @@
+public static int fn_A(int a){
+  if (a >= 0 && a <= 0x7f)   return a;
+ else   return a - 0x100;
+}

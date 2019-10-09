@@ -1,0 +1,9 @@
+private static String fn_A(int a){
+  String b="";
+  while (a > 0) {
+    int c=a % 26;
+    a=a / 26;
+    b=((char)(c + 64)) + b;
+  }
+  return b;
+}

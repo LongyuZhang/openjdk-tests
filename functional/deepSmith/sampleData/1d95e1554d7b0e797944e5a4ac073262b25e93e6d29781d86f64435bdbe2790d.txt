@@ -1,0 +1,15 @@
+public static int fn_A(double[] a,int b,int c){
+  double d=Double.NaN;
+  int e=-1;
+  d=a[b];
+  e=b;
+  for (int f=b; f < c; f++) {
+    if (!Double.isNaN(a[f])) {
+      if (a[f] < d) {
+        d=a[f];
+        e=f;
+      }
+    }
+  }
+  return e;
+}

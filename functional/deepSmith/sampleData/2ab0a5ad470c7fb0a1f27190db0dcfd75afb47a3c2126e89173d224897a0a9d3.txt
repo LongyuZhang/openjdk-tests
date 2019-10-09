@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  char b='\u00A9';
+  System.out.println("Unicode output was : " + b);
+  boolean c=true;
+  boolean d=false;
+}

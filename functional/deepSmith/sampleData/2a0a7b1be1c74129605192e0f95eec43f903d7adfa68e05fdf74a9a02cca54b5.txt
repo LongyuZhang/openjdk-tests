@@ -1,0 +1,5 @@
+public static float[] fn_A(float[] a,float[] b){
+  float c=a[0], d=a[1], e=a[2];
+  float f=b[0], g=b[1], h=b[2];
+  return new float[]{d * h - e * g,e * f - c * h,c * g - d * f};
+}

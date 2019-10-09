@@ -1,0 +1,8 @@
+private static CharSequence fn_A(CharSequence a,CharSequence b,CharSequence c){
+  if (a == null) {
+    return b == null ? c : b;
+  }
+ else {
+    return a;
+  }
+}

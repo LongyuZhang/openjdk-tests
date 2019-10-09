@@ -1,0 +1,5 @@
+static int fn_A(int a){
+  Integer b=new Integer(a);
+  if ((a & 1) == 0)   b=a + 1;
+  return b;
+}

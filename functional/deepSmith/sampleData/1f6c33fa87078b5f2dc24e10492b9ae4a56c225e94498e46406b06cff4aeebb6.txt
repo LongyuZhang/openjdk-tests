@@ -1,0 +1,9 @@
+private static double[] fn_A(double[][] a,int b){
+  double[] c=new double[2];
+  c[0]=c[1]=a[0][b];
+  for (int d=0; d < a.length; d++) {
+    if (a[d][b] < c[0])     c[0]=a[d][b];
+    if (a[d][b] > c[1])     c[0]=a[d][b];
+  }
+  return c;
+}

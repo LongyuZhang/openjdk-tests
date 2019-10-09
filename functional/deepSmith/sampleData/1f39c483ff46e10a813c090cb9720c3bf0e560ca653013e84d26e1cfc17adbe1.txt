@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  System.out.print("Goodbye, ");
+  System.out.println("cruel world");
+}

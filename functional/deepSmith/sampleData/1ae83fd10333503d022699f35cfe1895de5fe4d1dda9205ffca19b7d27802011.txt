@@ -1,0 +1,11 @@
+static void fn_A(int[] a){
+  boolean b=true;
+  for (int c=0; c < a.length; c++) {
+    if (!b) {
+      System.out.print(" ");
+    }
+    System.out.print(a[c]);
+    b=false;
+  }
+  System.out.println();
+}

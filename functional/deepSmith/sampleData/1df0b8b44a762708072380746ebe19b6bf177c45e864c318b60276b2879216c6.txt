@@ -1,0 +1,6 @@
+private static Object fn_A(Object a){
+  if (a instanceof Integer || a instanceof Double) {
+    return "[1] " + a;
+  }
+  return a;
+}

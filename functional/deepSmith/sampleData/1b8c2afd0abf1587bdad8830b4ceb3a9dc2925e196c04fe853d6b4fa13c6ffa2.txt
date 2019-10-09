@@ -1,0 +1,16 @@
+private static double fn_A(double a,double b,double c,double d){
+  double e=a + c;
+  double f=b + d;
+  double g=a + b;
+  double h=c + d;
+  double i=g + h;
+  double j=(g / i) * e;
+  double k=(g / i) * f;
+  double l=(h / i) * e;
+  double m=(h / i) * f;
+  double n=(a == 0) ? 0 : a * Math.log(a / j);
+  double o=(b == 0) ? 0 : b * Math.log(b / k);
+  double p=(c == 0) ? 0 : c * Math.log(c / l);
+  double q=(d == 0) ? 0 : d * Math.log(d / m);
+  return 2 * (n + o + p+ q);
+}

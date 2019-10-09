@@ -1,0 +1,5 @@
+static int fn_A(final int a){
+  final int b=a % 10;
+  if (b == 0)   return a;
+  return a >= 0 ? a - b + 10 : a - b;
+}

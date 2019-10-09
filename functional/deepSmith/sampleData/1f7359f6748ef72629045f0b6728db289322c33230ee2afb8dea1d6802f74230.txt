@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.err.println("Proper Usage is:\njava com.ibm.streamsx.sample.weather.WeatherStationSimulator /path/to/device.cfg [run-time-in-minutes].\nSpecify the path to the device.cfg file to use to connect to the Watson IoT platform. \n" + "\nThis app is designed to run for a fixed time in order not to use up your quota on the Watson IoT platform." + "\nUse the optional run-time parameter to specify how long the application should submit data, in minutes. A value of 0 means this application will run indefinitely, the default is 20.");
+  System.exit(1);
+}

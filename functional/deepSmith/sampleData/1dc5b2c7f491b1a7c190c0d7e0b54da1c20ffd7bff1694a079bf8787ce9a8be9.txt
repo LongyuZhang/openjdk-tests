@@ -1,0 +1,9 @@
+public static String fn_A(long a){
+  a/=1000;
+  String b="";
+  for (int c=0; c < 2; c++) {
+    b=":" + a % 60 + b;
+    a/=60;
+  }
+  return a + b;
+}

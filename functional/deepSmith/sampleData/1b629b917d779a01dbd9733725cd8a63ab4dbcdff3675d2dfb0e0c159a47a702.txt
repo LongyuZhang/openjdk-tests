@@ -1,0 +1,5 @@
+private static void fn_A(){
+  System.out.println("Usage: ReleaseBuilder <VERSION> <NOTES>");
+  System.out.println("    VERSION    version name");
+  System.out.println("    NOTES      release notes file");
+}

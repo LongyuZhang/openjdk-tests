@@ -1,0 +1,11 @@
+public static double fn_A(double a,double b){
+  if (a >= 0 && b >= 0 && b <= 12) {
+    double c=(a * 12) * 2.54;
+    c+=b * 2.54;
+    System.out.println(a + " feet, " + b+ " inches = "+ c+ " cm.");
+    return c;
+  }
+ else {
+    return -1;
+  }
+}

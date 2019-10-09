@@ -1,0 +1,8 @@
+private static ClassLoader fn_A(){
+  try {
+    return (ClassLoader)ClassLoader.class.getMethod("getPlatformClassLoader").invoke(null);
+  }
+ catch (  ReflectiveOperationException a) {
+    return null;
+  }
+}

@@ -1,0 +1,5 @@
+public static final long fn_A(int a){
+  long b=0L;
+  if (a > 0)   for (b=1L; a > 1; b*=a--)   ;
+  return b;
+}

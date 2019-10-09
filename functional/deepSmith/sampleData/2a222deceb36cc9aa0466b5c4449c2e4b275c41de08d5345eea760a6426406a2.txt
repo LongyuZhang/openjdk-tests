@@ -1,0 +1,5 @@
+protected static short fn_A(int a,byte[] b){
+  int c=(b[a++] & 0xff);
+  int d=(b[a] & 0xff);
+  return (short)((c << 8) + d);
+}

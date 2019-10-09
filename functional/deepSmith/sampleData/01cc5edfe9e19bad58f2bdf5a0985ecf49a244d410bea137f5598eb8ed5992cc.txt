@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b){
+  int c=2 + 1 + 2+ 4+ 4+ 4+ a+ 4+ b;
+  return c;
+}

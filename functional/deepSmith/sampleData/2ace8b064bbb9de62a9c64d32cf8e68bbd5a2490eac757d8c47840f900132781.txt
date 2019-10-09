@@ -1,0 +1,18 @@
+public static int fn_A(int[] a){
+  int[] b=new int[a.length], c=new int[a.length], d=new int[a.length], e=new int[a.length];
+  if (a.length == 0) {
+    return 0;
+  }
+  e[0]=-a[0];
+  c[0]=0;
+  d[0]=Integer.MIN_VALUE;
+  b[0]=0;
+  for (int f=1; f < a.length; f++) {
+    e[f]=Math.max(e[f - 1],0 - a[f]);
+    c[f]=Math.max(c[f - 1],e[f - 1] + a[f]);
+    d[f]=Math.max(d[f - 1],c[f - 1] - a[f]);
+    b[f]=Math.max(b[f - 1],d[f - 1] + a[f]);
+  }
+  int g=Math.max(b[a.length - 1],c[a.length - 1]);
+  return g > 0 ? g : 0;
+}

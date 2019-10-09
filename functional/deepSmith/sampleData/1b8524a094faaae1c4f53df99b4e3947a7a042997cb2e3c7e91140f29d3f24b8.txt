@@ -1,0 +1,10 @@
+private static final double fn_A(double a,double b,double c,double d){
+  double e=0;
+  if (((b <= a) && (a <= c)) || ((c <= a) && (a <= b))) {
+    e=d;
+  }
+ else {
+    e=d + Math.min(Math.abs(a - b),Math.abs(a - c));
+  }
+  return e;
+}

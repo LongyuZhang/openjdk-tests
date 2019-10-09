@@ -1,0 +1,10 @@
+static int[] fn_A(int[] a,int b){
+  for (int c=0; c < b; c++) {
+    if (a[c] > 37) {
+      if (((a[c] / 5) + 1) * 5 - a[c] < 3) {
+        a[c]=((a[c] / 5) + 1) * 5;
+      }
+    }
+  }
+  return a;
+}

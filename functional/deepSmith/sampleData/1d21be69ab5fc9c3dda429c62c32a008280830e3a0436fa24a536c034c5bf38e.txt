@@ -1,0 +1,10 @@
+public static String fn_A(int a,int b){
+  String c="";
+  if (a + b >= 2) {
+    c+="A";
+  }
+  if (a >= 1) {
+    c+="B";
+  }
+  return c;
+}

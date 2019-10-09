@@ -1,0 +1,7 @@
+public static <T extends Number>T fn_A(T a){
+  if (a == null) {
+    Number b=0D;
+    return (T)b;
+  }
+  return a;
+}

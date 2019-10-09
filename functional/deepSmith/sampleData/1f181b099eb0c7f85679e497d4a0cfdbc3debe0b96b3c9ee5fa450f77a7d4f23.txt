@@ -1,0 +1,29 @@
+public static void main(String[] a){
+  int b=30;
+  int c=40;
+  int d=15;
+  if (c > b) {
+    System.out.println("We should take the cars.");
+  }
+ else   if (c < b) {
+    System.out.println("We should not take the cars.");
+  }
+ else {
+    System.out.println("We can't decide.");
+  }
+  if (d > c) {
+    System.out.println("That's too many buses.");
+  }
+ else   if (d < c) {
+    System.out.println("Maybe we could take the buses.");
+  }
+ else {
+    System.out.println("We still can't decide.");
+  }
+  if (b > d) {
+    System.out.println("All right, let's just take the buses.");
+  }
+ else {
+    System.out.println("Find, let's stay home then.");
+  }
+}

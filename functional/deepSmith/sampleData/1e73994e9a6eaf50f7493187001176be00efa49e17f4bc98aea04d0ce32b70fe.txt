@@ -1,0 +1,6 @@
+public static double fn_A(double a,int b,int c,boolean d){
+  final double e=-0.004793;
+  final double f=d ? 0.0093247 / 4 : 0.0093247;
+  a=a + Math.abs(b - c) * f + e;
+  return a;
+}

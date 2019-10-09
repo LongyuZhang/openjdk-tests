@@ -1,0 +1,5 @@
+public static int fn_A(int a,int b,int c,int d,double e,double f,double g,double h){
+  int i=(int)((a >> 16 & 255) * e + (b >> 16 & 255) * f + (c >> 16 & 255) * g + (d >> 16 & 255) * h) & 255;
+  int j=(int)((a & 255) * e + (b & 255) * f + (c & 255) * g + (d & 255) * h) & 255;
+  return i << 16 | j;
+}

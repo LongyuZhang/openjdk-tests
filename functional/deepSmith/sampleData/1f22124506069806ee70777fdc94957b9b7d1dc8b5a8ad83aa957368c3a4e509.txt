@@ -1,0 +1,12 @@
+public static int fn_A(byte[] a){
+  int b=0;
+  assert(a != null);
+  for (int c=0; c < a.length; c++) {
+    byte d=a[c];
+    if (d == 'S') {
+      b++;
+    }
+    assert(!Character.isDigit(b));
+  }
+  return b;
+}

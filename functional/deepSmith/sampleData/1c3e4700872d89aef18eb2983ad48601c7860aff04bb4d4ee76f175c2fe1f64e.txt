@@ -1,0 +1,32 @@
+public static int fn_A(final long a,final long[] b,int c){
+  if (a >= b[b.length - 1]) {
+    return b.length - 1;
+  }
+  if (a < b[0]) {
+    return -1;
+  }
+  double d=b[c + 1] - b[c];
+  int e=(int)((a - b[0]) / d) + c + 1;
+  if (e >= b.length) {
+    e=b.length - 1;
+  }
+  if (e < 0) {
+    e=0;
+  }
+  if (b[e] == a) {
+    while (b[e] == a) {
+      e--;
+    }
+  }
+ else   if (b[e] > a) {
+    while (b[e] > a) {
+      e--;
+    }
+  }
+ else {
+    while (((e + 1) < b.length) && b[e + 1] < a) {
+      e++;
+    }
+  }
+  return e;
+}

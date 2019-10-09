@@ -1,0 +1,7 @@
+public static final long[][] fn_A(final int a){
+  long[][] b=new long[a][a];
+  for (int c=0; c < a; c++) {
+    b[c][c]=1L;
+  }
+  return b;
+}

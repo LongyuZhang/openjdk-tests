@@ -1,0 +1,9 @@
+private static long fn_A(long a){
+  long b=a;
+  long c=0;
+  while (b > 0) {
+    c=c + (b % 10);
+    b=b / 10;
+  }
+  return c;
+}

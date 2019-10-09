@@ -1,0 +1,9 @@
+private final static int fn_A(final byte[] a){
+  int b=0;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == '\n') {
+      b++;
+    }
+  }
+  return b;
+}

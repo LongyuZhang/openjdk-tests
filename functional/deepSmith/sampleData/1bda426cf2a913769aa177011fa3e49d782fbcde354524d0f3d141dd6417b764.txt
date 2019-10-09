@@ -1,0 +1,13 @@
+public static boolean fn_A(byte[] a,int b,int c,byte[] d,int e){
+  if (c > d.length - e) {
+    return false;
+  }
+  boolean f=true;
+  for (int g=0; g < c; g++) {
+    if (a[b + g] != d[e + g]) {
+      f=false;
+      break;
+    }
+  }
+  return f;
+}

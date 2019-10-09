@@ -1,0 +1,10 @@
+public static int fn_A(byte[] a,int b,byte[] c,int d,int e){
+  for (int f=0; f < e; f++) {
+    int g;
+    g=a[b + f] - c[d + f];
+    if (g != 0) {
+      return g;
+    }
+  }
+  return 0;
+}

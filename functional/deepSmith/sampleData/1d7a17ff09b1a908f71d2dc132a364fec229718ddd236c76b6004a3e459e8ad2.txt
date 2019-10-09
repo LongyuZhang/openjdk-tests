@@ -1,0 +1,12 @@
+static void fn_A(){
+  System.out.println("StandalonePublisher, (C) Jens von Pilgrim 2011 (EPL and BSD license)");
+  System.out.println("Ant task generating p2 metadata for old style Eclipse update site.");
+  System.out.println("Limited support: only bundles and featues are supported, functionality only");
+  System.out.println("  tested for LWJGL update site");
+  System.out.println("If run as command line tool, specify update site folder, repository name");
+  System.out.println("  and URI as follows:");
+  System.out.println("  >java org.ljgl.ant.StandalonePublisher FOLDER NAME URI");
+  System.out.println("Example (supposed tool is called from updatesite folder):");
+  System.out.println("  >java org.lwjgl.ant.StandalonePublisher . org.lwjgl http://lwjgl.org/update");
+  System.out.println("If content.xml and artfact.xml should be compressed, add 'compress'");
+}

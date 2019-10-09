@@ -1,0 +1,9 @@
+public static char fn_A(char a){
+  if (a == 12288) {
+    return (char)32;
+  }
+ else   if (a > 65280 && a < 65375) {
+    return (char)(a - 65248);
+  }
+  return a;
+}

@@ -1,0 +1,16 @@
+public static String fn_A(int a){
+switch (a) {
+case -1:
+    return "ALL";
+case 0:
+  return "DEFAULT";
+case 1:
+return "FOREGROUND";
+case 1001:
+return "DBG_VPN_IN";
+case 1002:
+return "DBG_VPN_OUT";
+default :
+return "UNKNOWN";
+}
+}

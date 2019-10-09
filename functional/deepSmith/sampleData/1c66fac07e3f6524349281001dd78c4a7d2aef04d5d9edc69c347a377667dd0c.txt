@@ -1,0 +1,9 @@
+private static final boolean fn_A(char[] a,int b,int c,int d,int e){
+  if (b < 0)   return false;
+  if (c - b < e)   return false;
+  int f=d;
+  while (e-- > 0) {
+    if (a[b++] != a[f++])     return false;
+  }
+  return true;
+}

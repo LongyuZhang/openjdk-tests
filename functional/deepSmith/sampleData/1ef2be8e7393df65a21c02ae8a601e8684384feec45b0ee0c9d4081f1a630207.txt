@@ -1,0 +1,10 @@
+public static boolean fn_A(double[] a,double[] b,double c){
+  boolean d=true;
+  for (int e=0; e < a.length; ++e) {
+    if (Math.abs(a[e] - b[e]) > c) {
+      d=false;
+      break;
+    }
+  }
+  return d;
+}

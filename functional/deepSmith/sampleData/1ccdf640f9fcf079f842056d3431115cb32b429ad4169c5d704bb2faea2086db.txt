@@ -1,0 +1,17 @@
+private static int fn_A(char[] a,int b,boolean c){
+  int d=b;
+  for (; d < a.length; d++) {
+    char e=a[d];
+    if (c) {
+      if (e == '/' || e == '\\') {
+        break;
+      }
+    }
+ else {
+      if (e != '/' && e != '\\') {
+        break;
+      }
+    }
+  }
+  return d;
+}

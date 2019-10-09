@@ -1,0 +1,5 @@
+static void fn_A(char[] a){
+  for (int b=a.length - 1; b >= 0; b-=1) {
+    a[b]=(char)-123;
+  }
+}

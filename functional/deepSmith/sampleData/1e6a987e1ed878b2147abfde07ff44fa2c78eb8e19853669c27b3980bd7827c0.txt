@@ -1,0 +1,18 @@
+private static int fn_A(byte a){
+  if (a >= 'A' && a <= 'Z') {
+    return a - 'A';
+  }
+ else   if (a >= 'a' && a <= 'z') {
+    return a - 'a' + 26;
+  }
+ else   if (a >= '0' && a <= '9') {
+    return a - '0' + 52;
+  }
+ else   if (a == '+') {
+    return 62;
+  }
+ else   if (a == '/') {
+    return 63;
+  }
+  return 64;
+}

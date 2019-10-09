@@ -1,0 +1,11 @@
+public static double fn_A(double[] a,int b){
+  double c=1;
+  int d=a.length - b;
+  for (int e=1; e <= d; ++e) {
+    c*=1 - Math.cos(a[e - 1] * Math.PI * 0.5);
+  }
+  if (b != 1) {
+    c*=1 - Math.sin(a[d] * Math.PI * 0.5);
+  }
+  return c;
+}

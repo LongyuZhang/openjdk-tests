@@ -1,0 +1,9 @@
+private static int fn_A(int[] a,int b){
+  while (b < a.length) {
+    if (a[b] % 2 != 0) {
+      return b;
+    }
+    b++;
+  }
+  return b;
+}

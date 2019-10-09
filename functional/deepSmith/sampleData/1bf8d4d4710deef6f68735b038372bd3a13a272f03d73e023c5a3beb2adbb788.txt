@@ -1,0 +1,7 @@
+public static int fn_A(final int a){
+switch (a) {
+case 1122017:
+    return 10;
+}
+return 0;
+}

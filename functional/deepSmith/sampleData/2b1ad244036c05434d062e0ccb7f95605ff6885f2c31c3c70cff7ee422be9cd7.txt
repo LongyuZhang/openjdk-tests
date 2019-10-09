@@ -1,0 +1,8 @@
+public static void fn_A(String a){
+  System.out.println(a + "\n");
+  System.out.println("Use: DataMigrationTool <data type> <source options> <target options>\n");
+  System.out.println("supported data types : deltas");
+  System.out.println("source options example : delta_store_type=file,delta_store_directory=./_deltas");
+  System.out.println("target options example : delta_store_type=mongodb,mongodb_host=127.0.0.1,mongodb_port=27017,mongodb_database=wiab");
+  System.exit(1);
+}

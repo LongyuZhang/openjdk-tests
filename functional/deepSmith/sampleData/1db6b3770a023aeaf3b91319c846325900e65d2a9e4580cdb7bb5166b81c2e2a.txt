@@ -1,0 +1,6 @@
+public static String fn_A(long a){
+  long b=System.currentTimeMillis();
+  long c=Math.abs(b - a);
+  String d=c > 1000 ? "" + (c / 1000.) + "sec" : "" + c + "ms";
+  return d;
+}

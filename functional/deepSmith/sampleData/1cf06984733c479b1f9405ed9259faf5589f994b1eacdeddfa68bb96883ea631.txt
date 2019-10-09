@@ -1,0 +1,5 @@
+static void fn_A(double[] a,double[] b,int c){
+  for (int d=0; d < c; ++d) {
+    a[d]=-b[d];
+  }
+}

@@ -1,0 +1,12 @@
+public static boolean fn_A(Object a){
+  if (a instanceof Collection<?>) {
+    return ((Collection<?>)a).isEmpty();
+  }
+  if (a instanceof Map<?,?>) {
+    return ((Map<?,?>)a).isEmpty();
+  }
+  if (a instanceof String) {
+    return ((String)a).isEmpty();
+  }
+  return false;
+}

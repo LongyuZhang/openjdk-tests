@@ -1,0 +1,11 @@
+private static int fn_A(int a,byte[] b,int c){
+  int d=a;
+  for (int e=0; e < c; e+=2) {
+    d+=((b[e] << 8) & 0xff00) | (b[e + 1] & 0xff);
+    if (d > 0xffff) {
+      d&=0xffff;
+      d++;
+    }
+  }
+  return d;
+}

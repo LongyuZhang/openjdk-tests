@@ -1,0 +1,9 @@
+static float fn_A(float[] a,float[] b){
+  float c=0;
+  int d=a.length;
+  for (int e=0; e < d; e++) {
+    float f=a[e] - b[e];
+    c+=f * f;
+  }
+  return c / d;
+}

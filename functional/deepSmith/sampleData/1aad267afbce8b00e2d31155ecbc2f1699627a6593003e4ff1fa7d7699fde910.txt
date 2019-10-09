@@ -1,0 +1,27 @@
+private static Class fn_A(Class a){
+  if (a == byte.class) {
+    return Byte.class;
+  }
+  if (a == short.class) {
+    return Short.class;
+  }
+  if (a == int.class) {
+    return Integer.class;
+  }
+  if (a == long.class) {
+    return Long.class;
+  }
+  if (a == float.class) {
+    return Float.class;
+  }
+  if (a == double.class) {
+    return Double.class;
+  }
+  if (a == char.class) {
+    return Character.class;
+  }
+  if (a == boolean.class) {
+    return Boolean.class;
+  }
+  return null;
+}

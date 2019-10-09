@@ -1,0 +1,7 @@
+public static double fn_A(int[] a,int[] b){
+  int c, d, e;
+  c=a[0] - b[0];
+  d=a[1] - b[1];
+  e=a[2] - b[2];
+  return c * c + d * d + e * e;
+}

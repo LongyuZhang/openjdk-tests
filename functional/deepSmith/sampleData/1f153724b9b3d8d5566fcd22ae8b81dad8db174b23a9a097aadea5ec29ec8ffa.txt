@@ -1,0 +1,9 @@
+protected static Object[] fn_A(int a){
+  if (a == 2) {
+    return (new Object[]{null,null});
+  }
+  if (a == 3) {
+    return (new Object[]{null,null,null});
+  }
+  return (new Object[]{null,null,null,null,null});
+}

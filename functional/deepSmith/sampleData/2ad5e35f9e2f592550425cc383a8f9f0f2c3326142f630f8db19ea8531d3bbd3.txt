@@ -1,0 +1,7 @@
+public static long fn_A(long a,long b){
+  final long c=a + b;
+  if (((a ^ c) & (b ^ c)) < 0) {
+    throw new ArithmeticException("overflow: " + a + "+"+ b);
+  }
+  return c;
+}

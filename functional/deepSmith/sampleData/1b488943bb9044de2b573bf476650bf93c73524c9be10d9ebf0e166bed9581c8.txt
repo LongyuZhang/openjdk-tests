@@ -1,0 +1,9 @@
+private static boolean fn_A(){
+  try {
+    Class.forName("com.github.luben.zstd.ZstdInputStream");
+    return true;
+  }
+ catch (  NoClassDefFoundError|Exception a) {
+    return false;
+  }
+}

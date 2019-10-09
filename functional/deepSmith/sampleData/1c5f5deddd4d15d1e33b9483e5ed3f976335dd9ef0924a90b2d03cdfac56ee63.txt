@@ -1,0 +1,4 @@
+private static final void fn_A(){
+  System.out.println("Usage: java examples.Netconfig [# sites] [# hq] [# routers] [# time steps]");
+  System.exit(1);
+}

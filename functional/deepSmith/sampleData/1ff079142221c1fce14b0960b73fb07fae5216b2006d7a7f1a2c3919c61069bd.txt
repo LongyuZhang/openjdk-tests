@@ -1,0 +1,9 @@
+static public short[] fn_A(int[] a){
+  if (a == null)   return null;
+  int b=a.length;
+  short[] c=new short[b];
+  for (int d=0; d < b; ++d) {
+    c[d]=(short)(a[d]);
+  }
+  return c;
+}

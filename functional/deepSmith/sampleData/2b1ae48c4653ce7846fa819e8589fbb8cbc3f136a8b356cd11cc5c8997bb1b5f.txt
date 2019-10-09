@@ -1,0 +1,5 @@
+public static double fn_A(double a,double b){
+  if (a == Double.NEGATIVE_INFINITY && b == Double.NEGATIVE_INFINITY)   return Double.NEGATIVE_INFINITY;
+ else   if (a > b)   return a + Math.log(1 + Math.exp(b - a));
+ else   return b + Math.log(1 + Math.exp(a - b));
+}

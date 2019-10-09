@@ -1,0 +1,11 @@
+public static int fn_A(int[] a,int b){
+  int c=0;
+  int d=a.length;
+  while (c < d) {
+    if (b == a[c]) {
+      return c;
+    }
+    c++;
+  }
+  return -1;
+}

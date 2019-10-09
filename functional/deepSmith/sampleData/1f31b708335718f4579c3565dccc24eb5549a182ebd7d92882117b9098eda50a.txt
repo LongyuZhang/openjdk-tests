@@ -1,0 +1,30 @@
+public static String fn_A(long a,int b,boolean c){
+  char d[]=new char[b];
+  int e=b - 1;
+  int f=0;
+  long g=a;
+  while (g > 0) {
+    d[e]=(char)(g % 10 + '0');
+    g=g / 10;
+    e--;
+    f++;
+    if ((f % 3 == 0) && (g > 0)) {
+      d[e]='.';
+      e--;
+    }
+  }
+  if (f == 0) {
+    d[e]='0';
+    e--;
+  }
+  while (e >= 0) {
+    if (c) {
+      d[e]='0';
+    }
+ else {
+      d[e]=' ';
+    }
+    e--;
+  }
+  return (new String(d));
+}

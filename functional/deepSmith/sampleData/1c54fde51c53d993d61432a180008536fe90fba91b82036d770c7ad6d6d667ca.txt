@@ -1,0 +1,16 @@
+public static double fn_A(int a,double b){
+  double c;
+  double[] d=new double[]{0.10,0.15,0.25,0.28,0.33,0.35};
+  double[][] e=new double[][]{{8350,33950,82250,171550,372950},{16700,67900,137050,208850,372950},{8350,33950,68525,104425,186475},{11950,45500,117450,190200,372950}};
+  if (b <= e[a][0])   return Math.round(b * d[0]);
+  c=e[a][0] * d[0];
+  for (int f=1; f < e[a].length; f++) {
+    if (b > e[a][f]) {
+      c+=(e[a][f] - e[a][f - 1]) * d[f];
+    }
+ else {
+      return Math.round(c + (b - e[a][f - 1]) * d[f]);
+    }
+  }
+  return Math.round(c + (b - e[a][4]) * d[5]);
+}

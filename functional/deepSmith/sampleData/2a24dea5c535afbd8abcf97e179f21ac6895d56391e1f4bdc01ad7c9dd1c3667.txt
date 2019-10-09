@@ -1,0 +1,6 @@
+private static int fn_A(int a,int b,double c){
+  int d=(int)(a * c + b * (1.0d - c));
+  if (d < 0)   d=0;
+  if (d > 255)   d=255;
+  return d;
+}

@@ -1,0 +1,6 @@
+public static final boolean fn_A(short[] a,short[] b) throws NullPointerException {
+  int c=a.length;
+  if (a != b)   if (b.length != c)   return false;
+ else   while (c-- > 0)   if (a[c] != b[c])   return false;
+  return true;
+}

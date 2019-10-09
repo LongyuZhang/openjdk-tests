@@ -1,0 +1,5 @@
+public static Object fn_A(Class<?> a,Object b){
+  if (b != null) {
+  }
+  return b;
+}

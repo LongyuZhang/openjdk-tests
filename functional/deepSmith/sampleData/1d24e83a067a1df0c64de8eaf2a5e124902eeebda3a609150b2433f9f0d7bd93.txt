@@ -1,0 +1,4 @@
+static <T extends Cloneable>Set<T> fn_A(Set<T> a){
+  Set<T> b=new HashSet<T>();
+  return null;
+}

@@ -1,0 +1,19 @@
+public static float fn_A(final int a){
+  float b=3.0f;
+  if (720 == a) {
+    b=2.0f;
+  }
+ else   if (1080 == a) {
+    b=3.0f;
+  }
+ else   if (1440 == a) {
+    b=4.0f;
+  }
+ else   if (750 == a) {
+    b=4.32f;
+  }
+ else {
+    b=3.0f;
+  }
+  return b;
+}

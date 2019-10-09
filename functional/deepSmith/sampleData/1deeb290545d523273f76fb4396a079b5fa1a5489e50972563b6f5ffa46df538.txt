@@ -1,0 +1,6 @@
+public static boolean fn_A(final byte[] a,final byte b[]){
+  int c=a.length;
+  if (c != b.length)   return false;
+  while (c-- != 0)   if (!((a[c]) == (b[c])))   return false;
+  return true;
+}

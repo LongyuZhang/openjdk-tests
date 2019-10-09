@@ -1,0 +1,11 @@
+public static byte[] fn_A(byte a[],byte b[]){
+  final byte[] c=new byte[a.length];
+  int d=0;
+  for (int e=0; e < c.length; e++) {
+    c[e]=(byte)(a[e] ^ b[d++]);
+    if (d == b.length) {
+      d=0;
+    }
+  }
+  return c;
+}

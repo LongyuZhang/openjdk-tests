@@ -1,0 +1,15 @@
+private static boolean fn_A(char[] a,int b,int c){
+  for (int d=b; d < c; d++) {
+    char e=a[d];
+switch (e) {
+case ' ':
+case '\n':
+case '\t':
+case '\r':
+      break;
+default :
+    return false;
+}
+}
+return true;
+}

@@ -1,0 +1,9 @@
+public static double[] fn_A(double[] a,double b,double c,double d,double e,double f,double g,double h){
+  double i=a[0];
+  double j=a[1];
+  double k=a[2];
+  double l=b + ((1 + e) * i) + (-h * j)+ (g * k);
+  double m=c + (h * i) + ((1 + e) * j)+ (-f * k);
+  double n=d + (-g * i) + (f * j)+ ((1 + e) * k);
+  return new double[]{l,m,n};
+}

@@ -1,0 +1,19 @@
+public static int fn_A(int a,int b,float c){
+  if (c <= 0) {
+    return a;
+  }
+ else   if (c >= 1) {
+    return b;
+  }
+  int d=a >> 16;
+  int e=(a >> 8) & 0xFF;
+  int f=a & 0xFF;
+  int g=b >> 16;
+  int h=(b >> 8) & 0xFF;
+  int i=b & 0xFF;
+  float j=1 - c;
+  int k=(int)(j * d + c * g);
+  int l=(int)(j * e + c * h);
+  int m=(int)(j * f + c * i);
+  return (k << 16) + (l << 8) + m;
+}

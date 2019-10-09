@@ -1,0 +1,4 @@
+public static Boolean fn_A(Integer a){
+  if (a == null)   return null;
+  return a >= 0;
+}

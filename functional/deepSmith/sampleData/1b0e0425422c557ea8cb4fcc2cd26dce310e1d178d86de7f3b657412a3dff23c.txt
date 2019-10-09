@@ -1,0 +1,22 @@
+public static float[] fn_A(float[] a,float[] b){
+  float[] c=new float[16];
+  float d=a[0], e=a[4], f=a[8], g=a[12], h=a[1], i=a[5], j=a[9], k=a[13], l=a[2], m=a[6], n=a[10], o=a[14], p=a[3], q=a[7], r=a[11], s=a[15];
+  float t=b[0], u=b[4], v=b[8], w=b[12], x=b[1], y=b[5], z=b[9], aa=b[13], ab=b[2], ac=b[6], ad=b[10], ae=b[14], af=b[3], ag=b[7], ah=b[11], ai=b[15];
+  c[0]=t * d + x * e + ab * f + af * g;
+  c[1]=t * h + x * i + ab * j + af * k;
+  c[2]=t * l + x * m + ab * n + af * o;
+  c[3]=t * p + x * q + ab * r + af * s;
+  c[4]=u * d + y * e + ac * f + ag * g;
+  c[5]=u * h + y * i + ac * j + ag * k;
+  c[6]=u * l + y * m + ac * n + ag * o;
+  c[7]=u * p + y * q + ac * r + ag * s;
+  c[8]=v * d + z * e + ad * f + ah * g;
+  c[9]=v * h + z * i + ad * j + ah * k;
+  c[10]=v * l + z * m + ad * n + ah * o;
+  c[11]=v * p + z * q + ad * r + ah * s;
+  c[12]=w * d + aa * e + ae * f + ai * g;
+  c[13]=w * h + aa * i + ae * j + ai * k;
+  c[14]=w * l + aa * m + ae * n + ai * o;
+  c[15]=w * p + aa * q + ae * r + ai * s;
+  return c;
+}

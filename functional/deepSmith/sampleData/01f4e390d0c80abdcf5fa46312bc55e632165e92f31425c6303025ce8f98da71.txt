@@ -1,0 +1,9 @@
+public static void fn_A(int a){
+switch (a) {
+case 3 + 7:
+{
+      System.out.println(10);
+      break;
+    }
+}
+}

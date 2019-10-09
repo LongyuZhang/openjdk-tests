@@ -1,0 +1,5 @@
+public static int fn_A(short a,byte b[],int c){
+  b[c++]=(byte)((a >> 8) & 0xff);
+  b[c++]=(byte)(a & 0xff);
+  return c;
+}

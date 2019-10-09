@@ -1,0 +1,11 @@
+public static int fn_A(int a){
+  float b, c;
+  b=a / 255.0f;
+  if (b <= 0.04045f) {
+    c=b / 12.92f;
+  }
+ else {
+    c=(float)Math.pow((b + 0.055) / 1.055,2.4);
+  }
+  return Math.round(c * 255.0f);
+}

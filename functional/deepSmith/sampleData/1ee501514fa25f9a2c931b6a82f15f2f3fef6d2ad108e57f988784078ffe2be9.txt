@@ -1,0 +1,9 @@
+@SuppressWarnings("null") public static boolean fn_A(boolean[][] a,boolean[][] b){
+  if (a == null && b != null)   return false;
+  if (b == null)   return false;
+  if (a.length != b.length)   return false;
+  for (int c=a.length - 1; c >= 0; c--) {
+    if (!Arrays.equals(a[c],b[c]))     return false;
+  }
+  return true;
+}

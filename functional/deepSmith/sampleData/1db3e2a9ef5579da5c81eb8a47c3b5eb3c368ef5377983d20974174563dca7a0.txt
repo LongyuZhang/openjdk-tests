@@ -1,0 +1,8 @@
+public static double fn_A(double[] a,int b){
+  double c=a.length - b;
+  double d=0;
+  for (int e=b; e < c; e++) {
+    d+=a[e];
+  }
+  return d / (a.length - (2 * b));
+}

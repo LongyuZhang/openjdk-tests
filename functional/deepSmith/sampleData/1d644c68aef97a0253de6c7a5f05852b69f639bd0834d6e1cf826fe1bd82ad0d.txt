@@ -1,0 +1,8 @@
+public static String fn_A(byte a){
+  char[] b={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+  char[] c=new char[2];
+  c[0]=b[(a >>> 4 & 0xF)];
+  c[1]=b[(a & 0xF)];
+  String d=new String(c);
+  return d;
+}

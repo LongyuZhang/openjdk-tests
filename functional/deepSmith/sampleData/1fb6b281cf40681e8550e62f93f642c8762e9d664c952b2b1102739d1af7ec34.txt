@@ -1,0 +1,8 @@
+public static long fn_A(int a,int b,int c){
+  long d=(a >> 4) & 0xfffffffl;
+  d<<=28;
+  d|=(c >> 4) & 0xfffffffl;
+  d<<=4;
+  d|=(b >> 4) & 0xf;
+  return d;
+}

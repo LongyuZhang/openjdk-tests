@@ -1,0 +1,6 @@
+protected static int fn_A(byte[] a,int b,int c){
+  if (b >= a.length || b < 0) {
+    return 0xff & c;
+  }
+  return 0xff & a[b];
+}

@@ -1,0 +1,21 @@
+public static double[] fn_A(double[] a,int b,int c){
+  if (a == null) {
+    throw new NullPointerException();
+  }
+  if (b < 0 || b > a.length) {
+    throw new ArrayIndexOutOfBoundsException();
+  }
+  if (b > c) {
+    throw new IllegalArgumentException();
+  }
+  double[] d=new double[(c - b)];
+  int e=0;
+  int f=a.length < c ? a.length : c;
+  for (int g=b; g < f; g++) {
+    if (g < a.length) {
+      d[e]=a[g];
+    }
+    e++;
+  }
+  return d;
+}

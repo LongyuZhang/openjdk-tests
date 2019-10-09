@@ -1,0 +1,20 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0x00:
+    return "reserved";
+case 0x01:
+  return "valid MAC_address bytes: 6";
+case 0x02:
+return "valid MAC_address bytes: 6,5";
+case 0x03:
+return "valid MAC_address bytes: 6,5,4";
+case 0x04:
+return "valid MAC_address bytes: 6,5,4,3";
+case 0x05:
+return "valid MAC_address bytes: 6,5,4,3,2";
+case 0x06:
+return "valid MAC_address bytes: 6,5,4,3,2,1";
+default :
+return "reserved";
+}
+}

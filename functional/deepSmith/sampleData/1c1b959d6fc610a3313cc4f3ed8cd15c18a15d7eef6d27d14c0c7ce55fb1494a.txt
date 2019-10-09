@@ -1,0 +1,12 @@
+public static int fn_A(short a){
+switch (a & 0xc) {
+case 0x4:
+    return 1;
+case 0x8:
+  return -2;
+case 0xc:
+return -1;
+default :
+return 0;
+}
+}

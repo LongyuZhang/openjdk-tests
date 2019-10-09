@@ -1,0 +1,4 @@
+private static BufferedReader fn_A(InputStream a) throws IOException {
+  InputStreamReader b=new InputStreamReader(new BufferedInputStream(a),"utf-8");
+  return new BufferedReader(b);
+}

@@ -1,0 +1,7 @@
+public static void fn_A(){
+  StackTraceElement[] a;
+  a=Thread.currentThread().getStackTrace();
+  for (int b=2; b < a.length; b++) {
+    System.out.println("\t" + a[b]);
+  }
+}

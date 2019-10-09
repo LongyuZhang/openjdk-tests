@@ -1,0 +1,8 @@
+private static FileInputStream fn_A(File a){
+  try {
+    return new FileInputStream(a);
+  }
+ catch (  FileNotFoundException b) {
+    throw new RuntimeException(b);
+  }
+}

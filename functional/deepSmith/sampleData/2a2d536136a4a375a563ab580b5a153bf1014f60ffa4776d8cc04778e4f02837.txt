@@ -1,0 +1,6 @@
+static private boolean fn_A(char a){
+  if ('a' <= a && a <= 'z')   return true;
+  if ('A' <= a && a <= 'Z')   return true;
+  if ('0' <= a && a <= '9')   return true;
+  return false;
+}

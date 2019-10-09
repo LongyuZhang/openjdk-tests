@@ -1,0 +1,20 @@
+public static double fn_A(double[] a,double[] b,String[][] c){
+  double d=0;
+  int e=b.length;
+  for (int f=0; f < a.length; f++) {
+    double g=b[f];
+    if (Double.isNaN(d)) {
+      e--;
+      continue;
+    }
+    if (c[f] != null) {
+      if (g != a[f])       d+=1.0;
+    }
+ else {
+      double h=g - a[f];
+      d+=h * h;
+    }
+  }
+  if (0 < e && e < b.length)   d*=((double)b.length) / e;
+  return d;
+}

@@ -1,0 +1,12 @@
+public static void fn_A(float[] a,float[] b){
+  if (b.length >= 4) {
+    a[0]=b[3];
+  }
+ else {
+    a[0]=1 - b[0] * b[0] - b[1] * b[1] - b[2] * b[2];
+    a[0]=(a[0] > 0) ? (float)Math.sqrt(a[0]) : 0;
+  }
+  a[1]=b[0];
+  a[2]=b[1];
+  a[3]=b[2];
+}

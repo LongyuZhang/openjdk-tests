@@ -1,0 +1,9 @@
+private static List<String> fn_A(){
+  return new ArrayList<String>(){
+{
+      add("d1");
+      add("d2");
+    }
+  }
+;
+}

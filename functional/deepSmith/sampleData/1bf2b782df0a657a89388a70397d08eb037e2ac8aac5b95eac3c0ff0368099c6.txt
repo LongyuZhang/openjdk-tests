@@ -1,0 +1,11 @@
+public static boolean fn_A(byte a,int b,byte[] c){
+  if (c == null || c.length != b) {
+    return false;
+  }
+  for (int d=0; d < b; d++) {
+    if (c[d] != a) {
+      return false;
+    }
+  }
+  return true;
+}

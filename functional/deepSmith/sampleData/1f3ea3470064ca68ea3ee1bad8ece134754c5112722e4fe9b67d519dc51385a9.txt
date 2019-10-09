@@ -1,0 +1,5 @@
+public static short fn_A(short a){
+  int b=(a << 24) >> 16;
+  int c=(a << 16) >>> 24;
+  return (short)(b | c);
+}

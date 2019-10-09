@@ -1,0 +1,7 @@
+public static int fn_A(double a){
+  final int b;
+  final int c;
+  c=10000;
+  b=(int)(a * c);
+  return b;
+}

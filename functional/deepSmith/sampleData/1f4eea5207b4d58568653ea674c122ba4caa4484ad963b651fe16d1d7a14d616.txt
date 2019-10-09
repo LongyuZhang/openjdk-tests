@@ -1,0 +1,4 @@
+private static void fn_A(String a){
+  System.out.println("unknown command " + a);
+  System.out.println("type ? for help");
+}

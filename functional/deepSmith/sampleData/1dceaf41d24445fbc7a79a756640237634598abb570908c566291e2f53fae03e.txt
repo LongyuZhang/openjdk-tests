@@ -1,0 +1,8 @@
+private static Class<?> fn_A(){
+  try {
+    return Class.forName("de.lmu.ifi.dbs.elki.KDDTask");
+  }
+ catch (  ClassNotFoundException a) {
+    return null;
+  }
+}

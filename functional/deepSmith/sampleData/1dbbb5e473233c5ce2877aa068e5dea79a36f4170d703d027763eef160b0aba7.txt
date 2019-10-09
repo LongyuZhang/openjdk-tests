@@ -1,0 +1,7 @@
+public static short[] fn_A(char[] a,int b,int c,short[] d,int e){
+  int f=b + c;
+  for (int g=b, h=e; g < f; g++, h++) {
+    d[h]=(short)a[g];
+  }
+  return d;
+}

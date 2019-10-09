@@ -1,0 +1,11 @@
+public static <T>void fn_A(T[] a,Integer[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("The length of the two arrays must match.");
+  }
+  for (int c=0; c < a.length; c++) {
+    int d=b[c];
+    T e=a[c];
+    a[c]=a[d];
+    a[d]=e;
+  }
+}

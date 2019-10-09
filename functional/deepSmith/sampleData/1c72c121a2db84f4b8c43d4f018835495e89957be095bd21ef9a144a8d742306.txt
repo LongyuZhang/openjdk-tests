@@ -1,0 +1,8 @@
+private static boolean fn_A(int[] a){
+  for (int b=0; b < a.length; ++b) {
+    for (int c=b + 1; c < a.length; ++c) {
+      if ((a[b] == a[c]) || Math.abs(c - b) == Math.abs(a[c] - a[b]))       return true;
+    }
+  }
+  return false;
+}

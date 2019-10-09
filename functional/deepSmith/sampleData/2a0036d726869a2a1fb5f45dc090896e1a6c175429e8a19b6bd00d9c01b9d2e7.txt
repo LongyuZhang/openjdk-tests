@@ -1,0 +1,18 @@
+public static float[][] fn_A(float[][] a,float[][] b){
+  if (a[0].length != b.length)   throw new IllegalArgumentException("Illegal matrix dimensions.");
+  float[][] c=new float[a.length][b[0].length];
+  int d=a[0].length;
+  int e=a.length;
+  int f=b[0].length;
+  float[] g=new float[d];
+  for (int h=0; h < f; h++) {
+    for (int i=0; i < d; i++)     g[i]=b[i][h];
+    for (int j=0; j < e; j++) {
+      float[] k=a[j];
+      float l=0;
+      for (int i=0; i < d; i++)       l+=k[i] * g[i];
+      c[j][h]=l;
+    }
+  }
+  return c;
+}

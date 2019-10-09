@@ -1,0 +1,7 @@
+private static void fn_A(){
+  try {
+    throw new IndexOutOfBoundsException();
+  }
+ catch (  Exception a) {
+  }
+}

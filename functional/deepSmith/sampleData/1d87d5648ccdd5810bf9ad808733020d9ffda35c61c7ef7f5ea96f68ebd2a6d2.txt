@@ -1,0 +1,16 @@
+public static int fn_A(double[] a){
+  int b=a.length;
+  double c=0.0;
+  int d=-1;
+  double e=a[0];
+  for (int f=1; f < b; f++) {
+    double g=a[f];
+    double h=Math.abs(g - e);
+    if (h > c) {
+      c=h;
+      d=f;
+    }
+    e=g;
+  }
+  return d;
+}

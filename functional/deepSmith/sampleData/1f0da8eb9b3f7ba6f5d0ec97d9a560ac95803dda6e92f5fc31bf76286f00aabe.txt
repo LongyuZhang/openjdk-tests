@@ -1,0 +1,14 @@
+public static void main(String[] a){
+  try {
+    System.err.println("Try code");
+  }
+ catch (  RuntimeException b) {
+    System.err.println("Catch 1 code");
+  }
+catch (  Throwable c) {
+    System.err.println("Catch 2 code");
+  }
+ finally {
+    System.err.println("Here comes the finally handler");
+  }
+}

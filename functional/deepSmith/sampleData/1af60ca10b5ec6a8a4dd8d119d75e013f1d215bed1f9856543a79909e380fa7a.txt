@@ -1,0 +1,12 @@
+public static long fn_A(int a){
+  long b=0;
+  long c=5;
+  double d=a / c;
+  b+=(long)d;
+  while (d >= 1.0) {
+    c=c * 5;
+    d=a / c;
+    b+=(long)d;
+  }
+  return b;
+}

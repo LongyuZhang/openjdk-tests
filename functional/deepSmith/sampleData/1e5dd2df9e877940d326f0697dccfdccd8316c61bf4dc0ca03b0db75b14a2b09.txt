@@ -1,0 +1,4 @@
+static public short fn_A(short[] a,int b,short c){
+  a[b]=c;
+  return c;
+}

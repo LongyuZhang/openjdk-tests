@@ -1,0 +1,15 @@
+private static int fn_A(final long a){
+  long b=a;
+  long c=0xffffffff00000000L;
+  int d=32;
+  int e=0;
+  while (d != 0) {
+    if ((b & c) == b) {
+      e|=d;
+      b>>=d;
+    }
+    d>>=1;
+    c>>=d;
+  }
+  return e;
+}

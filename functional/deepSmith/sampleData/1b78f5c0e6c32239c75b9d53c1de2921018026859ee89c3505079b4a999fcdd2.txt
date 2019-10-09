@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  Integer b=10;
+  Integer c=null;
+  boolean d=(b != null & c != null) && (b < c);
+  System.out.println("c = " + d);
+}

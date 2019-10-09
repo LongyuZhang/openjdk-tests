@@ -1,0 +1,8 @@
+public static int fn_A(int a,int b,int c,int d,int e,int f,int g){
+  double h=a + c;
+  double i=b + d;
+  double j=f + e;
+  j/=8D;
+  if (h < ((double)g * 1.5D))   return (int)((i / 4D) + ((double)g * 0.375D) + j);
+  return (int)((h / 4D) + (i / 4D) + j);
+}

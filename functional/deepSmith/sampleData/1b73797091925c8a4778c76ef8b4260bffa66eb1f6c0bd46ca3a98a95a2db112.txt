@@ -1,0 +1,9 @@
+static int fn_A(byte[] a,int b,int c){
+  int d=1;
+  int e=b;
+  int f=c;
+  while (f-- != 0) {
+    d=31 * d + a[e++];
+  }
+  return d;
+}

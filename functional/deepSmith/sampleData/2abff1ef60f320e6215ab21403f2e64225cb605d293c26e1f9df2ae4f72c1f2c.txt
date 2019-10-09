@@ -1,0 +1,8 @@
+protected static java.math.BigInteger fn_A(){
+  long a=2;
+  for (int b=1; b < 30; b++) {
+    a*=2;
+  }
+  a-=35;
+  return new java.math.BigInteger("" + a);
+}

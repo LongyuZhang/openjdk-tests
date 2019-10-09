@@ -1,0 +1,10 @@
+private static void fn_A(final long[] a,int b,final long[] c,int d){
+  c[d]=(a[b] >>> 49) & 127;
+  c[d + 1]=(a[b] >>> 42) & 127;
+  c[d + 2]=(a[b] >>> 35) & 127;
+  c[d + 3]=(a[b] >>> 28) & 127;
+  c[d + 4]=(a[b] >>> 21) & 127;
+  c[d + 5]=(a[b] >>> 14) & 127;
+  c[d + 6]=(a[b] >>> 7) & 127;
+  c[d + 7]=a[b] & 127;
+}

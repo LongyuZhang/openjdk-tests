@@ -1,0 +1,6 @@
+public static void fn_A(){
+  System.out.println("Semantic Concordancer Searching - commands:");
+  System.out.println("    -i <path>                     Interactive corpus search");
+  System.out.println("    -t \"<optional search string>\" test searching");
+  System.out.println("    -h                            show this Help message");
+}

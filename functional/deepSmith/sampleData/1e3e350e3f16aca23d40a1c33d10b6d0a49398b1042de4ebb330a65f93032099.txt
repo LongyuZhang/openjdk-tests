@@ -1,0 +1,15 @@
+public static int fn_A(int[][] a){
+  int b=0;
+  int c=0;
+  for (int d=0; d < a.length; d++) {
+    int e=0;
+    for (int f=0; f < a[d].length; f++) {
+      if (a[d][f] == 1)       e++;
+    }
+    if (e > c) {
+      c=e;
+      b=d;
+    }
+  }
+  return b;
+}

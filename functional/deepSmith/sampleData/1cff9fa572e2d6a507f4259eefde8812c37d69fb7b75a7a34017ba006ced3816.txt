@@ -1,0 +1,6 @@
+public static void fn_A(){
+  System.out.println("==========================");
+  System.out.println("usage: treemachine is run as:");
+  System.out.println("");
+  System.out.println("ingestsynth newick_tree json_annotations tsv_taxonomy DB_name\n");
+}

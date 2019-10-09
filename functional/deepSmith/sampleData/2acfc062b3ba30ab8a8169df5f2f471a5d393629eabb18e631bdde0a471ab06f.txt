@@ -1,0 +1,5 @@
+public static float fn_A(float a,float b){
+  float c=a < 0 ? -a : a;
+  float d=b < 0 ? -b : b;
+  return d < c ? c : d;
+}

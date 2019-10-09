@@ -1,0 +1,7 @@
+private static final int fn_A(final int[] a){
+  int b=a[0];
+  for (int c=0; c < a.length; ++c) {
+    if (b < a[c])     b=a[c];
+  }
+  return b;
+}

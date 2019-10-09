@@ -1,0 +1,6 @@
+public static double fn_A(final double a,final double b,final double c,final String d){
+  if (c <= a || c >= b) {
+    throw new IllegalArgumentException(d);
+  }
+  return c;
+}

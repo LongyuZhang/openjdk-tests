@@ -1,0 +1,14 @@
+public static double[] fn_A(double[] a){
+  int b=a.length / 3;
+  double c[]=new double[b];
+  for (int d=0; d < b; d++) {
+    double e=(a[d] + a[b + d] + a[2 * b + d]) / 3;
+    if (e < 0.19) {
+      c[d]=1;
+    }
+ else {
+      c[d]=0;
+    }
+  }
+  return c;
+}

@@ -1,0 +1,5 @@
+private static void fn_A() throws InterruptedException {
+  if (Thread.currentThread().interrupted()) {
+    throw new InterruptedException("Timed out before HDFS call was made. " + "Your hdfs.callTimeout might be set too low or HDFS calls are " + "taking too long.");
+  }
+}

@@ -1,0 +1,8 @@
+public static void fn_A(byte[] a,byte[] b,byte[] c,int d){
+  int e=0;
+  int f=c.length;
+  while (e < d) {
+    b[e]=(byte)(a[e] ^ c[e % f]);
+    e++;
+  }
+}

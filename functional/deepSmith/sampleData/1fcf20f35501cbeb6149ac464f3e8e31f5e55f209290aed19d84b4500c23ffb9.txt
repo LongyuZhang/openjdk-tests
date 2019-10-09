@@ -1,0 +1,6 @@
+public static <V>List<V> fn_A(List<V> a){
+  if (a == null) {
+    a=new ArrayList<>();
+  }
+  return a;
+}

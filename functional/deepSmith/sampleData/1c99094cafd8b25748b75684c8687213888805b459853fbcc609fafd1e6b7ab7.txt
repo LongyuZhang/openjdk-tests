@@ -1,0 +1,10 @@
+static String fn_A(String... a){
+  if (a == null) {
+    return "-null-";
+  }
+  String b="";
+  for (int c=0; c < a.length; c++) {
+    b+=a[c];
+  }
+  return b;
+}

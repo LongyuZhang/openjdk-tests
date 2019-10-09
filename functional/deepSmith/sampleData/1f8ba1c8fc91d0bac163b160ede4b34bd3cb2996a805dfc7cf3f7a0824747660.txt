@@ -1,0 +1,12 @@
+public static void fn_A(Object[][] a,Object[][] b,Object[][] c,char d){
+  for (int e=0; e < a.length; e++) {
+    for (int f=0; f < a[0].length; f++)     System.out.print(" " + a[e][f]);
+    if (e == a.length / 2)     System.out.print("  " + d + " ");
+ else     System.out.print("    ");
+    for (int f=0; f < b.length; f++)     System.out.print(" " + b[e][f]);
+    if (e == a.length / 2)     System.out.print("  =  ");
+ else     System.out.print("     ");
+    for (int f=0; f < c.length; f++)     System.out.print(c[e][f] + " ");
+    System.out.println();
+  }
+}

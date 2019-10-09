@@ -1,0 +1,6 @@
+private static Object fn_A(Object... a){
+  if (a.length == 2 && a[0] instanceof Number && a[1] instanceof Number) {
+    return ((long)a[0]) + ((long)a[1]);
+  }
+  throw new IllegalArgumentException("expected long arguments");
+}

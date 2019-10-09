@@ -1,0 +1,6 @@
+public final static float fn_A(float a){
+  if (a < -3)   return -1;
+  if (a > 3)   return 1;
+  final float b=a * a;
+  return a * (27 + b) / (27 + 9 * b);
+}

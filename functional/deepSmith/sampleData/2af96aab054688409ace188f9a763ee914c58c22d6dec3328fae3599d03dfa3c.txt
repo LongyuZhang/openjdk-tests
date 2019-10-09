@@ -1,0 +1,7 @@
+private static int fn_A(final char[] a,final int b){
+  int c=0;
+  for (int d=b; d < a.length && a[d] != 0; d++) {
+    c++;
+  }
+  return c;
+}

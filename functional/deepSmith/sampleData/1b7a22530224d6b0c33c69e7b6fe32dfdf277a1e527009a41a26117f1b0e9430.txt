@@ -1,0 +1,14 @@
+private static void fn_A(final int[] a,final double[] b,final int c,final int d){
+  for (int e=c; ++e < d; ) {
+    int f=a[e];
+    int g=e;
+    for (int h=a[g - 1]; (Double.compare((b[f]),(b[h])) < 0); h=a[--g - 1]) {
+      a[g]=h;
+      if (c == g - 1) {
+        --g;
+        break;
+      }
+    }
+    a[g]=f;
+  }
+}

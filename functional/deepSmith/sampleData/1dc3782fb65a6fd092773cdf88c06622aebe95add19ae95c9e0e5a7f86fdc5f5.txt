@@ -1,0 +1,8 @@
+public static int fn_A(byte[] a,byte[] b,int c){
+  int d=0;
+  while (d < a.length) {
+    b[(c + d)]=a[d];
+    d+=1;
+  }
+  return a.length;
+}

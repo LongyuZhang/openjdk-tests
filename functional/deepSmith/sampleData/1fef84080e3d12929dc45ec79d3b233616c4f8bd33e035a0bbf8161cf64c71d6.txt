@@ -1,0 +1,15 @@
+public static boolean fn_A(int a){
+  long b=Long.MAX_VALUE;
+  for (int c=0; c < 10; c++) {
+    long d=System.nanoTime();
+    long e=0;
+    int f;
+    for (f=0; e == 0 && f < 50000; f++) {
+      e=System.nanoTime() - d;
+    }
+    if (e < b) {
+      b=e;
+    }
+  }
+  return b > 1 && b < 30000;
+}

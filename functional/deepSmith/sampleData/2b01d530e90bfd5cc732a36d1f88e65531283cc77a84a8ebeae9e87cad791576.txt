@@ -1,0 +1,13 @@
+static public int fn_A(){
+  int a=0;
+  long b=0;
+  long c=b;
+  do {
+    b=Runtime.getRuntime().freeMemory();
+    System.gc();
+    a++;
+    c=Runtime.getRuntime().freeMemory();
+  }
+ while (c - b != 0);
+  return a;
+}

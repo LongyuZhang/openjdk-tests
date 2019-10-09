@@ -1,0 +1,7 @@
+public static String fn_A(byte[] a){
+  byte[] b=new byte[(a.length + 1) / 2];
+  for (int c=0; c < b.length; c++) {
+    b[c]=a[c * 2];
+  }
+  return new String(b,Charset.forName("utf-8"));
+}

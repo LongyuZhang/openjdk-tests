@@ -1,0 +1,5 @@
+static final boolean fn_A(final int a,final int b,final boolean c){
+  if (a > b)   return c;
+  if (a < b)   return !c;
+  return true;
+}

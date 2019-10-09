@@ -1,0 +1,7 @@
+public static double[][] fn_A(double a[]){
+  double b[][]=new double[a.length][1];
+  for (int c=0; c < b.length; c++) {
+    b[c][0]=a[c];
+  }
+  return b;
+}

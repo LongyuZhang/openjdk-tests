@@ -1,0 +1,5 @@
+public static double[] fn_A(double a,double b,double c){
+  double d=(-b + Math.sqrt(b * b - 4.0 * a * c)) / (2 * a);
+  double e=(-b - Math.sqrt(b * b - 4.0 * a * c)) / (2 * a);
+  return new double[]{d,e};
+}

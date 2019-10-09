@@ -1,0 +1,6 @@
+private static int fn_A(int a,int b){
+  while (a < 0) {
+    a+=8;
+  }
+  return a;
+}

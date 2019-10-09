@@ -1,0 +1,4 @@
+public static long fn_A(long a,int b){
+  if (b < 0)   throw new IllegalArgumentException("negative position");
+  return a | (1L << b);
+}

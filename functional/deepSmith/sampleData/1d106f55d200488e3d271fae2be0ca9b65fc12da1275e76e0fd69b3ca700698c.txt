@@ -1,0 +1,18 @@
+public static String fn_A(int a){
+switch (a) {
+case 0:
+    return "unspecified";
+case 1:
+  return "simple";
+case 2:
+return "native";
+case 3:
+return "gpu";
+case 4:
+return "vbo";
+case 5:
+return "renderscript";
+default :
+return "unknown";
+}
+}

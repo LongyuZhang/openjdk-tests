@@ -1,0 +1,7 @@
+public static String fn_A(Object[] a){
+  if (a == null) {
+    return null;
+  }
+  Object b=a[3];
+  return b instanceof String ? "" : b instanceof String[] ? ((String[])b)[1] : "";
+}

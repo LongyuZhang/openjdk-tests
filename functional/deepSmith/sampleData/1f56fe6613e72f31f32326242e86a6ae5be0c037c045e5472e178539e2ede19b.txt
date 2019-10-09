@@ -1,0 +1,31 @@
+private static boolean fn_A(float[] a,int b,int c,float[] d){
+  final int e=d.length;
+  if (a.length != e)   return false;
+  if ((b & 0x7C) != 0 || (c & 0x7C) != 0)   return false;
+  if (((b & 0x3) == 0) || ((c & 0x3) == 0))   return false;
+  if ((b & 0x3) == (c & 0x3))   return false;
+  int f=b ^ c;
+  final int g=(b & 0x3) - 1;
+  final int h=(c & 0x3) - 1;
+  final int i=(f & 0x3) - 1;
+  final int j=(i + 1) % 3;
+  final int k=(i + 2) % 3;
+  if (((g ^ j) | (h ^ k)) != 0)   f^=0x80;
+  final boolean l=(b >= 0x80);
+  final boolean m=(c >= 0x80);
+  final boolean n=(f >= 0x80);
+  final int o=((e == 16) ? 4 : 3);
+  for (int p=0; p < 3; p++) {
+    final int q=p * o;
+    for (int r=0; r < 3; r++) {
+      if (g == r)       d[q + r]=l ? -a[q + 0] : a[q + 0];
+      if (h == r)       d[q + r]=m ? -a[q + 1] : a[q + 1];
+      if (i == r)       d[q + r]=n ? -a[q + 2] : a[q + 2];
+    }
+  }
+  if (e == 16) {
+    d[3]=d[7]=d[11]=d[12]=d[13]=d[14]=0;
+    d[15]=1;
+  }
+  return true;
+}

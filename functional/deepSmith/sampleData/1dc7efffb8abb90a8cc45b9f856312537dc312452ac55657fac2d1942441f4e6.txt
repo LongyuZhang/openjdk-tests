@@ -1,0 +1,4 @@
+private static String fn_A(Object a){
+  if (a == null)   throw new NullPointerException();
+  return (String)a;
+}

@@ -1,0 +1,9 @@
+public static <T>T fn_A(T a,T b){
+  if (a != null) {
+    return a;
+  }
+ else   if (b == null) {
+    throw new NullPointerException("All items are null");
+  }
+  return b;
+}

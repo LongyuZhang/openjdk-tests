@@ -1,0 +1,11 @@
+public static double fn_A(int a,int b,int c){
+  int d=b;
+  int e=c;
+  if (d > c) {
+    d=c;
+  }
+  if (e < b) {
+    e=b;
+  }
+  return (e - a) * 100 / d;
+}

@@ -1,0 +1,11 @@
+public static void main(String[] a){
+  long b=1L;
+  long c=1L;
+  for (long d=2L; d <= 100L; d++) {
+    b+=(d * d);
+    c+=d;
+  }
+  c*=c;
+  long e=c - b;
+  System.out.println("squareOfSum :" + c + " sumOfSquares :"+ b+ " difference :"+ e);
+}

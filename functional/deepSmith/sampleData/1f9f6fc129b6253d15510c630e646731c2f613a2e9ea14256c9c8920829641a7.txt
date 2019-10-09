@@ -1,0 +1,8 @@
+private static String fn_A(boolean a){
+  if (a) {
+    return "";
+  }
+ else {
+    return "";
+  }
+}

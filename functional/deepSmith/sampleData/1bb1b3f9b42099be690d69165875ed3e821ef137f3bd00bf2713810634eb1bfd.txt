@@ -1,0 +1,6 @@
+public static final int fn_A(int a,byte[] b){
+  int c=0;
+  int d=b.length;
+  for (int e=0; e < d; e++)   c=(c << 1) | ((a >>> (31 - b[e])) & 1);
+  return c;
+}

@@ -1,0 +1,16 @@
+public static int fn_A(char[] a){
+  int b=0;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == 'x')     b++;
+  }
+  if (b == 0)   return -1;
+  b=(b + 1) / 2;
+  int d=0;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == 'x') {
+      d++;
+      if (d == b)       return c;
+    }
+  }
+  return -1;
+}

@@ -1,0 +1,11 @@
+public static void fn_A(String a,Object b,Object c){
+  if (a == null) {
+    throw new IllegalArgumentException("field must not be null");
+  }
+  if (b == null) {
+    throw new IllegalArgumentException("lowerPoint must not be null");
+  }
+  if (c == null) {
+    throw new IllegalArgumentException("upperPoint must not be null");
+  }
+}

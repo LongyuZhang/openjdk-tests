@@ -1,0 +1,14 @@
+static void fn_A(int a,int b,int c,int[] d){
+  int e=0;
+  for (int f=0; f < a; f++) {
+    if (f != b) {
+      e+=d[f];
+    }
+  }
+  if (c <= (e / 2)) {
+    System.out.println("Bon Appetit");
+  }
+ else {
+    System.out.println(c - (e / 2));
+  }
+}

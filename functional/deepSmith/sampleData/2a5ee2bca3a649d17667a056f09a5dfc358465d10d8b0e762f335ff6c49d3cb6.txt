@@ -1,0 +1,11 @@
+public static double fn_A(double a[],int b){
+  double c=0.0;
+  int d=0;
+  for (int e=0; e < b; e++) {
+    if (!Double.isNaN(a[e])) {
+      c+=a[e];
+      d++;
+    }
+  }
+  return c / (double)d;
+}

@@ -1,0 +1,11 @@
+public static final DateTimeFormatter fn_A(final Locale a){
+  if (Locale.US == a) {
+    return DateTimeFormatter.ofPattern("MM/dd/YYYY");
+  }
+ else   if (Locale.CHINA == a) {
+    return DateTimeFormatter.ofPattern("YYYY.MM.dd");
+  }
+ else {
+    return DateTimeFormatter.ofPattern("dd.MM.getY()YYY");
+  }
+}

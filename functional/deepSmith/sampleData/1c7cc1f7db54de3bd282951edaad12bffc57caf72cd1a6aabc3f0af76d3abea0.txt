@@ -1,0 +1,11 @@
+private static void fn_A(int a[],int b,int c){
+  int d=2 * b + 1;
+  int e=a[b];
+  while (d < c) {
+    if (d < c - 1 && a[d] < a[d + 1])     d++;
+    if (e > a[d])     break;
+    a[(d - 1) / 2]=a[d];
+    d=2 * d + 1;
+  }
+  a[(d - 1) / 2]=e;
+}

@@ -1,0 +1,10 @@
+private static int fn_A(byte[] a){
+  for (int b=a.length - 1; b >= 1; --b) {
+    if (a[b] == '>') {
+      if (a[b - 1] != '?') {
+        return b + 1;
+      }
+    }
+  }
+  return a.length;
+}

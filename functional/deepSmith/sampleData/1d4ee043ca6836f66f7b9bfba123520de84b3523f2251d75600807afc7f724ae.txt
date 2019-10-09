@@ -1,0 +1,4 @@
+public static int fn_A(long a){
+  int b=(37 * 17 + (int)(a ^ (a >>> 32)));
+  return b;
+}

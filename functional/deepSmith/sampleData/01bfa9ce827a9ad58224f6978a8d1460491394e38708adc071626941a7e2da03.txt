@@ -1,0 +1,6 @@
+public static String fn_A(){
+  String a="";
+  StackTraceElement[] b=Thread.currentThread().getStackTrace();
+  for (int c=2; c < b.length; c++)   a+=System.getProperty("line.separator") + "	at " + b[c].toString();
+  return a;
+}

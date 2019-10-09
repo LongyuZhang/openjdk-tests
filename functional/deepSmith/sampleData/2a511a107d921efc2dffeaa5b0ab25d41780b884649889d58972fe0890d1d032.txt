@@ -1,0 +1,10 @@
+public static double fn_A(double[] a,double[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("Arrays have different length.");
+  }
+  double c=0.0;
+  for (int d=0; d < a.length; d++) {
+    c+=a[d] * b[d];
+  }
+  return c;
+}

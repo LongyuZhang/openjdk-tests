@@ -1,0 +1,6 @@
+static <ITEM>List<ITEM> fn_A(List<ITEM> a){
+  if (a == null) {
+    return new ArrayList<ITEM>();
+  }
+  return a;
+}

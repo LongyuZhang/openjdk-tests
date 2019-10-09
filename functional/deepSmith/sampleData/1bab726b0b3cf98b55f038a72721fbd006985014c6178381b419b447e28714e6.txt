@@ -1,0 +1,5 @@
+public static double fn_A(double a){
+  double b=Math.random();
+  double c=(Math.log(1 - b)) / (0 - a);
+  return c;
+}

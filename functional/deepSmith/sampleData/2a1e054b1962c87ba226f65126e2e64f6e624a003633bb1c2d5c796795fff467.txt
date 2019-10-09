@@ -1,0 +1,328 @@
+private static int fn_A(double a,double b){
+  if (b < -79.0) {
+    if (a < 78.5) {
+      if (b < -84.5) {
+        if (a < 73.0) {
+          if (b < -87.5) {
+            if (a < 70.0) {
+              if (b < -89.0) {
+                return 108;
+              }
+ else {
+                return 308;
+              }
+            }
+ else {
+              return 308;
+            }
+          }
+ else {
+            if (a < 70.0) {
+              if (b < -86.0) {
+                return 308;
+              }
+ else {
+                if (a < 68.5) {
+                  if (b < -85.0) {
+                    return 308;
+                  }
+ else {
+                    return 138;
+                  }
+                }
+ else {
+                  if (b < -85.5) {
+                    return 308;
+                  }
+ else {
+                    if (a < 69.0) {
+                      if (b < -85.0) {
+                        return 308;
+                      }
+ else {
+                        return 138;
+                      }
+                    }
+ else {
+                      if (b < -85.0) {
+                        if (a < 69.5) {
+                          return 308;
+                        }
+ else {
+                          return 138;
+                        }
+                      }
+ else {
+                        return 138;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+ else {
+              if (b < -85.0) {
+                return 308;
+              }
+ else {
+                return 138;
+              }
+            }
+          }
+        }
+ else {
+          if (b < -85.5) {
+            return 308;
+          }
+ else {
+            if (a < 75.5) {
+              if (a < 74.0) {
+                if (b < -85.0) {
+                  return 308;
+                }
+ else {
+                  return 138;
+                }
+              }
+ else {
+                if (a < 74.5) {
+                  return 0;
+                }
+ else {
+                  if (b < -85.0) {
+                    return 308;
+                  }
+ else {
+                    return 138;
+                  }
+                }
+              }
+            }
+ else {
+              if (a < 77.0) {
+                if (a < 76.0) {
+                  if (b < -85.0) {
+                    return 308;
+                  }
+ else {
+                    return 138;
+                  }
+                }
+ else {
+                  if (b < -85.0) {
+                    return 308;
+                  }
+ else {
+                    return 138;
+                  }
+                }
+              }
+ else {
+                if (a < 77.5) {
+                  if (b < -85.0) {
+                    return 308;
+                  }
+ else {
+                    return 138;
+                  }
+                }
+ else {
+                  return 138;
+                }
+              }
+            }
+          }
+        }
+      }
+ else {
+        return 138;
+      }
+    }
+ else {
+      if (a < 84.0) {
+        if (b < -84.5) {
+          if (b < -87.5) {
+            return 308;
+          }
+ else {
+            if (a < 81.0) {
+              if (b < -85.0) {
+                return 308;
+              }
+ else {
+                return 138;
+              }
+            }
+ else {
+              if (b < -86.0) {
+                return 308;
+              }
+ else {
+                if (a < 82.5) {
+                  if (b < -85.0) {
+                    return 308;
+                  }
+ else {
+                    return 138;
+                  }
+                }
+ else {
+                  return 308;
+                }
+              }
+            }
+          }
+        }
+ else {
+          return 138;
+        }
+      }
+ else {
+        return 0;
+      }
+    }
+  }
+ else {
+    if (a < 78.5) {
+      if (b < -73.5) {
+        return 138;
+      }
+ else {
+        if (a < 73.0) {
+          if (b < -70.5) {
+            return 138;
+          }
+ else {
+            if (a < 70.0) {
+              if (b < -68.0) {
+                return 138;
+              }
+ else {
+                return 167;
+              }
+            }
+ else {
+              if (b < -69.0) {
+                return 138;
+              }
+ else {
+                if (a < 71.5) {
+                  if (b < -68.0) {
+                    return 138;
+                  }
+ else {
+                    return 167;
+                  }
+                }
+ else {
+                  return 0;
+                }
+              }
+            }
+          }
+        }
+ else {
+          return 307;
+        }
+      }
+    }
+ else {
+      if (b < -73.5) {
+        return 138;
+      }
+ else {
+        if (a < 84.0) {
+          if (b < -70.5) {
+            if (a < 81.0) {
+              if (b < -72.0) {
+                if (a < 79.5) {
+                  if (b < -73.0) {
+                    return 138;
+                  }
+ else {
+                    return 307;
+                  }
+                }
+ else {
+                  return 138;
+                }
+              }
+ else {
+                if (a < 79.5) {
+                  return 307;
+                }
+ else {
+                  return 138;
+                }
+              }
+            }
+ else {
+              return 138;
+            }
+          }
+ else {
+            if (a < 81.0) {
+              if (b < -69.0) {
+                if (a < 79.5) {
+                  return 307;
+                }
+ else {
+                  return 138;
+                }
+              }
+ else {
+                if (a < 80.0) {
+                  return 307;
+                }
+ else {
+                  if (b < -68.0) {
+                    return 138;
+                  }
+ else {
+                    return 167;
+                  }
+                }
+              }
+            }
+ else {
+              if (b < -69.0) {
+                return 138;
+              }
+ else {
+                if (a < 82.5) {
+                  if (b < -68.0) {
+                    return 138;
+                  }
+ else {
+                    return 167;
+                  }
+                }
+ else {
+                  if (b < -68.5) {
+                    return 138;
+                  }
+ else {
+                    if (a < 83.0) {
+                      if (b < -68.0) {
+                        return 138;
+                      }
+ else {
+                        return 167;
+                      }
+                    }
+ else {
+                      return 138;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+ else {
+          return 0;
+        }
+      }
+    }
+  }
+}

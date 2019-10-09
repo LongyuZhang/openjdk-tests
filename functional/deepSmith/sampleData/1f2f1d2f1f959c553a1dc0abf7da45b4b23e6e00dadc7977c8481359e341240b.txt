@@ -1,0 +1,4 @@
+private static int fn_A(byte[] a){
+  final int b=4 + 2;
+  return (((a[b] << 8) & 0xFF00) | ((a[b + 1]) & 0xFF));
+}

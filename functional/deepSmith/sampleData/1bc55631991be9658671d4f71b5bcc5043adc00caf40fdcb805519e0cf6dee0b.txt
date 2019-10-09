@@ -1,0 +1,12 @@
+private static short[] fn_A(final long a,final short[] b,final int c){
+  final int d=8 * c;
+  b[d]=(short)((a >> 56) & 0xFF);
+  b[d + 1]=(short)((a >> 48) & 0xFF);
+  b[d + 2]=(short)((a >> 40) & 0xFF);
+  b[d + 3]=(short)(a >> 32 & 0xFF);
+  b[d + 4]=(short)((a >> 24) & 0xFF);
+  b[d + 5]=(short)((a >> 16) & 0xFF);
+  b[d + 6]=(short)((a >> 8) & 0xFF);
+  b[d + 7]=(short)(a & 0xFF);
+  return b;
+}

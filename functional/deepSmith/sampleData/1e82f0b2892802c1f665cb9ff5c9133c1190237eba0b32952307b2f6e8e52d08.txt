@@ -1,0 +1,10 @@
+public static String fn_A(double[] a){
+  String b="";
+  for (int c=0; c < a.length; c++) {
+    b+=Double.toString(a[c]);
+    if (c < (a.length - 1)) {
+      b+=",";
+    }
+  }
+  return b;
+}

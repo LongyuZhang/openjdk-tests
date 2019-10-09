@@ -1,0 +1,15 @@
+public static void main(String[] a){
+  int[] b={123,345,100,234,55,12344,100,1233,5543};
+  int c=100;
+  boolean d=false;
+  for (int e=0; e < b.length; e++) {
+    if (b[e] == c) {
+      System.out.println(c + " was found at index " + e);
+      d=true;
+      break;
+    }
+  }
+  if (!d) {
+    System.out.println(c + " not found");
+  }
+}

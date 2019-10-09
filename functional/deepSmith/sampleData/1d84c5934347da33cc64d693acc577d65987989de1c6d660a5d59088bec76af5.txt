@@ -1,0 +1,18 @@
+protected static int fn_A(byte[] a,int b,int c,byte[] d){
+  int e=c;
+  if (d.length < e)   e=d.length;
+  int f=0;
+  for (int g=0; g < e; g++) {
+    f=a[b + g] - d[g];
+    if (f != 0)     break;
+  }
+  if (f == 0) {
+    if (e < c) {
+      f=1;
+    }
+ else     if (e < d.length) {
+      f=-1;
+    }
+  }
+  return f;
+}

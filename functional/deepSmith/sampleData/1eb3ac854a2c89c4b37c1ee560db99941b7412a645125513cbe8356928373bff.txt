@@ -1,0 +1,8 @@
+public static void fn_A(){
+  System.out.println("arg0: numberOfDimensions");
+  System.out.println("arg1: numberOfDatasets");
+  System.out.println("arg2: repetitions per dataset");
+  System.out.println("arg3: neighbor set size");
+  System.out.println("arg4: number of clusters");
+  System.out.println("arg5: outDirectory");
+}

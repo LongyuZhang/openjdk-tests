@@ -1,0 +1,11 @@
+public static void fn_A(final byte[] a,final int b,final float[] c,final int d,final int e){
+  if (a.length - b < 2 * e) {
+    throw new IllegalArgumentException("Insufficient Samples to convert to floats");
+  }
+  if (c.length - d < e) {
+    throw new IllegalArgumentException("Insufficient float buffer to convert the samples");
+  }
+  for (int f=0; f < e; f++) {
+    c[d + f]=(float)((a[b + 2 * f] & 0xff) | (a[b + 2 * f + 1] << 8));
+  }
+}

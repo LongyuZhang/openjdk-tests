@@ -1,0 +1,12 @@
+private static final int fn_A(int a){
+  if (48 <= a && a <= 57) {
+    return a - 48;
+  }
+  if (97 <= a && a <= 102) {
+    return (a - 97) + 10;
+  }
+  if (65 <= a && a <= 70) {
+    return (a - 65) + 10;
+  }
+  throw new IllegalArgumentException("Invalid character " + a + " in hex string");
+}

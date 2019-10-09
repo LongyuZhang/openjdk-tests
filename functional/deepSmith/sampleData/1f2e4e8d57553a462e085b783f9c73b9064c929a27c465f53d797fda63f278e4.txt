@@ -1,0 +1,18 @@
+public static String fn_A(final int a){
+  if ((a >= 0x03) && (a <= 0x3f)) {
+    return "ISO/IEC 13818-6 reserved";
+  }
+  if ((a >= 0x40) && (a <= 0x7f)) {
+    return "DVB reserved";
+  }
+switch (a) {
+case 0x00:
+    return "Pad descriptor";
+case 0x01:
+  return "System Hardware descriptor";
+case 0x02:
+return "System Software descriptor";
+default :
+return "User defined";
+}
+}

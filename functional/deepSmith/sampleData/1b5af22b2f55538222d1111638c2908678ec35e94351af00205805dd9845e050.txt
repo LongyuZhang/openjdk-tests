@@ -1,0 +1,6 @@
+public static float[] fn_A(float[] a){
+  int b=a.length;
+  float[] c=new float[b];
+  for (int d=0; d < b; d++)   c[d]=(float)Math.log10(a[d]);
+  return c;
+}

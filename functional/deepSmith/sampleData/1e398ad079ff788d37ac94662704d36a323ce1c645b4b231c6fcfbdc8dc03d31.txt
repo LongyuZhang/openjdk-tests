@@ -1,0 +1,15 @@
+public static boolean fn_A(Object[] a,Object[] b){
+  if (a == b)   return true;
+  if (a == null || b == null)   return false;
+  int c=a.length;
+  if (c != b.length)   return false;
+  for (int d=0; d < c; ++d) {
+    if (a[d] == null) {
+      if (b[d] != null)       return false;
+    }
+ else {
+      if (!a[d].equals(b[d]))       return false;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,8 @@
+private static BufferedReader fn_A(Reader a){
+  if (a instanceof BufferedReader) {
+    return (BufferedReader)a;
+  }
+ else {
+    return new BufferedReader(a);
+  }
+}

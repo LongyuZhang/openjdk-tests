@@ -1,0 +1,6 @@
+public static void fn_A(String a){
+  if (a == null) {
+    a="[no description]";
+  }
+  throw new RuntimeException("Internal error: " + a);
+}

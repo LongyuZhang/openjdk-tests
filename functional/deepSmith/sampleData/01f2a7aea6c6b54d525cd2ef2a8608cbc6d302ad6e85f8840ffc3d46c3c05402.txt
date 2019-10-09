@@ -1,0 +1,8 @@
+public static final int fn_A(byte a[]){
+  final int b=30;
+  final int c=28;
+  final int d=26;
+  int e=Byte.toUnsignedInt(a[c]) | (Byte.toUnsignedInt(a[c + 1]) << 8);
+  int f=Byte.toUnsignedInt(a[d]) | (Byte.toUnsignedInt(a[d + 1]) << 8);
+  return b + e + f;
+}

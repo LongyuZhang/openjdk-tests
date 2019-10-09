@@ -1,0 +1,24 @@
+private static void fn_A(int[] a,int[] b,int c,int d,float[] e){
+  int f=c;
+  while (f * 2 + 1 <= d) {
+    int g=f * 2 + 1;
+    int h=f;
+    if (e[a[h]] > e[a[g]]) {
+      h=g;
+    }
+    if (g + 1 <= d && e[a[h]] > e[a[g + 1]]) {
+      h=g + 1;
+    }
+    if (h != f) {
+      int i=a[h];
+      a[h]=a[f];
+      a[f]=i;
+      b[a[h]]=h;
+      b[a[f]]=f;
+      f=h;
+    }
+ else {
+      return;
+    }
+  }
+}

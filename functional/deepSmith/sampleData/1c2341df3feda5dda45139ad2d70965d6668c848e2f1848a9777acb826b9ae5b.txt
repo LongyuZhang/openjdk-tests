@@ -1,0 +1,4 @@
+private static void fn_A(double a){
+  double b=a * a * Math.PI;
+  System.out.println("The area of the circle [radius = " + a + "]: "+ b);
+}

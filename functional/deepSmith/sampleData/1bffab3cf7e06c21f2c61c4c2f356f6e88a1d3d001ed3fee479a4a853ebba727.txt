@@ -1,0 +1,10 @@
+public static int fn_A(int a,int b,int c){
+  int d=1;
+  if (a > 0 && b > 0) {
+    d=(int)Math.sqrt((float)(a * b) / c);
+    if (d < 1) {
+      d=1;
+    }
+  }
+  return d;
+}

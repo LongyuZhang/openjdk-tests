@@ -1,0 +1,12 @@
+public static String fn_A(boolean a,boolean b){
+  if (a && b) {
+    return "Report_CxSAST_CxOSA.html";
+  }
+  if (a) {
+    return "Report_CxSAST.html";
+  }
+  if (b) {
+    return "Report_CxOSA.html";
+  }
+  return "";
+}

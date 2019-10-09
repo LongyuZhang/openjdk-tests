@@ -1,0 +1,14 @@
+private static int fn_A(int a){
+  if (a >= '0' && a <= '9') {
+    return a - '0';
+  }
+ else   if (a >= 'A' && a <= 'F') {
+    return a - 'A' + 0xA;
+  }
+ else   if (a >= 'a' && a <= 'f') {
+    return a - 'a' + 0xA;
+  }
+ else {
+    return -1;
+  }
+}

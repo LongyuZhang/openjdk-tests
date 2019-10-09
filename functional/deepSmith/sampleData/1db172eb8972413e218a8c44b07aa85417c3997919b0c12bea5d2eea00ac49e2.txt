@@ -1,0 +1,12 @@
+static double fn_A(Double a){
+  Double b=Double.valueOf(1.);
+  for (int c=0; c < 1000; c++) {
+    if ((c & 1) == 0) {
+      a=new Double(a + 1.);
+    }
+ else {
+      b=b + 2.;
+    }
+  }
+  return a + b;
+}

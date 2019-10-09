@@ -1,0 +1,5 @@
+public static boolean fn_A(int a){
+  boolean b=true;
+  if (a % 2 == 0.0D)   b=false;
+  return b;
+}

@@ -1,0 +1,11 @@
+public static byte[] fn_A(boolean[] a){
+  byte[] b=new byte[a.length / 8];
+  for (int c=0; c < b.length; c++) {
+    for (int d=0; d < 8; d++) {
+      if (a[c * 8 + d]) {
+        b[c]|=(128 >> d);
+      }
+    }
+  }
+  return b;
+}

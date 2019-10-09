@@ -1,0 +1,26 @@
+private static int fn_A(final long[] a,final int b,final int c){
+  int d=b, e=c + 1;
+  final long f=a[b];
+  while (true) {
+    while (a[++d] < f) {
+      if (d == c) {
+        break;
+      }
+    }
+    while (f < a[--e]) {
+      if (e == b) {
+        break;
+      }
+    }
+    if (d >= e) {
+      break;
+    }
+    final long g=a[d];
+    a[d]=a[e];
+    a[e]=g;
+  }
+  final long g=a[b];
+  a[b]=a[e];
+  a[e]=g;
+  return e;
+}

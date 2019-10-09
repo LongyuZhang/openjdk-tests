@@ -1,0 +1,7 @@
+public static int fn_A(short a,byte[] b,int c) throws IllegalArgumentException {
+  if (a < 0 || a > 255) {
+    throw new IllegalArgumentException("Unsigned byte " + a + " out of range 0..255");
+  }
+  b[c]=(byte)(a & 0xff);
+  return 1;
+}

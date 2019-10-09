@@ -1,0 +1,11 @@
+public static BufferedReader fn_A(String a,String b) throws IOException {
+  File c=new File(a);
+  FileInputStream d=null;
+  try {
+    d=new FileInputStream(c);
+  }
+ catch (  FileNotFoundException e) {
+    throw e;
+  }
+  return new BufferedReader(new InputStreamReader(d,b));
+}

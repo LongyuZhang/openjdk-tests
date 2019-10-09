@@ -1,0 +1,8 @@
+private static void fn_A(int[] a,int b,int c,int d){
+  d+=b;
+  while (b < d) {
+    int e=a[b];
+    a[b++]=a[c];
+    a[c++]=e;
+  }
+}

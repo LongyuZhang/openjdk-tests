@@ -1,0 +1,8 @@
+protected static RuntimeException fn_A(Exception a){
+  if (a instanceof RuntimeException) {
+    return (RuntimeException)a;
+  }
+ else {
+    return new RuntimeException(a);
+  }
+}

@@ -1,0 +1,5 @@
+private static Integer fn_A(byte[] a,int b){
+  Integer c=(int)a[b] & 0xFF;
+  Integer d=(int)a[b + 1];
+  return (d << 8) + c;
+}

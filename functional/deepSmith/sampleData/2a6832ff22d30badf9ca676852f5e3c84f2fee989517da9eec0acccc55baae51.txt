@@ -1,0 +1,5 @@
+static long fn_A(long[] a,int b){
+  long c=0;
+  for (; b > 0; b-=b & (-b))   c+=a[b];
+  return c;
+}

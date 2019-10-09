@@ -1,0 +1,4 @@
+public static File fn_A(){
+  String a=System.getProperty("user.home");
+  return new File(a);
+}

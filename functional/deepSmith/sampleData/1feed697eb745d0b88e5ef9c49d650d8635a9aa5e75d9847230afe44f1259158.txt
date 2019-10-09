@@ -1,0 +1,5 @@
+public static float[] fn_A(float[] a,float[] b,int c){
+  int d=0;
+  for (int e=c; e < Math.min(a.length,b.length + c); e++)   a[e]+=b[d++];
+  return a;
+}

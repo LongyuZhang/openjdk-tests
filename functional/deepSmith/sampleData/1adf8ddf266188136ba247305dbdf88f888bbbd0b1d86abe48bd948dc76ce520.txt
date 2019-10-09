@@ -1,0 +1,11 @@
+private static int fn_A(int a,float b){
+  final int c=16;
+  double d=40075004;
+  double e=d / 256;
+  int f=1;
+  while ((e * (double)a) > b && f < c) {
+    e/=2;
+    f++;
+  }
+  return f;
+}

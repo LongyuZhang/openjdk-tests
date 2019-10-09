@@ -1,0 +1,5 @@
+public static void fn_A(int[] a,double[] b,double[] c,int d){
+  for (int e=0; e < d; e++) {
+    c[a[e]]=b[e];
+  }
+}

@@ -1,0 +1,9 @@
+static long fn_A(long a){
+  if (a < 10000000000L) {
+    return a * 1000;
+  }
+ else   if (a < 10000000000000L) {
+    return a;
+  }
+  return a / 1000;
+}

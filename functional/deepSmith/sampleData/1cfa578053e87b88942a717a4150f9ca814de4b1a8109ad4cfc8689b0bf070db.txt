@@ -1,0 +1,27 @@
+static void fn_A(int a,int b,int c,int d){
+  System.out.println("IntMath.testIntCompare");
+  if (a > b)   assert(false);
+  if (a >= b)   assert(false);
+  if (b < a)   assert(false);
+  if (b <= a)   assert(false);
+  if (b == a)   assert(false);
+  if (b != c)   assert(false);
+  if (b != a) {
+    assert(true);
+  }
+ else {
+    assert(false);
+  }
+  if (a > 0)   assert(false);
+  if (a >= 0)   assert(false);
+  if (b < 0)   assert(false);
+  if (b <= 0)   assert(false);
+  if (b == 0)   assert(false);
+  if (d != 0)   assert(false);
+  if (d == 0) {
+    assert(true);
+  }
+ else {
+    assert(false);
+  }
+}

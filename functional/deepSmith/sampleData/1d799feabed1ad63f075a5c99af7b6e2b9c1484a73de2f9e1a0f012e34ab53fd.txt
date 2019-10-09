@@ -1,0 +1,8 @@
+public static final void fn_A(byte[] a) throws NullPointerException {
+  int b=0, c=a.length;
+  while (--c > b) {
+    byte d=a[b];
+    a[b++]=a[c];
+    a[c]=d;
+  }
+}

@@ -1,0 +1,6 @@
+private static <E>E fn_A(E a){
+  if (a == null) {
+    throw new IllegalArgumentException();
+  }
+  return a;
+}

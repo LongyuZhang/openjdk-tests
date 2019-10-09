@@ -1,0 +1,8 @@
+private static void fn_A(){
+  System.err.println("Required:");
+  System.err.println("-lf full path to the library file containing set of genetic gates needed for technology mapping.");
+  System.err.println("-sf full path to the specification file to performing technology mapping.");
+  System.err.println("Options:");
+  System.err.println("-o name of output file along with full path of where output file will be written to.");
+  System.err.println("-p SBOL URI prefix needed to set the SBOLDocument when converting the technology mapping solution to SBOL data format.");
+}

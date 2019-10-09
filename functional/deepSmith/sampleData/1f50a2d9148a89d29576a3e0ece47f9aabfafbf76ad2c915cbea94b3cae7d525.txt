@@ -1,0 +1,6 @@
+public static long fn_A(long a){
+  a^=a << 13;
+  a^=a >>> 7;
+  a^=(a << 17);
+  return a;
+}

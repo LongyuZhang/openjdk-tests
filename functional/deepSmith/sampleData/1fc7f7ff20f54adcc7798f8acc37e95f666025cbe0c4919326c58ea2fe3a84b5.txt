@@ -1,0 +1,7 @@
+static final float fn_A(float a){
+  float b=a / 2.0f;
+  for (int c=0; c < 10; c++) {
+    b=((b + (a / b)) / 2);
+  }
+  return b;
+}

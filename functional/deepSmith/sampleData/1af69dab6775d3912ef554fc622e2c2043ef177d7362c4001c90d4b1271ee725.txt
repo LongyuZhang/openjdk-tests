@@ -1,0 +1,26 @@
+private static void fn_A(float[][] a,int[] b,int[] c){
+  float d=Float.MAX_VALUE;
+  for (int e=0; e < a.length; e++) {
+    if (0 == b[e]) {
+      for (int f=0; f < a[e].length; f++) {
+        if (0 == c[f] && a[e][f] < d) {
+          d=a[e][f];
+        }
+      }
+    }
+  }
+  for (int e=0; e < b.length; e++) {
+    if (1 == b[e]) {
+      for (int f=0; f < a[e].length; f++) {
+        a[e][f]+=d;
+      }
+    }
+  }
+  for (int e=0; e < c.length; e++) {
+    if (0 == c[e]) {
+      for (int f=0; f < a.length; f++) {
+        a[f][e]-=d;
+      }
+    }
+  }
+}

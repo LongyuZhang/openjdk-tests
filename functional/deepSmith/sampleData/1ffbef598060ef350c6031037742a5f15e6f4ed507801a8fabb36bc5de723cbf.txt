@@ -1,0 +1,11 @@
+private static String fn_A(StackTraceElement[] a){
+  String b="";
+  for (int c=0; c < a.length; c++) {
+    b=b + "at " + a[c]+ "\n";
+    if (c > 10) {
+      b=b + "..." + "\n";
+      break;
+    }
+  }
+  return b;
+}

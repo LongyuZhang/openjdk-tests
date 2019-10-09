@@ -1,0 +1,7 @@
+public static void main(String a[]){
+  int b=1;
+  while (b <= 10) {
+    System.out.println("Loop:" + b);
+    b=b + 1;
+  }
+}

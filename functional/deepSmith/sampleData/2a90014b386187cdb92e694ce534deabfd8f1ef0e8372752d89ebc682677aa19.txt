@@ -1,0 +1,13 @@
+private static int fn_A(String[] a){
+  if (a.length != 1) {
+    throw new IllegalArgumentException("GuidedIntegerSchedule(): Usage: -Dpj.schedule=guided or -Dpj.schedule=\"guided(<n>)\"");
+  }
+  int b;
+  try {
+    b=Integer.parseInt(a[0]);
+  }
+ catch (  NumberFormatException c) {
+    throw new IllegalArgumentException("GuidedIntegerSchedule(): Chunk size = " + a[0] + " illegal");
+  }
+  return b;
+}

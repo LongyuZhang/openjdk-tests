@@ -1,0 +1,5 @@
+public static void fn_A(float a){
+  if (a < 0.0f) {
+    throw new IllegalArgumentException("Length must be a greater than or equal to zero.");
+  }
+}

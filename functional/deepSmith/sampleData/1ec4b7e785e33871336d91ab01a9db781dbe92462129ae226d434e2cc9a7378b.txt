@@ -1,0 +1,21 @@
+static int fn_A(int[] a){
+  int b=0;
+  int c=0;
+  int d;
+  for (int e=0; e < a.length - 1; e++) {
+    b=0;
+    for (int f=0; f < a.length - 1 - e; f++) {
+      if (a[f] > a[f + 1]) {
+        d=a[f];
+        a[f]=a[f + 1];
+        a[f + 1]=d;
+        b++;
+        c++;
+      }
+    }
+    if (b == 0) {
+      break;
+    }
+  }
+  return c;
+}

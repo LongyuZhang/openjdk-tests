@@ -1,0 +1,13 @@
+public static double fn_A(double[][][] a){
+  double b=a[0][0][0];
+  for (int c=0; c < a.length; c++) {
+    for (int d=0; d < a[c].length; d++) {
+      for (int e=0; e < a[c][d].length; e++) {
+        if (a[c][d][e] > b) {
+          b=a[c][d][e];
+        }
+      }
+    }
+  }
+  return b;
+}

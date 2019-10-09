@@ -1,0 +1,23 @@
+public static int[] fn_A(char[] a){
+  if (a.length == 1) {
+    return new int[]{-1};
+  }
+  int[] b=new int[a.length];
+  b[0]=-1;
+  int c=0;
+  int d=2;
+  while (d < a.length) {
+    if (a[d - 1] == a[c]) {
+      c++;
+      d++;
+      b[d]=c;
+    }
+ else     if (c > 0) {
+      c=b[c];
+    }
+ else {
+      b[d++]=0;
+    }
+  }
+  return b;
+}

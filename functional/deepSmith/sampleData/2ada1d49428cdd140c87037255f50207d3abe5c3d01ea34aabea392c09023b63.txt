@@ -1,0 +1,9 @@
+public static boolean fn_A(int[] a){
+  int b=1;
+  for (int c=0; c < a.length - 1; c++) {
+    if (a[c] == a[c + 1])     b++;
+    if (b >= 4)     return true;
+    if (a[c] != a[c + 1])     b=1;
+  }
+  return false;
+}

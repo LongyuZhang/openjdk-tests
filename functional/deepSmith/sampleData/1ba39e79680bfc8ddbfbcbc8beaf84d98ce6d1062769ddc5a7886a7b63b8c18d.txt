@@ -1,0 +1,12 @@
+protected static int[] fn_A(int[] a) throws Exception {
+  if (a == null) {
+    throw new Exception("Null dimensions object provided");
+  }
+ else   if (a.length > 4) {
+    throw new Exception("ArrayFire supports up to 4 dimensions only");
+  }
+  int[] b;
+  b=new int[]{1,1,1,1};
+  for (int c=0; c < a.length; c++)   b[c]=a[c];
+  return b;
+}

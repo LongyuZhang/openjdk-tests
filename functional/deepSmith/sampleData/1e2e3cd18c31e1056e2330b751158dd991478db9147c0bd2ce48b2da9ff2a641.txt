@@ -1,0 +1,22 @@
+static void fn_A(String a){
+  System.out.println();
+  System.out.println("Test mode:");
+  System.out.println("  Use to start a test session.\n");
+  System.out.println("  " + a + " [-mode=test] [-source=ctlfile|dir]...");
+  System.out.println("  [-session=session] [-base=baseURI]");
+  System.out.println("    [-suite=qname|-test=qname [@param-name=value] ...] [-profile=qname|*] ...\n");
+  System.out.println("    qname=[namespace_uri,|prefix:]local_name]\n");
+  System.out.println("Resume mode:");
+  System.out.println("  Use to resume a test session that was interrupted before completion.\n");
+  System.out.println("  " + a + " -mode=resume -logdir=dir -session=session\n");
+  System.out.println("Retest mode:");
+  System.out.println("  Use to reexecute individual tests.\n");
+  System.out.println("  " + a + " -mode=retest -logdir=dir -session=session testpath1 [testpath2] ...\n");
+  System.out.println("Doc mode:");
+  System.out.println("  Use to generate documentation of tests.\n");
+  System.out.println("  " + a + " -mode=doc -source=<main ctl file> [-suite=[{namespace_uri,|prefix:}]suite_name]\n");
+  System.out.println("PPLogs mode:");
+  System.out.println("  Pretty Print Logs mode is used to generate a readable HTML report of execution.\n");
+  System.out.println("  " + a + " -mode=pplogs -logdir=<dir of a session log>  \n");
+  System.out.println("  " + a + "-mode=cache -logdir=dir -session=session\n");
+}

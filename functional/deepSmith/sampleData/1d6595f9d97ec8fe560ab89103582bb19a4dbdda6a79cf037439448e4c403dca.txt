@@ -1,0 +1,16 @@
+public static float fn_A(byte a,byte b){
+  if ((a & (byte)0x80) == (byte)0x80) {
+    short c=(short)((a ^ 0xFF) & 0xFF);
+    short d=(short)((b ^ 0xFF) & 0xFF);
+    short e=(short)((d & 0xF0) >> 4);
+    short f=(short)(d & 0x0F);
+    return -1 * ((c * 16) + e + ((f + 1) / 16f));
+  }
+ else {
+    short c=(short)(a & 0xFF);
+    short d=(short)(b & 0xFF);
+    short e=(short)((d & 0xF0) >> 4);
+    short f=(short)(d & 0x0F);
+    return (c * 16) + e + (f / 16f);
+  }
+}

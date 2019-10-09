@@ -1,0 +1,4 @@
+protected static boolean fn_A(){
+  String a=System.getenv("EXTERNAL_REDIS");
+  return a != null;
+}

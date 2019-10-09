@@ -1,0 +1,8 @@
+public static long fn_A(int a,double b,int c,int d){
+  long e=(long)(a * b);
+  long f=e / d;
+  if (c == d) {
+    f=f + (e % d);
+  }
+  return f;
+}

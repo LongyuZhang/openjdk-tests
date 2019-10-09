@@ -1,0 +1,4 @@
+private static String fn_A(String a){
+  String b="SELECT   ?s  ?o " + "WHERE " + "{"+ "?s <" + a + "> ?o "+ "} ";
+  return b;
+}

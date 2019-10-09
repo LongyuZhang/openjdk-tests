@@ -1,0 +1,5 @@
+private static void fn_A(double a){
+  if (a < -Math.PI || a > Math.PI) {
+    throw new IllegalArgumentException("You have to specify angle in bounds [-PI; +PI] but " + "actually passed value is [" + a + "]");
+  }
+}

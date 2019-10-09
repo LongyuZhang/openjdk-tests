@@ -1,0 +1,12 @@
+public static Boolean fn_A(final int a,final int b,final int c,final int d){
+  if (a == b) {
+    return Boolean.TRUE;
+  }
+  if (a == c) {
+    return Boolean.FALSE;
+  }
+  if (a == d) {
+    return null;
+  }
+  throw new IllegalArgumentException("The Integer did not match any specified value");
+}

@@ -1,0 +1,6 @@
+private static int[] fn_A(int[] a,int b,int c){
+  int d=b;
+  int e=c;
+  int[] f={d,e};
+  return f;
+}

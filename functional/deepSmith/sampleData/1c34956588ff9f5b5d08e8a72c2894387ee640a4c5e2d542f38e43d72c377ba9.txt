@@ -1,0 +1,7 @@
+static protected String fn_A(){
+  String a="/opt/kaltura";
+  if (System.getenv().containsKey("KALTURA_CONF_PATH")) {
+    a=System.getenv().get("KALTURA_CONF_PATH");
+  }
+  return a + "/config.properties";
+}

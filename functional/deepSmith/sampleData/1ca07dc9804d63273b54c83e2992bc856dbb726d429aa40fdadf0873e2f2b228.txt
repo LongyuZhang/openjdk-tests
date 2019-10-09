@@ -1,0 +1,4 @@
+public static boolean[] fn_A(int a,int b,boolean[] c){
+  for (int d=0; d < b; d++)   c[d + a]=!c[d + a];
+  return c;
+}

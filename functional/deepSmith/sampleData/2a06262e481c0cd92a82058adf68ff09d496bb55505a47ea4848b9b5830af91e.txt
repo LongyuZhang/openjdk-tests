@@ -1,0 +1,14 @@
+public static boolean fn_A(int a){
+  if (a == 0x66)   return true;
+  if (a == 0x67)   return true;
+  if (a == 0x26)   return true;
+  if (a == 0x2E)   return true;
+  if (a == 0x36)   return true;
+  if (a == 0x3E)   return true;
+  if (a == 0x64)   return true;
+  if (a == 0x65)   return true;
+  if (a == 0xF0)   return true;
+  if (a == 0xF2)   return true;
+  if (a == 0xF3)   return true;
+  return false;
+}

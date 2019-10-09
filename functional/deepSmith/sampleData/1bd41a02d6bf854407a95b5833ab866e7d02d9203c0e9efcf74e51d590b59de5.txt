@@ -1,0 +1,5 @@
+private static float fn_A(float a,float b){
+  float c=0.55f;
+  float d=a * c / b + 1;
+  return b * (1 - 1 / d);
+}

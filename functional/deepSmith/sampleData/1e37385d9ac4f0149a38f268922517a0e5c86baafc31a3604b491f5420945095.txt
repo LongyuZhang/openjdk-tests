@@ -1,0 +1,11 @@
+static private void fn_A(){
+  System.out.println("Float.isInfinite(Float.POSITIVE_INFINITY): " + Float.isInfinite(Float.POSITIVE_INFINITY));
+  System.out.println("Float.isInfinite(Float.NEGATIVE_INFINITY): " + Float.isInfinite(Float.NEGATIVE_INFINITY));
+  System.out.println("Float.isInfinite(Float.NaN): " + Float.isInfinite(Float.NaN));
+  System.out.println("Float.isFinite(Float.POSITIVE_INFINITY): " + Float.isFinite(Float.POSITIVE_INFINITY));
+  System.out.println("Float.isFinite(Float.NEGATIVE_INFINITY): " + Float.isFinite(Float.NEGATIVE_INFINITY));
+  System.out.println("Float.isFinite(Float.NaN): " + Float.isFinite(Float.NaN));
+  System.out.println("Float.isNaN(Float.POSITIVE_INFINITY): " + Float.isNaN(Float.POSITIVE_INFINITY));
+  System.out.println("Float.isNaN(Float.NEGATIVE_INFINITY): " + Float.isNaN(Float.NEGATIVE_INFINITY));
+  System.out.println("Float.isNaN(Float.NaN): " + Float.isNaN(Float.NaN));
+}

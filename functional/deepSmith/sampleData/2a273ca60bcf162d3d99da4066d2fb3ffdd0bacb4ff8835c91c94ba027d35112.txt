@@ -1,0 +1,6 @@
+private static boolean fn_A(Object a){
+  if (a == null) {
+    return true;
+  }
+  return (a instanceof String);
+}

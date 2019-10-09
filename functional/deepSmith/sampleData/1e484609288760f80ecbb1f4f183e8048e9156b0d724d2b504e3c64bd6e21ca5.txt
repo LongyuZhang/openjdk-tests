@@ -1,0 +1,6 @@
+public static String fn_A(int a){
+  if (a < 0) {
+    throw new IllegalArgumentException();
+  }
+  return String.valueOf(a + 1);
+}

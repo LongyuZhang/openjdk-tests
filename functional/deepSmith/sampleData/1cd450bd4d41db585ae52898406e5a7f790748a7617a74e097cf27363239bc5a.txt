@@ -1,0 +1,6 @@
+public static <T>T fn_A(final T a,final String b){
+  if (a == null) {
+    throw new NullPointerException(b);
+  }
+  return a;
+}

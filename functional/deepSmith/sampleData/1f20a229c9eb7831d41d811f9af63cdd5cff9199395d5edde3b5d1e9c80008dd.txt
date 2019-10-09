@@ -1,0 +1,6 @@
+public static byte fn_A(int a){
+  byte b=1;
+  if (a-- == 0)   return 0;
+  while ((a>>=1) != 0)   ++b;
+  return b;
+}

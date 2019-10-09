@@ -1,0 +1,6 @@
+public static Date fn_A(Date a,Date b){
+  if (a == null)   return b;
+  if (b == null)   return a;
+  if (a.compareTo(b) > 0)   return a;
+  return b;
+}

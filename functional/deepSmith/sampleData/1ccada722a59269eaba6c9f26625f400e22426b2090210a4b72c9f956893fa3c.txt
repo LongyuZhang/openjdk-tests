@@ -1,0 +1,20 @@
+public static final boolean fn_A(Object a){
+  if (a == null)   return true;
+  if (a == "")   return true;
+  if (a instanceof String) {
+    if (((String)a).trim().length() == 0) {
+      return true;
+    }
+  }
+ else   if (a instanceof Collection<?>) {
+    if (((Collection<?>)a).size() == 0) {
+      return true;
+    }
+  }
+ else   if (a instanceof Map<?,?>) {
+    if (((Map<?,?>)a).size() == 0) {
+      return true;
+    }
+  }
+  return false;
+}

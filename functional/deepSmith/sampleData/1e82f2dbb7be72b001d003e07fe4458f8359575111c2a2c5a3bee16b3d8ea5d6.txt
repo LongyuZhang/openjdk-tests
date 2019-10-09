@@ -1,0 +1,5 @@
+static double fn_A(int a){
+  double b=0;
+  for (int c=0; c < a; c++)   b+=Math.log(2) / Math.log(c + 2);
+  return b;
+}

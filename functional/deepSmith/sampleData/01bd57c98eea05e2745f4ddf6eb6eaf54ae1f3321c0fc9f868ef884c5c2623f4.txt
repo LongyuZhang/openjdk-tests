@@ -1,0 +1,7 @@
+public static short fn_A(byte[] a,int b){
+  short c=0;
+  for (int d=0; d < 2; ++d) {
+    c|=((a[b + (1 - d)] & 0xff) << (d * 8));
+  }
+  return c;
+}

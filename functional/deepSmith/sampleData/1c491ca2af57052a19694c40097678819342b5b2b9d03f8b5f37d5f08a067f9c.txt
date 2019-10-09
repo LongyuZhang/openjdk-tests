@@ -1,0 +1,4 @@
+public static final float fn_A(float a,float b){
+  if (b == Float.NEGATIVE_INFINITY)   return a;
+  return (float)Math.log10(Math.pow(10,a - b) + 1) + b;
+}

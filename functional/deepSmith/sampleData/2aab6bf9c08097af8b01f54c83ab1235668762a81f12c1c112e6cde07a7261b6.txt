@@ -1,0 +1,5 @@
+public static long fn_A(double a,double b){
+  if (b == 0 || a == 0)   return 0;
+  double c=b / a;
+  return (long)c;
+}

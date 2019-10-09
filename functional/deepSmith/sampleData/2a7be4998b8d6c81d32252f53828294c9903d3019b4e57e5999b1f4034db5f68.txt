@@ -1,0 +1,17 @@
+public static boolean fn_A(int a,int b,int c,int d,int e){
+  int f=0;
+  int g=0 + e;
+  int h=c - e;
+  int i=c;
+  int j=0;
+  int k=0 + e;
+  int l=d - e;
+  int m=d;
+  if ((b >= j && b <= k) || (b >= l && b <= m)) {
+    return true;
+  }
+  if ((a >= f && a <= g) || (a >= h && a <= i)) {
+    return true;
+  }
+  return false;
+}

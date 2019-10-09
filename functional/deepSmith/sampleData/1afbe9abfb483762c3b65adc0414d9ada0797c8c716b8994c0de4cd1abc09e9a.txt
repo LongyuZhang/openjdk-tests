@@ -1,0 +1,23 @@
+private static int fn_A(char a,int[] b){
+  int c=b[0];
+  int d=b[1];
+  int e=b[2];
+  int f=b[3];
+  if (a == 'A')   c=0;
+  if (a == 'C')   d=0;
+  if (a == 'G')   e=0;
+  if (a == 'T')   f=0;
+  if (c >= d && c >= e && c >= f) {
+    return 0;
+  }
+  if (d >= c && d >= e && d >= f) {
+    return 1;
+  }
+  if (e >= c && e >= d && e >= f) {
+    return 2;
+  }
+  if (f >= c && f >= d && f >= e) {
+    return 3;
+  }
+  return '?';
+}

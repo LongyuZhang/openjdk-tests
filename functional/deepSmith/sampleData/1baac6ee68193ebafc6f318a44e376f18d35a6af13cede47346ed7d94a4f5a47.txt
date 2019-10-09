@@ -1,0 +1,19 @@
+private static boolean fn_A(char[] a){
+  int b=a.length - 1;
+  for (; b >= 1; b--)   if (a[b] > a[b - 1])   break;
+  if (b == 0)   return false;
+  for (int c=a.length - 1; c >= b; c--) {
+    if (a[c] > a[b - 1]) {
+      char d=a[c];
+      a[c]=a[b - 1];
+      a[b - 1]=d;
+      break;
+    }
+  }
+  for (int c=0; c < (a.length - b) / 2; c++) {
+    char d=a[b + c];
+    a[b + c]=a[a.length - c - 1];
+    a[a.length - c - 1]=d;
+  }
+  return true;
+}

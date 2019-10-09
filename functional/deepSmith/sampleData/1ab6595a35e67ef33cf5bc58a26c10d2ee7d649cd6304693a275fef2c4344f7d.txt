@@ -1,0 +1,12 @@
+private static double fn_A(final double a){
+  final double[] b={38.027264,265.187033,335.677320,038.102495};
+  final double[] c={40.021433,322.624911,570.236280,157.105423};
+  final int d=b.length;
+  final double e=a * a;
+  double f=1, g=1;
+  for (int h=0; h < d; h++) {
+    f=b[h] + f * e;
+    g=c[h] + g * e;
+  }
+  return f / (a * g);
+}

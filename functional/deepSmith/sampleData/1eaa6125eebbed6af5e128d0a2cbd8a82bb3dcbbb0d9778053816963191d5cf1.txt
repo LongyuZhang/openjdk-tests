@@ -1,0 +1,11 @@
+static boolean fn_A(Set<?> a,Set<?> b){
+  if (a.size() != b.size()) {
+    return false;
+  }
+  try {
+    return a.containsAll(b);
+  }
+ catch (  Exception c) {
+    return false;
+  }
+}

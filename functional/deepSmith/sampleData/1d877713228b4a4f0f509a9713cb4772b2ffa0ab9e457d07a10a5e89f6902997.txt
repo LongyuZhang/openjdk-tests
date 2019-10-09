@@ -1,0 +1,19 @@
+public static int fn_A(final double a,final double b,final double c,final double d,final double e,final double f){
+  if (b < d && b < f) {
+    return 0;
+  }
+  if (b >= d && b >= f) {
+    return 0;
+  }
+  if (a >= c && a >= e) {
+    return 0;
+  }
+  if (a < c && a < e) {
+    return (d < f) ? 1 : -1;
+  }
+  double g=c + (b - d) * (e - c) / (f - d);
+  if (a >= g) {
+    return 0;
+  }
+  return (d < f) ? 1 : -1;
+}

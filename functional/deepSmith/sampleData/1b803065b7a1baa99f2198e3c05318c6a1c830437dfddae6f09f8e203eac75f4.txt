@@ -1,0 +1,4 @@
+private static String[] fn_A(String[] a){
+  if (a.length <= 0)   throw new IllegalStateException("Must contain at least one value");
+  return a;
+}

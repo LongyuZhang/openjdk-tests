@@ -1,0 +1,11 @@
+private static int fn_A(int[] a){
+  int b=a[0];
+  int c=a[1];
+  int d=a[2];
+  b=(b % 400 + 400) % 400;
+  c=(int)((((long)c - 3) % 4800 + 4800) % 4800);
+  b+=c / 12;
+  c%=12;
+  d=(d % 7 + 7) % 7;
+  return (b + b / 4 - b / 100 + b / 400 + (13 * c + 2) / 5 + d + 2) % 7;
+}

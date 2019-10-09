@@ -1,0 +1,4 @@
+public static String fn_A(){
+  if (System.getProperty("os.name").toLowerCase().contains("win"))   return "\"" + System.getProperty("java.home") + "\\bin\\java"+ "\"";
+  return System.getProperty("java.home") + "/bin/java";
+}

@@ -1,0 +1,6 @@
+public static long fn_A(long a,long b){
+  long c=a;
+  c+=b;
+  c=(c / b) * b;
+  return c;
+}

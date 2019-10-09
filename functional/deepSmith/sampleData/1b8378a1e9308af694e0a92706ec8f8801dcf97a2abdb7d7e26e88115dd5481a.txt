@@ -1,0 +1,33 @@
+public static int fn_A(int a){
+  if (a == 0) {
+    return 9;
+  }
+  if (a == 1) {
+    return 18;
+  }
+  if (a == 2) {
+    return 27;
+  }
+  if (a == 3) {
+    return 36;
+  }
+  if (a == 4) {
+    return 45;
+  }
+  if (a == 5) {
+    return 54;
+  }
+  if (a == 6) {
+    return 63;
+  }
+  if (a == 7) {
+    return 72;
+  }
+  if (a == 8) {
+    return 81;
+  }
+  if (a == 9) {
+    return 90;
+  }
+  return 0;
+}

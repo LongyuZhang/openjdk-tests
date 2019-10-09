@@ -1,0 +1,4 @@
+public static int fn_A(double[] a){
+  int b=(int)((((int)(a[0] * 10) & 0xFF) << 24) | (((int)(a[1] * 10) & 0xFF) << 16) | (((int)(a[2] * 10) & 0xFF) << 8)| ((int)(a[3] * 10) & 0xFF));
+  return b;
+}

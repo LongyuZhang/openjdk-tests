@@ -1,0 +1,4 @@
+public static String fn_A(){
+  String a=System.getProperty("user.home");
+  return a;
+}

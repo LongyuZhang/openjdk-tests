@@ -1,0 +1,8 @@
+public static boolean fn_A(char[] a,char b){
+  for (int c=0; c < a.length; c++) {
+    if (b == a[c]) {
+      return true;
+    }
+  }
+  return false;
+}

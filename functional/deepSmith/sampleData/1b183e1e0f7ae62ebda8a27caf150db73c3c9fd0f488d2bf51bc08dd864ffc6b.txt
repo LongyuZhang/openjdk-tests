@@ -1,0 +1,7 @@
+private static String fn_A(String a){
+  String b="default";
+  if (a != null) {
+    b=a + ":";
+  }
+  return b;
+}

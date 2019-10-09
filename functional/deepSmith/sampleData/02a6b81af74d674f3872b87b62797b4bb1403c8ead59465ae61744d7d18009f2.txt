@@ -1,0 +1,7 @@
+public static int fn_A(final int a,final int b){
+  final long c=a * (long)b;
+  if (c != (int)c) {
+    throw new ArithmeticException("overflow: " + a + "*"+ b);
+  }
+  return (int)c;
+}

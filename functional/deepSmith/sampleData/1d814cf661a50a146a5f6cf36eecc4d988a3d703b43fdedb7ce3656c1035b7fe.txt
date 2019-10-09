@@ -1,0 +1,7 @@
+public static long[] fn_A(){
+  long a=5L;
+  int b=3;
+  long[] c=new long[b];
+  for (int d=0; d < b; d++)   c[d]=a++;
+  return c;
+}

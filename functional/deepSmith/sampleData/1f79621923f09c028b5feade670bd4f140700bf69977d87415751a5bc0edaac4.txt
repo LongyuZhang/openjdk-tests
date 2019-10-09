@@ -1,0 +1,5 @@
+public static final boolean fn_A(float a,float b,float c,float d,float e,float f,float g,float h){
+  float i=(e - a) * (e - a) + (f - b) * (f - b) + (g - c) * (g - c);
+  float j=(d + h) * (d + h);
+  return i <= j;
+}

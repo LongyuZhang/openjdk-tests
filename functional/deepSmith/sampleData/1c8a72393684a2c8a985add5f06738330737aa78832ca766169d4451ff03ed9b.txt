@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("java examples.RingElection [# processes] [# times]");
+  System.exit(1);
+}

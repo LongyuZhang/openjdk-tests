@@ -1,0 +1,4 @@
+public static int fn_A(int a){
+  final int b=a & 0x1f;
+  return (1 << b) | ((1 << b) - 1);
+}

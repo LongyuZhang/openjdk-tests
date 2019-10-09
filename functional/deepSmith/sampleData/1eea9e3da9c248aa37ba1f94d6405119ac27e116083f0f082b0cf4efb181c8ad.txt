@@ -1,0 +1,4 @@
+public static int fn_A(boolean a){
+  if (a)   return 6;
+  return 4;
+}

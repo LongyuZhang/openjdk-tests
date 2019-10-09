@@ -1,0 +1,6 @@
+public static String fn_A(int a){
+  if (a > 99) {
+    return "99+";
+  }
+  return a + "";
+}

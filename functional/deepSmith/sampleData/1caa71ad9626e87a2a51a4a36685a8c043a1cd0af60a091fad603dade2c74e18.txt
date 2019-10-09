@@ -1,0 +1,22 @@
+private static void fn_A(String a){
+  System.out.println();
+  if (a != null) {
+    System.out.println("Error: " + a);
+    System.out.println();
+  }
+  System.out.println("Usage: java -jar jarfile [options] [args...]");
+  System.out.println();
+  System.out.println("The options include:");
+  System.out.println("\t" + "--help: some helpful informations.");
+  System.out.println("\t" + "-port: Integer, the port of server, default port is 6100.");
+  System.out.println("\t" + "-configFile: engine config file.");
+  System.out.println("\t" + "-bossThreads: Integer, set the netty bossThreads size.");
+  System.out.println("\t" + "-maxThreads: Integer, set the netty workerThreads size.");
+  System.out.println("\t" + "-userThreads: Integer, set size of the user thread pool that handle client request.");
+  System.out.println("\t" + "-socketTimeoutMills: Integer, set the socket timeout in milliseconds.");
+  System.out.println("\t" + "-shutdownTimeoutMills: Integer, set thread pool shutdown socket timeout in milliseconds.");
+  System.out.println("\t" + "-sendBuff: Integer, the tcp option sendBuff");
+  System.out.println("\t" + "-recvBuff: Integer, the tcp option recvBuff");
+  System.out.println();
+  System.exit(0);
+}

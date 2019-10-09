@@ -1,0 +1,10 @@
+public static void fn_A(int[] a){
+  for (int b=1; b < a.length; b++) {
+    int c=b - 1;
+    int d=a[b];
+    for (; c > -1 && d < a[c]; c--) {
+      a[c + 1]=a[c];
+    }
+    a[c + 1]=d;
+  }
+}

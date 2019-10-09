@@ -1,0 +1,10 @@
+public static boolean fn_A(int a,int b,int c){
+  if (c == 0)   return a == b;
+  int d=(a & 0x00FF0000) >> 16;
+  int e=(a & 0x0000FF00) >> 8;
+  int f=(a & 0x000000FF);
+  int g=(b & 0x00FF0000) >> 16;
+  int h=(b & 0x0000FF00) >> 8;
+  int i=(b & 0x000000FF);
+  return Math.abs(d - g) <= c && Math.abs(e - h) <= c && Math.abs(f - i) <= c;
+}

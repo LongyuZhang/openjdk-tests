@@ -1,0 +1,4 @@
+public static Integer fn_A(Double a){
+  if (a == null)   return null;
+  return (int)Math.round(a * 3.6);
+}

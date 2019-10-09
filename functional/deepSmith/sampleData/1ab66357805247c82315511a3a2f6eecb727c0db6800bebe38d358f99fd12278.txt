@@ -1,0 +1,6 @@
+private static <T,V>Map<T,V> fn_A(Map<T,V> a){
+  if (a == null)   return Collections.emptyMap();
+  if (a instanceof NavigableMap)   return Collections.unmodifiableNavigableMap((NavigableMap<T,V>)a);
+ else   if (a instanceof SortedMap)   return Collections.unmodifiableSortedMap((SortedMap<T,V>)a);
+ else   return Collections.unmodifiableMap(new LinkedHashMap<>(a));
+}

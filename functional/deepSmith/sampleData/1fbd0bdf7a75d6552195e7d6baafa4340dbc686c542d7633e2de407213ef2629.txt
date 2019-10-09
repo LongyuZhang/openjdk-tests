@@ -1,0 +1,10 @@
+static int[] fn_A(long[] a){
+  int b=a.length;
+  int[] c=new int[b << 1];
+  for (int d=0, e=0; d < b; ++d) {
+    long f=a[d];
+    c[e++]=(int)f;
+    c[e++]=(int)(f >>> 32);
+  }
+  return c;
+}

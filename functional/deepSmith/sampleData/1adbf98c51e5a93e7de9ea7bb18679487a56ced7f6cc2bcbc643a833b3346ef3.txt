@@ -1,0 +1,8 @@
+private static void fn_A(){
+  System.out.flush();
+  System.out.println();
+  System.out.flush();
+  System.err.flush();
+  System.err.println();
+  System.err.flush();
+}

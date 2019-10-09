@@ -1,0 +1,14 @@
+protected static Integer fn_A(Class<?> a){
+  if (a == Integer.class) {
+    return null;
+  }
+ else   if (a == Double.class) {
+    return 24;
+  }
+ else   if (a == String.class) {
+    return 255;
+  }
+ else {
+    throw new UnsupportedOperationException("Unknown field type " + a);
+  }
+}

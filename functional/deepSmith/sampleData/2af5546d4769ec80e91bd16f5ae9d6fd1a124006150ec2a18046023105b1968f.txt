@@ -1,0 +1,6 @@
+private static String[] fn_A(String[] a,String b){
+  String[] c=new String[a.length + 1];
+  c[0]=b;
+  System.arraycopy(a,0,c,1,a.length);
+  return c;
+}

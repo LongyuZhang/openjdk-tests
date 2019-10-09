@@ -1,0 +1,18 @@
+private static float[] fn_A(int a,float b,float[] c){
+  float d=(float)b * c[0];
+  float e=d * c[1];
+  float f=0;
+  float g=0;
+  float h=e;
+  float i=e;
+  float j=(b - d - e) / 2;
+switch (a) {
+case 0:
+    return new float[]{f + j,g + j};
+case 1:
+  return new float[]{h + j,i + j};
+default :
+break;
+}
+return new float[]{0f,0f};
+}

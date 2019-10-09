@@ -1,0 +1,6 @@
+public static int fn_A(int a,int b){
+  int c=(a >> 16) + b;
+  int d=(a & 0x0000FF) + b;
+  int e=((a >> 8) & 0x00FF) + b;
+  return d | (e << 8) | (c << 16);
+}

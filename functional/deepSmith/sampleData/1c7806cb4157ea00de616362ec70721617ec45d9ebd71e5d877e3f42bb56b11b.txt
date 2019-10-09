@@ -1,0 +1,22 @@
+private static final void fn_A(int[] a,int[] b,int[] c,byte[] d,int e,int f,int g){
+  int h=0;
+  for (int i=e; i <= f; i++) {
+    for (int j=0; j < g; j++) {
+      if (d[j] == i) {
+        c[h]=j;
+        h++;
+      }
+    }
+  }
+  for (int k=0; k < 23; k++)   b[k]=0;
+  for (int l=0; l < g; l++)   b[d[l] + 1]++;
+  for (int m=1; m < 23; m++)   b[m]+=b[m - 1];
+  for (int n=0; n < 23; n++)   a[n]=0;
+  int o=0;
+  for (int p=e; p <= f; p++) {
+    o+=b[p + 1] - b[p];
+    a[p]=o - 1;
+    o<<=1;
+  }
+  for (int q=e + 1; q <= f; q++)   b[q]=(a[q - 1] + 1 << 1) - b[q];
+}

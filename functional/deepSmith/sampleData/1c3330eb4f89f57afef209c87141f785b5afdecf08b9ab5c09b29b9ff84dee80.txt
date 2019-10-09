@@ -1,0 +1,5 @@
+private static float[] fn_A(int a){
+  float[] b=new float[a];
+  for (int c=0; c < a; c++)   b[c]=(float)Math.random();
+  return b;
+}

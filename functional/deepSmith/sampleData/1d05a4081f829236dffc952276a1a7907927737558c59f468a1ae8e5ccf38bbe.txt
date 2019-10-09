@@ -1,0 +1,9 @@
+public static boolean fn_A(){
+  try {
+    Class.forName("com.sleepycat.je.Environment");
+    return true;
+  }
+ catch (  ClassNotFoundException|NoClassDefFoundError a) {
+    return false;
+  }
+}

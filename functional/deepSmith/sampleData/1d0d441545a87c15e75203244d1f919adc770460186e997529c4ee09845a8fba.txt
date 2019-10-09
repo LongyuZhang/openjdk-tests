@@ -1,0 +1,23 @@
+public static int fn_A(final double a){
+  assert(a > 0);
+  assert(a != Double.POSITIVE_INFINITY);
+  assert(a != Double.NEGATIVE_INFINITY);
+  int b=0;
+  double c=1;
+  if (a == c)   return b;
+  if (a > c) {
+    do {
+      ++b;
+      c*=2;
+    }
+ while (c <= a);
+    return b - 1;
+  }
+  assert(a < c);
+  do {
+    --b;
+    c/=2;
+  }
+ while (c > a);
+  return b;
+}

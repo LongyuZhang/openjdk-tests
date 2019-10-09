@@ -1,0 +1,4 @@
+public static void fn_A(Object a){
+  System.err.println("Error: " + a);
+  System.exit(-1);
+}

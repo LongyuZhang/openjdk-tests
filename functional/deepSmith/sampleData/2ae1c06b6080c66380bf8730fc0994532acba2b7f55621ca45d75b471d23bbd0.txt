@@ -1,0 +1,7 @@
+public static String fn_A(byte[] a){
+  String b="";
+  int c=a.length;
+  for (int d=0; d < c; d++)   if (d != c - 1)   b+=Integer.toHexString(a[d]) + ":";
+ else   b+=a[d];
+  return b;
+}

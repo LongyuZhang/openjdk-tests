@@ -1,0 +1,6 @@
+public static void fn_A(int a,byte[] b,int c){
+  b[c + 0]=(byte)((a >>> 24) & 0xff);
+  b[c + 1]=(byte)((a >>> 16) & 0xff);
+  b[c + 2]=(byte)((a >>> 8) & 0xff);
+  b[c + 3]=(byte)((a >>> 0) & 0xff);
+}

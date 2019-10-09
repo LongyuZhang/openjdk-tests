@@ -1,0 +1,9 @@
+static byte fn_A(){
+  Byte a=Byte.valueOf((byte)1);
+  Byte b=Byte.valueOf((byte)1);
+  for (int c=0; c < 1000; c++) {
+    a=(byte)(a + 1);
+    b=(byte)(b + 2);
+  }
+  return (byte)(a + b);
+}

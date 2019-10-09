@@ -1,0 +1,67 @@
+public static String fn_A(int a){
+switch (a) {
+case 1:
+    return "testEmpty";
+case 2:
+  return "testAddLocale";
+case 3:
+return "testAddLocaleWithData";
+case 4:
+return "testAddExistingLocale";
+case 5:
+return "testSetCurrentLocaleExists";
+case 6:
+return "testSetCurrentLocaleNotExists";
+case 7:
+return "testUnsetCurrentLocale";
+case 8:
+return "testSetDefaultLocaleExists";
+case 9:
+return "testSetDefaultLocaleNotExists";
+case 10:
+return "testUnsetDefaultLocale";
+case 11:
+return "testSetToDefault";
+case 12:
+return "testSetToDefaultNoDefault";
+case 13:
+return "testDestroyLocale";
+case 14:
+return "testDestroyLocaleNotExist";
+case 15:
+return "testDestroyCurrentLocale";
+case 16:
+return "testDestroyDefaultLocale";
+case 17:
+return "testAvailableLocales";
+case 18:
+return "testGetNextLocale";
+case 19:
+return "testGetLocaleMap";
+case 20:
+return "testGetLocaleMapNotExist";
+case 21:
+return "testTextMapping";
+case 22:
+return "testTextMappingOverwrite";
+case 23:
+return "testGetText";
+case 24:
+return "testGetTextNoCurrentLocale";
+case 25:
+return "testLocalizationObservers";
+case 26:
+return "testLocalizationObserverUpdateOnRegister";
+case 27:
+return "testNullArgs";
+case 28:
+return "testSerialization";
+case 29:
+return "testLinearSub";
+case 30:
+return "testHashSub";
+case 31:
+return "testFallbacks";
+}
+throw new IllegalStateException("Unexpected index");
+}

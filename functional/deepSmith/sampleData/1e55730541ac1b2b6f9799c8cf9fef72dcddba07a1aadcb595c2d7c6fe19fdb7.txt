@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  char b='X';
+  int c=0;
+  System.out.print(true ? b : 0);
+  System.out.print(false ? c : b);
+}

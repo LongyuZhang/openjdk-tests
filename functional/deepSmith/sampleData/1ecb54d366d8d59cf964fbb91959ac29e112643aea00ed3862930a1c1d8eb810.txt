@@ -1,0 +1,4 @@
+private static int fn_A(final int a,final int b,final boolean c,final boolean d){
+  final int e=c ? d ? 0x1503045E : 0x753A6C17 : d ? 0x1DB2D751 : 0x1130427D;
+  return a * 29 ^ e ^ b;
+}

@@ -1,0 +1,5 @@
+public static void fn_A(int a){
+  if (a < 2) {
+    throw new IllegalArgumentException("'count' can not be less than 2 [count=" + a + "]");
+  }
+}

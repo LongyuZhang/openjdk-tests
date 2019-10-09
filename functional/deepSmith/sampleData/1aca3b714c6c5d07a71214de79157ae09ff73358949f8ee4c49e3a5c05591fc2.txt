@@ -1,0 +1,16 @@
+protected static Object fn_A(Object a){
+  Iterator b=null;
+  if (a instanceof Collection) {
+    b=((Collection)a).iterator();
+  }
+ else   if (a instanceof Map) {
+    b=((Map)a).values().iterator();
+  }
+ else   if (a instanceof Iterator) {
+    b=(Iterator)a;
+  }
+  if (b == null) {
+    return a;
+  }
+  return b;
+}

@@ -1,0 +1,8 @@
+public static boolean[] fn_A(char[] a){
+  boolean[] b=new boolean[a.length];
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == 'g' || a[c] == 'c')     b[c]=true;
+ else     b[c]=false;
+  }
+  return b;
+}

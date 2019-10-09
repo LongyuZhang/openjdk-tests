@@ -1,0 +1,10 @@
+public static java.lang.String fn_A(int a){
+switch (a) {
+case 1:
+    return "columns";
+case 2:
+  return "serverHandle";
+default :
+return null;
+}
+}

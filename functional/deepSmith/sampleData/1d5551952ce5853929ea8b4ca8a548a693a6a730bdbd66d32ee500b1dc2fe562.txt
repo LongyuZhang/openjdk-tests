@@ -1,0 +1,4 @@
+public static InputStream fn_A(String a) throws FileNotFoundException {
+  File b=new File(a);
+  return new FileInputStream(b);
+}

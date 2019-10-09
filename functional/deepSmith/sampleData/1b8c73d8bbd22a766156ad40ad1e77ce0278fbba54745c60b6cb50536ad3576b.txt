@@ -1,0 +1,8 @@
+public static int fn_A(Integer a){
+  try {
+    Thread.sleep(1000);
+  }
+ catch (  Exception b) {
+  }
+  return a * a;
+}

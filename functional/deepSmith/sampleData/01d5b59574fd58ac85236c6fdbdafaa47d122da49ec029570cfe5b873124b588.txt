@@ -1,0 +1,7 @@
+private static void fn_A(){
+  try {
+    Thread.sleep(500);
+  }
+ catch (  Exception a) {
+  }
+}

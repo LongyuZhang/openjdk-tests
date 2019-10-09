@@ -1,0 +1,7 @@
+private static boolean fn_A(byte[] a,byte[] b){
+  int c=a.length ^ b.length;
+  for (int d=0; d < a.length && d < b.length; d++) {
+    c|=a[d] ^ b[d];
+  }
+  return c == 0;
+}

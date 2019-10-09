@@ -1,0 +1,5 @@
+public static File fn_A(String a,String b){
+  File c;
+  c=new File(a,b);
+  return c;
+}

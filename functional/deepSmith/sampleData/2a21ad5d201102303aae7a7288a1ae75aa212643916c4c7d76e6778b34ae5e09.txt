@@ -1,0 +1,8 @@
+public static void fn_A(int[] a){
+  int b=a.length;
+  for (int c=0; c < b / 2; c++) {
+    int d=a[c];
+    a[c]=a[b - c - 1];
+    a[b - c - 1]=d;
+  }
+}

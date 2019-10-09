@@ -1,0 +1,8 @@
+static public void fn_A(double[] a,double b){
+  double c=0;
+  for (int d=0; d < a.length; d++) {
+    a[d]=b + Math.random();
+    c+=a[d];
+  }
+  for (int d=0; d < a.length; d++)   a[d]/=c;
+}

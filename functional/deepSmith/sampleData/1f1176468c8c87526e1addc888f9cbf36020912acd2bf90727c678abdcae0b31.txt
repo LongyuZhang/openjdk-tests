@@ -1,0 +1,8 @@
+protected static Class<?> fn_A(){
+  try {
+    return Class.forName("org.neo4j.collections.graphdb.impl.SortableBinaryEdgeTypeImpl");
+  }
+ catch (  ClassNotFoundException a) {
+    throw new RuntimeException(a);
+  }
+}

@@ -1,0 +1,5 @@
+static int fn_A(int a,int b,int c){
+  if (a <= b)   return b - a;
+  if (a >= c)   return a - c;
+  return 0;
+}

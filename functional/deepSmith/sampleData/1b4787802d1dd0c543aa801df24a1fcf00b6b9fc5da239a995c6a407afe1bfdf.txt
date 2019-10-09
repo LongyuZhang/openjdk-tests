@@ -1,0 +1,10 @@
+public static final byte[] fn_A(final byte[] a,int b,final byte[] c,int d,int e){
+  if (e < 0 || a.length - e < b || c.length - e < d) {
+    throw new IllegalArgumentException("That combination of buffers, offsets and length to xor result in out-of-bond accesses.");
+  }
+  byte[] f=new byte[e];
+  for (int g=0; g < e; g++) {
+    f[g]=(byte)(a[g + b] ^ c[g + d]);
+  }
+  return f;
+}

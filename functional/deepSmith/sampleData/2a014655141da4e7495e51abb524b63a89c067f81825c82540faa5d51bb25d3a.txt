@@ -1,0 +1,6 @@
+public static String fn_A(String a){
+  String b="drw-rw-rw    root    system    1024   2009-8-20 10:23   file1\n";
+  b=b + "drw-rw-rw    root    system    1024   2009-8-20 10:23   file2\n";
+  b=b + "drw-rw-rw    root    system    1024   2009-8-20 10:23   file3";
+  return b;
+}

@@ -1,0 +1,18 @@
+public static final int fn_A(int a,int b,int c){
+  if (c < b) {
+    return a;
+  }
+  if (b == c) {
+    return b;
+  }
+  int d=c - b + 1;
+  if (a < b) {
+    return c - ((b - a) % d);
+  }
+ else   if (a > c) {
+    return b + ((a - b) % d);
+  }
+ else {
+    return a;
+  }
+}

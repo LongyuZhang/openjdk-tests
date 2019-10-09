@@ -1,0 +1,7 @@
+private static int fn_A(final float a[],final float[] b,final int c,final int d,final int e){
+  int f;
+  final int g=(f=(Float.compare((a[c]),(a[d])))) == 0 ? (Float.compare((b[c]),(b[d]))) : f;
+  final int h=(f=(Float.compare((a[c]),(a[e])))) == 0 ? (Float.compare((b[c]),(b[e]))) : f;
+  final int i=(f=(Float.compare((a[d]),(a[e])))) == 0 ? (Float.compare((b[d]),(b[e]))) : f;
+  return (g < 0 ? (i < 0 ? d : h < 0 ? e : c) : (i > 0 ? d : h > 0 ? e : c));
+}

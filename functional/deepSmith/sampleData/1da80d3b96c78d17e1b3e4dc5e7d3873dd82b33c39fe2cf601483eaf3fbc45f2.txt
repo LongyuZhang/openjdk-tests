@@ -1,0 +1,9 @@
+public static int fn_A(int a){
+  if (a > 127) {
+    return 1;
+  }
+  if (a < -128) {
+    return 1;
+  }
+  return 0;
+}

@@ -1,0 +1,6 @@
+public static long fn_A(long a,long b){
+  if (Long.compareUnsigned(a,b) < 0) {
+    return b;
+  }
+  return a;
+}

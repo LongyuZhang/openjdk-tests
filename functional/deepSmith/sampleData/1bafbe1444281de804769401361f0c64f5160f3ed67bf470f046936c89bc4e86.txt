@@ -1,0 +1,7 @@
+static double[] fn_A(int a,long b,float c){
+  double[] d=new double[3];
+  d[0]=(double)a;
+  d[1]=(double)b;
+  d[2]=(double)c;
+  return d;
+}

@@ -1,0 +1,11 @@
+private static long fn_A(long a,long b){
+  long c=1;
+  while (c <= b) {
+    c*=10;
+  }
+  long d=a % c;
+  if (c - d > b / 2) {
+    c/=10;
+  }
+  return c;
+}

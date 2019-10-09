@@ -1,0 +1,7 @@
+public static int fn_A(int a,int b){
+  int c=a / b;
+  if ((a ^ b) < 0 && (c * b != a)) {
+    c--;
+  }
+  return c;
+}

@@ -1,0 +1,7 @@
+public static Object fn_A(Object a,Object b,Object c){
+  Object[] d=(Object[])a;
+  int e=((Integer)b).intValue();
+  int f=((Integer)c).intValue();
+  d[e]=d[f];
+  return d[e];
+}

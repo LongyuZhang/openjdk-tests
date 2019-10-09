@@ -1,0 +1,6 @@
+public static int fn_A(int a,int b,int c){
+  if (c < b)   throw new UnsupportedOperationException("min must be <= max");
+  if (a < b)   return b;
+ else   if (a > c)   return c;
+ else   return a;
+}

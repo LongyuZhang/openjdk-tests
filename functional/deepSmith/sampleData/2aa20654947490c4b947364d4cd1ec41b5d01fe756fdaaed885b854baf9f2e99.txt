@@ -1,0 +1,10 @@
+public static long fn_A(byte[] a){
+  long b=0;
+  for (int c=0; c < 8; c++) {
+    b=b << 8;
+    long d=a[c];
+    if (d < 0)     d=d + 256;
+    b=b | d;
+  }
+  return b;
+}

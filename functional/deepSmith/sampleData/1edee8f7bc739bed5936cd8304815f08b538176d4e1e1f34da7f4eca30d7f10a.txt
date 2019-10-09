@@ -1,0 +1,12 @@
+public static int[] fn_A(int a){
+  int[] b=new int[a * 3 * 2];
+  for (int c=0; c < a; c++) {
+    b[c * 2 * 3 + 0]=c * 4 + 0;
+    b[c * 2 * 3 + 1]=c * 4 + 1;
+    b[c * 2 * 3 + 2]=c * 4 + 2;
+    b[c * 2 * 3 + 3]=c * 4 + 2;
+    b[c * 2 * 3 + 4]=c * 4 + 1;
+    b[c * 2 * 3 + 5]=c * 4 + 3;
+  }
+  return b;
+}

@@ -1,0 +1,36 @@
+static void fn_A(int a,double[] b,int[] c,double[] d){
+  int e, f, g, h, i;
+  int j;
+  int k, l, m;
+  double n;
+  j=0;
+  for (i=0; i < a; i++) {
+    k=i;
+    f=-1;
+    for (e=0; e < a; e++) {
+      double o;
+      g=c[j + e];
+      o=d[k + a * g];
+      d[k + a * g]=d[k + a * e];
+      if (f >= 0) {
+        l=e * a;
+        for (h=f; h <= e - 1; h++) {
+          o-=b[l + h] * d[k + a * h];
+        }
+      }
+ else       if (o != 0.0) {
+        f=e;
+      }
+      d[k + a * e]=o;
+    }
+    for (e=0; e < a; e++) {
+      m=(a - 1 - e);
+      l=a * (m);
+      n=0.0;
+      for (h=1; h <= e; h++) {
+        n+=b[l + a - h] * d[k + a * (a - h)];
+      }
+      d[k + a * m]=(d[k + a * m] - n) / b[l + m];
+    }
+  }
+}

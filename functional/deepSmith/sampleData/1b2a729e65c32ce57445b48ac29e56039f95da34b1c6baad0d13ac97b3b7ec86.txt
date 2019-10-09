@@ -1,0 +1,5 @@
+static void fn_A(long a,int b,byte c[]){
+  for (int d=0; d < b; ++d) {
+    c[d]=(byte)(a >> (b - 1 - d) * 8);
+  }
+}

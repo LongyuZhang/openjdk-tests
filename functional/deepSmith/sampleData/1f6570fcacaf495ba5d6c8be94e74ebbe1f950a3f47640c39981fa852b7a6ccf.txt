@@ -1,0 +1,6 @@
+public static String fn_A(String a,int b){
+  if (b % 10 == 1 && b % 10 != 11) {
+    return a;
+  }
+  return a + 's';
+}

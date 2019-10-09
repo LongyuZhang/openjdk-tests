@@ -1,0 +1,15 @@
+public static boolean[][][] fn_A(boolean[][][] a){
+  if (a == null)   return null;
+  int b=a.length;
+  boolean[][][] c=new boolean[b][][];
+  for (int d=0; d < b; d++) {
+    int e=a[d].length;
+    c[d]=new boolean[e][];
+    for (int f=0; f < e; f++) {
+      int g=a[d][f].length;
+      c[d][f]=new boolean[g];
+      for (int h=0; h < g; h++)       c[d][f][h]=a[d][f][h];
+    }
+  }
+  return c;
+}

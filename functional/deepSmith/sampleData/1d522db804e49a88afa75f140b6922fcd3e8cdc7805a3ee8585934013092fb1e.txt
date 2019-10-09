@@ -1,0 +1,8 @@
+private static byte fn_A(char a){
+  if (a >= 'A') {
+    return (byte)((a & 0xF) + 9);
+  }
+ else {
+    return (byte)(a & 0xF);
+  }
+}

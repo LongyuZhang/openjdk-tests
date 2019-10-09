@@ -1,0 +1,9 @@
+public static int[][] fn_A(final int a,final int b,final int c){
+  int[][] d=new int[a][b];
+  for (int e=0; e < d.length; e++) {
+    for (int f=0; f < d[0].length; f++) {
+      d[e][f]=c;
+    }
+  }
+  return d;
+}

@@ -1,0 +1,19 @@
+protected static int fn_A(double a,double b,double c,double d,double e,double f){
+  c-=a;
+  d-=b;
+  e-=a;
+  f-=b;
+  double g=(e * d) - (f * c);
+  if (g == 0.0) {
+    g=(e * c) + (f * d);
+    if (g > 0.0) {
+      e-=c;
+      f-=d;
+      g=(e * c) + (f * d);
+      if (g < 0.0) {
+        g=0.0;
+      }
+    }
+  }
+  return (g < 0.0) ? (-1) : ((g > 0.0) ? 1 : 0);
+}

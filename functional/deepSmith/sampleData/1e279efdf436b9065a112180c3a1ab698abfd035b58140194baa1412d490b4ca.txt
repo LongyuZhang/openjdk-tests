@@ -1,0 +1,10 @@
+private static String fn_A(Character a){
+switch (a) {
+case '1':
+    return "Male";
+case '2':
+  return "Female";
+default :
+return null;
+}
+}

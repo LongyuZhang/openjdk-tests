@@ -1,0 +1,8 @@
+private static String fn_A(String a){
+  try {
+    return a;
+  }
+ catch (  Exception b) {
+    return "";
+  }
+}

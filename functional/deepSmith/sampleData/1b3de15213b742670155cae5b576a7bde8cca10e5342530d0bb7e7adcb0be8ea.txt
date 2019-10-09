@@ -1,0 +1,14 @@
+public static byte[][] fn_A(byte[][] a){
+  if (a == null) {
+    return null;
+  }
+  int b=a.length;
+  int c=a[0].length - 1;
+  byte[][] d=new byte[b][c + 1];
+  for (int e=0; e < b; e++) {
+    for (int f=0; f <= c; f++) {
+      d[e][f]=a[e][c - f];
+    }
+  }
+  return d;
+}

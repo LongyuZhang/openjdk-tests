@@ -1,0 +1,12 @@
+public static void main(String[] a){
+  int b=10;
+  double c=23.1d;
+  double d=b * c;
+  System.out.println(c);
+  int e;
+  double f;
+  e=(int)32.3 + (int)+10.2;
+  f=(double)e + (double)10 + 1;
+  System.out.println("x= " + e);
+  System.out.println("y= " + f);
+}

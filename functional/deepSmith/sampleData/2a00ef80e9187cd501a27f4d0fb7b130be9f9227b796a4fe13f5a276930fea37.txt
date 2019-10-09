@@ -1,0 +1,21 @@
+public static byte[] fn_A(byte[] a,int b,int c){
+  if (b == c) {
+    return a;
+  }
+ else   if (b > c) {
+    float d=b / (float)c;
+    byte[] e=new byte[(int)Math.floor(a.length / d)];
+    for (int f=0; f < e.length; f++) {
+      e[f]=a[(int)(f * d)];
+    }
+    return e;
+  }
+ else {
+    float d=b / (float)c;
+    byte[] e=new byte[(int)Math.ceil(a.length / d)];
+    for (int f=0; f < e.length; f++) {
+      e[f]=a[(int)(f * d)];
+    }
+    return e;
+  }
+}

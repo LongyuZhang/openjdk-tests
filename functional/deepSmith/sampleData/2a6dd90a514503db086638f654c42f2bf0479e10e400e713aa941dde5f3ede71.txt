@@ -1,0 +1,7 @@
+private static long fn_A(long a,int b){
+  long c=a;
+  for (int d=1; d < b; d++) {
+    c/=10;
+  }
+  return c;
+}

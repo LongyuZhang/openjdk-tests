@@ -1,0 +1,20 @@
+private static boolean fn_A(int[] a,int[] b){
+  if (a == null || b == null) {
+    if (a == null && b == null) {
+      return true;
+    }
+ else {
+      return false;
+    }
+  }
+  if (a.length != b.length) {
+    return false;
+  }
+  int c=a.length;
+  for (int d=0; d < c; d++) {
+    if (a[d] != b[d]) {
+      return false;
+    }
+  }
+  return true;
+}

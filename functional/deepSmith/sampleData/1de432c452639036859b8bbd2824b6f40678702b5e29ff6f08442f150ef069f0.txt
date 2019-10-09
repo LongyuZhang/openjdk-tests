@@ -1,0 +1,8 @@
+static void fn_A(){
+  System.out.println("\n-- Type < x , ENTER > to eXit the collector");
+  System.out.println("--      Close the SUT to dump the coverage data to files, or:");
+  System.out.println("--      < f , ENTER > to FORCE the dump of the coverage data to files");
+  System.out.println("--      < a , ENTER > to dump the ACCUMULATED coverage data to Screen");
+  System.out.println("--      < c , ENTER > to dump the CURRENT     coverage data to Screen");
+  System.out.println("--      < r , ENTER > to reset the CURRENT and ACCUMULATED coverage data (0% coverage)");
+}

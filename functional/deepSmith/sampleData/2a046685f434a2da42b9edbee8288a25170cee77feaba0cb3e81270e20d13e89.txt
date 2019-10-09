@@ -1,0 +1,4 @@
+public static boolean fn_A(char a){
+  byte b=(byte)a;
+  return 65 <= b && b <= 90 || 97 <= b && b <= 122;
+}

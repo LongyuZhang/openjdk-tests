@@ -1,0 +1,81 @@
+private static final int fn_A(final Object a,final Object b,final boolean c){
+  int d;
+  int e;
+  if (c) {
+    d=-1;
+    e=1;
+  }
+ else {
+    d=1;
+    e=-1;
+  }
+  if (a == null) {
+    return e;
+  }
+  if (a instanceof Integer && b instanceof Integer) {
+    final int f=((Integer)a).intValue();
+    final int g=((Integer)b).intValue();
+    if (f < g) {
+      return d;
+    }
+ else     if (f == g) {
+      return 0;
+    }
+ else {
+      return e;
+    }
+  }
+ else   if (a instanceof Double && b instanceof Double) {
+    final double f=((Double)a).doubleValue();
+    final double g=((Double)b).doubleValue();
+    if (f < g) {
+      return d;
+    }
+ else     if (f == g) {
+      return 0;
+    }
+ else {
+      return e;
+    }
+  }
+ else   if (a instanceof Date && b instanceof Date) {
+    final long f=((Date)a).getTime();
+    final long g=((Date)b).getTime();
+    if (f < g) {
+      return d;
+    }
+ else     if (f == g) {
+      return 0;
+    }
+ else {
+      return e;
+    }
+  }
+ else   if (a instanceof Boolean && b instanceof Boolean) {
+    if (a == Boolean.FALSE && b == Boolean.FALSE) {
+      return 0;
+    }
+ else     if (a == Boolean.TRUE && b == Boolean.TRUE) {
+      return 0;
+    }
+ else     if (a == Boolean.FALSE && b == Boolean.TRUE) {
+      return d;
+    }
+ else {
+      return e;
+    }
+  }
+ else   if (a instanceof String && b instanceof String) {
+    final int h=((String)a).compareTo((String)b);
+    if (h < 0) {
+      return d;
+    }
+ else     if (h == 0) {
+      return 0;
+    }
+ else {
+      return e;
+    }
+  }
+  return d;
+}

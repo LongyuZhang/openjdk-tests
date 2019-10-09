@@ -1,0 +1,5 @@
+private static void fn_A(){
+  System.out.println("StringsTest.replaceAllTest:");
+  System.out.println("\\\\hello\\\\world".replaceAll("\\\\","/"));
+  System.out.println("\\\\hello\\\\world".replaceFirst("\\\\","/"));
+}

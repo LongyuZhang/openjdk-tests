@@ -1,0 +1,4 @@
+private static int fn_A(){
+  final int a=(int)(Runtime.getRuntime().maxMemory() / 1024);
+  return a / 7;
+}

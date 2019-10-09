@@ -1,0 +1,23 @@
+public static void fn_A(byte[] a,int[] b,int c,int d){
+  final int e=c * d;
+  int f=0;
+  int g=e;
+  int h, i, j, k, l, m;
+  int n=0;
+  for (int o=0; o < d; o++) {
+    for (int p=0; p < c; p++) {
+      h=(b[n] & 0xff0000) >> 16;
+      i=(b[n] & 0xff00) >> 8;
+      j=b[n] & 0xff;
+      k=((66 * h + 129 * i + 25 * j + 128) >> 8) + 16;
+      l=((-38 * h - 74 * i + 112 * j + 128) >> 8) + 128;
+      m=((112 * h - 94 * i - 18 * j + 128) >> 8) + 128;
+      a[f++]=(byte)((k < 0) ? 0 : ((k > 255) ? 255 : k));
+      if (o % 2 == 0 && n % 2 == 0) {
+        a[g++]=(byte)((m < 0) ? 0 : ((m > 255) ? 255 : m));
+        a[g++]=(byte)((l < 0) ? 0 : ((l > 255) ? 255 : l));
+      }
+      n++;
+    }
+  }
+}

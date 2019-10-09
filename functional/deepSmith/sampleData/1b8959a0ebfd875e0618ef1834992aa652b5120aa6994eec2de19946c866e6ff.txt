@@ -1,0 +1,7 @@
+static void fn_A(){
+  System.err.println();
+  System.err.println("ERROR: Wrong tracetype");
+  System.err.println();
+  System.err.println("Options: -tracetype " + "SLS|RUMEN|SYNTH -tracelocation FILE,FILE... " + "(deprecated alternative options --inputsls FILE, FILE,... "+ " | --inputrumen FILE,FILE,...)"+ "-output FILE [-nodes FILE] [-trackjobs JobId,JobId...] "+ "[-printsimulation]");
+  System.err.println();
+}

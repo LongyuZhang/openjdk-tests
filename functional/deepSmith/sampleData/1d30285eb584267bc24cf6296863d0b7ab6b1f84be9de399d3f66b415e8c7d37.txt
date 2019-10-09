@@ -1,0 +1,9 @@
+public static void fn_A(double[] a,int b){
+  double c, d;
+  c=a[b] - a[b + 2];
+  d=a[b + 1] - a[b + 3];
+  a[b]+=a[b + 2];
+  a[b + 1]+=a[b + 3];
+  a[b + 2]=c;
+  a[b + 3]=d;
+}

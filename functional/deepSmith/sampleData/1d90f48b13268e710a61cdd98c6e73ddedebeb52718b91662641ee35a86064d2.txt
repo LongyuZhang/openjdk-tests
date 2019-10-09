@@ -1,0 +1,8 @@
+public static Boolean fn_A(boolean a){
+  if (a) {
+    return Boolean.TRUE;
+  }
+ else {
+    return Boolean.FALSE;
+  }
+}

@@ -1,0 +1,12 @@
+private static double[] fn_A(double[] a,double[] b){
+  double[] c=new double[a.length];
+  if (a.length != b.length) {
+    throw new IllegalStateException();
+  }
+ else {
+    for (int d=0; d < a.length; d++) {
+      c[d]=a[d] - b[d];
+    }
+  }
+  return c;
+}

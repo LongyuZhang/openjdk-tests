@@ -1,0 +1,18 @@
+public static void fn_A(int a,double[] b,double[][] c,double[] d,boolean e){
+  if (!e) {
+    for (int f=0; f < a; f++) {
+      b[f]=0;
+      for (int g=0; g < a; g++) {
+        b[f]+=c[f][g] * d[g];
+      }
+    }
+  }
+ else {
+    for (int f=0; f < a; f++) {
+      b[f]=0;
+      for (int g=0; g < a; g++) {
+        b[f]+=d[g] * c[g][f];
+      }
+    }
+  }
+}

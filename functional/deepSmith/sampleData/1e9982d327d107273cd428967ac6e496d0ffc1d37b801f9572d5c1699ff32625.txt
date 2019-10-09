@@ -1,0 +1,10 @@
+private static double[] fn_A(double a,double b,int c){
+  double d[]=new double[c + 1];
+  double e=(b - a) / c;
+  d[0]=a;
+  d[c]=b;
+  for (int f=1; f < c; f++) {
+    d[f]=a + f * e;
+  }
+  return d;
+}

@@ -1,0 +1,10 @@
+public final static double[][] fn_A(final int a,final int b){
+  double[][] c=new double[a][b];
+  for (int d=0; d < c.length; d++) {
+    for (int e=0; e < c[d].length; e++) {
+      c[d][e]=0.0;
+      if (d == e)       c[d][e]=1.0;
+    }
+  }
+  return c;
+}

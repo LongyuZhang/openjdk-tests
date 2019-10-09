@@ -1,0 +1,9 @@
+public final static int fn_A(final byte[] a,final byte[] b){
+  final int c=a.length;
+  final int d=b.length;
+  int e;
+  for (e=0; e < c && e < d; e++) {
+    if (a[e] != b[e])     break;
+  }
+  return e;
+}

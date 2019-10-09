@@ -1,0 +1,18 @@
+public static void fn_A(){
+  System.err.println("createFormFieldLayerTemplate will add the specified file to the user's template library as form field layer template");
+  System.err.println("");
+  System.err.println("sendWithFormFieldLayerTemplate will create a new agreement with the specified form field layer template applied");
+  System.err.println("");
+  System.err.println("sendDocumentMegaSignWithFormFieldLayerTemplate will apply the specified form field layer template to a document and send it to multiple signers simultaneously");
+  System.err.println("");
+  System.err.println("createUrlWidgetWithFormFieldLayerTemplate will return the url for a signable widget of the provided file with the specified form field layer template applied");
+  System.err.println("");
+  System.err.println("rejectDocument will abort the signature workflow of the specified document and notify the sender of the rejection by email with the specified comment.");
+  System.err.println("");
+  System.err.println("replaceSigner will replace the old signer with a new signer and note the specified comment.");
+  System.err.println("");
+  System.err.println("delegateSigning will delegate the signer with a new signer and note the specified comment.");
+  System.err.println("");
+  System.err.println("  notifyDocumentVaulted notify the system that the document has been vaulted");
+  System.err.println("");
+}

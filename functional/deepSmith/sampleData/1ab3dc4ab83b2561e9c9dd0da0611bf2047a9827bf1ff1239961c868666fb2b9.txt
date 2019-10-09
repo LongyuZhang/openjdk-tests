@@ -1,0 +1,9 @@
+public static long fn_A(long a,long b){
+  a=((a & 0x3333333333333333L) << 2) | ((a & 0xccccccccccccccccL) >>> 2);
+  a=((a & 0x0f0f0f0f0f0f0f0fL) << 4) | ((a & 0xf0f0f0f0f0f0f0f0L) >>> 4);
+  a=((a & 0x00ff00ff00ff00ffL) << 8) | ((a & 0xff00ff00ff00ff00L) >>> 8);
+  a=((a & 0x0000ffff0000ffffL) << 16) | ((a & 0xffff0000ffff0000L) >>> 16);
+  a=((a & 0x00000000ffffffffL) << 32) | ((a & 0xffffffff00000000L) >>> 32);
+  a=~a;
+  return a >>> (64 - 2 * b);
+}

@@ -1,0 +1,8 @@
+private static final String fn_A(int a){
+  if (a < 10) {
+    return "0" + a;
+  }
+ else {
+    return "" + a;
+  }
+}

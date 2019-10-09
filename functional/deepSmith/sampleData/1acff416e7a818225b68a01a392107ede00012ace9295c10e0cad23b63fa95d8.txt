@@ -1,0 +1,9 @@
+private static double fn_A(final int a,final int b){
+  final int c=a + b;
+  if (0 == c) {
+    return 0;
+  }
+  final double d=1.281551565545;
+  final double e=(double)a / c;
+  return (e + d * d / (2 * c) - d * Math.sqrt((e * (1 - e) + d * d / (4 * c)) / c)) / (1 + d * d / c);
+}

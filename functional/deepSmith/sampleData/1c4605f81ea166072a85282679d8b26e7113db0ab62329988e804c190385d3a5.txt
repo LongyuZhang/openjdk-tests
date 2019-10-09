@@ -1,0 +1,4 @@
+public static final String fn_A(long a,long b,String c){
+  final String d=c + "_" + "All CP's for SITE_"+ a+ "_For User"+ b;
+  return d;
+}

@@ -1,0 +1,25 @@
+public static String fn_A(int a){
+  if (a == 0) {
+    return "0";
+  }
+  int b=2, c=a;
+  boolean d=a < 0;
+  if (!d) {
+    b=1;
+    c=-a;
+  }
+  while ((a/=10) != 0) {
+    b++;
+  }
+  char[] e=new char[b];
+  do {
+    int f=0 - (c % 10);
+    f+='0';
+    e[--b]=(char)f;
+  }
+ while ((c/=10) != 0);
+  if (d) {
+    e[0]='-';
+  }
+  return new String(e);
+}

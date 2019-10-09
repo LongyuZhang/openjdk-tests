@@ -1,0 +1,10 @@
+public static long fn_A(long a){
+  long b=a % 8;
+  if (b == 1L) {
+    return 1L;
+  }
+  if (b == 7L) {
+    return 1L;
+  }
+  return -1L;
+}

@@ -1,0 +1,11 @@
+public static void fn_A(double[] a,double[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("Arrays must be equal length");
+  }
+  for (int c=0; c < a.length; c++) {
+    double d=Math.sqrt(a[c] * a[c] + b[c] * b[c]);
+    double e=Math.atan2(b[c],a[c]);
+    a[c]=d;
+    b[c]=e;
+  }
+}

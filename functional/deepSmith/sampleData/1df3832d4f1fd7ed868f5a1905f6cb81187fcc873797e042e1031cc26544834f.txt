@@ -1,0 +1,16 @@
+private static void fn_A(){
+  System.out.println("Working Directory = " + System.getProperty("user.dir"));
+  System.out.println("Extract each pair in a LevelDB database into individual raw data files. (c) ljyloo 2017");
+  System.out.println("");
+  System.out.println("Usage:");
+  System.out.println("\tjava -jar Extracter.jar <import folder> <export folder>");
+  System.out.println("Where:");
+  System.out.println("\t<import folder>\tThe full path to the folder of LevelDB database");
+  System.out.println("\t<export folder>\tThe full path to the folder which you want to export");
+  System.out.println("Example:");
+  System.out.println("\tjava -jar Extracter.jar /home/ljyloo/import /home/ljyloo/export");
+  System.out.println("");
+  System.out.println("Visit the homepage of this project for more information:");
+  System.out.println("\tgithub.com/ljyloo/LevelDb2Avnil");
+  System.exit(1);
+}

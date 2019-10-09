@@ -1,0 +1,14 @@
+public static int fn_A(char[] a,char[] b){
+  if (b.length == 0) {
+    return 0;
+  }
+  a:   for (int c=0; c < a.length - b.length + 1; c++) {
+    for (int d=0; d < b.length; d++) {
+      if (a[c + d] != b[d]) {
+        continue a;
+      }
+    }
+    return c;
+  }
+  return -1;
+}

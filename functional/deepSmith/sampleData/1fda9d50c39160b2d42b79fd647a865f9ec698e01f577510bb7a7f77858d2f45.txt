@@ -1,0 +1,19 @@
+private static Object fn_A(Object a){
+  if (a instanceof Integer) {
+    a=new Long(((Integer)a).longValue());
+  }
+ else   if (a instanceof Boolean) {
+    a=new Long(((Boolean)a).booleanValue() ? 1 : 0);
+  }
+ else   if (a instanceof Float) {
+    a=String.valueOf((Float)a);
+  }
+ else   if (a instanceof byte[]) {
+    try {
+      a=new String((byte[])a,"UTF-8");
+    }
+ catch (    Throwable b) {
+    }
+  }
+  return (a);
+}

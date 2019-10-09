@@ -1,0 +1,8 @@
+private static Object fn_A(Object a){
+  if (a instanceof String || a instanceof Number || a instanceof Boolean) {
+    return a;
+  }
+ else {
+    throw new IllegalArgumentException("unexpected input: " + a);
+  }
+}

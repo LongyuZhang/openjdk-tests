@@ -1,0 +1,6 @@
+public static long fn_A(String a){
+  if (a != null) {
+    return new File(a).lastModified();
+  }
+  return 0;
+}

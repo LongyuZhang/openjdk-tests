@@ -1,0 +1,7 @@
+public static int fn_A(float a){
+  int b=(int)a;
+  if (a < 0 && a != b) {
+    b--;
+  }
+  return b;
+}

@@ -1,0 +1,6 @@
+private static boolean fn_A(final int[] a,final int[] b){
+  for (int c=0; c < 4; c++) {
+    if (a[c] != b[c])     return false;
+  }
+  return true;
+}

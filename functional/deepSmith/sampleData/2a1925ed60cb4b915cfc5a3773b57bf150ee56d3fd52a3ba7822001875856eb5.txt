@@ -1,0 +1,15 @@
+public static final double[] fn_A(int a){
+  if (a < 1) {
+    throw new IllegalArgumentException("ptolemy.math.SignalProcessing" + ".generateBlackmanHarrisWindow(): " + " length of window should be greater than 0.");
+  }
+  int b=a - 1;
+  int c;
+  double[] d=new double[a];
+  double e=(2.0 * Math.PI) / b;
+  double f=2.0 * e;
+  double g=3.0 * e;
+  for (c=0; c < a; c++) {
+    d[c]=(0.35875 - (0.48829 * Math.cos(e * c)) + (0.14128 * Math.cos(f * c))) - (0.01168 * Math.cos(g * c));
+  }
+  return d;
+}

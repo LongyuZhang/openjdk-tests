@@ -1,0 +1,9 @@
+private static double fn_A(int a,int b,int c){
+  if (b <= 2) {
+    a-=1;
+    b+=12;
+  }
+  double d=Math.floor(a / 100.0);
+  double e=(2 - d + Math.floor(d / 4.0));
+  return (Math.floor(365.25 * (a + 4716)) + Math.floor(30.6001 * (b + 1)) + c+ e - 1524.5);
+}

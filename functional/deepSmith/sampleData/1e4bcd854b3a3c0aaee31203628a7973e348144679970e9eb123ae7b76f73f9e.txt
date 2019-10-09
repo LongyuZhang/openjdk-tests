@@ -1,0 +1,5 @@
+public static void fn_A(String a,String b){
+  if (a.equals("ab")) {
+    System.out.println("hello");
+  }
+}

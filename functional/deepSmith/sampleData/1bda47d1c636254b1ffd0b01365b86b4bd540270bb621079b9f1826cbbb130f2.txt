@@ -1,0 +1,8 @@
+public static void main(final String[] a) throws IOException {
+  final String[] b=new String[]{"plants","mammals","abstracts","uganda","retail"};
+  final double[] c=new double[]{0.05750265949,0.1872659176,0.01164144353,0.001,0.00011342755};
+  final int[] d=new int[]{2000,500,10,125,10};
+  for (int e=0; e < b.length; e++) {
+    final String f="/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Itemsets/Datasets/Succintly/" + b[e] + ".dat";
+  }
+}

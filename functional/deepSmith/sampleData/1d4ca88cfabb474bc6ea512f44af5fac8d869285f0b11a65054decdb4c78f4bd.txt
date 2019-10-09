@@ -1,0 +1,4 @@
+public static byte[] fn_A(byte[] a,int b,int c){
+  a[b++]=(byte)(c & 0xff);
+  return a;
+}

@@ -1,0 +1,12 @@
+public static int fn_A(int a,int b,int c,int d){
+switch (c) {
+case 1:
+case 2:
+    return a + d;
+case 4:
+case 5:
+  return a - d;
+default :
+return a;
+}
+}

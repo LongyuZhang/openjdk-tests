@@ -1,0 +1,9 @@
+static void fn_A(int[] a,int b){
+  double c=0.0, d=0.0, e=0.0;
+  for (int f=0; f < b; f++) {
+    if (a[f] > 0)     c++;
+ else     if (a[f] < 0)     d++;
+ else     e++;
+  }
+  System.out.println(c / b + "\n" + d / b + "\n" + e / b);
+}

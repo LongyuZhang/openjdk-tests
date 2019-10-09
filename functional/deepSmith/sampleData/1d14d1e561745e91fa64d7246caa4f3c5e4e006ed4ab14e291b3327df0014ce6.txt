@@ -1,0 +1,5 @@
+public static Integer fn_A(Float a){
+  if (a == null)   return null;
+  if (a < 0 || a > 1)   return 255;
+  return (int)(255f * a + 0.5f);
+}

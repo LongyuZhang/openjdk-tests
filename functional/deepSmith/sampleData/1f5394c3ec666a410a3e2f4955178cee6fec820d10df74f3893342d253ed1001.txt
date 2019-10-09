@@ -1,0 +1,4 @@
+public static final double fn_A(final double a){
+  final double b=a * (1 - a);
+  return b * (11 + 33 * b) / (2 + 20 * b);
+}

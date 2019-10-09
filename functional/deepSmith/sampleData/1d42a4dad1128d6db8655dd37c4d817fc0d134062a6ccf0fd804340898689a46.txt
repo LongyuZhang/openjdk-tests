@@ -1,0 +1,12 @@
+private static int fn_A(final char[] a,int b,int c,final int[] d){
+  int e=0;
+  d[0]=0;
+  while (b < a.length && c > 0 && a[b] >= '0' && a[b] <= '7') {
+    e<<=3;
+    e|=a[b] - '0';
+    --c;
+    ++b;
+    ++d[0];
+  }
+  return e;
+}

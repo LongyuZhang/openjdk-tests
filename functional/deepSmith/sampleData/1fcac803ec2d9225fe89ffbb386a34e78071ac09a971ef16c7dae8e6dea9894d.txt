@@ -1,0 +1,6 @@
+private static float fn_A(float a){
+  if (a >= 0.0f && a <= 90.0f) {
+    return (float)Math.tan(Math.toRadians((double)(a / 2.0f)));
+  }
+  throw new IllegalArgumentException("Arc must be between 0 and 90 degrees");
+}

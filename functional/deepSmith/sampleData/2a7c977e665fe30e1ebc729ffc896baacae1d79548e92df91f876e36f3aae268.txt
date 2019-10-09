@@ -1,0 +1,13 @@
+static short fn_A(){
+  Short a=new Short((short)1);
+  Short b=new Short((short)1);
+  for (int c=0; c < 1000; c++) {
+    if ((c & 1) == 0) {
+      a=new Short((short)(a + 1));
+    }
+ else {
+      b=new Short((short)(b + 2));
+    }
+  }
+  return (short)(a + b);
+}

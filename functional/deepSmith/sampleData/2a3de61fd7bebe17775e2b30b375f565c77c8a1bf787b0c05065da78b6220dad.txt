@@ -1,0 +1,5 @@
+private static void fn_A(final long[] a,final byte[] b){
+  int c;
+  for (c=0; c < 16; c++)   a[c]=(b[2 * c] & 0xff) + ((long)((b[2 * c + 1] << 8) & 0xffff));
+  a[15]&=0x7fff;
+}

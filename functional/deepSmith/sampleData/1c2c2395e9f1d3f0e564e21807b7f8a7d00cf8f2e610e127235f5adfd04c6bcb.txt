@@ -1,0 +1,10 @@
+private static String fn_A(String a){
+  String b=System.getenv("HOST");
+  if (b == null) {
+    b=System.getenv("COMPUTERNAME");
+  }
+  if (b == null) {
+    b="unknown_host";
+  }
+  return "session_" + b + "_"+ a+ "_"+ System.nanoTime();
+}

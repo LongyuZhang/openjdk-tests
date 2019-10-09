@@ -1,0 +1,8 @@
+private static char fn_A(int a){
+  if (a < 10) {
+    return (char)('0' + a);
+  }
+ else {
+    return (char)('a' - 10 + a);
+  }
+}

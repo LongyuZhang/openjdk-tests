@@ -1,0 +1,6 @@
+public static boolean fn_A(String a){
+  if (a == null) {
+    return false;
+  }
+  return !new File(a).isAbsolute();
+}

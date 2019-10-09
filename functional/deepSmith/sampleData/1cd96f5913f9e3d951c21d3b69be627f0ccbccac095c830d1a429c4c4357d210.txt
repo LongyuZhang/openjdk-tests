@@ -1,0 +1,8 @@
+public static byte[] fn_A(byte[] a){
+  byte[] b=new byte[a.length / 2];
+  for (int c=0; c < b.length; c++) {
+    int d=c * 2;
+    b[c]=(byte)(((a[d] - 'a') << 4) + (a[d + 1] - 'a'));
+  }
+  return b;
+}

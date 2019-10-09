@@ -1,0 +1,8 @@
+static String fn_A(int a,String b){
+  String c="";
+  for (int d=0; d < a; d++) {
+    c+="[";
+  }
+  c+=b;
+  return c;
+}

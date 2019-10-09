@@ -1,0 +1,9 @@
+private static String fn_A(){
+  try {
+    Class.forName("org.glowroot.agent.shaded.com.google.common.base.Supplier");
+    return "org/glowroot/agent/shaded/com/google/common/base/Supplier";
+  }
+ catch (  ClassNotFoundException a) {
+    return "com/google/common/base/Supplier";
+  }
+}

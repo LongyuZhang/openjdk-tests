@@ -1,0 +1,9 @@
+static long fn_A(InputStream a){
+  try {
+    if (a instanceof FileInputStream)     return ((FileInputStream)a).getChannel().size();
+  }
+ catch (  IOException b) {
+    return -1;
+  }
+  return -1;
+}

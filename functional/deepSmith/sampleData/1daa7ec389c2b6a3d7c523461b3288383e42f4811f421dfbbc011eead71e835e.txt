@@ -1,0 +1,11 @@
+public static int fn_A(final int a){
+  if (4 == a) {
+    return 2;
+  }
+ else   if (8 == a) {
+    return 3;
+  }
+ else {
+    throw new IllegalArgumentException("Unknown pointer size");
+  }
+}

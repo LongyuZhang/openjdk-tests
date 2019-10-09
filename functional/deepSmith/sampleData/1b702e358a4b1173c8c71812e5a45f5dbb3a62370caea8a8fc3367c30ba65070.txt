@@ -1,0 +1,24 @@
+public static byte[][] fn_A(byte[][] a){
+  int b=a.length;
+  int c=a[0].length;
+  if (b == c) {
+    byte d=0;
+    for (int e=0; e < (b / 2 + 1); e++) {
+      for (int f=e; f < c; f++) {
+        d=a[e][f];
+        a[e][f]=a[f][e];
+        a[f][e]=d;
+      }
+    }
+    return a;
+  }
+ else {
+    byte[][] g=new byte[c][b];
+    for (int e=0; e < b; e++) {
+      for (int f=0; f < c; f++) {
+        g[f][e]=a[e][f];
+      }
+    }
+    return g;
+  }
+}

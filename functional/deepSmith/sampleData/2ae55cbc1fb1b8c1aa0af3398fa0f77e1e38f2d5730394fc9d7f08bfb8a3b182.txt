@@ -1,0 +1,6 @@
+public static double fn_A(double a,double b){
+  double c=a - b;
+  if (c < -Math.PI / 2)   c+=Math.PI;
+ else   if (c > Math.PI / 2)   c-=Math.PI;
+  return c;
+}

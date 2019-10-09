@@ -1,0 +1,9 @@
+public static char[] fn_A(int a){
+  char[] b=new char[32];
+  int c=1;
+  for (int d=31; d >= 0; d--) {
+    b[d]=((a & c) == c) ? '1' : '0';
+    c=c << 1;
+  }
+  return b;
+}

@@ -1,0 +1,9 @@
+public static String fn_A(boolean[] a,int b,int c){
+  char[] d=new char[c - b];
+  int e=0;
+  for (int f=b; f < c; f++) {
+    if (a[f] == true)     d[e++]='1';
+ else     d[e++]='0';
+  }
+  return new String(d);
+}

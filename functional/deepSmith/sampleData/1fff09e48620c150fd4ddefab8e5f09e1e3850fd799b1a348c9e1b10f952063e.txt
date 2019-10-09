@@ -1,0 +1,10 @@
+private static byte fn_A(byte[] a,int b){
+  int c=0;
+  for (int d=b; d < a.length; d++) {
+    int e=a[d] & 0xFF;
+    int f=(c * 58) + e;
+    a[d]=(byte)(f / 256);
+    c=f % 256;
+  }
+  return (byte)c;
+}

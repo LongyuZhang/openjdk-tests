@@ -1,0 +1,6 @@
+private static boolean fn_A(int[] a,double[] b){
+  int c=b.length;
+  if (a.length != c)   return false;
+  for (int d=0; d < c; d++)   if (a[d] != b[d])   return false;
+  return true;
+}

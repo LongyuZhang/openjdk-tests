@@ -1,0 +1,7 @@
+public static int fn_A(int a){
+  a^=a >>> 16;
+  a*=0x85ebca6b;
+  a^=a >>> 13;
+  a*=0xc2b2ae35;
+  return (a >>> 16) ^ a;
+}

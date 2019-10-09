@@ -1,0 +1,6 @@
+public static boolean fn_A(char a){
+  if (('A' <= a && a <= 'Z') || ('a' <= a && a <= 'z')) {
+    return true;
+  }
+  return false;
+}

@@ -1,0 +1,13 @@
+public static double[][] fn_A(double a[][],double b[][],double c[][]){
+  assert(a.length == b.length);
+  assert(a[0].length == b[0].length);
+  if (c == null) {
+    c=new double[a.length][a[0].length];
+  }
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[0].length; e++) {
+      c[d][e]=a[d][e] - b[d][e];
+    }
+  }
+  return c;
+}

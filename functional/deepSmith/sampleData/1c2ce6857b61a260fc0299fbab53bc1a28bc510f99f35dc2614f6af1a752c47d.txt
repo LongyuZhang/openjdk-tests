@@ -1,0 +1,17 @@
+static private void fn_A(byte[] a,byte[] b,byte[] c,int d,int e,double f,double g,double h,double i,double j,double k){
+  for (int l=d; l < e; ++l) {
+    double m=(l - d) / ((double)(e - d));
+    long n=Math.round(255 * (f + m * (i - f)));
+    long o=Math.round(255 * (g + m * (j - g)));
+    long p=Math.round(255 * (h + m * (k - h)));
+    if (n < 0)     n=0;
+    if (o < 0)     o=0;
+    if (p < 0)     p=0;
+    if (n > 255)     n=255;
+    if (o > 255)     o=255;
+    if (p > 255)     p=255;
+    a[l]=(byte)n;
+    b[l]=(byte)p;
+    c[l]=(byte)o;
+  }
+}

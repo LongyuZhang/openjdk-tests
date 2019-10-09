@@ -1,0 +1,16 @@
+public static void fn_A(int[] a){
+  for (int b=0; b < a.length - 1; b++) {
+    int c=a[b];
+    int d=b;
+    for (int e=b + 1; e < a.length; e++) {
+      if (a[e] < c) {
+        c=a[e];
+        d=e;
+      }
+    }
+    if (d != b) {
+      a[d]=a[b];
+      a[b]=c;
+    }
+  }
+}

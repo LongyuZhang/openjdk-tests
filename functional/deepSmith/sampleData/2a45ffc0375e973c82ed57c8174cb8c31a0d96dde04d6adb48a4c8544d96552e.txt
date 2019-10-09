@@ -1,0 +1,11 @@
+public static int fn_A(int a,int b){
+switch (b) {
+case 0:
+    return a >> 8 & 0xF;
+case 1:
+  return a >> 4 & 0xF;
+case 2:
+return a & 0xF;
+}
+return 0;
+}

@@ -1,0 +1,9 @@
+public static byte fn_A(byte a,final byte b,final byte c){
+  if (b < a) {
+    a=b;
+  }
+  if (c < a) {
+    a=c;
+  }
+  return a;
+}

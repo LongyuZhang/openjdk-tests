@@ -1,0 +1,6 @@
+private static int fn_A(int a){
+  if (a < 0) {
+    throw new IllegalArgumentException("v < 0 not allowed");
+  }
+  return 1 << (32 - Integer.numberOfLeadingZeros(a - 1));
+}

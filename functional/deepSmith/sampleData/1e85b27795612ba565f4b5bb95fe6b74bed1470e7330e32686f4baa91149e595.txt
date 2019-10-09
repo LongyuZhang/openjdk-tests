@@ -1,0 +1,24 @@
+private static long fn_A(long a,long b,int c){
+  long d=a & 0xFFFF;
+  long e=(a >>> 16) & 0xFFFF;
+  long f=(a >>> 32) & 0xFFFF;
+  long g=(a >>> 48) & 0xFFFF;
+  long h=b & 0xFFFF;
+  long i=(b >>> 16) & 0xFFFF;
+  long j=(b >>> 32) & 0xFFFF;
+  long k=(b >>> 48) & 0xFFFF;
+  long l=j * d + i * e + h * f;
+  long m=k * d + j * e + i * f + h * g;
+  long n=k * e + j * f + i * g;
+  long o=k * f + j * g;
+  long p=k * g;
+  long q=(p << (32 + c)) + (o << (16 + c)) + (n << c);
+  if (c <= 16) {
+    q+=m >>> (16 - c);
+  }
+ else {
+    q+=m << (c - 16);
+  }
+  q+=l >>> (32 - c);
+  return q;
+}

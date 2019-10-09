@@ -1,0 +1,6 @@
+static private void fn_A(String a[],int b,int c){
+  String d;
+  d=a[b];
+  a[b]=a[c];
+  a[c]=d;
+}

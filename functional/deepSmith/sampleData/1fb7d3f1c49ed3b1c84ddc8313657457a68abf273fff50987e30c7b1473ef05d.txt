@@ -1,0 +1,6 @@
+public static int fn_A(int a,double b){
+  if (b == 0) {
+    return 0;
+  }
+  return (int)Math.ceil(a / b);
+}

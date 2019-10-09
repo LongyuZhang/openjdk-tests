@@ -1,0 +1,5 @@
+public static double fn_A(short[] a){
+  int b=a.length / 2;
+  if (a.length % 2 == 1)   return a[b];
+  return ((double)a[b - 1] + (double)a[b]) / 2.0;
+}

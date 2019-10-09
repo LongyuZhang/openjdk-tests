@@ -1,0 +1,6 @@
+private static char fn_A(int a){
+  if (a < 10) {
+    return (char)(a + 48);
+  }
+  return (char)(a + 55);
+}

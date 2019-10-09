@@ -1,0 +1,14 @@
+public static double fn_A(double[] a,double[] b,double[] c){
+  if ((a.length + b.length) != c.length) {
+    throw new IllegalArgumentException("Vectors are not of equal length");
+  }
+  double d=0.0;
+  int e=0;
+  for (int f=0; f < a.length; f++, e++) {
+    d+=a[f] * c[e];
+  }
+  for (int f=0; f < b.length; f++, e++) {
+    d+=b[f] * c[e];
+  }
+  return d;
+}

@@ -1,0 +1,14 @@
+public static long fn_A(long a){
+  long b=0;
+  long c=1;
+  long d=0;
+  while (c < a) {
+    long e=b;
+    b=c;
+    c=e + c;
+    if (c % 2 == 0 && c < a) {
+      d+=c;
+    }
+  }
+  return d;
+}

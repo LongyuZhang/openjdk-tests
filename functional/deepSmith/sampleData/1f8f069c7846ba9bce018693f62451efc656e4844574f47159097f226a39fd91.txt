@@ -1,0 +1,6 @@
+private static int fn_A(int a){
+  if (a < 0) {
+    throw new IllegalArgumentException("Value must not be negative");
+  }
+  return a;
+}

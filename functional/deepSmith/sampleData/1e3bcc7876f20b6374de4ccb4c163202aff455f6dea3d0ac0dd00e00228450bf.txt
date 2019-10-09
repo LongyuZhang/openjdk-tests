@@ -1,0 +1,7 @@
+protected static File fn_A(String a){
+  if (a != null) {
+    final File b=new File(a);
+    return b;
+  }
+  return null;
+}

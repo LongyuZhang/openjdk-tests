@@ -1,0 +1,7 @@
+private static Class<?>[] fn_A(Object[] a){
+  Class<?>[] b=new Class[a.length];
+  for (int c=0; c < a.length; ++c) {
+    b[c]=(a[c] == null) ? null : a[c].getClass();
+  }
+  return b;
+}

@@ -1,0 +1,4 @@
+public static boolean fn_A(float a,float b,float c){
+  float d=(b + c) / 2f;
+  return Math.abs(a - d) <= Math.abs(b - d);
+}

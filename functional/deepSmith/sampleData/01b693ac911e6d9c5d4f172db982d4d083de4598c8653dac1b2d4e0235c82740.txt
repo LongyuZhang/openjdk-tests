@@ -1,0 +1,7 @@
+static boolean fn_A(final Object[] a,final int b,final int c){
+  if (b == c)   return true;
+  for (int d=b; d < c; ++d) {
+    if (a[d] != null)     return true;
+  }
+  return false;
+}

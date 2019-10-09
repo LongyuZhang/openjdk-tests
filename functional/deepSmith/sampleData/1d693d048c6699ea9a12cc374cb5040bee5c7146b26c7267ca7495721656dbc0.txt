@@ -1,0 +1,37 @@
+static void fn_A(int a[][]){
+  int b[]=new int[5];
+  int c, d, e, f=0, g=0;
+  for (c=0; c < a.length; c++) {
+    for (d=0; d < a[c].length; d++) {
+      System.out.print("  " + a[c][d]);
+    }
+    System.out.println();
+  }
+  System.out.println("\n\n\n matrix sum of the above given matrix is \n");
+  for (c=0; c < a.length; c++) {
+    e=0;
+    for (d=0; d < a[c].length; d++) {
+      if (c == d) {
+        f+=a[c][d];
+      }
+      if ((c == 0 && d == 2) || (c == 2 && d == 0) || (c == 1 && d == 1)) {
+        g+=a[c][d];
+      }
+      e+=a[c][d];
+      System.out.print("    " + a[c][d]);
+    }
+    System.out.println("    " + e + "\n");
+  }
+  for (c=0; c < a.length; c++) {
+    e=0;
+    for (d=0; d < a.length; d++) {
+      e+=a[d][c];
+    }
+    b[c + 1]=e;
+  }
+  b[0]=g;
+  b[4]=f;
+  for (c=0; c < b.length; c++) {
+    System.out.print(b[c] + "   ");
+  }
+}

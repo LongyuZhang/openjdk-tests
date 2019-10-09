@@ -1,0 +1,13 @@
+private static byte[] fn_A(byte[] a,byte[] b){
+  byte[] c=new byte[a.length + b.length];
+  for (int d=0; d < c.length; ++d) {
+    if (d < a.length) {
+      c[d]=a[d];
+    }
+ else {
+      int e=d - a.length;
+      c[d]=b[e];
+    }
+  }
+  return c;
+}

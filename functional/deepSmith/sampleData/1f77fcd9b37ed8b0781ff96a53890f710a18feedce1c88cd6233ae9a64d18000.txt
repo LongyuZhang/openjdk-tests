@@ -1,0 +1,8 @@
+private static String fn_A(boolean a,int b){
+  if (b < 1) {
+    return "";
+  }
+  char c=((a ? "K" : "k") + "MGTPE").charAt(b - 1);
+  String d=(a ? "i" : "");
+  return c + d;
+}

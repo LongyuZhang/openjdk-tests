@@ -1,0 +1,6 @@
+private static final String fn_A(final Object[][] a,final int b){
+  if (b < 0 || b >= a.length) {
+    return null;
+  }
+  return (String)a[b][0];
+}

@@ -1,0 +1,7 @@
+public static double fn_A(double a,long b){
+  double c=(double)b;
+  if (a > 0) {
+    c=((double)b) / a;
+  }
+  return c;
+}

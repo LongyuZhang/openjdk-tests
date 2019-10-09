@@ -1,0 +1,7 @@
+private static byte[] fn_A(byte[] a){
+  for (int b=32, c=0; c < a.length; c+=2) {
+    a[c]=(byte)(b & 0xff);
+    b=b == 126 ? 160 : (b == 255 ? 32 : b + 1);
+  }
+  return a;
+}

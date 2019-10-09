@@ -1,0 +1,13 @@
+private static String fn_A(long a){
+  long b;
+  long c=System.currentTimeMillis() / 1000L;
+  int d;
+  String[] e={"s","m","h"," day"," month"," year"};
+  double[] f={60,60,24,30,12,10};
+  b=c - a;
+  for (d=0; b >= f[d] && d < f.length - 1; d++) {
+    b/=f[d];
+  }
+  if (b > 1)   if (d > 2)   return b + e[d] + "s";
+  return b + e[d];
+}

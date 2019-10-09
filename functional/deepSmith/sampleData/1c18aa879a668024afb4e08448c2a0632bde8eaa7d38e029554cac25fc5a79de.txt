@@ -1,0 +1,10 @@
+static double fn_A(int[] a,int[] b){
+  double c=0;
+  int d=a.length;
+  for (int e=0; e < d; e++) {
+    if (a[e] == b[e]) {
+      c++;
+    }
+  }
+  return c / d;
+}

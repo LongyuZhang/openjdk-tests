@@ -1,0 +1,10 @@
+private static void fn_A(final long[] a,final int b,final boolean c){
+  final int d=(b >>> 6);
+  final long e=1l << (b & 63);
+  if (c) {
+    a[d]=a[d] | e;
+  }
+ else {
+    a[d]=a[d] & ~e;
+  }
+}

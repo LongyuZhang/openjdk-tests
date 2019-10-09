@@ -1,0 +1,5 @@
+public static double[] fn_A(int a){
+  double[] b=new double[a];
+  for (int c=0; c < a; ++c)   b[c]=Math.random();
+  return b;
+}

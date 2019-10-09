@@ -1,0 +1,12 @@
+public static int[][] fn_A(int[][] a,int b,int c,int d,int e){
+  if ((b > c) || (b < 0) || (b >= a.length)|| (c < 0)|| (c >= a.length)) {
+    throw new IllegalArgumentException("Argument out of range.");
+  }
+  int[][] f=new int[c - b + 1][e - d + 1];
+  for (int g=b; g <= c; g++) {
+    for (int h=d; h <= e; h++) {
+      f[g - b][h - d]=a[g][h];
+    }
+  }
+  return f;
+}

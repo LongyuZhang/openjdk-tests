@@ -1,0 +1,12 @@
+private static int fn_A(int a,int b,int c,int d){
+  int e=(a >>> 16) & 0x000000FF;
+  int f=(a >>> 8) & 0x000000FF;
+  int g=a & 0x000000FF;
+  int h=(b >>> 16) & 0x000000FF;
+  int i=(b >>> 8) & 0x000000FF;
+  int j=b & 0x000000FF;
+  int k=d * (h - e) / 255 + e;
+  int l=d * (i - f) / 255 + f;
+  int m=d * (j - g) / 255 + g;
+  return (c << 24) | (k << 16) | (l << 8)| m;
+}

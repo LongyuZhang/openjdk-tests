@@ -1,0 +1,11 @@
+public static final double[] fn_A(int a){
+  if (a < 1) {
+    throw new IllegalArgumentException("ptolemy.math.SignalProcessing" + ".generateRectangularWindow(): " + " length of window should be greater than 0.");
+  }
+  int b;
+  double[] c=new double[a];
+  for (b=0; b < a; b++) {
+    c[b]=1.0;
+  }
+  return c;
+}

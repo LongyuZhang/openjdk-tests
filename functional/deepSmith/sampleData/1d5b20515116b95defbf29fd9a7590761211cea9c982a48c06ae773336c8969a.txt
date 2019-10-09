@@ -1,0 +1,5 @@
+private static double fn_A(final double a,final double b,final double c){
+  final double d=a - b;
+  final double e=(c - d) / c;
+  return (c + c * e) / 2;
+}

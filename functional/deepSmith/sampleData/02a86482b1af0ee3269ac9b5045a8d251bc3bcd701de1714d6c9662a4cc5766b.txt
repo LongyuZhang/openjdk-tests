@@ -1,0 +1,5 @@
+private static void fn_A(byte[] a,double[] b){
+  for (int c=0, d=0; c + 3 < a.length; c+=4, d++) {
+    b[d]=((a[c + 0] << 24) | ((a[c + 1] & 0xFF) << 16) | ((a[c + 2] & 0xFF) << 8)| (a[c + 3] & 0xFF)) / 2147483648.0;
+  }
+}

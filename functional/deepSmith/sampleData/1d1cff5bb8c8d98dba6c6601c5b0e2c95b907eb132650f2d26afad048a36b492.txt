@@ -1,0 +1,6 @@
+static public int[] fn_A(int[] a,int b){
+  int c[]=new int[a.length - 1];
+  int d=0;
+  for (int e=0; e < a.length; e++)   if (a[e] != b)   c[d++]=a[e];
+  return c;
+}

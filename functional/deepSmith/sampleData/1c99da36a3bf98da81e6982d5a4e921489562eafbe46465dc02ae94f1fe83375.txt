@@ -1,0 +1,11 @@
+public static int fn_A(int[] a,int[] b,int c,int d,int e){
+  int f=d;
+  for (int g=d; g < e; ++g) {
+    int h=a[g];
+    if (b[h] <= c) {
+      a[f]=h;
+      ++f;
+    }
+  }
+  return f;
+}

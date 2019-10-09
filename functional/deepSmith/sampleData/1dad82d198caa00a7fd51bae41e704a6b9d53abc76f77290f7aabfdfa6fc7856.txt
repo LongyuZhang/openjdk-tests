@@ -1,0 +1,5 @@
+public static boolean fn_A(Object a){
+  if (a == null)   return true;
+  if (a instanceof String)   if (((String)a).isEmpty())   return true;
+  return false;
+}

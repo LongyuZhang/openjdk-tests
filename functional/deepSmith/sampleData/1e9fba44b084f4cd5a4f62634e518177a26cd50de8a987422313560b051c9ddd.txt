@@ -1,0 +1,4 @@
+private static String[] fn_A(String[] a){
+  if (a == null)   return new String[0];
+  return a;
+}

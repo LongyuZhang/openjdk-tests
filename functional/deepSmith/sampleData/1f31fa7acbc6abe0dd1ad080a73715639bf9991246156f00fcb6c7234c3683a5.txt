@@ -1,0 +1,17 @@
+private static void fn_A(byte a){
+  int b=a & 0xff;
+  int c=b / 16;
+  int d=b % 16;
+  if (c < 10) {
+    System.out.print((char)('0' + c));
+  }
+ else {
+    System.out.print((char)('a' + c - 10));
+  }
+  if (d < 10) {
+    System.out.print((char)('0' + d));
+  }
+ else {
+    System.out.print((char)('a' + d - 10));
+  }
+}

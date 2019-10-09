@@ -1,0 +1,15 @@
+public static double[] fn_A(double[] a,int b,int c){
+  double d=0;
+  final int e=c - b;
+  for (int f=b; f < c; f++) {
+    d+=a[f];
+  }
+  d/=e;
+  double g=0;
+  for (int f=b; f < c; f++) {
+    final double h=a[f] - d;
+    g+=h * h;
+  }
+  double[] i={d,Math.sqrt(g / e)};
+  return i;
+}

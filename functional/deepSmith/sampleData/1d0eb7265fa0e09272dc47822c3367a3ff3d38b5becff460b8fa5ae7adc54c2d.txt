@@ -1,0 +1,4 @@
+private static float fn_A(long a){
+  long b=System.currentTimeMillis() - a;
+  return (b / 1000f);
+}

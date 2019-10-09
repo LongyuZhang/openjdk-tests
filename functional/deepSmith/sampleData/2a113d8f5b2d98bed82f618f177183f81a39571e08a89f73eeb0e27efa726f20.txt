@@ -1,0 +1,12 @@
+static void fn_A(int a){
+  long b=System.currentTimeMillis() + a;
+  try {
+    do {
+      Thread.sleep(1L);
+    }
+ while (System.currentTimeMillis() < b);
+  }
+ catch (  InterruptedException c) {
+    throw new RuntimeException(c);
+  }
+}

@@ -1,0 +1,6 @@
+public static <E>Collection<E> fn_A(Collection<E> a){
+  if (a == null) {
+    return Collections.emptyList();
+  }
+  return a;
+}

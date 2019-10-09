@@ -1,0 +1,14 @@
+static boolean fn_A(char[] a,char[] b){
+  if (a == b)   return true;
+  if (a == null || b == null)   return false;
+  int c=a.length;
+  if (c > b.length)   return false;
+  int d=0;
+  for (; d < c; ++d) {
+    if (a[d] != b[d])     return false;
+  }
+  if (d < b.length && b[d] != '/') {
+    return false;
+  }
+  return true;
+}

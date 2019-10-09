@@ -1,0 +1,9 @@
+private static double fn_A(double a){
+  if (a < 0) {
+    a+=360;
+  }
+ else   if (a > 360) {
+    a-=360;
+  }
+  return a;
+}

@@ -1,0 +1,4 @@
+public static void fn_A(int a,int b){
+  int c=a + b;
+  System.out.println("The sum is " + c);
+}

@@ -1,0 +1,21 @@
+public static double fn_A(final double a,final double[] b){
+  final double c=b[b.length - 1];
+  if (a >= c) {
+    return (a * 1.5);
+  }
+  final double d=b[0];
+  if (a < d) {
+    final double e=(a * 1.5);
+    if (e > d) {
+      return d;
+    }
+    return e;
+  }
+  for (int f=0; f < b.length; f++) {
+    final double g=b[f];
+    if (g > a) {
+      return g;
+    }
+  }
+  return (a * 1.5);
+}

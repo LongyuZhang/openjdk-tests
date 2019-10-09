@@ -1,0 +1,31 @@
+private static void fn_A(){
+  System.out.println("usage: odfvalidator -g <odffiles>");
+  System.out.println("       odfvalidator [-r] [-c|-e|-s] [-d] [-v|-w] [-f <filterfile>] [-x <regexp>] [-o outputfile] [-1.0|-1.1|-1.2] <odffiles>");
+  System.out.println("       odfvalidator [-r] [-c|-e|-s] [-d] [-v|-w] [-f <filterfile>] [-x <regexp>] [-o outputfile] -S <schemafile> <odffiles>");
+  System.out.println("       odfvalidator [-r] [-c|-e|-s] [-v|-w] -O <rngfile> -M <rngfile> -D <rngfile> -m <xsdfile> [-f <filterfile>] [-x <regexp>] [-o outputfile] <odffiles>");
+  System.out.println("       odfvalidator [-c|-s] [-v|-w] [-d] [-o outputfile] -C <configfile>");
+  System.out.println("       odfvalidator -h");
+  System.out.println("       odfvalidator -V");
+  System.out.println();
+  System.out.println("-C: Validate using configuration file <configfile>");
+  System.out.println("-S: Use strict ODF schema <schemafile> for validation");
+  System.out.println("-O: Use ODF schema <schemafile> for validation");
+  System.out.println("-M: Use ODF manifest schema <schemafile> for validation");
+  System.out.println("-D: Use ODF dsig schema <schemafile> for validation");
+  System.out.println("-m: Use MathML2 schema <schemafile> for validation");
+  System.out.println("-V: Print version");
+  System.out.println("-c: Check conformance (default for ODF 1.2 documents)");
+  System.out.println("-e: Check extended conformance (ODF 1.2 documents only)");
+  System.out.println("-d: Use MathML DTD rather than MathML2 schema for validation");
+  System.out.println("-f: Use filterfile <filterfile>");
+  System.out.println("-g: Show <odffiles> generators and exit");
+  System.out.println("-h: Print this help and exit");
+  System.out.println("-o: Store validation errors in <outputfile>");
+  System.out.println("-r: Process directory recursively");
+  System.out.println("-s: Validate against strict schema (ODF 1.0/1.1 documents only)");
+  System.out.println("-v: Verbose output, including generator and warnings");
+  System.out.println("-w: Print warnings");
+  System.out.println("-x: Exclude paths that match <regexp>");
+  System.out.println();
+  System.out.println("If no option is provided, <odffiles> are validated using the schemas matching the detected ODF version of the files");
+}

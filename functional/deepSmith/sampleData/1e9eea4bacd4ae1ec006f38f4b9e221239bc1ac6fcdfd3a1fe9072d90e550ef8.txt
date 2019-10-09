@@ -1,0 +1,5 @@
+public static boolean fn_A(Object[] a,Object[] b){
+  int c=a == null ? 0 : a.length;
+  int d=b == null ? 0 : b.length;
+  return c == d;
+}
