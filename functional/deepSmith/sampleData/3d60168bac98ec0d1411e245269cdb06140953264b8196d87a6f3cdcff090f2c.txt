@@ -1,0 +1,11 @@
+public static int fn_A(byte a,byte b,byte c,byte d){
+  int e=0;
+  e|=(a & 0x000000ff);
+  e<<=8;
+  e|=(b & 0x000000ff);
+  e<<=8;
+  e|=(c & 0x000000ff);
+  e<<=8;
+  e|=(d & 0x000000ff);
+  return e;
+}

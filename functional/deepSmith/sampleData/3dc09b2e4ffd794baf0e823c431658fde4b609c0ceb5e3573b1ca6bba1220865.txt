@@ -1,0 +1,12 @@
+static int fn_A(int[] a,int b){
+  int c=0;
+  int d=a.length - 1;
+  while (c <= d) {
+    int e=c + ((d - c) / 2);
+    if (a[e] > b)     d=e - 1;
+ else     if (a[e] < b)     c=e + 1;
+ else     return e;
+  }
+  if (d < a.length)   return d;
+  return -1;
+}

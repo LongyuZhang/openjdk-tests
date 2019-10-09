@@ -1,0 +1,7 @@
+public static double[] fn_A(String[] a,int b){
+  double[] c=new double[a.length - b];
+  for (int d=b; d < a.length; d++) {
+    c[d - b]=Float.parseFloat(a[d]);
+  }
+  return c;
+}

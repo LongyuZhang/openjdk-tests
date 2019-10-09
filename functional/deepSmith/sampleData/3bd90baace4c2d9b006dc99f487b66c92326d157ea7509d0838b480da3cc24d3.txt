@@ -1,0 +1,5 @@
+private static void fn_A(int a,int b,int c){
+  if ((b | c) < 0 || b > a || a - b < c) {
+    throw new IllegalArgumentException("input.length=" + a + "; inputOffset="+ b+ "; inputLen="+ c);
+  }
+}

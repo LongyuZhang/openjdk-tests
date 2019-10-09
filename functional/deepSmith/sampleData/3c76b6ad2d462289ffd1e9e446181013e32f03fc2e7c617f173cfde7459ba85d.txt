@@ -1,0 +1,8 @@
+static int fn_A(int a,int b){
+  while (b > 0) {
+    final int c=b;
+    b=a % b;
+    a=c;
+  }
+  return a;
+}

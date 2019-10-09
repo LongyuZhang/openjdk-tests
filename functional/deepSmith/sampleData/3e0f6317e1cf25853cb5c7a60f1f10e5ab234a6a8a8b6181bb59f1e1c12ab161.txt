@@ -1,0 +1,14 @@
+public static boolean fn_A(int[][] a,int b){
+  int c=a.length;
+  int d=a[0].length;
+  int e=0;
+  int f=c * d - 1;
+  while (e <= f) {
+    int g=e + (f - e) / 2;
+    int h=a[g / d][g % d];
+    if (b == h)     return true;
+    if (b < h)     f=g - 1;
+ else     e=g + 1;
+  }
+  return false;
+}

@@ -1,0 +1,8 @@
+public static int fn_A(Object[] a,int b,int c){
+  int d=b + c;
+  int e=0;
+  for (int f=b; f < d; f++) {
+    if (a[f] != null)     e++;
+  }
+  return e;
+}

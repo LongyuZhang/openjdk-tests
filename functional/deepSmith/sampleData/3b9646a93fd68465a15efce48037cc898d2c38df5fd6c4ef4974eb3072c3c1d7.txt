@@ -1,0 +1,21 @@
+private static boolean fn_A(double a,double b,double c,double d,double e,double f,double g,double h){
+  c-=a;
+  d-=b;
+  e-=a;
+  f-=b;
+  g-=a;
+  h-=b;
+  double i=c * f - e * d;
+  double j=c * h - g * d;
+  if (i == 0.0 && j == 0.0) {
+    if (c != 0.0) {
+      return (g * e <= 0.0) || ((e * c >= 0.0) && (c > 0.0 ? e <= c || g <= c : e >= c || g >= c));
+    }
+    if (d != 0.0) {
+      return (h * f <= 0.0) || ((f * d >= 0.0) && (d > 0.0 ? f <= d || h <= d : f >= d || h >= d));
+    }
+    return false;
+  }
+  double k=e * h - g * f;
+  return (i * j <= 0.0) && (k * (i + k - j) <= 0.0);
+}

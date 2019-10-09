@@ -1,0 +1,4 @@
+public static float fn_A(byte a){
+  final float b=a * 3;
+  return b;
+}

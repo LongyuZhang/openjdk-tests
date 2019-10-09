@@ -1,0 +1,18 @@
+private static int[] fn_A(int a,int b,float c){
+  int d;
+  if (a < b)   d=b;
+ else   d=a;
+  if (c > 0) {
+    b=d;
+    a=(int)((float)d * (1.0f - c));
+  }
+ else   if (c < 0) {
+    a=d;
+    b=(int)((float)d * (1.0f + c));
+  }
+ else {
+    a=d;
+    b=d;
+  }
+  return new int[]{a,b};
+}

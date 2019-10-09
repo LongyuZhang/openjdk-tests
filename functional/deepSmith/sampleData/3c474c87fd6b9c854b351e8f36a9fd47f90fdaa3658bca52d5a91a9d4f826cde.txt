@@ -1,0 +1,6 @@
+private static int fn_A(int a,int b,int c,int d,int e,int f){
+  if (d == b && e != c || b == f && e != a) {
+    return b;
+  }
+  return e;
+}

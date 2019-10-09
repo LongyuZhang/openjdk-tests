@@ -1,0 +1,13 @@
+private static ClassLoader fn_A(){
+  if (System.getSecurityManager() == null) {
+    return ClassLoader.getSystemClassLoader();
+  }
+ else {
+    return (ClassLoader)java.security.AccessController.doPrivileged(new java.security.PrivilegedAction(){
+      public java.lang.Object run(){
+        return ClassLoader.getSystemClassLoader();
+      }
+    }
+);
+  }
+}

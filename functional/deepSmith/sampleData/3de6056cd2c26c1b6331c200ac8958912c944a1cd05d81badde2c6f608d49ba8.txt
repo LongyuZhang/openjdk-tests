@@ -1,0 +1,6 @@
+private static int fn_A(byte[] a){
+  if (a == null)   return 0;
+  int b=0;
+  for (int c=0; c < a.length; c++)   b+=a[c];
+  return b;
+}

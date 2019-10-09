@@ -1,0 +1,14 @@
+protected static int fn_A(int a,int[] b,int[] c,int d){
+  if (d < 1) {
+    return d;
+  }
+  int e=c[a];
+  if (e == 0 && b[e] != a) {
+    return d;
+  }
+ else {
+    b[e]=b[--d];
+    c[b[e]]=e;
+    return d;
+  }
+}

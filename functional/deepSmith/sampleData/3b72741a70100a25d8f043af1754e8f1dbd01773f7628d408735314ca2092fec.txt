@@ -1,0 +1,25 @@
+private static void fn_A(int a,int b,int c,int d,boolean[][] e){
+  final int f=e.length, g=e[0].length;
+  b=(b < 0) ? 0 : (b >= g) ? (g - 1) : b;
+  d=(d < 0) ? 0 : (d >= g) ? (g - 1) : d;
+  a=(a < 0) ? 0 : (a >= f) ? (f - 1) : a;
+  c=(c < 0) ? 0 : (c >= f) ? (f - 1) : c;
+  final int h=+Math.abs(c - a), i=a < c ? 1 : -1;
+  final int j=-Math.abs(d - b), k=b < d ? 1 : -1;
+  int l=h + j;
+  for (; ; ) {
+    e[a][b]=true;
+    if (a == c && b == d) {
+      break;
+    }
+    final int m=l << 1;
+    if (m > j) {
+      l+=j;
+      a+=i;
+    }
+    if (m < h) {
+      l+=h;
+      b+=k;
+    }
+  }
+}

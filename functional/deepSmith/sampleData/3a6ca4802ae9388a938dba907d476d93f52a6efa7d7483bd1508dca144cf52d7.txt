@@ -1,0 +1,8 @@
+public final static void fn_A(final boolean a,final byte[] b,final int c,final int d){
+  if (a) {
+    b[c]=(byte)(b[c] | (1 << d));
+  }
+ else {
+    b[c]=(byte)(b[c] & ~(1 << d));
+  }
+}

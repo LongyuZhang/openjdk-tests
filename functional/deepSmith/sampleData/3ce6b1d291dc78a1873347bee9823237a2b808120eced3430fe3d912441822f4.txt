@@ -1,0 +1,11 @@
+public static int[][] fn_A(int[][] a,int[][] b){
+  int[][] c=new int[a.length][a.length];
+  for (int d=0; d < b.length; d++) {
+    for (int e=0; e < b.length; e++) {
+      if (a[d][e] > 0)       c[d][e]=a[d][e] - b[d][e];
+ else       if (a[e][d] > 0)       c[d][e]=b[e][d];
+ else       c[d][e]=0;
+    }
+  }
+  return c;
+}

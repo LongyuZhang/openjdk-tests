@@ -1,0 +1,15 @@
+static public boolean fn_A(double[] a,double[] b){
+  boolean c=true;
+  if (a == null || b == null || a.length != b.length) {
+    c=false;
+  }
+ else {
+    for (int d=0; d < a.length; ++d) {
+      if (Math.abs(a[d] - b[d]) > 0.000001) {
+        c=false;
+        break;
+      }
+    }
+  }
+  return c;
+}

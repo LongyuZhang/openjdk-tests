@@ -1,0 +1,20 @@
+private static int fn_A(int[] a,int[] b,int c,int d,int e,int f,int g){
+  if ((g & 0xff000000) != 0) {
+    final int[] h=new int[256];
+    for (int i=c; i < d; i++) {
+      int j=(a[i] >> 24) & 0x000000ff;
+      h[j]++;
+    }
+    h[0]+=e;
+    for (int i=1; i < 256; i++) {
+      h[i]=h[i] + h[i - 1];
+    }
+    for (int k=d - 1; k >= c; k--) {
+      int j=(a[k] >> 24) & 0x000000ff;
+      h[j]--;
+      b[h[j]]=a[k];
+    }
+    return 1;
+  }
+  return 0;
+}

@@ -1,0 +1,11 @@
+public static final float fn_A(final float a,final float b,final float c,final float d,final float e,final float f){
+  final float g=e;
+  final float h=g * g;
+  final float i=h * g;
+  final float j=(1 - f) / 2;
+  final float k=j * ((-i + (2 * h)) - g);
+  final float l=(j * (-i + h)) + (((2 * i) - (3 * h)) + 1);
+  final float m=(j * ((i - (2 * h)) + g)) + ((-2 * i) + (3 * h));
+  final float n=j * (i - h);
+  return ((a * k) + (b * l) + (c * m)+ (d * n));
+}

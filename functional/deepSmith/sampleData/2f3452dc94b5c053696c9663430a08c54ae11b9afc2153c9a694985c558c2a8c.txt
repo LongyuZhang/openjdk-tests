@@ -1,0 +1,7 @@
+public static String fn_A(Object[] a){
+  if (a == null)   return "null";
+  if (a.length == 0)   return "";
+  String b=a[0].toString();
+  for (int c=1; c < a.length; c++)   b+=", " + a[c];
+  return b;
+}

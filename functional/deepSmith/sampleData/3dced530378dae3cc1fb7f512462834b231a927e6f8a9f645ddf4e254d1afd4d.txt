@@ -1,0 +1,10 @@
+public static void fn_A(int[][] a){
+  int b=a.length;
+  int c=a[0].length;
+  for (int d=0; d < b; d++) {
+    for (int e=0; e < c; e++) {
+      System.out.print(a[d][e] + " ");
+    }
+    System.out.println();
+  }
+}

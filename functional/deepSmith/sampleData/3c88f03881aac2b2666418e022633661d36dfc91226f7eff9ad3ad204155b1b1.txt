@@ -1,0 +1,10 @@
+static byte[] fn_A(char[] a){
+  int b=a.length;
+  byte[] c=new byte[b << 1];
+  for (int d=0, e=0; d < b; d++) {
+    char f=a[d];
+    c[e++]=(byte)f;
+    c[e++]=(byte)(f >>> 8);
+  }
+  return c;
+}

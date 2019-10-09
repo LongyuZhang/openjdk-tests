@@ -1,0 +1,7 @@
+public static double[] fn_A(double a,double b,double c){
+  final double[] d=new double[3];
+  d[0]=((a * c) - (b * b)) / (a - (2 * b) + c);
+  d[1]=Math.pow((b - a),2) / (a - (2 * b) + c);
+  d[2]=2 * Math.log((c - b) / (b - a));
+  return d;
+}

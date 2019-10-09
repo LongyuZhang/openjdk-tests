@@ -1,0 +1,11 @@
+public static String fn_A(Object a,String b){
+  if (null == a) {
+    return b;
+  }
+  if (a instanceof String) {
+    return (String)a;
+  }
+ else {
+    throw new IllegalArgumentException("Don't know how to convert " + a + " + to String");
+  }
+}

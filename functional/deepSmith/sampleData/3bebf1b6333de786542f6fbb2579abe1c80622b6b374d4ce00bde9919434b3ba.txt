@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("Usage: java examples.sudoku.SudokuDatabase [-seed=<seed>] [-puzzles=<number of puzzles>] [-o=<output filename>] <database file>");
+  System.exit(1);
+}

@@ -1,0 +1,12 @@
+private static int fn_A(int[] a,int[] b){
+  if (a.length != b.length) {
+    throw new IllegalArgumentException("There must be an equal number of lengths [" + a.length + "] "+ "and indices ["+ b.length+ "]");
+  }
+  int c=0;
+  int d=1;
+  for (int e=0; e < a.length; e++) {
+    c+=d * b[e];
+    d*=a[e];
+  }
+  return c;
+}

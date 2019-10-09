@@ -1,0 +1,8 @@
+private static void fn_A(char[] a,int b,int c){
+  if (b == c) {
+    return;
+  }
+  char d=a[b];
+  a[b]=a[c];
+  a[c]=d;
+}

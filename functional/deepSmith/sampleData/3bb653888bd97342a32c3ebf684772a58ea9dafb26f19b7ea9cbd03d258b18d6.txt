@@ -1,0 +1,6 @@
+private static boolean fn_A(final char a){
+  if (a < 'a' || a > 'z') {
+    return true;
+  }
+  return a == 'v' || a == 'x' || a == 'j' || a == 'q' || a == 'z';
+}

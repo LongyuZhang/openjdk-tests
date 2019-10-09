@@ -1,0 +1,7 @@
+public static void fn_A(Comparable[] a){
+  if (a[0].compareTo(a[1]) > 0) {
+    Comparable b=a[0];
+    a[0]=a[1];
+    a[1]=b;
+  }
+}

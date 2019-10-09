@@ -1,0 +1,13 @@
+private static byte[] fn_A(char[] a){
+  if (a != null && a.length > 0) {
+    byte[] b=new byte[(a.length + 1) * 2];
+    for (int c=0; c != a.length; c++) {
+      b[c * 2]=(byte)(a[c] >>> 8);
+      b[c * 2 + 1]=(byte)a[c];
+    }
+    return b;
+  }
+ else {
+    return new byte[0];
+  }
+}

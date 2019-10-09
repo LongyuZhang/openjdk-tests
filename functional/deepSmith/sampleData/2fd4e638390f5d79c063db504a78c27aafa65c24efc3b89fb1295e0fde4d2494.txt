@@ -1,0 +1,6 @@
+public static int fn_A(int a){
+  int b=(a >> 16);
+  int c=(a & 0x0000FF);
+  int d=((a >> 8) & 0x00FF);
+  return ((b * 299) + (c * 587) + (d * 114)) / 1000;
+}

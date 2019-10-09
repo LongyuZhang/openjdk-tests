@@ -1,0 +1,6 @@
+public static char fn_A(final byte[] a,final int b){
+  int c=b;
+  int d=(a[c++] & 0xFF) << 8;
+  d+=(a[c++] & 0xFF);
+  return (char)d;
+}

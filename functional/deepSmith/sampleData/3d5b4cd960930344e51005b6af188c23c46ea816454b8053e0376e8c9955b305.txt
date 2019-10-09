@@ -1,0 +1,8 @@
+private static float[] fn_A(float[] a,int b){
+  if (a != null && a.length == b) {
+    return a;
+  }
+ else {
+    return new float[b];
+  }
+}

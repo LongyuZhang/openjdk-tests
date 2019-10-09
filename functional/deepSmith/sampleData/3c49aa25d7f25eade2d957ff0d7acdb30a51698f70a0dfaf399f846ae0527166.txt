@@ -1,0 +1,19 @@
+static int fn_A(float[] a,float[] b){
+  if (a == b) {
+    return 0;
+  }
+  if (a == null) {
+    return 1;
+  }
+  if (b == null) {
+    return -1;
+  }
+  int c=Math.min(a.length,b.length);
+  for (int d=0; d < c; d++) {
+    int e=Float.compare(a[d],b[d]);
+    if (e != 0) {
+      return e;
+    }
+  }
+  return a.length < b.length ? -1 : (a.length > b.length ? 1 : 0);
+}

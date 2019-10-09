@@ -1,0 +1,4 @@
+public static final int fn_A(int a,int b){
+  int c=a % b;
+  return c < 0 ? b + c : c;
+}

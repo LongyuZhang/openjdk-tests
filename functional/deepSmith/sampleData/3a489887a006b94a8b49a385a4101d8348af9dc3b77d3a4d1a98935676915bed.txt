@@ -1,0 +1,11 @@
+private static byte[] fn_A(long a){
+  if (a <= 125) {
+    return new byte[]{(byte)a};
+  }
+ else   if (a <= 0xffff) {
+    return new byte[]{126,(byte)((a >> 8) & 0xff),(byte)((a) & 0xff)};
+  }
+ else {
+    return new byte[]{127,(byte)((a >> 56) & 0xff),(byte)((a >> 48) & 0xff),(byte)((a >> 40) & 0xff),(byte)((a >> 32) & 0xff),(byte)((a >> 24) & 0xff),(byte)((a >> 16) & 0xff),(byte)((a >> 8) & 0xff),(byte)((a) & 0xff)};
+  }
+}

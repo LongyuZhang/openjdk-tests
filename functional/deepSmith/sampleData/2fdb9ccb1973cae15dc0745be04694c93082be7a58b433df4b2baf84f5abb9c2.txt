@@ -1,0 +1,7 @@
+public static String fn_A(String a){
+  String b=(new java.io.File(System.getProperty("user.dir")).getParent() + "\\" + a);
+  if ((new java.io.File(b)).isFile()) {
+    return b;
+  }
+  return null;
+}

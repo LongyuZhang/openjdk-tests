@@ -1,0 +1,24 @@
+private static int fn_A(char a){
+  if (a >= 'E' && a <= 'H') {
+    return (a - 'E') + 1984;
+  }
+  if (a >= 'J' && a <= 'N') {
+    return (a - 'J') + 1988;
+  }
+  if (a == 'P') {
+    return 1993;
+  }
+  if (a >= 'R' && a <= 'T') {
+    return (a - 'R') + 1994;
+  }
+  if (a >= 'V' && a <= 'Y') {
+    return (a - 'V') + 1997;
+  }
+  if (a >= '1' && a <= '9') {
+    return (a - '1') + 2001;
+  }
+  if (a >= 'A' && a <= 'D') {
+    return (a - 'A') + 2010;
+  }
+  throw new IllegalArgumentException();
+}

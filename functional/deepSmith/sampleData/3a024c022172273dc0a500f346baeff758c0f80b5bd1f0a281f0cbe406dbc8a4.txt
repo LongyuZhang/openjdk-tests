@@ -1,0 +1,11 @@
+private static void fn_A(final int a,final int b,final int c,final String d){
+  if (a < 0) {
+    throw new IllegalArgumentException(d + " length cannot be negative");
+  }
+  if (b < 0) {
+    throw new IllegalArgumentException(d + " offset cannot be negative");
+  }
+  if (b + a > c) {
+    throw new IllegalArgumentException(d + " length goes beyond end of left array");
+  }
+}

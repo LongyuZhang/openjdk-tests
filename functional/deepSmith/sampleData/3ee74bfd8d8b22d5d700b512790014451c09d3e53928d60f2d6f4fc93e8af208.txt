@@ -1,0 +1,4 @@
+private static InputStream fn_A() throws FileNotFoundException {
+  final String a="/home/zll/tmp/mysql_dump_140928.sql";
+  return new BufferedInputStream(new FileInputStream(a));
+}

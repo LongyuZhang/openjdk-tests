@@ -1,0 +1,6 @@
+public static boolean fn_A(int[][] a){
+  if ((a.length * a.length) == (a.length * a[0].length)) {
+    return true;
+  }
+  return false;
+}

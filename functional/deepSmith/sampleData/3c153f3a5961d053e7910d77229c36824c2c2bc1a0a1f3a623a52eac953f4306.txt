@@ -1,0 +1,15 @@
+public static double fn_A(double[][] a,double[][] b){
+  assert(a.length == b.length);
+  if (a.length == 0) {
+    return 0.0;
+  }
+  assert(a[0].length == b[0].length);
+  double c=0.0;
+  for (int d=0; d < a.length; d++) {
+    for (int e=0; e < a[d].length; e++) {
+      double f=a[d][e] - b[d][e];
+      c+=f * f;
+    }
+  }
+  return c;
+}

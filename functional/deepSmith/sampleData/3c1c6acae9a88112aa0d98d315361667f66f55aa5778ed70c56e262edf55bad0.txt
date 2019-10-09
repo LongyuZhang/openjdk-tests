@@ -1,0 +1,26 @@
+public static boolean fn_A(double a,double b,double c,double d,double e,double f,double g,double h,double i,double j,double k,double l,double m,double n,double o,double p){
+  double q=j - g;
+  double r=k - h;
+  double s=l - i;
+  double t=m - g;
+  double u=n - h;
+  double v=o - i;
+  double w=e * v - f * u;
+  double x=f * t - d * v;
+  double y=d * u - e * t;
+  double z=q * w + r * x + s * y;
+  if (z < p)   return false;
+  double aa=a - g;
+  double ab=b - h;
+  double ac=c - i;
+  double ad=(aa * w + ab * x + ac * y);
+  if (ad < 0.0 || ad > z)   return false;
+  double ae=ab * s - ac * r;
+  double af=ac * q - aa * s;
+  double ag=aa * r - ab * q;
+  double ah=(d * ae + e * af + f * ag);
+  if (ah < 0.0 || ad + ah > z)   return false;
+  double ai=1.0 / z;
+  double aj=(t * ae + u * af + v * ag) * ai;
+  return aj >= p;
+}

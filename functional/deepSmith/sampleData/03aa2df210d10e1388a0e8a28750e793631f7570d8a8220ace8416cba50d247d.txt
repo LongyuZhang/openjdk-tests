@@ -1,0 +1,10 @@
+public final static int fn_A(int a,int b){
+  if ((Math.abs(a) >> 14) >= Math.abs(b)) {
+    return (a ^ b) < 0 ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+  }
+ else {
+    long c;
+    c=((long)a << 16) / b;
+    return (int)c;
+  }
+}

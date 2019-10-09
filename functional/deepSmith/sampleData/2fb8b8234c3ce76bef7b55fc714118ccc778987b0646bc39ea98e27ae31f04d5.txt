@@ -1,0 +1,6 @@
+private static <T>Set<T> fn_A(Collection<T> a){
+  if (a == null)   return Collections.emptySet();
+  if (a instanceof NavigableSet)   return Collections.unmodifiableNavigableSet((NavigableSet<T>)a);
+ else   if (a instanceof SortedSet)   return Collections.unmodifiableSortedSet((SortedSet<T>)a);
+ else   return Collections.unmodifiableSet(new LinkedHashSet<>(a));
+}

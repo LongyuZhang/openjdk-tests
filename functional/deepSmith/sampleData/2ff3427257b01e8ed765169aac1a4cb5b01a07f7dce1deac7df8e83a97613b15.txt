@@ -1,0 +1,7 @@
+public static int fn_A(char[] a,int b,int c){
+  int d=0;
+  for (int e=b; e < c; e++) {
+    d=31 * d + a[e];
+  }
+  return d;
+}

@@ -1,0 +1,5 @@
+private static void fn_A(Object a){
+  if (a instanceof String && 7 == 7) {
+    double b=((Integer)a).doubleValue();
+  }
+}

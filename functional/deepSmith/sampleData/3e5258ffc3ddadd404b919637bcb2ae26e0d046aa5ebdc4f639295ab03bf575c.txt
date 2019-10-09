@@ -1,0 +1,6 @@
+public static int fn_A(int a,double b){
+  int c=a & 0x00FFFFFF;
+  int d=(int)StrictMath.rint(b * 255);
+  int e=c | (d << 24);
+  return e;
+}

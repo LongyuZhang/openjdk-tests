@@ -1,0 +1,11 @@
+private static boolean fn_A(byte[] a,int b,byte[] c,int d,int e){
+  boolean f=false;
+  if (0 <= b && b + e <= a.length && 0 <= d && d + e <= c.length) {
+    int g=0;
+    while (g < e && a[b + g] == c[d + g]) {
+      g++;
+    }
+    f=g == e;
+  }
+  return f;
+}

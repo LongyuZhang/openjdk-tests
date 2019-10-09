@@ -1,0 +1,7 @@
+public static final int[][] fn_A(final int a){
+  int[][] b=new int[a][a];
+  for (int c=0; c < a; c++) {
+    b[c][c]=1;
+  }
+  return b;
+}

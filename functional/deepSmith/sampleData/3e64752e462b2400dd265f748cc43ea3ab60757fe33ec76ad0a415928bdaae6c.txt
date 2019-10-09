@@ -1,0 +1,5 @@
+public static void fn_A(String a){
+  if (!new File(a).exists()) {
+    new File(a).mkdirs();
+  }
+}

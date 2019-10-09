@@ -1,0 +1,13 @@
+public static short[] fn_A(short[] a,short[] b){
+  int c=a.length;
+  int d=b.length;
+  int e=c + d;
+  short[] f=new short[e];
+  for (int g=0; g < c; g++) {
+    f[g]=a[g];
+  }
+  for (int g=0; g < d; g++) {
+    f[g + c]=b[g];
+  }
+  return f;
+}

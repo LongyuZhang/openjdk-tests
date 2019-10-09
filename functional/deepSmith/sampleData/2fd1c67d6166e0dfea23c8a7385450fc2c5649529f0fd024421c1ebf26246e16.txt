@@ -1,0 +1,6 @@
+public static int fn_A(int a,int b){
+  int c=((a & 0xff0000) - (b & 0xff0000)) >> 16;
+  int d=((a & 0x00ff00) - (b & 0x00ff00)) >> 8;
+  int e=((a & 0x0000ff) - (b & 0x0000ff)) >> 0;
+  return c * c + d * d + e * e;
+}
