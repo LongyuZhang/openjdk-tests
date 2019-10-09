@@ -1,0 +1,6 @@
+public static double[][] fn_A(double[][] a,int b,int c){
+  if (a == null || a.length < b) {
+    return new double[b][c];
+  }
+  return a;
+}

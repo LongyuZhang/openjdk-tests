@@ -1,0 +1,5 @@
+private static String fn_A(int a){
+  StringBuffer b=new StringBuffer();
+  for (int c=0; c < a; c++)   b.append(" ");
+  return b.toString();
+}

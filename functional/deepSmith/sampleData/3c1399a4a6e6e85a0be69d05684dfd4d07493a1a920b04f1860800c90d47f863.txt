@@ -1,0 +1,16 @@
+private static String fn_A(int a){
+switch (a) {
+case '&':
+    return "&amp;";
+case '\"':
+  return "&quot;";
+case '\'':
+return "&apos;";
+case '<':
+return "&lt;";
+case '>':
+return "&gt;";
+default :
+return null;
+}
+}

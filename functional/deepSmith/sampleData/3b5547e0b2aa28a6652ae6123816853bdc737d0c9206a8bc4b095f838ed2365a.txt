@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  String b=System.getProperty("user.name");
+  System.out.println("User: " + b);
+}

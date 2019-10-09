@@ -1,0 +1,6 @@
+public static String fn_A(final int a){
+  if (a == 1) {
+    return "multiple frame rates may be present";
+  }
+  return "single frame rate is present";
+}

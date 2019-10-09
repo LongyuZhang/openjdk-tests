@@ -1,0 +1,20 @@
+public static void fn_A(String[] a,int b){
+  int c=a.length;
+  int d=a[0].length();
+  String[] e=new String[c];
+  for (int f=d - 1; f >= 0; f--) {
+    int[] g=new int[b + 1];
+    for (int h=0; h < c; h++) {
+      g[a[h].charAt(d) + 1]++;
+    }
+    for (int i=0; i < b; i++) {
+      g[i + 1]+=g[i];
+    }
+    for (int h=0; h < c; h++) {
+      e[g[a[h].charAt(d)]++]=a[h];
+    }
+    for (int h=0; h < c; h++) {
+      a[h]=e[h];
+    }
+  }
+}

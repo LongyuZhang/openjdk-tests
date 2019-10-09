@@ -1,0 +1,8 @@
+private static void fn_A(int a,int b,int c,int d,int e,int f){
+  if (a > Short.MAX_VALUE || a < Short.MIN_VALUE)   throw new IllegalArgumentException("Year out of range: " + Short.MIN_VALUE + " - "+ Short.MAX_VALUE);
+  if (b > 12 || b < 1)   throw new IllegalArgumentException("Month out of range: " + 1 + "-"+ 12);
+  if (c > 31 || c < 1)   throw new IllegalArgumentException("Day out of range: " + 1 + "-"+ 31);
+  if (d > 23 || d < 0)   throw new IllegalArgumentException("Hour out of range: " + 0 + "-"+ 23);
+  if (e > 59 || e < 0)   throw new IllegalArgumentException("Minute out of range: " + 0 + "-"+ 59);
+  if (f > 60 || f < 0)   throw new IllegalArgumentException("Second out of range: " + 0 + "-"+ 60);
+}

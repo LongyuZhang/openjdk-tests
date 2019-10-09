@@ -1,0 +1,4 @@
+public static String fn_A(String a){
+  String b="http://money.finance.sina.com.cn/q/view/newFLJK.php?param=";
+  return b + a;
+}

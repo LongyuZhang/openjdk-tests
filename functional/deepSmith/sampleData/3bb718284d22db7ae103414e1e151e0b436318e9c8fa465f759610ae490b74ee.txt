@@ -1,0 +1,6 @@
+public static boolean fn_A(byte[] a){
+  if (a.length != 32) {
+    return false;
+  }
+  return true;
+}

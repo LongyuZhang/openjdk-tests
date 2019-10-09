@@ -1,0 +1,8 @@
+public static Object fn_A(Object[] a,int b,Object c,Object d){
+  for (int e=b; e < a.length; e+=2) {
+    if (a[e] == c) {
+      return a[e + 1];
+    }
+  }
+  return d;
+}

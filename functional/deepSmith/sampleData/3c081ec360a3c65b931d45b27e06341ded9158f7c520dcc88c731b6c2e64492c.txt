@@ -1,0 +1,18 @@
+public static void fn_A(int a,double b,double c[],double d[][],int e,int f){
+  int g, h, i, j;
+  if (a <= 0)   return;
+  if (b == 0.0)   return;
+  h=a % 4;
+  i=h + e;
+  j=e + a - 1;
+  for (g=e; g < i; g++) {
+    d[g][f]+=b * c[g];
+  }
+  for (g=i; g <= j; g+=4) {
+    d[g][f]+=b * c[g];
+    d[g + 1][f]+=b * c[g + 1];
+    d[g + 2][f]+=b * c[g + 2];
+    d[g + 3][f]+=b * c[g + 3];
+  }
+  return;
+}

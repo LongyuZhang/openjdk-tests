@@ -1,0 +1,5 @@
+private static boolean fn_A(CharSequence a,CharSequence b){
+  if (a == null && b == null)   return true;
+  if (a == null || b == null)   return false;
+  return a.toString().contentEquals(b);
+}

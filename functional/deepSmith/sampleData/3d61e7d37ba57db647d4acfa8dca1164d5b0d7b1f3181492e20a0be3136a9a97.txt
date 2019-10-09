@@ -1,0 +1,6 @@
+private static String fn_A(final String a){
+  if (a == null) {
+    return null;
+  }
+  return new StringBuilder(a).reverse().toString();
+}

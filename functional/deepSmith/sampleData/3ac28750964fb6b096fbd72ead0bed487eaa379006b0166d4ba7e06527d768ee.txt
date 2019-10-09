@@ -1,0 +1,9 @@
+public static Date fn_A(Integer a){
+  if (a == null) {
+    return null;
+  }
+  int b=Double.valueOf(Math.floor((double)(a / 10000))).intValue();
+  int c=Double.valueOf(Math.floor((double)((a % 10000) / 100))).intValue();
+  int d=a % 100;
+  return new Date(b,c,d);
+}

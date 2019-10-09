@@ -1,0 +1,18 @@
+public static final void fn_A(float[] a,int b,int c,byte[] d,int e,boolean f){
+  if (f) {
+    int g=0;
+    for (int h=c; g < h; g++) {
+      int i=(int)a[b + g];
+      d[e + 2 * g]=(byte)(i >> 8 & 0xff);
+      d[e + 2 * g + 1]=(byte)(i >> 0 & 0xff);
+    }
+  }
+ else {
+    int j=0;
+    for (int k=c; j < k; j++) {
+      int l=(int)a[b + j];
+      d[e + 2 * j]=(byte)(l >> 0 & 0xff);
+      d[e + 2 * j + 1]=(byte)(l >> 8 & 0xff);
+    }
+  }
+}

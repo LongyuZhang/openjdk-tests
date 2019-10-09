@@ -1,0 +1,10 @@
+public static boolean fn_A(byte[] a){
+  for (int b=a.length; --b >= 0; ) {
+    byte c=(byte)((a[b] & 0xff) + 1);
+    a[b]=c;
+    if (c != 0) {
+      return true;
+    }
+  }
+  return false;
+}

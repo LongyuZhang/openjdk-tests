@@ -1,0 +1,6 @@
+private static int[][] fn_A(final int[][] a){
+  int b=a.length;
+  int[][] c=new int[b][];
+  for (int d=0; d < b; d++)   c[d]=Arrays.copyOf(a[d],a[d].length);
+  return c;
+}

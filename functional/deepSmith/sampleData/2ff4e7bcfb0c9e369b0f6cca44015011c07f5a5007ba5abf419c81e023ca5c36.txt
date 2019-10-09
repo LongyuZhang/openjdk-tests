@@ -1,0 +1,18 @@
+public static void fn_A(double a[],double b,double c,int d,double e[]){
+  double f=Math.pow(Math.pow(2,1 / d) - 1,0.25);
+  double g=Math.tan(Math.PI * b / c) / f;
+  double h=Math.sqrt(2 * g);
+  double i=g * g;
+  double j=i / (1 + h + i);
+  double k=2 * j;
+  double l=j;
+  double m=(2 * j) / i;
+  double n=-2 * j + m;
+  double o=1 - 2 * j - m;
+  int p=a.length;
+  e[0]=a[0];
+  e[1]=a[1];
+  for (int q=3; q < p; q++) {
+    e[q]=(double)(j * a[q] + k * a[q - 1] + l * a[q - 2] + n * e[q - 1] + o * e[q - 2]);
+  }
+}

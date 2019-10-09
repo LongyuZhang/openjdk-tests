@@ -1,0 +1,10 @@
+public static long fn_A(final long a){
+  if (a >= (1L << 62) || a < 0) {
+    throw new IllegalArgumentException("Number out of range:" + a);
+  }
+  long b=1L;
+  while (b <= a) {
+    b=b << 1;
+  }
+  return b;
+}

@@ -1,0 +1,8 @@
+public static void fn_A(byte[] a,byte[] b,byte[] c,int d,int e,int f,int g,int h,byte[] i){
+  int j=Math.round((float)(d * Math.pow(2,g / 96d)));
+  for (int k=0, l=d * 512; k < l; k++) {
+    int m=a[k & 0x1FF];
+    int n=a[(k * j / d + (128 + b[(k * e / d) & 0x1FF]) * (128 + c[(k * f / d) & 0x1FF]) / 128) & 0x1FF];
+    i[k]=(byte)((m * h + n * (256 - h)) / 256);
+  }
+}

@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("Usage: java tests.benchmarks.BenchmarkStats <class name>[(<primitive | string | enum>[,<primitive | string | enum>]*)] <method name>[(<primitive | string | enum>[,<primitive | string | enum>]*)] [-scope=(<primitive | string | enum>[,<primitive | string | enum>]*)] [-sharing=<sharing depth>] [-symm=<sbp length>]");
+  System.exit(1);
+}

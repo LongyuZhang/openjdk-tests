@@ -1,0 +1,14 @@
+public static <T extends Comparable<T>>int fn_A(Collection<? super T> a,Collection<? super T> b){
+  if (a.size() != b.size()) {
+    return a.size() - b.size();
+  }
+  Object[] c=a.toArray();
+  Object[] d=b.toArray();
+  for (int e=0; e < c.length; e++) {
+    int f=((T)c[e]).compareTo((T)d[e]);
+    if (f != 0) {
+      return f;
+    }
+  }
+  return 0;
+}

@@ -1,0 +1,37 @@
+private static void fn_A(){
+  System.err.println("Usage: XmlValidate [options] [-map=file] | [-schema=file (-ns=uri)] <xml-document file, directory, or URL...>\n");
+  System.err.println("Options:");
+  System.err.println("\t[-map=<schema property file>    - schema map properties: namespace to file/URI mappings");
+  System.err.println("\t[-schema=<path-to-xml-schema>   - set target schema");
+  System.err.println("\t[-schemaLocation=ns=location    - add/override namespace to schema location mapping.");
+  System.err.println("\t                                  Location can be a URL or file path to the schema file.");
+  System.err.println("\t                                  Multiple -schemaLocation arguments may be provided");
+  System.err.println("\t[-ns=schemaLocation namespace]  - set schemaLocation namespace (e.g. http://earth.google.com/kml/2.1)");
+  System.err.println("\t[-dump[=n]]                     - print reformatted XML documents: dump=0 -> no output [default],");
+  System.err.println("\t                                  1 -> print KML on errors only, 2 -> print all inputs");
+  System.err.println("\t                                  if number not specified then 1 is assumed otherwise 0");
+  System.err.println("\t-maxDump=n                      - set max length (in bytes) of XML output used for each document in dump");
+  System.err.println("\t[-K]                            - KML mode for special KML validation");
+  System.err.println("\t[-Z]                            - KMZ mode checks all kml files inside KMZ files");
+  System.err.println("\t[-kml]                          - validate .kml files only");
+  System.err.println("\t[-kmz]                          - validate .kml or .kmz files only");
+  System.err.println("\t[-x=ExtensionList]              - add additional file extensions to list (default=xml)");
+  System.err.println("\t                                  extensions separated by ':' (e.g. -x=gpx:x3d:svg)");
+  System.err.println("\t[-S]                            - enable summary mode to only show the final total counts");
+  System.err.println("\t[-v[=true]]                     - enable verbose mode");
+  System.err.println("\t[-debug]                        - enable debug mode to print exception stack trace");
+  System.err.println("\nExamples:");
+  System.err.println("\t1) To check all .kml files against target KML 2.2 schema regardless of default schema used:");
+  System.err.println("\t    XmlValidate -kml -schema=C:/pathToXsd/kml22.xsd -ns=http://www.opengis.net/kml/2.2 C:/pathToMyKmlFiles\n");
+  System.err.println("\t2) To check all CoT .xml files against CoT Schema:");
+  System.err.println("\t    XmlValidate -schema C:/pathToXsd/event.xsd C:/pathToMyCoTFiles\n");
+  System.err.println("\t3) Validate kml and kmz files against local schemas as defined in KML files:");
+  System.err.println("\t    XmlValidate -kmz -map=ns.map C:/pathToMyKmlFiles\n");
+  System.err.println("\t4) Validate by URL for KML and target schema and print KML content");
+  System.err.println("\t   if any errors are found but limit size of each file printed to first 4K:");
+  System.err.println("\t    XmlValidate -dump -maxDump=4096 -ns=http://earth.google.com/kml/2.1\n" + "\t\t-schema=http://code.google.com/apis/kml/schema/kml21.xsd\n" + "\t\thttp://kml-samples.googlecode.com/svn/trunk/kml/kmz/simple/big.kmz\n");
+  System.err.println("\t5) Validate by XML document with explicit schema location");
+  System.err.println("\t    XmlValidate -schemaLocation=http://myExtension=ext.xsd example.xml");
+  System.err.println("\nNote: XmlValidate command in examples above is a short-cut to the executable\n" + "such as: java -jar xmlValidate.jar or in equivalent batch file/shell script.");
+  System.exit(1);
+}

@@ -1,0 +1,8 @@
+private static int fn_A(Class<?>[] a){
+  if (a.length == 1) {
+    if (a[0].getName().equalsIgnoreCase("boolean") || a[0].getName().equalsIgnoreCase("int") || a[0].getName().equalsIgnoreCase("double")|| a[0].getName().equalsIgnoreCase("float"))     return 1;
+ else     if (a[0].getName().equalsIgnoreCase("java.lang.String"))     return 2;
+ else     return -1;
+  }
+ else   return 0;
+}

@@ -1,0 +1,6 @@
+private static int fn_A(char a){
+  if ((int)a >= 48 && (int)a <= 57)   return (int)a - 48;
+  if ((int)a >= 65 && (int)a <= 70)   return 10 + (int)a - 65;
+  if ((int)a >= 97 && (int)a <= 102)   return 10 + (int)a - 97;
+  return -1;
+}

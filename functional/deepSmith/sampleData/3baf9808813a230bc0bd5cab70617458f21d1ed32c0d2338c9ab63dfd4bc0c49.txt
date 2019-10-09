@@ -1,0 +1,8 @@
+public static int fn_A(boolean[] a,boolean b,int c,int d){
+  for (int e=c; e < d; e++) {
+    if (a[e] == b) {
+      return e;
+    }
+  }
+  return -1;
+}

@@ -1,0 +1,28 @@
+private static void fn_A(double[] a,double[] b,int c,int d,int e){
+  int f=c;
+  int g=d;
+  while (true) {
+    if (c == d) {
+      while (g < e) {
+        b[f++]=a[g++];
+      }
+      break;
+    }
+ else     if (g == e) {
+      while (c < d) {
+        b[f++]=a[c++];
+      }
+      break;
+    }
+    double h=a[c];
+    double i=a[g];
+    if (h <= i) {
+      b[f++]=h;
+      ++c;
+    }
+ else {
+      b[f++]=i;
+      ++g;
+    }
+  }
+}

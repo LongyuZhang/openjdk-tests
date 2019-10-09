@@ -1,0 +1,6 @@
+public static String fn_A(int a){
+  String[] b=new String[]{"Read request (RRQ)","Write request (WRQ)","Data (DATA)","Acknowledgment (ACK)","Error (ERROR)","Option acknowledgement (OACK)"};
+  a--;
+  if (a < b.length && a >= 0)   return b[a];
+ else   return "opcode <" + a + ">";
+}

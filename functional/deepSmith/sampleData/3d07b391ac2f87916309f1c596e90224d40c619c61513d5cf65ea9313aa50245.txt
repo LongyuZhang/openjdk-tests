@@ -1,0 +1,21 @@
+public static double[] fn_A(double[] a,int b,int c,int d,double e,double f){
+  int g=(int)(b * e - b);
+  int h=(int)(c * e - c);
+  int i=(int)(d * f - d);
+  int j=g / 2;
+  int k=h / 2;
+  int l=i / 2;
+  double[] m=new double[(b + g) * (c + h) * (d + i)];
+  for (int n=0; n < m.length; n++) {
+    m[n]=0;
+  }
+  for (int o=0; o < d; o++) {
+    for (int p=0; p < c; p++) {
+      for (int n=0; n < b; n++) {
+        double q=a[n + p * b + o * b * c];
+        m[(n + j) + (p + k) * (b + g) + (o + l) * (b + g) * (c + h)]=q;
+      }
+    }
+  }
+  return m;
+}

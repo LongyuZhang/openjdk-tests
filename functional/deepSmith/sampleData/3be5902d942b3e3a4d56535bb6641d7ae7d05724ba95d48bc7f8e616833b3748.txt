@@ -1,0 +1,5 @@
+private static final int fn_A(byte[] a,int b,short c){
+  a[b + 0]=(byte)((c >> 8) & 0xff);
+  a[b + 1]=(byte)((c) & 0xff);
+  return 2;
+}

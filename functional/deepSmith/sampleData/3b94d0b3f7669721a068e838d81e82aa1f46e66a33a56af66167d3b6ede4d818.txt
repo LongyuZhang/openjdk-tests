@@ -1,0 +1,7 @@
+public static Double[] fn_A(int a){
+  Double[] b=new Double[a];
+  for (int c=0; c < a; c++) {
+    b[c]=(double)c;
+  }
+  return b;
+}

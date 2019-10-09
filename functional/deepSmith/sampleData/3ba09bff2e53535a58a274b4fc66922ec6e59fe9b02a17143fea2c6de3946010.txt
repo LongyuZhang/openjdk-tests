@@ -1,0 +1,22 @@
+public static void main(final String[] a){
+  if (a.length < 2) {
+    System.err.print("ERROR[IntOps]: We need two arguments, ");
+    System.err.println("but you entered only " + a.length + " many arguments.");
+  }
+ else {
+    final int b=Integer.parseInt(a[0]);
+    final int c=Integer.parseInt(a[1]);
+    final int d=b * c;
+    System.out.println(b + " * " + c+ " = "+ d);
+    if (c == 0) {
+      System.out.println("No division, since b = 0.");
+    }
+ else {
+      final int e=b / c;
+      final int f=b % c;
+      System.out.println(b + " / " + c+ " = "+ e);
+      System.out.println(b + " % " + c+ " = "+ f);
+      System.out.println(b + " = " + e+ " * "+ c+ " + "+ f);
+    }
+  }
+}

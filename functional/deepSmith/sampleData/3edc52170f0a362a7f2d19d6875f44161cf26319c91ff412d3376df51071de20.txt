@@ -1,0 +1,5 @@
+public static String fn_A(Object a){
+  if (a instanceof String)   return (String)a;
+  if (a instanceof Class)   return ((Class)a).getName();
+  return "";
+}

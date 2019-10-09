@@ -1,0 +1,5 @@
+public static double fn_A(double a,double b,double c,double d){
+  double e=Math.abs(a - c);
+  double f=Math.abs(b - d);
+  return e * e + f * f;
+}

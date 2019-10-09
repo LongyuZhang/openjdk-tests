@@ -1,0 +1,17 @@
+private static char fn_A(char a){
+switch (a) {
+case '(':
+    return ')';
+case ')':
+  return '(';
+case '[':
+return ']';
+case ']':
+return '[';
+case '"':
+case '\'':
+return a;
+default :
+throw new IllegalArgumentException();
+}
+}

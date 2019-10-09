@@ -1,0 +1,5 @@
+private static void fn_A(final double[][] a,final int b,final double[][] c,final int d){
+  for (int e=d; e < b; e++) {
+    c[e][d]=a[e][d];
+  }
+}

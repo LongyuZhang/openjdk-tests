@@ -1,0 +1,37 @@
+private static String fn_A(byte[] a){
+  int b=a[0] & 0xFF;
+  int c=a[1] & 0xFF;
+  if (b == 0xFE && c == 0xFF) {
+    return "UTF-16BE";
+  }
+  if (b == 0xFF && c == 0xFE) {
+    return "UTF-16LE";
+  }
+  int d=a[2] & 0xFF;
+  if (b == 0xEF && c == 0xBB && d == 0xBF) {
+    return "UTF-8";
+  }
+  int e=a[3] & 0xFF;
+  if (b == 0x00 && c == 0x00 && d == 0x00 && e == 0x3C) {
+    return "ISO-10646-UCS-4";
+  }
+  if (b == 0x3C && c == 0x00 && d == 0x00 && e == 0x00) {
+    return "ISO-10646-UCS-4";
+  }
+  if (b == 0x00 && c == 0x00 && d == 0x3C && e == 0x00) {
+    return "ISO-10646-UCS-4";
+  }
+  if (b == 0x00 && c == 0x3C && d == 0x00 && e == 0x00) {
+    return "ISO-10646-UCS-4";
+  }
+  if (b == 0x00 && c == 0x3C && d == 0x00 && e == 0x3F) {
+    return "UTF-16BE";
+  }
+  if (b == 0x3C && c == 0x00 && d == 0x3F && e == 0x00) {
+    return "UTF-16LE";
+  }
+  if (b == 0x4C && c == 0x6F && d == 0xA7 && e == 0x94) {
+    return "CP037";
+  }
+  return "UTF-8";
+}

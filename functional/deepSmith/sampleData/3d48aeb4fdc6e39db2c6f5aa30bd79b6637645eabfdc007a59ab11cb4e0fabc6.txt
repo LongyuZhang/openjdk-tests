@@ -1,0 +1,10 @@
+private static final void fn_A(int a,char[] b,int c){
+  if (a < 10) {
+    b[c]='0';
+    b[c + 1]=(char)('0' + a);
+  }
+ else {
+    b[c]=(char)('0' + (a / 10));
+    b[c + 1]=(char)('0' + (a % 10));
+  }
+}

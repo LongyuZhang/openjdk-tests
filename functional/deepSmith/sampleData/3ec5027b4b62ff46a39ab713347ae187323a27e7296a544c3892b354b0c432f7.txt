@@ -1,0 +1,6 @@
+public static byte fn_A(byte a,int b){
+  if (b < 0 || b > 255) {
+    throw new IllegalArgumentException("mask out of range");
+  }
+  return (byte)((a & 0xff) & (~b));
+}

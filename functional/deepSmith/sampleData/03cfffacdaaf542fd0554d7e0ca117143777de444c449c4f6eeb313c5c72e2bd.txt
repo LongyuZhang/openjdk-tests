@@ -1,0 +1,8 @@
+private final static void fn_A(final int[] a,final int b,final int c){
+  if (a == null) {
+    return;
+  }
+ else {
+    a[b]=c;
+  }
+}

@@ -1,0 +1,15 @@
+public static int fn_A(int a,boolean b){
+  int c=-1;
+switch (a) {
+case 4097:
+    c=b ? 0 : 1;
+  break;
+case 4099:
+c=b ? 4 : 5;
+break;
+case 8194:
+c=b ? 2 : 3;
+break;
+}
+return c;
+}

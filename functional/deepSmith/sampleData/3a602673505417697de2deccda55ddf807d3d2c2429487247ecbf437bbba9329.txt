@@ -1,0 +1,9 @@
+private static double[] fn_A(double a,double b){
+  double c=(b - a) / 9;
+  double[] d=new double[10];
+  for (int e=0; e < 9; e++) {
+    d[e]=a + e * c;
+  }
+  d[9]=b;
+  return d;
+}

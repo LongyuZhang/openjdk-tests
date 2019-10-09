@@ -1,0 +1,13 @@
+public static String fn_A(String[] a,String b){
+  String c=null;
+  if (a != null) {
+    c="";
+    for (int d=0; d < a.length; d++) {
+      c+=a[d];
+      if (d < a.length - 1) {
+        c+=b;
+      }
+    }
+  }
+  return c;
+}

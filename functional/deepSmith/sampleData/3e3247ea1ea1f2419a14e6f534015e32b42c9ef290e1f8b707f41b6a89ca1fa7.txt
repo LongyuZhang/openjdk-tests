@@ -1,0 +1,4 @@
+private static void fn_A() throws IOException {
+  System.out.println("testUserException");
+  throw new IOException();
+}

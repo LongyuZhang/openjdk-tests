@@ -1,0 +1,22 @@
+static int fn_A(int a,int b[]){
+  int c=0;
+  while (true) {
+    int d=0;
+    int e;
+    for (e=0; e < a; e++) {
+      if (b[e] % 2 == 1)       break;
+ else       if (b[e] == 0)       d++;
+    }
+    if (d == a)     return c;
+    if (e == a) {
+      for (int f=0; f < a; f++)       b[f]=b[f] / 2;
+      c++;
+    }
+    for (int f=e; f < a; f++) {
+      if (b[f] % 2 == 1) {
+        b[f]--;
+        c++;
+      }
+    }
+  }
+}

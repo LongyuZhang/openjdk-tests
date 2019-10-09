@@ -1,0 +1,6 @@
+private static boolean fn_A(int[] a,int b){
+  for (  int c : a) {
+    if (c < b)     return true;
+  }
+  return false;
+}

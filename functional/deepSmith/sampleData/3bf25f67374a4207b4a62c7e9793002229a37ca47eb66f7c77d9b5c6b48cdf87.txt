@@ -1,0 +1,8 @@
+public static void fn_A(){
+  try {
+    Class.forName("org.sqlite.JDBC");
+  }
+ catch (  ClassNotFoundException a) {
+    throw new RuntimeException("Can't register SQLite JDBC driver!");
+  }
+}

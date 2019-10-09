@@ -1,0 +1,12 @@
+private static String fn_A(boolean a,boolean b){
+  if (a && b) {
+    return "both";
+  }
+ else   if (a) {
+    return "the first of";
+  }
+ else   if (b) {
+    return "the second of";
+  }
+  return "neither";
+}

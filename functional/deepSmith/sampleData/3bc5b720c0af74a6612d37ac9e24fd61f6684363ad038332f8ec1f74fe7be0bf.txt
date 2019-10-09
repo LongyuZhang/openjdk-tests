@@ -1,0 +1,11 @@
+public static void fn_A(){
+  System.out.println("presto-riak CLI. create table, create schema, drop... >");
+  System.out.println("usage: ./presto-riak-cli <hostname> <port> [<commands>... ]");
+  System.out.println("   list-tables <schema name>");
+  System.out.println("   setup-schema <schema name>");
+  System.out.println("   verify-schema <schema name>");
+  System.out.println("   create-tabledef <schema name> <table definition json file>");
+  System.out.println("   show-tabledef <schema name> <table name>");
+  System.out.println("   clear-tabledef <schema name> <table name>");
+  System.out.println("   check-tabledef <schema name> <table definition json file>");
+}

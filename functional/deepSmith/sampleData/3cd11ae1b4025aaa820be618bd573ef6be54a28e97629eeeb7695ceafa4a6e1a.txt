@@ -1,0 +1,11 @@
+static String fn_A(String a,String b,int c){
+  if (a == null) {
+    a="";
+  }
+ else {
+    a+=":&nbsp;";
+  }
+  a="<th nowrap align=right valign=top>" + a;
+  b="<td colspan=" + (c - 1) + "> <font size =-1>"+ b;
+  return "<tr>" + a + b+ "</tr>";
+}

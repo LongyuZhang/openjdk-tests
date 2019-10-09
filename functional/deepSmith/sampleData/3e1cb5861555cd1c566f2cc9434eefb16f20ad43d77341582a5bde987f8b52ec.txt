@@ -1,0 +1,4 @@
+protected static boolean fn_A(File a,String b){
+  String c="deploy" + File.separator + b;
+  return new File(a,c).exists();
+}

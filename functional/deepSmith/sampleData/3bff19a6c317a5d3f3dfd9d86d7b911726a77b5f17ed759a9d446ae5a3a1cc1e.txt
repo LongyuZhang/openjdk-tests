@@ -1,0 +1,15 @@
+public static String fn_A(){
+  String a="";
+  a+="\"cik\",";
+  a+="\"confirmation_period\",";
+  a+="\"name\",";
+  a+="\"title\",";
+  a+="\"cusip\",";
+  a+="\"excel_cusip\",";
+  a+="\"cash_value\",";
+  a+="\"num_shares\",";
+  a+="\"type\",";
+  a+="\"discretion\",";
+  a+="\"submit_date\"";
+  return a;
+}

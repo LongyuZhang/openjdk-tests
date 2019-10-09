@@ -1,0 +1,4 @@
+private static void fn_A(float a,float b,float c){
+  if (a >= b)   throw new IllegalArgumentException("MinZoom has to be less than MidZoom");
+  if (b >= c)   throw new IllegalArgumentException("MidZoom has to be less than MaxZoom");
+}

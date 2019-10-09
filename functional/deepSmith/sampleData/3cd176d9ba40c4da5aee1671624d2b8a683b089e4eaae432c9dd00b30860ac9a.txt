@@ -1,0 +1,38 @@
+public static String fn_A(long a){
+  int b=0;
+  if (a == 0) {
+    return "0 seconds";
+  }
+  String c="";
+  if (a >= 86400) {
+    long d=a / 86400;
+    a=a - d * 86400;
+    c=c + d + (d == 1 ? " day" : " days");
+    b++;
+  }
+  if (a >= 3600) {
+    if (b >= 1) {
+      c=c + ", ";
+    }
+    long e=a / 3600;
+    a=a - e * 3600;
+    c=c + e + (e == 1 ? " hour" : " hours");
+    b++;
+  }
+  if (a >= 60) {
+    if (b >= 1) {
+      c=c + ", ";
+    }
+    long f=a / 60;
+    a=a - f * 60;
+    c=c + f + (f == 1 ? " minute" : " minutes");
+    b++;
+  }
+  if (a > 0) {
+    if (b >= 1) {
+      c=c + ", ";
+    }
+    c=c + a + (a == 1 ? " second" : " seconds");
+  }
+  return c;
+}

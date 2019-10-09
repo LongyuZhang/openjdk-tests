@@ -1,0 +1,12 @@
+protected static int fn_A(long a,long b){
+  if (b < 0) {
+    b=-b;
+    a=-a;
+  }
+  if (a >= 0) {
+    return (int)(a / b);
+  }
+ else {
+    return (int)((a - b + 1) / b);
+  }
+}

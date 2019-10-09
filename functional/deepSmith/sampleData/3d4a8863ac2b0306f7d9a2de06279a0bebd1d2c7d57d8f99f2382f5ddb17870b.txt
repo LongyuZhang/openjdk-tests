@@ -1,0 +1,14 @@
+private static <T>int fn_A(T[] a,int b){
+  final int c=a.length;
+  int d=b;
+  if (d < 0) {
+    d=c + d;
+  }
+  if (d < 0) {
+    d=0;
+  }
+  if (d >= c) {
+    d=c - 1;
+  }
+  return d;
+}
