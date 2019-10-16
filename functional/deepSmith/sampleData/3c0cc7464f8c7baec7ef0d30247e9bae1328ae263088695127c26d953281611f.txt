@@ -1,6 +1,0 @@
-public static int fn_A(byte[] a,int b){
-  if (a == null || a.length - b < 2) {
-    throw new IllegalArgumentException("Invalid arguments");
-  }
-  return ((a[b] & 0xFF) << 16) + ((a[1 + b] & 0xFF) << 8) + (a[2 + b] & 0xFF);
-}

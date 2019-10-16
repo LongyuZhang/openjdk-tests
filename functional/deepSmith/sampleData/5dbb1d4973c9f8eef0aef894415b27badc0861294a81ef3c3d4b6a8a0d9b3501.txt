@@ -1,0 +1,8 @@
+public static byte[] fn_A(final byte[] a,final byte[] b){
+  final byte[] c=new byte[Math.min(a.length,b.length)];
+  for (int d=0; d < c.length; d++) {
+    c[d]=a[d];
+    c[d]&=b[d];
+  }
+  return c;
+}

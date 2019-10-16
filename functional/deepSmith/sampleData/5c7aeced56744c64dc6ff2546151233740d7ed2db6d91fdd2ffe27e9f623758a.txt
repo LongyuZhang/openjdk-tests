@@ -1,0 +1,5 @@
+public static Reader fn_A(InputStream a) throws IOException {
+  InputStreamReader b;
+  b=new InputStreamReader(a);
+  return b;
+}

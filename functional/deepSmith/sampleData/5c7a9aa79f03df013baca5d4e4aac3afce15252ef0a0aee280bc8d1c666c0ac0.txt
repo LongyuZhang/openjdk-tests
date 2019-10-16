@@ -1,0 +1,15 @@
+public static String fn_A(long a){
+  char[] b=new char[17];
+  if (a < 0) {
+    b[0]='-';
+    a=-a;
+  }
+ else {
+    b[0]='+';
+  }
+  for (int c=0; c < 16; c++) {
+    b[16 - c]=Character.forDigit((int)a & 0x0f,16);
+    a>>=4;
+  }
+  return new String(b);
+}

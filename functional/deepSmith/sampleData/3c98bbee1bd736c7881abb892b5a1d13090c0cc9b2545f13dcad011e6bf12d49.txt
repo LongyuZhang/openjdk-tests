@@ -1,9 +1,0 @@
-protected static int fn_A(int[] a,int[] b){
-  for (int c=0; c < a.length; c++) {
-    int d=a[c] - b[c];
-    if (d != 0) {
-      return d;
-    }
-  }
-  return 0;
-}

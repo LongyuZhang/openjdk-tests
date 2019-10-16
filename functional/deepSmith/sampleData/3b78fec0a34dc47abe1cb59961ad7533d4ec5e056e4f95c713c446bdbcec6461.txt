@@ -1,8 +1,0 @@
-public static byte[] fn_A(long a,long b){
-  byte[] c=new byte[16];
-  for (int d=0; d < 8; d++) {
-    c[d]=(byte)((a >> (8 * (7 - d))) & 0xff);
-    c[8 + d]=(byte)((b >> (8 * (7 - d))) & 0xff);
-  }
-  return c;
-}

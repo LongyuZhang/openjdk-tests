@@ -1,0 +1,19 @@
+static boolean fn_A(byte[] a,byte[] b,byte[] c){
+  if (c == null || c.length < a.length) {
+    return false;
+  }
+  if (b == null) {
+    for (int d=0; d < a.length; ++d) {
+      if (c[d] != a[d]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  for (int d=0; d < a.length; ++d) {
+    if ((b[d] & c[d]) != (b[d] & a[d])) {
+      return false;
+    }
+  }
+  return true;
+}

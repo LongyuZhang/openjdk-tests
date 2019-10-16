@@ -1,0 +1,11 @@
+public static String fn_A(long a){
+  a=a / 1000L;
+  long b=60L;
+  long c=b * 60L;
+  long d=c * 24L;
+  long e=a % b;
+  long f=(a - e) % c / b;
+  long g=(a - f - e) % d / c;
+  long h=(a - c - f- e) / d;
+  return h + " Days " + g+ " Hours "+ f+ " Minutes "+ e+ " Seconds";
+}

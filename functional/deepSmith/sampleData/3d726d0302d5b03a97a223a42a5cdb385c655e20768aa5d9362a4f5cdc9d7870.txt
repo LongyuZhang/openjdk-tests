@@ -1,5 +1,0 @@
-public static int fn_A(int a,boolean b){
-  int c=a & 0111;
-  if (b)   return (a - c) + 0111;
-  return a - c;
-}

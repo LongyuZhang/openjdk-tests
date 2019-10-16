@@ -1,7 +1,0 @@
-public static String fn_A(String a,String b,String c,String d){
-  String e="";
-  if (a != null)   e+=a + ".";
-  if (b != null)   e+=b + ".";
-  e+=c + "." + d;
-  return e;
-}

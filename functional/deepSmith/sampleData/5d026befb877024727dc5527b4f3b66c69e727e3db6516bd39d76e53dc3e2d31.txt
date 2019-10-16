@@ -1,0 +1,16 @@
+private static byte[] fn_A(char[] a,int b,int c){
+  byte[] d=new byte[(c - b) / 2];
+  for (int e=0; b + 1 < c; e++) {
+    int f=Character.digit(a[b],16);
+    int g=Character.digit(a[b + 1],16);
+    if (f < 0 || g < 0) {
+      break;
+    }
+    d[e]=(byte)((f << 4) + g);
+    b+=2;
+  }
+  if (b != c) {
+    throw new IllegalArgumentException("Illegal attribute value: " + new String(a));
+  }
+  return d;
+}

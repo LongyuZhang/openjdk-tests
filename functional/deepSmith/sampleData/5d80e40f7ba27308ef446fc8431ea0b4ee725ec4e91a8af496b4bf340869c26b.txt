@@ -1,0 +1,6 @@
+public static String fn_A(final int a,final int b,final int c){
+  if (a < 1 || a > 4) {
+    throw new IllegalArgumentException("SKIP type must be 1, 2, 3 or 4: " + a);
+  }
+  return a + "-" + b+ "-"+ c;
+}

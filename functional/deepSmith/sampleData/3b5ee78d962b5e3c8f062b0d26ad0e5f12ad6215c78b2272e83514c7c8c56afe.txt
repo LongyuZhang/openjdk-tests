@@ -1,4 +1,0 @@
-public static <S extends Readable & AutoCloseable,T extends Appendable & AutoCloseable>void fn_A(S a,T b,int c) throws Exception {
-  try (S d=a;T e=b){
-  }
- }

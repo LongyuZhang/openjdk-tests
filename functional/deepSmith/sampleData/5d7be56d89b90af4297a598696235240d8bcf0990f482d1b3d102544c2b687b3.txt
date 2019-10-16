@@ -1,0 +1,8 @@
+private static String[] fn_A(boolean a){
+  if (a) {
+    return new String[]{"yr","yr","mo","mo","d","d","h","h","m","m","s","s"};
+  }
+ else {
+    return new String[]{"year","years","month","months","day","days","hour","hours","minute","minutes","second","seconds"};
+  }
+}

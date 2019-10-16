@@ -1,0 +1,9 @@
+private static Map<String,Integer> fn_A(){
+  return Collections.unmodifiableMap(new HashMap<String,Integer>(){
+{
+      put("OFF",0);
+      put("ON",1);
+    }
+  }
+);
+}

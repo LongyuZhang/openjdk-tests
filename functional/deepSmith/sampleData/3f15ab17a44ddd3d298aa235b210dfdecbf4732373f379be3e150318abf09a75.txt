@@ -1,0 +1,9 @@
+private static int fn_A(short[] a,int b,int c){
+  int d=-1;
+  for (int e=b + 1; e < c; e++) {
+    if (a[e] == b) {
+      d=e;
+    }
+  }
+  return d;
+}

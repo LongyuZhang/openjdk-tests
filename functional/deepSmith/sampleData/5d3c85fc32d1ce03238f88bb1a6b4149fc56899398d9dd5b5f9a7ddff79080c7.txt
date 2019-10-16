@@ -1,0 +1,16 @@
+private static int fn_A(char a,int b){
+  int c=0;
+  if (a >= '0' && a <= '9') {
+    c=a - '0';
+  }
+ else   if (a >= 'A' && a <= 'Z') {
+    c=a + 10 - 'A';
+  }
+ else   if (a != '-') {
+    throw new IllegalArgumentException("Invalid character: " + a);
+  }
+  if (c >= b) {
+    throw new IllegalArgumentException("Invalid character: " + a);
+  }
+  return c;
+}

@@ -1,0 +1,13 @@
+public static int fn_A(int a){
+  int b=0;
+  while ((a & 0xF) == 0) {
+    a>>=4;
+    b+=4;
+  }
+  if ((a & 3) == 0) {
+    a>>=2;
+    b+=2;
+  }
+  if ((a & 1) == 0)   b+=1;
+  return b;
+}

@@ -1,0 +1,6 @@
+private static long fn_A(byte a[],byte b[]){
+  long c=0;
+  for (int d=0; d < 4; d++)   c|=((long)(b[d] & 0xff)) << ((3 - d) * 8);
+  for (int d=0; d < 4; d++)   c|=((long)(a[d] & 0xff)) << (32 + ((3 - d) * 8));
+  return c;
+}

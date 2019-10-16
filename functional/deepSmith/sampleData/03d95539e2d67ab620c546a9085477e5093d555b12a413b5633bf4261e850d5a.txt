@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a=System.getProperty("VISTA_KODAK_IP");
-  return (a == null) ? "10.2.2.102" : a;
-}

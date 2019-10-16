@@ -1,8 +1,0 @@
-private static void fn_A(int a,int b,int c,int[] d,boolean e){
-  if (!e) {
-    d[a]+=b;
-  }
-  for (int f=a + 1; f < d.length; f++) {
-    d[f]+=b + c;
-  }
-}

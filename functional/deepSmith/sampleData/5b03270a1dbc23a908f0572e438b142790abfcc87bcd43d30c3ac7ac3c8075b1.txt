@@ -1,0 +1,12 @@
+public static Object fn_A(){
+  int a=new Random().nextInt(3);
+  if (a == 0) {
+    return "London";
+  }
+ else   if (a == 1) {
+    return "Paris";
+  }
+ else {
+    return "Copenhagen";
+  }
+}

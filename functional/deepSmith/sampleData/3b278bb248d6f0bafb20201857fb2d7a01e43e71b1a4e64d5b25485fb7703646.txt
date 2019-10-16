@@ -1,7 +1,0 @@
-final public static int fn_A(int a){
-  a%=60;
-  if (a < 0) {
-    a+=60;
-  }
-  return a;
-}

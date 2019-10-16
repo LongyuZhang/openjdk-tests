@@ -1,0 +1,6 @@
+private static int fn_A(double a){
+  if (a < 0) {
+    return 0;
+  }
+  return (int)((a * a) / 200);
+}

@@ -1,6 +1,0 @@
-private static int fn_A(byte[] a){
-  for (int b=4; b < 4 + 64; b++) {
-    if (a[b] == 0)     return b;
-  }
-  return 0;
-}

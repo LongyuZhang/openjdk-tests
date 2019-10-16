@@ -1,0 +1,75 @@
+@SuppressWarnings("unused") public static int fn_A(Object a,Object b,int c,int d){
+  int e=0;
+  if (a == null) {
+    if (a == b) {
+      if (b == null) {
+        for (int f=0; f < c; ++f) {
+          if (f % 3 == 0) {
+            break;
+          }
+          e<<=1;
+          if (f % 7 == 0) {
+            break;
+          }
+        }
+        return 1;
+      }
+ else {
+        return -2;
+      }
+    }
+ else {
+      if (b == null) {
+        for (int f=0; f < c; ++f) {
+          if (f % 4 == 0) {
+            break;
+          }
+          e<<=1;
+          if (f % 7 == 0) {
+            break;
+          }
+        }
+        return e;
+      }
+ else {
+        return 4;
+      }
+    }
+  }
+ else {
+    if (a == b) {
+      if (b == null) {
+        for (int f=0; f < c; ++f) {
+          if (f % 5 == 0) {
+            break;
+          }
+          e<<=1;
+          if (f % 7 == 0) {
+            break;
+          }
+        }
+        return e;
+      }
+ else {
+        return 6;
+      }
+    }
+ else {
+      if (b == null) {
+        for (int f=0; f < c; ++f) {
+          if (f % 6 == 0) {
+            break;
+          }
+          e<<=1;
+          if (f % 7 == 0) {
+            break;
+          }
+        }
+        return e;
+      }
+ else {
+        return 8;
+      }
+    }
+  }
+}

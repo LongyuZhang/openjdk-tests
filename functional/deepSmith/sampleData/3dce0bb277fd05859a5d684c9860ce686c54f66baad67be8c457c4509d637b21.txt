@@ -1,7 +1,0 @@
-public static long fn_A(int a,int b){
-  long c=a | 0x0000000000000000L;
-  c<<=32;
-  long d=b & 0x00000000FFFFFFFFL;
-  c|=d;
-  return c;
-}

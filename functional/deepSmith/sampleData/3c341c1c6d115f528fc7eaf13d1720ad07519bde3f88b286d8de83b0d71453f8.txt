@@ -1,5 +1,0 @@
-public static byte fn_A(int a){
-  int b=a % 10;
-  int c=a / 10;
-  return (byte)((c << 4) + b);
-}

@@ -1,0 +1,9 @@
+public static int fn_A(int a){
+  int b, c;
+  a=a + (a >> 31 & 99);
+  b=(a >> 1) + (a >> 3) + (a >> 6) - (a >> 10) + (a >> 12) + (a >> 13) - (a >> 16);
+  b=b + (b >> 20);
+  b=b >> 6;
+  c=a - b * 100;
+  return b + ((c + 28) >> 7);
+}

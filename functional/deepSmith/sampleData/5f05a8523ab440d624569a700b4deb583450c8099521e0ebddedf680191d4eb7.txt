@@ -1,0 +1,5 @@
+public static String fn_A(){
+  String a=System.getProperty("routerconsole.lang");
+  if (a != null)   return a;
+ else   return Locale.getDefault().getLanguage();
+}

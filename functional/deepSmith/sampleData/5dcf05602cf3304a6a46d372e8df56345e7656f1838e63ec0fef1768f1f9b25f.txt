@@ -1,0 +1,6 @@
+public static void fn_A(float[] a,int b,float[] c,int d,float[] e,int f){
+  a[0 + b]=c[d + 0 + 4 * 0] * e[f + 0] + c[d + 0 + 4 * 1] * e[f + 1] + c[d + 0 + 4 * 2] * e[f + 2] + c[d + 0 + 4 * 3] * e[f + 3];
+  a[1 + b]=c[d + 1 + 4 * 0] * e[f + 0] + c[d + 1 + 4 * 1] * e[f + 1] + c[d + 1 + 4 * 2] * e[f + 2] + c[d + 1 + 4 * 3] * e[f + 3];
+  a[2 + b]=c[d + 2 + 4 * 0] * e[f + 0] + c[d + 2 + 4 * 1] * e[f + 1] + c[d + 2 + 4 * 2] * e[f + 2] + c[d + 2 + 4 * 3] * e[f + 3];
+  a[3 + b]=c[d + 3 + 4 * 0] * e[f + 0] + c[d + 3 + 4 * 1] * e[f + 1] + c[d + 3 + 4 * 2] * e[f + 2] + c[d + 3 + 4 * 3] * e[f + 3];
+}

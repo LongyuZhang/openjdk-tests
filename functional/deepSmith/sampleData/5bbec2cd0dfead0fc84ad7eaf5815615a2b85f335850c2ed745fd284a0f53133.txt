@@ -1,0 +1,10 @@
+static void fn_A(){
+  System.err.println();
+  System.err.println("java Main <spec_input> <options>...");
+  System.err.println();
+  System.err.println("Options:");
+  System.err.println("-doc <doc_output>");
+  System.err.println("-jdi <java_output>");
+  System.err.println("-include <include_file_output>");
+  System.exit(1);
+}

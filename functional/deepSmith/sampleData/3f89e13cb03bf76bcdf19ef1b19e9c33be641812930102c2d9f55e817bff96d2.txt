@@ -1,0 +1,11 @@
+private static int fn_A(long[] a,boolean[] b){
+  int c=0;
+  long d=Long.MAX_VALUE;
+  for (int e=1; e < a.length; e++) {
+    if (!b[e] && a[e] < d) {
+      d=a[e];
+      c=e;
+    }
+  }
+  return c;
+}

@@ -1,6 +1,0 @@
-public static float fn_A(float a,float b,float c,float d,float e,float f,float g,float h,float i){
-  float j=g - d, k=h - e, l=i - f;
-  float m=d - a, n=e - b, o=f - c;
-  float p=k * o - l * n, q=l * m - j * o, r=j * n - k * m;
-  return (float)Math.sqrt((p * p + q * q + r * r) / (j * j + k * k + l * l));
-}

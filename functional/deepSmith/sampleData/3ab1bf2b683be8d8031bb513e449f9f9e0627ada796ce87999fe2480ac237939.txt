@@ -1,4 +1,0 @@
-public static int fn_A(Object[] a){
-  if (a != null)   return a.length;
-  return 0;
-}

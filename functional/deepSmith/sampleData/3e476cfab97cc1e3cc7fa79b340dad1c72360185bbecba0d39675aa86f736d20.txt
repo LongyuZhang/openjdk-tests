@@ -1,7 +1,0 @@
-private static double fn_A(double[] a,double[] b){
-  double c=0.0;
-  for (int d=1; d < b.length; d++) {
-    c+=0.5 * (b[d] + b[d - 1]) * (a[d] - a[d - 1]);
-  }
-  return c / (a[a.length - 1] - a[0]);
-}

@@ -1,0 +1,38 @@
+public static char fn_A(final int a){
+switch (a) {
+case 0x0:
+    return '0';
+case 0x1:
+  return '8';
+case 0x2:
+return '4';
+case 0x3:
+return 'c';
+case 0x4:
+return '2';
+case 0x5:
+return 'a';
+case 0x6:
+return '6';
+case 0x7:
+return 'e';
+case 0x8:
+return '1';
+case 0x9:
+return '9';
+case 0xA:
+return '5';
+case 0xB:
+return 'd';
+case 0xC:
+return '3';
+case 0xD:
+return 'b';
+case 0xE:
+return '7';
+case 0xF:
+return 'f';
+default :
+throw new IllegalArgumentException("nibble value not between 0 and 15: " + a);
+}
+}

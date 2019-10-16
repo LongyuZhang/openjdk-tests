@@ -1,9 +1,0 @@
-public static String fn_A(byte[] a,int b,int c){
-  byte[] d=new byte[c];
-  for (int e=0; e < c; e++) {
-    byte f=a[b + e];
-    f&=0x7f;
-    d[e]=f;
-  }
-  return new String(d);
-}

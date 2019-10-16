@@ -1,0 +1,8 @@
+public static int fn_A(int a){
+  if (a < -100)   return 0;
+ else   if (a < -95)   return 1;
+ else   if (a < -85)   return 2;
+ else   if (a < -75)   return 3;
+ else   if (a != 0)   return 4;
+ else   return -1;
+}

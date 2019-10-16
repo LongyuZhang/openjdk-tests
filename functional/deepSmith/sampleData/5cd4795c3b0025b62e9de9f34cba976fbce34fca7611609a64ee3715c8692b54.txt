@@ -1,0 +1,11 @@
+static int fn_A(int a,int b){
+  int c=1;
+  while (true) {
+    double d=0.5 * a * c;
+    int e=(int)d;
+    if (d >= b) {
+      return c;
+    }
+    c++;
+  }
+}

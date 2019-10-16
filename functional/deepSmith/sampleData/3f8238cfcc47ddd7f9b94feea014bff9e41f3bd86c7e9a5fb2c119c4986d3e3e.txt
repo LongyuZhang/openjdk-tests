@@ -1,0 +1,18 @@
+public static int fn_A(int a){
+switch (a) {
+case 1:
+    return 5000;
+case 2:
+  return 25000;
+case 3:
+return 150000;
+case 4:
+return 1000000;
+case 5:
+return 10000000;
+case 6:
+return 30000000;
+default :
+return 1;
+}
+}

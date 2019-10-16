@@ -1,8 +1,0 @@
-public static int fn_A(Object a,Object b,Object c){
-  if (a == null && b == null && c == null)   return 0;
-  int d=1;
-  d=31 * d + (a == null ? 0 : a.hashCode());
-  d=31 * d + (b == null ? 0 : b.hashCode());
-  d=31 * d + (c == null ? 0 : c.hashCode());
-  return d;
-}

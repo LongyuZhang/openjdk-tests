@@ -1,0 +1,21 @@
+private static void fn_A(byte[] a,byte[] b,byte[] c) throws Exception {
+  if (a.length != b.length)   throw new Exception("Original Length is not equal to replacement length");
+  boolean d;
+  for (int e=0; e < c.length - a.length; e++) {
+    d=false;
+    if (c[e] == a[0]) {
+      d=true;
+      for (int f=0; f < a.length; f++) {
+        if (c[e + f] != a[f]) {
+          d=false;
+          break;
+        }
+      }
+    }
+    if (d) {
+      for (int f=0; f < a.length; f++) {
+        c[e + f]=b[f];
+      }
+    }
+  }
+}

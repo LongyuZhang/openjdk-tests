@@ -1,4 +1,0 @@
-private static int fn_A(int a){
-  if (a < 0 || a > 255)   throw new IllegalArgumentException("trafficClass < 0 || trafficClass > 255");
-  return a;
-}

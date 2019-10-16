@@ -1,0 +1,8 @@
+private static int fn_A(int a,int b){
+  int c;
+  do {
+    c=(int)(Math.random() * (b - a + 1) + a);
+  }
+ while (c < a || c > b);
+  return c;
+}

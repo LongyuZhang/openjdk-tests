@@ -1,0 +1,20 @@
+public static int[][] fn_A(int[][] a){
+  final int b=a.length;
+  final int c=a[0].length;
+  if (a == null || b != c) {
+    return null;
+  }
+  for (int d=0; d < c / 2; d++) {
+    int e=d;
+    int f=c - 1 - d;
+    for (int g=e; g < f; g++) {
+      int h=g - e;
+      int i=a[e][g];
+      a[e][g]=a[f - h][e];
+      a[f - h][e]=a[f][f - h];
+      a[f][f - h]=a[g][f];
+      a[g][f]=i;
+    }
+  }
+  return a;
+}

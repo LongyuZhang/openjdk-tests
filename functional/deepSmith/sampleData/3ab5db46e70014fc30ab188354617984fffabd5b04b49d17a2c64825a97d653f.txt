@@ -1,8 +1,0 @@
-public static int[] fn_A(int[] a,int[] b){
-  int[] c=new int[a.length + b.length];
-  int d=0, e=0, f=-1;
-  while (f < c.length - 1) {
-    c[++f]=(e > b.length - 1 || (d < a.length && a[d] < b[e])) ? a[d++] : b[e++];
-  }
-  return c;
-}

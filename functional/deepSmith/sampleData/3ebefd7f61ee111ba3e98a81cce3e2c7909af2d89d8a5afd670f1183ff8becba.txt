@@ -1,9 +1,0 @@
-private static final int fn_A(final double a){
-  if (a > 100) {
-    return 100;
-  }
- else   if (a > 10) {
-    return 10;
-  }
-  return 1;
-}

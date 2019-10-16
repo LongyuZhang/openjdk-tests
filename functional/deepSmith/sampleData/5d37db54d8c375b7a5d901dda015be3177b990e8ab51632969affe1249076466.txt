@@ -1,0 +1,22 @@
+public static Number fn_A(Class<?> a){
+  Number b=null;
+  if (a == byte.class || a == Byte.class) {
+    b=Byte.MAX_VALUE;
+  }
+ else   if (a == short.class || a == Short.class) {
+    b=Short.MAX_VALUE;
+  }
+ else   if (a == int.class || a == Integer.class) {
+    b=Integer.MAX_VALUE;
+  }
+ else   if (a == long.class || a == Long.class) {
+    b=Long.MAX_VALUE;
+  }
+ else   if (a == float.class || a == Float.class) {
+    b=Float.MAX_VALUE;
+  }
+ else   if (a == double.class || a == Double.class) {
+    b=Double.MAX_VALUE;
+  }
+  return b;
+}

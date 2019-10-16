@@ -1,6 +1,0 @@
-private static boolean fn_A(float a,float b,float c,float d,float e,float f){
-  if (a > c && a < d && Math.abs(b - e) <= f) {
-    return true;
-  }
-  return false;
-}

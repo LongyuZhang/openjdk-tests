@@ -1,0 +1,7 @@
+public static String fn_A(byte[] a){
+  String b="";
+  for (int c=0; c < a.length; c++) {
+    b+=String.format("%02x",a[c]);
+  }
+  return b;
+}

@@ -1,8 +1,0 @@
-private static byte[] fn_A(char a){
-  try {
-    return new String(new char[]{a}).getBytes("UTF-8");
-  }
- catch (  UnsupportedEncodingException b) {
-    return new byte[]{(byte)a};
-  }
-}

@@ -1,0 +1,14 @@
+public final static byte[] fn_A(long[] a){
+  byte[] b=new byte[a.length * 8];
+  for (int c=0; c < a.length; c++) {
+    b[c * 8 + 7]=(byte)(a[c] >>> 56);
+    b[c * 8 + 6]=(byte)(a[c] >>> 48);
+    b[c * 8 + 5]=(byte)(a[c] >>> 40);
+    b[c * 8 + 4]=(byte)(a[c] >>> 32);
+    b[c * 8 + 3]=(byte)(a[c] >>> 24);
+    b[c * 8 + 2]=(byte)(a[c] >>> 16);
+    b[c * 8 + 1]=(byte)(a[c] >>> 8);
+    b[c * 8 + 0]=(byte)(a[c] >>> 0);
+  }
+  return b;
+}

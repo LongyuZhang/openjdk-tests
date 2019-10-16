@@ -1,7 +1,0 @@
-public static int fn_A(long a){
-  int b=(int)a;
-  if (b != a) {
-    throw new IllegalArgumentException("The long value " + a + " is not within range of the int type");
-  }
-  return b;
-}

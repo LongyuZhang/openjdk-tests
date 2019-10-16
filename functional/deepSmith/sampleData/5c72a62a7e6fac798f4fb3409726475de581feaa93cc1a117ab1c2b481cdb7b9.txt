@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  System.out.println("testing Terminate 02");
+  System.out.println("Tested 02");
+}

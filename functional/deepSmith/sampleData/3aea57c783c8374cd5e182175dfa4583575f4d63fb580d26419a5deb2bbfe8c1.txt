@@ -1,6 +1,0 @@
-private static int fn_A(int a){
-  int b=(a >> 16) & 0xFF;
-  int c=(a >> 8) & 0xFF;
-  int d=(a) & 0xFF;
-  return (int)(0.3 * b + 0.59 * c + 0.11 * d);
-}

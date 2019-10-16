@@ -1,7 +1,0 @@
-static int fn_A(Object[] a,Object b){
-  for (int c=0; c < a.length; c++) {
-    Object d=a[c];
-    if (d == b)     return c;
-  }
-  return -1;
-}

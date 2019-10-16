@@ -1,0 +1,10 @@
+public static void fn_A(){
+  System.out.println("\nPress ");
+  System.out.println("\t 0 to print the choice options");
+  System.out.println("\t 1 to print the TODO list");
+  System.out.println("\t 2 to add a task to the list");
+  System.out.println("\t 3 to modify a task in the list");
+  System.out.println("\t 4 to remove a task from the list");
+  System.out.println("\t 5 to search for a task in the list");
+  System.out.println("\t 6 to quit the application");
+}

@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a=String.format("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s","loincId","loincScale","system","code","hpoTermId","inversed","note","flag","version","createdOn","createdBy","lastEditedOn","lastEditedBy");
-  return a;
-}

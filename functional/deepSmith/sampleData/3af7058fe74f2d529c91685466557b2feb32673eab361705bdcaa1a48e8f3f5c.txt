@@ -1,9 +1,0 @@
-public static double fn_A(int a,int b){
-  int c=(a >> 16) & 0xff;
-  int d=(a >> 8) & 0xff;
-  int e=(a) & 0xff;
-  int f=(b >> 16) & 0xff;
-  int g=(b >> 8) & 0xff;
-  int h=(b) & 0xff;
-  return Math.abs(c - f) + Math.abs(d - g) + Math.abs(e - h);
-}

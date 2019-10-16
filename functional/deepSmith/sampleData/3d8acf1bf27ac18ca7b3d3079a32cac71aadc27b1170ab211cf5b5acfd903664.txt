@@ -1,5 +1,0 @@
-public static int fn_A(boolean... a){
-  int b=0;
-  for (int c=0; c < Math.min(a.length,32); c++)   if (a[c])   b|=(1 << c);
-  return b;
-}

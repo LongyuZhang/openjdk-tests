@@ -1,0 +1,23 @@
+public static String fn_A(){
+  String a=System.getProperty("user.home") + "\\Application Data\\Google\\Chrome\\User Data\\Default\\";
+  boolean b=new File(a).isDirectory();
+  if (b) {
+    return a;
+  }
+  a=System.getProperty("user.home") + "\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\";
+  b=new File(a).isDirectory();
+  if (b) {
+    return a;
+  }
+  a=System.getProperty("user.home") + "/Library/Application Support/Google/Chrome/Default/";
+  b=new File(a).isDirectory();
+  if (b) {
+    return a;
+  }
+  a=System.getProperty("user.home") + "/.config/chromium/Default/";
+  b=new File(a).isDirectory();
+  if (b) {
+    return a;
+  }
+  return "";
+}

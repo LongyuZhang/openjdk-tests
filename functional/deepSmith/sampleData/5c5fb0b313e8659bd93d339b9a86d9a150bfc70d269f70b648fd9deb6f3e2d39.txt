@@ -1,0 +1,8 @@
+public static final int fn_A(final byte[] a,int b,final char c){
+  final int d=a.length;
+  while (b < d) {
+    final byte e=a[b++];
+    if (e == c || e == '\n')     return b;
+  }
+  return b;
+}

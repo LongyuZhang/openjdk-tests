@@ -1,4 +1,0 @@
-public static boolean fn_A(Double a){
-  if (a > 29 && a < 220)   return true;
- else   return false;
-}

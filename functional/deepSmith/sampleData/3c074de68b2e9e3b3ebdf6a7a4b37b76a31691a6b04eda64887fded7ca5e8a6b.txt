@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a="<trace-record-tag><level><separator><omg-tid><separator><current-time-in-milliseconds><separator><originator><separator><message>";
-  return a;
-}

@@ -1,8 +1,0 @@
-static int fn_A(long a){
-  int b=0;
-  while (a != 0) {
-    if ((a & 1) == 1)     b++;
-    a>>>=1;
-  }
-  return b;
-}

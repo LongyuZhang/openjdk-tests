@@ -1,9 +1,0 @@
-public static String fn_A(File a){
-  int b=1;
-  String c="s0001";
-  while (new File(a,c).exists() && b < 10000) {
-    b++;
-    c="s" + Integer.toString(10000 + b).substring(1);
-  }
-  return c;
-}

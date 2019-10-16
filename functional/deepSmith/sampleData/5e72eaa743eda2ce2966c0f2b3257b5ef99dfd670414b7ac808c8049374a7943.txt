@@ -1,0 +1,5 @@
+public static String fn_A(byte a,byte b){
+  String c="";
+  String d="";
+  return c + "-" + d;
+}

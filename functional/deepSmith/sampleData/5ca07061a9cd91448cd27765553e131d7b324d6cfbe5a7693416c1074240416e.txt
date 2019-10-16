@@ -1,0 +1,14 @@
+private static final String fn_A(int a){
+switch (a) {
+case 1:
+    return "<always/>";
+case 2:
+  return "<auto/>";
+case 3:
+return "<never/>";
+case 4:
+return "<restore/>";
+default :
+return "";
+}
+}

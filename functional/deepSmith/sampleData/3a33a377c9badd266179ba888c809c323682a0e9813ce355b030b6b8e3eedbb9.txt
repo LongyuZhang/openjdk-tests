@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a="{\"about\":\"about\",\"location\":\"location\",\"name\":\"name\",\"profile_image\":\"https://user-images.githubusercontent.com/10809719/38206885-b36c8a66-36c9-11e8-9c7a-3bba603b4994.png\",\"website\":\"website\",\"cover_image\":\"cover_image_url\"}";
-  return a;
-}

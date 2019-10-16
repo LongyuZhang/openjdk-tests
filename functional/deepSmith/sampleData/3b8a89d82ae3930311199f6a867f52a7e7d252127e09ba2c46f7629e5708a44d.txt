@@ -1,7 +1,0 @@
-public static void fn_A(int[] a,int[] b,int c,int d){
-  for (int e=0; e < c - 1; e++) {
-    for (int f=0; f < d - 1; f++) {
-      b[e * d + f]=Math.abs(a[e * d + f] - a[(e + 1) * d + (f + 1)]) + Math.abs(a[e * d + (f + 1)] - a[(e + 1) * d + f]);
-    }
-  }
-}

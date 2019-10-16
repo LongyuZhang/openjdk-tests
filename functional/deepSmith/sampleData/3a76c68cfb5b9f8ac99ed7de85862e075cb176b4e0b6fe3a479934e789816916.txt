@@ -1,6 +1,0 @@
-static Float fn_A(String a){
-  if (a == null) {
-    return null;
-  }
-  return new Float(a);
-}

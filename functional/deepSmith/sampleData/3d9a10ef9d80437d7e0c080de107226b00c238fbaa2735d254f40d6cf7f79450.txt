@@ -1,6 +1,0 @@
-public static long fn_A(long a,String b){
-  if (a <= 0L) {
-    throw new IllegalArgumentException(b);
-  }
-  return a;
-}

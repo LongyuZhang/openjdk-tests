@@ -1,0 +1,20 @@
+public static String fn_A(int a){
+switch (a) {
+case 0:
+    return "ZONE_UNKNOWN";
+case 1:
+  return "ZONE_C";
+case 2:
+return "ZONE_D";
+case 3:
+return "ZONE_A";
+case 4:
+return "ZONE_E";
+case 8:
+return "ZONE_F";
+case 12:
+return "ZONE_B";
+default :
+return "invaild vaue" + a;
+}
+}

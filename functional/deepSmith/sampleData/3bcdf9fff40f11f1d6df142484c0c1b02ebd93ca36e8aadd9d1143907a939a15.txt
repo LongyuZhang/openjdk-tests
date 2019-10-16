@@ -1,6 +1,0 @@
-static long fn_A(){
-  Runtime.getRuntime().gc();
-  long a=Runtime.getRuntime().totalMemory();
-  long b=Runtime.getRuntime().freeMemory();
-  return a - b;
-}

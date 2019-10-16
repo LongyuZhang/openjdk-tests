@@ -1,0 +1,7 @@
+public static boolean fn_A(String[] a,String[] b){
+  boolean c=false;
+  for (int d=0; d < a.length; d++) {
+    @SuppressWarnings("unused") int e=a[d].indexOf(b[0]);
+  }
+  return c;
+}

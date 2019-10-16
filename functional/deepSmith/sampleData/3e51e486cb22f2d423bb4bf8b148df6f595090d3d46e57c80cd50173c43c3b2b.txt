@@ -1,4 +1,0 @@
-public static String fn_A(String a){
-  String b="fonts/" + a + ".ttf";
-  return b;
-}

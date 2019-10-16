@@ -1,0 +1,15 @@
+public static final double[] fn_A(double[] a){
+  double b=0.0;
+  double[] c=new double[a.length];
+  for (int d=0; d < a.length; d++) {
+    c[d]=a[d];
+    while ((c[d] - b) < -Math.PI) {
+      c[d]+=(2 * Math.PI);
+    }
+    while ((c[d] - b) > Math.PI) {
+      c[d]-=(2 * Math.PI);
+    }
+    b=c[d];
+  }
+  return c;
+}

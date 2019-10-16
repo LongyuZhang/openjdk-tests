@@ -1,8 +1,0 @@
-public static byte fn_A(byte a){
-  if (a < 0) {
-    return (byte)(a + 128);
-  }
- else {
-    return (byte)(a - 128);
-  }
-}

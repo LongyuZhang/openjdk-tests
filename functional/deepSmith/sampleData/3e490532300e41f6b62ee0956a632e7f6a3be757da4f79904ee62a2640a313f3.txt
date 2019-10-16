@@ -1,5 +1,0 @@
-static int fn_A(boolean[] a){
-  int b=0;
-  for (int c=0; c < a.length; c++)   b+=a[c] ? 1 : 0;
-  return b;
-}

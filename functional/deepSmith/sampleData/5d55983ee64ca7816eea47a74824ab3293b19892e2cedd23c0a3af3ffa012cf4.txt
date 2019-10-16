@@ -1,0 +1,4 @@
+private static double fn_A(double a,double b,double c,double d,double e){
+  double f=1 - e;
+  return f * f * f* a + 3 * f * f* e* b + 3 * f * e* e* c + e * e * e* d;
+}

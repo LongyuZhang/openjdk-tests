@@ -1,0 +1,8 @@
+public static byte[] fn_A(byte[] a,int b,int c){
+  byte[] d=new byte[c - b];
+  int e=0;
+  for (int f=b; f < c; f++) {
+    d[e++]=a[f];
+  }
+  return d;
+}

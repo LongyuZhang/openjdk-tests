@@ -1,0 +1,29 @@
+protected static double[] fn_A(double[] a){
+  double[] b=new double[16];
+  double c=a[3] * a[3];
+  double d=a[3] * a[4];
+  double e=a[3] * a[5];
+  double f=a[3] * a[6];
+  double g=a[4] * a[4];
+  double h=a[4] * a[5];
+  double i=a[4] * a[6];
+  double j=a[5] * a[5];
+  double k=a[5] * a[6];
+  b[0]=1 - 2 * (g + j);
+  b[1]=2 * (d - k);
+  b[2]=2 * (e + i);
+  b[3]=a[0];
+  b[4]=2 * (d + k);
+  b[5]=1 - 2 * (c + j);
+  b[6]=2 * (h - f);
+  b[7]=a[1];
+  b[8]=2 * (e - i);
+  b[9]=2 * (h + f);
+  b[10]=1 - 2 * (c + g);
+  b[11]=a[2];
+  b[12]=0;
+  b[13]=0;
+  b[14]=0;
+  b[15]=1;
+  return b;
+}

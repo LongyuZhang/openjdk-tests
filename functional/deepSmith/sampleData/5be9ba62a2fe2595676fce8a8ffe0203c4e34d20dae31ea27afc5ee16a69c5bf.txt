@@ -1,0 +1,5 @@
+static void fn_A(final Object a) throws IOException {
+  if (a instanceof Closeable) {
+    ((Closeable)a).close();
+  }
+}
