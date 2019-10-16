@@ -1,0 +1,9 @@
+private static int fn_A(int a[],byte b[],int c,int d){
+  if (a != null && b != null) {
+    byte e=b[c];
+    while (++c < d && b[c] == e) {
+    }
+    return c;
+  }
+  return d;
+}

@@ -1,0 +1,23 @@
+public static String fn_A(long a){
+  String b;
+  long c;
+  long d;
+  long e;
+  long f;
+  c=a / 1000;
+  d=c / 60;
+  c%=60;
+  e=d / 60;
+  d%=60;
+  f=e / 24;
+  e%=24;
+  b="";
+  if (f > 0)   b=f + (f == 1 ? " day" : " days") + ", ";
+  if (e > 0)   b=b + e + (e == 1 ? " hour" : " hours")+ ", ";
+  if (d > 0)   b=b + d + (d == 1 ? " minute" : " minutes")+ " and ";
+  b=b + c + (c == 1 ? " second" : " seconds");
+  if (e == 0 && d == 0 && c == 0 && a > 0) {
+    b=a + " milliseconds";
+  }
+  return b;
+}

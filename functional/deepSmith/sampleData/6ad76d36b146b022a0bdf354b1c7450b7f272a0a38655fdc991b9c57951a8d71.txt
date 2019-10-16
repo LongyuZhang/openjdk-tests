@@ -1,0 +1,4 @@
+public static int fn_A(double a){
+  double b=a < 0 ? a - 100 : a;
+  return (int)(b / 100) * 100;
+}

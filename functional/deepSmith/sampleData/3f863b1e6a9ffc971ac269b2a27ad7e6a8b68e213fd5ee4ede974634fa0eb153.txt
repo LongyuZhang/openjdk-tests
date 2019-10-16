@@ -1,5 +1,0 @@
-private static void fn_A(long[] a,int b,long[] c,int d,long[] e,int f){
-  for (int g=0; g < 9; ++g) {
-    e[f + g]=a[b + g] ^ c[d + g];
-  }
-}

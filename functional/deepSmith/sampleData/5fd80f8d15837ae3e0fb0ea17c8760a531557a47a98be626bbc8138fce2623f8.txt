@@ -1,0 +1,9 @@
+public static int fn_A(int[] a,int[] b,int c,int d){
+  long e=((long)d) & 4294967295L;
+  for (int f=0; f < c; f++) {
+    e+=((long)b[f]) & 4294967295L;
+    a[f]=(int)e;
+    e>>=32;
+  }
+  return (int)e;
+}

@@ -1,9 +1,0 @@
-public static boolean fn_A(int a,long b,int c,long d){
-  if ((a < 0) || (c < 0)) {
-    return false;
-  }
-  if (new Date().getTime() - (c * 86400000) <= d) {
-    return ((new Date().getTime() - (a * 86400000)) <= b);
-  }
-  return false;
-}

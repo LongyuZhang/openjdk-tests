@@ -1,0 +1,14 @@
+public static double fn_A(double[] a){
+  double b=0.0;
+  double c=0.0;
+  double d=0.0;
+  for (int e=0; e < a.length; e++)   d+=a[e];
+  c=d / a.length;
+  d=0.0;
+  for (int e=0; e < a.length; e++) {
+    double f=a[e];
+    d+=(f - c) * (f - c);
+  }
+  b=Math.sqrt(d / a.length);
+  return b;
+}

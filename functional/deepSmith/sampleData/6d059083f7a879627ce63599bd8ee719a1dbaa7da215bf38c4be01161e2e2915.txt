@@ -1,0 +1,4 @@
+public static void fn_A(double[] a,double[] b,double c){
+  double d=1. - c;
+  for (int e=0; e < a.length; ++e)   a[e]=c * b[e] + d * a[e];
+}

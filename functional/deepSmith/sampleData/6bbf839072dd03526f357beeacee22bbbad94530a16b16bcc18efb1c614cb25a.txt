@@ -1,0 +1,12 @@
+private static boolean fn_A(int[][] a,int b,int c,int d){
+  for (int e=0; e < 9; ++e)   if (a[b][e] == d)   return false;
+  for (int f=0; f < 9; ++f)   if (a[f][c] == d)   return false;
+  int g=b / 3 * 3;
+  int h=c / 3 * 3;
+  for (int f=0; f < 3; ++f) {
+    for (int e=0; e < 3; ++e) {
+      if (a[g + f][h + e] == d)       return false;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,13 @@
+private static int fn_A(byte[] a){
+  int b=a.length;
+  if (b < 254) {
+    b++;
+  }
+ else   if (b < 65536) {
+    b+=3;
+  }
+ else {
+    b+=5;
+  }
+  return b;
+}

@@ -1,6 +1,0 @@
-private static void fn_A(){
-  System.err.println("Usage: java com.martiansoftware.nailgun.NGServer");
-  System.err.println("   or: java com.martiansoftware.nailgun.NGServer port");
-  System.err.println("   or: java com.martiansoftware.nailgun.NGServer IPAddress");
-  System.err.println("   or: java com.martiansoftware.nailgun.NGServer IPAddress:port");
-}

@@ -1,8 +1,0 @@
-public static byte[] fn_A(short a){
-  byte[] b=new byte[Short.BYTES];
-  for (int c=Short.BYTES; a != 0 && c-- > 0; ) {
-    b[c]=(byte)(a & 0xff);
-    a>>=8;
-  }
-  return b;
-}

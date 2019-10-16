@@ -1,6 +1,0 @@
-public static void fn_A(byte[] a,int b,long c,int d){
-  for (int e=d - 1; e >= 0; e--) {
-    a[e + b]=(byte)(0xff & c);
-    c>>>=8;
-  }
-}

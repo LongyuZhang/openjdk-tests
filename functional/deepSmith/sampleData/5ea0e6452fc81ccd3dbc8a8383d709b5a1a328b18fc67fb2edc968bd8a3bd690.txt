@@ -1,6 +1,0 @@
-static int fn_A(Object a){
-  if (a instanceof Number) {
-    return ((Number)a).intValue();
-  }
-  return 0;
-}

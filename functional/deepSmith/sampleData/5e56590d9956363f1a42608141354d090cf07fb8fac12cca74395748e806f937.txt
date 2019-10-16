@@ -1,8 +1,0 @@
-public static final int fn_A(final byte[] a,final int b){
-  int c=0;
-  c|=((((int)a[b + 0]) & 0xFF) << 24);
-  c|=((((int)a[b + 1]) & 0xFF) << 16);
-  c|=((((int)a[b + 2]) & 0xFF) << 8);
-  c|=((((int)a[b + 3]) & 0xFF) << 0);
-  return c;
-}

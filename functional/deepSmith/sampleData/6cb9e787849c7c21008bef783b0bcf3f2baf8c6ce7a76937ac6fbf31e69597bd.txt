@@ -1,0 +1,10 @@
+public static float fn_A(float a[]){
+  int b=0;
+  int c=0;
+  int d=a.length;
+  for (int e=0; e < d; e++) {
+    b+=a[e];
+    c=b / d;
+  }
+  return c;
+}

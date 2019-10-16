@@ -1,0 +1,24 @@
+public static void fn_A(float[] a,int b,float c,float d,float e,float f){
+  if (a.length < b + 16) {
+    throw new IllegalArgumentException("m.length < mOffset + 16");
+  }
+  final float g=d * d, h=e * e, i=f * f;
+  final float j=d * e, k=e * f, l=d * f;
+  final float m=d * c, n=e * c, o=f * c;
+  a[b + 0]=1 - 2 * h - 2 * i;
+  a[b + 1]=2 * j + 2 * o;
+  a[b + 2]=2 * l - 2 * n;
+  a[b + 3]=0;
+  a[b + 4]=2 * j - 2 * o;
+  a[b + 5]=1 - 2 * g - 2 * i;
+  a[b + 6]=2 * k + 2 * m;
+  a[b + 7]=0;
+  a[b + 8]=2 * l + 2 * n;
+  a[b + 9]=2 * k - 2 * m;
+  a[b + 10]=1 - 2 * g - 2 * h;
+  a[b + 11]=0;
+  a[b + 12]=0;
+  a[b + 13]=0;
+  a[b + 14]=0;
+  a[b + 15]=1;
+}

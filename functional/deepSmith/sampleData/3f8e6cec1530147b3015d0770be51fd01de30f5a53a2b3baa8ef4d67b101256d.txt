@@ -1,6 +1,0 @@
-private static long fn_A(){
-  final long a=3;
-  final long b=1000;
-  final long c=500;
-  return (a * b) + c;
-}

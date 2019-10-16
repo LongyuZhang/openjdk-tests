@@ -1,0 +1,11 @@
+protected static int[] fn_A(String[] a){
+  int[] b=new int[22];
+  for (int c=1; c < b.length && c < a.length; c++) {
+    try {
+      b[c]=Integer.parseInt(a[c].replace('!','-').replaceAll(" ",""));
+    }
+ catch (    Exception d) {
+    }
+  }
+  return b;
+}

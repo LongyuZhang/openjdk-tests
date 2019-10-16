@@ -1,0 +1,7 @@
+public static double fn_A(double a,double b,double c){
+  double d=b - a;
+  d%=c;
+  if (d >= -c / 2 && d <= c / 2)   return d;
+  d+=(-c) * Math.signum(c);
+  return d;
+}

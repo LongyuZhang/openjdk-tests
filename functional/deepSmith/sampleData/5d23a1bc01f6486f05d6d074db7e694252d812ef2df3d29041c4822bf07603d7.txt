@@ -1,6 +1,0 @@
-public static boolean fn_A(long a){
-  if (a > -5L) {
-    return true;
-  }
-  return false;
-}

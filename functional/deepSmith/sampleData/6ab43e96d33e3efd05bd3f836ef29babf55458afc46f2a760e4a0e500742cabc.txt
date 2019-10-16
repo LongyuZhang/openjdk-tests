@@ -1,0 +1,59 @@
+public static int fn_A(int[] a,boolean b){
+  int[][] c=new int[10][a.length];
+  int d=1;
+  int[] e=new int[10];
+  int f=0;
+  for (int g=0; g < a.length; g++) {
+    if (!b) {
+      if (f < a[g]) {
+        f=a[g];
+      }
+    }
+ else {
+      if (f > a[g]) {
+        f=a[g];
+      }
+    }
+  }
+  while (f / d >= 10 || f / d <= -10) {
+    for (int g=0; g < a.length; g++) {
+      int h=a[g] / d % 10;
+      if (h < 0) {
+        h=-h;
+      }
+      int[] i=c[h];
+      i[e[h]]=a[g];
+      e[h]+=1;
+    }
+    int j=0;
+    for (int g=0; g < c.length; g++) {
+      for (int k=0; k < e[g]; k++) {
+        a[j]=c[g][k];
+        j++;
+      }
+      e[g]=0;
+    }
+    d*=10;
+  }
+  for (int g=0; g < a.length; g++) {
+    int l=g - 1;
+    int m=g + 1;
+    int n=g;
+    if (g == 0) {
+      if (a[n] != a[m]) {
+        return a[n];
+      }
+    }
+ else     if (g == a.length - 1) {
+      if (a[n] != a[l]) {
+        return a[n];
+      }
+    }
+ else {
+      if (a[n] != a[l] && a[n] != a[m]) {
+        return a[n];
+      }
+    }
+  }
+  return -1;
+}

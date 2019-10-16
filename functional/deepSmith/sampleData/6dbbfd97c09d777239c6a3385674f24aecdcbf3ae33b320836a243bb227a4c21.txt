@@ -1,0 +1,17 @@
+public static int fn_A(int a,int b){
+  if (b == 0)   throw new IllegalArgumentException("Division by Zero!");
+  if (a > 0 && b > 0 && b > a)   return a;
+  boolean c=Math.abs(b - (a - b)) < Math.abs(b - (a + b));
+  if (c) {
+    while (a >= b) {
+      a-=b;
+    }
+  }
+ else {
+    if (a % b == 0)     return 0;
+    while (a + b < b) {
+      a+=b;
+    }
+  }
+  return a;
+}

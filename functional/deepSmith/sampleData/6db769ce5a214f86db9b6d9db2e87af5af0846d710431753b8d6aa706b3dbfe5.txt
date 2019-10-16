@@ -1,0 +1,9 @@
+public static boolean fn_A(){
+  Class<?> a=null;
+  try {
+    a=Class.forName("org.jfree.graphics2d.svg.SVGGraphics2D");
+  }
+ catch (  ClassNotFoundException b) {
+  }
+  return (a != null);
+}

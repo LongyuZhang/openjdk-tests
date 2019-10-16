@@ -1,8 +1,0 @@
-protected static String fn_A(byte[] a){
-  try {
-    return new String(a,"UTF-8");
-  }
- catch (  UnsupportedEncodingException b) {
-    throw new IllegalStateException("can't happen");
-  }
-}

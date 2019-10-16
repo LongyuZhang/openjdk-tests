@@ -1,4 +1,0 @@
-public static double fn_A(double a){
-  a=(360 - a) % 360;
-  return a;
-}

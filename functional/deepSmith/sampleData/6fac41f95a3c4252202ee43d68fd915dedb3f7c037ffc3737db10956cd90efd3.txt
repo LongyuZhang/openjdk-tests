@@ -1,0 +1,8 @@
+public static boolean fn_A(char[] a,char[] b){
+  if (a == b)   return true;
+  if (a == null || b == null)   return false;
+  int c=a.length;
+  if (b.length != c)   return false;
+  for (int d=0; d < c; d++)   if (a[d] != b[d])   return false;
+  return true;
+}

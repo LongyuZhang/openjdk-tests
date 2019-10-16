@@ -1,0 +1,30 @@
+public static Double[][] fn_A(int a,int b){
+  Double[][] c=new Double[a][];
+  if (b < 1 || b > 3) {
+    return c;
+  }
+  for (int d=0; d < a; d++) {
+    Double[] e;
+switch (b) {
+case 1:
+      e=new Double[1];
+    e[0]=8.681495;
+  c[d]=e;
+break;
+case 2:
+e=new Double[2];
+e[0]=8.681495;
+e[1]=49.41461;
+c[d]=e;
+break;
+case 3:
+e=new Double[3];
+e[0]=8.681495;
+e[1]=49.41461;
+e[2]=123.0;
+c[d]=e;
+break;
+}
+}
+return c;
+}

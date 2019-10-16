@@ -1,0 +1,13 @@
+public static double fn_A(final int[] a,final int b){
+  double c=0;
+  for (int d=0; d < a.length; d++) {
+    c+=(double)a[d];
+  }
+  double e=(double)a.length;
+  double f=(c / e);
+  double g=(b * (b - 1)) / 2;
+  double h=(double)b;
+  double i=(g - c) / (h - e);
+  double j=f - i;
+  return -1.0d * j;
+}

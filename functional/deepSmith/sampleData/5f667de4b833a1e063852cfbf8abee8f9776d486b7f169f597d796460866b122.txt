@@ -1,0 +1,8 @@
+public static float fn_A(int a){
+  float b=(float)a / 20.0F;
+  b=(b * b + b * 2.0F) / 3.0F;
+  if (b > 1.0F) {
+    b=1.0F;
+  }
+  return b;
+}

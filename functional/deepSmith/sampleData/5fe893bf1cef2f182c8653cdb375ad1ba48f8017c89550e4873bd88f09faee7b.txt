@@ -1,0 +1,5 @@
+private static String fn_A(String a,boolean b,boolean c,boolean d){
+  String e=d ? "REFUTES" : "COLLECTED";
+  String f=c ? (", sourceSpecimen-[" + (b ? "" : "?") + ":COLLECTED_AT]->loc ") : " ";
+  return "MATCH sourceTaxon<-[:CLASSIFIED_AS]-" + a + "-[:CLASSIFIED_AS]->targetTaxon, sourceSpecimen<-[collected_rel:"+ e+ "]-study"+ f;
+}

@@ -1,0 +1,12 @@
+public static void fn_A(){
+  int a=0;
+  while (a < 100) {
+    a-=1000;
+    if (a != 0) {
+      a+=1;
+    }
+ else {
+      a+=2;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+public static File[] fn_A(String[] a){
+  final File[] b=new File[a.length];
+  for (int c=0; c < a.length; c++)   b[c]=new File(a[c]);
+  return b;
+}

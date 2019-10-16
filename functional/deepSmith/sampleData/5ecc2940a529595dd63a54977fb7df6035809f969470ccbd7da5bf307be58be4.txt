@@ -1,6 +1,0 @@
-private static Object fn_A(Object a){
-  if (a instanceof Integer) {
-    return (long)(int)a;
-  }
-  return a;
-}

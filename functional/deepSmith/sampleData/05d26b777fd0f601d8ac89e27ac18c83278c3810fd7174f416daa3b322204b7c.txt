@@ -1,4 +1,0 @@
-private static BigInteger fn_A(BigInteger a){
-  if (a != null)   return a;
- else   return BigInteger.ZERO;
-}

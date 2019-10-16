@@ -1,0 +1,6 @@
+private static int fn_A(long a){
+  if (a < Integer.MIN_VALUE || a > Integer.MAX_VALUE) {
+    throw new IllegalArgumentException();
+  }
+  return (int)a;
+}

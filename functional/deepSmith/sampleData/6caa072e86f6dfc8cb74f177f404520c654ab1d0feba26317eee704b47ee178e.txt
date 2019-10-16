@@ -1,0 +1,9 @@
+public static float[] fn_A(final int a,final int b){
+  int c;
+  int d=b * 7 / 2;
+  int e=b * 5 / 2;
+  float[] f=new float[a];
+  for (c=0; c < d; c++)   f[c]=(float)(0.54 - 0.46 * Math.cos(Math.PI * c / d));
+  for (c=0; c < e; c++)   f[d + c]=(float)(0.54 + 0.46 * Math.cos(Math.PI * c / e));
+  return f;
+}

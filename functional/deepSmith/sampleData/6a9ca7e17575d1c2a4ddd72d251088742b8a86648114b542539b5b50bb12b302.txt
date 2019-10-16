@@ -1,0 +1,14 @@
+public static java.lang.String fn_A(int a){
+switch (a) {
+case 1:
+    return "catalogNameFilter";
+case 2:
+  return "schemaNameFilter";
+case 3:
+return "tableNameFilter";
+case 4:
+return "columnNameFilter";
+default :
+return null;
+}
+}

@@ -1,0 +1,40 @@
+public static int fn_A(byte[] a,int b){
+  int c;
+  boolean d;
+  int e=a[b++] & 0xff;
+  if (e < 0x08) {
+    c=0x08 - e;
+    d=true;
+  }
+ else   if (e > 0xf7) {
+    c=e - 0xf7;
+    d=false;
+  }
+ else {
+    return e - 127;
+  }
+  int f;
+  if (d) {
+    f=0xFFFFFFFF;
+  }
+ else {
+    f=0;
+  }
+  if (c > 3) {
+    f=(f << 8) | (a[b++] & 0xFF);
+  }
+  if (c > 2) {
+    f=(f << 8) | (a[b++] & 0xFF);
+  }
+  if (c > 1) {
+    f=(f << 8) | (a[b++] & 0xFF);
+  }
+  f=(f << 8) | (a[b++] & 0xFF);
+  if (d) {
+    f-=119;
+  }
+ else {
+    f+=121;
+  }
+  return f;
+}

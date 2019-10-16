@@ -1,9 +1,0 @@
-static void fn_A(int a[][]){
-  int b, c, d=a[0][0];
-  for (b=0; b < a.length; b++) {
-    for (c=0; c <= b; c++) {
-      if (a[b][c] < d)       d=a[b][c];
-    }
-  }
-  System.out.println("\n value of minimum element of the given lower triangular matrix is " + d);
-}

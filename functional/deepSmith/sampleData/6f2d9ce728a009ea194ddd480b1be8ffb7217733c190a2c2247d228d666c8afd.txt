@@ -1,0 +1,20 @@
+public static String fn_A(Object a){
+  if (a == null) {
+    return null;
+  }
+ else   if (a instanceof Integer && (Integer)a > 0) {
+    return Integer.toString((Integer)a);
+  }
+ else   if (a instanceof Long && (Long)a > 0) {
+    return Long.toString((Long)a);
+  }
+ else   if (a instanceof Float && (Float)a > 0) {
+    return Float.toString((Float)a);
+  }
+ else   if (a instanceof Double && (Double)a > 0) {
+    return Double.toString((Double)a);
+  }
+ else {
+    return "";
+  }
+}

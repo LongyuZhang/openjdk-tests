@@ -1,0 +1,8 @@
+public static boolean fn_A(final long[] a,final int b,final int c){
+  for (int d=b; d < c - 1; d++) {
+    if (a[d] >= a[d + 1]) {
+      return false;
+    }
+  }
+  return true;
+}

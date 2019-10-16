@@ -1,7 +1,0 @@
-public static boolean fn_A(float a,float b,float c){
-  boolean d=a >= b && a <= c;
-  if (c < b) {
-    d=a >= b && a < 360 || a > 0 && a <= c;
-  }
-  return d;
-}

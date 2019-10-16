@@ -1,0 +1,13 @@
+private static void fn_A(int a[],int b,String c){
+  if (a == null) {
+    return;
+  }
+  for (int d=0; d < a.length; d++) {
+    if (a[d] < 0) {
+      throw new IllegalArgumentException(c + " index is negative: " + a[d]);
+    }
+    if (a[d] >= b) {
+      throw new IllegalArgumentException(c + " index is " + a[d]+ ", but must be smaller than "+ b);
+    }
+  }
+}

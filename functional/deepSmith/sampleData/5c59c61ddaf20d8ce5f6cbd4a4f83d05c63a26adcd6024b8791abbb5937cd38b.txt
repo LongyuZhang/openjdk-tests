@@ -1,8 +1,0 @@
-private static double fn_A(final double a,final double[] b){
-  double c=b[0];
-  final int d=b.length;
-  for (int e=1; e < d; e++) {
-    c=b[e] + a * c;
-  }
-  return c;
-}

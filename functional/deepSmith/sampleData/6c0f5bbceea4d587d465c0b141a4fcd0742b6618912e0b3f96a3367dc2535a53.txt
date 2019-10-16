@@ -1,0 +1,6 @@
+public static int fn_A(int a,int b,int c){
+  if (a < b || a >= c) {
+    throw new IndexOutOfBoundsException();
+  }
+  return a;
+}

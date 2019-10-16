@@ -1,0 +1,4 @@
+public static double fn_A(double a){
+  double b=a % 360.0;
+  return b < 0.0 ? b + 360.0 : b;
+}

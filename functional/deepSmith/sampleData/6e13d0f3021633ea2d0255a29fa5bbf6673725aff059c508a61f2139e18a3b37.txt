@@ -1,0 +1,5 @@
+public final static int fn_A(int a,int b,boolean c){
+  if (c)   a|=(1 << b);
+ else   a&=~(1 << b);
+  return a;
+}

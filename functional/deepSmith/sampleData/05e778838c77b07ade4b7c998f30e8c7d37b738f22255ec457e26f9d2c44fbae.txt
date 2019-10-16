@@ -1,8 +1,0 @@
-private static void fn_A(){
-  System.err.println("Usage: java Compiler [-x|-m|-js] filename");
-  System.err.println("");
-  System.err.println("    -x    generates and prints the syntax tree only");
-  System.err.println("    -m    generates and prints the semantic graph only");
-  System.err.println("    -js   translates to JavaScript");
-  System.exit(1);
-}

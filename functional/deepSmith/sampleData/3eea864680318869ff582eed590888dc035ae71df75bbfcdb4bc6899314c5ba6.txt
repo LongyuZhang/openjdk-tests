@@ -1,4 +1,0 @@
-public static void fn_A(){
-  System.out.println("rollback a topology which is under gray upgrade, please do as following:");
-  System.out.println("rollback_topology topologyName");
-}

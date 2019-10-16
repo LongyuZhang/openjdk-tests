@@ -1,0 +1,17 @@
+public static void main(String[] a){
+  int b=3;
+  while (b > 0) {
+    if (b > 2) {
+      System.out.print("a");
+    }
+    b=b - 1;
+    System.out.print("-");
+    if (b == 2) {
+      System.out.print("b c");
+    }
+    if (b == 1) {
+      System.out.print("d");
+      b=b - 1;
+    }
+  }
+}

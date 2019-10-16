@@ -1,0 +1,10 @@
+public static int fn_A(int a){
+  int[] b={1,1,2,6,24,120,720,5040,40320,362880};
+  int c=a;
+  int d=0;
+  while (c > 0) {
+    d+=b[c % 10];
+    c/=10;
+  }
+  return d;
+}

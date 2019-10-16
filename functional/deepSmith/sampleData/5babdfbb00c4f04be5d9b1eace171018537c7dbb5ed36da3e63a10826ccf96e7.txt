@@ -1,4 +1,0 @@
-public static int fn_A(boolean a){
-  int b=a ? 0 : 1;
-  return b;
-}

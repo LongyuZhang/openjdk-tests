@@ -1,0 +1,4 @@
+public static void fn_A(long a){
+  if (a % 100000 == 0)   System.out.print(".");
+  if (a % 8000000 == 0)   System.out.print("\n");
+}

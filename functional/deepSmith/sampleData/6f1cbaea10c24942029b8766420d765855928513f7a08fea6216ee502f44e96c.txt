@@ -1,0 +1,13 @@
+static int fn_A(int a){
+  int b=1;
+  if (a >= 0) {
+    b=0;
+    a=-a;
+  }
+  int c=-10;
+  for (int d=1; d < 10; d++) {
+    if (a > c)     return d + b;
+    c=10 * c;
+  }
+  return 10 + b;
+}

@@ -1,0 +1,6 @@
+public static long fn_A(final int a,final int b){
+  final long c=a & 0xFFFFFFFFL;
+  final long d=b & 0xFFFFFFFFL;
+  final long e=c - d;
+  return e;
+}

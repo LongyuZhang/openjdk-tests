@@ -1,4 +1,0 @@
-public static String fn_A(int a){
-  String b=String.format("%d.%d.%d.%d",(a >>> 24 & 0xff),(a >>> 16 & 0xff),(a >>> 8 & 0xff),(a & 0xff));
-  return b;
-}

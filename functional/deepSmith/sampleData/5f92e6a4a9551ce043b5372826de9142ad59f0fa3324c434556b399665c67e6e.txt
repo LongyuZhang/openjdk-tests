@@ -1,0 +1,9 @@
+protected static void fn_A(Object[][] a){
+  int b=-1;
+  for (int c=a.length; --c >= 0; ) {
+    if (a[c] != null) {
+      if (b == -1)       b=a[c].length;
+      if (a[c].length != b)       throw new IllegalArgumentException("All rows of array must have same number of columns.");
+    }
+  }
+}

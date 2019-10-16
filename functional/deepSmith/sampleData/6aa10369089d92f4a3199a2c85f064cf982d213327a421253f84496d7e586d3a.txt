@@ -1,0 +1,20 @@
+@SuppressWarnings("unused") private static double fn_A(double a,double b){
+  double c;
+  double d;
+  double e;
+  double f;
+  double g;
+  double h;
+  double i;
+  double j=101000;
+  double[] k=new double[]{331.5024d,0.603055d,-0.000528d,51.471935d,0.1495874d,-0.000782d,-1.82e-7d,3.73e-8d,-2.93e-10d,-85.20931d,-0.228525d,5.91e-5d,-2.835149d,-2.15e-13d,29.179762d,0.000486d};
+  c=a + 273.15d;
+  d=1.00062d + 0.0000000314d * j + 0.00000056d * a * a;
+  e=Math.exp(0.000012811805d * c * c - 0.019509874d * c + 34.04926034d - 6353.6311d / c);
+  f=b * d * e / j;
+  g=331.45d - k[0] - j * k[6] - k[13] * j * j;
+  g=Math.sqrt(k[9] * k[9] + 4 * k[14] * g);
+  h=(-k[9] - g) / (2. * k[14]);
+  i=k[0] + k[1] * a + k[2] * a * a + (k[3] + k[4] * a + k[5] * a * a) * f + (k[6] + k[7] * a + k[8] * a * a) * j + (k[9] + k[10] * a + k[11] * a * a) * h + k[12] * f * f + k[13] * j * j + k[14] * h * h + k[15] * f * j* h;
+  return i;
+}

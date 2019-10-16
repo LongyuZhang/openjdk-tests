@@ -1,0 +1,5 @@
+public static short fn_A(byte a){
+  short b=(short)a;
+  if (b < 0)   b+=256;
+  return b;
+}

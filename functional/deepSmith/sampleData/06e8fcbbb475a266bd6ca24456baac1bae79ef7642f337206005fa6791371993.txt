@@ -1,0 +1,11 @@
+public static int fn_A(Object[] a,Object b){
+  if (a == null) {
+    return -1;
+  }
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == b) {
+      return c;
+    }
+  }
+  return -1;
+}

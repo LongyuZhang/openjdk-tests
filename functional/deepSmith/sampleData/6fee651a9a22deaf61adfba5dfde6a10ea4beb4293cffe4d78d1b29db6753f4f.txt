@@ -1,0 +1,5 @@
+public static boolean fn_A(long a) throws Exception {
+  long b=24 * 60 * 60* 1000l;
+  long c=8 * 60 * 60* 1000l;
+  return (System.currentTimeMillis() + c) / b - (a + c) / b == 0;
+}

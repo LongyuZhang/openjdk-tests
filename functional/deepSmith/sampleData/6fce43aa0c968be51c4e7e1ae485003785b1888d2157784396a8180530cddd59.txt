@@ -1,0 +1,14 @@
+public static double[][] fn_A(double[][] a,double[] b){
+  final int c=a.length;
+  final int d=a[0].length;
+  double[][] e=new double[d][d];
+  double[] f=new double[c];
+  for (int g=0; g < d; g++) {
+    for (int h=0; h < c; h++)     f[h]=a[h][g] * b[h];
+    for (int i=g; i < d; i++) {
+      for (int j=0; j < c; j++)       e[g][i]+=f[j] * a[j][i];
+      e[i][g]=e[g][i];
+    }
+  }
+  return e;
+}

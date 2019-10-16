@@ -1,8 +1,0 @@
-public static boolean fn_A(long[] a,long[] b){
-  for (int c=6; c >= 0; --c) {
-    if (a[c] != b[c]) {
-      return false;
-    }
-  }
-  return true;
-}

@@ -1,0 +1,6 @@
+public static boolean fn_A(double a){
+  if (a <= 1 && a >= 0) {
+    return true;
+  }
+  return false;
+}

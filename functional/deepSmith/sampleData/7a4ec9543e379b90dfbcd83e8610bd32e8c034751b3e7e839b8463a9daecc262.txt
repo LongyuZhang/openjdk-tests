@@ -1,0 +1,29 @@
+public static final long fn_A(long a,long b){
+  long c, d=1L;
+  if (a < 0L) {
+    if (++b > 0L && (a=(((a >>> 1) % b) << 1) | a & 1L) < 0L || a >= b)     a-=b;
+  }
+ else   if (++b > 0L)   a%=b;
+  if (a != 0L && (c=b - a) != a) {
+    long e=0L, f, g=b;
+    if (a < 0L) {
+      b=a;
+      d=-1L;
+      c=b - (a=c);
+      e=1L;
+    }
+    if ((c=b - (f=(((c >>> 1) / a) << 1) + 1L) * a) < 0L || c >= a) {
+      c-=a;
+      f++;
+    }
+    while (c > 0L) {
+      b=a;
+      a=c;
+      d=e - (c=d) * f;
+      e=c;
+      c=b - (f=b / a) * a;
+    }
+    if (d < 0L)     d+=g;
+  }
+  return d;
+}

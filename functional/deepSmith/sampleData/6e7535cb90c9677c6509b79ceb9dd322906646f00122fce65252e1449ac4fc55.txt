@@ -1,0 +1,11 @@
+public static void main(String a[]){
+  String[] b=new String[1];
+  Object[] c=b;
+  try {
+    c[0]=new Integer(1);
+    System.out.println("Array store succeeded?!");
+  }
+ catch (  ArrayStoreException d) {
+    System.out.println("Got correct array store exception");
+  }
+}

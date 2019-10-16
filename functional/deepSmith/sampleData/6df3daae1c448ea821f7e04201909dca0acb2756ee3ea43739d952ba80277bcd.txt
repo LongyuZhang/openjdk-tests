@@ -1,0 +1,4 @@
+public static int fn_A(double a,double b,int c){
+  double d=a / b;
+  return (int)Math.round(c * d);
+}

@@ -1,0 +1,7 @@
+static int fn_A(int a){
+  if (0 <= a && a <= 127)   return 1;
+  if (128 <= a && a <= 16383)   return 2;
+  if (16384 <= a && a <= 2097151)   return 3;
+  if (2097152 <= a && a <= 268435455)   return 4;
+  throw new IllegalArgumentException("value should be in the range [0..268435455]");
+}

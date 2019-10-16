@@ -1,5 +1,0 @@
-private static void fn_A(byte[] a,int b,int c){
-  byte d=a[b];
-  a[b]=a[c];
-  a[c]=d;
-}

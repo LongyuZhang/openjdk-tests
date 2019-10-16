@@ -1,0 +1,9 @@
+public static int fn_A(byte[] a,int b){
+  if (a.length + b < 4)   throw new IllegalArgumentException("an integer can only be decoded from 4 bytes of an array (got a " + a.length + " byte(s) array, must start at position "+ b+ ")");
+  int c=0;
+  for (int d=0; d < 4; d++) {
+    c<<=8;
+    c^=(int)a[d + b] & 0xFF;
+  }
+  return c;
+}

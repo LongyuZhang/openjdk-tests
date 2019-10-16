@@ -1,0 +1,12 @@
+private static String fn_A(int a){
+switch (a % 4) {
+case 1:
+    return "CodeGenerator <|--- %s";
+case 2:
+  return "%s ---|> CodeGenerator";
+case 3:
+return "%s ---|> CodeGenerator ";
+default :
+return "CodeGenerator <|--- %s";
+}
+}

@@ -1,0 +1,12 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0x1:
+    return "Layer III";
+case 0x2:
+  return "Layer II";
+case 0x3:
+return "Layer I";
+default :
+return "reserved";
+}
+}

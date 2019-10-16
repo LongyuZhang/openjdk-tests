@@ -1,5 +1,0 @@
-private static float fn_A(float a){
-  while (a > 180)   a-=360;
-  while (a < -180)   a+=360;
-  return a;
-}

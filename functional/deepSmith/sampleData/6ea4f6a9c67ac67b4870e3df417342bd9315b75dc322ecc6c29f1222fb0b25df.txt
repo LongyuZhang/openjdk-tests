@@ -1,0 +1,16 @@
+public static double[] fn_A(byte[] a,int b){
+  if ((b & 1) != 0) {
+    throw new IllegalArgumentException("Amount of bytes must be an order of 2. But it is: " + b);
+  }
+  double[] c=new double[b / 2];
+  for (int d=0; d < b; d+=2) {
+    final int e=(short)(a[d + 1] << 8) | (a[d] & 0xff);
+    if (e >= 0) {
+      c[d >>> 1]=(double)e / Short.MAX_VALUE;
+    }
+ else {
+      c[d >>> 1]=-(double)e / Short.MIN_VALUE;
+    }
+  }
+  return c;
+}

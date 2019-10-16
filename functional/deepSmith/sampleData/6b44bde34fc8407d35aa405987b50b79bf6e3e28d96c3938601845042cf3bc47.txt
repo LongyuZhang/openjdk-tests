@@ -1,0 +1,5 @@
+static int fn_A(char a){
+  if (a >= '0' && a <= '9')   return a - '0';
+  if (a >= 'a' && a <= 'f')   return a - 'a' + 10;
+  throw new AssertionError("not lowerHex " + a);
+}

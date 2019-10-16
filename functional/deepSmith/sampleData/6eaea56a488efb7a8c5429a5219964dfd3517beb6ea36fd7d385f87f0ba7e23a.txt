@@ -1,0 +1,7 @@
+public static int fn_A(int a){
+  a--;
+  for (int b=1; b < Integer.SIZE; b<<=1) {
+    a=a | a >> b;
+  }
+  return a + 1;
+}

@@ -1,0 +1,12 @@
+private static boolean fn_A(int a,int b,int c){
+  if (a == b) {
+    return true;
+  }
+  int d=(a >>> 16) & 0xFF;
+  int e=(a >>> 8) & 0xFF;
+  int f=a & 0xFF;
+  int g=(b >>> 16) & 0xFF;
+  int h=(b >>> 8) & 0xFF;
+  int i=b & 0xFF;
+  return (g <= d + c) && (g >= d - c) && (h <= e + c)&& (h >= e - c)&& (i <= f + c)&& (i >= f - c);
+}

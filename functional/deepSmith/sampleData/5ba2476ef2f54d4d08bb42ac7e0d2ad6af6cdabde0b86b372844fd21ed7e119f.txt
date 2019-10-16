@@ -1,7 +1,0 @@
-public static double fn_A(double[] a){
-  if (a.length == 0)   throw new IllegalArgumentException("array must not be empty");
-  double b=a[0];
-  int c, d=a.length;
-  for (c=0; c < d; c++)   if (a[c] > b)   b=a[c];
-  return b;
-}

@@ -1,8 +1,0 @@
-private static final boolean fn_A(){
-  try {
-    return Class.forName("org.eclipse.debug.ui.StringVariableSelectionDialog") != null;
-  }
- catch (  ClassNotFoundException a) {
-    return false;
-  }
-}

@@ -1,8 +1,0 @@
-public static void fn_A(){
-  try {
-    ObjectInputStream a=new ObjectInputStream(new FileInputStream("login.pli"));
-  }
- catch (  IOException b) {
-    System.out.println("no proffesor login file found, so default login is made and recorded to file");
-  }
-}

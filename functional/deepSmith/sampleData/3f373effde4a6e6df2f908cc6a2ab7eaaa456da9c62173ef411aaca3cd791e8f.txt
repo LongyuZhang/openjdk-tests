@@ -1,7 +1,0 @@
-public static void main(String a[]){
-  int b=1, c=2;
-  int d;
-  if (b > c)   d=b;
- else   d=c;
-  return;
-}

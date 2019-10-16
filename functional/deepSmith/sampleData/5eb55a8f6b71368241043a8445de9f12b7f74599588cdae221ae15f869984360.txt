@@ -1,4 +1,0 @@
-private static void fn_A(long[] a,final int b,final int c,long[] d,final int e,final int f,long[] g,final int h,final int i){
-  int j;
-  for (j=0; j < 16; j++)   a[j + b]=d[j + e] + g[j + h];
-}

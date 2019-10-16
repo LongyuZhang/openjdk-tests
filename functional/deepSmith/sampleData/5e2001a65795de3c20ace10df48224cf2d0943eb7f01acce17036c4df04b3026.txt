@@ -1,4 +1,0 @@
-public static boolean fn_A(int a,int b){
-  int c=0x80000000 >>> b;
-  return (a & c) == 0 ? false : true;
-}

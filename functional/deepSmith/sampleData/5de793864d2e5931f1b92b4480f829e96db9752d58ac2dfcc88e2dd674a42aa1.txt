@@ -1,5 +1,0 @@
-private static final int fn_A(final byte[] a,int b) throws IOException {
-  final int c=a[b];
-  final int d=a[b + 1];
-  return (c & 0xff) | ((d & 0xff) << 8);
-}

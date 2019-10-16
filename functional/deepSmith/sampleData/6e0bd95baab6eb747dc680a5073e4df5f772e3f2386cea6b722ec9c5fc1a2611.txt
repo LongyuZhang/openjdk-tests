@@ -1,0 +1,28 @@
+public static boolean fn_A(int a){
+switch (a) {
+case 5001:
+case 5003:
+case 5004:
+case 5005:
+case 5010:
+case 5013:
+case 5014:
+case 5016:
+case 5019:
+case 5020:
+case 5021:
+case 5025:
+case 5026:
+case 5027:
+case 5028:
+case 5029:
+case 5030:
+case 5031:
+case 5032:
+case 5033:
+case 5037:
+    return true;
+default :
+  return false;
+}
+}

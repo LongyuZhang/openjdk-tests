@@ -1,0 +1,8 @@
+public static int[] fn_A(float[] a,int[] b,int c){
+  int d=a.length;
+  if (c > d)   c=d;
+  int[] e=b;
+  if (e == null || e.length < d)   e=new int[d];
+  for (int f=0; f < c; f++)   e[f]=(int)a[f];
+  return e;
+}

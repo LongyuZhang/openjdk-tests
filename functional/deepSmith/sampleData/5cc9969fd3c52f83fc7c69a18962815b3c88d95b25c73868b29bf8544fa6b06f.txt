@@ -1,6 +1,0 @@
-public static void fn_A(double[] a,double[] b){
-  if (a.length != b.length)   throw new IllegalArgumentException("mismatching sizes");
-  for (int c=0; c < a.length; c++) {
-    a[c]+=b[c];
-  }
-}

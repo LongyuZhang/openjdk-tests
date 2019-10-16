@@ -1,0 +1,11 @@
+static int fn_A(final int a,final int b){
+  final int c=b >>> 24;
+  if (c == 0) {
+    return a;
+  }
+  final int d=a >>> 24;
+  final int e=(b & 0x00ff00ff) * c + (a & 0x00ff00ff) * (0xff - c) & 0xff00ff00;
+  final int f=(b & 0x0000ff00) * c + (a & 0x0000ff00) * (0xff - c) & 0x00ff0000;
+  final int g=c + (d * (0xff - c) >> 8);
+  return g << 24 | (e | f) >>> 8;
+}

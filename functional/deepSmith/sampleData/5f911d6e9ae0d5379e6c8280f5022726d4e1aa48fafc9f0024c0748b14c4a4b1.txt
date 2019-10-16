@@ -1,0 +1,11 @@
+private static boolean fn_A(Object a,Object b){
+  if (a == null) {
+    return b == a;
+  }
+ else   if (b == null) {
+    return false;
+  }
+ else {
+    return a.equals(b);
+  }
+}

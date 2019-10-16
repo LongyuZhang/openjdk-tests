@@ -1,0 +1,4 @@
+public static boolean fn_A(){
+  final boolean a=System.getProperty("os.name","").toLowerCase(Locale.US).contains("win");
+  return a;
+}

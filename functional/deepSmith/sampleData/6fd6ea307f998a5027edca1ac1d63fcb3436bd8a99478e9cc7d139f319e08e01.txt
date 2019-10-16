@@ -1,0 +1,6 @@
+public static float fn_A(Object a){
+  if (a instanceof Double) {
+    return ((Double)a).floatValue();
+  }
+  return (float)a;
+}

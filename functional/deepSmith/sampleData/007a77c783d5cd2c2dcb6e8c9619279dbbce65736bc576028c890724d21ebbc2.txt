@@ -1,0 +1,6 @@
+public static String fn_A(String a,char b){
+  if (a == null) {
+    return null;
+  }
+  return b + a + b;
+}

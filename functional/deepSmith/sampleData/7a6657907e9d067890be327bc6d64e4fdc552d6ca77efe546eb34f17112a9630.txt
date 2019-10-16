@@ -1,0 +1,24 @@
+public static byte[] fn_A(long a,long b){
+  byte[] c=new byte[16];
+  int d=0;
+  int e;
+  while (d < 16) {
+    if (d == 0) {
+      e=(int)(a >>> 32);
+    }
+ else     if (d == 4) {
+      e=(int)a;
+    }
+ else     if (d == 8) {
+      e=(int)(b >>> 32);
+    }
+ else {
+      e=(int)b;
+    }
+    c[d++]=(byte)(e >>> 24);
+    c[d++]=(byte)(e >>> 16);
+    c[d++]=(byte)(e >>> 8);
+    c[d++]=(byte)e;
+  }
+  return c;
+}

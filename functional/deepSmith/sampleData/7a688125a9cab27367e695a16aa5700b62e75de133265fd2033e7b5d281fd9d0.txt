@@ -1,0 +1,40 @@
+public static long fn_A(byte[] a,long b,int c,int d){
+  long e=b & 0xFFFFFFFF;
+  long f;
+  int g;
+  if (d < 1)   return e;
+  g=d & 3;
+  d>>>=2;
+  int h=c;
+  for (; d > 0; d--) {
+    e+=(a[h++] | (a[h++] << 8));
+    f=((a[h++] | (a[h++] << 8)) << 11) ^ e;
+    e=((e << 16) ^ f);
+    e+=(e >>> 11);
+  }
+switch (g) {
+case 3:
+    e+=(a[h++] | (a[h++] << 8));
+  e^=(e << 16);
+e^=(a[h++] << 18);
+e+=(e >>> 11);
+break;
+case 2:
+e+=(a[h++] | (a[h++] << 8));
+e^=(e << 11);
+e+=(e >>> 17);
+break;
+case 1:
+e+=a[h++];
+e^=(e << 10);
+e+=(e >>> 1);
+break;
+}
+e^=(e << 3);
+e+=(e >>> 5);
+e^=(e << 4);
+e+=(e >>> 17);
+e^=(e << 25);
+e+=(e >>> 6);
+return e & 0xFFFFFFFF;
+}

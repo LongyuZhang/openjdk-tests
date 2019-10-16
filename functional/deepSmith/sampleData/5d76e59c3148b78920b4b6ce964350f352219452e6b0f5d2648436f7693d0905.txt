@@ -1,8 +1,0 @@
-private static String fn_A(final String a,final String b){
-  if (a == null) {
-    return b;
-  }
- else {
-    return a;
-  }
-}

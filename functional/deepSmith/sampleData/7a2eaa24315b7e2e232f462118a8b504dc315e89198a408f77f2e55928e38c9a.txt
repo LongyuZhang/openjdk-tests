@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  for (int b=0; b < 3; b++) {
+    Boolean c=b % 3 == 0 ? true : b % 3 == 1 ? false : null;
+    System.out.println("i=" + b + " : b="+ c);
+  }
+}

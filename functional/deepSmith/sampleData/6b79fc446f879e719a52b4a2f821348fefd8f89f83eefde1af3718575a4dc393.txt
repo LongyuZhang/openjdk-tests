@@ -1,0 +1,5 @@
+public static <T>void fn_A(int a,int b,T[] c){
+  T d=c[a];
+  c[a]=c[b];
+  c[b]=d;
+}

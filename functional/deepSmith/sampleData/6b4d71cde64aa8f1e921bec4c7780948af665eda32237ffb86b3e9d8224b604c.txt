@@ -1,0 +1,5 @@
+private static int[] fn_A(double[] a,int b,int c){
+  int[] d=new int[c];
+  for (int e=0; e < c; e++)   d[e]=(int)a[e + b];
+  return d;
+}

@@ -1,0 +1,20 @@
+public static void fn_A(float[] a,float b,float c,float d,float e){
+  final float f=(float)(b * Math.PI / 180);
+  final float g=(float)(1.0 / Math.tan(f / 2.0));
+  a[0]=g / c;
+  a[1]=0f;
+  a[2]=0f;
+  a[3]=0f;
+  a[4]=0f;
+  a[5]=g;
+  a[6]=0f;
+  a[7]=0f;
+  a[8]=0f;
+  a[9]=0f;
+  a[10]=-((e + d) / (e - d));
+  a[11]=-1f;
+  a[12]=0f;
+  a[13]=0f;
+  a[14]=-((2f * e * d) / (e - d));
+  a[15]=0f;
+}

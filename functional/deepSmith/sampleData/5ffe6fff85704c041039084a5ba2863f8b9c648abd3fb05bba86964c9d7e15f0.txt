@@ -1,0 +1,17 @@
+private static void fn_A(final float a,final float b,final float c,final float d,final float e,final float f,final float g,final float h,final float[] i){
+  float j=c - a;
+  float k=d - b;
+  float l=g - e;
+  float m=h - f;
+  float n=j * m - l * k;
+  if (n == 0.0f) {
+    i[2]=(a + e) / 2.0f;
+    i[3]=(b + f) / 2.0f;
+  }
+ else {
+    float o=l * (b - f) - m * (a - e);
+    o/=n;
+    i[2]=a + o * j;
+    i[3]=b + o * k;
+  }
+}

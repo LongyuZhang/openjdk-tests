@@ -1,0 +1,12 @@
+public static Object fn_A(int a,int b){
+  Object c=null;
+  for (int d=a; d < b; d++) {
+    if (d == 2) {
+      c=null;
+    }
+ else {
+      c=new Object();
+    }
+  }
+  return c;
+}

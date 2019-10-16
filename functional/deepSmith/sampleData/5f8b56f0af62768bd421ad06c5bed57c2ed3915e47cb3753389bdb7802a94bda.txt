@@ -1,7 +1,0 @@
-public static int fn_A(final int a){
-  if (a <= 1) {
-    return 1;
-  }
-  final int b=1 << 30;
-  return (a >= b) ? b : Integer.highestOneBit((a - 1) << 1);
-}

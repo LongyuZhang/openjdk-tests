@@ -1,6 +1,0 @@
-public static byte[] fn_A(int a,boolean b){
-  byte[] c=new byte[2];
-  c[0]=(byte)((b ? 0x80 : 0) | (a >> 8));
-  c[1]=(byte)(a);
-  return c;
-}

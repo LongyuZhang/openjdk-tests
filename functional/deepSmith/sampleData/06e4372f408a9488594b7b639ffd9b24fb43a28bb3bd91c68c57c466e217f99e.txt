@@ -1,0 +1,7 @@
+public static boolean fn_A(short[] a,int b,int c,short[] d,int e,int f){
+  if (c != f)   return false;
+ else {
+    for (int g=0; g < c; ++g)     if (a[b + g] != d[e + g])     return false;
+    return true;
+  }
+}
