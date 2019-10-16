@@ -1,8 +1,0 @@
-private static boolean fn_A(){
-  if (System.getProperty("proxySet") != null && System.getProperty("proxySet") == "true") {
-    return true;
-  }
- else {
-    return false;
-  }
-}

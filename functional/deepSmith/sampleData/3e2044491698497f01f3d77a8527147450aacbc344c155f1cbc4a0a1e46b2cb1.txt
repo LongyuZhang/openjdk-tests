@@ -1,7 +1,0 @@
-private static int fn_A(int a,int b){
-  int c=8 - b + (a - 1);
-  if (c > 7) {
-    c-=7;
-  }
-  return c;
-}

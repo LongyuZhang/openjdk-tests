@@ -1,0 +1,6 @@
+public static char[] fn_A(char[] a,char[] b,int c){
+  for (int d=c; d < b.length; d++) {
+    b[d]=a[d];
+  }
+  return b;
+}

@@ -1,0 +1,15 @@
+static int fn_A(int a[],int b[],int c,int d){
+  int e=0;
+  int f=0;
+  int g=0;
+  while (e < c && f < d) {
+    if (b[f] >= a[e]) {
+      System.out.println(a[e] + " " + b[f]);
+      e++;
+      f++;
+      g++;
+    }
+ else     f++;
+  }
+  return g;
+}

@@ -1,8 +1,0 @@
-public static boolean fn_A(float a,float b,float c,float d,float e,float f,float g){
-  if (a > (c + g) && a < (c + e - g) && b > (d + g) && b < (d + f - g)) {
-    return true;
-  }
- else {
-    return false;
-  }
-}

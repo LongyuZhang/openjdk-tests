@@ -1,0 +1,10 @@
+public static double fn_A(double a){
+  double b=a - 90;
+  if (b < 0) {
+    b=b + 360;
+  }
+  if (b == 360) {
+    b=0;
+  }
+  return b;
+}

@@ -1,0 +1,37 @@
+public static long fn_A(long a,final byte[] b,final int c,final int d){
+  final long e=0xc6a4a7935bd1e995L;
+  final int f=47;
+  a^=d * e;
+  int g=d / 8;
+  for (int h=0; h < g; h++) {
+    final int i=h * 8 + c;
+    long j=((b[i + 0] & 0xffL) | ((b[i + 1] & 0xffL) << 8) | ((b[i + 2] & 0xffL) << 16)| ((b[i + 3] & 0xffL) << 24)| ((b[i + 4] & 0xffL) << 32)| ((b[i + 5] & 0xffL) << 40)| ((b[i + 6] & 0xffL) << 48)| ((b[i + 7] & 0xffL) << 56));
+    j*=e;
+    j^=j >>> f;
+    j*=e;
+    a^=j;
+    a*=e;
+  }
+  final int k=c + (d & ~0x7);
+switch (d % 8) {
+case 7:
+    a^=(b[k + 6] & 0xffL) << 48;
+case 6:
+  a^=(b[k + 5] & 0xffL) << 40;
+case 5:
+a^=(b[k + 4] & 0xffL) << 32;
+case 4:
+a^=(b[k + 3] & 0xffL) << 24;
+case 3:
+a^=(b[k + 2] & 0xffL) << 16;
+case 2:
+a^=(b[k + 1] & 0xffL) << 8;
+case 1:
+a^=(b[k + 0] & 0xffL);
+a*=e;
+}
+a^=a >>> f;
+a*=e;
+a^=a >>> f;
+return a;
+}

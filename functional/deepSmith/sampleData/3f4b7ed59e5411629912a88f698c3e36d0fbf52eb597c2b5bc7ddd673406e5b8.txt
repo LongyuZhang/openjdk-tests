@@ -1,0 +1,8 @@
+public static String fn_A(int a){
+  String b="";
+  for (char c=0; c < a; c++) {
+    int d=(int)(70 + Math.random() * 58);
+    b+=(char)d;
+  }
+  return b;
+}

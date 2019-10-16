@@ -1,8 +1,0 @@
-private static long[] fn_A(){
-  long a=80;
-  long b=100;
-  long c=100;
-  long d=150;
-  long e=180;
-  return new long[]{0,a,e,a,c,a,c,a,d,b};
-}

@@ -1,0 +1,15 @@
+private static boolean fn_A(boolean[] a,int[][] b,int[] c){
+  int d=b.length;
+  a:   for (int e=0; e < d; e++) {
+    if (c[e] >= 0 && a[c[e]]) {
+      continue;
+    }
+    for (int f=0; f < b[e].length; f++) {
+      if (!a[b[e][f]]) {
+        continue a;
+      }
+    }
+    return false;
+  }
+  return true;
+}

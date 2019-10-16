@@ -1,0 +1,5 @@
+private static void fn_A(int a,String b){
+  if (a < 0) {
+    throw new IllegalArgumentException(b + " must be >= 0");
+  }
+}

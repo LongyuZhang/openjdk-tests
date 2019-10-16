@@ -1,4 +1,0 @@
-public static String fn_A(String a,String b){
-  if (b == null)   return a;
-  return "|ID|" + b + "|"+ a;
-}

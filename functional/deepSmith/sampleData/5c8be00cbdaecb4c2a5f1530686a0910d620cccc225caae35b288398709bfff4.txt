@@ -1,0 +1,9 @@
+public static <K,V>Map<K,V> fn_A(final int a,final int b){
+  return new LinkedHashMap<K,V>(a,0.75f,true){
+    private static final long c=6773642631901363425L;
+    protected boolean fn_B(    Map.Entry<K,V> d){
+      return size() > b;
+    }
+  }
+;
+}

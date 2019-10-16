@@ -1,0 +1,8 @@
+static String fn_A(Object[] a){
+  if (a == null) {
+    return String.valueOf(null);
+  }
+ else {
+    return Arrays.asList(a).toString();
+  }
+}

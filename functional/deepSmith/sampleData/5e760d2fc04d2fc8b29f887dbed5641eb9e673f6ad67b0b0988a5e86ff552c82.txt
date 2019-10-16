@@ -1,0 +1,7 @@
+private static long fn_A(){
+  for (int a=0; a < 5; a++) {
+    System.gc();
+    System.runFinalization();
+  }
+  return Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+}

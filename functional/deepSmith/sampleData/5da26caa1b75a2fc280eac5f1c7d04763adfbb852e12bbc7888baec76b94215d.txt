@@ -1,0 +1,7 @@
+private static char fn_A(byte a){
+  byte b=(byte)(a & 0x0f);
+  if (b < 10) {
+    return (char)('0' + b);
+  }
+  return (char)('a' + b - 10);
+}

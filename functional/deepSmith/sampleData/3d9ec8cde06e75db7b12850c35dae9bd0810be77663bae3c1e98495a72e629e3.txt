@@ -1,4 +1,0 @@
-static int fn_A(int a){
-  System.out.println("static Top num " + a);
-  return a;
-}

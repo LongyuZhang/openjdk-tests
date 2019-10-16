@@ -1,0 +1,14 @@
+public static void fn_A(final long[] a){
+  if (a != null) {
+    final int b=a.length;
+    int c=0;
+    int d=b - 1;
+    while (c < d) {
+      final long e=a[c];
+      a[c]=a[d];
+      a[d]=e;
+      c++;
+      d--;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+public static int[] fn_A(double[] a){
+  int[] b=new int[a.length];
+  if (b.length > 1) {
+    b[0]=(int)Math.floor(Integer.MAX_VALUE * a[0]);
+    for (int c=1; c < b.length - 1; c++) {
+      b[c]=b[c - 1] + (int)Math.floor(Integer.MAX_VALUE * a[c]);
+    }
+    b[b.length - 1]=Integer.MAX_VALUE;
+  }
+ else {
+    b[0]=Integer.MAX_VALUE;
+  }
+  return b;
+}

@@ -1,0 +1,8 @@
+public static void fn_A(int a){
+  for (int b=1; b < a; b++) {
+    boolean c=(a % b == 0);
+    if (c) {
+      System.out.print(b + " ");
+    }
+  }
+}

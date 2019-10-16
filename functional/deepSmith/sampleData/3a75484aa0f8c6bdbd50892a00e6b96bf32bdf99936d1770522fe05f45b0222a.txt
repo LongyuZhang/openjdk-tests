@@ -1,6 +1,0 @@
-public static final <K>K fn_A(K a,K b){
-  if (a == null) {
-    return b;
-  }
-  return a;
-}

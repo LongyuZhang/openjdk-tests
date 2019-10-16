@@ -1,0 +1,8 @@
+public static boolean fn_A(float[] a,float[] b,final int c){
+  for (int d=0; d < c; d++) {
+    if (Float.floatToIntBits(a[d]) != Float.floatToIntBits(b[d])) {
+      return false;
+    }
+  }
+  return true;
+}

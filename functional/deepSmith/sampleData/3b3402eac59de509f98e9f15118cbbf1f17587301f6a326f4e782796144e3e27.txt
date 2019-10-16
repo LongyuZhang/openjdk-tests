@@ -1,6 +1,0 @@
-private static int fn_A(char[] a,char b,int c){
-  a[c++]='%';
-  a[c++]=Character.forDigit((b >> 4) & 0xF,16);
-  a[c++]=Character.forDigit(b & 0xF,16);
-  return c;
-}

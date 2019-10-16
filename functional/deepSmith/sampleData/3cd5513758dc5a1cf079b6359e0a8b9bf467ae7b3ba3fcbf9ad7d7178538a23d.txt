@@ -1,4 +1,0 @@
-public static void fn_A(){
-  System.err.println("Usage: Find [-n namefilter][-s sizefilter][dir...]");
-  System.exit(1);
-}

@@ -1,0 +1,32 @@
+public static boolean fn_A(final char a){
+switch (a) {
+case '"':
+case '?':
+case '%':
+case '&':
+case '\'':
+case '(':
+case ')':
+case '|':
+case '*':
+case '+':
+case ',':
+case '-':
+case '.':
+case '/':
+case ':':
+case ';':
+case '<':
+case '=':
+case '>':
+case '!':
+case '~':
+case '`':
+case '[':
+case ']':
+case '#':
+    return true;
+default :
+  return false;
+}
+}

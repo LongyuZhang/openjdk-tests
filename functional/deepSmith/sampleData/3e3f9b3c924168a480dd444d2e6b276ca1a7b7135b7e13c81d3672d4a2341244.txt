@@ -1,5 +1,0 @@
-private static void fn_A(){
-  System.out.println("\nString methods toLowerCase() and toUpperCase():");
-  System.out.println("aBc".toLowerCase());
-  System.out.println("aBc".toUpperCase());
-}

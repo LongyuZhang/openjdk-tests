@@ -1,0 +1,23 @@
+static void fn_A(int[] a,int b,int[] c,boolean d,boolean e){
+  int f;
+  if (e) {
+    if (d) {
+      for (f=0; f < b; f++) {
+        a[f]=c[f] + a[f];
+        a[f]&=7;
+      }
+    }
+ else {
+      a[0]&=7;
+      for (f=1; f < b; f++) {
+        a[f]=a[f - 1] + a[f];
+        a[f]&=7;
+      }
+    }
+  }
+ else {
+    for (f=0; f < b; f++) {
+      a[f]=0;
+    }
+  }
+}

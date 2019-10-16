@@ -1,0 +1,26 @@
+public static int[] fn_A(int a,int b,int c,int d){
+  if (b < 0) {
+    throw new RuntimeException("Size for window < 0! size: " + b);
+  }
+  if (c > d) {
+    throw new RuntimeException("validLeft > validRight! validLeft: " + c + " validRight: "+ d);
+  }
+  int[] e={a,a + b};
+  if (a > d) {
+    e[0]=d;
+    e[1]=d;
+    return e;
+  }
+  if (a + b < c) {
+    e[0]=c;
+    e[1]=c;
+    return e;
+  }
+  if (a < c) {
+    e[0]=c;
+  }
+  if (a + b > d) {
+    e[1]=d;
+  }
+  return e;
+}

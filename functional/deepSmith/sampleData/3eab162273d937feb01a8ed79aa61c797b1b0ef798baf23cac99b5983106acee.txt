@@ -1,6 +1,0 @@
-public static float fn_A(final float a,final float b,final float c,final float d,final float e,final float f){
-  final float g=d - a;
-  final float h=e - b;
-  final float i=f - c;
-  return g * g + h * h + i * i;
-}

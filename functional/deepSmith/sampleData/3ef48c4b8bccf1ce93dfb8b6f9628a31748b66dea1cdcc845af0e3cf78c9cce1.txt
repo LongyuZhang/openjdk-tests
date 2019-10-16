@@ -1,0 +1,12 @@
+static boolean fn_A(char a,char b){
+  if (a == b)   return true;
+  if (b == 'i' && (a == 'l' || a == '1' || a == '!' || a == '|' || a == '\246'))   return true;
+  if (b == 'l' && (a == 'i' || a == '1' || a == '!' || a == '|' || a == '\246'))   return true;
+  if (b == 's' && (a == '5' || a == '$' || a == 'z'))   return true;
+  if (b == 'z' && (a == '5' || a == '$' || a == 's'))   return true;
+  if (b == 'a' && (a == '4' || a == '@'))   return true;
+  if (b == 'c' && (a == '(' || a == '<' || a == '['))   return true;
+  if (b == 'o' && a == '0')   return true;
+  if (b == 'e' && a == '3')   return true;
+  return b == 'u' && a == 'v';
+}

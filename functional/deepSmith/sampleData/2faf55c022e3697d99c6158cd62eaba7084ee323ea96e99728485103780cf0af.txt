@@ -1,5 +1,0 @@
-public static double fn_A(double a,double b,double c,double d){
-  double e=a + c;
-  double f=b + c * d;
-  return Math.log(e / f);
-}

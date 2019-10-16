@@ -1,9 +1,0 @@
-private static void fn_A(final float[] a,final double[] b,final int c,final int d){
-  float e=a[c];
-  double f=b[c];
-  a[c]=a[d];
-  a[d]=e;
-  f=b[c];
-  b[c]=b[d];
-  b[d]=f;
-}

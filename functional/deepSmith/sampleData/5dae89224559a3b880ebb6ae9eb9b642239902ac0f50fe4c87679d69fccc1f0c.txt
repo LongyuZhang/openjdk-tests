@@ -1,0 +1,10 @@
+public static double[][] fn_A(double[][] a,boolean b){
+  double[][] c=new double[a.length][a[0].length];
+  for (int d=0; d < c.length; d++) {
+    for (int e=0; e < c[0].length; e++) {
+      c[d][e]=Math.log(a[d][e]);
+      if (b && Double.isInfinite(c[d][e]))       c[d][e]=0.0;
+    }
+  }
+  return c;
+}

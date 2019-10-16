@@ -1,0 +1,53 @@
+protected static boolean fn_A(double a,double b,double[] c,int d){
+  int e=0;
+  double f=c[2 * d - 2];
+  double g=c[2 * d - 1];
+  double h, i;
+  for (int j=0; j < d; f=h, g=i, j++) {
+    h=c[2 * j];
+    i=c[2 * j + 1];
+    if (i == g) {
+      continue;
+    }
+    double k;
+    if (h < f) {
+      if (a >= f) {
+        continue;
+      }
+      k=h;
+    }
+ else {
+      if (a >= h) {
+        continue;
+      }
+      k=f;
+    }
+    double l, m;
+    if (i < g) {
+      if (b < i || b >= g) {
+        continue;
+      }
+      if (a < k) {
+        e++;
+        continue;
+      }
+      l=a - h;
+      m=b - i;
+    }
+ else {
+      if (b < g || b >= i) {
+        continue;
+      }
+      if (a < k) {
+        e++;
+        continue;
+      }
+      l=a - f;
+      m=b - g;
+    }
+    if (l < (m / (g - i) * (f - h))) {
+      e++;
+    }
+  }
+  return ((e & 1) != 0);
+}

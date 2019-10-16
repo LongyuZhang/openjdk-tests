@@ -1,6 +1,0 @@
-public static short fn_A(byte[] a){
-  int b=(a[0] >> 4) & 0xf;
-  int c=(a[1] >> 4) & 0xf;
-  int d=(a[2] >> 4) & 0xf;
-  return (short)((b << 12) | (c << 8) | (d << 4));
-}

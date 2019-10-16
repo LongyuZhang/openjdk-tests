@@ -1,0 +1,11 @@
+private static String fn_A(long a){
+  if (a > 1024L * 1024L) {
+    return a / (1024L * 1024L) + " MB";
+  }
+ else   if (a > 1024L) {
+    return a / (1024L) + " kB";
+  }
+ else {
+    return a + " B";
+  }
+}

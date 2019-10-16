@@ -1,0 +1,4 @@
+protected static String[] fn_A(){
+  String[] a={"mim-necessary-stimulation","mim-binding","mim-conversion","mim-stimulation","mim-modification","mim-catalysis","mim-inhibition","mim-cleavage","mim-covalent-bond","mim-branching-left","mim-branching-right","mim-transcription-translation","mim-gap"};
+  return a;
+}

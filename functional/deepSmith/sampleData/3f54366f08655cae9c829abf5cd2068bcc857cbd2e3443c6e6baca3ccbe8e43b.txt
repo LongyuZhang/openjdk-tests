@@ -1,0 +1,9 @@
+public static final int fn_A(int a,int b){
+  --b;
+  if (a >> 14 == b >> 14)   return 4681 + (a >> 14);
+  if (a >> 17 == b >> 17)   return 585 + (a >> 17);
+  if (a >> 20 == b >> 20)   return 73 + (a >> 20);
+  if (a >> 23 == b >> 23)   return 9 + (a >> 23);
+  if (a >> 26 == b >> 26)   return 1 + (a >> 26);
+  return 0;
+}

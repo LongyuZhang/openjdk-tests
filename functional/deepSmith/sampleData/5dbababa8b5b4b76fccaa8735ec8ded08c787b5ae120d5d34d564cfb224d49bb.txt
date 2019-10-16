@@ -1,0 +1,6 @@
+public static void fn_A(long[] a){
+  long b=0;
+  for (; ; ) {
+    b+=a[0];
+  }
+}

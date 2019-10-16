@@ -1,9 +1,0 @@
-private static int fn_A(byte a,byte[] b,int c){
-  while (c < b.length) {
-    if (b[c] == a) {
-      return c;
-    }
-    c++;
-  }
-  return -1;
-}

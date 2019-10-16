@@ -1,0 +1,7 @@
+public static void fn_A(){
+  try {
+    Thread.sleep(3 * 100);
+  }
+ catch (  InterruptedException a) {
+  }
+}

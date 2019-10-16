@@ -1,7 +1,0 @@
-public static boolean fn_A(long a,int b,int c){
-  a=a & 0xFFFFFFFF;
-  if (((a >> 16) & 0xFF) == b) {
-    return ((a >> 24) & 0xFF) == c;
-  }
- else   return false;
-}

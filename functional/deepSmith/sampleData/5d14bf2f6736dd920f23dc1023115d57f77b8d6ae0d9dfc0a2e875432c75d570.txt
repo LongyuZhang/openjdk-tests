@@ -1,0 +1,6 @@
+private static boolean fn_A(Object a,boolean b){
+  if (a == null) {
+    return b;
+  }
+  return Boolean.valueOf(((String)a).toLowerCase(Locale.getDefault()));
+}

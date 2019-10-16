@@ -1,0 +1,6 @@
+public static Map<String,String> fn_A(Properties a){
+  if (a == null) {
+    a=new Properties();
+  }
+  return new TreeMap<String,String>((Map)a);
+}

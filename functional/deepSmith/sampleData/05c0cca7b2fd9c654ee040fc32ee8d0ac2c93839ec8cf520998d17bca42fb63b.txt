@@ -1,0 +1,17 @@
+protected static int[] fn_A(int a,int b,int c){
+  int d=b * c;
+  int e=a * c;
+  int[] f=new int[d * e];
+  int g=0;
+  for (int h=0; h < e; h++) {
+    for (int i=0; i < d; i++) {
+      if (i == d - 1 || h == e - 1 || (i % c) == 0 || (h % c) == 0) {
+        f[g++]=0xff000000;
+      }
+ else {
+        f[g++]=0xffffffff;
+      }
+    }
+  }
+  return f;
+}

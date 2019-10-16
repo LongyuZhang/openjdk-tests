@@ -1,4 +1,0 @@
-static int fn_A(int a){
-  int b=a / 4096;
-  return (b + 1) * 4096;
-}

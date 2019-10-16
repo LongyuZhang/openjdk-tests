@@ -1,7 +1,0 @@
-public static double fn_A(double a,int b,int c,double d,double e){
-  double f=d * (1 - d);
-  double g=e * (1 - e);
-  double h=(d - e) * (d - e);
-  double i=(h - f / (b - 1) - g / (c - 1)) / (f + g);
-  return i;
-}

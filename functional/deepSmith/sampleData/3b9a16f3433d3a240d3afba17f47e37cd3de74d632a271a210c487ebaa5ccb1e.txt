@@ -1,7 +1,0 @@
-private static int fn_A(float[] a){
-  int b=0;
-  for (  float c : a) {
-    b^=(int)c;
-  }
-  return b;
-}

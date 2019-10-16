@@ -1,0 +1,6 @@
+protected static void fn_A(int[] a,int b,int[] c,int d,int e) throws ArrayIndexOutOfBoundsException {
+  if ((c.length - d) < e || (a.length - b) < e)   throw new ArrayIndexOutOfBoundsException("Destination or source buffer is insufficent");
+  for (int f=e - 1; f >= 0; f--) {
+    c[d + f]=a[b + f];
+  }
+}

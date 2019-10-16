@@ -1,8 +1,0 @@
-private static int fn_A(int a){
-  if (a == 0) {
-    return 0;
-  }
- else {
-    return (a >> 31) | 1;
-  }
-}

@@ -1,0 +1,15 @@
+private static void fn_A(int a,int b,int[] c){
+  int d, e, f, g, h, i, j, k;
+  float l=1 / (float)c.length;
+  d=(a >> 24) & 0xff;
+  e=(a >> 16) & 0xff;
+  f=(a >> 8) & 0xff;
+  g=(a) & 0xff;
+  h=((b >> 24) & 0xff) - d;
+  i=((b >> 16) & 0xff) - e;
+  j=((b >> 8) & 0xff) - f;
+  k=((b) & 0xff) - g;
+  for (int m=0; m < c.length; m++) {
+    c[m]=(((int)((d + m * h * l) + .5) << 24)) | (((int)((e + m * i * l) + .5) << 16)) | (((int)((f + m * j * l) + .5) << 8))| (((int)((g + m * k * l) + .5)));
+  }
+}

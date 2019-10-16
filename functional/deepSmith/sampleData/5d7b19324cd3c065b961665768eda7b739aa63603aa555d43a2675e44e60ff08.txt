@@ -1,0 +1,6 @@
+public static Long fn_A(Long a){
+  if (null == a || a <= 0) {
+    return 0L;
+  }
+  return a;
+}

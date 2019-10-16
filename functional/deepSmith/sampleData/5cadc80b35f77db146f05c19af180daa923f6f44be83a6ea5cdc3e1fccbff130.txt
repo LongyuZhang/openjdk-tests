@@ -1,0 +1,4 @@
+public static String fn_A(char a){
+  char b[]={a};
+  return new String(b);
+}

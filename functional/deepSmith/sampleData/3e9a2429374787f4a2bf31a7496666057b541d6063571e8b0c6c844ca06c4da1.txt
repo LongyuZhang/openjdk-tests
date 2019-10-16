@@ -1,9 +1,0 @@
-static String fn_A(byte[] a){
-  String b="";
-  try {
-    return new String(a,"UTF-16");
-  }
- catch (  UnsupportedEncodingException c) {
-    throw new AssertionError();
-  }
-}

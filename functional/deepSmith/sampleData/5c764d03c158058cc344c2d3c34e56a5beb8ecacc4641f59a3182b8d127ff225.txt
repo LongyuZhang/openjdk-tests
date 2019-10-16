@@ -1,0 +1,21 @@
+public static byte fn_A(final byte a){
+switch (a) {
+case 'a':
+case 'A':
+    return 'T';
+case 'c':
+case 'C':
+  return 'G';
+case 'g':
+case 'G':
+return 'C';
+case 't':
+case 'T':
+return 'A';
+case 'n':
+case 'N':
+return 'N';
+default :
+throw new IllegalArgumentException("base must be A, C, G or T. " + (char)a + " is not a valid base.");
+}
+}

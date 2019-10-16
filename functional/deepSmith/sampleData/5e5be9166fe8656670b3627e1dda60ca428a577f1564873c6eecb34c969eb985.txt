@@ -1,0 +1,22 @@
+static Object fn_A(double a,Class b){
+  if ((b == Double.TYPE) || (b == Double.class))   return new Double(a);
+ else   if (b == Float.TYPE)   return new Float(a);
+ else   if (b == Long.TYPE) {
+    return new Long((long)a);
+  }
+ else   if (b == Integer.TYPE) {
+    return new Integer((int)a);
+  }
+ else   if (b == Short.TYPE) {
+    return new Short((short)a);
+  }
+ else   if (b == Character.TYPE) {
+    return new Character((char)a);
+  }
+ else   if (b == Byte.TYPE) {
+    return new Byte((byte)a);
+  }
+ else {
+    return new Double(a);
+  }
+}

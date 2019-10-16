@@ -1,0 +1,14 @@
+protected static int fn_A(final int a){
+  if ('0' <= a && a <= '9') {
+    return a - '0';
+  }
+ else   if ('A' <= a && a <= 'F') {
+    return 10 + a - 'A';
+  }
+ else   if ('a' <= a && a <= 'f') {
+    return 10 + a - 'a';
+  }
+ else {
+    throw new IllegalArgumentException();
+  }
+}

@@ -1,0 +1,4 @@
+private static int fn_A(int a,int[] b){
+  for (int c=a; c >= 0; c--)   if (b[c] == b[a])   return c;
+  return -1;
+}

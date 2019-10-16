@@ -1,0 +1,22 @@
+public static double fn_A(Object a){
+  if (a == null) {
+    return 0;
+  }
+ else   if (a instanceof Number) {
+    return ((Number)a).doubleValue();
+  }
+ else   if (a instanceof Date) {
+    return ((Date)a).getTime();
+  }
+ else   if (a instanceof String) {
+    try {
+      return Double.parseDouble((String)a);
+    }
+ catch (    NumberFormatException b) {
+      return 0.0;
+    }
+  }
+ else {
+    return 0;
+  }
+}

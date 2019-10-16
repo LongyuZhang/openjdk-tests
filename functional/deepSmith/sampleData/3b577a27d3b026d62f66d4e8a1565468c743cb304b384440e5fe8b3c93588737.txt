@@ -1,4 +1,0 @@
-public static boolean fn_A(byte a,int b){
-  if (b < 0 || b >= 8)   return false;
-  return (a & (1 << b)) > 0;
-}

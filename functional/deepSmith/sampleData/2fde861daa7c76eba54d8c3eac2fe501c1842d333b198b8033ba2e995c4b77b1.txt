@@ -1,8 +1,0 @@
-static double fn_A(final float[] a,final float[] b){
-  double c=0;
-  for (int d=0; d < a.length; d++) {
-    final double e=a[d] - b[d];
-    c+=e * e;
-  }
-  return c;
-}

@@ -1,0 +1,18 @@
+private static byte fn_A(byte a){
+switch (a) {
+case 'A':
+case 'a':
+    return 'G';
+case 'C':
+case 'c':
+  return 'T';
+case 'G':
+case 'g':
+return 'A';
+case 'T':
+case 't':
+return 'C';
+default :
+return a;
+}
+}

@@ -1,5 +1,0 @@
-private static void fn_A(int a,long b,long c,int d,String e){
-  double f=((double)a) / (((double)c - (double)b) / 1000.0d);
-  double g=((double)d / 1024.0d) * ((double)a) / (((double)c - (double)b) / 1000.0d);
-  System.out.println(e + " HMAC pulled " + g+ "KBps or "+ f+ " calcs per second");
-}

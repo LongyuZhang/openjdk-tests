@@ -1,8 +1,0 @@
-private static float fn_A(float a,float b,float c){
-  if (c < 0f)   c+=6f;
-  if (c >= 6f)   c-=6f;
-  if (c < 1)   return (b - a) * c + a;
- else   if (c < 3f)   return b;
- else   if (c < 4f)   return (b - a) * (4f - c) + a;
- else   return a;
-}

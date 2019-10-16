@@ -1,7 +1,0 @@
-static int fn_A(int a,int b){
-  int c;
-  for (c=0; a > 0; c++) {
-    a>>=b;
-  }
-  return c;
-}

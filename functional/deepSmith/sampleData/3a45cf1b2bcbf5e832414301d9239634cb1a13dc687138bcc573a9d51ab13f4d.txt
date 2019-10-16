@@ -1,4 +1,0 @@
-public static boolean fn_A(int a,int[] b){
-  double c=Math.sqrt(b[0] * b[0] * .241 + b[1] * b[1] * .691 + b[2] * b[2] * .068);
-  return (c > a) ? false : true;
-}

@@ -1,0 +1,16 @@
+public static long[] fn_A(long a,long b){
+  long c=1, d=0, e=0, f=1;
+  while (b != 0) {
+    long g=a / b;
+    long h=e;
+    long i=f;
+    long j=b;
+    e=c - g * e;
+    f=d - g * f;
+    b=a - g * b;
+    c=h;
+    d=i;
+    a=j;
+  }
+  return a > 0 ? new long[]{a,c,d} : new long[]{-a,-c,-d};
+}

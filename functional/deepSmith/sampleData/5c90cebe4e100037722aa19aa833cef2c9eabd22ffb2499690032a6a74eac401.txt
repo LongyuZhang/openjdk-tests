@@ -1,0 +1,7 @@
+static byte[] fn_A(Object a){
+  if (a instanceof byte[])   return (byte[])a;
+  Byte[] b=(Byte[])a;
+  byte[] c=new byte[b.length];
+  for (int d=0; d < b.length; d++)   c[d]=b[d];
+  return c;
+}

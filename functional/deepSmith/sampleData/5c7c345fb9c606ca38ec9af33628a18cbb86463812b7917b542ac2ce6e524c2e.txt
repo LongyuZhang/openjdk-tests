@@ -1,0 +1,9 @@
+public static int fn_A(int a){
+  a^=a << 3;
+  a+=a >> 5;
+  a^=a << 4;
+  a+=a >> 17;
+  a^=a << 25;
+  a+=a >> 6;
+  return a;
+}

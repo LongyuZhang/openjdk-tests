@@ -1,0 +1,17 @@
+public static void fn_A(final double[] a,final double[][] b){
+  int c;
+  int d=a.length;
+  for (int e=0; e < d - 1; e++) {
+    double f=a[c=e];
+    for (int g=e; g < d; g++)     if (a[g] >= f)     f=a[c=g];
+    if (c != e) {
+      a[c]=a[e];
+      a[e]=f;
+      if (b != null)       for (int g=0; g < d; g++) {
+        f=b[g][e];
+        b[g][e]=b[g][c];
+        b[g][c]=f;
+      }
+    }
+  }
+}

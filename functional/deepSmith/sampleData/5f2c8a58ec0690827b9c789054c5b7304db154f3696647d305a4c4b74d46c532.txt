@@ -1,0 +1,9 @@
+private static long fn_A(int a,int b){
+  double c=1;
+  while (a > b) {
+    c*=a;
+    c/=(a - b);
+    --a;
+  }
+  return (long)(c + 0.5);
+}
