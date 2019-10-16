@@ -1,0 +1,14 @@
+public static byte[] fn_A(long a){
+  if (a < 0) {
+    throw new IllegalArgumentException("Only non-negative integer values are allowed");
+  }
+  int b=0;
+  for (long c=a; c > 0; c>>>=8) {
+    ++b;
+  }
+  byte[] d=new byte[b];
+  for (long c=a; c > 0; c>>>=8) {
+    d[--b]=(byte)c;
+  }
+  return d;
+}

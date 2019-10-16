@@ -1,0 +1,12 @@
+public static double[] fn_A(double[] a,int b){
+  double[] c=new double[2];
+  if (b > a.length)   b=a.length;
+  if (b == 0)   return c;
+  double d=0;
+  for (int e=0; e < b; e++)   d+=a[e];
+  c[0]=d / b;
+  d=0;
+  for (int e=0; e < b; e++)   d+=(a[e] - c[0]) * (a[e] - c[0]);
+  c[1]=Math.sqrt(d / b);
+  return c;
+}

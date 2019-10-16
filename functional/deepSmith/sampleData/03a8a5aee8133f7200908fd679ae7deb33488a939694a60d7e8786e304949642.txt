@@ -1,4 +1,0 @@
-private static <T>int fn_A(final T[] a,final T b){
-  for (int c=0; c < a.length; c++)   if (a[c] == b)   return c;
-  return -1;
-}

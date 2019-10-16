@@ -1,0 +1,6 @@
+public static String[] fn_A(){
+  if (System.getProperty("hibernate5") != null) {
+    return new String[]{"org.hibernate:hibernate-core:5.0.7.Final","aopalliance:aopalliance:1.0","org.jboss.logging:jboss-logging:3.3.0.Final","javax.transaction:javax.transaction-api:1.2"};
+  }
+  return new String[]{"org.hibernate:hibernate-core:4.3.11.Final","aopalliance:aopalliance:1.0","org.jboss.logging:jboss-logging:3.3.0.Final","javax.transaction:javax.transaction-api:1.2","dom4j:dom4j:1.6.1"};
+}

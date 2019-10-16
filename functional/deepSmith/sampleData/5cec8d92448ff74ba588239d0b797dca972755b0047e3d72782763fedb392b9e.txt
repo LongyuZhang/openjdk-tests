@@ -1,0 +1,4 @@
+private static void fn_A(int a,int b,boolean c) throws IllegalStateException {
+  if (c && a < b)   throw new IllegalStateException(a + "  must be greater or equal to " + b);
+ else   if (a <= b)   throw new IllegalStateException(a + "  must be greater than " + b);
+}

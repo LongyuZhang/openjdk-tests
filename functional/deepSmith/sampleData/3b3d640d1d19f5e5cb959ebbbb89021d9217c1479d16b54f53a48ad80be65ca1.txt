@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a=System.getProperty("config_root",System.getenv("config_root"));
-  return a;
-}

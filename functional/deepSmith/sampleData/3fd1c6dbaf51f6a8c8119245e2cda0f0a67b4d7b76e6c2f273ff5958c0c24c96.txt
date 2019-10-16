@@ -1,0 +1,12 @@
+public static String fn_A(long a){
+  long b=a / 1000;
+  long c=b / 60;
+  long d=c / 60;
+  c%=60;
+  b%=60;
+  String e="";
+  if (d > 0)   e+=d + "h";
+  if (d > 0 || c > 0)   e+=c + "m";
+  e+=b + "s ";
+  return e;
+}

@@ -1,0 +1,35 @@
+public static int fn_A(long[] a,long b){
+  int c=0;
+  int d=a.length;
+  int e=0, f=d - 1;
+  if (a == null || d < 1) {
+    return -1;
+  }
+  if (d == 1) {
+    return 0;
+  }
+  if (b - a[0] <= 0) {
+    return 0;
+  }
+ else   if (b - a[d - 1] >= 0) {
+    return d - 1;
+  }
+  int g=0;
+  long h, i;
+  while (e < f) {
+    g+=1;
+    c=(e + f) / 2;
+    h=a[c + 1] - b;
+    i=a[c] - b;
+    if (i >= 0) {
+      f=c;
+    }
+ else     if (h <= 0) {
+      e=c + 1;
+    }
+ else {
+      f=c;
+    }
+  }
+  return e;
+}

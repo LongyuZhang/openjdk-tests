@@ -1,0 +1,6 @@
+public static Short fn_A(Short a,Short b){
+  if (a == null || b == null) {
+    return null;
+  }
+  return (short)(a * b);
+}

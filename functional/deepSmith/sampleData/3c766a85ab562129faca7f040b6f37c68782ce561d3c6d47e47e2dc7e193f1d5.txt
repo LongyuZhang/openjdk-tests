@@ -1,4 +1,0 @@
-public static int fn_A(int a){
-  int b=a % 60;
-  return b;
-}

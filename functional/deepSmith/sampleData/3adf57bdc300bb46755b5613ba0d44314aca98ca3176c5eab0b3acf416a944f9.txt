@@ -1,9 +1,0 @@
-static int fn_A(){
-  Integer a=Integer.valueOf(1);
-  Integer b=Integer.valueOf(1);
-  for (int c=0; c < 1000; c++) {
-    a=a + 1;
-    b=b + 2;
-  }
-  return a + b;
-}

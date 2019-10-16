@@ -1,0 +1,5 @@
+public static short fn_A(short a){
+  int b=a & 0xff;
+  int c=(a >> 8) & 0xff;
+  return (short)(b << 8 | c);
+}

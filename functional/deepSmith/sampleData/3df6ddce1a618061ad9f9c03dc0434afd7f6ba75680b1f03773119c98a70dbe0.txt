@@ -1,4 +1,0 @@
-public static String fn_A(final String a){
-  String b=System.getenv("test.s3.bucket.name");
-  return b == null ? a : b;
-}

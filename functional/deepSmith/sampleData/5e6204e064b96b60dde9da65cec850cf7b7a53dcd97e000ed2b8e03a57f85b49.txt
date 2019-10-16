@@ -1,0 +1,6 @@
+public static int fn_A(long a) throws ArithmeticException {
+  if (a > Integer.MAX_VALUE || a < Integer.MIN_VALUE) {
+    throw new ArithmeticException("integer overflow: " + a);
+  }
+  return (int)a;
+}

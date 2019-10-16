@@ -1,8 +1,0 @@
-protected static void fn_A(double[][] a,double[][] b){
-  for (int c=0; c < a[0].length; c++) {
-    b[0][c]=a[0][c];
-  }
-  for (int c=0; c < a[1].length; c++) {
-    b[1][c]=a[1][c];
-  }
-}

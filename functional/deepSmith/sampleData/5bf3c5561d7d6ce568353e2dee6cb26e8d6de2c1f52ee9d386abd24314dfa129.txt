@@ -1,0 +1,4 @@
+public static String fn_A(int a){
+  String b="RANDOM_STRING_BASE_";
+  return b + a + "_"+ System.currentTimeMillis();
+}

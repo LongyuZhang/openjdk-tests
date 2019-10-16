@@ -1,0 +1,44 @@
+public static String fn_A(long a,boolean b,boolean c,String d,String e,String f){
+  String g="";
+  String h="";
+  String i="";
+  if (b) {
+    g=c ? "00" + d : "0" + d;
+    h=c ? "00" + e : "0" + e;
+    i=c ? "00" + f : "0" + f;
+  }
+  long j=a;
+  long k=60 * 60 * 1000;
+  long l=60 * 1000;
+  long m=1000;
+  if (j / k > 0) {
+    if (c) {
+      g=j / k < 10 ? "0" + j / k : j / k + "";
+    }
+ else {
+      g=j / k + "";
+    }
+    g+=d;
+  }
+  j=j % k;
+  if (j / l > 0) {
+    if (c) {
+      h=j / l < 10 ? "0" + j / l : j / l + "";
+    }
+ else {
+      h=j / l + "";
+    }
+    h+=e;
+  }
+  j=j % l;
+  if (j / m > 0) {
+    if (c) {
+      i=j / m < 10 ? "0" + j / m : j / m + "";
+    }
+ else {
+      i=j / m + "";
+    }
+    i+=f;
+  }
+  return g + h + i;
+}

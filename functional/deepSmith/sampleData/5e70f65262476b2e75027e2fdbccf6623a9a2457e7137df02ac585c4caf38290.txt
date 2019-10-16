@@ -1,0 +1,26 @@
+protected static short fn_A(byte[] a){
+  int b=a.length;
+  int c=0;
+  long d=0;
+  long e;
+  while (b > 1) {
+    e=(((a[c] << 8) & 0xFF00) | ((a[c + 1]) & 0xFF));
+    d+=e;
+    if ((d & 0xFFFF0000) > 0) {
+      d=d & 0xFFFF;
+      d+=1;
+    }
+    c+=2;
+    b-=2;
+  }
+  if (b > 0) {
+    d+=(a[c] << 8 & 0xFF00);
+    if ((d & 0xFFFF0000) > 0) {
+      d=d & 0xFFFF;
+      d+=1;
+    }
+  }
+  d=~d;
+  d=d & 0xFFFF;
+  return (short)d;
+}

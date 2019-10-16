@@ -1,7 +1,0 @@
-public static boolean fn_A(double a,double b,double c,double d,double e,double f){
-  if (e >= a + c)   return false;
-  if (e < a)   return false;
-  if (f >= b + d)   return false;
-  if (f < b)   return false;
-  return true;
-}

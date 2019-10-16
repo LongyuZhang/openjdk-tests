@@ -1,8 +1,0 @@
-public static double fn_A(double[][] a,int b,int c){
-  if (b > c) {
-    int d=c;
-    c=b;
-    b=d;
-  }
-  return a[b][c - b - 1];
-}

@@ -1,0 +1,7 @@
+public static int fn_A(int a,int b){
+  a=a >>> b + 1;
+  a=a << 1;
+  a++;
+  a=a << (b);
+  return a;
+}

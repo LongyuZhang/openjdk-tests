@@ -1,0 +1,15 @@
+private static int fn_A(){
+  int a=100;
+  int b;
+  final int c=200;
+  do {
+    if (a > 0) {
+      continue;
+    }
+    b=0;
+    while (++b < 100) {
+    }
+  }
+ while (--a != 0);
+  return c;
+}

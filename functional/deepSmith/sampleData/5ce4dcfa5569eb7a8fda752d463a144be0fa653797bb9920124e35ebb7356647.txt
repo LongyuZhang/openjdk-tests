@@ -1,0 +1,8 @@
+private static char fn_A(long a){
+  a=a & 0x3f;
+  if (a < 26)   return (char)('a' + a);
+ else   if (a < 52)   return (char)('A' + a - 26);
+ else   if (a < 62)   return (char)('0' + a - 52);
+ else   if (a == 62)   return '_';
+ else   return '-';
+}

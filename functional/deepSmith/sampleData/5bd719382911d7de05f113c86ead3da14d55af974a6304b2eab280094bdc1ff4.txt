@@ -1,0 +1,11 @@
+private static long fn_A(byte a[]){
+  long b=0;
+  if (a.length == 16) {
+    for (int c=0; c < 8; c++)     b|=(a[c] & 0xffL) << ((7 - c) * 8);
+    return b;
+  }
+ else {
+    for (int c=0; c < 4; c++)     b|=(a[c] & 0xff) << ((3 - c) * 8);
+    return b & 0xffffffffl;
+  }
+}

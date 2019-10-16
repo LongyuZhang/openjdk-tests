@@ -1,0 +1,13 @@
+public static Class<?> fn_A(){
+  try {
+    return Class.forName("org.hibernate.resource.transaction.TransactionCoordinator");
+  }
+ catch (  ClassNotFoundException a) {
+    try {
+      return Class.forName("org.hibernate.resource.transaction.spi.TransactionCoordinator");
+    }
+ catch (    Exception b) {
+      throw new RuntimeException(a);
+    }
+  }
+}

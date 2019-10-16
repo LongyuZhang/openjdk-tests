@@ -1,0 +1,6 @@
+private static void fn_A(){
+  try {
+  }
+ catch (  Throwable a) {
+  }
+}

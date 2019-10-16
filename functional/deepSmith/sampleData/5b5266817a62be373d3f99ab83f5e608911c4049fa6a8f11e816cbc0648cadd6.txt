@@ -1,0 +1,9 @@
+@SuppressWarnings("unchecked") protected static boolean fn_A(Object a,Object b){
+  if (!(a instanceof Number)) {
+    return false;
+  }
+  int c=((List<Integer>)b).get(0);
+  int d=((List<Integer>)b).get(1);
+  int e=((Number)a).intValue() % c;
+  return e == d;
+}

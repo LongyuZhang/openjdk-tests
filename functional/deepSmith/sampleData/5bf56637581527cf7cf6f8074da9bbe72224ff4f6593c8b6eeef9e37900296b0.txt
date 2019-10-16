@@ -1,0 +1,9 @@
+public final static int fn_A(int[] a,int b){
+  int c=a[0];
+  for (int d=1; d < b; ++d) {
+    c=(c * 31) + a[d];
+  }
+  c^=(c >>> 16);
+  c^=(c >>> 8);
+  return c;
+}

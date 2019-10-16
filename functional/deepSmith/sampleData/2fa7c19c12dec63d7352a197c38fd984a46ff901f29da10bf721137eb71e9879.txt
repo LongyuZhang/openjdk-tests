@@ -1,7 +1,0 @@
-public static final double fn_A(double a){
-  double b=60000000.0D;
-  if (a == 0.0d) {
-    return 0.0d;
-  }
-  return b / a;
-}

@@ -1,9 +1,0 @@
-public static void fn_A() throws Exception {
-  InputStream a=null;
-  try {
-    a=new FileInputStream("who dat");
-  }
- catch (  IOException b) {
-    throw new Exception(b);
-  }
-}

@@ -1,0 +1,17 @@
+public static void fn_A(double a[],int b,double c,double d,double e){
+  double f=c - d;
+  double g=e - d + f;
+  if (g != 0.0) {
+    double h=f / g;
+    if (h > 0 && h < 1) {
+      double i=1.0 - h;
+      double j=c * i * i + 2 * d * h* i + e * h * h;
+      if (a[b] > j) {
+        a[b]=j;
+      }
+      if (a[b + 2] < j) {
+        a[b + 2]=j;
+      }
+    }
+  }
+}

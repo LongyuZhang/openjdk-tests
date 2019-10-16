@@ -1,0 +1,16 @@
+public static int[][] fn_A(int[][] a){
+  final int b=a.length;
+  final int c=a[0].length;
+  for (int d=1; d < c; d++) {
+    a[0][d]+=a[0][d - 1];
+  }
+  for (int e=1; e < b; e++) {
+    a[e][0]+=a[e - 1][0];
+  }
+  for (int e=1; e < b; e++) {
+    for (int d=1; d < c; d++) {
+      a[e][d]+=a[e][d - 1] + a[e - 1][d] - a[e - 1][d - 1];
+    }
+  }
+  return a;
+}

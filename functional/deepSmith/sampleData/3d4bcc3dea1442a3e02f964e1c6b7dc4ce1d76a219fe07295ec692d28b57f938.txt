@@ -1,8 +1,0 @@
-public static Class fn_A(){
-  try {
-    return Class.forName("com.android.internal.telephony.RILConstants$SimCardID");
-  }
- catch (  Throwable a) {
-  }
-  return null;
-}

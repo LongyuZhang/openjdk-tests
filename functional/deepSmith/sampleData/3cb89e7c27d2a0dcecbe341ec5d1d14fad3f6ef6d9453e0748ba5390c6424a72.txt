@@ -1,4 +1,0 @@
-static double fn_A(){
-  double a=new Random().nextDouble();
-  return new Random().nextDouble() * a;
-}

@@ -1,0 +1,18 @@
+public static int fn_A(char[] a,char b){
+  int c=a.length;
+  int d=0;
+  int e=c - 1;
+  while (d <= e) {
+    int f=d + (e - d) / 2;
+    if (a[f] == b) {
+      return f;
+    }
+    if (b < a[f]) {
+      e=f - 1;
+    }
+ else     if (b > a[f]) {
+      d=f + 1;
+    }
+  }
+  return d;
+}

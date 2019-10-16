@@ -1,4 +1,0 @@
-public static boolean fn_A(byte[] a,byte[] b){
-  for (int c=0; c < a.length; c++)   if (b[c] != a[c])   return false;
-  return true;
-}

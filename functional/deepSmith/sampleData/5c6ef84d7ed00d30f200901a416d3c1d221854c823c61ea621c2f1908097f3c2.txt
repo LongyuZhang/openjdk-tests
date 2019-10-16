@@ -1,0 +1,4 @@
+private static List<Integer> fn_A(int a){
+  List<Integer> b=new ArrayList<Integer>();
+  return b;
+}

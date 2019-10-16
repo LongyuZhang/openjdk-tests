@@ -1,4 +1,0 @@
-public static int fn_A(final int a,final int b,final int c,final int d,final int e,final int f){
-  final int g=(a + b) >> 1, h=a - b, i=c - d << 1, j=e - f;
-  return (((512 + g) * h * h) >> 8) + i * i + (((767 - g) * j * j) >> 8);
-}

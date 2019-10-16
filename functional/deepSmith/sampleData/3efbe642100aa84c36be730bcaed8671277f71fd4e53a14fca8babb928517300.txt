@@ -1,0 +1,19 @@
+public static int fn_A(byte[] a,int b,char[] c,int d,int e){
+  int f=b;
+  int g=d;
+  int h=b + e;
+  while (f < h) {
+    int i=a[f++] & 0xFF;
+    if (i >= 0xE0) {
+      i=(i & 0x0F) << 12;
+      i=i | (a[f++] & 0x3F) << 6;
+      i=i | (a[f++] & 0x3F);
+    }
+ else     if (i >= 0xC0) {
+      i=(i & 0x1F) << 6;
+      i=i | (a[f++] & 0x3F);
+    }
+    c[g++]=(char)i;
+  }
+  return g;
+}

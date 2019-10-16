@@ -1,0 +1,21 @@
+static int fn_A(char a,boolean b){
+  if (a == 'z') {
+    return 'A';
+  }
+  if (a == 'Z') {
+    return '_';
+  }
+  if (a == '_') {
+    return '$';
+  }
+  if (a == '$') {
+    if (b) {
+      return '0';
+    }
+    return -1;
+  }
+  if (a == '9') {
+    return -1;
+  }
+  return (char)(a + 1);
+}

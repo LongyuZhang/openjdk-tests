@@ -1,0 +1,31 @@
+static void fn_A(int a[],int b,int c,int d){
+  int e=c - b + 1;
+  int f=d - c;
+  int g[]=new int[e];
+  int h[]=new int[f];
+  for (int i=0; i < e; ++i)   g[i]=a[b + i];
+  for (int j=0; j < f; ++j)   h[j]=a[c + 1 + j];
+  int i=0, j=0;
+  int k=b;
+  while (i < e && j < f) {
+    if (g[i] <= h[j]) {
+      a[k]=g[i];
+      i++;
+    }
+ else {
+      a[k]=h[j];
+      j++;
+    }
+    k++;
+  }
+  while (i < e) {
+    a[k]=g[i];
+    i++;
+    k++;
+  }
+  while (j < f) {
+    a[k]=h[j];
+    j++;
+    k++;
+  }
+}

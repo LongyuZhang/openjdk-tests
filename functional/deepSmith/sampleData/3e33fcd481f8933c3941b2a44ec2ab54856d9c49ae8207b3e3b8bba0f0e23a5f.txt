@@ -1,8 +1,0 @@
-public static double fn_A(double a,double b,double c,double d){
-  if (a < 0)   a+=1;
-  if (a > 1)   a-=1;
-  if (a < 1 / 6D)   return c + (b - c) * 6 * a;
- else   if (a < 0.5)   return b;
- else   if (a < 2 / 3D)   return c + (b - c) * 6 * (2 / 3D - a);
- else   return c;
-}

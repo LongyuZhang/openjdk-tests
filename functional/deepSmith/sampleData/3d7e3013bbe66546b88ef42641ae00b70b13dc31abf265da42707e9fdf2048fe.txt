@@ -1,5 +1,0 @@
-public static String fn_A(String a,String b,String[] c,boolean d){
-{
-  }
-  return "null";
-}

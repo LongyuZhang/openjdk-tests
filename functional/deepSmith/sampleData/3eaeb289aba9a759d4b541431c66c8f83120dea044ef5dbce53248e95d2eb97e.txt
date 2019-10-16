@@ -1,6 +1,0 @@
-private static int fn_A(final long a){
-  if (a < 0 || a > Integer.MAX_VALUE) {
-    throw new IllegalArgumentException("A SlicedBufferIndexInput can only be defined with offset and length which are positive and fit in an int");
-  }
-  return (int)a;
-}

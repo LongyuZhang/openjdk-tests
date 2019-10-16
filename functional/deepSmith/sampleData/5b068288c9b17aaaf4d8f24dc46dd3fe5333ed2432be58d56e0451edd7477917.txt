@@ -1,0 +1,14 @@
+public static float[] fn_A(float[] a,int[] b){
+  if (a.length - b.length <= 0)   throw new IllegalArgumentException("The number of columns is less or equal zero.");
+  float[] c=new float[a.length - b.length];
+  int d=0;
+  for (int e=0; e < a.length; e++) {
+    boolean f=false;
+    for (int g=0; g < b.length; g++)     if (b[g] == e)     f=true;
+    if (!f) {
+      c[d]=a[e];
+      d++;
+    }
+  }
+  return c;
+}

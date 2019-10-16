@@ -1,8 +1,0 @@
-public static Runnable fn_A(final Runnable a){
-  return new Runnable(){
-    public void run(){
-      new Thread(a).start();
-    }
-  }
-;
-}

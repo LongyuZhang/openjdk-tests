@@ -1,0 +1,7 @@
+static int fn_A(byte[] a){
+  int b=0;
+  for (int c=a.length; --c >= 0; ) {
+    b=(b << 1) + a[c];
+  }
+  return b == 0 ? -1 : b;
+}

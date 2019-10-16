@@ -1,6 +1,0 @@
-public static Character fn_A(char a){
-  if (a >= 0 && a <= 127) {
-    return a;
-  }
-  return new Character(a);
-}

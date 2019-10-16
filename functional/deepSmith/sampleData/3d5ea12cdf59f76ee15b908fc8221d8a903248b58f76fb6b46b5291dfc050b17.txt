@@ -1,9 +1,0 @@
-public static Long fn_A(Long a,Long b){
-  if (a == null) {
-    return b;
-  }
- else   if (b == null) {
-    return a;
-  }
-  return a * b;
-}

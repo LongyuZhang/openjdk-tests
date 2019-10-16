@@ -1,0 +1,29 @@
+public static String fn_A(long a){
+  long b=1L << 40;
+  long c=1L << 30;
+  long d=1L << 20;
+  long e=1L << 10;
+  double f=0;
+  String g=null;
+  if (a >= 2 * b) {
+    f=(double)a / b;
+    g="TB";
+  }
+ else   if (a >= 2 * c) {
+    f=(double)a / c;
+    g="GB";
+  }
+ else   if (a >= 2 * d) {
+    f=(double)a / d;
+    g="MB";
+  }
+ else   if (a >= 2 * e) {
+    f=(double)a / e;
+    g="KB";
+  }
+ else {
+    f=(double)a;
+    g="B";
+  }
+  return f + " " + g;
+}

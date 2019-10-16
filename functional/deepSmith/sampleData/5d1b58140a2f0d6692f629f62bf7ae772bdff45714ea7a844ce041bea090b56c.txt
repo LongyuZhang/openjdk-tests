@@ -1,0 +1,13 @@
+public static void fn_A(short[] a,int b,int c,int d,int e,int f,short[] g,int h,int i,int j,int k){
+  for (int l=0; l < j; l++) {
+    int m=b + l * c;
+    int n=h + l * i;
+    int o=m + k;
+    for (; m < o; m++, n++) {
+      int p=((a[m]) + d);
+      if (p < e)       p=e;
+      if (p > f)       p=f;
+      g[n]=(short)p;
+    }
+  }
+}

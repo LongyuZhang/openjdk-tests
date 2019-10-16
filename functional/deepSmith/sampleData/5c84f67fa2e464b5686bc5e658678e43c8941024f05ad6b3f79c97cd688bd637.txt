@@ -1,0 +1,60 @@
+public static Comparable fn_A(Comparable[] a,int b,int c,int[] d){
+  for (int e=0; e < c; e++) {
+    d[e]=e;
+  }
+  int e, f, g;
+  int h=c;
+  int i;
+  int j=0;
+  int k=h - 1;
+  int l;
+  for (; ; ) {
+    if (k <= j + 1) {
+      if (k == j + 1 && a[d[k]].compareTo(a[d[j]]) < 0) {
+        l=d[j];
+        d[j]=d[k];
+        d[k]=l;
+      }
+      return a[b];
+    }
+ else {
+      g=(j + k) >> 1;
+      int m=j + 1;
+      l=d[g];
+      d[g]=d[m];
+      d[m]=l;
+      if (a[d[j]].compareTo(a[d[k]]) > 0) {
+        l=d[j];
+        d[j]=d[k];
+        d[k]=l;
+      }
+      if (a[d[m]].compareTo(a[d[k]]) > 0) {
+        l=d[m];
+        d[m]=d[k];
+        d[k]=l;
+      }
+      if (a[d[j]].compareTo(a[d[m]]) > 0) {
+        l=d[m];
+        d[m]=d[j];
+        d[j]=l;
+      }
+      e=m;
+      f=k;
+      i=d[m];
+      for (; ; ) {
+        do         e++;
+ while (a[d[e]].compareTo(a[i]) < 0);
+        do         f--;
+ while (a[d[f]].compareTo(a[i]) > 0);
+        if (f < e)         break;
+        l=d[e];
+        d[e]=d[f];
+        d[f]=l;
+      }
+      d[m]=d[f];
+      d[f]=i;
+      if (f >= b)       k=f - 1;
+      if (f <= b)       j=e;
+    }
+  }
+}

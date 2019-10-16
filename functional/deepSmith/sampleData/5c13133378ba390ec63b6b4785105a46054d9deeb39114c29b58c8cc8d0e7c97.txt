@@ -1,0 +1,15 @@
+private static void fn_A(double a[][],int[] b,int[] c){
+  int[] d=new int[a.length];
+  int[] e=new int[a[0].length];
+  for (int f=0; f < a.length; f++) {
+    for (int g=0; g < a[f].length; g++) {
+      if (0 == a[f][g] && 0 == d[f] && 0 == e[g]) {
+        b[f]=g;
+        c[g]=f;
+        d[f]=1;
+        e[g]=1;
+        break;
+      }
+    }
+  }
+}

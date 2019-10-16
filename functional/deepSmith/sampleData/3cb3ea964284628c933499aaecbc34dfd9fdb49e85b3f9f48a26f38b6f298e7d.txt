@@ -1,8 +1,0 @@
-public static int fn_A(long a){
-  int b=0;
-  while (a > 0) {
-    b++;
-    a/=10;
-  }
-  return b;
-}

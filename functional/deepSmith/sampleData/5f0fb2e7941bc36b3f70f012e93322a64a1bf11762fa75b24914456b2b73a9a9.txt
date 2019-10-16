@@ -1,0 +1,8 @@
+protected static void fn_A(final long a,final long b){
+  if (a < 0 || a > (1L << 32) - 1) {
+    throw new IllegalArgumentException("rangeStart=" + a + " should be in [0, 0xffffffff]");
+  }
+  if (b > (1L << 32) || b < 0) {
+    throw new IllegalArgumentException("rangeEnd=" + b + " should be in [0, 0xffffffff + 1]");
+  }
+}

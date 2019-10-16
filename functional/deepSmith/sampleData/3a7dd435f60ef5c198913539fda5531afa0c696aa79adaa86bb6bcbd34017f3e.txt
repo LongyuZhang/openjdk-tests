@@ -1,6 +1,0 @@
-public static <T>void fn_A(T... a){
-  if (a == null)   throw new IllegalArgumentException("array argument must not be null");
-  for (int b=0; b < a.length; b++) {
-    if (a[b] == null)     throw new IllegalArgumentException("array argument cannot contain nulls");
-  }
-}

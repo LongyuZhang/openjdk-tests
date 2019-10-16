@@ -1,0 +1,10 @@
+private static int fn_A(int a,int b){
+  int c=a % b;
+  if (c >= (float)b / 2) {
+    a+=(b - c);
+  }
+ else {
+    a-=c;
+  }
+  return a;
+}

@@ -1,6 +1,0 @@
-private static float fn_A(float a,String b){
-  if (a < 0) {
-    throw new IllegalArgumentException("Property attribute " + b + "' must be zero or positive");
-  }
-  return a;
-}

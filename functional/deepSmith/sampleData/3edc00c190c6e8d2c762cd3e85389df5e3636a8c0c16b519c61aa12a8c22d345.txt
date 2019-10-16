@@ -1,9 +1,0 @@
-public static Object[][] fn_A(Object[][] a){
-  Object[][] b=new Object[a[0].length][a.length];
-  for (int c=0; c < a[0].length; c++) {
-    for (int d=0; d < a.length; d++) {
-      b[c][d]=a[d][c];
-    }
-  }
-  return b;
-}

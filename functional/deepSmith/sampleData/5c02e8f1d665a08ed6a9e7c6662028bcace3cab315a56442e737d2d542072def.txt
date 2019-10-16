@@ -1,0 +1,6 @@
+private static boolean fn_A(char a,long b,long c){
+  if (a == 0)   return false;
+  if (a < 64)   return ((1L << a) & b) != 0;
+  if (a < 128)   return ((1L << (a - 64)) & c) != 0;
+  return false;
+}

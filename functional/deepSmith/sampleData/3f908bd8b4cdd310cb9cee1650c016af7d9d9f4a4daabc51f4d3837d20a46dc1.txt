@@ -1,0 +1,13 @@
+public static long fn_A(int a,int b){
+  long c=1;
+  if (b < 0 || b > a) {
+    return 0;
+  }
+  long d=a - b + 1;
+  while (d <= a && c >= 0) {
+    c=c * d;
+    d=d + 1;
+  }
+  if (c < 0)   return Integer.MAX_VALUE;
+  return c;
+}

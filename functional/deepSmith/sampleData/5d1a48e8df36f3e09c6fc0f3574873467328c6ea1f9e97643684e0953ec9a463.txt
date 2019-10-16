@@ -1,0 +1,13 @@
+public static File fn_A(Object a){
+  File b;
+  if (a instanceof File) {
+    b=(File)a;
+  }
+ else   if (a instanceof String) {
+    b=new File((String)a);
+  }
+ else {
+    return null;
+  }
+  return b;
+}

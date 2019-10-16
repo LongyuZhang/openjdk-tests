@@ -1,6 +1,0 @@
-@SuppressWarnings("unchecked") public static <T>List<T> fn_A(Object a){
-  if (a != null && !(a instanceof List)) {
-    return null;
-  }
-  return (List<T>)a;
-}

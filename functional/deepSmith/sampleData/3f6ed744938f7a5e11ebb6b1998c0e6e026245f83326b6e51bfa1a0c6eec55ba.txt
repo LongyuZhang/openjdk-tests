@@ -1,0 +1,7 @@
+public static byte[] fn_A(int a){
+  final byte[] b=new byte[a];
+  for (int c=0; c < a; c++) {
+    b[c]=(byte)(c % 256);
+  }
+  return b;
+}

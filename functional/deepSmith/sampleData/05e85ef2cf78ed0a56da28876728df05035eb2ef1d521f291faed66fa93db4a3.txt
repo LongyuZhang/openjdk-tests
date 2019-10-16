@@ -1,0 +1,32 @@
+static byte[] fn_A(int a){
+  if (a < 0) {
+    throw new IllegalArgumentException("length is negative");
+  }
+ else   if (a >= 16777216) {
+    throw new IllegalArgumentException("length is too big: " + a);
+  }
+  byte[] b;
+  if (a < 128) {
+    b=new byte[1];
+    b[0]=(byte)a;
+  }
+ else   if (a < 256) {
+    b=new byte[2];
+    b[0]=-127;
+    b[1]=(byte)a;
+  }
+ else   if (a < 65536) {
+    b=new byte[3];
+    b[0]=-126;
+    b[1]=(byte)(a / 256);
+    b[2]=(byte)(a % 256);
+  }
+ else {
+    b=new byte[4];
+    b[0]=-125;
+    b[1]=(byte)(a / 65536);
+    b[2]=(byte)(a / 256);
+    b[3]=(byte)(a % 256);
+  }
+  return b;
+}

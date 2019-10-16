@@ -1,0 +1,12 @@
+public static final int fn_A(int a,int b){
+  int c=0;
+  for (int d=0; d < 32; d+=8) {
+    int e=(a >> d) & 0xff;
+    int f=(b >> d) & 0xff;
+    int g=Math.abs(e - f);
+    if (c < g) {
+      c=g;
+    }
+  }
+  return c;
+}

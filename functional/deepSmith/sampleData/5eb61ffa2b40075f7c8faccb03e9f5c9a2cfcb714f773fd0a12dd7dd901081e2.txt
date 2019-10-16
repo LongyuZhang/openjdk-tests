@@ -1,0 +1,8 @@
+public static byte[] fn_A(int a){
+  byte[] b=new byte[4];
+  b[0]=(byte)(0xff & (a >> 0));
+  b[1]=(byte)(0xff & (a >> 8));
+  b[2]=(byte)(0xff & (a >> 16));
+  b[3]=(byte)(0xff & (a >> 24));
+  return b;
+}

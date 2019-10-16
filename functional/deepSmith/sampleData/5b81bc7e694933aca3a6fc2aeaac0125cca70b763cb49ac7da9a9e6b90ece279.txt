@@ -1,0 +1,7 @@
+public static double[] fn_A(final double[] a){
+  final int b=a.length;
+  final double[] c=new double[b];
+  for (int d=0; d < b; d++)   if (a[d] >= 0)   c[d]=1;
+ else   c[d]=-1;
+  return c;
+}

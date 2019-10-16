@@ -1,0 +1,8 @@
+private static Object fn_A(Object a){
+  if (a != null && a instanceof String) {
+    return ((String)a).replace("/","\\2f");
+  }
+ else {
+    return a;
+  }
+}

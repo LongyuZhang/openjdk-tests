@@ -1,0 +1,11 @@
+public static boolean fn_A(final int[] a){
+  int b=a[0];
+  float c=((float)a[1] / b);
+  if (b < 100) {
+    return c > 0.50;
+  }
+  if (b < 500) {
+    return c > 0.60;
+  }
+  return c > 0.75;
+}

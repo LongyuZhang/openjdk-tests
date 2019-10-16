@@ -1,0 +1,18 @@
+public static byte[] fn_A(byte[] a){
+  byte[] b=new byte[2 * a.length];
+  int c=0;
+  boolean d=false;
+  byte e=0;
+  for (int f=0; f < b.length; f++) {
+    if (d) {
+      b[f]=(byte)((e >> 4) & 0x0f);
+      d=false;
+    }
+ else {
+      e=a[c++];
+      b[f]=(byte)(e & 0x0f);
+      d=true;
+    }
+  }
+  return b;
+}

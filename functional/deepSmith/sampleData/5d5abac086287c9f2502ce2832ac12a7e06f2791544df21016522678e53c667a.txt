@@ -1,0 +1,6 @@
+private static int[] fn_A(int a,int[] b){
+  b[0]=((a & 0x00ff0000) >> 16);
+  b[1]=((a & 0x0000ff00) >> 8);
+  b[2]=((a & 0x000000ff));
+  return b;
+}

@@ -1,0 +1,7 @@
+private static double[][] fn_A(final double[][] a){
+  double[][] b=new double[a.length][0];
+  for (int c=0; c < a.length; c++) {
+    b[c]=a[c].clone();
+  }
+  return b;
+}

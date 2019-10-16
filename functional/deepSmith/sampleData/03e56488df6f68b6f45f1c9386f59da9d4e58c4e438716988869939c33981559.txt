@@ -1,8 +1,0 @@
-public static void fn_A(){
-  System.out.println("\nUsage:\n");
-  System.out.println("[-fastq=sequence.fastq] [-maqtxt=sequence.txt] [-dir=/path/to/directory] [-filename=chosen_filename] [options]");
-  System.out.println("\nOptions:");
-  System.out.println("\t -b output is batched into a number of files with the same number of contigs as each other.");
-  System.out.println("\t -m output one ace file for each contig.");
-  System.out.println("\nIf no options are selected a single ace file is produced containing all the contigs in the Maq assembly.");
-}

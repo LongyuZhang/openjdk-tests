@@ -1,0 +1,24 @@
+public static boolean fn_A(final InputStream a,final InputStream b) throws IOException {
+  if (a == null && b == null) {
+    return true;
+  }
+  if (a == null || b == null) {
+    return false;
+  }
+  boolean c=false;
+  boolean d=true;
+  while (!c) {
+    int e=a.read();
+    int f=b.read();
+    if (e != f) {
+      d=false;
+      c=true;
+    }
+    if (e == -1) {
+      c=true;
+    }
+  }
+  a.close();
+  b.close();
+  return d;
+}

@@ -1,0 +1,7 @@
+private static void fn_A(){
+  System.out.println("Usage:");
+  System.out.println("... parse <exp_file> <data_1> <data_2> ... ");
+  System.out.println("\tParse util. exp_file contains defintions and parser setup.");
+  System.out.println("... <geoquery_exp_file>");
+  System.out.println("\tGeoQuery example experiment.");
+}

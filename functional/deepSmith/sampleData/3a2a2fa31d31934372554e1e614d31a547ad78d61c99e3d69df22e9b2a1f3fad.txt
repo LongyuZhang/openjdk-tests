@@ -1,8 +1,0 @@
-private static void fn_A(){
-  System.out.printf("simple integer: %d%n",10000L);
-  System.out.printf(Locale.US,"%,d %n",10000);
-  System.out.printf(Locale.ITALY,"%,d %n",10000);
-  System.out.printf("%f%n",5.1473);
-  System.out.printf("'%5.2f'%n",5.1473);
-  System.out.printf("'%5.2e'%n",5.1473);
-}
