@@ -1,0 +1,17 @@
+private static int fn_A(int a,int b){
+  int c=204;
+switch (b) {
+case 201:
+    if (a != 0) {
+      return 204;
+    }
+  return 203;
+case 202:
+if (a != 0) {
+  c=203;
+}
+return c;
+default :
+return b;
+}
+}

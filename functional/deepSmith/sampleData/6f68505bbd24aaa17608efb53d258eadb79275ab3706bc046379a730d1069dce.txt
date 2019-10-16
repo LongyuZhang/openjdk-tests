@@ -1,0 +1,21 @@
+private static int fn_A(int a,int b,int c){
+  if (c >= 0 && b + c <= a) {
+    return 0;
+  }
+  if (c <= 0 && b + c >= a) {
+    return 0;
+  }
+  if (c > 0 && b <= a) {
+    return -c + a - b;
+  }
+  if (c >= 0 && b >= a) {
+    return -c;
+  }
+  if (c <= 0 && b <= a) {
+    return -c;
+  }
+  if (c < 0 && b >= a) {
+    return -c + a - b;
+  }
+  return 0;
+}

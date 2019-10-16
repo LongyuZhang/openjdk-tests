@@ -1,0 +1,11 @@
+public static Object[][] fn_A(Object[][] a){
+  int b=a.length;
+  int c=a[0].length;
+  Object[][] d=new Object[c][b];
+  for (int e=0; e < b; e++) {
+    for (int f=0; f < c; f++) {
+      d[f][e]=a[e][f];
+    }
+  }
+  return d;
+}

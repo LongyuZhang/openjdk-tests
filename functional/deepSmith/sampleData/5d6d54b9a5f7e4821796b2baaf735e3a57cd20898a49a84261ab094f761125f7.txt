@@ -1,4 +1,0 @@
-public static boolean fn_A(char a,int b){
-  b--;
-  return (a >= 'A' && a <= 'A' + b);
-}

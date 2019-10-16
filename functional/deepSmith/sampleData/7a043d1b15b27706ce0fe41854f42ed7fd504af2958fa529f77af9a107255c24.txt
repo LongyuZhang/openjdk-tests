@@ -1,0 +1,11 @@
+public static int fn_A(int[][] a){
+  int b=0;
+  for (int c=0; c < a.length; c++) {
+    for (int d=0; d < a.length; d++) {
+      if (c != d) {
+        b+=a[c][d];
+      }
+    }
+  }
+  return b;
+}

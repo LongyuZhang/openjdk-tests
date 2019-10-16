@@ -1,0 +1,15 @@
+private static void fn_A(){
+  System.out.println("Usage:");
+  System.out.println("JLVH2LoadUtil h2-database-directory jlv-load-file-directory jlv-load-file-prefix status-file");
+  System.out.println("Where:");
+  System.out.println("  h2-database-directory   is the directory where the h2 JLV terminology database is located.");
+  System.out.println("  jlv-load-file-directory is the directory where the JLV mapping excel spreadsheets exist.  The files in");
+  System.out.println("                          this directory should be in 'xlsx' format.  There should be one file per");
+  System.out.println("                          mapping page.  The name of the file(s) will be the name of the ");
+  System.out.println("                          <jlv-load-file-prefix>_<page-name>.xlsx.  Where <page-name> must match the ");
+  System.out.println("                          sheet page name in the file.");
+  System.out.println("  jlv-load-file-prefix    is the name of the file not including the '_<page-name>' ");
+  System.out.println("                          (i.e. MappingTables)  ");
+  System.out.println("  status-file             is the directory and location where status information will be placed. ");
+  System.out.println("                          If the file does not exist, it will be created.");
+}

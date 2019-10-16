@@ -1,5 +1,0 @@
-static String fn_A(){
-  String a=new String();
-  a+="prev_ver  BIGINT, ";
-  return a;
-}

@@ -1,0 +1,7 @@
+public static double fn_A(double[] a){
+  double b=0;
+  for (int c=0; c < a.length - 1; c++) {
+    b+=(100 * Math.pow(Math.pow(a[c],2) - a[c + 1],2) + Math.pow((a[c] - 1),2));
+  }
+  return b;
+}

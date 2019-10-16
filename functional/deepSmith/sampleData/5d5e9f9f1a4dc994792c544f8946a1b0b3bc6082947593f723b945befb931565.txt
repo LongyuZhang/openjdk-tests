@@ -1,7 +1,0 @@
-private static double[] fn_A(double[] a,int[] b){
-  final double[] c=new double[a.length];
-  for (int d=0; d < b.length; d++) {
-    c[b[d]]=1;
-  }
-  return c;
-}

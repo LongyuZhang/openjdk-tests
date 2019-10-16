@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a=" ";
-  return a;
-}

@@ -1,0 +1,7 @@
+public static double fn_A(double[] a,final int b,final int c){
+  double d=Float.MAX_VALUE;
+  for (int e=b; e < c; e++) {
+    if (a[e] < d)     d=a[e];
+  }
+  return d;
+}

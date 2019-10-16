@@ -1,6 +1,0 @@
-public static int fn_A(int a){
-  if (a == 0) {
-    throw new ArithmeticException("integer underflow past zero");
-  }
-  return a - 1;
-}

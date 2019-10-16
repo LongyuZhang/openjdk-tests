@@ -1,0 +1,22 @@
+public static void fn_A(byte[] a,final int b,final int c,int d){
+  int e=c - 8;
+  int f=4 + b;
+  int g;
+  int h=d;
+  while (f < e) {
+    g=(a[f] & 0xFF);
+    g|=(a[f + 1] & 0xFF) << 8;
+    g|=(a[f + 2] & 0xFF) << 16;
+    g|=(a[f + 3] & 0xFF) << 24;
+    h+=g;
+    g^=h;
+    a[f++]=(byte)(g & 0xFF);
+    a[f++]=(byte)(g >> 8 & 0xFF);
+    a[f++]=(byte)(g >> 16 & 0xFF);
+    a[f++]=(byte)(g >> 24 & 0xFF);
+  }
+  a[f++]=(byte)(h & 0xFF);
+  a[f++]=(byte)(h >> 8 & 0xFF);
+  a[f++]=(byte)(h >> 16 & 0xFF);
+  a[f++]=(byte)(h >> 24 & 0xFF);
+}

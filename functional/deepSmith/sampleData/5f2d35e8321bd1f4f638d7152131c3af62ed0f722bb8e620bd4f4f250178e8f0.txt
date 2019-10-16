@@ -1,5 +1,0 @@
-public static boolean fn_A(double a){
-  boolean b=false;
-  if (a != a)   b=true;
-  return b;
-}

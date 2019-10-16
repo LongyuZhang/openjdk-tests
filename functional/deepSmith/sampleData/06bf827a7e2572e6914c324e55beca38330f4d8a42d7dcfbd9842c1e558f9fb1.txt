@@ -1,0 +1,6 @@
+public static long fn_A(long a,long b){
+  if (b == 0) {
+    return 0;
+  }
+  return Math.round(a * 100 / b);
+}

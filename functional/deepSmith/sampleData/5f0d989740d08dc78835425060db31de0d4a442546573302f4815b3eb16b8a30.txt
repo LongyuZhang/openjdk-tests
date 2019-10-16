@@ -1,4 +1,0 @@
-private static long fn_A(long a){
-  long b=5, c=700, d=15;
-  return (long)(Math.pow(Math.E,(b - (a / c))) + d);
-}

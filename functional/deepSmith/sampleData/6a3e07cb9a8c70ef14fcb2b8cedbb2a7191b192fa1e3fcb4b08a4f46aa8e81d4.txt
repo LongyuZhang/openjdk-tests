@@ -1,0 +1,4 @@
+public static String fn_A(){
+  final String a=System.getProperty("os.name") + " " + System.getProperty("os.arch");
+  return a;
+}

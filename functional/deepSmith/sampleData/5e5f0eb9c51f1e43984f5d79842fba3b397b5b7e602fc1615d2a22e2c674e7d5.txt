@@ -1,6 +1,0 @@
-public static String fn_A(int a,int b){
-  String c=Integer.toString((a < 0) ? 0 - a : a);
-  String d=(a < 0) ? "-" : "";
-  while ((d + c).length() < b)   c="0" + c;
-  return d + c;
-}

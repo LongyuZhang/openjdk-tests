@@ -1,0 +1,4 @@
+static boolean fn_A(){
+  double a=34;
+  return a < 31;
+}

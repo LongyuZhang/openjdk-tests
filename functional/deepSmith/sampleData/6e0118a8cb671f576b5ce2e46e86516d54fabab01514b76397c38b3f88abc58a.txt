@@ -1,0 +1,7 @@
+private static boolean fn_A(int[] a,int b){
+  for (int c=0; c < a.length; c++) {
+    b+=a[c];
+    if (b == 1)     return false;
+  }
+  return true;
+}

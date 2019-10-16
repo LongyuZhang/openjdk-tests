@@ -1,6 +1,0 @@
-public static long fn_A(long a,String b){
-  if (a <= 0) {
-    throw new IllegalArgumentException("Argument '" + b + "' must not be negative or zero");
-  }
-  return a;
-}

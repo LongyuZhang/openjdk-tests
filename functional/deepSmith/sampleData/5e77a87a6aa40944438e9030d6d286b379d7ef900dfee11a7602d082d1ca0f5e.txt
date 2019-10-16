@@ -1,4 +1,0 @@
-public static byte fn_A(long a){
-  int b=65 - Long.numberOfLeadingZeros(a ^ (a >> 63));
-  return (byte)((b + 0x07) >> 3);
-}

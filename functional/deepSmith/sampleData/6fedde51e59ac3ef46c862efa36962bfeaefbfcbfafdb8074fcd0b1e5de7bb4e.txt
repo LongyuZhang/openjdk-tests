@@ -1,0 +1,14 @@
+public static String fn_A(Object[][] a){
+  int b=a.length;
+  if (b == 0)   return "";
+  int c=a[0].length;
+  String d="";
+  for (int e=0; e < b; e++) {
+    for (int f=0; f < c; f++) {
+      if (a[e][f] != null)       d+=((Number)(a[e][f])).intValue() + " ";
+ else       d+="0 ";
+    }
+    d+="\n";
+  }
+  return d;
+}

@@ -1,0 +1,40 @@
+private static void fn_A(int[] a,int[] b,int c,int d,float e){
+  e-=(int)e;
+  float f=1.0f / (1 + 2 * e);
+  int g=0;
+  for (int h=0; h < d; h++) {
+    int i=h;
+    b[i]=a[0];
+    i+=d;
+    for (int j=1; j < c - 1; j++) {
+      int k=g + j;
+      int l=a[k - 1];
+      int m=a[k];
+      int n=a[k + 1];
+      int o=(l >> 24) & 0xff;
+      int p=(l >> 16) & 0xff;
+      int q=(l >> 8) & 0xff;
+      int r=l & 0xff;
+      int s=(m >> 24) & 0xff;
+      int t=(m >> 16) & 0xff;
+      int u=(m >> 8) & 0xff;
+      int v=m & 0xff;
+      int w=(n >> 24) & 0xff;
+      int x=(n >> 16) & 0xff;
+      int y=(n >> 8) & 0xff;
+      int z=n & 0xff;
+      o=s + (int)((o + w) * e);
+      p=t + (int)((p + x) * e);
+      q=u + (int)((q + y) * e);
+      r=v + (int)((r + z) * e);
+      o*=f;
+      p*=f;
+      q*=f;
+      r*=f;
+      b[i]=(o << 24) | (p << 16) | (q << 8)| r;
+      i+=d;
+    }
+    b[i]=a[c - 1];
+    g+=c;
+  }
+}

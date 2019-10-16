@@ -1,4 +1,0 @@
-public static final void fn_A(int[] a) throws NullPointerException {
-  int b=a.length;
-  while (b-- > 0)   a[b]=~a[b];
-}

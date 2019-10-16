@@ -1,0 +1,25 @@
+public static int fn_A(double a[][]){
+  int b=a.length;
+  if (b < 2)   return 0;
+  double c=Double.MAX_VALUE;
+  int d=0;
+  int e=0;
+  for (int f=0; f < b; f++) {
+    for (int g=f + 1; g < b; g++) {
+      if (c > a[f][g]) {
+        c=a[f][g];
+        d=f;
+        e=g;
+      }
+    }
+  }
+  double h=Double.MAX_VALUE;
+  double i=Double.MAX_VALUE;
+  for (int g=0; g < b; g++) {
+    if (g == d || g == e)     continue;
+    if ((g > d) && (h > a[d][g]))     h=a[d][g];
+    if ((g > e) && (i > a[e][g]))     i=a[e][g];
+  }
+  if (i > h)   d=e;
+  return d;
+}

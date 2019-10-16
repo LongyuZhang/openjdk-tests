@@ -1,5 +1,0 @@
-public static <T>void fn_A(Comparable<T>[] a,int b,int c){
-  Comparable<T> d=a[b];
-  a[b]=a[c];
-  a[c]=d;
-}

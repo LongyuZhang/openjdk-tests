@@ -1,0 +1,5 @@
+public static int fn_A(byte a,int b){
+  int c=(a ^ b) & 0xff;
+  c^=(c << 4) & 0xff;
+  return ((b >> 8) ^ (c << 8) ^ (c << 3)^ (c >> 4)) & 0xffff;
+}

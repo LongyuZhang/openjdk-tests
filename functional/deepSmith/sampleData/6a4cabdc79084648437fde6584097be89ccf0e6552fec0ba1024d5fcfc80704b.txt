@@ -1,0 +1,17 @@
+public static int fn_A(int a,int b){
+  int c=new GregorianCalendar().get(Calendar.WEEK_OF_YEAR);
+  int d=0;
+  if (a == 0)   d=1;
+  if ((a == 1 && c % 2 == 1) || (a == 2 && c % 2 == 0)) {
+    d=2;
+  }
+  if ((a == 1 && c % 2 == 0) || (a == 2 && c % 2 == 1)) {
+    if (b == 0) {
+      d=1;
+    }
+ else {
+      d=2;
+    }
+  }
+  return d;
+}

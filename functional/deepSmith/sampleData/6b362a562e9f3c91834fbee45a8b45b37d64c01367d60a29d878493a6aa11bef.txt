@@ -1,0 +1,6 @@
+public final static double[] fn_A(double[] a){
+  if ((a == null) || (a.length != 2)) {
+    a=new double[2];
+  }
+  return a;
+}

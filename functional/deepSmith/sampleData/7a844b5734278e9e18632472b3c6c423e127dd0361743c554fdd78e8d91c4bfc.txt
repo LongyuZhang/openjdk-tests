@@ -1,0 +1,9 @@
+public static double fn_A(final float a,final float[] b){
+  int c=0;
+  for (int d=0; d < b.length; d++) {
+    if (b[d] > a) {
+      c++;
+    }
+  }
+  return ((double)c) / (double)b.length;
+}

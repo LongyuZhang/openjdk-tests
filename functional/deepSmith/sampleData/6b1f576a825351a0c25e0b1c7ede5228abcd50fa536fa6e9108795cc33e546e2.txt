@@ -1,0 +1,9 @@
+public static double fn_A(double[] a,double b,double[] c,double d){
+  assert(a.length == c.length);
+  double e=0.0;
+  for (int f=0; f < a.length; f++) {
+    double g=(a[f] / b) - (c[f] / d);
+    e+=g * g;
+  }
+  return e;
+}

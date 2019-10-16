@@ -1,0 +1,6 @@
+public static int fn_A(char[] a,char b){
+  for (int c=0; c < a.length; c++) {
+    if (a[c] == b)     return c;
+  }
+  return -1;
+}

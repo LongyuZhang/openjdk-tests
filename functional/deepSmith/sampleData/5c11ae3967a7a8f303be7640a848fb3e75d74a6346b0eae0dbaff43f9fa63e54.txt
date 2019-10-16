@@ -1,9 +1,0 @@
-public static void main(String[] a){
-  long b=System.currentTimeMillis();
-  int c=0;
-  for (int d=0; d < 30000000; d++) {
-    c+=d;
-  }
-  long e=System.currentTimeMillis();
-  System.out.println("" + (e - b) + "");
-}

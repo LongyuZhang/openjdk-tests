@@ -1,9 +1,0 @@
-public static boolean fn_A(char a,int b,char[] c){
-  for (int d=b; d < c.length; d++) {
-    char e=c[d];
-    if (e == a) {
-      return true;
-    }
-  }
-  return false;
-}

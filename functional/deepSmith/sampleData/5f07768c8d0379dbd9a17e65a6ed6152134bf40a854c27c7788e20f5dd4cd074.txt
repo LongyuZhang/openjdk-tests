@@ -1,0 +1,11 @@
+private static int fn_A(int a){
+  int b;
+  int c=-1;
+  if (a == 0) {
+    return 1;
+  }
+  for (b=1; b < a; b++) {
+    c*=-1;
+  }
+  return c;
+}

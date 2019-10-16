@@ -1,0 +1,5 @@
+static void fn_A(final String a,final int b,final int c){
+  if ((b < 1) || ((b == 1) && (c < 8)) || (b >= 9)) {
+    throw new ExceptionInInitializerError("Unsupported JDK Major Version, must be 1.8: " + a);
+  }
+}

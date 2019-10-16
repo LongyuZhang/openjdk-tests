@@ -1,0 +1,10 @@
+public static double fn_A(int a,int b){
+  double c=1;
+  if (a > b) {
+    c=(double)b / (double)a;
+  }
+ else {
+    c=(double)b / (double)a;
+  }
+  return c;
+}

@@ -1,0 +1,8 @@
+private static long fn_A(long[] a,int[] b){
+  long c=1;
+  int d=Math.min(a.length,b.length);
+  for (int e=0; e < d; e++) {
+    c*=a[b[e]];
+  }
+  return c;
+}

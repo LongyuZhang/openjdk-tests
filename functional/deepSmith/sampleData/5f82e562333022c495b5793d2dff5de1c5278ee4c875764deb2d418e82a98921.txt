@@ -1,0 +1,7 @@
+static public double fn_A(int a,long b,long c){
+  double d=0;
+  if (a > 1) {
+    d=((c - ((b * b) / (double)a)) / ((double)a - 1));
+  }
+  return d;
+}

@@ -1,0 +1,4 @@
+private static byte[] fn_A(boolean a){
+  byte[] b=null;
+  return b;
+}

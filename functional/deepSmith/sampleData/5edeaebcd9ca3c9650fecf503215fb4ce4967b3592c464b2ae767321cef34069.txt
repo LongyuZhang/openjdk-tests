@@ -1,6 +1,0 @@
-public static void main(String[] a){
-  int[][] b={{400,450,510},{500,560,630},{625,676,740},{1000,1250,1600}};
-  int c;
-  int d;
-  for (c=0; c < b.length; ++c)   for (d=0; d < b[c].length; ++d)   System.out.println("Floor " + c + " Bedrooms "+ d+ "   Rent is $"+ b[c][d]);
-}

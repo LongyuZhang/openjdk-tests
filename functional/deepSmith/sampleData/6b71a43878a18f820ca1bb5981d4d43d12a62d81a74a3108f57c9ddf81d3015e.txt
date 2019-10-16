@@ -1,0 +1,12 @@
+static void fn_A(){
+  new Object(){
+    final static String a="Anon1_1$A2$7";
+    final static String b="Anon1_1$10";
+  }
+;
+  new Object(){
+    final static String a="Anon1_1$A2$8";
+    final static String b="Anon1_1$11";
+  }
+;
+}

@@ -1,0 +1,19 @@
+private static boolean fn_A(char[][] a,int b,int c){
+  boolean d=false;
+  if (a[b][c] == 'O') {
+    d=true;
+  }
+ else   if (b > 0 && a[b - 1][c] == 'O') {
+    d=true;
+  }
+ else   if (b < a.length - 1 && a[b + 1][c] == 'O') {
+    d=true;
+  }
+ else   if (c < a[0].length - 1 && a[b][c + 1] == 'O') {
+    d=true;
+  }
+ else   if (c > 0 && a[b][c - 1] == 'O') {
+    d=true;
+  }
+  return d;
+}

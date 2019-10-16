@@ -1,0 +1,10 @@
+public static byte[] fn_A(final byte[] a){
+  int b, c;
+  final int d;
+  if ((d=a.length) > 0) {
+    final byte[] e=new byte[d];
+    for (b=0, c=d - 1; c >= 0; )     e[b++]=a[c--];
+    return e;
+  }
+  return a;
+}

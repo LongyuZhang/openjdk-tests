@@ -1,0 +1,6 @@
+protected static String fn_A(String a,String b){
+  if (a == null) {
+    return b;
+  }
+  return a;
+}

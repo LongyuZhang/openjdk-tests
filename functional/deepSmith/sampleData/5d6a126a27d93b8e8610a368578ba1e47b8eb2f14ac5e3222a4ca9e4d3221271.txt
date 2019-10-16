@@ -1,7 +1,0 @@
-private static char fn_A(int a){
-  char b=(char)0;
-  if (Character.isDefined((char)a)) {
-    b=(char)a;
-  }
-  return b;
-}

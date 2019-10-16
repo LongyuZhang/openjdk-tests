@@ -1,0 +1,25 @@
+static public UUID fn_A(byte[] a){
+  if (a == null) {
+    return null;
+  }
+  if (a.length != 16) {
+    throw new IllegalArgumentException("must be 16 bytes in length");
+  }
+  int b=(a[0] >> 4) & 0x0F;
+  if (b != 1) {
+    throw new IllegalArgumentException("not a time-based byte array");
+  }
+  long c=0;
+  long d=0;
+  for (int e=4; e < 8; e++) {
+    c=(c << 8) | (a[e] & 0xff);
+  }
+  c=(c << 8) | (a[2] & 0xff);
+  c=(c << 8) | (a[3] & 0xff);
+  c=(c << 8) | (a[0] & 0xff);
+  c=(c << 8) | (a[1] & 0xff);
+  for (int e=8; e < 16; e++) {
+    d=(d << 8) | (a[e] & 0xff);
+  }
+  return new UUID(c,d);
+}

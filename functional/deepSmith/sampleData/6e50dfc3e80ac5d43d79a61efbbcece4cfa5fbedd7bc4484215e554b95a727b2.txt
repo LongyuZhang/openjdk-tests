@@ -1,0 +1,10 @@
+public static String[] fn_A(String[] a,String[] b){
+  String[] c=new String[a.length + b.length];
+  for (int d=0; d < a.length; d++) {
+    c[d]=a[d];
+  }
+  for (int d=0; d < b.length; d++) {
+    c[a.length + d]=b[d];
+  }
+  return c;
+}

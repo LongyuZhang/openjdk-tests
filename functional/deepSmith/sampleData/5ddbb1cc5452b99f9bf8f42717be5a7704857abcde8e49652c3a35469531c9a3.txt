@@ -1,4 +1,0 @@
-private static InputStream fn_A(String a) throws IOException {
-  Object b=new BufferedInputStream(new FileInputStream(a));
-  return ((InputStream)(b));
-}

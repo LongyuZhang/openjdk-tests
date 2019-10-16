@@ -1,0 +1,9 @@
+private static void fn_A(){
+  System.err.println("Usage: ApplicationServer [-numApples <numApples>]");
+  System.err.println("                         [-registryHost <host>]");
+  System.err.println("  numApples  The number of apples (threads) to use.");
+  System.err.println("             The default is 10 apples.");
+  System.err.println("  host       The host running rmiregistry " + "which contains AppleUser.");
+  System.err.println("             The default is \"localhost\".");
+  System.err.println();
+}

@@ -1,0 +1,4 @@
+static String fn_A(int a){
+  if (a == 0)   return "00000";
+ else   return "HY" + a;
+}

@@ -1,0 +1,27 @@
+public static float fn_A(float[] a,int b){
+  final int c=a.length;
+  int d, e, f, g;
+  float h;
+  f=0;
+  g=c - 1;
+  while (f < g) {
+    h=a[b];
+    d=f;
+    e=g;
+    do {
+      while (a[d] < h)       d++;
+      while (h < a[e])       e--;
+      if (d <= e) {
+        final float i=a[d];
+        a[d]=a[e];
+        a[e]=i;
+        d++;
+        e--;
+      }
+    }
+ while (d <= e);
+    if (e < b)     f=d;
+    if (b < d)     g=e;
+  }
+  return a[b];
+}

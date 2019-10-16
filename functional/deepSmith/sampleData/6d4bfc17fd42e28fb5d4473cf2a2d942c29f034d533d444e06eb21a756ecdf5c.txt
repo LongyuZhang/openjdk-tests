@@ -1,0 +1,10 @@
+public static boolean fn_A(char[][] a){
+  for (int b=0; b < a.length; b++) {
+    int[] c=new int[a.length];
+    for (int d=0; d < a[b].length; d++) {
+      c[a[b][d] - 65]++;
+      if (c[a[b][d] - 65] > 1)       return false;
+    }
+  }
+  return true;
+}

@@ -1,0 +1,7 @@
+public static int fn_A(int[] a){
+  int b=0;
+  for (int c=0; c < a.length; c+=1) {
+    b+=a[c];
+  }
+  return b;
+}

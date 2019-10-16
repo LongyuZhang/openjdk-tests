@@ -1,0 +1,15 @@
+public static double fn_A(double[] a,double[] b,int c,String d){
+  double[] e={0.00024135904904198073,0.0004827180980838,0.00024135904904198073};
+  double[] f={1,-1.9555782403150355,0.95654367651120342};
+  double g=0.0;
+  double h=0.0;
+  double i=0;
+  for (int j=0; j <= 2; j++) {
+    g=g + (e[j] * a[c - j]);
+  }
+  for (int k=1; k <= 2; k++) {
+    h=h + (f[k] * b[k - 1]);
+  }
+  i=0 - h + g;
+  return i;
+}

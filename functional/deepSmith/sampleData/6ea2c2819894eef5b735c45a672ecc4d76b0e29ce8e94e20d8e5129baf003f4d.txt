@@ -1,0 +1,8 @@
+private static short[] fn_A(final String[] a){
+  final int b=a.length;
+  final short[] c=new short[b];
+  for (int d=0; d < b; ++d) {
+    c[d]=Short.parseShort(a[d]);
+  }
+  return c;
+}

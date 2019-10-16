@@ -1,0 +1,5 @@
+private static double fn_A(int[][] a,int b,int c,int d,int e,int f){
+  double g=(b * c) / f;
+  double h=(a[d][e] - g);
+  return (h * h) / g;
+}

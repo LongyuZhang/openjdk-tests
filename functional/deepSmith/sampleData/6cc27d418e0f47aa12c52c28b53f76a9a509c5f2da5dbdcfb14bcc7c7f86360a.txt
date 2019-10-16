@@ -1,0 +1,7 @@
+public static void fn_A(){
+  System.out.println("java lingscope.drivers.SentencePosTagger cue_tagging_model " + "cue_tagger_type(baseline|crf|negex) " + "replace_cue_with_custom_tag(true|false) scope_tagging_model "+ "pos_model_file sentence_to_tag");
+  System.out.println("\tSaved model for negation can be obtained from http://negscope.askhermes.org/");
+  System.out.println("\tSaved model for speculation can be obtained from http://hedgescope.askhermes.org/");
+  System.out.println("\tSaved model for NegEx can be obtained from http://code.google.com/p/negex/downloads/list");
+  System.out.println("\tSaved pos_model_file can be obtained from http://hedgescope.askhermes.org/");
+}

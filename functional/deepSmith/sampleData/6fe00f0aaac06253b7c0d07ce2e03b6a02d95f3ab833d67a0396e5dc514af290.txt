@@ -1,0 +1,6 @@
+public static <T>Set<T> fn_A(final Set<T> a){
+  if (a == null) {
+    return null;
+  }
+  return new LinkedHashSet<T>(a);
+}

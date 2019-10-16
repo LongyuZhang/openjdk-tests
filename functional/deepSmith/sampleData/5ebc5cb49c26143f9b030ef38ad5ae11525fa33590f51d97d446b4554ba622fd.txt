@@ -1,4 +1,0 @@
-public static String fn_A(double a,double b){
-  double c=(a * 100d) / b;
-  return (int)c + "%";
-}

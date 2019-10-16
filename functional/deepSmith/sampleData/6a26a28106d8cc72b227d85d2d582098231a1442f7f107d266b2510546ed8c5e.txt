@@ -1,0 +1,11 @@
+private static void fn_A(){
+  System.out.println("Usage: AppleUserImpl [-hours <hours> | " + "-seconds <seconds>]");
+  System.out.println("                     [-maxLevel <maxLevel>]");
+  System.out.println("  hours    The number of hours to run the juicer.");
+  System.out.println("           The default is 0 hours.");
+  System.out.println("  seconds  The number of seconds to run the juicer.");
+  System.out.println("           The default is 0 seconds.");
+  System.out.println("  maxLevel The maximum number of levels to ");
+  System.out.println("           recurse on each call.");
+  System.out.println("           The default is 7 levels.");
+}

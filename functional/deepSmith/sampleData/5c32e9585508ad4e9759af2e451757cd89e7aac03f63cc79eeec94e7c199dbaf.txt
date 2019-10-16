@@ -1,6 +1,0 @@
-public static boolean fn_A(final char a){
-  if (a >= '0' && a <= '9')   return true;
-  if (a >= 'A' && a <= 'F')   return true;
-  if (a >= 'a' && a <= 'f')   return true;
-  return false;
-}

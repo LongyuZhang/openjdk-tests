@@ -1,0 +1,4 @@
+private static String fn_A(long a){
+  if (a == 0)   return (" seconds");
+  return ((a > 1 ? " seconds" : " second"));
+}

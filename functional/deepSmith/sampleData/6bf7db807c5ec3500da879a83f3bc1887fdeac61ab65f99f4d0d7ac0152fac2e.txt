@@ -1,0 +1,63 @@
+static void fn_A(int a[]){
+  String b[]={"one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
+  String c[]={"ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"};
+  String d[]={"hundred","thousand","million","billion","trillion","quadrillion"};
+  int e, f, g, h;
+  e=a.length / 3;
+  f=a.length % 3;
+  for (g=0; g < a.length; g++) {
+    System.out.print(a[g]);
+  }
+  System.out.print("->");
+  if (f == 0) {
+    for (g=0, h=0; g < e; g++, h+=3) {
+      System.out.print(b[a[h] - 1] + "  " + d[0]+ "  ");
+      if (a[h + 1] == 0) {
+        if (g == e - 1)         System.out.print(b[a[h + 2] - 1] + "  ");
+ else         System.out.print(b[a[h + 2] - 1] + "  " + d[e - (g + 1)]+ "  ");
+        continue;
+      }
+      if (a[h + 1] == 1) {
+        if (g == e - 1)         System.out.print(b[a[h + 2] - 1] + "  ");
+ else         System.out.print(b[9 + a[h + 2]] + "  " + d[e - (g + 1)]+ "  ");
+        continue;
+      }
+      System.out.print(c[a[h + 1] - 1] + "  " + b[a[h + 2] - 1]+ "  "+ d[e - (g + 1)]+ "  ");
+    }
+  }
+  if (f == 1) {
+    System.out.print(b[a[0] - 1] + "  " + d[e]+ "  ");
+    for (g=1, h=1; g <= e; g++, h+=3) {
+      System.out.print(b[a[h] - 1] + "  " + d[0]+ "  ");
+      if (a[h + 1] == 0) {
+        if (g == e)         System.out.print(b[a[h + 2] - 1] + "  ");
+ else         System.out.print(b[a[h + 2] - 1] + "  " + d[e - g]+ "  ");
+        continue;
+      }
+      if (a[h + 1] == 1) {
+        if (g == e)         System.out.print(b[9 + a[h + 2]] + "  ");
+ else         System.out.print(b[9 + a[h + 2]] + "  " + d[e - g]);
+        continue;
+      }
+      System.out.print(c[a[h + 1] - 1] + "  " + b[a[h + 2] - 1]+ "  "+ d[e - (g)]+ "  ");
+    }
+  }
+  if (f == 2) {
+    if (a[0] == 1)     System.out.print(b[a[1] + 9] + "  " + d[e]+ "  ");
+ else     System.out.print(c[a[0] - 1] + "  " + b[a[1] - 1]+ "  "+ d[e]+ "  ");
+    for (g=2, h=2; g <= e + 1; g++, h+=3) {
+      System.out.print(b[a[h] - 1] + "  " + d[0]+ "  ");
+      if (a[h + 1] == 0) {
+        if (g == e + 1)         System.out.print(b[a[h + 2] - 1] + "  ");
+ else         System.out.print(b[a[h + 2] - 1] + "  " + d[e - (g - 1)]+ "  ");
+        continue;
+      }
+      if (a[h + 1] == 1) {
+        if (g == e + 1)         System.out.print(b[9 + a[h + 2]] + "  ");
+ else         System.out.print(b[9 + a[h + 2]] + "  " + d[e - (g - 1)]+ "  ");
+        continue;
+      }
+      System.out.print(c[a[h + 1] - 1] + "  " + b[a[h + 2] - 1]+ "  "+ d[e - (g - 1)]+ "  ");
+    }
+  }
+}

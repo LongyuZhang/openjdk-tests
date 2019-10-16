@@ -1,8 +1,0 @@
-public static boolean fn_A(float a,float b,float c,int d,int e){
-  float f=a - d;
-  float g=b - e;
-  if ((f * f) + (g * g) < c * c) {
-    return true;
-  }
-  return false;
-}

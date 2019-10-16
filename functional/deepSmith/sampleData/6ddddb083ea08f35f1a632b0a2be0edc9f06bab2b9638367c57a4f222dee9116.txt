@@ -1,0 +1,10 @@
+private static List<Double> fn_A(){
+  return new ArrayList<Double>(){
+{
+      add(2.01);
+      add(2.02);
+      add(2.03);
+    }
+  }
+;
+}

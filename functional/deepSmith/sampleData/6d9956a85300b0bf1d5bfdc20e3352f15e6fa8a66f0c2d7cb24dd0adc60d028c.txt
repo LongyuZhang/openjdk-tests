@@ -1,0 +1,7 @@
+public static float[] fn_A(final float[] a){
+  for (int b=0; b < a.length; b++) {
+    final float c=a[b];
+    a[b]=c * c;
+  }
+  return a;
+}

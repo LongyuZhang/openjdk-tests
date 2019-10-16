@@ -1,5 +1,0 @@
-public static void fn_A(int a){
-  System.err.println("Warning: EXPECTED_SITES is not valid for " + (new Object(){
-  }
-.getClass().getEnclosingClass().getName()));
-}

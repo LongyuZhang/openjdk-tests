@@ -1,0 +1,8 @@
+private static void fn_A(final byte[] a,final int b,final int c){
+  for (int d=c; d < b; d++) {
+    int e;
+    e=a[d] & 0xff;
+    e+=a[d - c] & 0xff;
+    a[d]=(byte)e;
+  }
+}

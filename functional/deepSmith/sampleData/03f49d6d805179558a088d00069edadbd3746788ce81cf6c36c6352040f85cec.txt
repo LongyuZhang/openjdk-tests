@@ -1,8 +1,0 @@
-public static short fn_A(byte[] a){
-  short b=0;
-  short c=(short)(a[1] & 0xff);
-  short d=(short)(a[0] & 0xff);
-  d<<=8;
-  b=(short)(c | d);
-  return b;
-}

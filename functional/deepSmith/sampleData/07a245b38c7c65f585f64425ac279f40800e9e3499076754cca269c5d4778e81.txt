@@ -1,0 +1,20 @@
+public static float fn_A(float[] a,int b,int c,int d){
+  float e=a[c];
+  float f=a[c + 1];
+  float g=a[d] - e;
+  float h=a[d + 1] - f;
+  if (g != 0 || h != 0) {
+    float i=((a[b] - e) * g + (a[b + 1] - f) * h) / (g * g + h * h);
+    if (i > 1) {
+      e=a[d];
+      f=a[d + 1];
+    }
+ else     if (i > 0) {
+      e+=g * i;
+      f+=h * i;
+    }
+  }
+  g=a[b] - e;
+  h=a[b + 1] - f;
+  return g * g + h * h;
+}

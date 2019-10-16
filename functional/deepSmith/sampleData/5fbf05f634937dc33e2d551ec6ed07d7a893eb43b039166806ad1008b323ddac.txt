@@ -1,0 +1,34 @@
+private static Class fn_A(final char a,final int b,final int c){
+  final Class d;
+switch (a) {
+case 'C':
+    d=String.class;
+  break;
+case 'N':
+if (b == 0) {
+  if (c < 10) {
+    d=Integer.class;
+  }
+ else {
+    d=Long.class;
+  }
+}
+ else {
+  d=Double.class;
+}
+break;
+case 'F':
+d=Double.class;
+break;
+case 'L':
+d=Boolean.class;
+break;
+case 'D':
+d=Date.class;
+break;
+default :
+d=String.class;
+break;
+}
+return d;
+}

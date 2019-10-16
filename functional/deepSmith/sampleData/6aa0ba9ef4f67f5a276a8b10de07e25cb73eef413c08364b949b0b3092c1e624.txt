@@ -1,0 +1,6 @@
+private static byte[] fn_A(int a){
+  byte[] b=new byte[2];
+  b[0]=(byte)(a / 10 + '0');
+  b[1]=(byte)(a % 10 + '0');
+  return b;
+}

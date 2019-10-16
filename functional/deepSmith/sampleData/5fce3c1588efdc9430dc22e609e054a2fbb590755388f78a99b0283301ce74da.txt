@@ -1,0 +1,31 @@
+private static double fn_A(double[] a,int b,int[] c,int[] d,int e,int[] f,int g,double h){
+  double i=a[b];
+  final double j=0.5 * (i + h);
+  int k;
+  int l;
+  int m;
+  if (g == 1) {
+    k=c[e] + 1;
+    l=d[e];
+    m=1;
+  }
+ else {
+    k=c[e] - 1;
+    l=-1;
+    m=-1;
+  }
+  final int n=m * f[e];
+  for (int o=k; o != l; o+=m) {
+    b+=n;
+    double p=i;
+    i=a[b];
+    if (i < j) {
+      return o - m * (j - i) / (p - i);
+    }
+    p=i;
+  }
+  if (g == 1) {
+    return d[e];
+  }
+  return 0;
+}

@@ -1,9 +1,0 @@
-public static int fn_A(int[] a,int b,int c){
-  int d=0;
-  for (int e=0; e < a.length; e++) {
-    if (a[e] >= b && a[e] < c) {
-      d++;
-    }
-  }
-  return d;
-}

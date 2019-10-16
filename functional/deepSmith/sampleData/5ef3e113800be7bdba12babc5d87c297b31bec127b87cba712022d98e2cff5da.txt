@@ -1,5 +1,0 @@
-private static final String fn_A(){
-  boolean a=System.getProperty("os.name").toLowerCase().indexOf("windows") != -1;
-  if (a)   return "";
- else   return "lib";
-}

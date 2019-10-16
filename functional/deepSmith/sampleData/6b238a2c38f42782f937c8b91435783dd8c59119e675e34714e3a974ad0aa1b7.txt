@@ -1,0 +1,8 @@
+public static byte[] fn_A(int[] a){
+  byte[] b=new byte[a.length << 1];
+  for (int c=0, d=0; c < a.length; c++) {
+    b[d++]=(byte)(((a[c] >> 16) & 0xff) * 0.2126 + ((a[c] >> 8) & 0xff) * 0.7152 + (a[c] & 0xff) * 0.0722);
+    b[d++]=(byte)((a[c] >> 24) & 0xff);
+  }
+  return b;
+}

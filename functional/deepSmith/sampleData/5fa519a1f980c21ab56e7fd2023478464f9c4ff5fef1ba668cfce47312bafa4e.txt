@@ -1,0 +1,12 @@
+public static char fn_A(char a,int b,char c,char d){
+  int e=a + b;
+  if (e > d) {
+    int f=e - d;
+    e=c + f - 1;
+  }
+  if (e < c) {
+    int f=c - e;
+    e=d - f + 1;
+  }
+  return (char)e;
+}

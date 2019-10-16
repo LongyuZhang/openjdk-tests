@@ -1,0 +1,9 @@
+public static boolean fn_A(int a,int[] b){
+  if (b.length < 2)   throw new IllegalArgumentException("Range must be at least 2 long!");
+  if (b.length % 2 != 0)   throw new IllegalArgumentException("Range must contain an even number of pairs!");
+  int c=0;
+  while (c < b.length) {
+    if (a >= b[c++] && a <= b[c++])     return true;
+  }
+  return false;
+}

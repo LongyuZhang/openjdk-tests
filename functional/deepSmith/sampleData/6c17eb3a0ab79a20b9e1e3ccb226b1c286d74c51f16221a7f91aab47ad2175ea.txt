@@ -1,0 +1,4 @@
+public static double fn_A(){
+  double[] a=null;
+  return a[4];
+}

@@ -1,0 +1,6 @@
+private static String fn_A(){
+  if (System.getProperties().contains("jboss.server.temp.dir")) {
+    return System.getProperty("jboss.server.temp.dir");
+  }
+  return System.getProperty("java.io.tmpdir");
+}

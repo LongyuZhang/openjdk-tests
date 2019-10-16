@@ -1,0 +1,26 @@
+public static long fn_A(int a,int b){
+  if (b < 0 || b > a) {
+    return 0;
+  }
+  if (b > a - b) {
+    b=a - b;
+  }
+  if (b == 0) {
+    return 1;
+  }
+  if (b == 1) {
+    return a;
+  }
+  long[] c=new long[a + 1];
+  c[0]=1;
+  c[1]=1;
+  for (int d=2; d <= a; d++) {
+    c[d]=1;
+    c[d - 1]=d;
+    for (int e=d - 2, f=0; e > 1 && f < b; e--, f++) {
+      c[e]+=c[e - 1];
+    }
+    c[1]=d;
+  }
+  return c[a - b];
+}

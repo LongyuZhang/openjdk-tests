@@ -1,8 +1,0 @@
-public static final long fn_A(long a,long b) throws ArithmeticException {
-  long c=0L;
-  if (a >= 0L) {
-    if (b >= 0L)     c=a / b;
-  }
- else   if (b >= 0L && (a-=(c=((a >>> 1) / b) << 1) * b) < 0L || a >= b)   c++;
-  return c;
-}

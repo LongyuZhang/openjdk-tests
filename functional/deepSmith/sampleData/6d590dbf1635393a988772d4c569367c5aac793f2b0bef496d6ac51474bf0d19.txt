@@ -1,0 +1,8 @@
+public static void main(String[] a){
+  double[] b={6.25,6.55,10.25,16.85};
+  System.out.println("Salaries one by one are:");
+  System.out.println(b[0]);
+  System.out.println(b[1]);
+  System.out.println(b[2]);
+  System.out.println(b[3]);
+}

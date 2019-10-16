@@ -1,5 +1,0 @@
-public static int fn_A(double a){
-  if (a == 0)   System.out.println("poo");
-  if (a >= 0)   return 1;
-  return -1;
-}

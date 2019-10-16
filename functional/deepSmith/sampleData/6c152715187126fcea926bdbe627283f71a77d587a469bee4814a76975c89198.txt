@@ -1,0 +1,12 @@
+private static char fn_A(char a){
+switch (a) {
+case '\u002d':
+case '\u2012':
+case '\u2013':
+case '\u2014':
+case '\u2212':
+    return '-';
+default :
+  return a;
+}
+}

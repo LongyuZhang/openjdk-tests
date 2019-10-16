@@ -1,0 +1,11 @@
+public static long fn_A(byte[] a,int b){
+  long c;
+  c=(long)(a[b] & 0x0FF);
+  c<<=8;
+  c+=(long)(a[b + 1] & 0x0FF);
+  c<<=8;
+  c+=(long)(a[b + 2] & 0x0FF);
+  c<<=8;
+  c+=(long)(a[b + 3] & 0x0FF);
+  return c;
+}

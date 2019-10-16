@@ -1,9 +1,0 @@
-public static Object[] fn_A(final Object a){
-  final char[] b=(char[])a;
-  final int c=b.length;
-  final Character[] d=new Character[c];
-  for (int e=0; e < d.length; e++) {
-    d[e]=Character.valueOf(b[e]);
-  }
-  return d;
-}

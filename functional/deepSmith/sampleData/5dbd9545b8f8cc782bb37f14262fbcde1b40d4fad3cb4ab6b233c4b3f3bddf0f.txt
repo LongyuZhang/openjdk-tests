@@ -1,7 +1,0 @@
-public static int fn_A(int a){
-  int b=a >>> 6;
-  if ((a & 63) != 0) {
-    b++;
-  }
-  return b;
-}

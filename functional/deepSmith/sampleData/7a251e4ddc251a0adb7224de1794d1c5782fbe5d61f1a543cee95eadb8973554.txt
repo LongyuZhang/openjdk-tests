@@ -1,0 +1,8 @@
+public static final double fn_A(double a){
+  if (a >= 360.0)   a%=360.0d;
+  if (a < 0.0) {
+    a%=360.0d;
+    if (a < 0.0)     a+=360;
+  }
+  return a;
+}

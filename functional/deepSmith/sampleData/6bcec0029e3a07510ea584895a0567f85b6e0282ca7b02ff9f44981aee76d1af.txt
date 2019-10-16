@@ -1,0 +1,8 @@
+private static boolean fn_A(String a,Object b){
+  if (b instanceof Boolean) {
+    return ((Boolean)b).booleanValue();
+  }
+ else {
+    throw new IllegalArgumentException("The value of " + a + " must be a boolean.");
+  }
+}

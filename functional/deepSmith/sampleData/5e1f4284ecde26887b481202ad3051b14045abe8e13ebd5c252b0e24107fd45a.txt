@@ -1,5 +1,0 @@
-public static void fn_A(boolean a,boolean b){
-  if (a != b) {
-    throw new RuntimeException("check failed!");
-  }
-}

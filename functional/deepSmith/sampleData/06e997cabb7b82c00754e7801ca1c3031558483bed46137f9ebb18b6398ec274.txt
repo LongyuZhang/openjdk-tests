@@ -1,0 +1,16 @@
+public static int fn_A(byte[] a,int b,int c,byte[] d,int e){
+  int f=c;
+  if (f > e) {
+    f=e;
+  }
+  for (int g=0; g < f; g++) {
+    if (a[b + g] == d[g]) {
+      continue;
+    }
+    return (((int)a[b + g]) & 0xff) > (((int)d[g]) & 0xff) ? 1 : -1;
+  }
+  if (c == e) {
+    return 0;
+  }
+  return c < e ? -1 : 1;
+}

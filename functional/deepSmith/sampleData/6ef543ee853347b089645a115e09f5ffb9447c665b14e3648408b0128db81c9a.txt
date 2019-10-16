@@ -1,0 +1,20 @@
+final protected static void fn_A(double[] a,int b,double[] c,int d,int e,double[] f,int g,int h){
+  int i=e << 1;
+  int j=2;
+  int k=(h * e) << 1;
+  int l=g << 1;
+  for (int m=0; m < e; m++) {
+    for (int n=0, o=(m << 1) + b, p=0; n < d; n++, o+=i, p+=j) {
+      c[p]=a[o];
+      c[p + 1]=a[o + 1];
+    }
+    for (int n=0, o=(m << 1) + b, q=(h * m) << 1; n < d; n++, o+=i, q+=k) {
+      a[o]=c[0];
+      a[o + 1]=c[1];
+      for (int r=1, p=2, s=q; r < d; r++, p+=j, s=(s + q) % l) {
+        a[o]+=c[p] * f[s] - c[p + 1] * f[s + 1];
+        a[o + 1]+=c[p] * f[s + 1] + c[p + 1] * f[s];
+      }
+    }
+  }
+}

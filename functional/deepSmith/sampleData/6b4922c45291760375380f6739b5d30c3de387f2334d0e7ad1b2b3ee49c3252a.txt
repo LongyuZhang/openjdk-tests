@@ -1,0 +1,11 @@
+private static int fn_A(final char a){
+  if ('0' <= a && a <= '9') {
+    return a - 48;
+  }
+ else   if ('A' <= a && a <= 'F') {
+    return a - 65 + 10;
+  }
+ else {
+    return 'a' <= a && a <= 'f' ? a - 97 + 10 : -1;
+  }
+}

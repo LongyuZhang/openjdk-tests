@@ -1,0 +1,8 @@
+public static <T>List<T> fn_A(Collection<? extends T> a){
+  if (a == null) {
+    return Collections.emptyList();
+  }
+ else {
+    return Collections.unmodifiableList(new ArrayList<>(a));
+  }
+}
