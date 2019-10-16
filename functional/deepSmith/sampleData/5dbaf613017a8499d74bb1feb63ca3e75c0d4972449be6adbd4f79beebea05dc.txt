@@ -1,0 +1,12 @@
+public static double[] fn_A(double a[],int b,int c){
+  double d[]=new double[b * c];
+  for (int e=0; e < c / 2; e++) {
+    for (int f=0; f < b / 2; f++) {
+      d[b * (c - c / 2 + e) + b - b / 2 + f]=a[f + b * e];
+      d[b * (c - c / 2 + e) + f]=a[b * e + f + b / 2];
+      d[b * e + b - b / 2 + f]=a[b * (e + c / 2) + f];
+      d[f + b * e]=a[b * (e + c / 2) + f + b / 2];
+    }
+  }
+  return d;
+}

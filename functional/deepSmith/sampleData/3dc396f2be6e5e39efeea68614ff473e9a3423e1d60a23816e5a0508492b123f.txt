@@ -1,5 +1,0 @@
-public static double[][] fn_A(double[][] a,double[] b,double[] c){
-  double[][] d=new double[a.length][a[0].length];
-  for (int e=0; e < d.length; e++)   for (int f=0; f < d[e].length; f++)   d[e][f]=(a[e][f] - b[f]) / c[f];
-  return d;
-}

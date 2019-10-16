@@ -1,4 +1,0 @@
-public static void main(String a[]){
-  if (!new Exception().getStackTrace()[0].getClassName().equals("Unknown"))   throw new Error("Stack trace is here");
-  System.out.println("Hello World");
-}

@@ -1,0 +1,9 @@
+public static int fn_A(char[] a){
+  int b=0;
+  if (a != null) {
+    for (int c=0; (c < 4) && (c < a.length); c++) {
+      b^=(0xFFFFFFFF & a[c]);
+    }
+  }
+  return b;
+}

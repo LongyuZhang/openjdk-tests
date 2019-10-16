@@ -1,0 +1,25 @@
+public static int fn_A(int a){
+switch (a) {
+case 10:
+case 2033:
+    return 4;
+case 12:
+case 2034:
+  return 3;
+case 13:
+case 2035:
+return 6;
+case 15:
+case 2036:
+return 5;
+case 17:
+case 2037:
+return 2;
+case 3500:
+case 3501:
+case 949:
+return 0;
+default :
+return 4;
+}
+}

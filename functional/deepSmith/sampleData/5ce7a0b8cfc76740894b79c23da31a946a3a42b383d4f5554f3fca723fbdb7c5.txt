@@ -1,0 +1,5 @@
+private static double fn_A(double a,double b,double c){
+  if (a >= 0 && a <= c)   return Math.max(0,a - b);
+ else   if (a <= 0 && a >= -c)   return Math.min(0,a + b);
+ else   return a;
+}

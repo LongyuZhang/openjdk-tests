@@ -1,0 +1,4 @@
+private static long fn_A(byte[] a,int b){
+  if (a == null)   return 0;
+  return (((a[b++] & 0x000000FFL)) | ((a[b++] << 8) & 0x0000FF00L) | ((a[b++] << 16) & 0x00FF0000L)| ((a[b] << 24) & 0xFF000000L));
+}

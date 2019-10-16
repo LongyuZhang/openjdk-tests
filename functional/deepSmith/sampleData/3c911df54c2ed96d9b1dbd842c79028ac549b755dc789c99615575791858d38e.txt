@@ -1,8 +1,0 @@
-private static String fn_A(float[] a){
-  StringBuilder b=new StringBuilder();
-  for (int c=0; c < a.length; c++) {
-    b.append(a[c]);
-    b.append(", ");
-  }
-  return b.toString();
-}

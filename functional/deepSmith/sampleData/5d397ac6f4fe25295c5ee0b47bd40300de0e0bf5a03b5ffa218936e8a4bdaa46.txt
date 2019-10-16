@@ -1,0 +1,23 @@
+private static int fn_A(int[] a,int[] b,int c,int d){
+  double e=a[b[(c + d) / 2]];
+  int f;
+  while (c < d) {
+    while ((a[b[c]] < e) && (c < d)) {
+      c++;
+    }
+    while ((a[b[d]] > e) && (c < d)) {
+      d--;
+    }
+    if (c < d) {
+      f=b[c];
+      b[c]=b[d];
+      b[d]=f;
+      c++;
+      d--;
+    }
+  }
+  if ((c == d) && (a[b[d]] > e)) {
+    d--;
+  }
+  return d;
+}

@@ -1,0 +1,18 @@
+public static final float fn_A(float a,float b,float c){
+  float d=a, e=b;
+  if (a < b) {
+    e=a;
+    d=b;
+  }
+  if (c > d)   d=c;
+  if (c < e)   e=c;
+  if (d == e)   return 0;
+  float f=0;
+  f=0;
+  float g=60f / (d - e);
+  if (d == a)   f=g * (b - c);
+ else   if (d == b)   f=g * (c - a) + 120f;
+ else   if (d == c)   f=g * (a - b) + 240f;
+  if (f < 0)   f+=360f;
+  return f;
+}

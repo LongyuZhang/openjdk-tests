@@ -1,5 +1,0 @@
-public static void fn_A(long a){
-  if (a <= 0) {
-    throw new IllegalArgumentException("The given id is less than or equal to zero.");
-  }
-}

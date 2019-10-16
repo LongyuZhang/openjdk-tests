@@ -1,0 +1,4 @@
+static int fn_A(int a,Integer b){
+  Integer c=Integer.valueOf(a + 1);
+  return b + c;
+}

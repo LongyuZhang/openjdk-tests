@@ -1,6 +1,0 @@
-private static int fn_A(long a){
-  if (a > Integer.MAX_VALUE || a < Integer.MIN_VALUE) {
-    throw new IllegalArgumentException("Magnitude of value " + a + " is too large to be represented by int");
-  }
-  return (int)a;
-}

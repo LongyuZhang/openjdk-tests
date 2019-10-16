@@ -1,6 +1,0 @@
-private static boolean fn_A(String a,String b){
-  if (a == null && b == null) {
-    return true;
-  }
-  return a != null && a.equals(b);
-}

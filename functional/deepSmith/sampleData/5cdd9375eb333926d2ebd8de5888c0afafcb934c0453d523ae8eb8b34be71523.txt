@@ -1,0 +1,14 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0x00:
+    return "NOT_VISIBLE_ALL (This application shall not be visible either to applications via an application listing API or to users via the navigator)";
+case 0x01:
+  return "NOT_VISIBLE_USERS (This application shall not be visible to users but shall be visible to applications via an application listing API)";
+case 0x02:
+return "reserved_future_use";
+case 0x03:
+return "VISIBLE_ALL (This application can be visible to users and shall be visible to applications via an application listing API)";
+default :
+return "illegal value";
+}
+}

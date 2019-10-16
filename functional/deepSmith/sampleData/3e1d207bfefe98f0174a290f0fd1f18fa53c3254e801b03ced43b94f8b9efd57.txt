@@ -1,4 +1,0 @@
-static double fn_A(double a){
-  Double b=new Double(a);
-  return b;
-}

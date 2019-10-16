@@ -1,0 +1,4 @@
+public static void main(String[] a){
+  String b="identifier: 1234567828; " + "balance: 1301.78; passcode: 9889; active: true; " + "owner's name: Lincoln Daniel; "+ "owner's address: 325 JavaPlace, UnitedJavas 19081; "+ "owner's birthday: May 26, 1993";
+  System.out.println("Our bank account: " + b);
+}

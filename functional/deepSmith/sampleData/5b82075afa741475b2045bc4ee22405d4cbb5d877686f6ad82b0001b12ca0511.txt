@@ -1,0 +1,5 @@
+private static void fn_A(String a){
+  if (a == null) {
+    throw new NullPointerException("'parameterName' may not be null.");
+  }
+}

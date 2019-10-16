@@ -1,8 +1,0 @@
-public static double fn_A(double[] a,double[] b){
-  double c=Math.abs(a[0] - b[0]);
-  for (int d=1; d < a.length; d++) {
-    double e=Math.abs(a[d] - b[d]);
-    if (e > c)     c=e;
-  }
-  return c;
-}

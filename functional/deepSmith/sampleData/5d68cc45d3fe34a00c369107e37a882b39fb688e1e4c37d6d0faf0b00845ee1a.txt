@@ -1,0 +1,7 @@
+public static int fn_A(byte[] a){
+  if (a[4] != (byte)0xF8 || a[5] != (byte)0x72 || a[6] != (byte)0x6F || (a[7] & 0xFE) != 0xBA) {
+    return 0;
+  }
+  boolean b=(a[7] & 0xFF) == 0xBB;
+  return 40 << ((a[b ? 9 : 8] >> 4) & 0x07);
+}

@@ -1,0 +1,6 @@
+public static String fn_A(String[] a,int b,String c){
+  if (a.length - b < 1) {
+    return "That's not the right number of arguments for **" + a[b - 1] + "**! "+ "Use ``"+ c+ " "+ a[0]+ " "+ a[b - 1]+ " [repeat]``";
+  }
+  return "";
+}

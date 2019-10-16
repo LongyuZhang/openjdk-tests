@@ -1,4 +1,0 @@
-protected static long fn_A(long a){
-  final long b=System.currentTimeMillis();
-  return (b >= a) ? (b - a) : Long.MAX_VALUE;
-}

@@ -1,0 +1,13 @@
+public static int fn_A(int a,int b){
+  int c=a + b;
+switch (c) {
+case 2:
+case 3:
+case 12:
+    return 0;
+case 7:
+case 11:
+  return 1;
+}
+return c;
+}

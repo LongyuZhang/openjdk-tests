@@ -1,7 +1,0 @@
-public static String fn_A(byte[] a,int b,int c){
-  String d="MIDI+" + b + " : ";
-  for (int e=0; e < c; e++) {
-    d+=String.format("0x%02X, ",a[b + e]);
-  }
-  return d;
-}

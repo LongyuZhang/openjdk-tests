@@ -1,9 +1,0 @@
-public static boolean fn_A(double a,double b){
-  double c=a / b;
-  if (c >= 1.5 || (c >= 0 && c <= 0.75) || (c >= -1.5 && c <= -0.75)) {
-    return true;
-  }
- else {
-    return false;
-  }
-}

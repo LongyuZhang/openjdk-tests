@@ -1,0 +1,10 @@
+public static void main(final String[] a){
+  try {
+    float[][] b=null;
+    b[0]=new float[10];
+  }
+ catch (  NullPointerException c) {
+    return;
+  }
+  throw new Error();
+}

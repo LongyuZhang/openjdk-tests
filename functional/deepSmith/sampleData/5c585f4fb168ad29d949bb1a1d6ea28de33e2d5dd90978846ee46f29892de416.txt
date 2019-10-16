@@ -1,0 +1,4 @@
+private static boolean fn_A(int a){
+  int b=((a >>> 24) & 0xFF);
+  return (b >= 0x80);
+}

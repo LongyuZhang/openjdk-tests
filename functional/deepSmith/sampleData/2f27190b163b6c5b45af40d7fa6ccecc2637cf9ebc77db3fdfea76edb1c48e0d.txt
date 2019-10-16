@@ -1,9 +1,0 @@
-public static int fn_A(final int a,final int b){
-  if (a > b) {
-    return 0;
-  }
- else   if (a == b) {
-    return a;
-  }
-  return a + new Random().nextInt(b - a);
-}

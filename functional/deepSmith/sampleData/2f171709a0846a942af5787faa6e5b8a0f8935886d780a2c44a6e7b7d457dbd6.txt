@@ -1,9 +1,0 @@
-static private final String fn_A(char a){
-  char[] b=new char[5];
-  b[0]='_';
-  b[1]=Character.forDigit((a >> 12) & 0xf,16);
-  b[2]=Character.forDigit((a >> 8) & 0xf,16);
-  b[3]=Character.forDigit((a >> 4) & 0xf,16);
-  b[4]=Character.forDigit(a & 0xf,16);
-  return new String(b);
-}

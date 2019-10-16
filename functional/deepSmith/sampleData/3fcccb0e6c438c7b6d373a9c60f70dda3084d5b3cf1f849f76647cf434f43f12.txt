@@ -1,0 +1,7 @@
+private static String fn_A(long a){
+  int b=(int)((a >> 24) % 256);
+  int c=(int)((a >> 16) % 256);
+  int d=(int)((a >> 8) % 256);
+  int e=(int)((a) % 256);
+  return b + "." + c+ "."+ d+ "."+ e;
+}

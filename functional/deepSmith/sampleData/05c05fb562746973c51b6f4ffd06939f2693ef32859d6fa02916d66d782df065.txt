@@ -1,0 +1,7 @@
+public static final double fn_A(int a){
+  double b=60000000.0D;
+  if (a == 0) {
+    return 0;
+  }
+  return b / a;
+}

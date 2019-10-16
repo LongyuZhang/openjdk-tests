@@ -1,4 +1,0 @@
-public static float fn_A(double a,float b,float c,double d){
-  a=a / d - 1;
-  return (float)(c * (a * a * a + 1) + b);
-}

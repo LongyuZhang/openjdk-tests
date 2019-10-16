@@ -1,0 +1,4 @@
+static private String fn_A(int a){
+  String b="PREFIX :	<http://www.example.org/> " + "SELECT *  " + "WHERE {"+ "?x a :A" + a + " . "+ "?x :S"+ a+ " ?y . "+ "?x :S"+ a+ 1+ " ?w . ";
+  return b;
+}

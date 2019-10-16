@@ -1,8 +1,0 @@
-private static void fn_A(String[][] a,int b,final int c){
-  for (int d=0; d < b; d++) {
-    for (int e=15; e > c; e--) {
-      a[d][e]=a[d][e - 1];
-    }
-    a[d][c]=" ";
-  }
-}

@@ -1,6 +1,0 @@
-private static int fn_A(int a,int b,int c){
-  if (a == c) {
-    return a;
-  }
-  return b;
-}

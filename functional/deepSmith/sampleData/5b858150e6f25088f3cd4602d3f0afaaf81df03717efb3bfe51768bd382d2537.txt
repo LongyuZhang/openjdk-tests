@@ -1,0 +1,33 @@
+@SuppressWarnings("unused") private static int fn_A(int a){
+  int b=a;
+  for (int c=0; c < a; c++) {
+    b+=c * a;
+  }
+  while (b != 0) {
+    if (b > 0) {
+      for (int c=0; c < 2 * a; c++) {
+        b-=a + c;
+      }
+    }
+ else {
+      for (int c=0; c < a / 2; c++) {
+        b+=c * c;
+        for (int d=0; d < a; d++) {
+          b+=c * d * (((c + d) % 2) * 2 - 1);
+        }
+      }
+    }
+    for (int c=0; c < a; c++) {
+      for (int d=0; d < a; d++) {
+        b+=c * d * (((c + d) % 2) * 2 - 1);
+        for (int e=0; e < a; e++) {
+          b+=c * e * (((c + e) % 2) * 2 - 1);
+        }
+      }
+    }
+    if (b % 17 == 0) {
+      return b;
+    }
+  }
+  return -1;
+}

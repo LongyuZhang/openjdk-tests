@@ -1,5 +1,0 @@
-public static float fn_A(float a){
-  if (a < 0)   return 0;
- else   if (a > 1)   return 1f;
- else   return a;
-}

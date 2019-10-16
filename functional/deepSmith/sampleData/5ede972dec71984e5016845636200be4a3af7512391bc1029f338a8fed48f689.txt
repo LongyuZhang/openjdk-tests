@@ -1,0 +1,7 @@
+private static byte[] fn_A(int a){
+  byte[] b=new byte[a];
+  for (int c=0; c < a; c++) {
+    b[c]=(byte)c;
+  }
+  return b;
+}

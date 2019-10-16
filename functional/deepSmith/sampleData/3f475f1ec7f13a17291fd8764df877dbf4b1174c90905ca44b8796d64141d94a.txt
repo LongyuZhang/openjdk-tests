@@ -1,0 +1,24 @@
+public static boolean fn_A(int[][] a,boolean[] b){
+  for (int c=0; c < a.length; c++) {
+    int[] d=a[c];
+    boolean e=false;
+    for (int f=0; f < d.length; f++) {
+      if (d[f] > 0) {
+        if (b[d[f]]) {
+          e=true;
+          break;
+        }
+      }
+ else {
+        if (!b[-d[f]]) {
+          e=true;
+          break;
+        }
+      }
+    }
+    if (!e) {
+      return false;
+    }
+  }
+  return true;
+}

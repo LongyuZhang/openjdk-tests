@@ -1,0 +1,23 @@
+static int[] fn_A(int a,int b,int c,int d,int e,int f){
+  int g=0, h=0;
+  if (a > d) {
+    g++;
+  }
+ else   if (a < d) {
+    h++;
+  }
+  if (b > e) {
+    g++;
+  }
+ else   if (b < e) {
+    h++;
+  }
+  if (c > f) {
+    g++;
+  }
+ else   if (c < f) {
+    h++;
+  }
+  int i[]={g,h};
+  return i;
+}

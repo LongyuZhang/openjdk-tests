@@ -1,7 +1,0 @@
-private static long fn_A(final byte[] a,final int b,final int c){
-  long d=0;
-  for (int e=b; e < c; e++) {
-    d+=a[e];
-  }
-  return d;
-}

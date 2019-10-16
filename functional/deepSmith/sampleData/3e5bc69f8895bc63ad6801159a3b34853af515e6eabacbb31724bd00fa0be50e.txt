@@ -1,6 +1,0 @@
-public static boolean fn_A(final char[] a,int b){
-  if (a.length < (b + 4)) {
-    return false;
-  }
-  return (a[b] | 32) == 'm' && (a[b + 1] | 32) == 'o' && (a[b + 2] | 32) == 'v' && (a[b + 3] | 32) == 'e';
-}

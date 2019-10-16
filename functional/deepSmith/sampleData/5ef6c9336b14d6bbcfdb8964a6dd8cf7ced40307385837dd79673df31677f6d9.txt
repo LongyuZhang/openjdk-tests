@@ -1,0 +1,6 @@
+static public int fn_A(float a){
+  if (a < Integer.MIN_VALUE || a > Integer.MAX_VALUE) {
+    throw new IllegalArgumentException("Value out of range for int: " + a);
+  }
+  return (int)a;
+}

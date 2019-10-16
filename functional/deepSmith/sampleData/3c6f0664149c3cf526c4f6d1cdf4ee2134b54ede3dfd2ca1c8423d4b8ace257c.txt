@@ -1,9 +1,0 @@
-private static int fn_A(int a,int b){
-  if (a < -b) {
-    a=-b;
-  }
- else   if (a > b) {
-    a=b;
-  }
-  return a;
-}

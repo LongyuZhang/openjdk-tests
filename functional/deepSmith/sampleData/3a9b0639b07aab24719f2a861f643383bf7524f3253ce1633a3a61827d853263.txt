@@ -1,8 +1,0 @@
-public static void fn_A(double[] a,double[] b) throws Exception {
-  if (a.length != b.length) {
-    throw new Exception("Lengths of arrays are not equal");
-  }
-  for (int c=0; c < a.length; c++) {
-    a[c]=a[c] + b[c];
-  }
-}

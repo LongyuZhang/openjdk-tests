@@ -1,0 +1,9 @@
+public static short fn_A(byte a[],short b,byte c){
+  while (b < a.length) {
+    if (a[b] == c) {
+      return b;
+    }
+    b++;
+  }
+  return -1;
+}

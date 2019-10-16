@@ -1,0 +1,4 @@
+private static int fn_A(int a){
+  if (a < 0 || a > 65536)   throw new IllegalArgumentException("bufferSize < 0 || bufferSize > 65536");
+  return a;
+}

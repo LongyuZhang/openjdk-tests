@@ -1,0 +1,11 @@
+private static final char fn_A(char a){
+switch (a) {
+case 'I':
+case 'P':
+    return 'I';
+case 'D':
+  return 'D';
+default :
+return 0;
+}
+}

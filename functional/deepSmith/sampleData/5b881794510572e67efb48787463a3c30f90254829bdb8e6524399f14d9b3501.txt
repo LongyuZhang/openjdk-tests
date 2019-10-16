@@ -1,0 +1,11 @@
+public static boolean fn_A(byte a){
+  if (a == 1) {
+    return true;
+  }
+ else   if (a == 0) {
+    return false;
+  }
+ else {
+    throw new IllegalArgumentException("boolean transfer error:" + a);
+  }
+}

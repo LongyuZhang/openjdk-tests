@@ -1,0 +1,4 @@
+private static long fn_A(int a){
+  if (a == 0)   a=1;
+  return a * a * 150;
+}

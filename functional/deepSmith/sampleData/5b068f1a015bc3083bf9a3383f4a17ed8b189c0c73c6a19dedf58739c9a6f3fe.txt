@@ -1,0 +1,8 @@
+public static String fn_A(){
+  if (System.getProperty("java.vendor").contains("IBM")) {
+    return "com.ibm.security.auth.module.Krb5LoginModule";
+  }
+ else {
+    return "com.sun.security.auth.module.Krb5LoginModule";
+  }
+}

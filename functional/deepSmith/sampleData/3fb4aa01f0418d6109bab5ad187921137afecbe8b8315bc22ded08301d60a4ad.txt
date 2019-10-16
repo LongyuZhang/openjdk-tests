@@ -1,0 +1,5 @@
+public static void fn_A(){
+  System.out.println("\njHades war scanner utility - the following arguments are needed:\n");
+  System.out.println("    warFilePath - the path to your war file");
+  System.out.println("    tmpPath - the path to a temporary directory, needed to unzip files");
+}

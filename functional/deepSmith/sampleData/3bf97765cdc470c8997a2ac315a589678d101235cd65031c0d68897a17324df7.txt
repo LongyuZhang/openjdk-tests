@@ -1,8 +1,0 @@
-private static final void fn_A(final double[] a,final double[] b,final double[] c,final int d,final int e,final int f,final int g,final int h,final int i){
-  int j=e + i * g;
-  for (int k=g; k < h; k++, j+=i) {
-    final int l=(k - f + d - 1) / d;
-    final int m=d - 1 - (k - f + d - 1) % d;
-    b[j]=a[l - 2] * c[m] + a[l - 1] * c[m + d] + a[l] * c[m + 2 * d] + a[l + 1] * c[m + 3 * d];
-  }
-}

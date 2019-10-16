@@ -1,0 +1,12 @@
+public static void main(String[] a){
+  int[] b={4,8,16,32,64,128};
+  int[] c={2,0,4,8,0};
+  for (int d=0; d < b.length; d++) {
+    try {
+      System.out.println(b[d] + "/" + c[d]+ " = "+ (b[d] / c[d]));
+    }
+ catch (    ArithmeticException|ArrayIndexOutOfBoundsException e) {
+      System.out.println("Aconteceu um erro");
+    }
+  }
+}

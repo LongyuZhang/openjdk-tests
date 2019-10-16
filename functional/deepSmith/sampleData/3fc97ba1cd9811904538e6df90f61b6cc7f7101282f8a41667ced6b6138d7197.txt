@@ -1,0 +1,4 @@
+static void fn_A(){
+  System.err.println("usage: java WatchDir [-r] dir");
+  System.exit(-1);
+}

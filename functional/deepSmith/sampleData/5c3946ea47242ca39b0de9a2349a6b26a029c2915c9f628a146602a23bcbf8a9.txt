@@ -1,0 +1,4 @@
+private static final long[] fn_A(){
+  long[] a={-2666112837461475328L,-882494425043861509L,50811L,0L,0L,0L};
+  return a;
+}

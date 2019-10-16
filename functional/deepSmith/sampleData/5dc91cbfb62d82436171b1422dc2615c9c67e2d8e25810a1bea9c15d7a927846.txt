@@ -1,0 +1,5 @@
+public static int fn_A(final long a,final int b,final int c){
+  int d=(int)((a + (a >>> 16)) & c);
+  d-=b & (((d - b) ^ 0x80000000) >> 31);
+  return d;
+}

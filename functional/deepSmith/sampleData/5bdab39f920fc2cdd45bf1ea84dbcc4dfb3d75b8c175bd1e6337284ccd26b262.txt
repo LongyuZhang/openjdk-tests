@@ -1,0 +1,13 @@
+private static double[] fn_A(double a,int b){
+  int c=b / 2;
+  double[] d=new double[b];
+  final double e=3.14159265358979323846;
+  double f=c;
+  double g=0.0;
+  for (int h=0; h < b; ++h) {
+    d[h]=Math.sqrt(Math.exp(-0.5 * (Math.pow((h - f) / a,2.0) + Math.pow((f) / a,2.0))) / (2 * e * a* a));
+    g+=d[h];
+  }
+  for (int h=0; h < b; ++h)   d[h]/=(float)g;
+  return d;
+}

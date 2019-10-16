@@ -1,8 +1,0 @@
-public static <ArrayData>ArrayData fn_A(int a[],Class<ArrayData> b){
-  if (b == int[].class)   return (ArrayData)a;
-  float[] c=new float[a.length];
-  for (int d=0; d < a.length; d++) {
-    c[d]=a[d];
-  }
-  return (ArrayData)c;
-}

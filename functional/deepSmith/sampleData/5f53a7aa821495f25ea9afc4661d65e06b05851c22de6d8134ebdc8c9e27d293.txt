@@ -1,0 +1,27 @@
+static int fn_A(byte[] a,int b){
+  int c=b;
+  a[c++]=(byte)0xC9;
+  a[c++]=(byte)0x90;
+  a[c++]=(byte)0xC9;
+  a[c++]=(byte)0xA3;
+  a[c++]=(byte)0xC9;
+  a[c++]=(byte)0xAF;
+  a[c++]=(byte)0xCA;
+  a[c++]=(byte)0x82;
+  a[c++]=(byte)0x20;
+  a[c++]=(byte)0xCA;
+  a[c++]=(byte)0x9F;
+  a[c++]=(byte)0xCB;
+  a[c++]=(byte)0x90;
+  a[c++]=(byte)0x20;
+  a[c++]=(byte)0xCB;
+  a[c++]=(byte)0x9A;
+  a[c++]=(byte)0xCB;
+  a[c++]=(byte)0xA1;
+  a[c++]=(byte)0xCB;
+  a[c++]=(byte)0xA3;
+  a[c++]=(byte)0xCB;
+  a[c++]=(byte)0x84;
+  a[c++]=(byte)0x2E;
+  return c;
+}

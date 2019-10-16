@@ -1,9 +1,0 @@
-public static long fn_A(long a,long b){
-  long c=a % b;
-  if (c == 0) {
-    return a;
-  }
- else {
-    return a - (a % b) + b;
-  }
-}

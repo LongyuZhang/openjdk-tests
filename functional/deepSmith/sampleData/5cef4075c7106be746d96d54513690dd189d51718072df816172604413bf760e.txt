@@ -1,0 +1,10 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0x00:
+    return "NIT";
+case 0x01:
+  return "SDT";
+default :
+return "illegal value";
+}
+}

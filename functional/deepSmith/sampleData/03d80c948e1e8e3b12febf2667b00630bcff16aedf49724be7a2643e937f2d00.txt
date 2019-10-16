@@ -1,4 +1,0 @@
-private static void fn_A(){
-  System.err.println("usage: java DumpExports [.dll name]");
-  System.exit(1);
-}

@@ -1,0 +1,7 @@
+public static void fn_A(final byte[] a,int b,int c){
+  for (int d=b, e=b + c - 1; d < e; ++d, --e) {
+    final byte f=a[d];
+    a[d]=a[e];
+    a[e]=f;
+  }
+}

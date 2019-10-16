@@ -1,0 +1,16 @@
+public static int fn_A(int a[][],int b,int c){
+  int d[][]=new int[b + 1][c + 1];
+  d[0][0]=a[0][0];
+  for (int e=1; e <= b; e++) {
+    d[e][0]=a[e][0] + d[e - 1][0];
+  }
+  for (int f=1; f <= c; f++) {
+    d[0][f]=a[0][f] + d[0][f - 1];
+  }
+  for (int e=1; e <= b; e++) {
+    for (int f=1; f <= c; f++) {
+      d[e][f]=Math.min(d[e - 1][f - 1],Math.min(d[e][f - 1],d[e - 1][f])) + a[e][f];
+    }
+  }
+  return d[b][c];
+}

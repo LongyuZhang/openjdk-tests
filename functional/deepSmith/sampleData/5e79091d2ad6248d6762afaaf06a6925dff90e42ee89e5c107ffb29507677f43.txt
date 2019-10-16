@@ -1,0 +1,4 @@
+private static double fn_A(double a,double b,double c,double d){
+  double e;
+  return e=(a + c) / (a + c + b+ d);
+}

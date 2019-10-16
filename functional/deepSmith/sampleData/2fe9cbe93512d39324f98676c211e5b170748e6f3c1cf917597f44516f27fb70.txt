@@ -1,6 +1,0 @@
-public static String fn_A(String a){
-  if (a != null) {
-    return new File(a).getParent();
-  }
- else   return null;
-}

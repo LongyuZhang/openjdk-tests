@@ -1,5 +1,0 @@
-private static void fn_A(String a,Object b){
-  if (b == null) {
-    throw new NullPointerException(a);
-  }
-}

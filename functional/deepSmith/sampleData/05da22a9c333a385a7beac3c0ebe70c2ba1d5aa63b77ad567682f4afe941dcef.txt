@@ -1,0 +1,4 @@
+static long fn_A(long a,int b,long c){
+  long d=a ^ c;
+  return (d >>> b) | (d << -b);
+}

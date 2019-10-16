@@ -1,6 +1,0 @@
-public static boolean fn_A(long a,long b,int c){
-  if (b + c <= a) {
-    return true;
-  }
-  return false;
-}
