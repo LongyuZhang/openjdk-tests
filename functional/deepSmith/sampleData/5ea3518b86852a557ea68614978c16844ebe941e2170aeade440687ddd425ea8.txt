@@ -1,0 +1,16 @@
+private static int[][] fn_A(float[][] a){
+  int b=a[0].length;
+  int[][] c=new int[a.length][b];
+  for (int d=0; d < a.length; d++) {
+    float e=-1;
+    int f=-1;
+    for (int g=0; g < b; g++) {
+      if (a[d][g] > e) {
+        e=a[d][g];
+        f=g;
+      }
+    }
+    c[d][f]=1;
+  }
+  return c;
+}

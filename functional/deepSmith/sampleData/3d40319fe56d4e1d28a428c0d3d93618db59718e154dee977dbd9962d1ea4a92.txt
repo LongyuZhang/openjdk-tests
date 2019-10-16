@@ -1,9 +1,0 @@
-public static String fn_A(int a){
-  String b="";
-  if (a > 0) {
-    if (a > 60)     b=(a / 60) + "m" + (a % 60)+ "s";
- else     b=a + "s";
-  }
- else   b="----";
-  return b;
-}

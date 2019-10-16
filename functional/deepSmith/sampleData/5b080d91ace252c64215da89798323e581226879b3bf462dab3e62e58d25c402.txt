@@ -1,0 +1,8 @@
+public static void fn_A(){
+  System.out.println("1. Aadir arista");
+  System.out.println("2. Eliminar arista");
+  System.out.println("3. Eliminar Grafo");
+  System.out.println("4. Mostrar Grafo");
+  System.out.println("5. Obtener lista Adyacencia vertice");
+  System.out.println("6. Salir");
+}

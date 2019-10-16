@@ -1,9 +1,0 @@
-public static double[] fn_A(int a){
-  double[] b=new double[a];
-  double c=a / 6.0;
-  for (int d=0; d < b.length; ++d) {
-    double e=(d - b.length / 2.0) / c;
-    b[d]=Math.exp(-(e * e));
-  }
-  return b;
-}

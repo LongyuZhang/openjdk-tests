@@ -1,4 +1,0 @@
-private static int fn_A(int a){
-  if (a < 0 || a > 0xFFFF)   throw new IllegalArgumentException("port out of range:" + a);
-  return a;
-}

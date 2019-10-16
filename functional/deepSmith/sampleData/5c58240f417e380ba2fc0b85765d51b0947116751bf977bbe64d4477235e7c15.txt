@@ -1,0 +1,17 @@
+public static double fn_A(double[] a){
+  if (a.length <= 1)   return Double.NaN;
+  double b=0;
+  double c=0;
+  for (int d=0; d < a.length; d++) {
+    double e=a[d] - b;
+    b+=e / (d + 1);
+    c+=(a[d] - b) * e;
+  }
+  c/=a.length - 1;
+  if (c < 0) {
+    return 0;
+  }
+ else {
+    return c;
+  }
+}

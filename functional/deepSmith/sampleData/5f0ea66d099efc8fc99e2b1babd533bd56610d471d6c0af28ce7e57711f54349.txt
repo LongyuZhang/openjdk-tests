@@ -1,0 +1,4 @@
+public static int fn_A(long a){
+  int b=(71 - Long.numberOfLeadingZeros(a < 0 ? ~a : a)) / 7;
+  return b < 10 ? b : 9;
+}

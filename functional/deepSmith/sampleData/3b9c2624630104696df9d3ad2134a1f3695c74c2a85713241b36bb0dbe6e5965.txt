@@ -1,4 +1,0 @@
-public static boolean fn_A(byte[] a,int b,byte[] c,int d,int e){
-  for (int f=0; f < e; f++)   if (a[f + b] != c[f + d])   return false;
-  return true;
-}

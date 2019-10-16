@@ -1,6 +1,0 @@
-public static <T>List<T> fn_A(Collection<T> a){
-  if (a == null) {
-    return null;
-  }
-  return new ArrayList<T>(a);
-}

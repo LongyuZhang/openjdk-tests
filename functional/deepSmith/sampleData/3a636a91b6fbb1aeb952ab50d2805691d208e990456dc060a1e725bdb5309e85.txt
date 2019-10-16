@@ -1,4 +1,0 @@
-private static final int fn_A(int a,int b){
-  if (b >= 32)   return 0;
- else   return (a << b);
-}

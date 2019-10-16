@@ -1,0 +1,11 @@
+public static double[] fn_A(int a,int b,int c){
+  double[] d=new double[a * a * b];
+  for (int e=0; e < b; e++) {
+    for (int f=a / 2 - c / 2; f < a / 2 + c / 2; f++) {
+      for (int g=a / 2 - c / 2; g < a / 2 + c / 2; g++) {
+        d[e * a * a + f * a + g]=1;
+      }
+    }
+  }
+  return d;
+}

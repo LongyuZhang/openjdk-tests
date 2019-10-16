@@ -1,5 +1,0 @@
-public static String fn_A(double a,String b){
-  int c=new Double(255 * (1 - a)).intValue(), d=new Double(255 * a).intValue();
-  String e="rgb(" + c + ","+ d+ ",20)";
-  return "<div style='width: " + (new Double(100 * a).intValue() + 10) + "px; background-color:"+ e+ ";display: inline-block;height: 5px;' title='"+ b+ "'> </div>";
-}

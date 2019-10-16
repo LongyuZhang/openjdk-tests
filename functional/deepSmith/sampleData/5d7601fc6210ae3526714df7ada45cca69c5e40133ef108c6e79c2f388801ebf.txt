@@ -1,0 +1,10 @@
+public static boolean fn_A(int a){
+  final byte b=16;
+  final byte c=8;
+  int d=((int)((float)(a >> b & 0xff) * 0.3f)) & 0xff;
+  int e=((int)((float)(a >> c & 0xff) * 0.59)) & 0xff;
+  int f=((int)((float)(a & 0xff) * 0.11)) & 0xff;
+  int g=(d + e + f) & 0xff;
+  int h=g + (g << c) + (g << b);
+  return h < 0x727272;
+}

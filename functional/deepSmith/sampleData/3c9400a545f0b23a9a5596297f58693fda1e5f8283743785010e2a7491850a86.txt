@@ -1,6 +1,0 @@
-public static boolean fn_A(int a){
-  if ((a > 1900) && (a < 2100)) {
-    return ((a & 3) == 0);
-  }
-  return ((a & 3) == 0) && (((a % 100) != 0) || ((a % 400) == 0));
-}

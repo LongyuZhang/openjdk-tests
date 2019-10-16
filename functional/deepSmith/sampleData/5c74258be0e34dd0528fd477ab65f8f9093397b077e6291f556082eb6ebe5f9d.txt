@@ -1,0 +1,9 @@
+private static boolean fn_A(Class[] a,Class[] b){
+  if (a == null)   return b == null || b.length == 0;
+  if (b == null)   return a == null || a.length == 0;
+  if (a.length != b.length)   return false;
+  for (int c=0; c < a.length; c++) {
+    if (a[c] != b[c])     return false;
+  }
+  return true;
+}

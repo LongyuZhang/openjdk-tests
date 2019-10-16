@@ -1,0 +1,7 @@
+static int fn_A(int a,int b,Integer... c){
+  int d=0;
+  for (int e=0; e < c.length; e++) {
+    d+=c[e];
+  }
+  return d;
+}

@@ -1,6 +1,0 @@
-public final static String fn_A(String a){
-  if (a.endsWith("/")) {
-    a=a.substring(0,a.length() - 1);
-  }
-  return a;
-}

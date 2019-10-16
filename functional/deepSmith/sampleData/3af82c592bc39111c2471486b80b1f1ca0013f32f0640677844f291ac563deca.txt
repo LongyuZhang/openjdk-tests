@@ -1,8 +1,0 @@
-public static double fn_A(double[] a,double[] b,double[] c){
-  assert(a.length == b.length && a.length == c.length);
-  double d=0.0;
-  for (int e=0; e < a.length; e++) {
-    d+=(a[e] + b[e]) * c[e];
-  }
-  return d;
-}

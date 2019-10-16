@@ -1,0 +1,15 @@
+private static char fn_A(byte a){
+  if (a < 26) {
+    return (char)('A' + a);
+  }
+  if (a < 52) {
+    return (char)('a' + (a - 26));
+  }
+  if (a < 62) {
+    return (char)('0' + (a - 52));
+  }
+  if (a == 62) {
+    return '+';
+  }
+  return '/';
+}

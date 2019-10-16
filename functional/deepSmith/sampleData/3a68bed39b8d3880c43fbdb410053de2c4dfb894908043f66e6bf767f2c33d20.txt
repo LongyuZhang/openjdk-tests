@@ -1,5 +1,0 @@
-public static void fn_A(int a,int b){
-  if (a != b) {
-    throw new IllegalStateException("A query declared in the antlr grammar, was not parsed by the listener. If a new query is added in the grammar, a corresponding handler must also be added in the listener.");
-  }
-}

@@ -1,7 +1,0 @@
-public static final boolean fn_A(Object a){
-  if (null == a)   return true;
-  if (a instanceof String && ((String)a).length() == 0)   return true;
-  if (a instanceof Vector<?> && ((Vector<?>)a).size() == 0)   return true;
-  if (a instanceof Map && ((Map)a).size() == 0)   return true;
-  return false;
-}

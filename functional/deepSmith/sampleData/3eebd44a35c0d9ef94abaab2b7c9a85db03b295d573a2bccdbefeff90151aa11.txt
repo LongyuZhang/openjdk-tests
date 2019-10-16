@@ -1,0 +1,5 @@
+private static void fn_A(long a){
+  if (a < 0 || a > 24) {
+    throw new IllegalArgumentException("HOUR_OF_DAY out of range: " + a);
+  }
+}

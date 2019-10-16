@@ -1,0 +1,8 @@
+public static int fn_A(int a){
+  a+=(a << 15) ^ 0xffffcd7d;
+  a^=(a >>> 10);
+  a+=(a << 3);
+  a^=(a >>> 6);
+  a+=(a << 2) + (a << 14);
+  return a ^ (a >>> 16);
+}

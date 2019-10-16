@@ -1,7 +1,0 @@
-public static boolean fn_A(float[][] a){
-  int b=a[0].length;
-  for (int c=1; c < a.length; c++) {
-    if (a[c].length != b)     return false;
-  }
-  return true;
-}

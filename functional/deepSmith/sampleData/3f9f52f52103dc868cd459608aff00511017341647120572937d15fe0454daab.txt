@@ -1,0 +1,6 @@
+static <T>T fn_A(String a,T b){
+  if (b == null) {
+    throw new IllegalStateException(a + " was not set on the builder");
+  }
+  return b;
+}

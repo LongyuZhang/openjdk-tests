@@ -1,0 +1,6 @@
+public static float[] fn_A(float[] a,int b,int c){
+  if (b + c > a.length)   throw new IllegalArgumentException("requested subarray exceeds array length");
+  float[] d=new float[c];
+  for (int e=0; e < c; e++)   d[e]=a[e + b];
+  return d;
+}

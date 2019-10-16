@@ -1,0 +1,5 @@
+public static void fn_A(double a,final double[] b){
+  for (int c=0; c < b.length; c++) {
+    b[c]*=a;
+  }
+}

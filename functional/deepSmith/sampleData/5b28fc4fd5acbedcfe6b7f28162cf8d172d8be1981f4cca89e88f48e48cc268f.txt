@@ -1,0 +1,4 @@
+public static boolean fn_A(long a,long b,long c,long d){
+  long e=a - b;
+  return c <= e && e <= d;
+}

@@ -1,0 +1,19 @@
+static String fn_A(int[] a){
+  long b=a[0], c=0l;
+  int d=1;
+  for (int e=2; e < a.length; e++) {
+    c+=a[e];
+  }
+  if (a.length == 1) {
+    return "YES";
+  }
+  while (d != a.length - 1 && b <= c) {
+    if (b == c) {
+      return "YES";
+    }
+    b+=a[d];
+    c-=a[d + 1];
+    d++;
+  }
+  return "NO";
+}

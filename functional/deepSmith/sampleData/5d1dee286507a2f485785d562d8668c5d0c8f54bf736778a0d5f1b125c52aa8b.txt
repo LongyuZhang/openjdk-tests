@@ -1,0 +1,11 @@
+public static double fn_A(double a,double b,double c,double d){
+  double e;
+  double f=c - a;
+  double g=d - b;
+  e=Math.atan(g / f);
+  if (f >= 0.0 && g >= 0.0)   e+=0.0;
+ else   if (f < 0.0 && g >= 0.0)   e+=Math.PI;
+ else   if (f < 0.0 && g < 0.0)   e+=Math.PI;
+ else   if (f >= 0.0 && g < 0.0)   e+=2.0 * Math.PI;
+  return e;
+}

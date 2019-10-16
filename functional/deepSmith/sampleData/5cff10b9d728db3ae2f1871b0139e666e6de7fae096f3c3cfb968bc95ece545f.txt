@@ -1,0 +1,11 @@
+public static int fn_A(float a,int b){
+  if (a < 0) {
+    return -1;
+  }
+ else   if (a >= 1) {
+    return (int)a;
+  }
+ else {
+    return (int)(b * a);
+  }
+}

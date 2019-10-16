@@ -1,6 +1,0 @@
-private static final void fn_A(final byte[] a,final byte[] b,final int c){
-  int d, e;
-  for (e=1 - c, d=1; d < a.length; d++, e++) {
-    a[d]=(byte)(a[d] + ((e > 0 ? (a[e] & 0xFF) : 0) + (b[d] & 0xFF)) / 2);
-  }
-}

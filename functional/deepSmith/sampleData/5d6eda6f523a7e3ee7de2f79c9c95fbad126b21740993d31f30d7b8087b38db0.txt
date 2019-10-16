@@ -1,0 +1,4 @@
+public static BigDecimal fn_A(Byte a){
+  if (a == null)   return null;
+  return new BigDecimal(a);
+}

@@ -1,8 +1,0 @@
-public static long fn_A(int a){
-  if (a < 0) {
-    return 2 * ((long)Integer.MAX_VALUE) + 2 + a;
-  }
- else {
-    return a;
-  }
-}

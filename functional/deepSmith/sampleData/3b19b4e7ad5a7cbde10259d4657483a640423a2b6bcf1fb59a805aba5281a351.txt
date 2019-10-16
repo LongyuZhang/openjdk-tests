@@ -1,4 +1,0 @@
-static double fn_A(double a,Double b){
-  Double c=Double.valueOf(a + 1.);
-  return b + c;
-}

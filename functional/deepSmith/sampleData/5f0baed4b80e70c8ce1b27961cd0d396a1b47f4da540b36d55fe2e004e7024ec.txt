@@ -1,0 +1,5 @@
+public static double fn_A(double a){
+  a=a - 24.0 * (Math.floor(a / 24.0));
+  a=a < 0 ? a + 24.0 : a;
+  return a;
+}

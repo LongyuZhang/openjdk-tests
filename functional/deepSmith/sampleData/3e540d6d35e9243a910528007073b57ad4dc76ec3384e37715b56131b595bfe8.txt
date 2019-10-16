@@ -1,9 +1,0 @@
-public static List fn_A(){
-  return new ArrayList(){
-{
-      add("Hello");
-      add("World");
-    }
-  }
-;
-}

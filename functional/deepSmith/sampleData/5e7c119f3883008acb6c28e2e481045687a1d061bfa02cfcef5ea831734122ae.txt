@@ -1,0 +1,6 @@
+public static void main(String a[]){
+  Class b=java.lang.Object.class;
+  if (b == null) {
+  }
+  ;
+}

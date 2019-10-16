@@ -1,9 +1,0 @@
-public static int fn_A(final byte[] a,final int b) throws IllegalArgumentException {
-  if (a == null)   return 0;
-  if (a.length < b + 4)   throw new IllegalArgumentException("bytes' length is too small");
-  int c=a[b] & 0xff;
-  int d=a[b + 1] & 0xff;
-  int e=a[b + 2] & 0xff;
-  int f=a[b + 3] & 0xff;
-  return (int)((c << 24) + (d << 16) + (e << 8)+ f);
-}

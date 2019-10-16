@@ -1,0 +1,12 @@
+public static int fn_A(final int... a){
+  if (a == null) {
+    return 0;
+  }
+  int b=a[0];
+  for (int c=0; c < a.length; c++) {
+    if (a[c] > b) {
+      b=a[c];
+    }
+  }
+  return b;
+}

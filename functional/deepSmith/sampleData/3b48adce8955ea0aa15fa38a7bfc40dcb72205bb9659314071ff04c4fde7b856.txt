@@ -1,4 +1,0 @@
-public static String fn_A(long a){
-  if (a != 999L)   return "";
-  return "";
-}

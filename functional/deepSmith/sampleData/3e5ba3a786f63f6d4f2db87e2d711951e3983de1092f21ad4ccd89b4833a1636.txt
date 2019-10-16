@@ -1,4 +1,0 @@
-static void fn_A(){
-  System.setProperty("awt.useSystemAAFontSettings","on");
-  System.setProperty("swing.aatext","true");
-}

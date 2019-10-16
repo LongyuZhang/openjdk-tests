@@ -1,0 +1,16 @@
+static final void fn_A(int a,int b,int c,int d,int e,boolean f,byte[] g,int h,int i){
+  int j=a << 16;
+  final int k=((b << 16) - j) / c + 1;
+  if (f) {
+    for (int l=0; l < e; ++l, h+=i) {
+      g[h]=(byte)(j >>> 16);
+      j+=k;
+    }
+  }
+ else {
+    for (int m=0; m < d; ++m, h+=4) {
+      g[h]=(byte)(j >>> 16);
+      j+=k;
+    }
+  }
+}

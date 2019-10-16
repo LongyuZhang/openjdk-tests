@@ -1,4 +1,0 @@
-protected static final float fn_A(final byte[] a,final int b,final boolean c){
-  if (c)   return Float.intBitsToFloat(((a[b + 3] & 0xff) << 24) + ((a[b + 2] & 0xff) << 16) + ((a[b + 1] & 0xff) << 8)+ (a[b] & 0xff));
- else   return Float.intBitsToFloat(((a[b] & 0xff) << 24) + ((a[b + 1] & 0xff) << 16) + ((a[b + 2] & 0xff) << 8)+ (a[b + 3] & 0xff));
-}

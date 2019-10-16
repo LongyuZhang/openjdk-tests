@@ -1,0 +1,11 @@
+public static byte fn_A(byte[] a,int b){
+  long c=0;
+  for (int d=1; d < (b - 2); d++) {
+    c=c + (a[d] & 0x000000FF);
+  }
+  c=0xFF - (c % 0xFF);
+  if (c == 0xFF) {
+    c=0;
+  }
+  return (byte)c;
+}

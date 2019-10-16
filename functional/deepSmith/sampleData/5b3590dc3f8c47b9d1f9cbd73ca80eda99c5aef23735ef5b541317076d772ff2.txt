@@ -1,0 +1,9 @@
+private static Float fn_A(Float[] a,int b){
+  if (b == a.length)   return null;
+  for (int c=b + 1; c < a.length; c++) {
+    if (a[c] != null) {
+      return a[c];
+    }
+  }
+  return null;
+}

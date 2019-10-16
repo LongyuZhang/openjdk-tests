@@ -1,0 +1,4 @@
+public static Class fn_A(){
+  System.out.println("selected no args method");
+  return Void.TYPE;
+}

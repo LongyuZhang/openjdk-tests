@@ -1,0 +1,4 @@
+public static boolean fn_A(char a){
+  if (a == '.')   return true;
+ else   return false;
+}

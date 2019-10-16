@@ -1,0 +1,7 @@
+public static byte fn_A(byte a){
+  short b=0;
+  for (short c=0; c < 8; c++) {
+    b+=(a >>> c) & 0x1;
+  }
+  return (byte)(b % 2);
+}

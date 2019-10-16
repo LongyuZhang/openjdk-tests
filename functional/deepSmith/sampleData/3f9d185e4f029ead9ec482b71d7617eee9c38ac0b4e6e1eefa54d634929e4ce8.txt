@@ -1,0 +1,5 @@
+public static int[] fn_A(int a[],int b[],int c[]){
+  int[] d=new int[a.length];
+  for (int e=0; e < d.length; e++)   d[e]=(a[e] - b[e]) / (b[e] + c[e]) * 2 + 1;
+  return d;
+}

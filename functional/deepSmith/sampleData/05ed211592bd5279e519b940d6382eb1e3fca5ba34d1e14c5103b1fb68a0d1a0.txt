@@ -1,0 +1,6 @@
+public static void fn_A(int a,int b,long[] c,int d,long e){
+  final int f=d / b;
+  final int g=d % b;
+  final int h=g * a;
+  c[f]|=e << h;
+}

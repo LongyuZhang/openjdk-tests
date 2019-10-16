@@ -1,0 +1,23 @@
+public static byte[] fn_A(byte[] a,byte[] b){
+  byte[] c=new byte[a.length + b.length];
+  int d=0;
+  int e=0;
+  int f=0;
+  while (d < a.length || e < b.length) {
+    if (d == a.length) {
+      c[f++]=b[e++];
+    }
+ else     if (e == b.length) {
+      c[f++]=a[d++];
+    }
+ else {
+      if (a[d] < b[e]) {
+        c[f++]=a[d++];
+      }
+ else {
+        c[f++]=b[e++];
+      }
+    }
+  }
+  return c;
+}

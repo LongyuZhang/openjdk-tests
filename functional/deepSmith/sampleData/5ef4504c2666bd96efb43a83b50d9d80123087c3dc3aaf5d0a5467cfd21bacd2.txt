@@ -1,0 +1,9 @@
+static int fn_A(final int a){
+  if (a < 1) {
+    throw new IllegalArgumentException("size(" + a + ") < 1");
+  }
+  if (a > Short.SIZE) {
+    throw new IllegalArgumentException("size(" + a + ") > "+ Short.SIZE);
+  }
+  return a;
+}

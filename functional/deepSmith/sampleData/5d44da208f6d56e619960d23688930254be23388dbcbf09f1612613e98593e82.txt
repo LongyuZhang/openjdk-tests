@@ -1,0 +1,4 @@
+static void fn_A(){
+  System.err.println("Usage:  [java] kawa.Telnet HOST [PORT#]");
+  System.exit(-1);
+}

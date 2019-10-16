@@ -1,0 +1,5 @@
+public static int fn_A(byte[] a,int b,int c){
+  a[b + 1]=(byte)c;
+  a[b]=(byte)(c >> 8);
+  return 2;
+}

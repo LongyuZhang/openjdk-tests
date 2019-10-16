@@ -1,4 +1,0 @@
-public static void fn_A(){
-  System.out.println("Running add/remove test.");
-  System.out.println("Make sure to uncomment the lines below (and delete this print statement).");
-}

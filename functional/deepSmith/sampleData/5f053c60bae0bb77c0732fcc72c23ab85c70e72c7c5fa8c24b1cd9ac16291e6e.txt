@@ -1,0 +1,8 @@
+public static int fn_A(final int a,final int b,final int c){
+  int d=a;
+  d<<=3;
+  d|=b;
+  d<<=3;
+  d|=c;
+  return d;
+}

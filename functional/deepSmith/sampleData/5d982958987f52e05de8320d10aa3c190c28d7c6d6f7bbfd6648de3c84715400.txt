@@ -1,0 +1,9 @@
+public static boolean fn_A(int[] a,int b,int[] c,int d){
+  for (int e=5; e >= 0; --e) {
+    int f=a[b + e] ^ Integer.MIN_VALUE;
+    int g=c[d + e] ^ Integer.MIN_VALUE;
+    if (f < g)     return false;
+    if (f > g)     return true;
+  }
+  return true;
+}

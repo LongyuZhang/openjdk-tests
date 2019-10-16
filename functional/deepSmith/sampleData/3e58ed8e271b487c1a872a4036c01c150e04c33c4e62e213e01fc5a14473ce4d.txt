@@ -1,4 +1,0 @@
-private static void fn_A(){
-  System.out.println("\nThis tool searches for a term and prints index information for this term.\n");
-  System.out.println("  RunTermQuery <term> [fieldName]");
-}

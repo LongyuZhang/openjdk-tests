@@ -1,4 +1,0 @@
-public static int fn_A(byte[] a,int b){
-  int c=((a[b] & 255) << 24) | ((a[b + 1] & 255) << 16) | ((a[b + 2] & 255) << 8)| (a[b + 3] & 255);
-  return c;
-}

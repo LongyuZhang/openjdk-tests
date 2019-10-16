@@ -1,0 +1,4 @@
+public static void fn_A(double[] a,double[] b){
+  int c=(int)Math.sqrt(a.length);
+  for (int d=0; d < c; d++)   for (int e=0; e < c; e++)   for (int f=e + 1; f < c; f++)   b[f * c + d]-=a[f * c + e] * b[e * c + d];
+}

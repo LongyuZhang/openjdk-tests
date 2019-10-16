@@ -1,5 +1,0 @@
-private static int fn_A(double a,double b){
-  if (a == b)   return 0;
- else   if (a < b)   return -1;
-  return 1;
-}

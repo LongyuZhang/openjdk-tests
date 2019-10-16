@@ -1,5 +1,0 @@
-@SuppressWarnings("unchecked") static <T extends Throwable>void fn_A(Throwable a) throws T {
-  if (a != null) {
-    throw (T)a;
-  }
-}

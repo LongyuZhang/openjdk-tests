@@ -1,0 +1,11 @@
+public static byte[] fn_A(double[] a,int b,int c){
+  byte[] d=new byte[8 * c];
+  long e;
+  for (int f=b; f < (b + c); f++) {
+    e=Double.doubleToLongBits(a[f]);
+    for (int g=0; g < 8; g++) {
+      d[8 * (f - b) + g]=(byte)(e >> (8 * g));
+    }
+  }
+  return d;
+}

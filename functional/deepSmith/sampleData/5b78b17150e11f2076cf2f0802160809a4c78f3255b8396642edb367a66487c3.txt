@@ -1,0 +1,4 @@
+static int fn_A(int a,int b,int c){
+  if (b > c)   return a > b ? b : (a < c ? c : a);
+ else   return a > c ? c : (a < b ? b : a);
+}

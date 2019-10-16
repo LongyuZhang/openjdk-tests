@@ -1,0 +1,4 @@
+static private float fn_A(float a,float b,float c,float d,float e){
+  float f=(a - b) / (c - b);
+  return (f * (e - d)) + d;
+}

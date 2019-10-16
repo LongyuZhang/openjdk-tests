@@ -1,6 +1,0 @@
-public static BufferedWriter fn_A(String a) throws IOException {
-  FileWriter b=null;
-  b=new FileWriter(a);
-  final BufferedWriter c=new BufferedWriter(b);
-  return c;
-}

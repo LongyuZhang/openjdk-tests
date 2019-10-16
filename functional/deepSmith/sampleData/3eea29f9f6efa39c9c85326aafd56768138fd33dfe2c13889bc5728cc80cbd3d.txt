@@ -1,0 +1,4 @@
+private static int fn_A(int a,int b,int c){
+  if (a > b)   return Math.min(b,c);
+  return Math.min(a,c);
+}

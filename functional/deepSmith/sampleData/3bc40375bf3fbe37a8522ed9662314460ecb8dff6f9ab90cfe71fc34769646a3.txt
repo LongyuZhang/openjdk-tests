@@ -1,5 +1,0 @@
-public static double fn_A(final int a,final int b){
-  if (b <= 0)   return 0.0d;
-  if (a <= 0)   return 0.0d;
-  return (double)a / (double)b;
-}
