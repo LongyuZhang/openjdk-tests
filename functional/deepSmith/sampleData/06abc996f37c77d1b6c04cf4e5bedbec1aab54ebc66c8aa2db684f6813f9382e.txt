@@ -1,0 +1,6 @@
+public static boolean fn_A(Comparable[] a){
+  for (int b=0; b < a.length - 1; b++) {
+    if (a[b].compareTo(a[b + 1]) > 0)     return false;
+  }
+  return true;
+}

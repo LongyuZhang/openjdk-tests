@@ -1,0 +1,4 @@
+public static boolean fn_A(Class[] a){
+  if (a.length != 0)   return false;
+  return true;
+}

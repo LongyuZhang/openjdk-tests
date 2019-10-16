@@ -1,0 +1,13 @@
+private static int[][] fn_A(int[][] a){
+  int[][] b=new int[a.length][];
+  for (int c=0; c < a.length; ++c) {
+    int[] d=a[c];
+    int[] e=b[c]=new int[d.length];
+    int f=0;
+    for (int g=0; g < d.length; ++g) {
+      e[g]=d[g] - f;
+      f=d[g];
+    }
+  }
+  return b;
+}

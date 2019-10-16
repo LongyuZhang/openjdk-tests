@@ -1,0 +1,6 @@
+static int fn_A(int a,int b){
+  a>>=(3 - b) * 8;
+  a&=255;
+  a<<=b * 8;
+  return a;
+}

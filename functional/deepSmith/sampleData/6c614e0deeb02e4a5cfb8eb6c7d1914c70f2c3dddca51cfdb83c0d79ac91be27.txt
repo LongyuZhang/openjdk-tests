@@ -1,0 +1,9 @@
+public static double[] fn_A(double[] a){
+  int b=Math.min(a.length,3);
+  double[] c=new double[b * 2];
+  for (int d=0; d < b; d++) {
+    c[d]=a[d];
+    c[b + d]=a[d];
+  }
+  return c;
+}

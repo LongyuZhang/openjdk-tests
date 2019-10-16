@@ -1,0 +1,7 @@
+public static long fn_A(byte[] a,int b){
+  long c=(a[b] & 0xFF);
+  long d=(a[b + 1] & 0xFF);
+  long e=(a[b + 2] & 0xFF);
+  long f=(a[b + 3] & 0xFF);
+  return ((c << 24) | (d << 16) | (e << 8)| f);
+}

@@ -1,0 +1,17 @@
+public static String fn_A(int a){
+  String b;
+  if (a == ' ') {
+    b="[SPACE]";
+  }
+ else   if (a == '\t') {
+    b="[TAB]";
+  }
+ else   if (a == '\n') {
+    b="[NEWLINE]";
+  }
+ else {
+    b="'" + (char)a + "'";
+  }
+  b=b + " with an int value of " + ((int)a);
+  return b;
+}

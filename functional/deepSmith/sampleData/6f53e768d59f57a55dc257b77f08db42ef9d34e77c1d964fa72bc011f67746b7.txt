@@ -1,0 +1,5 @@
+public static void fn_A(long a) throws NumberFormatException {
+  if ((-4294967296L & a) != 0) {
+    throw new NumberFormatException();
+  }
+}

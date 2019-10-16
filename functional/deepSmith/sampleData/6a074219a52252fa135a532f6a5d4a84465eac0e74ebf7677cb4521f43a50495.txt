@@ -1,0 +1,13 @@
+public static void fn_A(float[] a,int b,final float[] c,int d,final float[] e,int f,final float[] g,int h,int i){
+  b+=i;
+  h+=i;
+  d+=i;
+  for (int j=-i, k=i - 1; j < 0; j++, k--) {
+    float l=c[d + j];
+    float m=e[f + k];
+    float n=g[h + j];
+    float o=g[h + k];
+    a[b + j]=l * o - m * n;
+    a[b + k]=l * n + m * o;
+  }
+}

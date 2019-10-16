@@ -1,0 +1,7 @@
+public static int fn_A(char[] a,int b,int[][] c){
+  int d, e;
+  for (d=a.length, e=0; e < a.length; ++e) {
+    d^=c[e][a[e]];
+  }
+  return (d & b);
+}

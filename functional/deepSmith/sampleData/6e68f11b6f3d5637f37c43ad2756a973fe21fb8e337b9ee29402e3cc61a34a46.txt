@@ -1,0 +1,12 @@
+public static File fn_A(String a){
+  String b=System.getProperty("java.io.tmpdir");
+  if (b == null) {
+    b="tmp";
+  }
+  if (a == null) {
+    return new File(b);
+  }
+ else {
+    return new File(b,a);
+  }
+}

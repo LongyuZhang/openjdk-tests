@@ -1,0 +1,11 @@
+public static float fn_A(int[] a,int[] b){
+  int c=0;
+  int d=0;
+  int e=0;
+  for (int f=0; f < a.length; f++) {
+    c+=Integer.bitCount(a[f] & b[f]);
+    d+=Integer.bitCount(a[f]);
+    e+=Integer.bitCount(b[f]);
+  }
+  return (float)c / (float)Math.sqrt(d * e);
+}

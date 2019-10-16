@@ -1,9 +1,0 @@
-public static double[] fn_A(double a[][]){
-  double b=a[0][3];
-  double c=a[1][3];
-  double d=a[2][3];
-  double e=Math.atan2(a[2][1],a[2][2]);
-  double f=Math.atan2(-a[2][0],Math.sqrt(a[0][0] * a[0][0] + a[1][0] * a[1][0]));
-  double g=Math.atan2(a[1][0],a[0][0]);
-  return new double[]{b,c,d,e,f,g};
-}

@@ -1,0 +1,11 @@
+private static boolean fn_A(int[] a,int b,int[] c,int d){
+  if (b != d) {
+    return false;
+  }
+  for (int e=0; e < b; e++) {
+    if (a[e] != c[e]) {
+      return false;
+    }
+  }
+  return true;
+}

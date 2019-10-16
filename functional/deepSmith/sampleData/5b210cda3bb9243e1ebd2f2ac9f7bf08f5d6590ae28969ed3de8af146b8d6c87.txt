@@ -1,8 +1,0 @@
-public static Boolean[] fn_A(boolean... a){
-  final int b=a.length;
-  Boolean[] c=new Boolean[b];
-  for (int d=0; d < b; d++) {
-    c[d]=a[d];
-  }
-  return c;
-}

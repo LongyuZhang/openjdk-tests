@@ -1,0 +1,333 @@
+private static int fn_A(double a,double b){
+  if (b < 16.5) {
+    if (a < 16.5) {
+      if (b < 13.5) {
+        if (a < 13.5) {
+          return 96;
+        }
+ else {
+          if (a < 14.0) {
+            if (b < 13.0) {
+              return 261;
+            }
+ else {
+              return 96;
+            }
+          }
+ else {
+            return 261;
+          }
+        }
+      }
+ else {
+        if (a < 13.5) {
+          if (b < 15.0) {
+            if (a < 12.0) {
+              if (b < 14.0) {
+                return 96;
+              }
+ else {
+                if (b < 14.5) {
+                  if (a < 11.5) {
+                    return 327;
+                  }
+ else {
+                    return 96;
+                  }
+                }
+ else {
+                  if (a < 11.5) {
+                    return 327;
+                  }
+ else {
+                    return 96;
+                  }
+                }
+              }
+            }
+ else {
+              if (b < 14.5) {
+                return 96;
+              }
+ else {
+                if (a < 12.5) {
+                  return 96;
+                }
+ else {
+                  return 327;
+                }
+              }
+            }
+          }
+ else {
+            if (a < 12.0) {
+              if (b < 15.5) {
+                return 327;
+              }
+ else {
+                return 203;
+              }
+            }
+ else {
+              if (b < 15.5) {
+                if (a < 12.5) {
+                  return 327;
+                }
+ else {
+                  return 203;
+                }
+              }
+ else {
+                return 203;
+              }
+            }
+          }
+        }
+ else {
+          if (b < 15.0) {
+            if (a < 15.0) {
+              if (b < 14.0) {
+                if (a < 14.0) {
+                  return 96;
+                }
+ else {
+                  return 261;
+                }
+              }
+ else {
+                return 203;
+              }
+            }
+ else {
+              if (b < 14.0) {
+                return 261;
+              }
+ else {
+                if (a < 15.5) {
+                  return 203;
+                }
+ else {
+                  if (b < 14.5) {
+                    return 261;
+                  }
+ else {
+                    if (a < 16.0) {
+                      return 203;
+                    }
+ else {
+                      return 261;
+                    }
+                  }
+                }
+              }
+            }
+          }
+ else {
+            return 203;
+          }
+        }
+      }
+    }
+ else {
+      if (a < 19.5) {
+        if (b < 15.5) {
+          return 261;
+        }
+ else {
+          if (a < 18.0) {
+            if (a < 17.0) {
+              return 203;
+            }
+ else {
+              if (b < 16.0) {
+                return 261;
+              }
+ else {
+                return 203;
+              }
+            }
+          }
+ else {
+            if (a < 18.5) {
+              if (b < 16.0) {
+                return 261;
+              }
+ else {
+                return 203;
+              }
+            }
+ else {
+              if (b < 16.0) {
+                return 261;
+              }
+ else {
+                return 203;
+              }
+            }
+          }
+        }
+      }
+ else {
+        if (b < 15.5) {
+          return 261;
+        }
+ else {
+          if (a < 21.0) {
+            if (a < 20.0) {
+              if (b < 16.0) {
+                return 261;
+              }
+ else {
+                return 203;
+              }
+            }
+ else {
+              if (b < 16.0) {
+                return 261;
+              }
+ else {
+                return 203;
+              }
+            }
+          }
+ else {
+            if (a < 21.5) {
+              if (b < 16.0) {
+                return 261;
+              }
+ else {
+                return 203;
+              }
+            }
+ else {
+              return 203;
+            }
+          }
+        }
+      }
+    }
+  }
+ else {
+    if (a < 21.0) {
+      if (a < 20.5) {
+        if (a < 20.0) {
+          if (a < 19.5) {
+            if (a < 19.0) {
+              if (a < 18.5) {
+                if (a < 18.0) {
+                  if (a < 17.5) {
+                    if (a < 17.0) {
+                      if (b < 22.0) {
+                        return 203;
+                      }
+ else {
+                        if (a < 16.5) {
+                          if (a < 16.0) {
+                            if (a < 15.5) {
+                              if (a < 13.0) {
+                                return 203;
+                              }
+ else {
+                                if (a < 13.5) {
+                                  return 323;
+                                }
+ else {
+                                  return 203;
+                                }
+                              }
+                            }
+ else {
+                              return 203;
+                            }
+                          }
+ else {
+                            return 203;
+                          }
+                        }
+ else {
+                          return 203;
+                        }
+                      }
+                    }
+ else {
+                      return 203;
+                    }
+                  }
+ else {
+                    return 203;
+                  }
+                }
+ else {
+                  return 203;
+                }
+              }
+ else {
+                return 203;
+              }
+            }
+ else {
+              return 203;
+            }
+          }
+ else {
+            return 203;
+          }
+        }
+ else {
+          return 203;
+        }
+      }
+ else {
+        return 203;
+      }
+    }
+ else {
+      if (b < 19.5) {
+        return 203;
+      }
+ else {
+        if (b < 21.0) {
+          if (b < 20.0) {
+            if (a < 22.0) {
+              return 203;
+            }
+ else {
+              return 334;
+            }
+          }
+ else {
+            if (a < 21.5) {
+              return 203;
+            }
+ else {
+              if (b < 20.5) {
+                if (a < 22.0) {
+                  return 203;
+                }
+ else {
+                  return 334;
+                }
+              }
+ else {
+                return 334;
+              }
+            }
+          }
+        }
+ else {
+          if (b < 21.5) {
+            if (a < 21.5) {
+              return 203;
+            }
+ else {
+              return 334;
+            }
+          }
+ else {
+            return 334;
+          }
+        }
+      }
+    }
+  }
+}

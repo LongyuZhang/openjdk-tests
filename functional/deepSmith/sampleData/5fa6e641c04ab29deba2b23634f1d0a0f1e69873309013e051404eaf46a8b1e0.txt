@@ -1,0 +1,6 @@
+public static final boolean fn_A(int[] a,int b,int c,int d){
+  for (int e=b; e <= c; e++) {
+    if (a[e] == d)     return (true);
+  }
+  return (false);
+}

@@ -1,0 +1,16 @@
+public static long fn_A(int a,int b,int c,int d,int e,int f,int g){
+  long h=g & 0x3FF;
+  long i=(f & 0x3F);
+  h|=(i << 10);
+  i=e & 0x3F;
+  h|=(i << 16);
+  i=d & 0x1F;
+  h|=(i << 22);
+  i=c & 0x1F;
+  h|=(i << 27);
+  i=b & 0xF;
+  h|=(i << 32);
+  i=a & 0xFFFF;
+  h|=(i << 36);
+  return h;
+}

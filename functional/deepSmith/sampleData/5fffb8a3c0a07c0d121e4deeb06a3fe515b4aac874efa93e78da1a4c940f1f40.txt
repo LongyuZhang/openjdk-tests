@@ -1,0 +1,35 @@
+private static int fn_A(Object a,int b,int c){
+  if (a == null) {
+    return b;
+  }
+ else   if (a instanceof Object[]) {
+    return ((Object[])a).length;
+  }
+ else   if (a instanceof long[]) {
+    return ((long[])a).length;
+  }
+ else   if (a instanceof int[]) {
+    return ((int[])a).length;
+  }
+ else   if (a instanceof short[]) {
+    return ((short[])a).length;
+  }
+ else   if (a instanceof byte[]) {
+    return ((byte[])a).length;
+  }
+ else   if (a instanceof double[]) {
+    return ((double[])a).length;
+  }
+ else   if (a instanceof float[]) {
+    return ((float[])a).length;
+  }
+ else   if (a instanceof boolean[]) {
+    return ((boolean[])a).length;
+  }
+ else   if (a instanceof char[]) {
+    return ((char[])a).length;
+  }
+ else {
+    return c;
+  }
+}

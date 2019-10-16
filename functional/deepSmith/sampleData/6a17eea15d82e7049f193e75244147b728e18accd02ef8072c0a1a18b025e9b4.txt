@@ -1,0 +1,9 @@
+public static double fn_A(double a){
+  while (a > 3.141592653589793d) {
+    a-=6.283185307179586d;
+  }
+  while (a <= -3.141592653589793d) {
+    a+=6.283185307179586d;
+  }
+  return a;
+}

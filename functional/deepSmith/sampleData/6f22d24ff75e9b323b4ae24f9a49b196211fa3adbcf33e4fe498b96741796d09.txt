@@ -1,0 +1,4 @@
+private static boolean fn_A(String a){
+  boolean b=false;
+  return b;
+}

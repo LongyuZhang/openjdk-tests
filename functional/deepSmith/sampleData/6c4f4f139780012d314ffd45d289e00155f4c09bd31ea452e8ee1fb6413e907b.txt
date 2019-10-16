@@ -1,0 +1,10 @@
+public static int fn_A(int[][] a,char b,int c){
+  if (a != null) {
+    for (int d=0; d < a.length; d++) {
+      if (a[d][2] == (int)b) {
+        return a[d][c];
+      }
+    }
+  }
+  return -1;
+}

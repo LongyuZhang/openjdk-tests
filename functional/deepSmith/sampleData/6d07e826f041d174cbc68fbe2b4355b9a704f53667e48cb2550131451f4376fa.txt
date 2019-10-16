@@ -1,0 +1,8 @@
+public static byte fn_A(Object a,int b) throws Throwable {
+  if (a instanceof boolean[]) {
+    return (byte)(((boolean[])a)[b] ? 1 : 0);
+  }
+ else {
+    return ((byte[])a)[b];
+  }
+}

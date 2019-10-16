@@ -1,9 +1,0 @@
-public static void main(String[] a){
-  int b=0;
-  if (!(b > 0)) {
-    System.out.println("Pincode cannot be 0 or negative number");
-  }
- else {
-    System.out.println("Pincode accepted");
-  }
-}

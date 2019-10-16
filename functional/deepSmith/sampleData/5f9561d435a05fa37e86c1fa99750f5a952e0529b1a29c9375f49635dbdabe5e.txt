@@ -1,0 +1,7 @@
+private static String[] fn_A(String[] a){
+  String[] b=new String[a.length - 1];
+  for (int c=0; c < b.length; c++) {
+    b[c]=a[c + 1];
+  }
+  return b;
+}

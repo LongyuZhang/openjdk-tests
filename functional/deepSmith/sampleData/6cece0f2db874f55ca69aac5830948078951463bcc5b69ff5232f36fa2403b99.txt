@@ -1,0 +1,6 @@
+public static double[] fn_A(final double[] a,final double b){
+  for (int c=0; c < a.length; c++) {
+    a[c]-=b;
+  }
+  return a;
+}

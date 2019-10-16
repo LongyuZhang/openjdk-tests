@@ -1,6 +1,0 @@
-public static Exception fn_A(Throwable a){
-  if (a instanceof Exception) {
-    return (Exception)a;
-  }
-  return new Exception("Wrapped Throwable",a);
-}

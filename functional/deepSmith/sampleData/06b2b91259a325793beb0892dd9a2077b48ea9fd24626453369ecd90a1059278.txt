@@ -1,0 +1,17 @@
+protected static int fn_A(final byte[] a){
+  final int b=a.length;
+  int c=0, d;
+  for (int e=0; e < b; e++) {
+    d=(a[e] & 0xFF) >> 4;
+    if (d < 8)     c++;
+ else     if (d < 14) {
+      c++;
+      e++;
+    }
+ else {
+      c++;
+      e+=2;
+    }
+  }
+  return c;
+}

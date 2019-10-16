@@ -1,0 +1,17 @@
+public static final double[] fn_A(int a){
+  if (a < 1) {
+    throw new IllegalArgumentException("ptolemy.math.SignalProcessing" + ".generateBartlettWindow(): " + " length of window should be greater than 0.");
+  }
+  int b=a - 1;
+  int c;
+  double[] d=new double[a];
+  int e=b / 2;
+  double f=2.0 / b;
+  for (c=0; c <= e; c++) {
+    d[c]=c * f;
+  }
+  for (c=e + 1; c < a; c++) {
+    d[c]=2.0 - (c * f);
+  }
+  return d;
+}

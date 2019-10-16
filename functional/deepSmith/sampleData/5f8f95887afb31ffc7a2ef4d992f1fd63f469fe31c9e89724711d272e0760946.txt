@@ -1,9 +1,0 @@
-public static boolean fn_A(double a,double b,double c){
-  if (a < 0.0)   throw new RuntimeException("The side A cannot have a negative length, lengthSideA = " + a);
-  if (b < 0.0)   throw new RuntimeException("The side B cannot have a negative length, lengthSideB = " + b);
-  if (c < 0.0)   throw new RuntimeException("The side C cannot have a negative length, lengthSideC = " + c);
-  if (a + b <= c)   return false;
-  if (b + c <= a)   return false;
-  if (a + c <= b)   return false;
-  return true;
-}

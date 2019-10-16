@@ -1,0 +1,7 @@
+private static int fn_A(int a,int b){
+  int c=((a & 0xFF) * ((b & 0xFF))) / 0xFF;
+  int d=(((a >> 8) & 0xFF) * ((b >> 8) & 0xFF)) / 0xFF;
+  int e=(((a >> 16) & 0xFF) * ((b >> 16) & 0xFF)) / 0xFF;
+  int f=(((a >> 24) & 0xFF) * ((b >> 24) & 0xFF)) / 0xFF;
+  return c | (d << 8) | (e << 16)| (f << 24);
+}

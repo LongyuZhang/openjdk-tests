@@ -1,0 +1,21 @@
+private static double fn_A(double[] a,double[] b,double[] c,int d){
+  double e=0.0;
+  for (int f=0; f < d; f++) {
+    e+=a[f];
+  }
+  e/=d;
+  double g=0.0;
+  double h=0.0;
+  double i=0.0;
+  double j=0.0;
+  for (int f=0; f < d; f++) {
+    j+=(a[f] - e) * (c[f] - e);
+    g+=(c[f] - e) * (c[f] - e);
+    h+=(c[f] - e);
+    i+=(b[f] - e) * (c[f] - e);
+  }
+  j/=d;
+  double k=(g / (d - 1)) - Math.pow(h / d,2.0);
+  double l=i / (d - 1);
+  return (l - j) / k;
+}

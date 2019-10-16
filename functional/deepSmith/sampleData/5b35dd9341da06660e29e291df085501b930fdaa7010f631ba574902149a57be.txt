@@ -1,5 +1,0 @@
-private static void fn_A(boolean a){
-  if (!a) {
-    throw new IllegalArgumentException();
-  }
-}

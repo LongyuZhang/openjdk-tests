@@ -1,0 +1,12 @@
+private static <T extends Number>double[] fn_A(T[] a){
+  if (a == null) {
+    return null;
+  }
+  double[] b=new double[a.length];
+  for (int c=0; c < a.length; c++) {
+    if (a[c] != null) {
+      b[c]=a[c].doubleValue();
+    }
+  }
+  return b;
+}

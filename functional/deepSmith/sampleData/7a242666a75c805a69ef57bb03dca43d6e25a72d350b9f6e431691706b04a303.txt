@@ -1,0 +1,6 @@
+public static double fn_A() throws InterruptedException {
+  long a=System.currentTimeMillis();
+  Thread.sleep(500);
+  long b=System.currentTimeMillis();
+  return (b - a) / 500.00;
+}

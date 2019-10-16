@@ -1,6 +1,0 @@
-public static Object fn_A(Object[] a){
-  if (a.length == 0) {
-    throw new NoSuchElementException("Empty array");
-  }
-  return a[a.length - 1];
-}

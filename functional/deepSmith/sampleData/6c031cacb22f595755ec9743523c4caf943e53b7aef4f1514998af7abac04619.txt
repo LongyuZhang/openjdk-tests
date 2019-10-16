@@ -1,0 +1,8 @@
+public static long[] fn_A(long[] a){
+  for (int b=0, c=a.length / 2, d=a.length - 1; b < c; b++, d--) {
+    long e=a[b];
+    a[b]=a[d];
+    a[d]=e;
+  }
+  return a;
+}

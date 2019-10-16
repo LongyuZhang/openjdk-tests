@@ -1,0 +1,5 @@
+public static boolean fn_A(Object a){
+  if (!(a instanceof Object[]))   return false;
+  Object[] b=(Object[])a;
+  return b.length > 0 && b[b.length - 1] instanceof BitSet;
+}

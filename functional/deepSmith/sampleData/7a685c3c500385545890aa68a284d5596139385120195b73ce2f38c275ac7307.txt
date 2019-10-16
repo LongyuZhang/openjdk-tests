@@ -1,0 +1,7 @@
+public static StackTraceElement fn_A(){
+  StackTraceElement[] a=new Exception().getStackTrace();
+  if (a.length <= 2) {
+    throw new IndexOutOfBoundsException("Not enough callers on the stack.");
+  }
+  return a[2];
+}

@@ -1,4 +1,0 @@
-private static final long fn_A(long a){
-  if (a == 0)   return 54384849948L;
-  return a;
-}

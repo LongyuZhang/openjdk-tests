@@ -1,0 +1,4 @@
+protected static final boolean fn_A(char a){
+  if (a >= 0x20)   return false;
+  return a == 0x9 || a == 0xA || a == 0xD;
+}

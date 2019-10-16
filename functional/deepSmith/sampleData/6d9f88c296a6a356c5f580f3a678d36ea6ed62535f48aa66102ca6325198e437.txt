@@ -1,0 +1,11 @@
+public static String fn_A(String a,String b,String c){
+  String d=b;
+  if (a != null) {
+    d=a + "." + b;
+  }
+  d=d + "|";
+  if (c != null) {
+    d=d + c;
+  }
+  return d;
+}

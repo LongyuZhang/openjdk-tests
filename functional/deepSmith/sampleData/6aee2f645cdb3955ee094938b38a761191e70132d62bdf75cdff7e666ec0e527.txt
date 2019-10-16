@@ -1,0 +1,10 @@
+public static byte[] fn_A(int[] a){
+  byte[] b=new byte[a.length << 2];
+  for (int c=0, d=0; c < a.length; c++) {
+    b[d++]=(byte)a[c];
+    b[d++]=(byte)(a[c] >> 8);
+    b[d++]=(byte)(a[c] >> 16);
+    b[d++]=(byte)(a[c] >> 24);
+  }
+  return b;
+}

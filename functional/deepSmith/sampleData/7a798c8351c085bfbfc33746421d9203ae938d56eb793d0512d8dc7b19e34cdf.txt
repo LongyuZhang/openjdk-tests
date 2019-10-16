@@ -1,0 +1,5 @@
+protected static void fn_A(long a){
+  if (a <= 0 || a > 128L << 40) {
+    throw new IllegalArgumentException("invalid size: " + a);
+  }
+}

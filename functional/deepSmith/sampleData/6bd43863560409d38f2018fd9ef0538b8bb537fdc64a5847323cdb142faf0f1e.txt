@@ -1,0 +1,8 @@
+public static byte fn_A(int a){
+  if (a < 0)   return 0;
+ else   if (a >= 128) {
+    if (a >= 256)     return -1;
+ else     return (byte)(a - 256);
+  }
+ else   return (byte)a;
+}

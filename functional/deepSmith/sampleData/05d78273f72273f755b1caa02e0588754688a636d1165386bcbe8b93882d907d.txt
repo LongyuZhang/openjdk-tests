@@ -1,6 +1,0 @@
-public static String fn_A(String[] a,int b){
-  if (b < a.length) {
-    return a[b];
-  }
-  return "";
-}

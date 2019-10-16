@@ -1,0 +1,22 @@
+public static float[] fn_A(float a,float b,float c,float d){
+  float[] e=new float[16];
+  float f=(float)(Math.tan((180 - a) * Math.PI / 360f));
+  float g=(c - d);
+  e[0]=f / b;
+  e[4]=0;
+  e[8]=0;
+  e[12]=0;
+  e[1]=0;
+  e[5]=f;
+  e[9]=0;
+  e[13]=0;
+  e[2]=0;
+  e[6]=0;
+  e[10]=(c + d) / g;
+  e[14]=(2 * c * d) / g;
+  e[3]=0;
+  e[7]=0;
+  e[11]=-1;
+  e[15]=0;
+  return e;
+}

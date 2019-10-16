@@ -1,4 +1,0 @@
-private static boolean fn_A(short a,short b){
-  short c=(short)(a + b);
-  return ((a < 0 || b < 0) && c >= 0) || (a < 0 && b < 0);
-}

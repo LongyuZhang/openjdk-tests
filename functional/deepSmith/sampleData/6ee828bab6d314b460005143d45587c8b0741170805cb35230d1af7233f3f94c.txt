@@ -1,0 +1,9 @@
+private static void fn_A(double[] a,int b,int c,double d,int e,int f,double g,int h,double i,double[] j,int k){
+  double l=a[b + e * h];
+  double m=a[b + f * h];
+  double n=a[c + f * h];
+  double o=a[c + e * h];
+  if ((l != i) && (o != i) && (n != i)&& (m != i)) {
+    j[k]=((1.0 - d) * (1.0 - g) * l) + ((1.0 - d) * (g) * m) + ((d) * (g) * n)+ ((d) * (1.0 - g) * o);
+  }
+}

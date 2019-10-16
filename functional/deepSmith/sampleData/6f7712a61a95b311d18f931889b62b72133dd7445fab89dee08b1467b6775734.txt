@@ -1,0 +1,6 @@
+private static int fn_A(int a){
+  while (a > 3) {
+    a-=4;
+  }
+  return a;
+}

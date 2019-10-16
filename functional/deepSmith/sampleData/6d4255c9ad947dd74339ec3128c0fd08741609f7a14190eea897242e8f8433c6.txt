@@ -1,0 +1,8 @@
+public static final double fn_A(final double[] a,final double[] b) throws java.lang.Exception {
+  if (null == a || null == b)   throw new java.lang.Exception("Matrix::DotProduct => Invalid Inputs!");
+  int c=a.length;
+  double d=0.;
+  if (0 == c || c != b.length)   throw new java.lang.Exception("Matrix::DotProduct => Invalid Inputs!");
+  for (int e=0; e < c; ++e)   d+=b[e] * a[e];
+  return d;
+}

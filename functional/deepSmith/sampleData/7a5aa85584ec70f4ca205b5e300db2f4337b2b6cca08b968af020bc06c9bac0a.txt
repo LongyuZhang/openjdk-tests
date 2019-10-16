@@ -1,0 +1,6 @@
+private static char[] fn_A(char[] a){
+  if (a.length == 0) {
+    return a;
+  }
+  return new String(a).trim().toCharArray();
+}

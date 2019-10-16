@@ -1,0 +1,11 @@
+static int fn_A(int[] a,final int[] b,int c,int d,int e){
+  int f, g;
+  for (f=0; f < e; f++) {
+    g=b[c + 2 * f] + b[c + 2 * f + 1];
+    if (g > d) {
+      return 1;
+    }
+    a[f]=g;
+  }
+  return 0;
+}

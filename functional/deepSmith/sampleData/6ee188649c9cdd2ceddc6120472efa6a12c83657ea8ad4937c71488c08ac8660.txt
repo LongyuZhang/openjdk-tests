@@ -1,0 +1,7 @@
+static boolean fn_A(long a,long b,long c,long d,long e,long f,long g,long h){
+  long i=(c - a) * (f - b) - (d - b) * (e - a);
+  long j=(c - a) * (h - b) - (d - b) * (g - a);
+  long k=(g - e) * (b - f) - (h - f) * (a - e);
+  long l=(g - e) * (d - f) - (h - f) * (c - e);
+  return (i < 0 || j < 0) && (i > 0 || j > 0) && (k < 0 || l < 0)&& (k > 0 || l > 0);
+}

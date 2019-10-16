@@ -1,0 +1,7 @@
+public static byte[] fn_A(long a){
+  byte[] b=new byte[8];
+  for (int c=0; c < b.length; c++) {
+    b[c]=(byte)((a >>> 8 * c) & 0xFF);
+  }
+  return b;
+}

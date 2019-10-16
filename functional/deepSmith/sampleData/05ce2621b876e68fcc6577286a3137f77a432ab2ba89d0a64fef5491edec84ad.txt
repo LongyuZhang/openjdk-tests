@@ -1,4 +1,0 @@
-public static double fn_A(double a,double b,double c,double d){
-  if ((a/=d / 2) < 1)   return c / 2 * a * a * a * a + b;
-  return -c / 2 * ((a-=2) * a * a* a - 2) + b;
-}

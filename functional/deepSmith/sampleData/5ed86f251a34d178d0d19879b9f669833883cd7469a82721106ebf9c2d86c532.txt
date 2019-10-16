@@ -1,7 +1,0 @@
-public static void fn_A(){
-  System.out.println(" For server:");
-  System.out.println("    <memberid(server)> <number_of_instances>");
-  System.out.println(" For instances:");
-  System.out.println("    <memberid(instancexxx)> <number_of_instances> <payloadsize> <number_of_messages>");
-  System.exit(0);
-}

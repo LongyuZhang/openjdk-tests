@@ -1,0 +1,6 @@
+protected static long fn_A(byte[] a){
+  if (a.length != 8)   throw new IllegalArgumentException("byteArray must be 8 bytes in length");
+  long b=0;
+  for (int c=0; c < 8; c++)   b=(b << 8) | (a[c] & 0xff);
+  return b;
+}

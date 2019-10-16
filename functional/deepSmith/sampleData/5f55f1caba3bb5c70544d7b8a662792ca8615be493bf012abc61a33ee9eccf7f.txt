@@ -1,0 +1,19 @@
+public final static String fn_A(long a,boolean b,boolean c){
+  long d=(a - (a % 3600000)) / 3600000;
+  long e=(a - (d * 3600000));
+  long f=(e - (e % 60000)) / 60000;
+  e=(e - (f * 60000));
+  long g=(e - (e % 1000)) / 1000;
+  e=(e - (g * 1000));
+  String h="";
+  if (c) {
+    h=d + ":" + f+ ":"+ g+ ":"+ e;
+  }
+ else   if (b) {
+    h=d + ":" + f+ ":"+ g;
+  }
+ else {
+    h=d + ":" + f;
+  }
+  return h;
+}

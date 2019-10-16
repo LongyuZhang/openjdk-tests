@@ -1,0 +1,6 @@
+public static long fn_A(){
+  System.gc();
+  System.gc();
+  System.gc();
+  return (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / (1024 * 1024);
+}

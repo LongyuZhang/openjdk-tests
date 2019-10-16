@@ -1,5 +1,0 @@
-public static int[] fn_A(String[] a,int b){
-  int[] c=new int[a.length];
-  for (int d=0; d < a.length; d++)   c[d]=a[d] == null ? b : Integer.parseInt(a[d]);
-  return c;
-}

@@ -1,0 +1,4 @@
+public static long fn_A(float a){
+  if (a < Long.MIN_VALUE || a > Long.MAX_VALUE)   throw new ArithmeticException("value <> Long: " + a);
+  return (long)a;
+}

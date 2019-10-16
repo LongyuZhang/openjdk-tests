@@ -1,0 +1,8 @@
+private static int[] fn_A(String[] a){
+  int[] b=new int[2];
+  for (int c=0; c < 2; c++) {
+    int d=("none".equals(a[c].toLowerCase())) ? -1 : Integer.valueOf(a[c]).intValue();
+    b[c]=d;
+  }
+  return b;
+}

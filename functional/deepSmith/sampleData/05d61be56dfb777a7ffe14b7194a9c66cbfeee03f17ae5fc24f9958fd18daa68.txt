@@ -1,6 +1,0 @@
-public static void fn_A(double[] a,int b){
-  for (int c=0; c < a.length; c++) {
-    System.out.printf("%5.2f ",a[c]);
-    if ((c + 1) % b == 0)     System.out.println("");
-  }
-}

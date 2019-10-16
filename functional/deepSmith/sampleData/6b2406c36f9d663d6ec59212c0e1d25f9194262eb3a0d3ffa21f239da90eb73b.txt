@@ -1,0 +1,25 @@
+private static int fn_A(int a,int b,int c,int d,int e,int f,int g,int h,int i,int j,int k){
+switch (a) {
+case 0:
+    return b;
+case 1:
+  return c;
+case 2:
+return d;
+case 3:
+return e;
+case 4:
+return f;
+case 5:
+return g;
+case 6:
+return h;
+case 7:
+return i;
+case 8:
+return j;
+case 9:
+return k;
+}
+return 42;
+}

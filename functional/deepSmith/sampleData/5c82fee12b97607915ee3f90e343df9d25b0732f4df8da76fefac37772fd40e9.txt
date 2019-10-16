@@ -1,6 +1,0 @@
-private static void fn_A(byte[] a){
-  int b=a.length - 1;
-  while ((b >= 0) && (++a[b] == 0)) {
-    b--;
-  }
-}

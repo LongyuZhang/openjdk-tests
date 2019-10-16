@@ -1,0 +1,10 @@
+private static String[] fn_A(int a,String[] b){
+  if (a > 0 && a < b.length) {
+    String[] c=new String[b.length - a];
+    for (int d=a; d < b.length; d++) {
+      c[d - a]=b[d];
+    }
+    return c;
+  }
+ else   return b;
+}

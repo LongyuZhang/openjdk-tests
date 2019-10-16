@@ -1,0 +1,19 @@
+public static double[][] fn_A(double[][] a){
+  double[][] b;
+  double c;
+  int d;
+  b=new double[a.length][a[0].length];
+  for (int e=0; e < a.length; e++) {
+    for (int f=0; f < a[0].length; f++) {
+      c=a[e][f];
+      if (c < Math.pow(2,32) / 2500) {
+        d=(int)(c * 1000);
+        c=d;
+        c/=1000;
+        if ((a[e][f] - c) >= 0.0005)         c+=0.001;
+      }
+      b[e][f]=c;
+    }
+  }
+  return b;
+}

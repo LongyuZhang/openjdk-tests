@@ -1,0 +1,5 @@
+static void fn_A(final Object a){
+  if (!(a instanceof Integer) && !(a instanceof Float) && !(a instanceof Long)&& !(a instanceof Double)&& !(a instanceof String)) {
+    throw new IllegalArgumentException("Invalid constant: " + a);
+  }
+}

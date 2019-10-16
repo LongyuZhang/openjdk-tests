@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("Usage: java ConsoleClient -u username -p password -s subdomain");
+  System.exit(1);
+}

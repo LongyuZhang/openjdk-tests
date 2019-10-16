@@ -1,0 +1,17 @@
+public static int fn_A(int a,int b,int c){
+  if (a < b) {
+    c=(b / a) * c;
+  }
+ else {
+    c=(a / b) * c;
+  }
+  int d=1;
+  if (b > c || a > c) {
+    final int e=b / 2;
+    final int f=a / 2;
+    while ((e / d) > c && (f / d) > c) {
+      d*=2;
+    }
+  }
+  return d;
+}

@@ -1,0 +1,4 @@
+public static long fn_A(long[] a,int b){
+  if (b < 0)   b+=a.length;
+  return a[b];
+}

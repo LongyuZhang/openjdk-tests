@@ -1,9 +1,0 @@
-public static int fn_A(boolean[] a){
-  int b=0;
-  for (int c=0; c < a.length; c++) {
-    if (a[c] == true) {
-      b++;
-    }
-  }
-  return b;
-}

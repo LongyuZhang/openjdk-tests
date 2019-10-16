@@ -1,0 +1,5 @@
+static public void fn_A(boolean a,String b){
+  if (!a) {
+    throw new IllegalArgumentException(b);
+  }
+}

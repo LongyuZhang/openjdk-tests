@@ -1,0 +1,7 @@
+public static boolean fn_A(int a){
+switch (a) {
+case 0:
+    return true;
+}
+return false;
+}

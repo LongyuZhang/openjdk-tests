@@ -1,0 +1,12 @@
+public static String fn_A(int a){
+  if (a > 3600) {
+    int b=a / 3600;
+    int c=(a % 3600) / 60;
+    return b + "" + c+ "";
+  }
+  if (a >= 60) {
+    int c=a / 60;
+    return c + "";
+  }
+  return a + "";
+}

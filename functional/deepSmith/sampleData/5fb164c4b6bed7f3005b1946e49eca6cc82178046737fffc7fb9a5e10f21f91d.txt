@@ -1,0 +1,14 @@
+public static boolean fn_A(int a){
+  int b=Character.getType((char)a);
+switch (b) {
+case Character.UPPERCASE_LETTER:
+case Character.LOWERCASE_LETTER:
+case Character.TITLECASE_LETTER:
+case Character.MODIFIER_LETTER:
+case Character.OTHER_LETTER:
+case Character.LETTER_NUMBER:
+    return true;
+default :
+  return false;
+}
+}

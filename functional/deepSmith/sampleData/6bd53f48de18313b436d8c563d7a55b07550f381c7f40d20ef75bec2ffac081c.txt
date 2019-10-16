@@ -1,0 +1,8 @@
+static boolean fn_A(int a,int b[]){
+  int c=a >> 5;
+  int d=a & 31;
+  int e;
+  for (e=0; (e < c) && (b[e] == 0); e++) {
+  }
+  return ((e != c) || (b[e] << (32 - d) != 0));
+}

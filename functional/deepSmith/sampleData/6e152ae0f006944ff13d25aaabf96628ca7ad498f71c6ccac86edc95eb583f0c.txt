@@ -1,0 +1,4 @@
+public static long fn_A(){
+  long a=Runtime.getRuntime().maxMemory();
+  return Math.round(a / 1024.0 / 1024.0);
+}

@@ -1,5 +1,0 @@
-static void fn_A(long[] a,long[] b,long c){
-  for (int d=0; d < a.length; d+=1) {
-    a[d]=(long)(b[d] - c);
-  }
-}

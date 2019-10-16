@@ -1,6 +1,0 @@
-public static int fn_A(final int a){
-  if (a == Integer.MIN_VALUE) {
-    return Integer.MAX_VALUE;
-  }
-  return -a;
-}

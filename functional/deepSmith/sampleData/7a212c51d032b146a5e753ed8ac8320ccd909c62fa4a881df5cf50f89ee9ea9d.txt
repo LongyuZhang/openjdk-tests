@@ -1,0 +1,19 @@
+protected static int fn_A(final int[] a,final double[] b,final double c){
+  int d=-1;
+  for (int e=0; e < b.length; e++)   if (c < b[e]) {
+    d=e;
+    break;
+  }
+  if (d == 0)   return a[0];
+  if (d == -1)   return a[a.length - 1];
+  final double f=(c - b[d - 1]) / (b[d] - b[d - 1]);
+  final int g=a[d - 1];
+  final int h=a[d];
+  final int i=g >> 16;
+  final int j=g >> 8 & 0xff;
+  final int k=g & 0xff;
+  final int l=(int)(i + ((h >> 16) - i) * f);
+  final int m=(int)(j + ((h >> 8 & 0xff) - j) * f);
+  final int n=(int)(k + ((h & 0xff) - k) * f);
+  return l << 16 | m << 8 | n;
+}

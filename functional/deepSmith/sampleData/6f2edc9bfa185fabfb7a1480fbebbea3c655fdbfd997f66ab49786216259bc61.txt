@@ -1,0 +1,12 @@
+private static byte[] fn_A(int a){
+  byte[] b=new byte[8];
+  b[0]=0x1D;
+  b[1]=0x28;
+  b[2]=0x6B;
+  b[3]=0x03;
+  b[4]=0x00;
+  b[5]=0x31;
+  b[6]=0x43;
+  b[7]=(byte)a;
+  return b;
+}

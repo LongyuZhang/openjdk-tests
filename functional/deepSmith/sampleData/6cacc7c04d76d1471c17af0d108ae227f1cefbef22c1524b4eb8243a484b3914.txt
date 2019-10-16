@@ -1,0 +1,10 @@
+public static int fn_A(int a,int b){
+  int c;
+  if (a > b) {
+    c=b;
+  }
+ else {
+    c=a;
+  }
+  return c;
+}

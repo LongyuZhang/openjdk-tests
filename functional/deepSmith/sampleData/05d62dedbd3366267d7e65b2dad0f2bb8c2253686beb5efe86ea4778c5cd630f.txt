@@ -1,8 +1,0 @@
-public static double[] fn_A(int a,double b,double c){
-  double[] d=new double[a];
-  int e=a / 2;
-  for (int f=0; f < a; f++) {
-    d[f]=1.0 - (Math.sin(c * (f - e)) - Math.sin(b * (f - e))) / (Math.PI * (f - e));
-  }
-  return d;
-}

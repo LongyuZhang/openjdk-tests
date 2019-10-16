@@ -1,0 +1,8 @@
+public static void fn_A(int a){
+  final double b=35.00;
+  final int c=50;
+  double d;
+  d=a * b;
+  System.out.println("The price for an event with " + a + " guests at $"+ b+ " per guest is $"+ d);
+  System.out.println("Whether this is a large event is " + (a >= c));
+}

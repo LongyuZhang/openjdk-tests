@@ -1,9 +1,0 @@
-public static int fn_A(final int... a){
-  int b=Integer.MAX_VALUE;
-  for (int c=0; c < a.length; c++) {
-    if (a[c] < b) {
-      b=a[c];
-    }
-  }
-  return b;
-}

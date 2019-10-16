@@ -1,6 +1,0 @@
-public static <T>T fn_A(T a,T b){
-  if (a != b) {
-    throw new IllegalArgumentException("argument " + a + " is not equal to "+ b);
-  }
-  return a;
-}

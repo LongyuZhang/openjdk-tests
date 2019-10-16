@@ -1,0 +1,4 @@
+private static RandomAccessFile fn_A(String a) throws IOException {
+  File b=new File(a);
+  return new RandomAccessFile(b,"r");
+}

@@ -1,8 +1,0 @@
-private static Class<?> fn_A(){
-  try {
-    return Class.forName("android.os.SystemProperties");
-  }
- catch (  ClassNotFoundException a) {
-    return null;
-  }
-}

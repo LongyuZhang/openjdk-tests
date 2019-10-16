@@ -1,4 +1,0 @@
-static long fn_A(long a){
-  final long b=(long)(a * 0.1);
-  return (long)(b * 2 * Math.random()) - b;
-}

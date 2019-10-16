@@ -1,0 +1,10 @@
+static int[] fn_A(int[] a,int b){
+  int c=a.length;
+  int d=b % c;
+  int[] e=new int[c];
+  if (d == 0)   return a;
+  int f=0;
+  for (int g=d; g < c; g++)   e[f++]=a[g];
+  for (int g=0; g < d; g++)   e[f++]=a[g];
+  return e;
+}

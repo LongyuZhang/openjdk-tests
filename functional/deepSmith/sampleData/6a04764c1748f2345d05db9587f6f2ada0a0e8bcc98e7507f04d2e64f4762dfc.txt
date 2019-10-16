@@ -1,0 +1,6 @@
+private static byte[] fn_A(byte[] a){
+  if (a == null || a.length == 0) {
+    return new byte[6];
+  }
+  return a;
+}

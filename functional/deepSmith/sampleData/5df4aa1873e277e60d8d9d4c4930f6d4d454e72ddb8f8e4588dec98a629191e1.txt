@@ -1,4 +1,0 @@
-public static short fn_A(byte[] a,int b,boolean c){
-  if (c)   return (short)(((a[b + 0] & 0xFF) << 0) + ((a[b + 1] & 0xFF) << 8));
-  return (short)(((a[b + 0] & 0xFF) << 8) + ((a[b + 1] & 0xFF) << 0));
-}

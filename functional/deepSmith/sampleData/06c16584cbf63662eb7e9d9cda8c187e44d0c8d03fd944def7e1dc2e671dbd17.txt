@@ -1,0 +1,4 @@
+private static String fn_A(final Integer a){
+  if (a == null)   return "";
+ else   return "/" + a;
+}

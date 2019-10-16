@@ -1,5 +1,0 @@
-public static byte[] fn_A(int a){
-  byte[] b=new byte[1];
-  b[0]=(byte)(a & 0xFF);
-  return b;
-}

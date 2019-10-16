@@ -1,0 +1,19 @@
+public static BigDecimal fn_A(Object a) throws IllegalArgumentException {
+  if (a instanceof BigDecimal) {
+    return (BigDecimal)a;
+  }
+  if (a instanceof BigInteger) {
+    return new BigDecimal((BigInteger)a);
+  }
+  if (a instanceof Number) {
+    return BigDecimal.valueOf(((Number)a).doubleValue());
+  }
+  if (a instanceof Character) {
+    char b=(Character)a;
+    return BigDecimal.valueOf((long)b);
+  }
+  if (a instanceof String) {
+    return new BigDecimal((String)a);
+  }
+  throw new IllegalArgumentException("Expected a number or a string, but got: " + a);
+}

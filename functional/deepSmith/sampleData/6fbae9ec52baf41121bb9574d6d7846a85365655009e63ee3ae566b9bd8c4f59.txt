@@ -1,0 +1,10 @@
+public static boolean fn_A(){
+  boolean a=false;
+  try {
+    assert(false);
+  }
+ catch (  AssertionError b) {
+    a=true;
+  }
+  return (a);
+}

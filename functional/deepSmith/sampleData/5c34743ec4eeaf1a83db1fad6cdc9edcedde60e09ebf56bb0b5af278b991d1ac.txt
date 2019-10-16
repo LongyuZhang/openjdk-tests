@@ -1,8 +1,0 @@
-private static void fn_A(final boolean a[],final boolean[] b,final int c,final int d){
-  final boolean e=a[c];
-  final boolean f=b[c];
-  a[c]=a[d];
-  b[c]=b[d];
-  a[d]=e;
-  b[d]=f;
-}

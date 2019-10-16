@@ -1,0 +1,12 @@
+private static boolean fn_A(int a){
+  if (a < '&' && a != '!' && a != '#' && a != '$') {
+    return false;
+  }
+ else   if (a >= '{' && a != '~') {
+    return false;
+  }
+ else   if (a == '`' || a == '<' || a == '>' || a == '\\' || a == '^') {
+    return false;
+  }
+  return true;
+}
