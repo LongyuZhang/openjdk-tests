@@ -1,0 +1,6 @@
+private static boolean fn_A(long a,int b){
+  assert(b > 0);
+  assert(a >= -1);
+  int c=(1 << b) - 1;
+  return (((int)a + 1) & c) == 0;
+}

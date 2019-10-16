@@ -1,4 +1,0 @@
-public static int[] fn_A(final int a){
-  int[] b={255,(a & 0x00ff0000) >> 16,(a & 0x0000ff00) >> 8,(a & 0x000000ff)};
-  return b;
-}

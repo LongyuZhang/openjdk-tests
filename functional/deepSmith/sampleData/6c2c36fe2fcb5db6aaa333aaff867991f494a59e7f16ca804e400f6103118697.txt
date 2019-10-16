@@ -1,0 +1,5 @@
+public static int fn_A(int a,int b,int c){
+  if (b < 0)   throw new IndexOutOfBoundsException("min index is 0,but start = " + b);
+  if (c >= Integer.SIZE)   throw new IndexOutOfBoundsException("max index is " + (Integer.SIZE - 1) + ",but end = "+ c);
+  return (a << Integer.SIZE - (c + 1)) >>> Integer.SIZE - (c - b + 1);
+}

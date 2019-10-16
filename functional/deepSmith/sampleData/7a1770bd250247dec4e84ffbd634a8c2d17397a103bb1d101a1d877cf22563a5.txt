@@ -1,0 +1,5 @@
+private final static void fn_A(byte[] a,int b,int c,int d){
+  for (final int e=b + d; b < e; ) {
+    a[c++]=a[b++];
+  }
+}

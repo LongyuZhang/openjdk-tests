@@ -1,0 +1,4 @@
+static int fn_A(int a,int b){
+  int c=a * 256 / b;
+  return c < 256 ? c : 255;
+}

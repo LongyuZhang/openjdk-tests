@@ -1,0 +1,19 @@
+private static String fn_A(double a){
+  String b="";
+  int c=(int)a / (60 * 60 * 24);
+  int d, e;
+  if (c != 0) {
+    b+=c + " " + ((c > 1) ? "days" : "day")+ ", ";
+  }
+  d=(int)a / 60;
+  e=d / 60;
+  e%=24;
+  d%=60;
+  if (e != 0) {
+    b+=e + ":" + d;
+  }
+ else {
+    b+=d + " min";
+  }
+  return b;
+}

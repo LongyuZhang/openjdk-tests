@@ -1,0 +1,5 @@
+private static String fn_A(final int a){
+  final String[] b={"authorization success","authorization failed","unauthorized","timeout","keep-alive","close"};
+  if (a >= b.length)   return "unknown status " + a;
+  return b[a];
+}

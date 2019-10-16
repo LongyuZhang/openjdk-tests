@@ -1,0 +1,4 @@
+public static int fn_A(long a){
+  long b=a % 256;
+  return (int)b;
+}

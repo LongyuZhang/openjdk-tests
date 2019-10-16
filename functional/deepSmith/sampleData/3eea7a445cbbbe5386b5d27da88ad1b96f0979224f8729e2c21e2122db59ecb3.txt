@@ -1,4 +1,0 @@
-public static int fn_A(final int a){
-  if (a < 4)   return a * 4;
- else   return (a / 4) + (a * 4) + 3+ ((a % 4) * 4);
-}

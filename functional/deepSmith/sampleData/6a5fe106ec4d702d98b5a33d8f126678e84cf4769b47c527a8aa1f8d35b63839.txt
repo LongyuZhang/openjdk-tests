@@ -1,0 +1,7 @@
+public static void main(String[] a) throws Throwable {
+  SecurityManager b=System.getSecurityManager();
+  if (b == null) {
+    System.setSecurityManager(new SecurityManager());
+  }
+  java.nio.charset.Charset.forName("SJIS_0213");
+}

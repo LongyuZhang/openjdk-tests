@@ -1,0 +1,7 @@
+private static String fn_A(byte[] a,int b,int c){
+  char[] d=new char[c];
+  for (int e=0; e < c; e++) {
+    d[e]=(char)(a[b + e] & 0xff);
+  }
+  return new String(d);
+}

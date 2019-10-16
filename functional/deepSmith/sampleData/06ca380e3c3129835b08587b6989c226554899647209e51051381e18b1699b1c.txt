@@ -1,0 +1,4 @@
+private static float fn_A(final float a,final float b){
+  final double c=a / Math.sqrt((a * a) + b);
+  return (float)c;
+}

@@ -1,0 +1,5 @@
+static double fn_A(double[] a){
+  double b=1.;
+  for (  Double c : a)   b+=c;
+  return b;
+}

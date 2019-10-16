@@ -1,0 +1,12 @@
+public static int fn_A(int a){
+  int b=0;
+  int c;
+  for (int d=1; d <= a; d++) {
+    c=d;
+    while (c % 5 == 0) {
+      b++;
+      c/=5;
+    }
+  }
+  return b;
+}

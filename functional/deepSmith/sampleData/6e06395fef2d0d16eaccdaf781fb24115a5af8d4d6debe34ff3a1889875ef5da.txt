@@ -1,0 +1,7 @@
+private static int fn_A(int a,int b){
+  long c=(long)a * (long)b;
+  if (c > Integer.MAX_VALUE) {
+    throw new ArithmeticException("overflow: mulPos");
+  }
+  return (int)c;
+}

@@ -1,0 +1,25 @@
+public static int fn_A(int[] a){
+  if (a == null || a.length == 0)   throw new IllegalArgumentException();
+  int b=1;
+  int c=a[0];
+  for (int d=0; d < a.length - b; d++) {
+    int e=d;
+    if (a[e] != a[e + b]) {
+      int f=e + b;
+      while (a[f] == a[f - 1]) {
+        f--;
+      }
+      d=f - 1;
+      continue;
+    }
+    while (d < a.length - b && a[d] == a[d + 1]) {
+      d++;
+    }
+    int g=d - e + 1;
+    if (g > b) {
+      b=g;
+      c=a[e];
+    }
+  }
+  return c;
+}

@@ -1,0 +1,4 @@
+private static File fn_A(){
+  File a=new File(System.getProperty("java.io.tmpdir"));
+  return new File(a,"__temp_test_drools_packages");
+}

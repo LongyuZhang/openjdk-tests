@@ -1,8 +1,0 @@
-private final static void fn_A(double[] a,int[] b,final int c,final int d){
-  final double e=a[c];
-  final int f=b[c];
-  a[c]=a[d];
-  b[c]=b[d];
-  a[d]=e;
-  b[d]=f;
-}

@@ -1,4 +1,0 @@
-private static void fn_A(int a){
-  System.out.print(a + "\n");
-  System.exit(0);
-}

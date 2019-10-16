@@ -1,0 +1,24 @@
+public static void fn_A(int a,float[] b,int c,int d,float[] e,int f){
+  int g, h, i, j;
+  float k, l, m, n, o, p;
+  int q, r;
+  j=a >> 1;
+  i=2 * d / j;
+  h=0;
+  for (int s=2; s < j; s+=2) {
+    g=a - s;
+    h+=i;
+    k=0.5f - e[f + d - h];
+    l=e[f + h];
+    q=c + s;
+    r=c + g;
+    m=b[q] - b[r];
+    n=b[q + 1] + b[r + 1];
+    o=k * m - l * n;
+    p=k * n + l * m;
+    b[q]-=o;
+    b[q + 1]-=p;
+    b[r]+=o;
+    b[r + 1]-=p;
+  }
+}

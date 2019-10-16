@@ -1,0 +1,10 @@
+private static String fn_A(int a){
+switch (a) {
+case 0:
+    return "dirt";
+case 128:
+  return "wood";
+default :
+return "dirt";
+}
+}

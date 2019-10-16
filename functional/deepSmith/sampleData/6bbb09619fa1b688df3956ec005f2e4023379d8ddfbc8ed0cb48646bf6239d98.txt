@@ -1,0 +1,5 @@
+protected static String fn_A(int a,String b[],int c[],int d){
+  for (int e=0; e < d; e++)   if (c[e] == a)   return b[e];
+  if (d == 0)   throw new RuntimeException("call to enumToString() with n=0");
+  throw new RuntimeException("invalid integer value " + a + " for enum attribute (not one of '"+ b[0]+ "'="+ c[0]+ " etc)");
+}

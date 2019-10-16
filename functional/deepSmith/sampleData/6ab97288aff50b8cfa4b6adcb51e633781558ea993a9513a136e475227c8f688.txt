@@ -1,0 +1,4 @@
+public static String fn_A(int a){
+  String b[]={"JAN","FEB","MAR","APR","MEI","JUN","JUL","AUG","SEPT","OKT","NOV","DES"};
+  return b[a];
+}

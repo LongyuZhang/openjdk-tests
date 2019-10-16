@@ -1,8 +1,0 @@
-private static boolean fn_A(char a){
-  if (a == ' ' || a == '\t') {
-    return true;
-  }
- else {
-    return false;
-  }
-}

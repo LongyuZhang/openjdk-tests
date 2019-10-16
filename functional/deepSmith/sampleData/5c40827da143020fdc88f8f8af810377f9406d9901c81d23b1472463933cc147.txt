@@ -1,6 +1,0 @@
-static long fn_A(String a,long b){
-  if (b <= 0) {
-    throw new IllegalArgumentException(a + " (" + b+ ") must be > 0");
-  }
-  return b;
-}

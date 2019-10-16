@@ -1,9 +1,0 @@
-private static Map<Thread,Long> fn_A(){
-  try {
-    Thread.class.getMethod("getId",(Class[])null);
-  }
- catch (  NoSuchMethodException a) {
-    return new WeakHashMap<Thread,Long>();
-  }
-  return null;
-}

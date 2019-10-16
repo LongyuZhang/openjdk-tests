@@ -1,0 +1,12 @@
+private static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "none";
+case 1:
+  return "haploid";
+case 2:
+return "diploid";
+default :
+return "polyploid";
+}
+}

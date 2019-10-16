@@ -1,0 +1,8 @@
+public static void main(String[] a){
+  String b="aaa";
+  String c="bbb";
+  b=b + c + b;
+  System.out.println("a " + b);
+  if (b == null)   System.out.println("branch aaa!=bbb");
+ else   System.out.println("branch aaa==bbb");
+}

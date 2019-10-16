@@ -1,0 +1,11 @@
+public static Double fn_A(String a){
+  if (a == null) {
+    return null;
+  }
+  try {
+    return new Double(a);
+  }
+ catch (  NumberFormatException b) {
+    return null;
+  }
+}

@@ -1,4 +1,0 @@
-public static boolean fn_A(int[] a,int b){
-  for (int c=0; c < a.length; c++)   if (a[c] == b)   return true;
-  return false;
-}

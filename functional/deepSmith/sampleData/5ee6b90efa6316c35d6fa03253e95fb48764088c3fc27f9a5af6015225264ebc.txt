@@ -1,6 +1,0 @@
-public static boolean fn_A(int[][] a,int b){
-  for (int c=1; c < a.length; c++) {
-    if (b != a[c][c - 1])     return false;
-  }
-  return true;
-}

@@ -1,6 +1,0 @@
-private static boolean fn_A(byte[] a){
-  if (a.length == 16) {
-    return (a[0] & 0xFF) == 0x20 && (a[1] & 0xFF) == 0x01 && (a[2] & 0xFF) == 0x0D && (a[3] & 0xFF) == 0xB8;
-  }
-  return false;
-}

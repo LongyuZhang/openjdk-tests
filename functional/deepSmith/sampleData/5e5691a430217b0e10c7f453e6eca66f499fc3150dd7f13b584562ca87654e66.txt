@@ -1,6 +1,0 @@
-public static String fn_A(String a,boolean b){
-  if (b) {
-    return "CREATE ROLE " + a;
-  }
-  return "DROP ROLE " + a;
-}

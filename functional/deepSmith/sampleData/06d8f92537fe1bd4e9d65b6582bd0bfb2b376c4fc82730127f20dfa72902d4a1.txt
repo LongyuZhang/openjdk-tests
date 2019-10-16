@@ -1,0 +1,8 @@
+public static void fn_A(){
+  System.out.println("This program runs through the logs and looks for any notable exceptions that occurred.");
+  System.out.println("If any exceptions happened then a summary is printed out.");
+  System.out.println();
+  System.out.println("arguments: <results directory>");
+  System.out.println();
+  System.out.println("If the results directory is not specified then the most recent directory is used.");
+}

@@ -1,0 +1,7 @@
+protected static int fn_A(int a,int b){
+  int c=a / b;
+  if (c * b != a) {
+    throw new IllegalArgumentException();
+  }
+  return c;
+}

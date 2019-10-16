@@ -1,0 +1,13 @@
+private static int fn_A(byte[] a,byte[] b,int c){
+  int d=a.length;
+  int e=b.length;
+  a:   for (int f=c; f < d; f++) {
+    for (int g=f, h=0; h < e; g++, h++) {
+      if (a[g] != b[h]) {
+        continue a;
+      }
+    }
+    return f;
+  }
+  return -1;
+}

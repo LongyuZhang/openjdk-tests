@@ -1,4 +1,0 @@
-private static long fn_A(long a,int b){
-  long c=a % b;
-  return c < 0 ? c + b : c;
-}

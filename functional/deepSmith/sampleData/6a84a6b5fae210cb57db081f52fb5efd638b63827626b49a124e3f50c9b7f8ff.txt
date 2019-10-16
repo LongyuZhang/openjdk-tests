@@ -1,0 +1,8 @@
+public static final float fn_A(final float a,final float b){
+  int c=(int)(a / b);
+  float d=a - c * b;
+  if (d < 0) {
+    d+=b;
+  }
+  return d;
+}

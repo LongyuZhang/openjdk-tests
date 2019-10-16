@@ -1,0 +1,7 @@
+private static String fn_A(byte[] a){
+  String b="";
+  for (int c=0; c < a.length; c++) {
+    b+=a[c];
+  }
+  return b;
+}

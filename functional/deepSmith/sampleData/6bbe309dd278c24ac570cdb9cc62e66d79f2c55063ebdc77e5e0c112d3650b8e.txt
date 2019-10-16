@@ -1,0 +1,14 @@
+public static void fn_A(long a,byte[] b,int c,boolean d){
+  if (d) {
+    b[c + 0]=(byte)((int)(a & 255L));
+    b[c + 1]=(byte)((int)(a >>> 8 & 255L));
+    b[c + 2]=(byte)((int)(a >>> 16 & 255L));
+    b[c + 3]=(byte)((int)(a >>> 24 & 255L));
+  }
+ else {
+    b[c + 0]=(byte)((int)(a >>> 24 & 255L));
+    b[c + 1]=(byte)((int)(a >>> 16 & 255L));
+    b[c + 2]=(byte)((int)(a >>> 8 & 255L));
+    b[c + 3]=(byte)((int)(a & 255L));
+  }
+}

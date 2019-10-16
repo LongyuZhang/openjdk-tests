@@ -1,8 +1,0 @@
-private static boolean fn_A(byte[] a){
-  int b=a.length;
-  byte c=(byte)0xFF;
-  byte d=(byte)0xD9;
-  if ((a[b - 2] == c) && (a[b - 1] == d))   return true;
-  if ((a[b - 3] == c) && (a[b - 2] == d) && (a[b - 1] == 0))   return true;
-  return false;
-}

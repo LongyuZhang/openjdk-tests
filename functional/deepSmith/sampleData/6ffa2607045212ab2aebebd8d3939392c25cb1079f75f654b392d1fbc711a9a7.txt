@@ -1,0 +1,8 @@
+public static String fn_A(String a){
+  if (a == null) {
+    return "ISO-8859-1";
+  }
+ else {
+    return a;
+  }
+}

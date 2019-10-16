@@ -1,9 +1,0 @@
-public static String fn_A(long a){
-  if (a < 60000) {
-    return a / 1000 + " sec";
-  }
- else   if (a < 60000 * 60) {
-    return a / 60000 + " min " + (a % 60000) / 1000 + " sec";
-  }
-  return "";
-}

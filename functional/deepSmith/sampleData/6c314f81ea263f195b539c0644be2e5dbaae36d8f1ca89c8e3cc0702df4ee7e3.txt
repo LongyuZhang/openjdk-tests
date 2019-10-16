@@ -1,0 +1,21 @@
+public static int fn_A(int a){
+switch (a) {
+case 1:
+    return 260;
+case 2:
+  return 233;
+case 3:
+return 206;
+case 4:
+return 179;
+case 5:
+return 152;
+case 6:
+return 125;
+case 7:
+return 98;
+case 8:
+return 71;
+}
+return 0;
+}

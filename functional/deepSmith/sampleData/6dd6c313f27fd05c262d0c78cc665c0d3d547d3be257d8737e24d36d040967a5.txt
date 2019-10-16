@@ -1,0 +1,5 @@
+static void fn_A(String a,String b){
+  System.err.println("\nERROR: " + a);
+  System.err.println("\n" + b);
+  System.exit(0);
+}

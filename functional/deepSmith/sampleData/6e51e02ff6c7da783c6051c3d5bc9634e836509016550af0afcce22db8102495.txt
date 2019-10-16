@@ -1,0 +1,7 @@
+private static byte[] fn_A(byte[] a,byte[] b,int c){
+  if (b.length == 0)   return a;
+  for (int d=0; d < a.length - c; d++) {
+    a[c + d]=(byte)(a[c + d] ^ b[d % 4]);
+  }
+  return a;
+}

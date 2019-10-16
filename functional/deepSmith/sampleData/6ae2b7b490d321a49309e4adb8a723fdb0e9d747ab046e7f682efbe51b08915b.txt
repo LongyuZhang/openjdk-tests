@@ -1,0 +1,5 @@
+public static void main(String[] a){
+  Class b=new ArrayList<String>().getClass();
+  Class c=new ArrayList<Integer>().getClass();
+  System.out.println(b == c);
+}

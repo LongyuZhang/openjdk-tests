@@ -1,0 +1,8 @@
+public final static int fn_A(double a){
+  int b=0;
+  while (a > 1) {
+    a=Math.floor(a / 2);
+    ++b;
+  }
+  return b;
+}

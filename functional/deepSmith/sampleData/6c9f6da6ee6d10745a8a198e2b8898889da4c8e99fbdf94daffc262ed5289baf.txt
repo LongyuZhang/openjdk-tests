@@ -1,0 +1,8 @@
+public static int fn_A(int a,Integer[] b){
+  for (int c=0; c < b.length; ++c) {
+    if (b[c] == a) {
+      return c;
+    }
+  }
+  return 0;
+}

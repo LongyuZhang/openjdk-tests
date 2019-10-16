@@ -1,6 +1,0 @@
-private static int fn_A(byte[] a){
-  if (a == null) {
-    return -1;
-  }
-  return a.length;
-}

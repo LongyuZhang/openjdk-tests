@@ -1,7 +1,0 @@
-public static MathContext fn_A(int a,final RoundingMode b){
-  if (a <= 0) {
-    System.err.println("Warning! MathContext precision is <= 0 (" + a + ")");
-    a=1;
-  }
-  return new MathContext(a,b);
-}

@@ -1,0 +1,4 @@
+public static List<Object> fn_A(Object[] a){
+  if (a == null)   return null;
+  return Arrays.asList((Object[])a);
+}

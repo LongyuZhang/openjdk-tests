@@ -1,0 +1,12 @@
+static int fn_A(long a,byte[] b,int c) throws IOException {
+  while (true) {
+    if ((a & ~0x7FL) == 0) {
+      b[c]=(byte)a;
+      c++;
+      return c;
+    }
+    b[c]=(byte)(((int)a & 0x7F) | 0x80);
+    c++;
+    a>>>=7;
+  }
+}

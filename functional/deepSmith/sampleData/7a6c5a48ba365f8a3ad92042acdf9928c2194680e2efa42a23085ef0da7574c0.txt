@@ -1,0 +1,15 @@
+static public String fn_A(int a){
+  if (a == 0) {
+    return "Unknown";
+  }
+  if (a == 1) {
+    return "User";
+  }
+  if (a == 2) {
+    return "Group";
+  }
+  if (a == 3) {
+    return "Role";
+  }
+  return null;
+}

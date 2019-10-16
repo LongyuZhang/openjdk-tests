@@ -1,6 +1,0 @@
-public static int fn_A(int a){
-  if (a < 0) {
-    throw new IllegalArgumentException("Expected non-negative int value, got " + a);
-  }
-  return a;
-}

@@ -1,0 +1,8 @@
+static byte[] fn_A(char[] a){
+  try {
+    return new String(a).getBytes("UnicodeLittleUnmarked");
+  }
+ catch (  UnsupportedEncodingException b) {
+    return null;
+  }
+}

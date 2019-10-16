@@ -1,0 +1,8 @@
+public static int fn_A(double a,double b,double c,double d){
+  int e=0;
+  e=e | ((int)(d * 255) << 24);
+  e=e | ((int)(a * 255) << 16);
+  e=e | ((int)(b * 255) << 8);
+  e=e | ((int)(c * 255));
+  return e;
+}

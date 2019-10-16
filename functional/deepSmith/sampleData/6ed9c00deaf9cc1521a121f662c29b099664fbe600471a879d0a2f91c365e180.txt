@@ -1,0 +1,10 @@
+public static void fn_A(){
+  short a=1;
+  short b=2;
+  Object[] c=new Object[5];
+  int[] d=new int[10];
+  for (int e=0; e < d.length; ++e) {
+  }
+  System.out.println(10 + "a");
+  System.out.println("-----------------------------------");
+}

@@ -1,9 +1,0 @@
-private static float[][] fn_A(float[][] a){
-  final float[][] b=new float[a.length][a.length];
-  for (int c=0; c < a.length; c++) {
-    for (int d=0; d < a.length; d++) {
-      b[c][d]=a[c][d];
-    }
-  }
-  return b;
-}

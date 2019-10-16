@@ -1,0 +1,14 @@
+static boolean fn_A(int[] a,int[] b){
+  if (a != null && b != null) {
+    if (a.length != b.length)     return false;
+ else     for (int c=0; c < b.length; c++) {
+      if (b[c] != a[c]) {
+        return false;
+      }
+    }
+  }
+ else {
+    return false;
+  }
+  return true;
+}

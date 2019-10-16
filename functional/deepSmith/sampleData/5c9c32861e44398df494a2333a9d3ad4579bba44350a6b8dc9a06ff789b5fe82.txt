@@ -1,7 +1,0 @@
-public static int fn_A(final byte a){
-  int b=a;
-  if (a < 0) {
-    b=a & 0x7f + 128;
-  }
-  return b;
-}

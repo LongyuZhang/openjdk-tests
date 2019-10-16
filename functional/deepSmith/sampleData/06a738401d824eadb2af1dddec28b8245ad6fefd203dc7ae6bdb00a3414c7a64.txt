@@ -1,0 +1,25 @@
+public static int fn_A(int[] a,int b,int c,int d){
+  if (a.length == 0 || c == d) {
+    return -1;
+  }
+  d--;
+  int e=c;
+  while (c <= d) {
+    e=(d + c) >> 1;
+    if (a[e] < b) {
+      c=e + 1;
+    }
+ else     if (a[e] > b) {
+      d=e - 1;
+    }
+ else {
+      return e;
+    }
+  }
+  if (a[e] < b) {
+    return -e - 2;
+  }
+ else {
+    return -e - 1;
+  }
+}

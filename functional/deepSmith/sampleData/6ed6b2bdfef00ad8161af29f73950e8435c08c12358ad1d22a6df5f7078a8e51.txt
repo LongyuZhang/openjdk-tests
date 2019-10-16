@@ -1,0 +1,6 @@
+public static boolean fn_A(final char[] a,int b){
+  if (a.length < (b + 6)) {
+    return false;
+  }
+  return (a[b] | 32) == 'u' && (a[b + 1] | 32) == 'p' && (a[b + 2] | 32) == 'd' && (a[b + 3] | 32) == 'a' && (a[b + 4] | 32) == 't' && (a[b + 5] | 32) == 'e';
+}

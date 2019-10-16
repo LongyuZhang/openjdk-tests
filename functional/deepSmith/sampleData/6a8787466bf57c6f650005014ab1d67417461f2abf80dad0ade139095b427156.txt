@@ -1,0 +1,11 @@
+static boolean fn_A(char a){
+switch (a) {
+case '\n':
+case '\r':
+case '\t':
+case ' ':
+    return true;
+default :
+  return false;
+}
+}

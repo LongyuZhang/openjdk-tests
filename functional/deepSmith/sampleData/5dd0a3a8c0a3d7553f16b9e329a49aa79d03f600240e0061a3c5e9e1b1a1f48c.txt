@@ -1,5 +1,0 @@
-static void fn_A(){
-  System.out.println("arc - ASN.1 compiler");
-  System.out.println("Copyright 1999 FORGE Research Pty Ltd\u005cn");
-  System.out.println("usage: java AsnParser [-d directory] [-p package] source files...");
-}

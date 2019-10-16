@@ -1,0 +1,7 @@
+public static short[] fn_A(int a){
+  short[] b=new short[a];
+  for (int c=0; c < b.length; c++) {
+    b[c]=1;
+  }
+  return b;
+}

@@ -1,8 +1,0 @@
-private static void fn_A(float[] a,int b,int c,int d,double[] e,double[] f,double g,double h){
-  for (int i=0, j=b; i < d; i++) {
-    final double k=f[i] * g;
-    for (int l=0; l < c; l++, j++) {
-      a[j]=(float)((a[j] - h) * e[l] * k);
-    }
-  }
-}

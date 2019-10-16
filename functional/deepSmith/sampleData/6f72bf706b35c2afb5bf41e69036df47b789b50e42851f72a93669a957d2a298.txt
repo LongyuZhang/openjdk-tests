@@ -1,0 +1,8 @@
+public static int fn_A(int a){
+  int b=a | a >> 1;
+  b|=b >> 2;
+  b|=b >> 4;
+  b|=b >> 8;
+  b|=b >> 16;
+  return b - a;
+}

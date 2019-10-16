@@ -1,0 +1,19 @@
+public static void fn_A(int[] a,int b,int c,int d){
+  int e=b << 1;
+  if (d != 0) {
+    d&=0xFFFFFF;
+    for (int f=a.length; --f >= 0; )     if (a[f] == 0)     a[f]=d;
+  }
+  int g=((d >> 2) & 0x3F3F3F3F) << 2;
+  g+=(g & 0xC0C0C0C0) >> 6;
+  int h=0;
+  int i=0;
+  for (int f=c; --f >= 0; i+=e)   for (int j=b; --j >= 0; ++h) {
+    int k=((a[i] >> 2) & 0x3F3F3F3F) + ((a[i++ + e] >> 2) & 0x3F3F3F3F) + ((a[i] >> 2) & 0x3F3F3F3F)+ ((a[i++ + e] >> 2) & 0x3F3F3F3F);
+    k+=(k & 0xC0C0C0C0) >> 6;
+    if (k == g)     k=d;
+{
+      a[h]=k & 0x00FFFFFF;
+    }
+  }
+}

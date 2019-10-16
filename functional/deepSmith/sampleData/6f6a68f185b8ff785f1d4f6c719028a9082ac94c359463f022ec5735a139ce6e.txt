@@ -1,0 +1,4 @@
+public static boolean fn_A(int a){
+  boolean b=a >= 0 && a <= 100;
+  return b;
+}

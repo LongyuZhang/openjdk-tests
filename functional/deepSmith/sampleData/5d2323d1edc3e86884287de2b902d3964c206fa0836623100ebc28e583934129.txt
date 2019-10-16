@@ -1,5 +1,0 @@
-public static void main(String[] a){
-  File b=new File("demo\\a.txt");
-  File c=new File("demo","a.txt");
-  File d=new File(new File("demo"),"a.txt");
-}

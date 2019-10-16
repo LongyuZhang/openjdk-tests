@@ -1,7 +1,0 @@
-public static boolean fn_A(byte[] a){
-  if (((a.length > 1) && (a[0] == 0x07 || a[0] == 0x11 || a[0] == 0x15))) {
-    if (a[0] == 0x07 && a[1] == -15)     return true;
-    if (((a[0] == 0x11 || a[0] == 0x15) && a[1] == 0x00) && a.length >= 0x11)     return true;
-  }
-  return false;
-}

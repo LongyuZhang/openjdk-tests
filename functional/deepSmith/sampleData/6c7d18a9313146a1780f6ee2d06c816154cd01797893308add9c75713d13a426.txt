@@ -1,0 +1,20 @@
+private static void fn_A(){
+  System.out.println("Runs a set of performance tests over a running Fedora repository.");
+  System.out.println("USAGE: ant performance-tests " + "-Dhost=HOST " + "-Dport=PORT "+ "-Dusername=USERNAME "+ "-Dpassword=PASSWORD "+ "-Diterations=NUM-ITERATIONS "+ "-Dthreads=NUM-THREADS "+ "-Dfile=OUTPUT-FILE "+ "-Dname=TEST-NAME"+ "[-Dcontext=CONTEXT]");
+  System.out.println("Where:");
+  System.out.println("  HOST = Host on which Fedora server is running.");
+  System.out.println("  PORT = Port on which the Fedora server APIs can be accessed.");
+  System.out.println("  USERNAME = A fedora user with administrative privileges.");
+  System.out.println("  PASSWORD = The fedora user's password.");
+  System.out.println("  NUM-ITERATIONS = The number of times to perform each operation.");
+  System.out.println("  NUM-THREADS = The number of threads to use in the thread pool");
+  System.out.println("                when running threaded tests.");
+  System.out.println("  OUTPUT-FILE = The file to which the test results will be written.");
+  System.out.println("                If the file does not exist, it will be created, if the");
+  System.out.println("                file does exist the new results will be appended.");
+  System.out.println("  TEST-NAME   = A name for this test run.");
+  System.out.println("  CONTEXT     = The application server context Fedora is deployed in. This parameter is optional");
+  System.out.println("Example:");
+  System.out.println("ant performance-tests " + "-Dhost=localhost " + "-Dport=8080 "+ "-Dusername=fedoraAdmin "+ "-Dpassword=fedoraAdmin "+ "-Diterations=100 "+ "-Dthreads=10 "+ "-Dfile=C:\\temp\\performance_testing_output.txt "+ "-Dname=\"Test 1\""+ "-Dcontext=my-fedora");
+  System.exit(1);
+}

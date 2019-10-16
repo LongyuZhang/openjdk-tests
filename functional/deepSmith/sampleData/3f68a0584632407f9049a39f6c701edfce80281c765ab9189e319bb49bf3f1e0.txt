@@ -1,4 +1,0 @@
-private static int fn_A(int a,int b){
-  double c=Math.random();
-  return (int)(c * (b - a)) + a;
-}

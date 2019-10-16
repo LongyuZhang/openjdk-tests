@@ -1,0 +1,9 @@
+private static int fn_A(final int a){
+  if (a <= 0) {
+    return 0;
+  }
+  if (a > 8) {
+    return 0xff;
+  }
+  return 0xff << 8 - a;
+}

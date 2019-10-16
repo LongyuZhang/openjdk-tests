@@ -1,0 +1,7 @@
+public static double fn_A(double[] a,int b,int c){
+  double d=0.0;
+  for (int e=b; e < c; e++) {
+    d+=a[e];
+  }
+  return d;
+}

@@ -1,0 +1,14 @@
+public static void fn_A(int[] a,int b){
+  int[] c=new int[b];
+  int d, e=0;
+  for (d=0; d < a.length; d++) {
+    c[a[d]]++;
+  }
+  for (d=0; d < b; d++) {
+    if (c[d] > 0) {
+      while (c[d]-- > 0) {
+        a[e++]=d;
+      }
+    }
+  }
+}

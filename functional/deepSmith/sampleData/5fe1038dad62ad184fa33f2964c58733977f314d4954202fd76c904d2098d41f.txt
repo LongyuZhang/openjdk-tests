@@ -1,0 +1,10 @@
+final static int fn_A(int a){
+  if (a > 0) {
+    for (int b=8; b >= 0; b--) {
+      if (((1 << b) & a) > 0) {
+        return b;
+      }
+    }
+  }
+  return 0;
+}

@@ -1,8 +1,0 @@
-private static int[] fn_A(int a){
-  int[] b=new int[a];
-  double c=a * a;
-  for (int d=0; d < b.length; d++) {
-    b[d]=(int)(Math.random() * c - c / 2.0);
-  }
-  return b;
-}

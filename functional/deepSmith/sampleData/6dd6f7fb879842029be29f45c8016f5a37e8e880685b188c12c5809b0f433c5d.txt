@@ -1,0 +1,20 @@
+static int fn_A(byte a){
+  char b=(char)a;
+  if (b <= 'Z' && b >= 'A') {
+    return b - 'A';
+  }
+  if (b <= 'z' && b >= 'a') {
+    return b - 'a' + 26;
+  }
+  if (b <= '9' && b >= '0') {
+    return b - '0' + 52;
+  }
+switch (b) {
+case '+':
+    return 62;
+case '/':
+  return 63;
+default :
+throw new IllegalArgumentException("Invalid char to decode: " + a);
+}
+}

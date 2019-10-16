@@ -1,5 +1,0 @@
-private static void fn_A(int a,int b,int c){
-  if (a < 0 || b > c || a > b) {
-    throw new IllegalArgumentException("subarray indices out of bounds: [" + a + ", "+ b+ ")");
-  }
-}

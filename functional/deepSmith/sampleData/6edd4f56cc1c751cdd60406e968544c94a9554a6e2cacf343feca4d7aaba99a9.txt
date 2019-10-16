@@ -1,0 +1,6 @@
+public static void main(String... a){
+  int b=new Scanner(System.in).nextInt();
+  int c=(int)((Math.sqrt((8 * b) - 7) - 1) / 2) + 1;
+  int d=(c * (c + 1)) / 2;
+  System.out.printf("%d %d",d - b + 1,b - d + c);
+}

@@ -1,0 +1,11 @@
+public static void fn_A(double a[],double[] b,int c,int d,int e,int f,int g){
+  for (int h=0; h < d; h++) {
+    for (int i=0; i < c; i++) {
+      double j=b[g + i * d + h];
+      for (int k=0; k < i; k++) {
+        j-=a[f + k * e + i] * b[g + k * d + h];
+      }
+      b[g + i * d + h]=j / a[f + i * e + i];
+    }
+  }
+}

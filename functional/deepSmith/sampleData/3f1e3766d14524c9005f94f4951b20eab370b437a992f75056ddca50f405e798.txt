@@ -1,9 +1,0 @@
-static void fn_A(){
-  Object a=null;
-  System.out.print("null_cmp Expected: 10 Actual: ");
-  if (a == null)   System.out.print(1);
- else   System.out.print(0);
-  if (a != null)   System.out.print(1);
- else   System.out.print(0);
-  System.out.println();
-}

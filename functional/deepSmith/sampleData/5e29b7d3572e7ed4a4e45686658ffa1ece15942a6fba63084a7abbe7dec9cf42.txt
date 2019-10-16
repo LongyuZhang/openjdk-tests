@@ -1,6 +1,0 @@
-public static int fn_A(byte[] a,int b){
-  if (null == a || b < 0 || b > a.length)   throw new NullPointerException("invalid byte array ");
-  if ((a.length - b) < 4)   throw new IndexOutOfBoundsException("invalid len: " + a.length);
-  int c=((((a[b + 0] & 0xff) << 8 | (a[b + 1] & 0xff)) << 8) | (a[b + 2] & 0xff)) << 8 | (a[b + 3] & 0xff);
-  return c;
-}

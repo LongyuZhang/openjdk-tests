@@ -1,0 +1,5 @@
+public static double fn_A(double a){
+  if ((a <= -1) || (a >= 1))   throw new IllegalArgumentException("Fisher works with number between -1 < x < 1");
+  double b=(Math.pow(Math.E,2 * a) - 1) / (Math.pow(Math.E,2 * a) + 1);
+  return b;
+}

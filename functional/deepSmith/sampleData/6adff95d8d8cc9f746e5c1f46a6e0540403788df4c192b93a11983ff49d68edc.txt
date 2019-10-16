@@ -1,0 +1,8 @@
+public static String fn_A(boolean a,String b,String c){
+  if (a) {
+    return b;
+  }
+ else {
+    return c;
+  }
+}

@@ -1,0 +1,8 @@
+public static int fn_A(float a){
+  if (a < 0.0F) {
+    return -1 * (int)(-a + 0.5F);
+  }
+ else {
+    return (int)(a + 0.5F);
+  }
+}

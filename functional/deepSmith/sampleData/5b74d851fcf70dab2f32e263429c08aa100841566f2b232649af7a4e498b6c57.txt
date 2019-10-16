@@ -1,8 +1,0 @@
-public static boolean fn_A(Object a,Object b){
-  if (a == null || a == b) {
-    return true;
-  }
- else {
-    return a.equals(b);
-  }
-}

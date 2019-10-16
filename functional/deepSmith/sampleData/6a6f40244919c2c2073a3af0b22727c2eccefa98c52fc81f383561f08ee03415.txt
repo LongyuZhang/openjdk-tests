@@ -1,0 +1,9 @@
+public static long fn_A(long a,int b,int c){
+  b%=64;
+  if (c == 1) {
+    return (a | (1L << (b)));
+  }
+ else {
+    return (a & ~(1L << (b)));
+  }
+}

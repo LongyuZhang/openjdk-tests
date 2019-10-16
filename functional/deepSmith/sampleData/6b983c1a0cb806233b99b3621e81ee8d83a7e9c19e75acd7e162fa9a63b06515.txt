@@ -1,0 +1,7 @@
+public static int[] fn_A(int a,int b,int c){
+  int[] d=new int[(b - a) / c + 1];
+  for (int e=a, f=0; e <= b; e+=c, f++) {
+    d[f]=e;
+  }
+  return d;
+}

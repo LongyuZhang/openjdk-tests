@@ -1,4 +1,0 @@
-public static boolean fn_A(float a,float b){
-  float c=0.001f;
-  return Math.abs(a - b) < c;
-}

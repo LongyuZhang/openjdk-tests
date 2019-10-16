@@ -1,0 +1,19 @@
+private static int[] fn_A(int[] a,int b){
+  int[] c=new int[a.length];
+  if (a.length == 1) {
+    c[0]=b;
+  }
+ else {
+    int d=a[0] * a[1];
+    int e=b / d;
+    int f=b % d;
+    c[0]=f % a[0];
+    c[1]=f / a[0];
+    int g=1;
+    for (int h=2; h < a.length; h++) {
+      c[h]=(e / g) % a[h];
+      g*=a[h];
+    }
+  }
+  return c;
+}

@@ -1,4 +1,0 @@
-public static final void fn_A(float[] a,float b) throws NullPointerException {
-  int c=a.length;
-  if (b != 1.0F)   while (c-- > 0)   a[c]*=b;
-}

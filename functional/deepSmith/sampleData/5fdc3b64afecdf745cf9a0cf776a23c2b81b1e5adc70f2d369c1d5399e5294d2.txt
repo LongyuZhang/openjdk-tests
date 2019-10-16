@@ -1,0 +1,5 @@
+static double fn_A(int a,double b,double c,double d){
+  int e=a & 15;
+  double f=e < 8 ? b : c, g=e < 4 ? c : e == 12 || e == 14 ? b : d;
+  return ((e & 1) == 0 ? f : -f) + ((e & 2) == 0 ? g : -g);
+}

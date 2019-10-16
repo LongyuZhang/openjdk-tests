@@ -1,0 +1,6 @@
+public static int fn_A(int a){
+  int b=4096 * 1024;
+  while (b % a != 0)   b++;
+  assert(b % a == 0);
+  return b;
+}

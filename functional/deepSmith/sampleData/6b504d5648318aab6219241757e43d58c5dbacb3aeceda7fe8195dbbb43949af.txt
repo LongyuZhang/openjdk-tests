@@ -1,0 +1,12 @@
+public static float[] fn_A(float[][] a,float[] b){
+  if (a[0].length != b.length)   throw new IllegalArgumentException("The columns of the matrix A must be the same of the vector B");
+  float[] c=new float[a.length];
+  for (int d=0; d < a.length; d++) {
+    float e=0;
+    for (int f=0; f < a[0].length; f++) {
+      e+=a[d][f] * b[f];
+    }
+    c[d]=e;
+  }
+  return c;
+}

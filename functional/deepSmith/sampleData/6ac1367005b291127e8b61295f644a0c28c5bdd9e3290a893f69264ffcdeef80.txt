@@ -1,0 +1,10 @@
+public static double fn_A(double[] a){
+  if (a == null) {
+    return 0.0;
+  }
+  double b=0.0;
+  for (int c=0; c < a.length; c++) {
+    b+=a[c];
+  }
+  return b;
+}

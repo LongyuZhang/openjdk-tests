@@ -1,9 +1,0 @@
-public static byte fn_A(int a){
-  if (a > 256) {
-    throw new IllegalArgumentException("Integer is too large for a byte.");
-  }
-  if (a > 127) {
-    return (byte)(a - 256);
-  }
-  return (byte)a;
-}

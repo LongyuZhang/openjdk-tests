@@ -1,0 +1,7 @@
+public static void fn_A(int a[]){
+  int b=a.length;
+  System.out.println("The reversed array is");
+  for (int c=b - 1; c >= 0; c--) {
+    System.out.println(a[c]);
+  }
+}

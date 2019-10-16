@@ -1,0 +1,5 @@
+public static void main(String[] a){
+class B {
+  }
+  B b;
+}

@@ -1,6 +1,0 @@
-private static boolean fn_A(boolean a) throws Exception {
-  if (a) {
-    throw new Exception("not false");
-  }
-  return a;
-}

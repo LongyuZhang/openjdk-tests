@@ -1,5 +1,0 @@
-public static String fn_A(){
-  String a=System.getenv("OPAL_HOME");
-  if (a == null)   a=System.getProperty("user.home") + "/aacalc/opal";
-  return a;
-}

@@ -1,0 +1,17 @@
+private static String fn_A(final long a){
+  if (a < 0) {
+    return "";
+  }
+ else   if (a < 1024) {
+    return String.format(Locale.getDefault(),"%.1fB",(double)a);
+  }
+ else   if (a < 1048576) {
+    return String.format(Locale.getDefault(),"%.1fKB",(double)a / 1024);
+  }
+ else   if (a < 1073741824) {
+    return String.format(Locale.getDefault(),"%.1fMB",(double)a / 1048576);
+  }
+ else {
+    return String.format(Locale.getDefault(),"%.1fGB",(double)a / 1073741824);
+  }
+}

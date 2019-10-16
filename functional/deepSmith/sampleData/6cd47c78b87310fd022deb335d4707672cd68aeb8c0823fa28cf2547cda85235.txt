@@ -1,0 +1,6 @@
+public static boolean fn_A(double[] a,int b){
+  if (a.length != b) {
+    return false;
+  }
+  return true;
+}

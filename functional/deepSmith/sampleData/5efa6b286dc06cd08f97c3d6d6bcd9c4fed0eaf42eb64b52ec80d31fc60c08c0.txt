@@ -1,6 +1,0 @@
-public static Object fn_A(Object[] a){
-  if (a != null && a.length > 0) {
-    return a[0];
-  }
-  return null;
-}

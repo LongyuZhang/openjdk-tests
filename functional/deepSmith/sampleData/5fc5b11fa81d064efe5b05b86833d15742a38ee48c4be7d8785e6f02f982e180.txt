@@ -1,0 +1,20 @@
+@SuppressWarnings("all") public static int fn_A(int a,int b){
+  int c=0;
+  a:   for (int d=0; ; ++d) {
+    if (b > 100) {
+      b:       for (int e=0; ; ++e) {
+        ++c;
+        if (c == 100) {
+          break b;
+        }
+        if (c == 1000 && b < 1000) {
+          break a;
+        }
+      }
+      if (c != 100) {
+        return 42;
+      }
+    }
+  }
+  return c;
+}

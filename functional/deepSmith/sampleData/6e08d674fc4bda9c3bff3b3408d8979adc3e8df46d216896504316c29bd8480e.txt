@@ -1,0 +1,9 @@
+private static Integer fn_A(final int a){
+  if (a <= 227)   return a;
+  if (233 <= a && a <= 297)   return a - 1;
+  if (299 <= a && a <= 393)   return a - 2;
+  if (410 <= a && a <= 494)   return a - 3;
+  if (496 <= a && a <= 568)   return a - 4;
+  if (586 <= a && a <= 589)   return a - 4;
+  return null;
+}

@@ -1,4 +1,0 @@
-public static String fn_A(){
-  StackTraceElement[] a=Thread.currentThread().getStackTrace();
-  return a[3].toString();
-}

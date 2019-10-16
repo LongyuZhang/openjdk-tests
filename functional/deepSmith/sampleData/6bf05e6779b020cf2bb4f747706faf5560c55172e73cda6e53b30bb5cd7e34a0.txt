@@ -1,0 +1,8 @@
+private static double fn_A(double[] a,double[] b,double[] c,double d){
+  assert(a.length == b.length);
+  double e=0.0;
+  for (int f=0; f < b.length; f++) {
+    e+=Math.pow(a[f] - b[f],2.0) / c[f];
+  }
+  return d + -0.5 * e;
+}

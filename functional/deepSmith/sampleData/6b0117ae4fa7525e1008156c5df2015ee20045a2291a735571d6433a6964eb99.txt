@@ -1,0 +1,6 @@
+static long fn_A(long a){
+  if (a < 0) {
+    throw new IllegalArgumentException("maxRequestLength: " + a + " (expected: >= 0)");
+  }
+  return a;
+}

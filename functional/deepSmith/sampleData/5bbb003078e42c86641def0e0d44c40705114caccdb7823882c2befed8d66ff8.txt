@@ -1,6 +1,0 @@
-public static int fn_A(int a,int b){
-  int c=a - b;
-  int d=(c >> 31) & 0x1;
-  int e=a - d * c;
-  return e;
-}

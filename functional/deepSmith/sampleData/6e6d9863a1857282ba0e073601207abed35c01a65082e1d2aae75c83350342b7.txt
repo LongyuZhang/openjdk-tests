@@ -1,0 +1,10 @@
+public static String fn_A(final int a){
+switch (a) {
+case 0:
+    return "No EIT_present_following information";
+case 1:
+  return "EIT_present_following information present in TS";
+default :
+return "Illegal value";
+}
+}

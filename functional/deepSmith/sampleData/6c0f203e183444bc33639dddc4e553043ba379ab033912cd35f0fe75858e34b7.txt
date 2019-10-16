@@ -1,0 +1,8 @@
+static int fn_A(final int[] a,final int b,final int c){
+  int d=0;
+  final int e=b + c;
+  for (int f=b; f < e; f++) {
+    d+=a[f];
+  }
+  return d;
+}

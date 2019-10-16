@@ -1,0 +1,8 @@
+public static String fn_A(long a){
+  short b=(short)(a & 0xFF);
+  short c=(short)((a & 0xFF00) >> 8);
+  short d=(short)((a & 0xFF0000) >> 16);
+  short e=(short)((a & 0xFF000000) >> 24);
+  String f=e + "." + d+ "."+ c+ "."+ b;
+  return f;
+}

@@ -1,0 +1,6 @@
+private static void fn_A(){
+  System.out.println("'## file' -- load a file");
+  System.out.println("'#?' -- this help message");
+  System.out.println("'#m file' -- take module definitions from file");
+  System.out.println("Anything else is treated as Thorn code.");
+}

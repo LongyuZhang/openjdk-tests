@@ -1,0 +1,4 @@
+public static int fn_A(String a,String b){
+  System.err.println("[WTF!?] " + a + ": "+ b);
+  return 0;
+}

@@ -1,0 +1,6 @@
+public static boolean fn_A(Class<?> a){
+  if (a == void.class) {
+    return true;
+  }
+  return false;
+}

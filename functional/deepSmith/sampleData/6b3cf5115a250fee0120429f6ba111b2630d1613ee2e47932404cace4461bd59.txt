@@ -1,0 +1,15 @@
+public static int fn_A(int a,int[] b,int[] c){
+  int d=0;
+  while (d < a) {
+    int e=b[d] - 1;
+    c[d]=e;
+    d++;
+    if (e != -1) {
+      for (int f=d; f < a; f++) {
+        c[f]=b[f];
+      }
+      return 0;
+    }
+  }
+  return -1;
+}

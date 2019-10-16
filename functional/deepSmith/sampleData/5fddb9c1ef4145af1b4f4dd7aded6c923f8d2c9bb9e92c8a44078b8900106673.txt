@@ -1,0 +1,298 @@
+private static int fn_A(double a,double b){
+  if (a < 61.5) {
+    if (b < 87.0) {
+      if (a < 58.5) {
+        if (b < 85.5) {
+          if (a < 56.5) {
+            if (b < 85.0) {
+              return 95;
+            }
+ else {
+              return 87;
+            }
+          }
+ else {
+            return 95;
+          }
+        }
+ else {
+          if (a < 57.0) {
+            if (b < 86.0) {
+              if (a < 56.5) {
+                return 87;
+              }
+ else {
+                return 95;
+              }
+            }
+ else {
+              if (b < 86.5) {
+                if (a < 56.5) {
+                  return 87;
+                }
+ else {
+                  return 95;
+                }
+              }
+ else {
+                return 87;
+              }
+            }
+          }
+ else {
+            return 95;
+          }
+        }
+      }
+ else {
+        if (b < 85.5) {
+          if (a < 60.0) {
+            return 95;
+          }
+ else {
+            if (b < 84.5) {
+              if (a < 61.0) {
+                return 95;
+              }
+ else {
+                return 179;
+              }
+            }
+ else {
+              if (a < 60.5) {
+                if (b < 85.0) {
+                  return 95;
+                }
+ else {
+                  return 290;
+                }
+              }
+ else {
+                if (b < 85.0) {
+                  if (a < 61.0) {
+                    return 95;
+                  }
+ else {
+                    return 179;
+                  }
+                }
+ else {
+                  return 290;
+                }
+              }
+            }
+          }
+        }
+ else {
+          if (a < 60.0) {
+            return 95;
+          }
+ else {
+            return 290;
+          }
+        }
+      }
+    }
+ else {
+      if (a < 58.5) {
+        if (b < 88.5) {
+          if (a < 57.0) {
+            return 87;
+          }
+ else {
+            return 95;
+          }
+        }
+ else {
+          if (a < 57.0) {
+            if (b < 89.0) {
+              return 87;
+            }
+ else {
+              if (b < 89.5) {
+                if (a < 56.5) {
+                  return 87;
+                }
+ else {
+                  return 290;
+                }
+              }
+ else {
+                return 290;
+              }
+            }
+          }
+ else {
+            if (b < 89.0) {
+              return 95;
+            }
+ else {
+              if (a < 57.5) {
+                return 290;
+              }
+ else {
+                if (b < 89.5) {
+                  if (a < 58.0) {
+                    return 95;
+                  }
+ else {
+                    return 290;
+                  }
+                }
+ else {
+                  return 290;
+                }
+              }
+            }
+          }
+        }
+      }
+ else {
+        if (b < 88.5) {
+          if (a < 60.0) {
+            if (b < 88.0) {
+              return 95;
+            }
+ else {
+              if (a < 59.0) {
+                return 290;
+              }
+ else {
+                if (a < 59.5) {
+                  return 95;
+                }
+ else {
+                  return 290;
+                }
+              }
+            }
+          }
+ else {
+            return 290;
+          }
+        }
+ else {
+          if (a < 61.0) {
+            if (a < 60.5) {
+              if (a < 60.0) {
+                if (b < 89.0) {
+                  if (a < 59.0) {
+                    return 290;
+                  }
+ else {
+                    if (a < 59.5) {
+                      return 95;
+                    }
+ else {
+                      return 290;
+                    }
+                  }
+                }
+ else {
+                  return 290;
+                }
+              }
+ else {
+                return 290;
+              }
+            }
+ else {
+              return 290;
+            }
+          }
+ else {
+            return 290;
+          }
+        }
+      }
+    }
+  }
+ else {
+    if (b < 86.0) {
+      if (a < 65.0) {
+        if (a < 63.5) {
+          if (b < 85.0) {
+            return 179;
+          }
+ else {
+            if (a < 62.5) {
+              if (b < 85.5) {
+                if (a < 62.0) {
+                  return 179;
+                }
+ else {
+                  return 290;
+                }
+              }
+ else {
+                if (a < 62.0) {
+                  return 179;
+                }
+ else {
+                  return 290;
+                }
+              }
+            }
+ else {
+              if (b < 85.5) {
+                if (a < 63.0) {
+                  return 290;
+                }
+ else {
+                  return 179;
+                }
+              }
+ else {
+                if (a < 63.0) {
+                  return 290;
+                }
+ else {
+                  return 179;
+                }
+              }
+            }
+          }
+        }
+ else {
+          if (b < 85.5) {
+            return 179;
+          }
+ else {
+            if (a < 64.0) {
+              return 290;
+            }
+ else {
+              return 179;
+            }
+          }
+        }
+      }
+ else {
+        if (a < 66.0) {
+          if (b < 85.0) {
+            if (b < 84.5) {
+              return 179;
+            }
+ else {
+              if (a < 65.5) {
+                return 290;
+              }
+ else {
+                return 179;
+              }
+            }
+          }
+ else {
+            return 290;
+          }
+        }
+ else {
+          return 290;
+        }
+      }
+    }
+ else {
+      return 290;
+    }
+  }
+}

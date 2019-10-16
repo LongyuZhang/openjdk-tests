@@ -1,0 +1,8 @@
+public static boolean fn_A(float a,float b,float[] c,int d,int e){
+  int f=(e + d);
+  boolean g=false;
+  for (int h=e, i=(f - 2); h < f; i=h, h+=2) {
+    if (((c[h + 1] > b) != (c[i + 1] > b)) && (a < (c[i] - c[h]) * (b - c[h + 1]) / (c[i + 1] - c[h + 1]) + c[h]))     g=!g;
+  }
+  return g;
+}
