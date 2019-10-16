@@ -1,8 +1,0 @@
-private static int fn_A(float[] a,float b){
-  for (int c=0; c < (a.length - 1); c++) {
-    if (b >= a[c] && b <= a[c + 1]) {
-      return c;
-    }
-  }
-  return -1;
-}

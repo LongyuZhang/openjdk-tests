@@ -1,6 +1,0 @@
-private static long fn_A(long a,long b,long c,double d,double e){
-  double f=(double)a / ((double)(a - c) + ((double)c * d));
-  double g=(double)c * (1.0 - d) * Math.log(1.0 - d)* e;
-  double h=(double)b - (g / d);
-  return Math.round(f * h);
-}

@@ -1,5 +1,0 @@
-public static <T>int fn_A(T[] a){
-  int b=0;
-  for (int c=a.length & ~1; (c-=2) >= 0; )   if (a[c] != null)   b++;
-  return b;
-}

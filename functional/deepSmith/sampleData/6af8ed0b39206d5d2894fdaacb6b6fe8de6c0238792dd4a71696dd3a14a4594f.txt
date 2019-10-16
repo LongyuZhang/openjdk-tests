@@ -1,0 +1,8 @@
+public static int fn_A(long a){
+  int b=(int)(a >>> 32);
+  int c=((int)a) + (b << 2 + b);
+  if (c < 0 && c > -5) {
+    c=c + 5;
+  }
+  return c;
+}

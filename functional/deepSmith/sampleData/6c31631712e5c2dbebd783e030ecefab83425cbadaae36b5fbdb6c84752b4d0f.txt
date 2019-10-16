@@ -1,0 +1,6 @@
+private static boolean fn_A(Object a){
+  if (a instanceof Integer[] || a instanceof Long[] || a instanceof Double[]|| a instanceof Float[]|| a instanceof Byte[]|| a instanceof Short[]|| a instanceof Character[]|| a instanceof Boolean[]|| a instanceof String[]) {
+    return true;
+  }
+  return false;
+}

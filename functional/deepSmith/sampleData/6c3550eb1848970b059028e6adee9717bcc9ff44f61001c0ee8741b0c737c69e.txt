@@ -1,0 +1,5 @@
+public static int fn_A(int a,int b){
+  int c=a;
+  for (int d=1; d < b; d++)   c*=a;
+  return c;
+}

@@ -1,0 +1,7 @@
+private static Double[] fn_A(Number[] a){
+  Double[] b=new Double[a.length];
+  for (int c=0; c < a.length; c++) {
+    b[c]=a[c] != null ? new Double(a[c].doubleValue()) : null;
+  }
+  return b;
+}

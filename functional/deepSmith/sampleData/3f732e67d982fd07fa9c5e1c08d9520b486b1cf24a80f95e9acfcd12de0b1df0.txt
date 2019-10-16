@@ -1,8 +1,0 @@
-public static String fn_A(int[] a){
-  StringBuffer b=new StringBuffer(a.length * 4);
-  for (int c=0; c < a.length; c++) {
-    if (c != 0)     b.append(", ");
-    b.append(a[c]);
-  }
-  return b.toString();
-}

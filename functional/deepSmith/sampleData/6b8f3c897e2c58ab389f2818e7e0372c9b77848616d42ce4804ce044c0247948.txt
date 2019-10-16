@@ -1,0 +1,25 @@
+public static void fn_A(int a,double b,double c[],int d){
+  int e, f, g;
+  if (a <= 0 || d <= 0)   return;
+  if (d == 1) {
+    f=a % 5;
+    for (e=1; e <= f; e++) {
+      c[e]*=b;
+    }
+    for (e=f + 1; e <= a; e+=5) {
+      c[e]*=b;
+      c[e + 1]*=b;
+      c[e + 2]*=b;
+      c[e + 3]*=b;
+      c[e + 4]*=b;
+    }
+    return;
+  }
+ else {
+    g=a * d;
+    for (e=1; e <= g; e+=d) {
+      c[e]*=b;
+    }
+    return;
+  }
+}

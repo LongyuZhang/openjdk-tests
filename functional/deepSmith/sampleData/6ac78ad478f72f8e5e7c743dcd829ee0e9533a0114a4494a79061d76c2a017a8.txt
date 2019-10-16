@@ -1,0 +1,11 @@
+public static boolean fn_A(final int a){
+  if (a > 0) {
+    return (a & a - 1) == 0;
+  }
+ else {
+    if (a == -a) {
+      return a != 0;
+    }
+    return (-a & -a - 1) == 0;
+  }
+}

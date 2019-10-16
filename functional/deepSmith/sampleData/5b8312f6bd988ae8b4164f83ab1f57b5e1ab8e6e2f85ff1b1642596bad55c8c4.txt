@@ -1,8 +1,0 @@
-public static synchronized String fn_A(){
-  try {
-    Thread.sleep(1);
-  }
- catch (  InterruptedException a) {
-  }
-  return Long.toHexString(new Date().getTime());
-}

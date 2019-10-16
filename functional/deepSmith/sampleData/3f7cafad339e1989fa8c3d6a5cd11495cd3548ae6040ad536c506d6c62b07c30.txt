@@ -1,5 +1,0 @@
-private static double fn_A(int a,double b,double c,double d){
-  double e=(a&=0xf) >= 8 ? c : b;
-  double f=a >= 4 ? a != 12 && a != 14 ? d : b : c;
-  return ((a & 1) != 0 ? -e : e) + ((a & 2) != 0 ? -f : f);
-}

@@ -1,0 +1,8 @@
+public static <T>T fn_A(T a){
+  if (a == null) {
+    throw new NullPointerException();
+  }
+ else {
+    return a;
+  }
+}

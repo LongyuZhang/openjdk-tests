@@ -1,9 +1,0 @@
-private static String[] fn_A(String[] a){
-  String[] b=new String[2];
-  for (int c=0; c < a.length - 1; c++) {
-    if (a[c].compareTo(a[c + 1]) > 0) {
-      return new String[]{a[c],a[c + 1]};
-    }
-  }
-  return null;
-}

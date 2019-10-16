@@ -1,0 +1,6 @@
+static void fn_A(double[] a){
+  int b;
+  for (b=0; b < 3; b++) {
+    System.out.println(a[b * 3 + 0] + " " + a[b * 3 + 1]+ " "+ a[b * 3 + 2]+ "\n");
+  }
+}

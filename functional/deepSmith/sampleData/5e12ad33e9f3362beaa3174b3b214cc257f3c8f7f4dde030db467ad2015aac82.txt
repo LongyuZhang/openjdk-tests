@@ -1,7 +1,0 @@
-public static int fn_A(final int a,final int b){
-  if (b < 0)   throw new IllegalArgumentException();
-  if (a < 0)   throw new IllegalArgumentException();
-  if (b > a)   throw new IllegalArgumentException();
-  final int c=(1 << (a - b));
-  return c;
-}

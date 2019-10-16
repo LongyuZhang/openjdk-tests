@@ -1,0 +1,14 @@
+private static double[] fn_A(double[] a){
+  int b=a.length;
+  double[] c=new double[b];
+  double[] d=new double[b];
+  double e=2.0;
+  c[0]=a[0] / e;
+  for (int f=1; f < b; f++) {
+    d[f]=1 / e;
+    e=(f < b - 1 ? 4.0 : 3.5) - d[f];
+    c[f]=(a[f] - c[f - 1]) / e;
+  }
+  for (int f=1; f < b; f++)   c[b - f - 1]-=d[b - f] * c[b - f];
+  return c;
+}

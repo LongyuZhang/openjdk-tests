@@ -1,0 +1,15 @@
+public static int[] fn_A(int[] a){
+  int b=a.length - 1;
+  while (b >= 1) {
+    for (int c=0; c < b; c++) {
+      int d;
+      if (a[c] > a[c + 1]) {
+        d=a[c];
+        a[c]=a[c + 1];
+        a[c + 1]=d;
+      }
+    }
+    b--;
+  }
+  return a;
+}

@@ -1,5 +1,0 @@
-private static String fn_A(float[] a,float[] b){
-  float c=(a[0] - a[2]) * b[0];
-  float d=(a[1] - a[3]) * b[1];
-  return String.format("%.2f mm",Math.sqrt(c * c + d * d));
-}

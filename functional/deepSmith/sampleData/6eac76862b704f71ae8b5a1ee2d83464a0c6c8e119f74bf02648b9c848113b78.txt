@@ -1,0 +1,8 @@
+public static void fn_A(){
+  System.gc();
+  try {
+    Thread.sleep(50);
+  }
+ catch (  Exception a) {
+  }
+}

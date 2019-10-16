@@ -1,9 +1,0 @@
-private static boolean fn_A(byte[] a){
-  int b=a.length;
-  for (int c=0; c < b; c++) {
-    if (a[b - 1 - c] != 0) {
-      return false;
-    }
-  }
-  return true;
-}

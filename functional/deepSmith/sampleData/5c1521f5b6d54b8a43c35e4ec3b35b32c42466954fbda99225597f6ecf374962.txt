@@ -1,6 +1,0 @@
-static long fn_A(long a){
-  long b=a >> (6L);
-  long c=(1L << 17L) - 1L;
-  long d=c & b;
-  return d * 8L;
-}

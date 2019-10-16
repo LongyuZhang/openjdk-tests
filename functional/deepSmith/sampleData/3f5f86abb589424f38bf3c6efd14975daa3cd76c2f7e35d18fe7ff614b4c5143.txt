@@ -1,6 +1,0 @@
-@SuppressWarnings("unused") public static int fn_A(int a,int b){
-  if (a < 13) {
-    return a + 1;
-  }
-  return a - 1;
-}

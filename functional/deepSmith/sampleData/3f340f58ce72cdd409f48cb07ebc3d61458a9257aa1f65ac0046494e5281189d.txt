@@ -1,4 +1,0 @@
-public static String fn_A(){
-  if ("zh".equals(Locale.getDefault().getLanguage()))   return "";
- else   return " ";
-}

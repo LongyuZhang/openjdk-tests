@@ -1,0 +1,13 @@
+private static int fn_A(int[] a,int[] b){
+  int c=0;
+  int d=0;
+  for (int e=b.length - 1; e >= 0; e--) {
+    for (int f=a.length - 1; f >= 0; f--) {
+      if (a[f] == e) {
+        for (int g=0; g < e && d < 5; g++, d++)         c=c << 4 | f;
+      }
+    }
+  }
+  if (d != 5)   throw new IllegalArgumentException();
+  return c;
+}

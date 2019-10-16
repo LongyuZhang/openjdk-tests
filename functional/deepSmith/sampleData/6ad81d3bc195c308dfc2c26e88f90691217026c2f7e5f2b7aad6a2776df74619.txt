@@ -1,0 +1,4 @@
+public static void main(String a[]) throws Exception {
+  int b=System.identityHashCode(null);
+  if (b != 0)   throw new RuntimeException("identityHashCode(null) is " + b);
+}

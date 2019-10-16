@@ -1,0 +1,8 @@
+protected static Object fn_A(Object a,Object b){
+  for (Object[] c=(Object[])a; c != null; c=(Object[])c[2]) {
+    if (c[0] == b) {
+      return c[1];
+    }
+  }
+  return null;
+}

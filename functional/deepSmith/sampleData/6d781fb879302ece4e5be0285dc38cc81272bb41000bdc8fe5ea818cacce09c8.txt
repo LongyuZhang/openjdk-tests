@@ -1,0 +1,9 @@
+private static int[] fn_A(int a){
+  int[] b=new int[a];
+  b[0]=1;
+  for (int c=1; c < b.length; c++) {
+    int d=b[c - 1];
+    b[c]=d++ + d % (c % (d + 1) + 1);
+  }
+  return b;
+}

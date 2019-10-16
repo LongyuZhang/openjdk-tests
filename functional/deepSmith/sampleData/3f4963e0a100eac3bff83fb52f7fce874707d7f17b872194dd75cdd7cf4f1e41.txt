@@ -1,9 +1,0 @@
-static long fn_A(int a,long b,int c){
-  if (a > (1L << 6) - 1) {
-    throw new IllegalArgumentException("position of first one must fit into 6 bits");
-  }
-  if (b > (1L << 57) - 1) {
-    throw new IllegalArgumentException("mantissa must fit into 57 bits");
-  }
-  return ((long)a << (long)c) | b;
-}

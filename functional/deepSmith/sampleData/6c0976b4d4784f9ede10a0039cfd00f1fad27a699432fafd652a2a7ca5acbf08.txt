@@ -1,0 +1,8 @@
+private static boolean fn_A(int[] a){
+  if (a.length == 3) {
+    if ((a[0] == 107) && (a[1] == 156) && (a[2] == 248)) {
+      return true;
+    }
+  }
+  return false;
+}

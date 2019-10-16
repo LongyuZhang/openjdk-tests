@@ -1,0 +1,6 @@
+public static double fn_A(int a,int b,int c){
+  int d=(int)((14 - b) / 12);
+  int e=a + 4800 - d;
+  int f=b + 12 * d - 3;
+  return c + (int)((153 * f + 2) / 5) + 365 * e + (int)(e / 4) - 32083.5;
+}

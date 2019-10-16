@@ -1,0 +1,19 @@
+public static void fn_A(){
+  System.out.println("arg0: numClusters");
+  System.out.println("arg1: numDimensions");
+  System.out.println("arg2: numOriginalInstances");
+  System.out.println("arg3: numNoisyInstances");
+  System.out.println("arg4: outputDirectory");
+  System.out.println("arg5: useDifferentColorsForClusters");
+  System.out.println("arg6: drawOnGrid");
+  System.out.println("arg7: num prob iters");
+  System.out.println("---------------------------------------");
+  System.out.println("OR");
+  System.out.println("---------------------------------------");
+  System.out.println("arg0: -CSV::filePath or -ARFF:filePath");
+  System.out.println("arg1: with category");
+  System.out.println("arg2: outputDirectory");
+  System.out.println("arg3: useDifferentColorsForClusters");
+  System.out.println("arg4: drawOnGrid");
+  System.out.println("arg5: num prob iters");
+}

@@ -1,0 +1,13 @@
+public static void fn_A(int[] a){
+  int b=a.length;
+  for (int c=0; c < b; c++) {
+    for (int d=c + 1; d < b; d++) {
+      for (int e=d + 1; e < b; e++) {
+        if (a[c] + a[d] + a[e] == 0) {
+          System.out.println(a[c] + " " + a[d]+ " "+ a[e]);
+          System.out.println("a[" + c + "]"+ " a["+ d+ "]"+ " a["+ e+ "]");
+        }
+      }
+    }
+  }
+}

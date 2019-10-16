@@ -1,0 +1,11 @@
+public static int fn_A(int a){
+  long b=0;
+  long c=a / 2 + 1;
+  while (b <= c) {
+    long d=(b + c) / 2;
+    if (d * d == a)     return (int)d;
+    if (d * d < a)     b=d + 1;
+ else     c=d - 1;
+  }
+  return (int)c;
+}

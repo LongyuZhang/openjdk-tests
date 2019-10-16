@@ -1,8 +1,0 @@
-public static String fn_A(double[] a){
-  StringBuffer b=new StringBuffer(a.length);
-  for (int c=0; c < a.length; c++) {
-    b.append(String.valueOf(a[c]));
-    if (c + 1 < a.length)     b.append(" ");
-  }
-  return b.toString();
-}

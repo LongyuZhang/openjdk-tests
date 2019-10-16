@@ -1,0 +1,13 @@
+public static void fn_A(){
+  byte a=Byte.parseByte("0");
+  byte b=Byte.parseByte("0",10);
+  boolean c=Boolean.parseBoolean("true");
+  int d=Integer.parseInt("42");
+  int e=Integer.parseInt("42",10);
+  long f=Long.parseLong("42");
+  long g=Long.parseLong("42",10);
+  short h=Short.parseShort("42");
+  short i=Short.parseShort("42",10);
+  float j=Float.parseFloat("42.42");
+  double k=Double.parseDouble("42.42");
+}

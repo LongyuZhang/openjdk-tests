@@ -1,0 +1,13 @@
+public static void fn_A(){
+  System.out.println("vasp2config --i <vasp run directories with OUTCAR and POSCARs>+");
+  System.out.println("  --map (<symbol> <int>)+ : mapping of element to type id");
+  System.out.println("  --mid <number> : discard configs which violate this minimum interatomic distance");
+  System.out.println("  --maxeform <fepa> : generate chull from all input configs and discard ones this far above chull");
+  System.out.println("  --maxsamples <num >= 2> : max configs from a single OUTCAR (always takes the ground state and some sampling of others)");
+  System.out.println("  --writePDB <filename> : write configs to a .pdd file instead of printing them");
+  System.out.println("  --writeConfigs : write configs to stdout in v2fout format");
+  System.out.println("  --writePOSCARS : write POSCAR files to current dir");
+  System.out.println("  --eliminateDups <atomicMisfit> <latticeMisfit> <angleMisfit> : explicitly check for and remove duplicate structures");
+  System.out.println("  --forceSort : sort according to sum of forces");
+  System.out.println("  --shuf : randomly shuffle outputs");
+}

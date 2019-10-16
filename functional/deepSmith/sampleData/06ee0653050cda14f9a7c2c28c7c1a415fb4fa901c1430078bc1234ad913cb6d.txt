@@ -1,0 +1,10 @@
+public static float fn_A(float a,float b,float c,float d){
+  float e=d - c;
+  while (a - b < c) {
+    b-=e;
+  }
+  while (a - b >= d) {
+    b+=e;
+  }
+  return b;
+}

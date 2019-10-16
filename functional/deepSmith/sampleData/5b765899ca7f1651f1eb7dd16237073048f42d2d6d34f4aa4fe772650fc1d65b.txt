@@ -1,6 +1,0 @@
-public static boolean fn_A(float a,float b,float c,float d,float e,float f){
-  float g=c + f;
-  float h=a - d;
-  float i=b - e;
-  return g * g > h * h + i * i;
-}

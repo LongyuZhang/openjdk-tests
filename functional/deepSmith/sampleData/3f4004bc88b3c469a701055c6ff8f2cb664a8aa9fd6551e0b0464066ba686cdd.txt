@@ -1,6 +1,0 @@
-private static int fn_A(int a,int b){
-  for (int c=0; c < a; c++) {
-    b+=c;
-  }
-  return b;
-}

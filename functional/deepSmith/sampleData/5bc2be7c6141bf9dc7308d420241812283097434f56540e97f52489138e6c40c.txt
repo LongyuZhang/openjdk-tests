@@ -1,5 +1,0 @@
-public static float[] fn_A(final float[] a){
-  final float[] b=new float[a.length];
-  for (int c=0; c < a.length; c++)   b[c]=(float)Math.round(a[c]);
-  return b;
-}

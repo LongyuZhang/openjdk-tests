@@ -1,0 +1,4 @@
+private static int fn_A(int a){
+  final int b=(a + 6) % 7;
+  return b == 0 ? 7 : b;
+}

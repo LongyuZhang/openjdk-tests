@@ -1,0 +1,12 @@
+public static Integer fn_A(Object a,Integer b){
+  if (null == a) {
+    return b;
+  }
+  if (a instanceof Number) {
+    return ((Number)a).intValue();
+  }
+ else   if (a instanceof String) {
+    return Integer.parseInt((String)a);
+  }
+  throw new IllegalArgumentException("Don't know how to convert " + a + " to int");
+}

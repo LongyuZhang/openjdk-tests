@@ -1,0 +1,4 @@
+public static short fn_A(float a){
+  a=a % (float)360.0;
+  return (short)((short)(a / 30) + 1);
+}

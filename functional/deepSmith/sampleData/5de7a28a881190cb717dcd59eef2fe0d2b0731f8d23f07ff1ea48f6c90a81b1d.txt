@@ -1,5 +1,0 @@
-private static void fn_A(){
-  System.gc();
-  System.runFinalization();
-  System.gc();
-}

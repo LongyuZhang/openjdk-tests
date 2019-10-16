@@ -1,4 +1,0 @@
-public static InputStream fn_A(OutputStream a){
-  byte[] b=((ByteArrayOutputStream)a).toByteArray();
-  return new ByteArrayInputStream(b);
-}

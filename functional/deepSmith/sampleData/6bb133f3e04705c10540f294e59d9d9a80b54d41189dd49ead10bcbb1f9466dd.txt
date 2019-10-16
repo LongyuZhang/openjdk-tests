@@ -1,0 +1,6 @@
+public static String fn_A(final boolean a){
+  if (a) {
+    return "yes";
+  }
+  return "no";
+}

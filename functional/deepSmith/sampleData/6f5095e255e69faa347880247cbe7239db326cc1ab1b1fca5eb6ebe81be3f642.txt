@@ -1,0 +1,5 @@
+static BitSet fn_A(BitSet a,BitSet b){
+  BitSet c=(BitSet)a.clone();
+  c.and(b);
+  return c;
+}

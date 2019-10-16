@@ -1,0 +1,9 @@
+public static Integer[] fn_A(Integer a,Integer b){
+  int c=b > a ? 1 : -1;
+  int d=Math.abs(b - a) + 1;
+  Integer[] e=new Integer[d];
+  for (int f=0; f < d; f++) {
+    e[f]=a + f * c;
+  }
+  return e;
+}

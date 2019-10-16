@@ -1,9 +1,0 @@
-public static void fn_A(){
-  System.out.println("Requires a WebSocket server to run.");
-  System.out.println("prompt> cd node; node robot.server.js & ");
-  System.out.println();
-  System.out.println("System variables: no.robot,  set to \"true\" to test the WebSocket part (no robot, not on the RPi), default is \"false\"");
-  System.out.println("                  ws.uri,    default is ws://localhost:9876/");
-  System.out.println("                  test.only, set to \"true\" to test the robot, default is \"false\"");
-  System.out.println("                  robot.verbose, set to \"true\" to see console output, default is \"false\"");
-}

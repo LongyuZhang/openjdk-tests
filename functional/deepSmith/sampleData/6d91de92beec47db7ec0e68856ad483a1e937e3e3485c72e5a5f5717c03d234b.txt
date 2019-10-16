@@ -1,0 +1,11 @@
+private static int fn_A(int a,int b,int c){
+  int d=a / c;
+  if (a % c != 0) {
+    d++;
+  }
+  int e=b / c;
+  if (b % c != 0) {
+    e++;
+  }
+  return d * e;
+}

@@ -1,5 +1,0 @@
-public static void main(String[] a){
-  long b=4L;
-  long c=5L;
-  boolean d=c == b;
-}

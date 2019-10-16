@@ -1,6 +1,0 @@
-public static void fn_A(final double[][] a,final double b,final double c,final int d,final int e,final int f,final int g){
-  double h=a[d][e];
-  double i=a[f][g];
-  a[d][e]=h - b * (i + h * c);
-  a[f][g]=i + b * (h - i * c);
-}

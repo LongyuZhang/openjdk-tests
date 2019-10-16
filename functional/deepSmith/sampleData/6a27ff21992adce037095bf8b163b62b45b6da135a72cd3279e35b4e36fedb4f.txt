@@ -1,0 +1,10 @@
+private static double fn_A(double a,double b,double c){
+  if (c < a) {
+    return 0;
+  }
+  if (c >= b) {
+    return 1;
+  }
+  c=(c - a) / (b - a);
+  return c * c * (3 - 2 * c);
+}

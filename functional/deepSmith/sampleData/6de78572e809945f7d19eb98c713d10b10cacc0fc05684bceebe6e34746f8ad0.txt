@@ -1,0 +1,8 @@
+private static float fn_A(float a){
+  if (a < 1.0f) {
+    return 1.0f / a;
+  }
+ else {
+    return a;
+  }
+}

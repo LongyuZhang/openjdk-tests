@@ -1,0 +1,10 @@
+public static int[][] fn_A(int[][] a,int b,int c){
+  int[][] d=new int[a.length][a[0].length];
+  for (int e=0; e < a.length; e++) {
+    for (int f=0; f < a[e].length; f++) {
+      d[e][f]=a[e][f];
+    }
+  }
+  if (b >= 0 && c >= 0 && b < a.length && c < a[0].length)   a[b][c]+=1;
+  return d;
+}

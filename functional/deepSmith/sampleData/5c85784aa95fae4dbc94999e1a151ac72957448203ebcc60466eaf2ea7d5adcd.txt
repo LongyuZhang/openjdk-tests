@@ -1,8 +1,0 @@
-private static float fn_A(float a,double b,double c){
-  double d=Math.PI * 2;
-  double e=c / d * Math.asin(1 / b);
-  if ((a*=2) < 1) {
-    return (float)(-0.5f * (b * Math.pow(2,10 * (a-=1f)) * Math.sin((a - e) * d / c)));
-  }
-  return (float)(b * Math.pow(2,-10 * (a-=1)) * Math.sin((a - e) * d / c)* 0.5 + 1);
-}

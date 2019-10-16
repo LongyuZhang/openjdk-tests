@@ -1,0 +1,8 @@
+public static boolean fn_A(double a,double b,double c){
+  double d=Math.abs(a - b);
+  if (c >= d)   return true;
+  if (Double.isNaN(a)) {
+    return Double.isNaN(b);
+  }
+ else   return Double.isInfinite(a) && a == b;
+}

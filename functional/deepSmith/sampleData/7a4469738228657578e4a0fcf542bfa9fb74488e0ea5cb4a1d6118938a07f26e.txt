@@ -1,0 +1,7 @@
+public static int fn_A(int a){
+  int b=a * 3;
+  if (b % 4 != 0) {
+    b=(b / 4 + 1) * 4;
+  }
+  return b;
+}

@@ -1,4 +1,0 @@
-public static String fn_A(int a){
-  final byte[] b=new byte[]{(byte)a,(byte)(a >>> 8),(byte)(a >>> 16),(byte)(a >>> 24)};
-  return (b[0] & 0xFF) + "." + (b[1] & 0xFF)+ "."+ (b[2] & 0xFF)+ "."+ (b[3] & 0xFF);
-}

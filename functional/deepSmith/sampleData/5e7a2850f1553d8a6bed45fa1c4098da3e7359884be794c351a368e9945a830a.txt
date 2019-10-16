@@ -1,8 +1,0 @@
-private static boolean fn_A(){
-  try {
-    return "TRUE".equalsIgnoreCase(System.getProperty("com.twelvemonkeys.image.magick.debug"));
-  }
- catch (  Throwable a) {
-    return false;
-  }
-}

@@ -1,7 +1,0 @@
-public static boolean fn_A(byte[] a,int b,byte[] c,int d,int e){
-  if (b + e > a.length || d + e > c.length)   return false;
- else {
-    for (int f=0; f < e; f++)     if (a[b + f] != c[d + f])     return false;
-    return true;
-  }
-}

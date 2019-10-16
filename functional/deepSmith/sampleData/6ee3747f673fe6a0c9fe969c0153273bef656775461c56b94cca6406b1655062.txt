@@ -1,0 +1,13 @@
+public static double[] fn_A(double[] a,double[][] b) throws Exception {
+  if (a.length != b.length) {
+    throw new Exception("Number of entries of v " + a.length + " does not match the number of rows of A "+ b.length);
+  }
+  double[] c=new double[b[0].length];
+  for (int d=0; d < c.length; d++) {
+    c[d]=0;
+    for (int e=0; e < a.length; e++) {
+      c[d]+=a[e] * b[e][d];
+    }
+  }
+  return c;
+}

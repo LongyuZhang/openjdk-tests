@@ -1,0 +1,4 @@
+public static long fn_A(boolean a){
+  long b=a ? 0xFFFFFFFFFFFFFFF0L : 0xFFFFFFFFFFFFFF00L;
+  return b >>> 8;
+}

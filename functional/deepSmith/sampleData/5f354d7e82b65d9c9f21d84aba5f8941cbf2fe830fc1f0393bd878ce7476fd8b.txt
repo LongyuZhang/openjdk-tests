@@ -1,0 +1,24 @@
+public static int fn_A(int[] a){
+  int b=a.length;
+  if (b == 0 || b == 1) {
+    return b;
+  }
+  int c=0;
+  while (c + 1 < b && a[c] == a[c + 1])   c++;
+  if (c + 1 == b)   return 1;
+  boolean d=a[c] < a[c + 1];
+  c++;
+  int e=2;
+  while (c + 1 < b) {
+    if (d && a[c + 1] < a[c]) {
+      d=false;
+      e++;
+    }
+ else     if (!d && a[c + 1] > a[c]) {
+      d=true;
+      e++;
+    }
+    c++;
+  }
+  return e;
+}

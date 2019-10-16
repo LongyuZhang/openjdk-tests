@@ -1,6 +1,0 @@
-public static double fn_A(Double a){
-  if (a == null) {
-    return 0;
-  }
-  return a;
-}

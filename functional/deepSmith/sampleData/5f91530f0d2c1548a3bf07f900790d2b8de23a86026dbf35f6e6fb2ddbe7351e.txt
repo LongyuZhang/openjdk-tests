@@ -1,0 +1,15 @@
+public static int fn_A(final int a[],int b,int c,final int d){
+  int e=c - b;
+  while (e > 0) {
+    final int f=e / 2;
+    final int g=b + f;
+    if (a[g] < d) {
+      b=g + 1;
+      e=e - f - 1;
+    }
+ else {
+      e=f;
+    }
+  }
+  return b;
+}

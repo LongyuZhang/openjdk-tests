@@ -1,6 +1,0 @@
-static long fn_A(long a){
-  if (a < 0) {
-    return Long.MAX_VALUE;
-  }
-  return a;
-}

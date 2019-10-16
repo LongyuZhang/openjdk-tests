@@ -1,0 +1,39 @@
+public static long fn_A(byte[] a) throws NumberFormatException {
+  long b=0;
+  boolean c=false;
+  int d=0, e=a.length;
+  long f=-Long.MAX_VALUE;
+  long g;
+  int h;
+  if (e > 0) {
+    byte i=a[0];
+    if (i < '0') {
+      if (i == '-') {
+        c=true;
+        f=Long.MIN_VALUE;
+      }
+ else       throw new NumberFormatException();
+      if (e == 1)       throw new NumberFormatException();
+      d++;
+    }
+    g=f / 10;
+    while (d < e) {
+      h=Character.digit(a[d++],10);
+      if (h < 0) {
+        throw new NumberFormatException();
+      }
+      if (b < g) {
+        throw new NumberFormatException();
+      }
+      b*=10;
+      if (b < f + h) {
+        throw new NumberFormatException();
+      }
+      b-=h;
+    }
+  }
+ else {
+    throw new NumberFormatException();
+  }
+  return c ? b : -b;
+}

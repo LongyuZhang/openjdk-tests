@@ -1,0 +1,14 @@
+public static int fn_A(int a,int b){
+  if (b >= 0) {
+    if (a >= 0) {
+      return a / b;
+    }
+    int c=((a >>> 1) / b) << 1;
+    a-=c * b;
+    if (a < 0L || a >= b) {
+      c++;
+    }
+    return c;
+  }
+  return a >= 0 || a < b ? 0 : 1;
+}

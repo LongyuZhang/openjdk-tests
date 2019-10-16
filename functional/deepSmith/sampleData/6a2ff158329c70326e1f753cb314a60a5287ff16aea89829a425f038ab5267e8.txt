@@ -1,0 +1,10 @@
+public static double fn_A(double a){
+  double b;
+  if (a <= 0) {
+    b=-a;
+  }
+ else {
+    b=Math.PI * 2 - a;
+  }
+  return b;
+}

@@ -1,0 +1,7 @@
+public static boolean fn_A(final double a,final double b,final double c,final double d,final double e,final double f,final double g,final double h){
+  boolean i=false;
+  if (g > a && e < c && h > b && f < d) {
+    i=true;
+  }
+  return i;
+}

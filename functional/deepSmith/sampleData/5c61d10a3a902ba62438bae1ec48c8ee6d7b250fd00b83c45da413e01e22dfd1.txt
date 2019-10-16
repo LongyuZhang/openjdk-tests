@@ -1,7 +1,0 @@
-private static byte fn_A(byte[] a,int b){
-  int c=7 - (b % 7);
-  int d=(b / 7) * 8 + (b % 7);
-  byte e=(byte)(a[d] >> (7 - c));
-  byte f=(byte)(a[d + 1] << c);
-  return (byte)(f + e);
-}

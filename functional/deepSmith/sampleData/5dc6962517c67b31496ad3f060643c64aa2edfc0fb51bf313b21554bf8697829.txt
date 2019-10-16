@@ -1,8 +1,0 @@
-public static void fn_A(float[] a,int b,float c,float d,float e){
-  for (int f=0; f < 4; f++) {
-    int g=b + f;
-    a[g]*=c;
-    a[4 + g]*=d;
-    a[8 + g]*=e;
-  }
-}

@@ -1,4 +1,0 @@
-public static int fn_A(int a){
-  int b=0xff & (a >> (0 * 8));
-  return b;
-}

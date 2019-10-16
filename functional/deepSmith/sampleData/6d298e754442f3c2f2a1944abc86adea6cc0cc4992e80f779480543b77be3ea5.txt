@@ -1,0 +1,11 @@
+private static boolean fn_A(final String a,final String b){
+  if (a == null && b == null) {
+    return true;
+  }
+  if (a != null) {
+    return a.equalsIgnoreCase(b);
+  }
+ else {
+    return b.equalsIgnoreCase(a);
+  }
+}

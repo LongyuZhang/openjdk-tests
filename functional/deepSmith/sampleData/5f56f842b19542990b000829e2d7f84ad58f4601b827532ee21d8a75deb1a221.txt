@@ -1,0 +1,10 @@
+private static int fn_A(int a,int b){
+switch (a) {
+case 16:
+    return b == 16 ? 10 : (b == 24 ? 12 : 14);
+case 24:
+  return b != 32 ? 12 : 14;
+default :
+return 14;
+}
+}

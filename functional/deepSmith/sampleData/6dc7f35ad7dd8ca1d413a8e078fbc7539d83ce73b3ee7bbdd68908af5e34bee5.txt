@@ -1,0 +1,4 @@
+private static String fn_A(String a){
+  final UUID b=UUID.randomUUID();
+  return b + "." + a;
+}

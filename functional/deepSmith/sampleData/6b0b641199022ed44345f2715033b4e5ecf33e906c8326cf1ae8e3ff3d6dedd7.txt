@@ -1,0 +1,7 @@
+protected static final void fn_A(double[] a,double[] b){
+  for (int c=1; c < b.length - 1; c++) {
+    a[c]=((b[c] - b[c - 1]) + ((b[c + 1] - b[c - 1]) / 2.0)) / 2.0;
+  }
+  a[0]=a[1];
+  a[a.length - 1]=a[a.length - 2];
+}

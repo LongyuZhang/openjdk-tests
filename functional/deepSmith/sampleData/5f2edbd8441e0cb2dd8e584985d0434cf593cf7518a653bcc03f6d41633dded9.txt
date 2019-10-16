@@ -1,6 +1,0 @@
-private static boolean fn_A(int a,int b,int c){
-  if ((a < 0) || (a > b) || (b > c)) {
-    throw new IllegalArgumentException("bit positions (first=" + a + ",lastExcl="+ b+ ") must verify 0 <= first <= lastExcl <= "+ c);
-  }
-  return true;
-}

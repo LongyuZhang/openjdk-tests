@@ -1,0 +1,14 @@
+public static int fn_A(char[] a){
+  int b=-1;
+  for (int c=0; c < a.length; c++) {
+    char d=a[c];
+switch (d) {
+case '\t':
+case '\n':
+case '\r':
+case ' ':
+      return c;
+  }
+}
+return b;
+}

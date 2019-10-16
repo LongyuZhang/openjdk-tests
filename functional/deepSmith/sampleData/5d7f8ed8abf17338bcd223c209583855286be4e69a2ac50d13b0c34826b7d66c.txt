@@ -1,8 +1,0 @@
-private static long fn_A(long a){
-  a^=(a >>> 33);
-  a*=0xff51afd7ed558ccdL;
-  a^=(a >>> 33);
-  a*=0xc4ceb9fe1a85ec53L;
-  a^=(a >>> 33);
-  return a;
-}

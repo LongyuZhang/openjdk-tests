@@ -1,0 +1,5 @@
+private static int fn_A(int a,int b){
+  int c=((149 * b) % 255) + 1;
+  int d=a - c;
+  return d >= 0 ? d : d + 256;
+}

@@ -1,4 +1,0 @@
-public static String fn_A(String a){
-  a="<font color=\"#009933\">" + a + "</font>";
-  return a;
-}

@@ -1,0 +1,15 @@
+public static int fn_A(int[] a){
+  if (a == null) {
+    throw new IllegalArgumentException("The Array must not be null");
+  }
+ else   if (a.length == 0) {
+    throw new IllegalArgumentException("Array cannot be empty.");
+  }
+  int b=a[0];
+  for (int c=1; c < a.length; c++) {
+    if (a[c] < b) {
+      b=a[c];
+    }
+  }
+  return b;
+}

@@ -1,0 +1,4 @@
+public static int fn_A(int a){
+  int b=(a >> 29) & 0x7;
+  return b + 1;
+}

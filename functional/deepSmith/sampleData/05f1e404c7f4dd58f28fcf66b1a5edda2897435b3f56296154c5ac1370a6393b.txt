@@ -1,6 +1,0 @@
-public static void fn_A(final String a){
-  System.err.println();
-  System.err.println("error: " + a);
-  System.err.println();
-  System.exit(-1);
-}

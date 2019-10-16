@@ -1,0 +1,13 @@
+private static void fn_A(){
+  System.out.println();
+  System.out.println("MakeSpriteSheet - Inject sprite info into PNG.");
+  System.out.println();
+  System.out.println("Options:");
+  System.out.println("  -D <path>  Set output directory.");
+  System.out.println("  -I         Output PNG file rewritten by ImageIO.");
+  System.out.println("  -P         Output PNG file with spNF chunk.");
+  System.out.println("  --         Treat remaining arguments as file names.");
+  System.out.println();
+  System.out.println("If neither -I nor -P is specified, both are implied.");
+  System.out.println();
+}

@@ -1,5 +1,0 @@
-public static void fn_A(int a) throws NumberFormatException {
-  if ((-65536 & a) != 0) {
-    throw new NumberFormatException();
-  }
-}

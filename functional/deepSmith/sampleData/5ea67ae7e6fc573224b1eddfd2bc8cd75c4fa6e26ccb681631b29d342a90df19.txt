@@ -1,6 +1,0 @@
-static Object fn_A(Object a){
-  if (a instanceof java.util.Date) {
-    a=new java.sql.Date(((java.util.Date)a).getTime());
-  }
-  return a;
-}

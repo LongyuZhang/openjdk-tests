@@ -1,0 +1,7 @@
+public static final boolean fn_A(String[] a,String[] b){
+  if (a == b)   return true;
+  if (a == null || b == null)   return false;
+  if (a.length != b.length)   return false;
+  for (int c=a.length; --c >= 0; )   if (!a[c].equals(b[c]))   return false;
+  return true;
+}

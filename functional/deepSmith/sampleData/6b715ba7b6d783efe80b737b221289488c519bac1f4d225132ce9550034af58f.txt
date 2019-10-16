@@ -1,0 +1,4 @@
+public static int fn_A(){
+  int a=10 + (int)(Math.random() * 320);
+  return a;
+}

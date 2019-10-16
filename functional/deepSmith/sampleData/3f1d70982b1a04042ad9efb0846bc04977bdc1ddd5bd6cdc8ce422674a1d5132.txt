@@ -1,9 +1,0 @@
-public static int fn_A(int a,int b){
-  int c=a ^ b;
-  int d=0;
-  while (c != 0) {
-    d++;
-    c=c & (c - 1);
-  }
-  return d;
-}

@@ -1,0 +1,17 @@
+private static byte[] fn_A(boolean[] a){
+  int b=(int)Math.ceil(a.length / 8.0);
+  byte[] c=new byte[b];
+  int d=0;
+  int e=c.length - 1;
+  for (int f=a.length - 1; f >= 0; f--) {
+    if (a[f]) {
+      c[e]+=1 << d;
+    }
+    d++;
+    if (d > 7) {
+      e--;
+      d=0;
+    }
+  }
+  return c;
+}

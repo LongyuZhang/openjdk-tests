@@ -1,0 +1,5 @@
+public static void fn_A(float a,float b,float c){
+  if (a + b > c) {
+    throw new IllegalArgumentException("left rounding factors are invalid: " + a + " + "+ b+ " > "+ c);
+  }
+}

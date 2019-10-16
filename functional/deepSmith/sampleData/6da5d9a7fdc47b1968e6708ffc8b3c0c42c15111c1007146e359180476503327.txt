@@ -1,0 +1,11 @@
+public static void fn_A(int a,int b){
+  if (a > b) {
+    System.out.println(1);
+  }
+ else   if (a < b) {
+    System.out.println(2);
+  }
+ else   if (a == b) {
+    System.out.println(0);
+  }
+}

@@ -1,0 +1,9 @@
+static void fn_A(int a,double b,double[] c,int d){
+  if (a <= 0 || d == 0)   return;
+  int e=(d < 0) ? a - 1 : 0;
+  for (int f=0; f < a; f++) {
+    c[e]*=b;
+    e+=d;
+  }
+  return;
+}

@@ -1,0 +1,4 @@
+public static boolean fn_A(int a[][],int b,int c){
+  if (a[b][c] == 1)   return true;
+  return false;
+}
