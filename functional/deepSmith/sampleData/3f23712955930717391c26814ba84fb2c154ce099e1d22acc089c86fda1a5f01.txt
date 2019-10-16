@@ -1,7 +1,0 @@
-public static boolean fn_A(byte[] a){
-  int b=0;
-  for (int c=0; c < a.length; c++) {
-    b|=a[c];
-  }
-  return b == 0;
-}

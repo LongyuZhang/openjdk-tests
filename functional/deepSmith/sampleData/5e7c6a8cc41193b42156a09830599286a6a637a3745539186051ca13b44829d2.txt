@@ -1,4 +1,0 @@
-public static DataOutput fn_A(OutputStream a){
-  if (a instanceof DataOutput)   return (DataOutput)a;
-  return new DataOutputStream(a);
-}

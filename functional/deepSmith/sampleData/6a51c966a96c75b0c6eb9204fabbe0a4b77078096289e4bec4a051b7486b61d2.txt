@@ -1,0 +1,4 @@
+public static int fn_A(int a){
+  int b=(a % 127773) * 16807 - (a / 127773) * 2836;
+  return (b > 0) ? b : b + 0x7fffffff;
+}

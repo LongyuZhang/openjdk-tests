@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("java examples.tptp.SET967 [univ size]");
+  System.exit(1);
+}

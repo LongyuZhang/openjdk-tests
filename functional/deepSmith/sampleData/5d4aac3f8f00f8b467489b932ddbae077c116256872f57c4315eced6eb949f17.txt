@@ -1,8 +1,0 @@
-public static BigInteger fn_A(byte[] a){
-  for (int b=0; b < a.length / 2; b++) {
-    byte c=a[b];
-    a[b]=a[a.length - b - 1];
-    a[a.length - b - 1]=c;
-  }
-  return new BigInteger(1,a);
-}

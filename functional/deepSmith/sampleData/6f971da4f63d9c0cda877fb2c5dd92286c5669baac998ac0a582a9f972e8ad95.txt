@@ -1,0 +1,4 @@
+private static File fn_A(){
+  String a=System.getenv("MINISHIFT_HOME");
+  return a == null ? null : new File(a);
+}

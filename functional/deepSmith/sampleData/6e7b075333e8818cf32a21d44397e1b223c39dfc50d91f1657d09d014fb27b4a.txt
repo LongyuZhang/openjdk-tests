@@ -1,0 +1,16 @@
+private static int fn_A(boolean a,char b){
+switch (b) {
+case 'Y':
+    return 1;
+case 'M':
+  return (!a ? 2 : 5);
+case 'D':
+return 3;
+case 'H':
+return 4;
+case 'S':
+return 6;
+default :
+return -1;
+}
+}

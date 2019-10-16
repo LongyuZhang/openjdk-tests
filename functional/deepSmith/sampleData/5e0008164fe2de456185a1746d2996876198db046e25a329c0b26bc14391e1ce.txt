@@ -1,5 +1,0 @@
-private static void fn_A(){
-  for (  Object a : System.getProperties().keySet()) {
-    System.out.println(a + "=" + System.getProperty(a + ""));
-  }
-}

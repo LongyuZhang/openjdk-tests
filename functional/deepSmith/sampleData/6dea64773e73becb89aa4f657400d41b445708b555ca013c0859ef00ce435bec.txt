@@ -1,0 +1,9 @@
+private static String fn_A(){
+  if ("false".equals(System.getProperty("rails.use.compressed.js"))) {
+    return "dev";
+  }
+  if ("true".equalsIgnoreCase(System.getProperty("rails.use.compressed.js"))) {
+    return "prod";
+  }
+  return "";
+}

@@ -1,5 +1,0 @@
-private static void fn_A(boolean a,String b){
-  if (!a) {
-    throw new IllegalStateException(b);
-  }
-}

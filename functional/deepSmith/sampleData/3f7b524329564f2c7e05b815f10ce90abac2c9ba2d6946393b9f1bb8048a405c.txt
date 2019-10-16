@@ -1,6 +1,0 @@
-static long fn_A(int a){
-  if (a < 4 || a > 31) {
-    throw new IllegalArgumentException("Bad number of rounds");
-  }
-  return 1L << a;
-}

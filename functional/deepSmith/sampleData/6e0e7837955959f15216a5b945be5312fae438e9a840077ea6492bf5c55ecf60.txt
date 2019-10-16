@@ -1,0 +1,7 @@
+public static int fn_A(final int a,final int b){
+  final int c=a - b;
+  if (((a ^ b) & (a ^ c)) < 0) {
+    throw new ArithmeticException("integer overflow");
+  }
+  return c;
+}

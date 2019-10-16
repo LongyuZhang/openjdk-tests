@@ -1,9 +1,0 @@
-public static final double fn_A(final double[][] a){
-  double b=0.0;
-  for (int c=0; c < a.length; c++) {
-    for (int d=0; d < a[c].length; d++) {
-      b+=a[c][d];
-    }
-  }
-  return b;
-}

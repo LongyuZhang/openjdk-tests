@@ -1,0 +1,7 @@
+public static <T extends Comparable<? super T>>boolean fn_A(T[] a,int b,int c){
+  while (b < c) {
+    if (a[b].compareTo(a[b + 1]) > 0)     return false;
+    b++;
+  }
+  return true;
+}

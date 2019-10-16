@@ -1,4 +1,0 @@
-public static void fn_A(){
-  System.out.println("USAGE : jarsigner [inputfile] [outputfile]");
-  System.out.println("Currently always uses the TEST_KEY");
-}

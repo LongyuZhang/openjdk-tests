@@ -1,4 +1,0 @@
-public static long fn_A(){
-  long a=29;
-  return a % 15;
-}

@@ -1,7 +1,0 @@
-public static final int fn_A(final float a){
-  int b=(int)a;
-  if (a > b) {
-    return b + 1;
-  }
-  return b;
-}

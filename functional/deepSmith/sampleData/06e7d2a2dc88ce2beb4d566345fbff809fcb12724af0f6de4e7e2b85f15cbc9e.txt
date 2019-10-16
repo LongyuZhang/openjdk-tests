@@ -1,0 +1,4 @@
+private static void fn_A(){
+  System.out.println("AresEnc in_file out_file [options]\n\n" + " in_file:  Must contain a complete authentication request\n" + " out_file: Result will be written here\n"+ "\n options:\n"+ "   -b                 Built-in demo key-store, requires NO passwords\n"+ "   -t                 Keep local time constant\n"+ "   -k key_file        Java JKS type of keystore\n"+ "   -w storepassword   MUST for 'key_file'\n"+ "   -u signpassword    MUST for 'key_file'\n"+ "   -a keyalias        Signature key alias\n");
+  System.exit(3);
+}

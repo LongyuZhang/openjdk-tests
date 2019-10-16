@@ -1,0 +1,16 @@
+static Object fn_A(Object a){
+  Object b=null;
+  try {
+    b=(String)a;
+  }
+ catch (  ClassCastException c) {
+    System.out.println(" got: class cast exception");
+  }
+  try {
+    b=(StringBuffer)a;
+  }
+ catch (  ClassCastException c) {
+    System.out.println(" got: class cast exception");
+  }
+  return b;
+}

@@ -1,6 +1,0 @@
-private static boolean fn_A(int a,int b){
-  if (a < 0) {
-    return true;
-  }
-  return (a == b);
-}

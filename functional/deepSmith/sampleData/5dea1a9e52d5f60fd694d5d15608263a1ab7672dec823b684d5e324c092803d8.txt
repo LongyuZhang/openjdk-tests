@@ -1,7 +1,0 @@
-public static void fn_A(byte[] a){
-  for (int b=0, c=a.length - 1; b < c; b++, c--) {
-    byte d=a[c];
-    a[c]=a[b];
-    a[b]=d;
-  }
-}

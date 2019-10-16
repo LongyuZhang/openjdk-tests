@@ -1,0 +1,7 @@
+private static String fn_A(String[] a){
+  if (1 >= a.length)   return null;
+  long b=Long.parseLong(a[1]);
+  if (b > 0)   return "7Karmar: a+" + b;
+ else   if (b < 0)   return "7Karmar: c" + b;
+ else   return "7Karmar: e0";
+}

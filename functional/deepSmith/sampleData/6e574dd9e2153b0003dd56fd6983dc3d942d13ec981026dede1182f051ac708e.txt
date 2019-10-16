@@ -1,0 +1,25 @@
+private static int fn_A(String[] a,double b){
+  int c=0;
+  int d=0;
+  int e=a.length;
+  int f=0;
+  while (d <= e) {
+    f=(d + e) / 2;
+    double g=Double.parseDouble(a[f].split("=")[1]);
+    if (b > g) {
+      e=f;
+      c=e;
+      if (e - d == 1)       break;
+    }
+ else     if (b < g) {
+      d=f;
+      c=d + 1;
+      if (e - d == 1)       break;
+    }
+ else {
+      c=f;
+      break;
+    }
+  }
+  return c;
+}

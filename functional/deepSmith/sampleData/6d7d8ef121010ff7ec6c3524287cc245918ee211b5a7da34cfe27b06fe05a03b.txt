@@ -1,0 +1,6 @@
+public static void fn_A(final double[] a,final short[] b,final int c){
+  final int d=a.length;
+  for (int e=0; e < d; e+=c) {
+    b[e]=(short)((int)a[e] >> 16);
+  }
+}

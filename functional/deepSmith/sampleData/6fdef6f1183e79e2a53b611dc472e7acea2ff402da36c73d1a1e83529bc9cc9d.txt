@@ -1,0 +1,9 @@
+public static String fn_A(int a,int b,String c,String d,long e){
+  if (c == null) {
+    c="tile";
+  }
+  if (d == null) {
+    d=".jpg";
+  }
+  return c + a + "-"+ b+ '-'+ e+ d;
+}

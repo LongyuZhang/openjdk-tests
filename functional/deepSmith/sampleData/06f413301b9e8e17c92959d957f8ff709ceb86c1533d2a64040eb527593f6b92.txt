@@ -1,0 +1,4 @@
+public static void fn_A(final float[] a,final float b){
+  int c=a.length;
+  while (c-- != 0)   a[c]=b;
+}

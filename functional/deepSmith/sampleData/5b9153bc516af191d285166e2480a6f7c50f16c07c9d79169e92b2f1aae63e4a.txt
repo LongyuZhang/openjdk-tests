@@ -1,8 +1,0 @@
-public static float fn_A(int a){
-  if (a <= 0.0031308d) {
-    return (float)(a / 100000d * 12.92d);
-  }
- else {
-    return (float)(1.055d * Math.pow(a / 100000d,1.0d / 2.4d) - 0.055d);
-  }
-}

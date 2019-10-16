@@ -1,5 +1,0 @@
-public static boolean[] fn_A(long[] a,long b){
-  boolean[] c=new boolean[a.length];
-  for (int d=0; d < a.length; d++)   c[d]=a[d] == b;
-  return c;
-}

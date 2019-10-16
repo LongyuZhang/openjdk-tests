@@ -1,0 +1,18 @@
+public static int fn_A(int a,int b){
+switch (b) {
+case 0:
+    break;
+case 1:
+  a^=((a ^ a >> 1) & 1) * 3;
+break;
+case 2:
+default :
+a^=((a ^ a >> 2) & 3) * 5;
+break;
+case 3:
+case 4:
+a^=((a ^ a >> 1) & 1) * 3;
+a^=((a ^ a >> 2) & 3) * 5;
+}
+return a << b * 4;
+}

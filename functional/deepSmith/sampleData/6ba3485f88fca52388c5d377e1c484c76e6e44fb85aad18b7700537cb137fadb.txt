@@ -1,0 +1,5 @@
+private static void fn_A(final int[] a,final int[] b,final int c){
+  for (int d=0, e=0; d < b.length; ++d, e+=c) {
+    b[d]=a[e];
+  }
+}

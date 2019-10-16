@@ -1,0 +1,22 @@
+public static boolean fn_A(double[] a,double[] b){
+  if (a.length != b.length) {
+    return false;
+  }
+  double c=-1;
+  int d=-1;
+  int e=-1;
+  for (int f=0; f < a.length; f++) {
+    if (a[f] > c) {
+      c=a[f];
+      d=f;
+    }
+  }
+  c=-1;
+  for (int f=0; f < b.length; f++) {
+    if (b[f] > c) {
+      c=b[f];
+      e=f;
+    }
+  }
+  return (d == e);
+}

@@ -1,0 +1,17 @@
+public static double fn_A(int a){
+  double b=1;
+  if (a >= 0) {
+    if (a <= 170) {
+      for (int c=1; c <= a; c++) {
+        b*=c;
+      }
+    }
+ else {
+      b=Double.POSITIVE_INFINITY;
+    }
+  }
+ else {
+    b=Double.NaN;
+  }
+  return b;
+}

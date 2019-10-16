@@ -1,0 +1,12 @@
+private static File fn_A(){
+  String a=System.getProperty("kubernetes.config.file");
+  if (a != null) {
+    return new File(a);
+  }
+  a=System.getenv("KUBECONFIG");
+  if (a != null) {
+    return new File(a);
+  }
+  String b=System.getProperty("user.home",".");
+  return new File(b,".kube/config");
+}

@@ -1,6 +1,0 @@
-public static final long fn_A(long a,long b){
-  long c=b;
-  if ((a ^ b) >= 0L)   c=a - b;
-  if (c >= 0L)   a=b;
-  return a;
-}

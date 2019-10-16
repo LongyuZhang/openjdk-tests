@@ -1,6 +1,0 @@
-static int fn_A(int a[][],int b,int c){
-  int d=a[b][c] + a[b][c + 1] + a[b][c + 2];
-  int e=a[b + 1][c + 1];
-  int f=a[b + 2][c] + a[b + 2][c + 1] + a[b + 2][c + 2];
-  return d + e + f;
-}

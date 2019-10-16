@@ -1,0 +1,17 @@
+public static int[][] fn_A(int[][] a,int[][] b) throws Exception {
+  int c=a.length;
+  int d=a[0].length;
+  if (b.length != c) {
+    throw new Exception("Row length of arrays are not equal");
+  }
+  if (b[0].length != d) {
+    throw new Exception("Column length of arrays are not equal");
+  }
+  int[][] e=new int[c][d];
+  for (int f=0; f < c; f++) {
+    for (int g=0; g < d; g++) {
+      e[f][g]=a[f][g] - b[f][g];
+    }
+  }
+  return e;
+}

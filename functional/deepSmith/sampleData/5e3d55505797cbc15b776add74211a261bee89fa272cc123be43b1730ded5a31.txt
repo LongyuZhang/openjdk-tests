@@ -1,7 +1,0 @@
-private static int fn_A(final int a,final int b){
-  final long c=(long)a * (long)b;
-  if (c < Integer.MIN_VALUE || c > Integer.MAX_VALUE) {
-    throw new ArithmeticException("overflow: mul");
-  }
-  return (int)c;
-}

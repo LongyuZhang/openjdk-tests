@@ -1,9 +1,0 @@
-public static boolean fn_A(){
-  try {
-    Class.forName("com.eclipsesource.v8.V8");
-    return true;
-  }
- catch (  Throwable a) {
-    return false;
-  }
-}

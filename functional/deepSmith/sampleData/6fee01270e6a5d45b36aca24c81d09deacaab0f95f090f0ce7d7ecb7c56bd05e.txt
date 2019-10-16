@@ -1,0 +1,5 @@
+private static void fn_A(byte[] a,byte[] b){
+  for (int c=4; c < a.length; c++) {
+    a[c]=((byte)(a[c] ^ b[((c - 4) % 8)]));
+  }
+}

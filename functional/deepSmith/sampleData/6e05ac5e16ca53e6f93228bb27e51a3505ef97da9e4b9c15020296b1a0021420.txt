@@ -1,0 +1,57 @@
+public static byte fn_A(byte[] a,int b,int c){
+  int d, e, f;
+  int g=c;
+  byte h;
+  int i=0;
+  int j=g - 1;
+  byte k;
+  for (; ; ) {
+    if (j <= i + 1) {
+      if (j == i + 1 && a[j] < a[i]) {
+        k=a[i];
+        a[i]=a[j];
+        a[j]=k;
+      }
+      return a[b];
+    }
+ else {
+      f=(i + j) >> 1;
+      int l=i + 1;
+      k=a[f];
+      a[f]=a[l];
+      a[l]=k;
+      if (a[i] > a[j]) {
+        k=a[i];
+        a[i]=a[j];
+        a[j]=k;
+      }
+      if (a[l] > a[j]) {
+        k=a[l];
+        a[l]=a[j];
+        a[j]=k;
+      }
+      if (a[i] > a[l]) {
+        k=a[l];
+        a[l]=a[i];
+        a[i]=k;
+      }
+      d=l;
+      e=j;
+      h=a[l];
+      for (; ; ) {
+        do         d++;
+ while (a[d] < h);
+        do         e--;
+ while (a[e] > h);
+        if (e < d)         break;
+        k=a[d];
+        a[d]=a[e];
+        a[e]=k;
+      }
+      a[l]=a[e];
+      a[e]=h;
+      if (e >= b)       j=e - 1;
+      if (e <= b)       i=d;
+    }
+  }
+}

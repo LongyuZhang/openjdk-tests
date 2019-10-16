@@ -1,0 +1,12 @@
+private static void fn_A(byte[] a){
+  if (a.length < 1)   return;
+  for (short b=(short)(a.length - 1); b >= 0; b--) {
+    if (a[b] != (byte)0xFF) {
+      a[b]++;
+      break;
+    }
+ else {
+      a[b]=(byte)0x00;
+    }
+  }
+}

@@ -1,5 +1,0 @@
-public static void fn_A(){
-  System.setProperty("druid.server.http.numThreads","20");
-  System.setProperty("druid.server.http.maxIdleTime","PT1S");
-  System.setProperty("druid.global.http.readTimeout","PT1S");
-}

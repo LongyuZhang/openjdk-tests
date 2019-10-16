@@ -1,0 +1,12 @@
+static void fn_A(int[] a,int b,int[] c){
+  int d=0;
+  int e=0;
+  for (; ; ) {
+    int f=a[d];
+    c[d]=(f >>> b) | e;
+    if (++d == 4) {
+      break;
+    }
+    e=f << (32 - b);
+  }
+}

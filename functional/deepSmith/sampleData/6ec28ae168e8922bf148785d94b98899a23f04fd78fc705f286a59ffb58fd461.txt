@@ -1,0 +1,12 @@
+public static float[] fn_A(float[] a,float[] b){
+  if (a.length > 2 && b.length > 2) {
+  }
+ else   if (a.length > 1 && b.length > 1) {
+    float c=(float)Math.toDegrees(Math.atan2(a[0] - b[0],a[1] - b[1]));
+    if (c < 0) {
+      c+=360;
+    }
+    return new float[]{c};
+  }
+  return new float[]{};
+}

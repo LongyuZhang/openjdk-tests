@@ -1,0 +1,32 @@
+public static void fn_A(double[] a,long[] b,double[] c,long[] d){
+  int e=0;
+  int f=-1;
+  int g=a.length;
+  int h=b.length;
+  if (g != h)   throw new IllegalArgumentException("First argument array, aa, (length = " + g + ") and the second argument array, bb, (length = "+ h+ ") should be the same length");
+  int i=c.length;
+  if (i < g)   throw new IllegalArgumentException("The third argument array, cc, (length = " + i + ") should be at least as long as the first argument array, aa, (length = "+ g+ ")");
+  int j=d.length;
+  if (j < h)   throw new IllegalArgumentException("The fourth argument array, dd, (length = " + j + ") should be at least as long as the second argument array, bb, (length = "+ h+ ")");
+  double k=0.0D;
+  long l=0L;
+  for (int m=0; m < g; m++) {
+    c[m]=a[m];
+    d[m]=b[m];
+  }
+  while (f != g - 1) {
+    e=f + 1;
+    for (int m=f + 2; m < g; m++) {
+      if (c[m] < c[e]) {
+        e=m;
+      }
+    }
+    f++;
+    k=c[e];
+    c[e]=c[f];
+    c[f]=k;
+    l=d[e];
+    d[e]=d[f];
+    d[f]=l;
+  }
+}

@@ -1,4 +1,0 @@
-private static void fn_A(){
-  System.out.println("java examples.tptp.GEO191 [univ size]");
-  System.exit(1);
-}

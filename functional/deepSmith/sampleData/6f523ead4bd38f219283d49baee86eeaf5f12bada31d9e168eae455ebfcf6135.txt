@@ -1,0 +1,13 @@
+private static float fn_A(int a,float[] b,float[] c){
+  if (!(a == 1 || a == 3)) {
+    throw new IllegalArgumentException();
+  }
+  float d=b[3] - b[1];
+  float e=c[3] - c[1];
+  float f=(d + e) * 0.5F;
+  float g=(b[a] - c[a]) / f;
+  if (g < 0) {
+    g=-g;
+  }
+  return g;
+}

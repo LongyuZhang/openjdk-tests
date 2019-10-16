@@ -1,4 +1,0 @@
-public static int fn_A(int a,int b,int c,int d,boolean e){
-  if (e)   return (a + d * 2 - b + c - 1) / c + 1;
- else   return (a + d * 2 - b) / c + 1;
-}

@@ -1,0 +1,19 @@
+private static CharSequence fn_A(CharSequence a,int b){
+  if (a == "")   return "";
+  if (b == 3) {
+    if (a != " ")     a=" " + a;
+  }
+ else   if (b == 7) {
+    if (a != " ")     a=" " + a;
+  }
+ else   if (b == 12) {
+    if (a != " ")     a=" " + a;
+  }
+ else   if (b == 17) {
+    if (a != " ")     a=" " + a;
+  }
+ else   if (a == " ") {
+    a="";
+  }
+  return a;
+}

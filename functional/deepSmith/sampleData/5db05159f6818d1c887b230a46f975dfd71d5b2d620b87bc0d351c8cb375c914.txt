@@ -1,8 +1,0 @@
-static public int fn_A(byte a){
-  if ((a & 0x80) != 0) {
-    return 2;
-  }
- else {
-    return 1;
-  }
-}

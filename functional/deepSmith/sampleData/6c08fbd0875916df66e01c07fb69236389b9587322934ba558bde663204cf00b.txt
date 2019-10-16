@@ -1,0 +1,12 @@
+public static boolean fn_A(byte[] a,byte[] b){
+  int c=a.length;
+  if (c == b.length) {
+    for (int d=0; d < c; d++) {
+      if (a[d] != b[d]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  return false;
+}

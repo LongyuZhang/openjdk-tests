@@ -1,0 +1,9 @@
+private static boolean fn_A(String a,String b){
+  if (a == null) {
+    throw new IllegalArgumentException("minimum supported version received cannot be null");
+  }
+ else   if (b == null) {
+    throw new IllegalArgumentException("discovered version received cannot be null");
+  }
+  return true;
+}

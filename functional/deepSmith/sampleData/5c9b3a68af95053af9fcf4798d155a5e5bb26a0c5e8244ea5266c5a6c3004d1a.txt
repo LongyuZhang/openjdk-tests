@@ -1,4 +1,0 @@
-static boolean fn_A(int a){
-  if (a >= 0 && a <= 32)   return true;
-  return false;
-}

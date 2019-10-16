@@ -1,0 +1,8 @@
+public static String fn_A(InputStream a){
+  try {
+    return new Scanner(a).useDelimiter("\\A").next();
+  }
+ catch (  java.util.NoSuchElementException b) {
+    return "";
+  }
+}

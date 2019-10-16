@@ -1,0 +1,5 @@
+private static void fn_A(long a){
+  if (a < 1) {
+    throw new IllegalArgumentException("length cannot be less than one: " + a);
+  }
+}

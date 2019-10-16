@@ -1,0 +1,8 @@
+public static String fn_A(long a){
+  final long b=(1 << 19) - 1;
+  long c=a & b;
+  a>>=19;
+  long d=a & b;
+  a>>=19;
+  return (a & b) + "_" + d+ "_"+ c;
+}

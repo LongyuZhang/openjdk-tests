@@ -1,7 +1,0 @@
-public static void fn_A(){
-  System.out.println("long " + Long.SIZE);
-  System.out.println("java.lang.Long");
-  System.out.println("Long.MIN_VALUE=" + Long.MIN_VALUE);
-  System.out.println("Long.MAX_VALUE=" + Long.MAX_VALUE);
-  System.out.println();
-}

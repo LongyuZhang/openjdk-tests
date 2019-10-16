@@ -1,0 +1,15 @@
+public static final int fn_A(boolean[] a,int b,boolean[] c,int d,int e) throws NullPointerException, ArrayIndexOutOfBoundsException {
+  int f=a.length - c.length;
+  f=0;
+  if (e > 0) {
+    boolean g=a[b];
+    g=a[b + e - 1];
+    g=c[d];
+    g=c[d + e - 1];
+    if (b != d || a != c)     do {
+      if (a[b++] != c[d++])       f++;
+    }
+ while (--e > 0);
+  }
+  return f;
+}

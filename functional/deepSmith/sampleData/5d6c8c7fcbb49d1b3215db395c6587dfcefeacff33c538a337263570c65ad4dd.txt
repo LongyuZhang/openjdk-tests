@@ -1,4 +1,0 @@
-private static int fn_A(final int a){
-  final int b=32;
-  return 1 << (b - Integer.numberOfLeadingZeros(a - 1));
-}

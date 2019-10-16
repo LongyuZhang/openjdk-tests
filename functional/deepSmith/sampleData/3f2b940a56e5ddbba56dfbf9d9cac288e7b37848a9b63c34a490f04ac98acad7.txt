@@ -1,8 +1,0 @@
-public static long fn_A(int[] a,int[] b){
-  int c=a.length;
-  long d=0;
-  for (int e=0, f=c - 1; e < c; f=e++) {
-    d+=(long)(a[e] - a[f]) * (b[e] + b[f]);
-  }
-  return d;
-}

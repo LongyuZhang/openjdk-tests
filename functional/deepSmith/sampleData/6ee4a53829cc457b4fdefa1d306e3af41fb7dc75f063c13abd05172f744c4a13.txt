@@ -1,0 +1,11 @@
+public static int fn_A(int a,int[] b,int c){
+  while (true) {
+    a--;
+    if (a < 0) {
+      return c;
+    }
+    int d=b[a];
+    b[a]=c;
+    c=d;
+  }
+}

@@ -1,0 +1,13 @@
+public static double fn_A(double a,double b){
+  if (a == Double.NEGATIVE_INFINITY) {
+    if (b == Double.NEGATIVE_INFINITY)     return Double.NEGATIVE_INFINITY;
+    return b;
+  }
+  if (b == Double.NEGATIVE_INFINITY) {
+    return a;
+  }
+  if (a > b) {
+    return a + Math.log1p(Math.exp(b - a));
+  }
+  return b + Math.log1p(Math.exp(a - b));
+}

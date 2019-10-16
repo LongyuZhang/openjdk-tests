@@ -1,8 +1,0 @@
-static short fn_A(short a,Short b){
-  Short c=(short)(a + 1);
-  if ((a & 1) == 0) {
-    b=new Short((short)(a + 1));
-    c=(short)(a + 2);
-  }
-  return (short)(b + c);
-}

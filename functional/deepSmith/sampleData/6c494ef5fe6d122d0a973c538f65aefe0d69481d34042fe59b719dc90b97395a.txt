@@ -1,0 +1,9 @@
+public static int fn_A(byte[] a,int b){
+  int c=0;
+  int d=1;
+  for (int e=0; e < 16; e+=8) {
+    c|=((long)(a[b + d] & 0xff)) << e;
+    d--;
+  }
+  return c;
+}

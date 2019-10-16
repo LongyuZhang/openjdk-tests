@@ -1,4 +1,0 @@
-public static String fn_A(){
-  int a=new Random().nextInt(85);
-  return "https://randomuser.me/api/portraits/med/men/" + a + ".jpg";
-}

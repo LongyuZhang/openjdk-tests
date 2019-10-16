@@ -1,0 +1,19 @@
+public static void fn_A(String a){
+  if (a != null) {
+    System.out.println("Error: " + a);
+    System.out.println();
+  }
+  System.out.println("Usage:");
+  System.out.println();
+  System.out.println("SyslogServer [-h <host>] [-p <port>] [-o <file>] [-a] [-q] <protocol>");
+  System.out.println();
+  System.out.println("-h <host>    host or IP to bind");
+  System.out.println("-p <port>    port to bind");
+  System.out.println("-t <timeout> socket timeout (in milliseconds)");
+  System.out.println("-o <file>    file to write entries (overwrites by default)");
+  System.out.println();
+  System.out.println("-a           append to file (instead of overwrite)");
+  System.out.println("-q           do not write anything to standard out");
+  System.out.println();
+  System.out.println("protocol     Syslog4j protocol implementation (tcp, udp, ...)");
+}

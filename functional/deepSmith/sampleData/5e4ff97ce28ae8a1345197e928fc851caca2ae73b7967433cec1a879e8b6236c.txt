@@ -1,6 +1,0 @@
-public static void fn_A(){
-  int a=1 * 2 * 3;
-  int b=4 * 5;
-  int c=a + b;
-  System.out.println(c);
-}

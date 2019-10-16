@@ -1,0 +1,18 @@
+public static void fn_A(float[][] a,float[][] b,boolean c){
+  final int d=b.length;
+  final int e=b[0].length;
+  if (c) {
+    for (int f=0; f < d; f++) {
+      for (int g=0; g < e; g++) {
+        b[f][g]=a[f][g * 2] * (1 - 2 * ((f + g) % 2));
+      }
+    }
+  }
+ else {
+    for (int f=0; f < d; f++) {
+      for (int g=0; g < e; g++) {
+        b[f][g]=a[f][g * 2];
+      }
+    }
+  }
+}

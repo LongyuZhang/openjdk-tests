@@ -1,0 +1,4 @@
+public static void fn_A() throws IOException {
+  int a=System.in.read();
+  System.out.println("read: " + a);
+}

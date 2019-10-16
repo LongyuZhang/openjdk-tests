@@ -1,4 +1,0 @@
-public static String fn_A(final String a){
-  final String b="&nocache=" + a;
-  return b;
-}

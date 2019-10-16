@@ -1,0 +1,6 @@
+static double fn_A(double a,double b[],int c){
+  double d;
+  d=a + b[0];
+  for (int e=1; e < c; e++)   d=d * a + b[e];
+  return d;
+}

@@ -1,0 +1,14 @@
+private static double fn_A(final double a){
+  final double b=a - 33281;
+  int c=(int)b;
+  final double d=b - c;
+  c=c + 364;
+  int e=c / 1461;
+  c=c - e * 1461;
+  e=c / 365;
+  if (e >= 3) {
+    e=3;
+  }
+  c=c - 365 * e + 1;
+  return c + d;
+}

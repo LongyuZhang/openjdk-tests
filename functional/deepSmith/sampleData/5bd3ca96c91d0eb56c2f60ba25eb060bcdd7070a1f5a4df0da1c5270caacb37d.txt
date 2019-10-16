@@ -1,7 +1,0 @@
-public static final long fn_A(long a,long b) throws ArithmeticException {
-  if (a >= 0L) {
-    if (b >= 0L)     a%=b;
-  }
- else   if (b >= 0L && (a=(((a >>> 1) % b) << 1) | a & 1L) < 0L || a >= b)   a-=b;
-  return a;
-}

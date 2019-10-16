@@ -1,0 +1,10 @@
+private static long[] fn_A(String[] a){
+  if (null == a) {
+    return null;
+  }
+  long[] b=new long[a.length];
+  for (int c=0; c < a.length; ++c) {
+    b[c]=Long.parseLong(a[c]);
+  }
+  return b;
+}

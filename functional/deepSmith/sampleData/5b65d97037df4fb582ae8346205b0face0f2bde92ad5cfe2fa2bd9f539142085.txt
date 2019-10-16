@@ -1,6 +1,0 @@
-public static final Integer fn_A(Integer a){
-  if (a == null) {
-    return 0;
-  }
-  return a;
-}

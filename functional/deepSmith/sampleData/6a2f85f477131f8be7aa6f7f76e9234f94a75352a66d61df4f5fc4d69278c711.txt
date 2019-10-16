@@ -1,0 +1,7 @@
+private static void fn_A(){
+  System.out.println("Usage:");
+  System.out.println("    java -jar trie-builder.jar language path/to/dictionaries/ path/to/trie/output/ ...");
+  System.out.println("        language                  en_US|en_GB|de_DE");
+  System.out.println("        path/to/dictionaries/     Directory where dictionary.en_US.txt et al. belong.");
+  System.out.println("        path/to/trie/output/ ...  Output directories where the trie of all words will get written.");
+}

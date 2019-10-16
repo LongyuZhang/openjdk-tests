@@ -1,4 +1,0 @@
-public static Object fn_A(){
-  Integer[] a=new Integer[1];
-  return a[0];
-}

@@ -1,4 +1,0 @@
-private static double fn_A(long a,long b){
-  assert(a < b);
-  return ((double)(b - a) / (double)b);
-}

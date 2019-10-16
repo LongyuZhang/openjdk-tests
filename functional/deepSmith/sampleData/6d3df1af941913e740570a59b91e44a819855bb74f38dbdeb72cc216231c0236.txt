@@ -1,0 +1,10 @@
+private static boolean fn_A(char a){
+switch (a) {
+case '\r':
+case '\n':
+case '\f':
+    return true;
+default :
+  return false;
+}
+}

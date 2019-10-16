@@ -1,0 +1,10 @@
+public static synchronized void fn_A(String a){
+  try {
+    System.out.println("Thread " + a + ".bar(): starting");
+    Thread.sleep(3000);
+    System.out.println("Thread " + a + ".bar(): ending");
+  }
+ catch (  InterruptedException b) {
+    System.out.println("Thread " + a + ": interrupted.");
+  }
+}

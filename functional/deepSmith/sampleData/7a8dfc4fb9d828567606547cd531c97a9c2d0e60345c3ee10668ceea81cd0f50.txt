@@ -1,0 +1,6 @@
+public static boolean fn_A(byte[] a){
+  if (a.length < 3) {
+    return false;
+  }
+  return (0x47 == (a[0] & 0xff)) && (0x49 == (a[1] & 0xff)) && (0x46 == (a[2] & 0xff));
+}

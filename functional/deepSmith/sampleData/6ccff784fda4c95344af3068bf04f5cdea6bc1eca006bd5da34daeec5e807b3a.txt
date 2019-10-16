@@ -1,0 +1,10 @@
+public static byte fn_A(byte[] a){
+  byte b=0x00;
+  if (a == null || a.length == 0) {
+    return b;
+  }
+  for (int c=0; c < a.length; c++) {
+    b^=a[c];
+  }
+  return b;
+}
