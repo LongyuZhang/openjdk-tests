@@ -1,0 +1,8 @@
+private static double fn_A(double a,double b,double c){
+  if (c < 0)   c+=1;
+  if (c > 1)   c-=1;
+  if ((6 * c) < 1)   return (a + (b - a) * 6 * c);
+  if ((2 * c) < 1)   return b;
+  if ((3 * c) < 2)   return (a + (b - a) * ((2.0 / 3) - c) * 6);
+  return a;
+}

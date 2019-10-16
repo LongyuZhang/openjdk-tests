@@ -1,0 +1,11 @@
+private static Boolean fn_A(Object a){
+  if (a == null) {
+    return null;
+  }
+ else   if (a instanceof Boolean) {
+    return (Boolean)a;
+  }
+ else {
+    return null;
+  }
+}

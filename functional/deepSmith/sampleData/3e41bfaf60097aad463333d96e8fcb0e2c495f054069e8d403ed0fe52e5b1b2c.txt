@@ -1,6 +1,0 @@
-protected static long fn_A(final String a,final long b){
-  if (b < 0) {
-    throw new IllegalArgumentException(a + " may not be negative");
-  }
-  return b;
-}

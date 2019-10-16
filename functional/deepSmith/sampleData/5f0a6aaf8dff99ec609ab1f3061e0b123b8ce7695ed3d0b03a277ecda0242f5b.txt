@@ -1,0 +1,4 @@
+static long fn_A(long[] a,Long b){
+  for (  Long c : a)   b+=c;
+  return b;
+}

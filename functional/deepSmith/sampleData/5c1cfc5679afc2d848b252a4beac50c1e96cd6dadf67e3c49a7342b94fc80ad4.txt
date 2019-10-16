@@ -1,0 +1,6 @@
+public static boolean fn_A(){
+  boolean a=false;
+  assert a=true;
+  if (!a)   return false;
+ else   return true;
+}

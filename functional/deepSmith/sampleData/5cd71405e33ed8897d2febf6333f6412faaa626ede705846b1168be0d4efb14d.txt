@@ -1,0 +1,4 @@
+private static File fn_A(){
+  String a=System.getProperty("user.home");
+  return a != null ? new File(a,".calwps") : null;
+}

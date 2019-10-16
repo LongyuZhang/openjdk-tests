@@ -1,6 +1,0 @@
-static void fn_A(short[] a,double[] b){
-  for (int c=a.length - 1; c >= 0; c-=1) {
-    a[c]=-123;
-    b[c]=-103.;
-  }
-}

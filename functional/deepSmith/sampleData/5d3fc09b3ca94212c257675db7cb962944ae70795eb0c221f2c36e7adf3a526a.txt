@@ -1,0 +1,14 @@
+static public char fn_A(int a){
+switch (a) {
+case 0:
+    return 'x';
+case 1:
+  return 'y';
+case 2:
+return 'z';
+case 3:
+return 'w';
+default :
+return '?';
+}
+}

@@ -1,9 +1,0 @@
-public static boolean fn_A(Object a){
-  if (null == a) {
-    return true;
-  }
-  if (a instanceof String) {
-    return ((String)a).trim().isEmpty();
-  }
-  return !(a instanceof Number) ? false : false;
-}

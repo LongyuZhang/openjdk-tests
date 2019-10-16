@@ -1,9 +1,0 @@
-static int fn_A(int[] a,int[] b){
-  int c=0;
-  int d=1;
-  for (int e=0; e < a.length; e++) {
-    c+=d * b[e];
-    d*=a[e];
-  }
-  return c;
-}

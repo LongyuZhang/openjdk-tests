@@ -1,0 +1,10 @@
+private static PrintWriter fn_A(File a){
+  try {
+    PrintWriter b=new PrintWriter(new FileOutputStream(a),true);
+    return b;
+  }
+ catch (  IOException c) {
+    System.out.println("Unable to open log output file: " + a);
+    return new PrintWriter(System.out,true);
+  }
+}

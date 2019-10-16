@@ -1,0 +1,6 @@
+public static int fn_A(byte[] a,int b){
+  if (a == null || b + 3 >= a.length) {
+    return 0;
+  }
+  return (a[b] & 0xff) | ((a[b + 1] << 8) & 0xff00) | ((a[b + 2] << 24) >>> 8)| (a[b + 3] << 24);
+}

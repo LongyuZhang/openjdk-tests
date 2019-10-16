@@ -1,0 +1,5 @@
+public static String fn_A(byte[] a,int b,String c) throws UnsupportedEncodingException {
+  int d=b;
+  while (d < a.length && a[d] != 0)   d++;
+  return new String(a,b,d - b,c);
+}

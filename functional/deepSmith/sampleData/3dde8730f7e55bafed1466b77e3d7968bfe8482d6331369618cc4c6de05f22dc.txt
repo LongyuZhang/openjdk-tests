@@ -1,4 +1,0 @@
-private static String fn_A(String a){
-  String b="'";
-  return b + a + b;
-}

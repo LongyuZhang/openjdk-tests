@@ -1,7 +1,0 @@
-public static int fn_A(int a){
-  int b=(a >> 24) & 0x000000FF;
-  b|=(a >> 8) & 0x0000FF00;
-  b|=(a << 8) & 0x00FF0000;
-  b|=(a << 24) & 0xFF000000;
-  return b;
-}

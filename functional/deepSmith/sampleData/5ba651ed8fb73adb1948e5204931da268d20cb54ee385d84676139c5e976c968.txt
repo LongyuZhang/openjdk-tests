@@ -1,0 +1,9 @@
+public static boolean fn_A(String a){
+  try {
+    new Float(a);
+    return true;
+  }
+ catch (  NumberFormatException b) {
+    return false;
+  }
+}

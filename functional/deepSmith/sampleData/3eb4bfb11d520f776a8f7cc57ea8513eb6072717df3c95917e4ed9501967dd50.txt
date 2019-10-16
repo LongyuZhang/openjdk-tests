@@ -1,7 +1,0 @@
-public static Boolean fn_A(Float a,Float b){
-  Boolean c=null;
-  if (a != null && b != null) {
-    c=a >= b;
-  }
-  return c;
-}

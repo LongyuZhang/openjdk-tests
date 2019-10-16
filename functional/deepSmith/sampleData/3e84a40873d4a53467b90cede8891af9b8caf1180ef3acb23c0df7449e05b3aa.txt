@@ -1,5 +1,0 @@
-public static <T>void fn_A(T a,String b){
-  if (a == null) {
-    throw new NullPointerException(b + " is null.");
-  }
-}

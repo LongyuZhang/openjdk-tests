@@ -1,0 +1,13 @@
+public static boolean fn_A(byte[] a,int b,int c){
+  int d, e;
+  d=0;
+  e=b + c;
+  while (b < e) {
+    if (a[b] != (byte)d) {
+      return false;
+    }
+    d++;
+    b++;
+  }
+  return true;
+}

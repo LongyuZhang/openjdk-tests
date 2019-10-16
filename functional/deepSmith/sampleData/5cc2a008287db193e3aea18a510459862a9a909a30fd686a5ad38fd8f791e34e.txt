@@ -1,0 +1,15 @@
+public static int fn_A(final int[] a,final int b,final int[] c,final int d,final int[] e){
+  int f=0;
+  for (int g=0, h=0; g < b; ++g) {
+    while (c[h] < a[g] && (h + 1 < d)) {
+      ++h;
+    }
+    if (h < d) {
+      if (c[h] == a[g]) {
+        e[f++]=a[g];
+      }
+    }
+ else     break;
+  }
+  return f;
+}

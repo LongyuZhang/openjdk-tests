@@ -1,0 +1,6 @@
+public static int fn_A(long a,long b){
+  if (a <= 0) {
+    return 0;
+  }
+  return (int)(100 * b / a);
+}

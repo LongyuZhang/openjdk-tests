@@ -1,0 +1,7 @@
+static String[] fn_A(String a,int[] b,String c){
+  String[] d=new String[b.length];
+  for (int e=0; e < d.length; ++e) {
+    d[e]=a + b[e] + c;
+  }
+  return d;
+}

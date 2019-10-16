@@ -1,0 +1,5 @@
+protected synchronized static void fn_A(){
+  if (System.getSecurityManager() == null) {
+    System.setSecurityManager(new SecurityManager());
+  }
+}

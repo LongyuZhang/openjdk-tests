@@ -1,0 +1,5 @@
+static byte fn_A(char a){
+  if (a >= 'a' && a <= 'z')   return (byte)((a - 'a') + 6);
+  if (a >= '1' && a <= '5')   return (byte)((a - '1') + 1);
+  return (byte)0;
+}

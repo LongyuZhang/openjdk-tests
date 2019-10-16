@@ -1,0 +1,5 @@
+public static void fn_A(){
+  System.runFinalization();
+  Runtime.getRuntime().gc();
+  System.gc();
+}

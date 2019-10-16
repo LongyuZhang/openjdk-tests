@@ -1,0 +1,14 @@
+public static void fn_A(double a[],double[] b,int c,int d,int e,int f,int g){
+  for (int h=0; h < d; h++) {
+    for (int i=0; i < c; i++) {
+      double j=b[g + h * c + i];
+      int k=f + i * e;
+      int l=g + h * c;
+      int m=k + i;
+      while (k != m) {
+        j-=a[k++] * b[l++];
+      }
+      b[g + h * c + i]=j / a[f + i * e + i];
+    }
+  }
+}

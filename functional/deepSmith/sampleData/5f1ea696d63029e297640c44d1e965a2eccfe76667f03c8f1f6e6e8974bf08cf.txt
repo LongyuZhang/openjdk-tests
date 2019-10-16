@@ -1,0 +1,23 @@
+private static void fn_A(byte[] a,int b){
+  if (b == 1)   return;
+  byte c=a[0];
+  byte d=a[1];
+  if (b == 2) {
+    a[0]=a[2];
+    a[1]=a[3];
+    a[2]=c;
+    a[3]=d;
+  }
+ else {
+    a[0]=a[6];
+    a[1]=a[7];
+    a[6]=c;
+    a[7]=d;
+    c=a[2];
+    d=a[3];
+    a[2]=a[4];
+    a[3]=a[5];
+    a[4]=c;
+    a[5]=d;
+  }
+}

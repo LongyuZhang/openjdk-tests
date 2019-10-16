@@ -1,8 +1,0 @@
-public static void fn_A(){
-  System.out.println("update topology config, please do as following:");
-  System.out.println("update_topology topologyName -conf configFile");
-  System.out.println("update topology jar, please do as following:");
-  System.out.println("update_topology topologyName -jar jarFile");
-  System.out.println("update topology jar and conf, please do as following:");
-  System.out.println("update_topology topologyName -jar jarFile -conf configFile");
-}

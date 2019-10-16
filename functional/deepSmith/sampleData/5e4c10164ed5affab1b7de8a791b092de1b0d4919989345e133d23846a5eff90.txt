@@ -1,0 +1,13 @@
+public static int fn_A(int[] a){
+  int b=a.length;
+  int[] c=new int[b];
+  for (int d=0; d < a.length; d++) {
+    c[d]=1;
+    for (int e=0; e < d; e++) {
+      if (a[e] < a[d])       c[d]+=c[e];
+    }
+  }
+  int f=0;
+  for (int d=0; d < c.length; d++)   f+=c[d];
+  return f;
+}

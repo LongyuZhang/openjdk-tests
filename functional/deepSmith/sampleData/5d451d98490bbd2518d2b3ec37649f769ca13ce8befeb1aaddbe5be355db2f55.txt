@@ -1,0 +1,10 @@
+public static int[][] fn_A(int a){
+  int[][] b=new int[a][a];
+  for (int c=0; c < a; ++c) {
+    for (int d=c + 1; d < a; ++d) {
+      b[c][d]=b[d][c]=1;
+    }
+    System.out.println(Arrays.toString(b[c]));
+  }
+  return b;
+}

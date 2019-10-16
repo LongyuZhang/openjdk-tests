@@ -1,8 +1,0 @@
-public static long fn_A(long a,long b){
-  while (a > 0) {
-    long c=b % a;
-    b=a;
-    a=c;
-  }
-  return b;
-}

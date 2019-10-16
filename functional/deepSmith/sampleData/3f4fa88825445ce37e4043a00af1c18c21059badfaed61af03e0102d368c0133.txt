@@ -1,0 +1,6 @@
+@SuppressWarnings("unused") public static int[] fn_A(int a){
+  int b=a % 5000;
+  int c=(a / 5000) % 600;
+  int d=a / 5000 / 600;
+  return new int[]{b,c,d};
+}

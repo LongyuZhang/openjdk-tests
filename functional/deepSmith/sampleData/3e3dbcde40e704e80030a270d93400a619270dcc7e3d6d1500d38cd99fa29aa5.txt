@@ -1,6 +1,0 @@
-public static void fn_A(int[] a,int b,int c){
-  int d;
-  for (d=0; d < 8; d++) {
-    a[b + d * c + 0]=a[b + d * c + 1]=a[b + d * c + 2]=a[b + d * c + 3]=a[b + d * c + 4]=a[b + d * c + 5]=a[b + d * c + 6]=a[b + d * c + 7]=129;
-  }
-}

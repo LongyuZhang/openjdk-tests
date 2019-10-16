@@ -1,0 +1,12 @@
+public static String fn_A(int a){
+  String b="";
+switch (a) {
+case 0:
+    b="Adaptive filtering with five basic filter types";
+  break;
+default :
+b="Invalid filter type";
+break;
+}
+return b;
+}

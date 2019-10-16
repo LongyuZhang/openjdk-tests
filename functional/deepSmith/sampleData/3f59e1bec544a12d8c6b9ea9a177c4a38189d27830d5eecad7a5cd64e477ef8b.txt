@@ -1,0 +1,4 @@
+public static int fn_A(byte[] a,int b,int c){
+  for (int d=0; d < 4; d++)   a[d + b]=(byte)(c >> (d << 3));
+  return 4;
+}

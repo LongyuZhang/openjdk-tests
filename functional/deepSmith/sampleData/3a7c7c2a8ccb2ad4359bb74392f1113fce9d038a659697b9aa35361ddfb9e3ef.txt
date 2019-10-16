@@ -1,9 +1,0 @@
-static int fn_A(char[] a){
-  long b=0x811c9dc5;
-  for (int c=0; c < a.length; ++c) {
-    char d=a[c];
-    b^=d;
-    b*=0x1000193;
-  }
-  return (int)b;
-}

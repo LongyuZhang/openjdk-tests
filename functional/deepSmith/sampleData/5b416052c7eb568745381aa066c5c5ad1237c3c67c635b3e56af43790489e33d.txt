@@ -1,0 +1,116 @@
+private static void fn_A(int a[],int b,int c,int d,int e[],int f,int g,int h,int i,int j,int k,int l,int m,int n,int o){
+  if (l <= 0)   return;
+  int p=0;
+  int q=0;
+  o<<=2;
+  if (h != 0) {
+    p=f / h << 7;
+    q=g / h << 7;
+  }
+  if (p < 0)   p=0;
+ else   if (p > 16256)   p=16256;
+  for (int r=l; r > 0; r-=16) {
+    f+=i;
+    g+=j;
+    h+=k;
+    c=p;
+    d=q;
+    if (h != 0) {
+      p=f / h << 7;
+      q=g / h << 7;
+    }
+    if (p < 0)     p=0;
+ else     if (p > 16256)     p=16256;
+    int s=p - c >> 4;
+    int t=q - d >> 4;
+    int u=n >> 23;
+    c+=n & 0x600000;
+    n+=o;
+    if (r < 16) {
+      for (int v=0; v < r; v++) {
+        if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)         a[m]=b;
+        m++;
+        c+=s;
+        d+=t;
+        if ((v & 3) == 3) {
+          c=(c & 0x3fff) + (n & 0x600000);
+          u=n >> 23;
+          n+=o;
+        }
+      }
+    }
+ else {
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      c=(c & 0x3fff) + (n & 0x600000);
+      u=n >> 23;
+      n+=o;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      c=(c & 0x3fff) + (n & 0x600000);
+      u=n >> 23;
+      n+=o;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      c=(c & 0x3fff) + (n & 0x600000);
+      u=n >> 23;
+      n+=o;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+      c+=s;
+      d+=t;
+      if ((b=e[(d & 0x3f80) + (c >> 7)] >>> u) != 0)       a[m]=b;
+      m++;
+    }
+  }
+}

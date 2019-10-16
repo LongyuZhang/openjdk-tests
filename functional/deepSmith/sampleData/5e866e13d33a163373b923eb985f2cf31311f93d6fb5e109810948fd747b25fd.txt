@@ -1,0 +1,8 @@
+static short fn_A(Short a){
+  Short b=Short.valueOf((short)1);
+  for (int c=0; c < 1000; c++) {
+    a=new Short((short)(a + 1));
+    b=(short)(b + 2);
+  }
+  return (short)(a + b);
+}

@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  boolean b;
+  if (b=true)   System.out.println("True");
+  Boolean c;
+  if (c=true)   System.out.println("True wrap");
+}

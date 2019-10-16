@@ -1,6 +1,0 @@
-public static short fn_A(byte[] a){
-  if (a.length != 2) {
-    return 0;
-  }
-  return (short)(a[0] << 8 & 0xFF00 | a[1] & 0xFF);
-}

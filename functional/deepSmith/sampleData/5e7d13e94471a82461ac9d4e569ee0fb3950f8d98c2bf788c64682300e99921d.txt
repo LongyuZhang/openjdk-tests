@@ -1,0 +1,32 @@
+public static void fn_A(final long a,final long[] b,int c,final int d,final double[] e,final double[] f) throws RuntimeException {
+  if (d < c - 2 || d > b.length - c) {
+    throw new RuntimeException("leftIndex (" + d + ")"+ " is not within valid bounds [M-2, N]=["+ (c - 2)+ ", "+ (b.length - c)+ "]");
+  }
+  long[] g=new long[c];
+  long[] h=new long[c];
+  long i;
+  long j;
+  double k;
+  double l;
+  e[0]=1.;
+  f[0]=0.;
+  for (int m=0; m < (c - 1); m++) {
+    h[m]=b[d + m + 1] - a;
+    g[m]=a - b[d - m];
+    double n=0.;
+    double o=0.;
+    for (int p=0; p <= m; p++) {
+      i=h[p];
+      j=g[m - p];
+      k=e[p] / (double)(i + j);
+      l=f[p] / (double)(i + j);
+      e[p]=n + ((double)i * k);
+      f[p]=o - k + ((double)i * l);
+      n=j * k;
+      o=k + ((double)j * l);
+    }
+    int p=m + 1;
+    e[p]=n;
+    f[p]=o;
+  }
+}

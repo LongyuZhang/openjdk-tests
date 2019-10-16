@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a=System.getenv("API_CLIENT_CACHE_FOLDER");
-  return a == null ? "cache_folder" : a;
-}

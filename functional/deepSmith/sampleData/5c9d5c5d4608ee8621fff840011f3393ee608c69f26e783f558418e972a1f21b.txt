@@ -1,0 +1,7 @@
+public static int fn_A(int a){
+  if (a < 0)   throw new IllegalArgumentException("n must be a positive integer");
+  if (a > 12)   throw new IllegalArgumentException("n must less than 13 to avoid integer overflow\nTry long or double argument");
+  int b=1;
+  for (int c=2; c <= a; c++)   b*=c;
+  return b;
+}

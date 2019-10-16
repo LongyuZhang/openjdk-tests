@@ -1,4 +1,0 @@
-static public char fn_A(char[] a,int b,char c){
-  a[b]=c;
-  return c;
-}

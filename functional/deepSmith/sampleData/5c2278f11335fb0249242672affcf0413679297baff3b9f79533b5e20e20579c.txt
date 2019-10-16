@@ -1,0 +1,7 @@
+private static int fn_A(int[][] a,int b,int c){
+  int d=0;
+  for (int e=b - 1; e <= b + 1; e++)   for (int f=c - 1; f <= c + 1; f++) {
+    d+=a[e][f];
+  }
+  return d;
+}

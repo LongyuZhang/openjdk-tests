@@ -1,0 +1,9 @@
+public static int fn_A(int a){
+  int b=0x27d4eb2d;
+  a=(a ^ 61) ^ (a >>> 16);
+  a=a + (a << 3);
+  a=a ^ (a >>> 4);
+  a=a * b;
+  a=a ^ (a >>> 15);
+  return a;
+}

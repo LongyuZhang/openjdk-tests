@@ -1,8 +1,0 @@
-public static void fn_A(int a){
-  long b=System.nanoTime();
-  long c=0;
-  do {
-    c=System.nanoTime();
-  }
- while (b + a >= c);
-}

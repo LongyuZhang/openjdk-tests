@@ -1,5 +1,0 @@
-public static <T>void fn_A(final T[] a,final int b,final int c){
-  final T d=a[b];
-  a[b]=a[c];
-  a[c]=d;
-}

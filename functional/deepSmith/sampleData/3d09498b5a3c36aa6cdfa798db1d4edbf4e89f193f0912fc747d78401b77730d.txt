@@ -1,4 +1,0 @@
-public static int fn_A(int a,byte b){
-  final int c=b & 0xff;
-  return ((c >> 3) & 1) << a;
-}

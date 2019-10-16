@@ -1,8 +1,0 @@
-public static int fn_A(int a,int b,int c,int d,int e){
-  int f=a;
-  f=b < f ? b : f;
-  f=c < f ? c : f;
-  f=d < f ? d : f;
-  f=e < f ? e : f;
-  return f;
-}

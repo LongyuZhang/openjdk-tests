@@ -1,0 +1,9 @@
+private static int fn_A(final String[] a){
+  int b=0;
+  for (int c=0; c < a.length; c++) {
+    if (!a[c].isEmpty()) {
+      b++;
+    }
+  }
+  return b;
+}

@@ -1,0 +1,23 @@
+public static int fn_A(float[] a,float b){
+  if (b < a[0]) {
+    return 0;
+  }
+  if (b > a[a.length - 1]) {
+    return a.length - 1;
+  }
+  int c=0;
+  int d=a.length - 1;
+  while (c + 1 < d) {
+    int e=(d + c) / 2;
+    if (b < a[e]) {
+      d=e;
+    }
+ else     if (b > a[e]) {
+      c=e;
+    }
+ else {
+      return e;
+    }
+  }
+  return ((b - a[c]) < (a[d] - b)) ? c : d;
+}

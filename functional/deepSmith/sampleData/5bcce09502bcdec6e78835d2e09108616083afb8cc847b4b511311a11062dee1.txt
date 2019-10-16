@@ -1,0 +1,4 @@
+public static boolean fn_A(byte[] a){
+  boolean b=(a.length == 2450 && a[0] == (byte)0xF0 && a[1] == (byte)0x43 && a[3] == (byte)0x7E && a[4] == (byte)0x13 && a[5] == (byte)0x0A && a[6] == 'L' && a[7] == 'M' && a[8] == ' ' && a[9] == ' ' && a[10] == '8' && a[11] == '9' && a[12] == '7' && a[13] == '6' && a[14] == 'P' && a[15] == 'M');
+  return b;
+}

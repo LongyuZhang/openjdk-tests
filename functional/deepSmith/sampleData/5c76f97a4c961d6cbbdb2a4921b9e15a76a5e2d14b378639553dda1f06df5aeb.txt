@@ -1,0 +1,16 @@
+public static int fn_A(int a){
+switch (a) {
+case 1:
+case 33:
+    return 2;
+case 2:
+case 130:
+  return 4;
+case 17:
+return 1;
+case 66:
+return 3;
+default :
+throw new IllegalArgumentException("direction must be one of {FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, FOCUS_RIGHT, FOCUS_FORWARD, FOCUS_BACKWARD}.");
+}
+}

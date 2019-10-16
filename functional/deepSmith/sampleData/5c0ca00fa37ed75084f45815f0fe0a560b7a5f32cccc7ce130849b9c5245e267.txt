@@ -1,0 +1,8 @@
+protected static <K,V>Map<K,V> fn_A(final int a){
+  return new LinkedHashMap<K,V>(a * 4 / 3,0.75f,true){
+    protected boolean fn_B(    Map.Entry<K,V> b){
+      return size() > a;
+    }
+  }
+;
+}

@@ -1,5 +1,0 @@
-public static <T>void fn_A(T[] a,T b){
-  for (int c=0; c < a.length; ++c) {
-    a[c]=b;
-  }
-}

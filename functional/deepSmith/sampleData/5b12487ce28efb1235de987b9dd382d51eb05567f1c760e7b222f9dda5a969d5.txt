@@ -1,0 +1,15 @@
+public static int fn_A(int[] a,int b){
+  if (a == null || a.length == 0 || b < 0) {
+    return 0;
+  }
+  int[] c=new int[b + 1];
+  for (int d=0; a[0] * d <= b; d++) {
+    c[a[0] * d]=1;
+  }
+  for (int e=1; e < a.length; e++) {
+    for (int d=1; d <= b; d++) {
+      c[d]+=d - a[e] >= 0 ? c[d - a[e]] : 0;
+    }
+  }
+  return c[b];
+}

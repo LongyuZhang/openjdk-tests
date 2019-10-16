@@ -1,0 +1,5 @@
+public static PrintWriter fn_A(File a) throws UnsupportedEncodingException, FileNotFoundException {
+  Writer b=new OutputStreamWriter(new FileOutputStream(a),"UTF-8");
+  PrintWriter c=new PrintWriter(b,false);
+  return c;
+}

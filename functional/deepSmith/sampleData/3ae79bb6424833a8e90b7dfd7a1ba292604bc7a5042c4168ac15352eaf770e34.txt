@@ -1,6 +1,0 @@
-public static int fn_A(int a,int b){
-  int c=0;
-  b=b / 1000;
-  c=(int)((((double)a) / 100) * b);
-  return c * 1000;
-}

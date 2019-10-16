@@ -1,0 +1,31 @@
+static String fn_A(Class<?> a){
+  String b="com.ibm.layout.gen.";
+  if (a == byte.class) {
+    b+="ByteArray1DImpl";
+  }
+ else   if (a == boolean.class) {
+    b+="BooleanArray1DImpl";
+  }
+ else   if (a == short.class) {
+    b+="ShortArray1DImpl";
+  }
+ else   if (a == char.class) {
+    b+="CharArray1DImpl";
+  }
+ else   if (a == int.class) {
+    b+="IntArray1DImpl";
+  }
+ else   if (a == long.class) {
+    b+="LongArray1DImpl";
+  }
+ else   if (a == float.class) {
+    b+="FloatArray1DImpl";
+  }
+ else   if (a == double.class) {
+    b+="DoubleArray1DImpl";
+  }
+ else {
+    b=null;
+  }
+  return b;
+}

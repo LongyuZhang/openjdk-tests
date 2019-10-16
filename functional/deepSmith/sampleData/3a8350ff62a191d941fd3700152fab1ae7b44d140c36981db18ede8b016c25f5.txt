@@ -1,5 +1,0 @@
-static void fn_A(final long a){
-  if (a < 1) {
-    throw new IllegalArgumentException("Max attempts must be greater than 0.");
-  }
-}

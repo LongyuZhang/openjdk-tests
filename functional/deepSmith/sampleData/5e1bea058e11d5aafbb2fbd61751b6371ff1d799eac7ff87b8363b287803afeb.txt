@@ -1,0 +1,5 @@
+private static double[] fn_A(float[] a,float[] b){
+  double[] c=new double[3];
+  for (int d=0; d < 3; d++)   c[d]=a[d] - b[d];
+  return c;
+}

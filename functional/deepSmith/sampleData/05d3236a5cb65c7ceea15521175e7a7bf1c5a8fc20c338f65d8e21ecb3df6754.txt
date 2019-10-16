@@ -1,0 +1,13 @@
+public static void fn_A(){
+  System.out.println("                                           r");
+  System.out.println("                                           e               i");
+  System.out.println("                                           s               n");
+  System.out.println("                                   a   m m u               d");
+  System.out.println("                         r r r     l   d a l   r r         e");
+  System.out.println("                   a b   i j k     u   r r t   0 1     w   x");
+  System.out.println("                                                     r r     c");
+  System.out.println("                   s s   s s s   c s   s s s   s s   e i   s o");
+  System.out.println("       r<k>write   e e   e e e   i e   e e e   e e   a t   e n   addr addr");
+  System.out.println("addr   7654 3210   l l   l l l   n l   l l l   l l   d e   l d   true false");
+  System.out.println("---------------------------------------------------------------------------");
+}

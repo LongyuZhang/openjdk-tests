@@ -1,0 +1,148 @@
+public static void fn_A(int[] a,int b,int c,int d,int e,int f,int g){
+  int h=b;
+  c=c * g;
+  e*=g;
+  if (c == 2) {
+    int i;
+    int j;
+    if (g == 4) {
+      i=f & 0x0ff;
+      j=(f >> 8) & 0x0ff;
+    }
+ else {
+      i=f;
+      j=i;
+    }
+    a[h + 0 * e]=i;
+    a[h + 0 * e + 1]=j;
+    if (d == 1)     return;
+    a[h + 1 * e]=i;
+    a[h + 1 * e + 1]=j;
+    if (d == 2)     return;
+    a[h + 2 * e]=i;
+    a[h + 2 * e + 1]=j;
+    a[h + 3 * e]=i;
+    a[h + 3 * e + 1]=j;
+  }
+ else   if (c == 4) {
+    int i;
+    int j;
+    int k;
+    int l;
+    if (g == 4) {
+      i=f & 0x0ff;
+      j=(f & 0x0ff00) >>> 8;
+      k=(f & 0x0ff0000) >>> 16;
+      l=(f & 0xff000000) >>> 24;
+    }
+ else     if (g == 2) {
+      i=f & 0x0ff;
+      j=(f & 0x0ff00) >>> 8;
+      k=i;
+      l=j;
+    }
+ else {
+      i=f;
+      j=i;
+      k=i;
+      l=i;
+    }
+    a[h + 0 * e]=i;
+    a[h + 0 * e + 1]=j;
+    a[h + 0 * e + 2]=k;
+    a[h + 0 * e + 3]=l;
+    if (d == 1)     return;
+    a[h + 1 * e]=i;
+    a[h + 1 * e + 1]=j;
+    a[h + 1 * e + 2]=k;
+    a[h + 1 * e + 3]=l;
+    if (d == 2)     return;
+    a[h + 2 * e]=i;
+    a[h + 2 * e + 1]=j;
+    a[h + 2 * e + 2]=k;
+    a[h + 2 * e + 3]=l;
+    a[h + 3 * e]=i;
+    a[h + 3 * e + 1]=j;
+    a[h + 3 * e + 2]=k;
+    a[h + 3 * e + 3]=l;
+  }
+ else   if (c == 8) {
+    int i;
+    int j;
+    int k;
+    int l;
+    if (g == 2) {
+      i=f & 0x0ff;
+      j=(f & 0x0ff00) >>> 8;
+      k=i;
+      l=j;
+    }
+ else {
+      i=f & 0x0ff;
+      j=(f & 0x0ff00) >>> 8;
+      k=(f & 0x0ff0000) >>> 16;
+      l=(f & 0xff000000) >>> 24;
+    }
+    a[h + 0 * e]=i;
+    a[h + 0 * e + 1]=j;
+    a[h + 0 * e + 2]=k;
+    a[h + 0 * e + 3]=l;
+    a[h + 0 * e + 4]=i;
+    a[h + 0 * e + 4 + 1]=j;
+    a[h + 0 * e + 4 + 2]=k;
+    a[h + 0 * e + 4 + 3]=l;
+    if (d == 1)     return;
+    a[h + 1 * e]=i;
+    a[h + 1 * e + 1]=j;
+    a[h + 1 * e + 2]=k;
+    a[h + 1 * e + 3]=l;
+    a[h + 1 * e + 4]=i;
+    a[h + 1 * e + 4 + 1]=j;
+    a[h + 1 * e + 4 + 2]=k;
+    a[h + 1 * e + 4 + 3]=l;
+    if (d == 2)     return;
+    a[h + 2 * e]=i;
+    a[h + 2 * e + 1]=j;
+    a[h + 2 * e + 2]=k;
+    a[h + 2 * e + 3]=l;
+    a[h + 2 * e + 4]=i;
+    a[h + 2 * e + 4 + 1]=j;
+    a[h + 2 * e + 4 + 2]=k;
+    a[h + 2 * e + 4 + 3]=l;
+    a[h + 3 * e]=i;
+    a[h + 3 * e + 1]=j;
+    a[h + 3 * e + 2]=k;
+    a[h + 3 * e + 3]=l;
+    a[h + 3 * e + 4]=i;
+    a[h + 3 * e + 4 + 1]=j;
+    a[h + 3 * e + 4 + 2]=k;
+    a[h + 3 * e + 4 + 3]=l;
+  }
+ else   if (c == 16) {
+    int i=f & 0x0ff;
+    int j=(f & 0x0ff00) >>> 8;
+    int k=(f & 0x0ff0000) >>> 16;
+    int l=(f & 0xff000000) >>> 24;
+    for (int m=0; m < 4; m++) {
+      a[h + m * 4 + 0 * e]=i;
+      a[h + m * 4 + 0 * e + 1]=j;
+      a[h + m * 4 + 0 * e + 2]=k;
+      a[h + m * 4 + 0 * e + 3]=l;
+      a[h + m * 4 + 1 * e]=i;
+      a[h + m * 4 + 1 * e + 1]=j;
+      a[h + m * 4 + 1 * e + 2]=k;
+      a[h + m * 4 + 1 * e + 3]=l;
+    }
+    if (d == 2)     return;
+    for (int m=0; m < 4; m++) {
+      a[h + m * 4 + 2 * e]=i;
+      a[h + m * 4 + 2 * e + 1]=j;
+      a[h + m * 4 + 2 * e + 2]=k;
+      a[h + m * 4 + 2 * e + 3]=l;
+      a[h + m * 4 + 3 * e]=i;
+      a[h + m * 4 + 3 * e + 1]=j;
+      a[h + m * 4 + 3 * e + 2]=k;
+      a[h + m * 4 + 3 * e + 3]=l;
+    }
+  }
+}

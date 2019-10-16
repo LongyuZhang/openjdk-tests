@@ -1,9 +1,0 @@
-public static byte fn_A(byte a){
-  if (a >= 'A' && a <= 'F') {
-    return (byte)((byte)10 + (byte)(a - 'A'));
-  }
- else   if (a >= 'a' && a <= 'f') {
-    return (byte)((byte)10 + (byte)(a - 'a'));
-  }
-  return (byte)(a - '0');
-}

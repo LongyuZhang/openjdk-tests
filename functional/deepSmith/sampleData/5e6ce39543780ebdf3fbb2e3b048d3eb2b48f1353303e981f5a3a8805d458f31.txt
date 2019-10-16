@@ -1,0 +1,4 @@
+public static boolean fn_A(double a,double b,double c){
+  double d=Math.max(Math.abs(a),Math.abs(b));
+  return d < c || Math.abs(a - b) < c * d;
+}

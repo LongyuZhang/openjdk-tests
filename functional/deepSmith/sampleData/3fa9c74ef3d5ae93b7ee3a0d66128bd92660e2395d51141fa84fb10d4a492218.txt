@@ -1,0 +1,22 @@
+static void fn_A(int[] a,int b,int c){
+  int d, e, f;
+  for (d=b; a[d] != d; d=a[d])   ;
+  for (e=c; a[e] != e; e=a[e])   ;
+  f=d < e ? d : e;
+  for (; ; ) {
+    int g=a[b];
+    a[b]=f;
+    if (b == g) {
+      break;
+    }
+    b=g;
+  }
+  for (; ; ) {
+    int g=a[c];
+    a[c]=f;
+    if (c == g) {
+      break;
+    }
+    c=g;
+  }
+}

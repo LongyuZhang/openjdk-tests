@@ -1,0 +1,4 @@
+private static String fn_A(byte[] a){
+  if (a != null)   return new String(a,StandardCharsets.UTF_8);
+  return null;
+}

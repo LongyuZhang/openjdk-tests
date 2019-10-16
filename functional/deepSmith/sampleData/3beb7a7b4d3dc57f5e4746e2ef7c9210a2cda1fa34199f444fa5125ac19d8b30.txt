@@ -1,9 +1,0 @@
-private static void fn_A(long[] a){
-  System.out.printf("1 %.1f ms%n",(a[2] - a[1]) / 1e6);
-  System.out.printf("2 %.1f ms%n",(a[3] - a[2]) / 1e6);
-  System.out.printf("3 %.1f ms%n",(a[4] - a[3]) / 1e6);
-  System.out.printf("4 %.1f ms%n",(a[5] - a[4]) / 1e6);
-  System.out.printf("5 %.1f ms%n",(a[6] - a[5]) / 1e6);
-  System.out.printf("6 %.1f ms%n",(a[7] - a[6]) / 1e6);
-  System.out.printf("7 %.1f ms%n",(a[8] - a[7]) / 1e6);
-}

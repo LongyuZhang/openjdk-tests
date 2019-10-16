@@ -1,0 +1,8 @@
+public static String fn_A(byte[] a){
+  if (a != null) {
+    return new String(a,Charset.forName("UTF-8"));
+  }
+ else {
+    return "";
+  }
+}

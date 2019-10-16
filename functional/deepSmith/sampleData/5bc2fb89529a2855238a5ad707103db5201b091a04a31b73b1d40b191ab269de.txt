@@ -1,0 +1,11 @@
+public static double fn_A(double a){
+  final double b;
+  if (Double.doubleToRawLongBits(a) < 0) {
+    a=Math.abs(a);
+    b=-0.5d;
+  }
+ else {
+    b=0.5d;
+  }
+  return b * Math.log((1.0d + a) / (1.0d - a));
+}

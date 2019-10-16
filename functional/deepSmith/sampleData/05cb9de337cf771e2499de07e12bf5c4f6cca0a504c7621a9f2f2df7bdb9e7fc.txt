@@ -1,0 +1,10 @@
+public static Writer fn_A(OutputStream a,String b) throws IOException {
+  Writer c;
+  if (b == null) {
+    c=new OutputStreamWriter(a);
+  }
+ else {
+    c=new OutputStreamWriter(a,b);
+  }
+  return new BufferedWriter(c);
+}

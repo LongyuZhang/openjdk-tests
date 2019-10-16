@@ -1,0 +1,16 @@
+public static int fn_A(byte[] a,int b){
+  int c=a[b++] & 0xff;
+  if (c < 0x80) {
+    return c;
+  }
+  if (c < 0xc0) {
+    return ((c & 0x3f) << 8) + (a[b] & 0xff);
+  }
+  if (c < 0xe0) {
+    return ((c & 0x1f) << 16) + ((a[b++] & 0xff) << 8) + (a[b] & 0xff);
+  }
+  if (c < 0xf0) {
+    return ((c & 0xf) << 24) + ((a[b++] & 0xff) << 16) + ((a[b++] & 0xff) << 8)+ (a[b] & 0xff);
+  }
+  return ((a[b++] & 0xff) << 24) + ((a[b++] & 0xff) << 16) + ((a[b++] & 0xff) << 8)+ (a[b] & 0xff);
+}

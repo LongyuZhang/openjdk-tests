@@ -1,9 +1,0 @@
-public static double fn_A(double a){
-  if (a > 180) {
-    return a - 360;
-  }
- else   if (a < -180) {
-    return a + 380;
-  }
-  return a;
-}

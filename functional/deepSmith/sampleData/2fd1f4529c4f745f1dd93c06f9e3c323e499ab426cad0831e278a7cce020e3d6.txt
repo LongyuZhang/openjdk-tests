@@ -1,5 +1,0 @@
-private static double fn_A(long a,long b){
-  long c=b - a;
-  double d=Math.pow(10,6);
-  return (double)c / d;
-}

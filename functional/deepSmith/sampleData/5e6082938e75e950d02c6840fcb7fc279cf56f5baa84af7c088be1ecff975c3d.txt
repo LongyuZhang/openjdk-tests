@@ -1,0 +1,6 @@
+public static void main(String[] a){
+  String b="Ram";
+  String c="Nepal";
+  int d=15;
+  System.out.println(b + " " + "is"+ " "+ d+ " "+ "years old and he is from"+ " "+ c);
+}

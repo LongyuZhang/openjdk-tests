@@ -1,4 +1,0 @@
-public static double fn_A(double[] a,double[] b){
-  final double c=a[0] - b[0], d=a[1] - b[1];
-  return (c * c) + (d * d);
-}

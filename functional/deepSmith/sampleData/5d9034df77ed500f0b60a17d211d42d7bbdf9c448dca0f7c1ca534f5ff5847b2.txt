@@ -1,0 +1,13 @@
+public static char[] fn_A(char a){
+switch (a) {
+case '.':
+    return Character.toChars('}');
+case '{':
+case '|':
+case '}':
+case '~':
+  return Character.toChars(' ');
+default :
+return Character.toChars('~');
+}
+}

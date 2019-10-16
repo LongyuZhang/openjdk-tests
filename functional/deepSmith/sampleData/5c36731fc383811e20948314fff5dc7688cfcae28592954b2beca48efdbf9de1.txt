@@ -1,0 +1,14 @@
+public static boolean fn_A(Object a){
+  if (a == null) {
+    return true;
+  }
+  if (a instanceof Optional) {
+    if (((Optional)a).isPresent()) {
+      a=((Optional)a).get();
+    }
+ else {
+      return true;
+    }
+  }
+  return false;
+}

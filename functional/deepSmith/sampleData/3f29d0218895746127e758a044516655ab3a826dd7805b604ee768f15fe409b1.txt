@@ -1,0 +1,9 @@
+private static boolean fn_A(final long a){
+  if (a % 2 == 0 || a % 3 == 0)   return false;
+  long b=5;
+  while (b * b <= a) {
+    if (a % b == 0 || a % (b + 2) == 0)     return false;
+    b+=6;
+  }
+  return true;
+}

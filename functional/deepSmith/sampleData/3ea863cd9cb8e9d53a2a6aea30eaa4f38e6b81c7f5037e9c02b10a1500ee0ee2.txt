@@ -1,8 +1,0 @@
-public static String fn_A(int a){
-  char[] b=new char[8];
-  for (int c=0; c < 8; c++) {
-    b[7 - c]=Character.forDigit(a & 0x0f,16);
-    a>>=4;
-  }
-  return new String(b);
-}

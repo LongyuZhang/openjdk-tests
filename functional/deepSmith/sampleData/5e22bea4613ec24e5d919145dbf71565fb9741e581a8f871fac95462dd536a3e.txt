@@ -1,0 +1,12 @@
+public static int fn_A(int a,int b,boolean c){
+  int d=b - a;
+  if (c) {
+    if (d < 10)     return d;
+ else     if (a == -b)     return d / 4;
+ else     return d / 5;
+  }
+ else {
+    if ((a == -b) && (d % 8) == 0)     return d / 8;
+ else     return d / 10;
+  }
+}

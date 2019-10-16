@@ -1,0 +1,4 @@
+public static String fn_A(){
+  String a="chr\tpos\tsnpName\tnumHets\tpVal\tslope\tintercept\tstdErrorSlope\tstdErrorIntercept";
+  return a;
+}

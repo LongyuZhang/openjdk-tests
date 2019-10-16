@@ -1,0 +1,4 @@
+public static Object[] fn_A(double a,Object b){
+  Object[] c={new Double(a),b};
+  return c;
+}

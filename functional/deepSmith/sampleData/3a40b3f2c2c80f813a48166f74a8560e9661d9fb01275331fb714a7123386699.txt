@@ -1,9 +1,0 @@
-private static String fn_A(long a){
-  final String[] b=new String[]{"B","KB","MB","GB"};
-  int c=0;
-  while (a >= 1024) {
-    a/=1024;
-    c+=1;
-  }
-  return a + b[c];
-}

@@ -1,0 +1,4 @@
+static final int fn_A(final int a,final int b,final int c){
+  final int d=a + c - b;
+  return d;
+}

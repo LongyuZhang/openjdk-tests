@@ -1,0 +1,47 @@
+public static int fn_A(float[] a){
+  float b=a[0];
+  float c=a[1];
+  float d=a[2];
+  float e=(1 - Math.abs(2.f * d - 1.f)) * c;
+  float f=b / 60.f;
+  float g=f;
+  if (g >= 4.f)   g-=4.f;
+ else   if (g >= 2.f)   g-=2.f;
+  float h=e * (1 - Math.abs(g - 1));
+  float i, j, k;
+  if (f < 1) {
+    i=e;
+    j=h;
+    k=0;
+  }
+ else   if (f < 2) {
+    i=h;
+    j=e;
+    k=0;
+  }
+ else   if (f < 3) {
+    i=0;
+    j=e;
+    k=h;
+  }
+ else   if (f < 4) {
+    i=0;
+    j=h;
+    k=e;
+  }
+ else   if (f < 5) {
+    i=h;
+    j=0;
+    k=e;
+  }
+ else {
+    i=e;
+    j=0;
+    k=h;
+  }
+  float l=d - (0.5f * e);
+  int m=(int)((i + l) * (255.f) + 0.5f);
+  int n=(int)((j + l) * (255.f) + 0.5f);
+  int o=(int)((k + l) * (255.f) + 0.5f);
+  return m << 16 | n << 8 | o;
+}

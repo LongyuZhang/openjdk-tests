@@ -1,6 +1,0 @@
-private static void fn_A() throws Exception {
-  System.gc();
-  System.gc();
-  System.gc();
-  Thread.sleep(10);
-}

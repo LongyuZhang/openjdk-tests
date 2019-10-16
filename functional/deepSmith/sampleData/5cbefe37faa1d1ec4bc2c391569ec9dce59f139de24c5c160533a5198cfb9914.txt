@@ -1,0 +1,11 @@
+public static short fn_A(byte[] a,short b){
+  if (a[b] == (byte)0x82) {
+    return (short)3;
+  }
+ else   if (a[b] == (byte)0x81) {
+    return (short)2;
+  }
+ else {
+    return (short)1;
+  }
+}

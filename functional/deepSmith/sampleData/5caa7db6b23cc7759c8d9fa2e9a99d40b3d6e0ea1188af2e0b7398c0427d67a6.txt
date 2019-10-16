@@ -1,0 +1,6 @@
+public static double fn_A(final double a,final double b,final double c,final double d,final double e){
+  final double f=-0.5 * a + 1.5 * b - 1.5 * c + 0.5 * d;
+  final double g=a - 2.5 * b + 2 * c - 0.5 * d;
+  final double h=-0.5 * a + 0.5 * c;
+  return ((f * e + g) * e + h) * e + b;
+}

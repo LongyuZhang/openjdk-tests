@@ -1,0 +1,8 @@
+private static int fn_A(int a){
+  if (a < 5)   return a * 80;
+ else   if (a < 10)   return a * 40;
+ else   if (a < 20)   return a * 20;
+ else   if (a < 40)   return a * 10;
+ else   if (a < 100)   return a * 4;
+  return a;
+}

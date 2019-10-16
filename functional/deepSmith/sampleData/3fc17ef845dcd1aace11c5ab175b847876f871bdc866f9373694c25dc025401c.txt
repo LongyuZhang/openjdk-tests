@@ -1,0 +1,6 @@
+public static int fn_A(int a){
+  a=((a >>> 16) ^ a) * 0x45d9f3b;
+  a=((a >>> 16) ^ a) * 0x45d9f3b;
+  a=((a >>> 16) ^ a);
+  return a;
+}

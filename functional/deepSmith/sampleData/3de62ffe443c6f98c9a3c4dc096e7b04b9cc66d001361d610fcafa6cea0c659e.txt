@@ -1,8 +1,0 @@
-public static String fn_A(final boolean a){
-  if (a) {
-    return "-metamodel.ttl";
-  }
- else {
-    return "-inferred.ttl";
-  }
-}

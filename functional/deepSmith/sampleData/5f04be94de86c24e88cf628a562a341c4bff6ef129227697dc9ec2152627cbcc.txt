@@ -1,0 +1,4 @@
+public static long fn_A(long a,long b,long c){
+  long d=(a * 3129871L) ^ (c * 116129781L) ^ b;
+  return d * d * 42317861L + d * 11L;
+}

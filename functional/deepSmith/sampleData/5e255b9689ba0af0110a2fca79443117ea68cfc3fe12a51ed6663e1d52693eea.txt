@@ -1,0 +1,6 @@
+private static <T>T fn_A(T a,String b){
+  if (a == null) {
+    throw new IllegalArgumentException("Unrecognized config: " + b);
+  }
+  return a;
+}

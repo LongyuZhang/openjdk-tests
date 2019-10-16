@@ -1,5 +1,0 @@
-private static double fn_A(int a,double b,int c){
-  double d=((double)a) / (double)c;
-  double e=((double)(a + 1)) / (double)c;
-  return (b - d) / (e - d);
-}
