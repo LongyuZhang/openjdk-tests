@@ -1,5 +1,0 @@
-static void fn_A(Object a,String b) throws IllegalStateException {
-  if (a == null) {
-    throw new IllegalStateException(b);
-  }
-}

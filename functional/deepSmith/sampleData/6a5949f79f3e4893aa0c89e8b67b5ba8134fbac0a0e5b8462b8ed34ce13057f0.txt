@@ -1,8 +1,0 @@
-public static String fn_A(){
-  try {
-    return "hi";
-  }
-  finally {
-    String a="finally";
-  }
-}

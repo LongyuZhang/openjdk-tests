@@ -1,5 +1,0 @@
-private static File fn_A(){
-  String a=System.getenv("APPDATA");
-  File b=new File(a,"ZPlayer/config.xml");
-  return b;
-}

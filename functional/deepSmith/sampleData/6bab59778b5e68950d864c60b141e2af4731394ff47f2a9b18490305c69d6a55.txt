@@ -1,5 +1,0 @@
-public static String fn_A(double a){
-  double b=a / 1024d;
-  int c=(int)(b / 1024d);
-  return c + "MB";
-}

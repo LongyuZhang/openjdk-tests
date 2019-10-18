@@ -1,8 +1,0 @@
-public static void fn_A(){
-  System.err.println("Persister ");
-  System.err.println("     -topics <comma separated stream:topic names>");
-  System.err.println("     -table <target MapR-DB table name>");
-  System.err.println("     [-droptable]");
-  System.err.println("     [-verbose]");
-  System.exit(1);
-}

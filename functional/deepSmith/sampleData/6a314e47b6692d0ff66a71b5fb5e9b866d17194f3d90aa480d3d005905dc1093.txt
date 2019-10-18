@@ -1,4 +1,0 @@
-private static void fn_A(){
-  System.out.println("SQuirreLConnectTest: <driver> <url> <user> <pass>");
-  System.exit(-1);
-}

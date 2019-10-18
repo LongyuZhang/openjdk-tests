@@ -1,7 +1,0 @@
-static boolean[] fn_A(byte[] a){
-  boolean[] b=new boolean[a.length];
-  for (int c=0; c < a.length; c+=1) {
-    b[c]=a[c] == 'T';
-  }
-  return b;
-}

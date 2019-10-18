@@ -1,7 +1,0 @@
-public static final int fn_A(byte[] a,byte b){
-  int c=a.length - 1;
-  while (c >= 0 && a[c] != b) {
-    c--;
-  }
-  return c;
-}

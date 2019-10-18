@@ -1,9 +1,0 @@
-public static void fn_A(byte[] a,int b,byte c,int d){
-  if (a != null && b < a.length) {
-    int e=a.length < b + d ? a.length : b + d;
-    while (b < e) {
-      a[b]=c;
-      b++;
-    }
-  }
-}

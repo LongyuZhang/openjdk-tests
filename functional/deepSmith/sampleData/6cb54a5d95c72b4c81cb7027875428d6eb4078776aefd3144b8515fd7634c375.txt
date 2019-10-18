@@ -1,7 +1,0 @@
-private static void fn_A(){
-  System.out.println("Usage: java -jar GmkSplit.jar <source> <dest>");
-  System.out.println("One of <source> or <dest> must be the name of a .gmk or .gm81 file.");
-  System.out.println("Using a .gmk file as destination will create a GM 8.0 file.");
-  System.out.println("Using a .gm81 file as destination will create a GM 8.1 file.");
-  System.out.println("The destination must not already exist. This tool won't overwrite.");
-}

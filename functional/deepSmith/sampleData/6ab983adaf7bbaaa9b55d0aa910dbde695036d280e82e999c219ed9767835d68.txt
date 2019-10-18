@@ -1,6 +1,0 @@
-private static final int fn_A(int a,int b,int c){
-  int d;
-  d=((a << (16 - b)) ^ a) & c;
-  a=a ^ d ^ (d >>> (16 - b));
-  return a;
-}

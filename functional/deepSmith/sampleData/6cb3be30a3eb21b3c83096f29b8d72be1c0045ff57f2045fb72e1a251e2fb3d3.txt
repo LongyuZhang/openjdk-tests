@@ -1,6 +1,0 @@
-private static boolean fn_A(){
-  if (Math.random() > 0.75) {
-    return false;
-  }
-  return true;
-}

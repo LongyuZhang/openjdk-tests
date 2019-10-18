@@ -1,9 +1,0 @@
-public static int fn_A(int a){
-  int b=0;
-  for (int c=0; c < 32; c+=1) {
-    int d=a & 1;
-    b+=d;
-    a=a >> 1;
-  }
-  return b;
-}

@@ -1,6 +1,0 @@
-public static int fn_A(int a){
-  if (a < 0) {
-    throw new IllegalArgumentException("Argument must be >= 0: " + a);
-  }
-  return a * (a + 1) / 2;
-}

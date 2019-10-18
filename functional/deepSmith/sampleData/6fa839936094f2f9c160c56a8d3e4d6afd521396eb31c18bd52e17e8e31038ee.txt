@@ -1,9 +1,0 @@
-static byte fn_A(byte[] a){
-  Byte b=1;
-  Byte c=new Byte((byte)1);
-  for (  Byte d : a) {
-    b=(byte)(b + d);
-    c=(byte)(c + new Byte((byte)(d + 1)));
-  }
-  return (byte)(b + c);
-}

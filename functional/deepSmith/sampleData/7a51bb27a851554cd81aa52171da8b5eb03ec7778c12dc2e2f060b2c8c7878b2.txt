@@ -1,6 +1,0 @@
-public static boolean fn_A(char[] a){
-  if (null == a) {
-    return false;
-  }
-  return a.length > 0;
-}

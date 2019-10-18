@@ -1,5 +1,0 @@
-public static boolean fn_A(final byte[] a,final byte[] b){
-  if (a.length < b.length)   return false;
-  for (int c=0; c < b.length; c++)   if (a[c] != b[c])   return false;
-  return true;
-}

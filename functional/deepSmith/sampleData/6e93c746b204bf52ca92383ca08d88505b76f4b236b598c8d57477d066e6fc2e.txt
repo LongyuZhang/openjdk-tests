@@ -1,4 +1,0 @@
-private static RuntimeException fn_A(int a,int b){
-  String c=a + " \u2209 [0, " + b+ ')';
-  throw new IndexOutOfBoundsException(c);
-}

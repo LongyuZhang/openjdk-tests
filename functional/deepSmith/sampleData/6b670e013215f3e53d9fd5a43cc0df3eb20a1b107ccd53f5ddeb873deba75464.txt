@@ -1,6 +1,0 @@
-protected static void fn_A(long a,long[] b,long[] c){
-  for (int d=0; d < c.length; d++) {
-    b[d]=(int)(a % c[d]);
-    a/=c[d];
-  }
-}

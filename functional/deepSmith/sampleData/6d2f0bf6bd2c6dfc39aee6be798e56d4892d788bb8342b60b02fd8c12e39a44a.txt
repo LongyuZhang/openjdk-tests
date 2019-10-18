@@ -1,7 +1,0 @@
-private static double[] fn_A(double[] a){
-  double b=((1.0 + 100 * 0.007) * a[0]) / (1.0 + 0.007 * a[0]);
-  double c=((1.0 / 0.0228) * Math.log(1.0 + 0.0228 * a[1]));
-  double d=c * Math.cos(Math.toRadians(a[2]));
-  double e=c * Math.sin(Math.toRadians(a[2]));
-  return new double[]{b,d,e};
-}

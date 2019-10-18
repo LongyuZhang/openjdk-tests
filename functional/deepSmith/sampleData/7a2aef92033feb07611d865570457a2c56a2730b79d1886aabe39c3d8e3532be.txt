@@ -1,8 +1,0 @@
-public static final double fn_A(double a) throws ArithmeticException {
-  if (a < 0.0) {
-    throw new ArithmeticException("Cannot take the triangular root of a negative number.");
-  }
- else {
-    return (Math.sqrt(8.0 * a + 1.0) - 1.0) / 2.0;
-  }
-}

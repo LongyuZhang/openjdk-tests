@@ -1,4 +1,0 @@
-static float fn_A(float[] a,Float b){
-  for (  Float c : a)   b+=c;
-  return b;
-}

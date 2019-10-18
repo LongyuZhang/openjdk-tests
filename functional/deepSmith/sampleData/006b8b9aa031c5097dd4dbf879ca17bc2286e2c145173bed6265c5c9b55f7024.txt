@@ -1,5 +1,0 @@
-public static int fn_A(int a,int b){
-  a=Math.abs(a);
-  if (b < 0)   return -a;
-  return a;
-}

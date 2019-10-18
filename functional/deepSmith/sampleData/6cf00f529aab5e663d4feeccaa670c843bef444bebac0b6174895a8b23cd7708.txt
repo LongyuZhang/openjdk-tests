@@ -1,7 +1,0 @@
-public static int fn_A(final byte a,final int b,final int c){
-  int d=0x00;
-  for (int e=b; e < (b + c); ++e) {
-    d|=0x80 >> (e - 1);
-  }
-  return (a & d) >> (9 - b - c);
-}

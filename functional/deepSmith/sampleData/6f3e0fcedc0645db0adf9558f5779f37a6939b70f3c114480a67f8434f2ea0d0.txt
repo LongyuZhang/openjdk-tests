@@ -1,6 +1,0 @@
-public static long fn_A(double a){
-  if (a != a) {
-    return 0L;
-  }
-  return (long)Math.floor(a + 0.5d);
-}

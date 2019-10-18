@@ -1,6 +1,0 @@
-public static double fn_A(double a){
-  if (a <= 0) {
-    throw new IllegalArgumentException("Poisson mean must be positive");
-  }
-  return 1.0 / a;
-}

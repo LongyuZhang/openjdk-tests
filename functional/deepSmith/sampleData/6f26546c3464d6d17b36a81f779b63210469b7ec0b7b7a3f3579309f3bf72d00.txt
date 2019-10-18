@@ -1,8 +1,0 @@
-@SuppressWarnings("rawtypes") private static Optional<Class> fn_A(){
-  try {
-    return Optional.<Class>ofNullable(Class.forName("org.junit.ClassRule"));
-  }
- catch (  final ClassNotFoundException a) {
-    return Optional.empty();
-  }
-}

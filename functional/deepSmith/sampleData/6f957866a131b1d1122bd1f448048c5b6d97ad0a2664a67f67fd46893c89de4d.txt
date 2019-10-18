@@ -1,7 +1,0 @@
-public static int fn_A(int[] a){
-  if (a == null)   throw new RuntimeException("The minimum of null is not defined!");
-  if (a.length == 0)   throw new RuntimeException("The minimum of an empty list is not defined!");
-  int b=a[0];
-  for (int c=1; c < a.length; c++)   if (b > a[c])   b=a[c];
-  return b;
-}

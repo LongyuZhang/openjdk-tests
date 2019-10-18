@@ -1,9 +1,0 @@
-private static double[] fn_A(final double[] a,final double b,final double c,final double d){
-  final double e[]=new double[a.length];
-  final double f=a[0];
-  for (int g=0; g < a.length; ++g) {
-    e[g]=b + c * Math.exp(-(a[g] - f) / d);
-    e[g]+=0.2 * (Math.random() - 0.5);
-  }
-  return e;
-}

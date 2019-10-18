@@ -1,8 +1,0 @@
-public static void main(String a[]){
-  if (true) {
-    System.out.println("hehe");
-  }
- else   if (true) {
-    System.out.println("hehe");
-  }
-}
