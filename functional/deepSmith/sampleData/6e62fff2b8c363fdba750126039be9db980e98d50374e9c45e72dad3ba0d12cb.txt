@@ -1,4 +1,0 @@
-private static int[] fn_A(final int a,final int b,final int c,final int d){
-  final int e=d / 2;
-  return new int[]{a,b,a + c,b,a + c + e,b + d / 2,a + c,b + d,a,b + d};
-}

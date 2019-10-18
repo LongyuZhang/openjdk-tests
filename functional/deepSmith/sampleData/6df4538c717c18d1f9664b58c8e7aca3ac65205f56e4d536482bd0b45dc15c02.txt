@@ -1,4 +1,0 @@
-public static long fn_A(long a,long b){
-  long c=b > 99999 ? (b % 100000L) : b;
-  return (a * 100000) + c;
-}

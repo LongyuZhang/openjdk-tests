@@ -1,7 +1,0 @@
-public static double fn_A(final double a,final int b){
-  int c=1;
-  for (int d=0; d < b; d++) {
-    c*=10;
-  }
-  return Math.floor(a * c + .5) / c;
-}

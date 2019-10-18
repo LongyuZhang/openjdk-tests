@@ -1,7 +1,0 @@
-private static int fn_A(byte[] a,int b,int c){
-  a[b]=(byte)(c & 0xff);
-  a[b + 1]=(byte)(c >>> 8 & 0xff);
-  a[b + 2]=(byte)(c >>> 16 & 0xff);
-  a[b + 3]=(byte)(c >>> 24 & 0xff);
-  return b + 4;
-}

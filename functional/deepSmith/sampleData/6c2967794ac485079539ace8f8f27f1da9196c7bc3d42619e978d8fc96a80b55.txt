@@ -1,5 +1,0 @@
-private static int fn_A(final byte[] a,final int b,final char c){
-  final int d=b + 1;
-  for (int e=d; e < a.length; e++)   if (a[e] == c)   return e;
-  return -1;
-}

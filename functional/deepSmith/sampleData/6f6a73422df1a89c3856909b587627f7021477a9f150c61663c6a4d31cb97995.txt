@@ -1,5 +1,0 @@
-private static double fn_A(int a){
-  double b=a / 1000d;
-  double c=(Math.pow(10d,b + 2) - 100d) / 99d;
-  return c;
-}

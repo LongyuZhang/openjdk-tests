@@ -1,8 +1,0 @@
-private static String fn_A(){
-  try {
-    return System.getProperty("os.version");
-  }
- catch (  Exception a) {
-    return null;
-  }
-}

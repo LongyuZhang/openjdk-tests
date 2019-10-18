@@ -1,6 +1,0 @@
-private static void fn_A(long[] a,int b,long[] c,int d,long[] e,int f,int g){
-  for (int h=0; h < g; h++) {
-    int i=b + h;
-    a[i]=a[i] ^ (c[d + h] ^ e[f + h]);
-  }
-}

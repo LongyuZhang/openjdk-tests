@@ -1,6 +1,0 @@
-protected static String fn_A(String a,String b,String c,int d,int e,int f,int g){
-  if (b == null) {
-    b=c;
-  }
-  return a + "|" + d+ ","+ e+ "|"+ f+ ","+ g+ "|"+ b;
-}

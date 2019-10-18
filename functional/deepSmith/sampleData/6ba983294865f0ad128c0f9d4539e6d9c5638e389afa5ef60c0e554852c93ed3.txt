@@ -1,4 +1,0 @@
-private static File fn_A(){
-  final File a=new File(System.getProperty("user.home"));
-  return new File(a,"icmp4j");
-}

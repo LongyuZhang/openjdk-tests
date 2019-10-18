@@ -1,5 +1,0 @@
-public static File fn_A(){
-  String a=System.getProperty("com.exedio.cope.properties");
-  if (a == null)   a="cope.properties";
-  return new File(a);
-}

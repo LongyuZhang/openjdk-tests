@@ -1,6 +1,0 @@
-public static void fn_A(double a,double b,int c,double[][] d,double[][] e){
-  for (int f=0; f < (c + 3); f++)   for (int g=0; g < (c + 3); g++) {
-    d[f][g]*=a;
-    e[f][g]*=b;
-  }
-}

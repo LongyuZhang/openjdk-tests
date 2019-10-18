@@ -1,4 +1,0 @@
-protected static Boolean fn_A(byte[] a){
-  boolean b=a[0] == 1;
-  return (b) ? Boolean.TRUE : Boolean.FALSE;
-}

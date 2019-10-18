@@ -1,8 +1,0 @@
-public static double[] fn_A(double a[],int b,int c){
-  assert(a.length >= b + c);
-  double d[]=new double[c];
-  for (int e=0; e < c; e++) {
-    d[e]=a[e + b];
-  }
-  return d;
-}

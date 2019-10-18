@@ -1,8 +1,0 @@
-public static int[] fn_A(Integer... a){
-  final int b=a.length;
-  int[] c=new int[b];
-  for (int d=0; d < b; d++) {
-    c[d]=a[d].intValue();
-  }
-  return c;
-}

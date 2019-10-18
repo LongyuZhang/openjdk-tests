@@ -1,7 +1,0 @@
-public static byte[] fn_A(int a){
-  byte[] b=new byte[a];
-  for (int c=0; c < b.length; c++) {
-    b[c]=(byte)(Math.random() * 255);
-  }
-  return b;
-}

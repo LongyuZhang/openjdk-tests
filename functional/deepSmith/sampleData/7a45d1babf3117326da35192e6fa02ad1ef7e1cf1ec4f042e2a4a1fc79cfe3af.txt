@@ -1,7 +1,0 @@
-private static char[] fn_A(char[] a,int b,int c){
-  char[] d=new char[c - b];
-  for (int e=b; e < c; e++) {
-    d[e - b]=a[e];
-  }
-  return d;
-}

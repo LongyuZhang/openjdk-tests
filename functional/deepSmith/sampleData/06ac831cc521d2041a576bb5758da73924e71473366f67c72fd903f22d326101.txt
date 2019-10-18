@@ -1,7 +1,0 @@
-private static double[] fn_A(double[] a,double[] b){
-  final double[] c=new double[Math.min(a.length,b.length)];
-  for (int d=0; d < c.length; d++) {
-    c[d]=100.0 * (b[d] - a[d]) / a[d];
-  }
-  return c;
-}

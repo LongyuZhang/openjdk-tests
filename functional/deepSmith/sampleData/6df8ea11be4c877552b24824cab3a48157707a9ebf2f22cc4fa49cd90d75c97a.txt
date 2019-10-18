@@ -1,6 +1,0 @@
-@SuppressWarnings("unchecked") private static <K>int fn_A(final K a[],final int b,final int c,final int d){
-  final int e=(((Comparable<K>)(a[b])).compareTo(a[c]));
-  final int f=(((Comparable<K>)(a[b])).compareTo(a[d]));
-  final int g=(((Comparable<K>)(a[c])).compareTo(a[d]));
-  return (e < 0 ? (g < 0 ? c : f < 0 ? d : b) : (g > 0 ? c : f > 0 ? d : b));
-}

@@ -1,8 +1,0 @@
-public static int[][] fn_A(int a,int b){
-  int[][] c;
-  c=new int[a][];
-  for (int d=0; d < a; d++) {
-    c[d]=new int[b];
-  }
-  return c;
-}

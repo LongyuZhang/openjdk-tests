@@ -1,4 +1,0 @@
-private static double fn_A(long a){
-  long b=System.nanoTime();
-  return (b - a) / 1.e6;
-}

@@ -1,5 +1,0 @@
-private static int fn_A(int a){
-  int b=0;
-  for (long c=2; c <= a; c*=2)   b+=a / c;
-  return b;
-}

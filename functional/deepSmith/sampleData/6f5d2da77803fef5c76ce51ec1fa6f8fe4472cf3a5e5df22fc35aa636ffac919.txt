@@ -1,9 +1,0 @@
-public static void fn_A(byte[] a,short b,short c,short d){
-  byte e, f;
-  for (short g=0; g < d; g++) {
-    e=a[(short)(b + g)];
-    f=a[(short)(c + g)];
-    a[(short)(b + g)]=f;
-    a[(short)(c + g)]=e;
-  }
-}

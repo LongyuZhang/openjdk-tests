@@ -1,6 +1,0 @@
-public static byte fn_A(char a){
-  if (a >= 'a' && a <= 'z')   return (byte)((a - 97) + 1);
-  if (a == '\'')   return 28;
-  if (a >= '0' && a <= '9')   return (byte)((a - 48) + 29);
- else   return 27;
-}

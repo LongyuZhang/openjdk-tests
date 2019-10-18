@@ -1,7 +1,0 @@
-@SuppressWarnings("unused") private static int[] fn_A(int[] a,int[] b){
-  double c=(0.299 * a[0] + 0.587 * a[1] + 0.114 * a[2]) / 256.0;
-  b[0]=(int)(219.0 * c + 16.5);
-  b[1]=(int)(224.0 * 0.564 * (a[2] / 256.0 * 1.0 - c) + 128.5);
-  b[2]=(int)(224.0 * 0.713 * (a[0] / 256.0 * 1.0 - c) + 128.5);
-  return b;
-}

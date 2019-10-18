@@ -1,8 +1,0 @@
-public static int fn_A(int a){
-  if (a < 32 * 4) {
-    return a / 4;
-  }
- else {
-    return 32 + (a - 32 * 4) / 16;
-  }
-}

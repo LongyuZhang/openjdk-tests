@@ -1,8 +1,0 @@
-public static void fn_A(int[] a,int b,int c){
-  int d=c + b;
-  for (int e=b; e < (b + c + 1) / 2; e++) {
-    int f=a[e];
-    a[e]=a[d - e];
-    a[d - e]=f;
-  }
-}

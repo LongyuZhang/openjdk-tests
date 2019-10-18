@@ -1,5 +1,0 @@
-public static double fn_A(double[] a){
-  double b=Double.MIN_VALUE;
-  for (int c=0; c < a.length; c++)   if (b < a[c])   b=a[c];
-  return b;
-}

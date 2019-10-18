@@ -1,4 +1,0 @@
-public static int fn_A(int a,int b){
-  int c=Math.abs(b - a) % 360;
-  return c > 180 ? 360 - c : c;
-}

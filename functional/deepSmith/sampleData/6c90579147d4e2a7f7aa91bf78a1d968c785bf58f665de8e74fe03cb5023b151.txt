@@ -1,7 +1,0 @@
-protected static void fn_A(byte[] a,int b,int c){
-  if (c << 16 >> 16 != c) {
-    throw new IllegalArgumentException("Signed short value out of range [" + c + "]");
-  }
-  a[b++]=(byte)(c >> 8);
-  a[b]=(byte)(c);
-}

@@ -1,8 +1,0 @@
-static void fn_A(){
-  System.out.println("IntMath.charSubTest");
-  char a=0x00e9;
-  char b=0xffff;
-  int c;
-  c=a - b;
-  assert(c == 0xffff00ea);
-}

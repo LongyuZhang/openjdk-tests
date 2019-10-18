@@ -1,8 +1,0 @@
-private static double fn_A(int[] a,double b){
-  double c=0;
-  for (int d=0; d < a.length; d++) {
-    c+=(a[d] - b) * (a[d] - b);
-  }
-  double e=(float)Math.sqrt(c / a.length);
-  return e;
-}

@@ -1,7 +1,0 @@
-public static long[] fn_A(int[] a,int b,int c,long[] d,int e){
-  int f=b + c;
-  for (int g=b, h=e; g < f; g++, h++) {
-    d[h]=a[g];
-  }
-  return d;
-}

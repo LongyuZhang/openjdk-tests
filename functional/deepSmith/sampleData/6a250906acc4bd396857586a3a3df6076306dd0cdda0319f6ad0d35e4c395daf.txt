@@ -1,8 +1,0 @@
-private static String fn_A(){
-  String a="";
-  StackTraceElement[] b=(new Exception()).getStackTrace();
-  for (int c=2; c < b.length; c++) {
-    a+="\r\t" + b[c].getClassName() + "."+ b[c].getMethodName()+ "():"+ b[c].getLineNumber();
-  }
-  return a;
-}

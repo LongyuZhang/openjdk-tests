@@ -1,5 +1,0 @@
-public static double fn_A(double[] a,int b,int c,double d){
-  double e=0.0;
-  for (int f=b; f <= c; f++)   e+=(a[f] + d) * (a[f] + d);
-  return e;
-}

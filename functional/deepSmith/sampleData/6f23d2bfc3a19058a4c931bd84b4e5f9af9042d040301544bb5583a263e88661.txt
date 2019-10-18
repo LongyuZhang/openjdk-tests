@@ -1,5 +1,0 @@
-public static void fn_A(float a,float b,float c,float[] d){
-  d[0]=a;
-  d[1]=b;
-  d[2]=c;
-}

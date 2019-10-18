@@ -1,6 +1,0 @@
-private static String fn_A(Object a){
-  if (a instanceof Object[])   return "BSA=" + java.util.Arrays.asList((Object[])a);
-  if (a instanceof int[])   return "BSA@" + java.util.Arrays.toString((int[])a);
-  if (a == null)   return "BSA0=null";
-  return "BSA1=" + a;
-}

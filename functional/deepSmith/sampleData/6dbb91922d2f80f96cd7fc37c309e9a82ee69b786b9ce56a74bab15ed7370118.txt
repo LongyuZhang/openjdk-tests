@@ -1,4 +1,0 @@
-public static double fn_A(int a,long b,long c){
-  double d=Math.log(new Long(c).doubleValue() / (1 + new Long(b).doubleValue()));
-  return a * d;
-}

@@ -1,5 +1,0 @@
-public static void fn_A(int a,int b,int c){
-  if (a < 0 || b > c || b < a) {
-    throw new StringIndexOutOfBoundsException("fromIndex: " + a + ", toIndex: "+ b+ ", length: "+ c);
-  }
-}

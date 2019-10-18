@@ -1,6 +1,0 @@
-public static byte[] fn_A(int a,int b){
-  if ((char)a != a || (char)b != b) {
-    throw new UnsupportedOperationException(a + "," + b+ " is outside allowed range: (0,"+ (int)Character.MAX_VALUE+ ")");
-  }
-  return new byte[]{(byte)(a >> 8),(byte)(a & 0xFF),(byte)(b >> 8),(byte)(b & 0xFF)};
-}

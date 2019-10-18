@@ -1,7 +1,0 @@
-@SuppressWarnings("ShortCircuitBoolean") public static long fn_A(long a,long b){
-  long c=a + b;
-  if ((a ^ b) < 0 | (a ^ c) >= 0) {
-    return c;
-  }
-  return Long.MAX_VALUE + ((c >>> (Long.SIZE - 1)) ^ 1);
-}

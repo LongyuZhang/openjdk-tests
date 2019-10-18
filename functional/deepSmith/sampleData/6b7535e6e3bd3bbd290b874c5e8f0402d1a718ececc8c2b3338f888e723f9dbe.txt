@@ -1,6 +1,0 @@
-private static boolean fn_A(Object[] a){
-  for (int b=a.length; --b >= 0; ) {
-    if (a[b] != null)     return false;
-  }
-  return true;
-}

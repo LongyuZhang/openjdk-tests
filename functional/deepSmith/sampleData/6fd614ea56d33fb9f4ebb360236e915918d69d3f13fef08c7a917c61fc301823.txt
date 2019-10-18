@@ -1,4 +1,0 @@
-static long fn_A(final int a,final long b){
-  final long c=0XFFFFFFFFL;
-  return (a & c) | (~c & b);
-}
