@@ -1,9 +1,0 @@
-private static boolean fn_A(byte[] a){
-  assert(a[0] == 0);
-  for (int b=1; b < 256; ++b) {
-    if (a[b] == 0) {
-      return true;
-    }
-  }
-  return false;
-}

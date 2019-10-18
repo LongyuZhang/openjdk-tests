@@ -1,4 +1,0 @@
-private static boolean fn_A(int a){
-  System.out.println("Running test 2");
-  return a < 100;
-}

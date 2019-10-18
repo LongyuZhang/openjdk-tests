@@ -1,5 +1,0 @@
-private static final File fn_A(){
-  String a=System.getProperty("java.io.tmpdir");
-  File b=new File(a,"ffmpeg");
-  return b;
-}

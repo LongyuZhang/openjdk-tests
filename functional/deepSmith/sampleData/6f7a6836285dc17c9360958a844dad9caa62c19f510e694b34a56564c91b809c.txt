@@ -1,4 +1,0 @@
-private static boolean fn_A(final String a,final String b,int c,final int d){
-  final int e=c + d;
-  return e < a.length() && e < b.length() && a.charAt(a.length() - c - 1) == b.charAt(b.length() - c - 1);
-}

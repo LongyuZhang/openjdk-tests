@@ -1,8 +1,0 @@
-private static void fn_A(final long[] a,final int b,final long[] c,final int d){
-  assert(b <= d);
-  final int e=(1 << b) - 1;
-  final int f=1 << d;
-  for (int g=0; g < f; g++) {
-    a[g & e]|=c[g];
-  }
-}

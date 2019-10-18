@@ -1,8 +1,0 @@
-public static void fn_A(){
-  System.out.println("4 args...");
-  System.out.println("arg0: numClusters");
-  System.out.println("arg1: numDimensions");
-  System.out.println("arg2: numInstances");
-  System.out.println("arg3: true/false on using paired gaussians as" + "generators");
-  System.out.println("arg4: output arff file");
-}

@@ -1,6 +1,0 @@
-public static int[][][][] fn_A(int[][][][] a,int b,int c,int d,int e){
-  if (a == null || a.length < b || a[0].length < c || a[0][0].length < d || a[0][0][0].length < e) {
-    return new int[b][c][d][e];
-  }
-  return a;
-}

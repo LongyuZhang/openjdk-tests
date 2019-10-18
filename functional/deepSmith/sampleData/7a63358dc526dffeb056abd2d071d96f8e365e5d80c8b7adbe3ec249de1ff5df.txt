@@ -1,4 +1,0 @@
-static int fn_A() throws ArrayIndexOutOfBoundsException {
-  int a[]=new int[10];
-  return a[26];
-}

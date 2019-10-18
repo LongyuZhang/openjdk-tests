@@ -1,7 +1,0 @@
-private static double fn_A(double[] a){
-  double b=Double.POSITIVE_INFINITY;
-  for (int c=0; c < a.length; c++) {
-    if (b > a[c])     b=a[c];
-  }
-  return b;
-}

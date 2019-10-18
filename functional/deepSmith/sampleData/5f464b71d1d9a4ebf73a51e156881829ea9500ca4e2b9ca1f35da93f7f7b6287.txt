@@ -1,9 +1,0 @@
-public static boolean fn_A(String a){
-  try {
-    new FileReader(a).close();
-  }
- catch (  IOException b) {
-    return false;
-  }
-  return true;
-}

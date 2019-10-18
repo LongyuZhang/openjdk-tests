@@ -1,4 +1,0 @@
-private static long fn_A(long a){
-  long b=a - System.currentTimeMillis();
-  return b >= 0 ? b : 0;
-}

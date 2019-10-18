@@ -1,4 +1,0 @@
-static char fn_A(int a){
-  byte b=(byte)(a & 0xFF);
-  return (char)b;
-}

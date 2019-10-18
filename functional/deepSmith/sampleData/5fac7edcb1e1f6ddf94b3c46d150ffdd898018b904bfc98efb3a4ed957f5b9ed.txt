@@ -1,6 +1,0 @@
-public static int fn_A(int a){
-  int b=a / 100;
-  int c=a % 100;
-  if (b > 7 || c > 31)   throw new IllegalArgumentException("Could not be translated into a valid COAP code");
-  return b << 5 | c;
-}

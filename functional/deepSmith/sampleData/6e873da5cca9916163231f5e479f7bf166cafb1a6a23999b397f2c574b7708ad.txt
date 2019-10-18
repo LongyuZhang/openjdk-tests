@@ -1,6 +1,0 @@
-static boolean fn_A(Map<?,?> a,Map<?,?> b){
-  if (a.size() != b.size()) {
-    return false;
-  }
-  return a.entrySet().containsAll(b.entrySet());
-}

@@ -1,4 +1,0 @@
-static short fn_A(short[] a,Short b){
-  for (  Short c : a)   b=(short)(b + c);
-  return b;
-}

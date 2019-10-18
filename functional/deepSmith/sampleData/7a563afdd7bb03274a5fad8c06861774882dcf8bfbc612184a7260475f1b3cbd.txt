@@ -1,6 +1,0 @@
-private static long fn_A(long a,int b){
-  if (a < 0) {
-    a=(1L << b - 1) + (a & ((1L << b - 1) - 1));
-  }
-  return a;
-}

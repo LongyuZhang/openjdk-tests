@@ -1,9 +1,0 @@
-static float[] fn_A(float[] a,float b,float c){
-  int d=a.length;
-  for (int e=0; e < d; e+=2) {
-    a[e]=a[e] * b;
-    int f=e + 1;
-    a[f]=a[f] * c;
-  }
-  return a;
-}

@@ -1,7 +1,0 @@
-public static int fn_A(char a){
-  int b=(int)a;
-  if (b == 74)   b--;
-  if (b > 64)   b-=64;
- else   b-=48;
-  return b;
-}

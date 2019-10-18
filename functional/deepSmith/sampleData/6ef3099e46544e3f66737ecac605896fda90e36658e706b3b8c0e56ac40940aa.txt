@@ -1,9 +1,0 @@
-public static boolean fn_A(long[] a){
-  int b=a.length;
-  if (b > 1) {
-    for (int c=1; c < b; ++c) {
-      if (a[c - 1] <= a[c])       return false;
-    }
-  }
-  return true;
-}

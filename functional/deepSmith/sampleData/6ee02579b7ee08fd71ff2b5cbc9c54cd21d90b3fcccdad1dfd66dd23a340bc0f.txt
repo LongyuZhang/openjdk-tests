@@ -1,6 +1,0 @@
-public static String fn_A(String a,String b){
-  if (a == null && b == null)   return "1 = 1";
-  if (a == null)   return b;
-  if (b == null)   return a;
-  return a + " AND " + b;
-}

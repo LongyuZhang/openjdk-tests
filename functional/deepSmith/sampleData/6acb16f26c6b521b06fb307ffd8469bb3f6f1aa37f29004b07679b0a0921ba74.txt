@@ -1,9 +1,0 @@
-public static boolean fn_A(double a,double b,double[] c,double[] d){
-  int e, f;
-  boolean g=false;
-  int h=c.length;
-  for (e=0, f=h - 1; e < h; f=e++) {
-    if (((d[e] > b) != (d[f] > b)) && (a < (c[f] - c[e]) * (b - d[e]) / (d[f] - d[e]) + c[e]))     g=!g;
-  }
-  return g;
-}

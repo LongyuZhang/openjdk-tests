@@ -1,4 +1,0 @@
-public static byte fn_A(short a,boolean b){
-  if (b)   return (byte)(0xff & (a >> 8));
-  return (byte)(0xff & a);
-}

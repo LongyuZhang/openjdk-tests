@@ -1,4 +1,0 @@
-private static File fn_A(){
-  final String a=System.getProperty("user.home");
-  return new File(a,".jvm-assembler");
-}

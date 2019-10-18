@@ -1,9 +1,0 @@
-private static void fn_A(){
-  System.out.println("Usage:");
-  System.out.println();
-  System.out.println("  new <description>  Adds a task with a description <description>");
-  System.out.println("  done <task-id>     Marks a task as done");
-  System.out.println("  list               Lists all tasks by creation time");
-  System.out.println("  delete <task-id>   Deletes a task");
-  System.out.println();
-}

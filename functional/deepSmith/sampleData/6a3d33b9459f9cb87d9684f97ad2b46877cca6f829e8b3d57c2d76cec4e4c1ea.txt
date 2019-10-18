@@ -1,5 +1,0 @@
-public static void fn_A(double[] a,double[] b){
-  for (int c=0; c < a.length; c++) {
-    b[c]-=a[c];
-  }
-}

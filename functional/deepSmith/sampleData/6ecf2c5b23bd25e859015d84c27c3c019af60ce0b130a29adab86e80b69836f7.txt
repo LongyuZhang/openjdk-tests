@@ -1,9 +1,0 @@
-public static char[] fn_A(final char[] a){
-  final int b=a.length;
-  for (int c=b / 2; c-- != 0; ) {
-    final char d=a[b - c - 1];
-    a[b - c - 1]=a[c];
-    a[c]=d;
-  }
-  return a;
-}

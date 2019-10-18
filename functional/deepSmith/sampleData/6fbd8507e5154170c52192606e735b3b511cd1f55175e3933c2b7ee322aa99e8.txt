@@ -1,7 +1,0 @@
-public static int[] fn_A(int[] a,int b,int c){
-  if (b < 0)   throw new IllegalArgumentException("startRow");
-  if (c >= a.length)   throw new IllegalArgumentException("endRow");
-  int[] d=new int[c - b + 1];
-  for (int e=b; e <= c; e++)   d[e - b]=a[e];
-  return d;
-}

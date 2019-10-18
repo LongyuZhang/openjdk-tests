@@ -1,4 +1,0 @@
-static private float fn_A(float a,float b,float c,float d,float e){
-  if ((b/=e / 2) < 1)   return d / 2 * b * b * b * b * b + c;
-  return d / 2 * ((b-=2) * b * b* b* b + 2) + c;
-}

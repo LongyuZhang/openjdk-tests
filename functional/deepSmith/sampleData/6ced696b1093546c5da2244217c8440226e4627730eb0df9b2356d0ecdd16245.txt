@@ -1,4 +1,0 @@
-public static boolean fn_A(){
-  System.out.println("Evaluating hotFood!");
-  return true;
-}

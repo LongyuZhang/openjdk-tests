@@ -1,9 +1,0 @@
-public static double fn_A(double a,double b,double c){
-  if (a < b) {
-    a=b;
-  }
- else   if (a > c) {
-    a=c;
-  }
-  return a;
-}

@@ -1,4 +1,0 @@
-public static final String fn_A(String a,Long b){
-  String c="{" + "\"records\": " + a + ","+ "\"record_count\": "+ b+ "}";
-  return c;
-}

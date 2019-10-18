@@ -1,8 +1,0 @@
-public static BigInteger fn_A(String a){
-  try {
-    return new BigInteger(a);
-  }
- catch (  final NumberFormatException b) {
-    return null;
-  }
-}

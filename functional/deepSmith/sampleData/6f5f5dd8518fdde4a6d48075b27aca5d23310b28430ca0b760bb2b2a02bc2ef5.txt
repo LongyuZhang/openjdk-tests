@@ -1,6 +1,0 @@
-public static Double fn_A(Byte a,Byte b){
-  if (a == null || b == null) {
-    return null;
-  }
-  return ((double)a / b);
-}

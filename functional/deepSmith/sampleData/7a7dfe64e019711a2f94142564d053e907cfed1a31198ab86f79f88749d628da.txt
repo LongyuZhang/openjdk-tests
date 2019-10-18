@@ -1,4 +1,0 @@
-public static String fn_A(String a){
-  String b="Class=" + a + " was not compiled with the debug option(-g) and\n"+ "therefore verifydesign cannot be used on this jar.  Please compile your code\n"+ "with -g option in javac or debug=\"true\" in the ant build.xml file";
-  return b;
-}

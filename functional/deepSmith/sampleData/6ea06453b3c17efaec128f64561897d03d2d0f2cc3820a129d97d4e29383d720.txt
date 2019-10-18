@@ -1,4 +1,0 @@
-private static String fn_A(String a){
-  String b=a == null ? "" : a;
-  return "jdbc:h2:mem:" + b + ";DATABASE_TO_UPPER=false;ALIAS_COLUMN_NAME=true";
-}

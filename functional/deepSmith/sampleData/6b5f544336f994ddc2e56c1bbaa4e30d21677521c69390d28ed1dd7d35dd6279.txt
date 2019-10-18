@@ -1,6 +1,0 @@
-public static void fn_A(int a[],int b[]){
-  for (int c=0; c < a.length; c++) {
-    int d=Math.abs(a[c] - b[c]);
-    if (d != 0)     throw new RuntimeException("Element " + c + " not equals. "+ a[c]+ " "+ b[c]);
-  }
-}

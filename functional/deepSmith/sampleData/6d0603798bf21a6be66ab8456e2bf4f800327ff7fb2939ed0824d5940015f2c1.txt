@@ -1,4 +1,0 @@
-public static int fn_A(float a){
-  if (a != a)   return 0;
-  return (int)Math.floor(a + 0.5f);
-}

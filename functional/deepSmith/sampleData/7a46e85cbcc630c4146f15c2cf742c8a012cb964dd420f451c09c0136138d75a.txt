@@ -1,9 +1,0 @@
-static double fn_A(int[] a,int[] b,int[] c){
-  double d=0;
-  for (int e=0, f=c.length - 1; e < c.length; f=e++) {
-    double g=a[c[e]] - a[c[f]];
-    double h=b[c[e]] - b[c[f]];
-    d+=Math.sqrt(g * g + h * h);
-  }
-  return d;
-}

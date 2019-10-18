@@ -1,5 +1,0 @@
-public static Class<?> fn_A(Class<?>[] a,int b,boolean c){
-  if (!c)   return a[b];
-  if (b < a.length - 1)   return a[b];
-  return a[a.length - 1].getComponentType();
-}

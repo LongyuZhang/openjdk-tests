@@ -1,5 +1,0 @@
-public static String fn_A(){
-  String a=System.getProperty("java.version");
-  String b=System.getProperty("java.home");
-  return "The version of the JDK invoking the current running slider command: " + a + "; The path to it is: "+ b;
-}

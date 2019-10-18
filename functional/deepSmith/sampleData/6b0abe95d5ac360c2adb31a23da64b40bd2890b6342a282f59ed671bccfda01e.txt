@@ -1,4 +1,0 @@
-private static int fn_A(char[] a,int b,int c,int d){
-  char e=a[b], f=a[c], g=a[d];
-  return e < f ? (f < g ? c : (e < g ? d : b)) : (f > g ? c : (e > g ? d : b));
-}

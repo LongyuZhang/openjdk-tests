@@ -1,4 +1,0 @@
-public static String fn_A(boolean a){
-  if (a)   return "yes";
- else   return "no";
-}

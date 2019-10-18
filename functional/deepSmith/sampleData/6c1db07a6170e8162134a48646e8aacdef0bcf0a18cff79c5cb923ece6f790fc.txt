@@ -1,7 +1,0 @@
-public static long[] fn_A(long[] a,long[] b){
-  int c=0;
-  for (; c < b.length; c++) {
-    a[c]&=~b[c];
-  }
-  return a;
-}

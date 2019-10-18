@@ -1,7 +1,0 @@
-public static boolean fn_A(char[] a,char[] b,int c,int d){
-  if (a.length != d)   return false;
-  for (int e=0; e < d; e++) {
-    if (a[e] != b[e + c])     return false;
-  }
-  return true;
-}

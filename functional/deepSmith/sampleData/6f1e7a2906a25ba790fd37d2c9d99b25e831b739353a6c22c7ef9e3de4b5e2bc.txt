@@ -1,6 +1,0 @@
-private static boolean fn_A(String[] a){
-  if ((a.length == 1) && (a[0].endsWith("s"))) {
-    return true;
-  }
- else   return false;
-}

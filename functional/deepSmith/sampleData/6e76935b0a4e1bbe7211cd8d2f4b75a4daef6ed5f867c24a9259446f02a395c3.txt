@@ -1,6 +1,0 @@
-public static int fn_A(char[] a,char b,int c){
-  if (null != a)   for (int d=c; d < a.length; d++) {
-    if (a[d] == b)     return d;
-  }
-  return -1;
-}

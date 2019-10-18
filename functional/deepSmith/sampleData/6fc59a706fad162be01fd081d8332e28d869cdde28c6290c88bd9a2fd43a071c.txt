@@ -1,5 +1,0 @@
-public static int fn_A(int a,int b){
-  int c=a;
-  int d=a + a;
-  return 1 / (1 + a) + (1 + c) / (1 + c) + (1 + c) / (1 + d);
-}

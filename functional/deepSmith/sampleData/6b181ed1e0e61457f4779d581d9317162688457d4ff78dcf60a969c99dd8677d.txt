@@ -1,5 +1,0 @@
-public static final int fn_A(byte[] a) throws NullPointerException {
-  int b=a.length, c=0;
-  while (b-- > 0)   if (a[b] != 0)   c++;
-  return c;
-}

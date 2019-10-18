@@ -1,9 +1,0 @@
-public static byte fn_A(byte a,int b,int c){
-  b%=8;
-  if (c == 1) {
-    return (byte)((0xff & a) | (1 << (7 - b)));
-  }
- else {
-    return (byte)((0xff & a) & ~(1 << (7 - b)));
-  }
-}

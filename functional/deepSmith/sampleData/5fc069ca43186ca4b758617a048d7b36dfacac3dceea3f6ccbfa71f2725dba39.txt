@@ -1,4 +1,0 @@
-public static char fn_A(byte[] a,int b){
-  char c=(char)((a[b] << 8) | a[b + 1]);
-  return c;
-}

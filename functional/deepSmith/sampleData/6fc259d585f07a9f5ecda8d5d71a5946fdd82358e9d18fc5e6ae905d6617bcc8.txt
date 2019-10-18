@@ -1,7 +1,0 @@
-private static boolean fn_A(char a,char[] b){
-  boolean c=false;
-  int d=0;
-  while (!c && d < b.length)   if (b[d] == a)   c=true;
- else   d++;
-  return c;
-}

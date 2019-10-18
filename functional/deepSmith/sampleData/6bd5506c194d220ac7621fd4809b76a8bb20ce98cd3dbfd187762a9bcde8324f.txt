@@ -1,8 +1,0 @@
-public static double[] fn_A(double[] a,double b,double c,double d,double e){
-  double[] f=new double[a.length];
-  for (int g=0; g < a.length; g++) {
-    f[g]=(e - d) * (f[g] - b) / (c - b) + d;
-    if (c - b == 0)     f[g]=0;
-  }
-  return f;
-}

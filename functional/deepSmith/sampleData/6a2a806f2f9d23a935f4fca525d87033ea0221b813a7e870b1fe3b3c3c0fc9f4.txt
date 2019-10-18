@@ -1,5 +1,0 @@
-public static void fn_A(final String a,final boolean b){
-  if (!b) {
-    throw new IllegalArgumentException("illegal argument, expected: " + a);
-  }
-}

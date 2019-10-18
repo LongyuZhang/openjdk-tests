@@ -1,6 +1,0 @@
-public static int fn_A(int a){
-  if ((a < 1) || (a > 12)) {
-    throw new IllegalArgumentException("Invalid geohash aggregation precision of " + a + ". Must be between 1 and 12.");
-  }
-  return a;
-}

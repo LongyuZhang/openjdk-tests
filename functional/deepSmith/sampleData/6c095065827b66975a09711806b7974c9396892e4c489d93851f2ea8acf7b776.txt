@@ -1,5 +1,0 @@
-public static void main(String[] a){
-  int b=8;
-  if (b <= 0) {
-  }
-}
