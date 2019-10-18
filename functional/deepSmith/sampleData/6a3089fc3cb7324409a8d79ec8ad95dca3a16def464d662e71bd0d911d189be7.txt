@@ -1,7 +1,0 @@
-public static File[] fn_A(String a,int b){
-  File[] c=new File[b];
-  for (int d=0; d < c.length; d++) {
-    c[d]=new File("target",a + "-localLogDir" + d).getAbsoluteFile();
-  }
-  return c;
-}

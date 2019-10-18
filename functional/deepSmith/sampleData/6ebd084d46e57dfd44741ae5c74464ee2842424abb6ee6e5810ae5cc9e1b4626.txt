@@ -1,4 +1,0 @@
-private static void fn_A(String a){
-  System.out.println("ERROR: " + a);
-  System.exit(1);
-}

@@ -1,4 +1,0 @@
-private static String fn_A(final String a){
-  final String b="</org:" + a + "></soapenv:Body></soapenv:Envelope>";
-  return b;
-}

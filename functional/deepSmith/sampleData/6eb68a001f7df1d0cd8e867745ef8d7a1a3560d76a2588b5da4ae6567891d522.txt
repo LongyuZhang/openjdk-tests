@@ -1,5 +1,0 @@
-private static void fn_A(long a,long b,String c){
-  if (a > b) {
-    throw new IndexOutOfBoundsException(c);
-  }
-}

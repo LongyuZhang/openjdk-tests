@@ -1,5 +1,0 @@
-public static void fn_A(boolean[] a,int b,boolean c){
-  for (int d=b * 2; d < a.length; d+=b) {
-    a[d]=c;
-  }
-}

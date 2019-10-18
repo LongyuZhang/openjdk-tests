@@ -1,5 +1,0 @@
-public static long fn_A(long a){
-  a=(a ^ (a >>> 32)) * 0x4cd6944c5cc20b6dL;
-  a=(a ^ (a >>> 29)) * 0xfc12c5b19d3259e9L;
-  return a ^ (a >>> 32);
-}

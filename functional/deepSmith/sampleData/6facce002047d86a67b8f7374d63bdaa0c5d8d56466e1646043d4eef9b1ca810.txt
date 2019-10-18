@@ -1,5 +1,0 @@
-static float fn_A(float a,int b){
-  Float c=a;
-  if ((b & 1) == 0)   c=(a + 1.f);
-  return c;
-}

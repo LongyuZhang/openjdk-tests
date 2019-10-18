@@ -1,7 +1,0 @@
-public static double fn_A(double a,double b){
-  double c;
-  final double d=12.00;
-  final double e=7.00;
-  c=a + b * d + e;
-  return c;
-}

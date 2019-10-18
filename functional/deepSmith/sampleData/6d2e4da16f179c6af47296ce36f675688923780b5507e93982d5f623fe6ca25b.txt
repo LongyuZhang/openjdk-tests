@@ -1,5 +1,0 @@
-public static String fn_A(long a,int b){
-  float c=(float)a / b;
-  float d=((float)(int)(c * 1000)) / 10;
-  return String.valueOf(d + "%");
-}

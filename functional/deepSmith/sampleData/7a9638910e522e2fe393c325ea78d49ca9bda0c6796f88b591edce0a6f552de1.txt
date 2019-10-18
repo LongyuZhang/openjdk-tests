@@ -1,8 +1,0 @@
-private static Writer fn_A(OutputStream a){
-  try {
-    return new OutputStreamWriter(a,"UTF-8");
-  }
- catch (  UnsupportedEncodingException b) {
-    throw new RuntimeException(b);
-  }
-}

@@ -1,5 +1,0 @@
-public static void fn_A(Object[] a,int[] b,Object[] c){
-  for (int d=0; d < b.length; d++) {
-    c[d]=a[b[d]];
-  }
-}

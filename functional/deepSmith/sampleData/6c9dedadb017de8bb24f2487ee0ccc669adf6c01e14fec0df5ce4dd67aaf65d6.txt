@@ -1,9 +1,0 @@
-private static int fn_A(byte[] a,byte[] b,int c,byte[] d,int e,int f){
-  int g=0;
-  for (int h=0; h < e; ++h) {
-    g+=(b[h + c] & 0xFF) + f * (d[h] & 0xFF);
-    a[h + c]=(byte)g;
-    g>>=8;
-  }
-  return g;
-}

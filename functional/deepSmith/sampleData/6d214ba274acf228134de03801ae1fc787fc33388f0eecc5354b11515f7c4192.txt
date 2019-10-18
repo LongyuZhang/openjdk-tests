@@ -1,8 +1,0 @@
-static BigDecimal fn_A(Boolean a){
-  if (a == null) {
-    return null;
-  }
- else {
-    return a ? BigDecimal.valueOf(1) : BigDecimal.valueOf(0);
-  }
-}

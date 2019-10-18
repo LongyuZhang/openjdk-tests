@@ -1,6 +1,0 @@
-public final static byte fn_A(int a){
-  if (a < 0 || a > 255) {
-    throw new IllegalArgumentException("Out of range: " + a);
-  }
-  return (byte)(a - 128);
-}

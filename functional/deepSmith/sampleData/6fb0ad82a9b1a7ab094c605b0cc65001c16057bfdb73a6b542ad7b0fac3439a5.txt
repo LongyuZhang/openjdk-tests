@@ -1,5 +1,0 @@
-final static public float fn_A(float a,float b,float c){
-  if (a < b)   return b;
-  if (a > c)   return c;
-  return a;
-}

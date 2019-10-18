@@ -1,9 +1,0 @@
-public static boolean fn_A(Object a){
-  if (null == a) {
-    return true;
-  }
- else   if (a instanceof CharSequence) {
-    return 0 == ((CharSequence)a).length();
-  }
-  return false;
-}

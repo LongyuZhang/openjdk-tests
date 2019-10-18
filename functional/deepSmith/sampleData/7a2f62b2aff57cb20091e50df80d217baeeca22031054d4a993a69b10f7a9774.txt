@@ -1,7 +1,0 @@
-private static byte[] fn_A(byte[] a,byte[] b){
-  byte[] c=new byte[a.length];
-  for (int d=0; d < a.length; d++) {
-    c[d]=(byte)(((int)a[d] ^ (int)b[d]) & 0xFF);
-  }
-  return c;
-}

@@ -1,7 +1,0 @@
-private static <T>void fn_A(T[] a,int b,int c){
-  T d=a[c];
-  for (int e=c; e > b; e--) {
-    a[e]=a[e - 1];
-  }
-  a[b]=d;
-}

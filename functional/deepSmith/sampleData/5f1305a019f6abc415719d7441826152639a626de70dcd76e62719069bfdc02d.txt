@@ -1,6 +1,0 @@
-public static float[] fn_A(float[] a,float b){
-  int c=a.length;
-  float[] d=new float[c];
-  for (int e=c - 1; e >= 0; e--)   d[e]=a[e] - b;
-  return d;
-}

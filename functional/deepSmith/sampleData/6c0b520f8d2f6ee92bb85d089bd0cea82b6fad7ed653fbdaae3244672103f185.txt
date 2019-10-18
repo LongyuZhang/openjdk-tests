@@ -1,6 +1,0 @@
-public static Long fn_A(Object a){
-  if (a instanceof Integer) {
-    return new Long((Integer)a);
-  }
-  return (Long)a;
-}

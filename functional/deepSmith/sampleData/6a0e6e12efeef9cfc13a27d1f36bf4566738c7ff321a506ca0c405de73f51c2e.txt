@@ -1,7 +1,0 @@
-private static final long[] fn_A(){
-  long[] a=new long[28];
-  a[8]=2305843009213693952L;
-  a[11]=2147483648L;
-  a[13]=1L;
-  return a;
-}

@@ -1,5 +1,0 @@
-final static public long fn_A(final long a,final long[] b,final int c){
-  int d=1;
-  for (int e=0; e < c; ++e)   d*=b[e];
-  return (a / d) % b[c];
-}

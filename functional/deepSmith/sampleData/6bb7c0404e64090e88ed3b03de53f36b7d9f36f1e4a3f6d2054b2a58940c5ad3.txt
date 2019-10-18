@@ -1,7 +1,0 @@
-public static void fn_A(int a,byte[] b){
-  int c=b.length - 1;
-  for (int d=c; d >= 0; d--) {
-    b[d]=(byte)(a & 0xff);
-    a=a >> 8;
-  }
-}

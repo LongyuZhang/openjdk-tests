@@ -1,5 +1,0 @@
-private static void fn_A(String a){
-  if (a == null) {
-    throw new NullPointerException("fieldName is null");
-  }
-}

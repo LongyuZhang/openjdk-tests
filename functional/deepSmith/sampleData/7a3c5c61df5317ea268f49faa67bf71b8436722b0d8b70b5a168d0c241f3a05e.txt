@@ -1,5 +1,0 @@
-protected static void fn_A(final float a){
-  if (!(a == 1.f || a == -1.f)) {
-    throw new IllegalArgumentException("target must be [+1,-1]: " + a);
-  }
-}

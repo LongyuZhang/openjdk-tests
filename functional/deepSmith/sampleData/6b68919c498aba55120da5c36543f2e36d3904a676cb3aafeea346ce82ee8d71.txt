@@ -1,6 +1,0 @@
-public static int fn_A(int a,int b,int c,int d) throws Exception {
-  if (c < 0 || c >= a || d < 0 || d >= b) {
-    throw new Exception("[RasterizationUtils][Encode2DTo1DId] This given 2 dimension coordinate is " + c + " "+ d+ ". This coordinate is out of the given boundary and will be dropped.");
-  }
-  return c + d * a;
-}

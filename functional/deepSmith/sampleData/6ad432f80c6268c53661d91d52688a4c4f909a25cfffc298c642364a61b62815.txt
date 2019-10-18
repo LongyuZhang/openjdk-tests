@@ -1,9 +1,0 @@
-public static void fn_A(byte[][] a){
-  if (a == null)   return;
-  int b=a.length;
-  for (int c=0; c < b; c++) {
-    if (a[c] == null)     continue;
-    int d=a[c].length;
-    for (int e=0; e < d; e++)     a[c][e]=0;
-  }
-}

@@ -1,9 +1,0 @@
-static long fn_A(long[] a){
-  Long b=1l;
-  Long c=1l;
-  for (  Long d : a) {
-    b+=d;
-    c+=d + 1;
-  }
-  return b + c;
-}

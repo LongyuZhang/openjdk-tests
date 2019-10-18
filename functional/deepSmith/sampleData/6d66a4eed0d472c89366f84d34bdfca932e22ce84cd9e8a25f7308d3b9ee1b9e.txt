@@ -1,8 +1,0 @@
-public static boolean fn_A(){
-  if (System.getProperty("os.name").indexOf("Windows") != -1) {
-    return true;
-  }
- else {
-    return false;
-  }
-}

@@ -1,5 +1,0 @@
-private static void fn_A(String a,double b,double c){
-  if (b != c) {
-    throw new RuntimeException(a + "=" + b);
-  }
-}

@@ -1,7 +1,0 @@
-public static int[] fn_A(int[] a){
-  int[] b=new int[a.length];
-  for (int c=0; c < a.length; c++) {
-    b[a[c]]=c;
-  }
-  return b;
-}

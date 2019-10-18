@@ -1,7 +1,0 @@
-private static int[] fn_A(){
-  int[] a=new int[203];
-  for (int b=0; b < a.length; ++b) {
-    a[b]=(int)((163.67 / (24329.0 / b + 100)) * 49151);
-  }
-  return a;
-}

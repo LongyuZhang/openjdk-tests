@@ -1,5 +1,0 @@
-public static double fn_A(double a){
-  long b=(long)a;
-  if (b > a)   b--;
-  return b;
-}

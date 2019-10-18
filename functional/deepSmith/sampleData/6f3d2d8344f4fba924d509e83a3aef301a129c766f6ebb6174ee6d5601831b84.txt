@@ -1,5 +1,0 @@
-public static long fn_A(final long a){
-  long b=a * (System.nanoTime() << 1) * -System.nanoTime();
-  b^=b << 32;
-  return b ^ (b >> 32);
-}

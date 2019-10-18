@@ -1,6 +1,0 @@
-private static double fn_A(double a,int b){
-  if (b == 2) {
-    return a;
-  }
-  return a * 2 * Math.tan(Math.PI / b);
-}

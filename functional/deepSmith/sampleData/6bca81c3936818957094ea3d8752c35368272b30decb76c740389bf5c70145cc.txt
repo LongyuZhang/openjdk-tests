@@ -1,9 +1,0 @@
-public static <T>boolean fn_A(T[] a){
-  if (a == null || a.length == 0) {
-    return true;
-  }
-  if (a.length == 1 && a[0] == null) {
-    return true;
-  }
-  return false;
-}

@@ -1,4 +1,0 @@
-static final int fn_A(int a,int b,int c){
-  if ((a-=b) < 0)   a+=c;
-  return a;
-}

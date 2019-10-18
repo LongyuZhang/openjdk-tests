@@ -1,9 +1,0 @@
-private static float fn_A(int a,int b,float[] c,int d){
-  if (a < 0) {
-    a=0;
-  }
- else   if (a >= d) {
-    a=d - 1;
-  }
-  return c[a + b];
-}

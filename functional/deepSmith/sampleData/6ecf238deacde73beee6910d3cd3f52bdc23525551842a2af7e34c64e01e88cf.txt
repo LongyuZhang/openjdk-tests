@@ -1,4 +1,0 @@
-public static void fn_A(String a){
-  String b="192.168.82.20";
-  int c=9160;
-}

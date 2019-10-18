@@ -1,6 +1,0 @@
-public static boolean fn_A(int a){
-  if ((a >= 0x0590) && (a <= 0x05FF)) {
-    return true;
-  }
- else   return (a >= 0xFB00) && (a <= 0xFB4F);
-}

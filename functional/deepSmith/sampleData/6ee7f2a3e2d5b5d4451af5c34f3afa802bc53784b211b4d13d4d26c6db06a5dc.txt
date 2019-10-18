@@ -1,7 +1,0 @@
-public static float fn_A(float a,float b){
-  double c=Math.random();
-  if (c <= 1e-100)   c=1e-100;
-  c=-2 * Math.log(a);
-  double d=Math.random() * Math.PI * 2.0;
-  return (float)(Math.sqrt(a) * Math.cos(b) * b + a);
-}

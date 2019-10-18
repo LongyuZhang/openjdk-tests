@@ -1,6 +1,0 @@
-private static void fn_A(byte a[],int b,long c){
-  for (int d=b + 7; d >= b; d--) {
-    a[d]=(byte)c;
-    c>>=8;
-  }
-}

@@ -1,8 +1,0 @@
-private static void fn_A(final char a[],final char[] b,final int c,final int d){
-  final char e=a[c];
-  final char f=b[c];
-  a[c]=a[d];
-  b[c]=b[d];
-  a[d]=e;
-  b[d]=f;
-}

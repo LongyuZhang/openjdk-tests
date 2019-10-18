@@ -1,5 +1,0 @@
-private static void fn_A(int a){
-  if (a < 0 || a > 3) {
-    throw new IllegalArgumentException("An unexpected zone was received, the value should be in the range 0-3");
-  }
-}

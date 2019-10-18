@@ -1,9 +1,0 @@
-private static boolean fn_A(){
-  try {
-    Class.forName("org.eclipse.swt.SWT");
-  }
- catch (  ClassNotFoundException a) {
-    return false;
-  }
-  return true;
-}

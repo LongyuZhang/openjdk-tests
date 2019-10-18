@@ -1,9 +1,0 @@
-protected static double[] fn_A(double[] a){
-  int b=a.length;
-  double[] c=new double[b];
-  c[b - 1]=a[b - 1];
-  for (int d=b - 2; d >= 0; --d) {
-    c[d]=c[d + 1] + a[d];
-  }
-  return c;
-}

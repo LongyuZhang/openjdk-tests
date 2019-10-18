@@ -1,8 +1,0 @@
-private static String[] fn_A(String[] a){
-  int b=a.length;
-  String[] c=new String[b];
-  for (int d=0, e=b - 1; d < b; ++d, --e) {
-    c[d]=a[e];
-  }
-  return c;
-}

@@ -1,5 +1,0 @@
-public static float fn_A(float a,float b,float c,float d){
-  a=a % d;
-  if ((a/=d / 2) < 1)   return c / 2 * a * a + b;
-  return -c / 2 * ((--a) * (a - 2) - 1) + b;
-}

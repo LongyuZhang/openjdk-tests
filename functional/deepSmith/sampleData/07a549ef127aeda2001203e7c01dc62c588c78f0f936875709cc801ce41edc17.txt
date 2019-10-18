@@ -1,6 +1,0 @@
-public static double fn_A(double a,String b){
-  if (a <= 0.0) {
-    throw new IllegalArgumentException(b + " must not be positive.");
-  }
-  return a;
-}

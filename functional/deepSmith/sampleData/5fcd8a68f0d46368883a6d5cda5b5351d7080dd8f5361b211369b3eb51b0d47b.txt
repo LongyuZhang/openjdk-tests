@@ -1,7 +1,0 @@
-static String fn_A(int a){
-  String b="";
-  for (int c=0; c < a; c++) {
-    b+=" ";
-  }
-  return b;
-}

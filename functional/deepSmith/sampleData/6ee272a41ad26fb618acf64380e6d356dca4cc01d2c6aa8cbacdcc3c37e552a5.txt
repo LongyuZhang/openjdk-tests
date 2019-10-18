@@ -1,5 +1,0 @@
-static boolean fn_A(double a,double b,double c,double d,double e){
-  double f=a - c;
-  double g=b - d;
-  return f * f + g * g <= e;
-}

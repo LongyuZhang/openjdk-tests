@@ -1,5 +1,0 @@
-public static short fn_A(byte[] a,int b){
-  short c=(short)((a[b] << 8) & 0xFF00);
-  c|=a[b + 1] & 0xFF;
-  return c;
-}

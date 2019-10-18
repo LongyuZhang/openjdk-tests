@@ -1,6 +1,0 @@
-public static int fn_A(final byte a){
-  if (a >= 0) {
-    return a;
-  }
-  return a + 256;
-}

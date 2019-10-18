@@ -1,6 +1,0 @@
-public static double fn_A(double a,double b,double c){
-  if (c < b) {
-    return a;
-  }
-  return (a * b) / c;
-}

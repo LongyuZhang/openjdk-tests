@@ -1,6 +1,0 @@
-public static String fn_A(int a){
-  if ((a < 0) || (a > 0xFFFF)) {
-    throw new IllegalArgumentException("Cannot convert '" + a + "' to a Java char");
-  }
-  return new String(new char[]{(char)a},0,1);
-}

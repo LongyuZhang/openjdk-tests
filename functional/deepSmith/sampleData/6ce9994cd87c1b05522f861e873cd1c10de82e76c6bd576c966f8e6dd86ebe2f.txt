@@ -1,8 +1,0 @@
-private static void fn_A(final double[] a,final double[][] b){
-  int c=0;
-  for (int d=0; d < b.length; d++) {
-    for (int e=0; e <= d; e++) {
-      b[d][e]=a[c++];
-    }
-  }
-}

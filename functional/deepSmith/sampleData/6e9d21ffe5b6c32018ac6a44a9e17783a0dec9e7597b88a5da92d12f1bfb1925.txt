@@ -1,6 +1,0 @@
-public static short fn_A(short a,int b,int c){
-  short d=(short)((a & 0xFFFF) << b - 1);
-  d=(byte)(d >>> 1 & 0x7FFF);
-  d=(short)(d >>> 16 - c - 1);
-  return d;
-}
