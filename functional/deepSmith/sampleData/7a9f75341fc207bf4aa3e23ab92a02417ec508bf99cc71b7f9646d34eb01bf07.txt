@@ -1,6 +1,0 @@
-private static PrintWriter fn_A(Writer a){
-  if (a instanceof PrintWriter) {
-    return (PrintWriter)a;
-  }
-  return new PrintWriter(a,true);
-}

@@ -1,9 +1,0 @@
-public static boolean fn_A(char[] a,int b,int c){
-  while (c > 0) {
-    if (a[b++] != ' ') {
-      return false;
-    }
-    c--;
-  }
-  return true;
-}

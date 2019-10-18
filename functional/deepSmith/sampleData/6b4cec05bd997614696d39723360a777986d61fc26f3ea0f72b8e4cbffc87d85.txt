@@ -1,5 +1,0 @@
-public static double fn_A(double a){
-  final double b=Math.PI * 2;
-  a%=b;
-  return a + (a < 0 ? b : 0);
-}

@@ -1,6 +1,0 @@
-private static boolean fn_A(char[] a,int b,int c){
-  for (int d=b; d < c; d++) {
-    if (a[d] < '0' || a[d] > '9')     return false;
-  }
-  return true;
-}

@@ -1,8 +1,0 @@
-public static void fn_A(double a){
-  long b;
-  b=System.nanoTime();
-  double c=a * 1000000L;
-  while (true) {
-    if ((double)(System.nanoTime() - b) > c)     break;
-  }
-}

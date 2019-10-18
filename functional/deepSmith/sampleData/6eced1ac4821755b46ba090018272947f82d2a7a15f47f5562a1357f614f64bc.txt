@@ -1,7 +1,0 @@
-static String fn_A(){
-  final String a=System.getProperty("log4j.primary.configuration");
-  if (a != null)   return a;
-  final String b=System.getProperty("log4j.configuration");
-  if (b != null)   return b;
-  return null;
-}

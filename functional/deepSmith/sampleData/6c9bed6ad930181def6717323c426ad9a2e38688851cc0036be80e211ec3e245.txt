@@ -1,4 +1,0 @@
-public static void fn_A(byte[] a,byte[] b){
-  int c=a.length;
-  for (int d=0, e=c - 1; d < c; ++d, --e)   b[e]=a[d];
-}

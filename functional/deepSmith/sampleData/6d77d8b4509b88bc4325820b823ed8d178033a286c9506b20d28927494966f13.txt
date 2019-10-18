@@ -1,8 +1,0 @@
-private static int fn_A(long a){
-  long b=a / 1000;
-  int c=(int)b;
-  if (c != b) {
-    throw new RuntimeException("Integer overflow: " + a);
-  }
-  return c;
-}

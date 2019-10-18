@@ -1,6 +1,0 @@
-public static double fn_A(int a,int b,int c){
-  double d, e;
-  d=(a + b + c) / 2.0;
-  e=Math.sqrt(d * (d - a) * (d - b)* (d - c));
-  return e;
-}

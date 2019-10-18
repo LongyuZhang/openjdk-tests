@@ -1,5 +1,0 @@
-public static long fn_A(){
-  long a=new Random().nextLong() * 10000;
-  a=(a < 0) ? (-1 * a) : a;
-  return a;
-}

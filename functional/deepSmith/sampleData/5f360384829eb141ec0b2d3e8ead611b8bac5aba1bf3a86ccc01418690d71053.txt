@@ -1,5 +1,0 @@
-private static final void fn_A(long a){
-  if (a < 0L) {
-    throw new IllegalArgumentException("Keys and values must be >= 0");
-  }
-}

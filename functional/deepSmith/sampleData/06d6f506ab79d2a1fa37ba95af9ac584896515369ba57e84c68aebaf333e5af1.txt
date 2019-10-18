@@ -1,8 +1,0 @@
-private static int fn_A(byte[] a){
-  for (int b=0; b < a.length - 1; b++) {
-    if (a[b] == 'B' && a[b + 1] == 'M') {
-      return b;
-    }
-  }
-  return -1;
-}

@@ -1,8 +1,0 @@
-private static final boolean[] fn_A(int[] a){
-  final int b=0;
-  final boolean[] c=new boolean[a.length];
-  for (int d=0; d < a.length; ++d) {
-    c[d]=(a[d] != b);
-  }
-  return c;
-}

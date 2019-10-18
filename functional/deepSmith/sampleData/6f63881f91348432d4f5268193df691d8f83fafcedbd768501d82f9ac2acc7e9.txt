@@ -1,4 +1,0 @@
-static void fn_A(float a,float[] b,float[] c){
-  b[0]=(float)Math.sin(a);
-  c[0]=(float)Math.cos(a);
-}

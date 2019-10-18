@@ -1,8 +1,0 @@
-public static boolean fn_A(long a,long b){
-  if ((a & (Long.MAX_VALUE + 1)) != 0) {
-    return (b & (Long.MAX_VALUE + 1)) != 0 ? (a < b) : true;
-  }
- else {
-    return (b & (Long.MAX_VALUE + 1)) != 0 ? false : a < b;
-  }
-}

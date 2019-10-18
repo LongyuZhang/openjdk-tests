@@ -1,7 +1,0 @@
-public static boolean fn_A(int a,int b,int c,int d,int e,int f,int g){
-  boolean h=false;
-  if (((d >= (a - g)) && (d <= (a + g))) && ((e >= (b - g)) && (e <= (b + g))) && ((f >= (c - g)) && (f <= (c + g)))) {
-    h=true;
-  }
-  return h;
-}

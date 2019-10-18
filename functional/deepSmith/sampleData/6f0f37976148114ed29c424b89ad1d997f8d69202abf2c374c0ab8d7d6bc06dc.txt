@@ -1,4 +1,0 @@
-public static double fn_A(){
-  double a=Math.random() * (2D * Math.PI);
-  return a;
-}

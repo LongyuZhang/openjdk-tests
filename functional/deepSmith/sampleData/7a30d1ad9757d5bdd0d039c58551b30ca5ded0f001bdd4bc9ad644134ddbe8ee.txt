@@ -1,5 +1,0 @@
-public static long[] fn_A(){
-  long[] a=new long[2];
-  a[0]=Long.MIN_VALUE;
-  return a;
-}

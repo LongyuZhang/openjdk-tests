@@ -1,5 +1,0 @@
-public static synchronized void fn_A(int a){
-  if (a == 1) {
-    throw new RuntimeException();
-  }
-}

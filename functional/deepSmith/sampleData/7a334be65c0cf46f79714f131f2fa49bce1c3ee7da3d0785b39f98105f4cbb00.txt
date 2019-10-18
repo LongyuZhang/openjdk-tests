@@ -1,5 +1,0 @@
-public static boolean fn_A(float a){
-  boolean b=false;
-  if (a != a)   b=true;
-  return b;
-}

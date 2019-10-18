@@ -1,8 +1,0 @@
-private static String fn_A(Object a){
-  if (a instanceof String) {
-    return (String)a;
-  }
- else {
-    throw new IllegalArgumentException("An String value was expected.");
-  }
-}

@@ -1,4 +1,0 @@
-public static <A>A fn_A(A a,String b){
-  if (a == null)   throw new IllegalArgumentException(b + " must not be null");
-  return a;
-}

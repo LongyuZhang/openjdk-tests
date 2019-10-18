@@ -1,5 +1,0 @@
-public static int fn_A(int a){
-  if (a > 255)   return 255;
-  if (a < 0)   return 0;
-  return a;
-}

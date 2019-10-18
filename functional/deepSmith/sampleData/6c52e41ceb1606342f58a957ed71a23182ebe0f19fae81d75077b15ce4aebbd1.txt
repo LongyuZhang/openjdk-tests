@@ -1,5 +1,0 @@
-static double fn_A(double a,double b,double c,double d){
-  double e=Math.atan2(d - b,c - a);
-  if (e < 0)   e+=Math.PI * 2;
-  return (float)(e / Math.PI * 180);
-}

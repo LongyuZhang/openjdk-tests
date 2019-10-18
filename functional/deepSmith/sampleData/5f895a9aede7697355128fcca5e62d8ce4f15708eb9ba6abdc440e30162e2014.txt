@@ -1,4 +1,0 @@
-public static char fn_A(int a){
-  if ((0 <= a) && (a <= 9))   return (char)('0' + a);
- else   return (char)('a' + (a - 10));
-}

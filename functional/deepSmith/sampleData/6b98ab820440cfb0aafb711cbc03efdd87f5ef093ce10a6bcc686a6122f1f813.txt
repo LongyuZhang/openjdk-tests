@@ -1,4 +1,0 @@
-public static String fn_A(){
-  String a="SQL injection can allow an attacker to obtain the information stored in your database. Under some circumstances " + "it can also allow for arbitrary command execution on the database server.";
-  return a;
-}

@@ -1,5 +1,0 @@
-public static String fn_A(int a){
-  if (a < 10)   return "00" + a;
- else   if (a < 100)   return "0" + a;
- else   return "" + a;
-}

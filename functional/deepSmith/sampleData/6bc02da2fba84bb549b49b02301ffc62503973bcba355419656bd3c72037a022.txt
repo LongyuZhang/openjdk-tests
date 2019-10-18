@@ -1,5 +1,0 @@
-public final static int fn_A(int a,int b,int c,int d){
-  int e=Math.abs(a - c);
-  int f=Math.abs(b - d);
-  return (e > f) ? e : f;
-}

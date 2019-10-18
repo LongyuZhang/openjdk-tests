@@ -1,4 +1,0 @@
-private static int fn_A(int a,int b,int c,int d){
-  int e=c * d - b;
-  return e > a + 1 ? e - a - 1 : 0;
-}

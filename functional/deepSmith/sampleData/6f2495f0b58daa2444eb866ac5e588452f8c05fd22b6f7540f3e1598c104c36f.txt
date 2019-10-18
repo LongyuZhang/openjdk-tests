@@ -1,4 +1,0 @@
-public final static void fn_A(final short a,final byte[] b,final int c){
-  b[c + 0]=(byte)(a >> 8);
-  b[c + 1]=(byte)(a);
-}

@@ -1,5 +1,0 @@
-public static int fn_A(int a){
-  int b;
-  for (b=0; a != 0; a=a >> 1)   if ((a & 1) == 1)   b++;
-  return b;
-}

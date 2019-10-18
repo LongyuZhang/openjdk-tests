@@ -1,5 +1,0 @@
-public static double fn_A(double a,double b,double c,double d){
-  final double e=c - a;
-  final double f=d - b;
-  return StrictMath.sqrt(e * e + f * f);
-}

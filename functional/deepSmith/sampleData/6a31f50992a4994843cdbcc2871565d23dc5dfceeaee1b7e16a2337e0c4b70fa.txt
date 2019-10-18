@@ -1,6 +1,0 @@
-public static final void fn_A(float[] a,int b,float c,float[] d,int e,float[] f,int g){
-  a[b]=d[e] * c + f[g];
-  a[b + 1]=d[e + 1] * c + f[g + 1];
-  a[b + 2]=d[e + 2] * c + f[g + 2];
-  a[b + 3]=d[e + 3] * c + f[g + 3];
-}

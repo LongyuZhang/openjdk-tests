@@ -1,4 +1,0 @@
-public static boolean fn_A(byte[] a){
-  if (a == null || a.length < 8 || a[0] != '!' || a[1] != '<' || a[2] != 'a' || a[3] != 'r' || a[4] != 'c' || a[5] != 'h' || a[6] != '>' || a[7] != '\n')   return false;
-  return true;
-}

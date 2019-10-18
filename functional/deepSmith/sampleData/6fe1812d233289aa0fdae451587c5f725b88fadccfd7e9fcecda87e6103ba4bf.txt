@@ -1,8 +1,0 @@
-public static void fn_A(){
-  System.err.println("ireval: ");
-  System.err.println("   There are two ways to use this program.  First, you can evaluate a single ranking: ");
-  System.err.println("      java -jar ireval.jar TREC-Ranking-File TREC-Judgments-File");
-  System.err.println("   or, you can use it to compare two rankings with statistical tests: ");
-  System.err.println("      java -jar ireval.jar TREC-Baseline-Ranking-File TREC-Improved-Ranking-File TREC-Judgments-File");
-  System.exit(-1);
-}

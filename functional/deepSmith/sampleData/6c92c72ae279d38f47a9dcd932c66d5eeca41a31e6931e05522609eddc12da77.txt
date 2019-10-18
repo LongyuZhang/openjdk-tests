@@ -1,8 +1,0 @@
-private static boolean fn_A(int a,int b,int c,boolean[][] d){
-  for (int e=b; e <= c; e++) {
-    if (d[a][e]) {
-      return false;
-    }
-  }
-  return true;
-}

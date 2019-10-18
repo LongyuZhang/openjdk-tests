@@ -1,6 +1,0 @@
-public static boolean fn_A(byte[] a,int b){
-  if (a == null) {
-    return false;
-  }
-  return a[b] != 0;
-}

@@ -1,8 +1,0 @@
-@SuppressWarnings("unused") private static <T>boolean fn_A(T[] a){
-  if (a == null || a.length == 0) {
-    return true;
-  }
- else {
-    return false;
-  }
-}

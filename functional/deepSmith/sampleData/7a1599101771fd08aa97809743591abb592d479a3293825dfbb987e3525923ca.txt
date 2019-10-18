@@ -1,8 +1,0 @@
-public static final int fn_A(byte[] a,int b,int c){
-  int d=0;
-  for (int e=b; e < c; e++) {
-    d+=(int)a[e] & 0xff;
-  }
-  d=(d ^ 0xff) + 1;
-  return (int)((byte)d) & 0xff;
-}

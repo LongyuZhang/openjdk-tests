@@ -1,8 +1,0 @@
-public static short[] fn_A(short[] a){
-  for (int b=0, c=a.length / 2, d=a.length - 1; b < c; b++, d--) {
-    short e=a[b];
-    a[b]=a[d];
-    a[d]=e;
-  }
-  return a;
-}

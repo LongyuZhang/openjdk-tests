@@ -1,7 +1,0 @@
-public static int fn_A(final float a,final float b,final float c,final float d){
-  final int e=(int)a * 255 << 24;
-  final int f=(int)b * 255 << 16;
-  final int g=(int)c * 255 << 8;
-  final int h=(int)d * 255;
-  return e + f + g+ h;
-}

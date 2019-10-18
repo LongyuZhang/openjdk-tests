@@ -1,4 +1,0 @@
-private static final int fn_A(){
-  int a=(int)Thread.currentThread().getId();
-  return a << 2;
-}
