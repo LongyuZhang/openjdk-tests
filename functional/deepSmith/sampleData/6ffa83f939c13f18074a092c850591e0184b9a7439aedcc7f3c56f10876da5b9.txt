@@ -1,8 +1,0 @@
-public static boolean fn_A(){
-  StackTraceElement[] a=Thread.currentThread().getStackTrace();
-  for (int b=0; b < a.length; b++) {
-    if (a[b].getClassName().indexOf("BinaryType") != -1 && a[b].getMethodName().equals("getJavadocRange"))     return false;
-    if (a[b].getClassName().indexOf("JavadocHover") != -1 && a[b].getMethodName().equals("getHoverInfo"))     return true;
-  }
-  return false;
-}

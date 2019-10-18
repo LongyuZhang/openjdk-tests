@@ -1,4 +1,0 @@
-private static double fn_A(double a,double b,double c){
-  double d=Math.log(c / b);
-  return Math.log(a / b) / d;
-}

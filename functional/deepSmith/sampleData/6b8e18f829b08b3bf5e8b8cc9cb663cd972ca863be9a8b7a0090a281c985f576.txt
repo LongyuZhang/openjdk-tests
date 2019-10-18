@@ -1,9 +1,0 @@
-public static <K>K[] fn_A(final K[] a,final int b,final int c){
-  final int d=c - b;
-  for (int e=d / 2; e-- != 0; ) {
-    final K f=a[b + d - e - 1];
-    a[b + d - e - 1]=a[b + e];
-    a[b + e]=f;
-  }
-  return a;
-}

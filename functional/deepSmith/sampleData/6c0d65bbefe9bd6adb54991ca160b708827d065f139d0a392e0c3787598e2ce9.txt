@@ -1,5 +1,0 @@
-private static boolean fn_A(final Object a){
-  final boolean b;
-  b=(a instanceof Serializable) || (a instanceof Externalizable);
-  return b;
-}

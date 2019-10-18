@@ -1,9 +1,0 @@
-public static double fn_A(Collection<Double> a){
-  double b=Double.NEGATIVE_INFINITY;
-  for (  double c : a) {
-    if (c > b) {
-      b=c;
-    }
-  }
-  return b;
-}

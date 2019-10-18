@@ -1,7 +1,0 @@
-private static float[] fn_A(int[] a){
-  float[] b=new float[a.length + 1];
-  for (int c=0; c < a.length; c++) {
-    b[c + 1]=(float)a[c];
-  }
-  return b;
-}

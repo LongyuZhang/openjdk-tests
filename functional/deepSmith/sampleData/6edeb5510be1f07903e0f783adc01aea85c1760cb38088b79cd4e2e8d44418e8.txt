@@ -1,8 +1,0 @@
-public static FileReader fn_A(final String a){
-  try {
-    return new FileReader(a);
-  }
- catch (  FileNotFoundException b) {
-    throw new UncheckedIOException(b);
-  }
-}

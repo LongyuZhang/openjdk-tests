@@ -1,7 +1,0 @@
-public static boolean fn_A(int a[],int b[],int c){
-  for (int d=0; d < c; d++) {
-    float e=Math.abs(a[d] - b[d]);
-    if (e > 0)     return false;
-  }
-  return true;
-}

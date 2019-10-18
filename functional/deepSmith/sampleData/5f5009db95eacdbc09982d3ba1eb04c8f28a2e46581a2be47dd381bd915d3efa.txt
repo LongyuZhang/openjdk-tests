@@ -1,6 +1,0 @@
-public static final long[] fn_A(final long a){
-  long b=a % 60;
-  long c=(a / 60) % 60;
-  long d=(a / (60 * 60)) % 24;
-  return new long[]{d,c,b};
-}

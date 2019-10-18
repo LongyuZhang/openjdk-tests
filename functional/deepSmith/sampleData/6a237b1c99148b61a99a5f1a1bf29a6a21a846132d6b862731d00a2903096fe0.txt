@@ -1,8 +1,0 @@
-private static void fn_A(int[] a,int b,int c){
-  if (b == c) {
-    return;
-  }
-  a[b]=a[b] + a[c];
-  a[c]=a[b] - a[c];
-  a[b]=a[b] - a[c];
-}

@@ -1,8 +1,0 @@
-public static double fn_A(double a,double b){
-  if (b < 0.0) {
-    return -Math.abs(a);
-  }
- else {
-    return Math.abs(a);
-  }
-}

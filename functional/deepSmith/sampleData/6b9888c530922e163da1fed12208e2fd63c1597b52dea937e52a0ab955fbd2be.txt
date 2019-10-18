@@ -1,5 +1,0 @@
-private static void fn_A(String a){
-  if (false) {
-    System.out.println("[ConfigurationTest] " + a);
-  }
-}

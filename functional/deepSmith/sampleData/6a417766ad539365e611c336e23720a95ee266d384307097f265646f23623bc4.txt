@@ -1,8 +1,0 @@
-static Runnable fn_A(){
-  return new Runnable(){
-    public void run(){
-      return;
-    }
-  }
-;
-}

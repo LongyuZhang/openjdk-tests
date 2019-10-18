@@ -1,8 +1,0 @@
-public static void main(String[] a){
-  String b="Lesha";
-  System.out.println(b + " " + b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b);
-  System.out.println(b + " " + b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b);
-  System.out.println(b + " " + b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b);
-  System.out.println(b + " " + b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b);
-  System.out.println(b + " " + b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b+ " "+ b);
-}

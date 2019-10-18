@@ -1,4 +1,0 @@
-private static void fn_A(){
-  System.out.println("HPIResolver groupId:artifactId:version");
-  System.out.println("\t resolves a particular plugin and prints its manifest information");
-}

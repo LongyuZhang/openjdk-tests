@@ -712,7 +712,7 @@ public class JavaDriver {
 				if (curFile.isFile() && curFile.toString().contains(".txt")) {
 					curTestNum += 1;
 					String curFileName = curFile.getName();
-					System.out.println("Current TEST " + curTestNum + " NAME is: " + curFileName);
+					System.out.println("Current TEST_NAME " + curTestNum + " is: " + curFileName);
 					String curFileAbsolutePath = testsFolder.toString() + File.separator + curFileName;
 					StringBuilder inputString = new StringBuilder();
 

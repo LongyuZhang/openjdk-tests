@@ -1,4 +1,0 @@
-private static boolean fn_A(){
-  Integer a=Integer.getInteger("sun.arch.data.model");
-  return a != null && a == 32;
-}

@@ -1,7 +1,0 @@
-public static int[] fn_A(){
-  int[] a=new int[3];
-  a[0]=8;
-  a[1]=16;
-  a[2]=8;
-  return a;
-}

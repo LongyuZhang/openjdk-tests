@@ -1,6 +1,0 @@
-public static Boolean fn_A(Boolean a){
-  if (a == null) {
-    return null;
-  }
-  return a ? Boolean.FALSE : Boolean.TRUE;
-}

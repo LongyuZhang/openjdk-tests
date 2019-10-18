@@ -1,7 +1,0 @@
-public static int fn_A(int a){
-  int b=(a >>> 4) & 7;
-  while (b-- > 0) {
-    a=(a * 2147483647) % 16807;
-  }
-  return a;
-}

@@ -1,7 +1,0 @@
-public static int fn_A(double a,double b){
-  int c=(int)b;
-  if (a > 0) {
-    c=(int)(b * a);
-  }
-  return c;
-}

@@ -1,4 +1,0 @@
-public static double fn_A(double a){
-  if (a < 1.0D && a > -1.0D)   throw new IllegalArgumentException("acsc argument (" + a + ") must be >= 1 or <= -1");
-  return Math.asin(1.0 / a);
-}

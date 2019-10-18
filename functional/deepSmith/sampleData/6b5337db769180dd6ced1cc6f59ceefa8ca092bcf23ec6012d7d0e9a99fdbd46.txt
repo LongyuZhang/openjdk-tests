@@ -1,5 +1,0 @@
-public static double fn_A(double a,double b){
-  int c=(int)(a / b);
-  if (a < 0)   c--;
-  return a - b * c;
-}

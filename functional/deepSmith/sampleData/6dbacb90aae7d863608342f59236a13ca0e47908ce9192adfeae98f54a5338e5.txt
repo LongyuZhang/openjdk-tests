@@ -1,4 +1,0 @@
-static File fn_A(File a,String b){
-  File c=new File(a,"current");
-  return new File(c,b);
-}

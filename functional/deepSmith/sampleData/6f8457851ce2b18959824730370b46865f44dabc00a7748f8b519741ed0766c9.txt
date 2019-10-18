@@ -1,5 +1,0 @@
-public static short fn_A(byte a,byte b){
-  int c=b << 8;
-  int d=(a << 24) >>> 24;
-  return (short)(c | d);
-}

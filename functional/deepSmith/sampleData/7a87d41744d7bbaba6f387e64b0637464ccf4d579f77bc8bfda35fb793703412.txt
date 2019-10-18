@@ -1,4 +1,0 @@
-static boolean fn_A(final double a,final double b,final double c){
-  final double d=b - a;
-  return (d <= c && d >= -c);
-}

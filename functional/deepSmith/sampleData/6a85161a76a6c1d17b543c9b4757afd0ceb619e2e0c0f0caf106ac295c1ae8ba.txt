@@ -1,9 +1,0 @@
-public static BigDecimal fn_A(final BigDecimal a,final BigDecimal b){
-  if (a == null) {
-    if (b == null) {
-      return BigDecimal.ZERO;
-    }
-    return b;
-  }
-  return a;
-}

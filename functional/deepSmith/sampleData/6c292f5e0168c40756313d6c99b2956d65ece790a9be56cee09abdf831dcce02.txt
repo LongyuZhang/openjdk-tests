@@ -1,7 +1,0 @@
-public static double fn_A(double a,double b){
-  b=b / 1.04;
-  double c=1.33302 + 0.001427193 * b + 0.000005791157 * b * b;
-  double d=1017.5596 - (277.4 * a) + c * ((937.8135 * c) - 1805.1228);
-  double e=d * 1.25;
-  return e;
-}

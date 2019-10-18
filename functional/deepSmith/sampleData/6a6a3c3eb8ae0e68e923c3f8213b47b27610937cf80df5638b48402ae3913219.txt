@@ -1,4 +1,0 @@
-public static double fn_A(int a,double b,double c){
-  double d=b / a;
-  return (c - d * b) / (a - 1);
-}

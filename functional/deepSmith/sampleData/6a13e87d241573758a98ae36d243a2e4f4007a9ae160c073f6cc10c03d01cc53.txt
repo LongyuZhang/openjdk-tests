@@ -1,9 +1,0 @@
-public static int fn_A(double[] a){
-  int b=-1;
-  for (int c=0; c < a.length; c++) {
-    if (b == -1 || a[c] > a[b]) {
-      b=c;
-    }
-  }
-  return b;
-}

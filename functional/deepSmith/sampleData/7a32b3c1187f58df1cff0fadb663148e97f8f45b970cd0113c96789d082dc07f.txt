@@ -1,6 +1,0 @@
-public static boolean fn_A(double[] a,double b){
-  for (  double c : a) {
-    if (c < b)     return true;
-  }
-  return false;
-}

@@ -1,6 +1,0 @@
-static float[] fn_A(float[] a,double b,int c,int d){
-  if (c == -1 || d == -1)   return new float[0];
-  float[] e=new float[d - c + 1];
-  for (int f=c; f <= d; f++)   e[f - c]=a[f];
-  return e;
-}

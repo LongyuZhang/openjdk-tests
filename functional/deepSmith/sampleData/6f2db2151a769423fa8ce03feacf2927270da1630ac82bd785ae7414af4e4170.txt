@@ -1,7 +1,0 @@
-public static byte fn_A(byte a,byte b,int c,int d){
-  if (c - d == 0) {
-    d++;
-  }
-  a|=b << 9 - c - d;
-  return a;
-}

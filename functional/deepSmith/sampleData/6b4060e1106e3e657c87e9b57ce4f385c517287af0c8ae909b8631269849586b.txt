@@ -1,8 +1,0 @@
-public static void main(String[] a){
-  ArrayList<Integer> b=new ArrayList<>();
-  Float c=1.5467f;
-  Float d=4356.56f;
-  c=c + d;
-  System.out.println(a.hashCode());
-  System.out.println(b.hashCode());
-}

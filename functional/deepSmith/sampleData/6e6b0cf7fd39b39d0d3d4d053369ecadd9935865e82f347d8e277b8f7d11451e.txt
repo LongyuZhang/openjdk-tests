@@ -1,9 +1,0 @@
-public static String fn_A(byte a[]){
-  final char[] b={'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
-  char c[]=new char[a.length * 2];
-  for (int d=0, e=0; d < a.length; d++) {
-    c[e++]=b[(a[d] >>> 4) & 0xf];
-    c[e++]=b[a[d] & 0xf];
-  }
-  return new String(c);
-}

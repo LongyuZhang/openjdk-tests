@@ -1,4 +1,0 @@
-static private void fn_A(){
-  System.out.println("JTranscZipTest.FS:");
-  System.out.println(new File("__nonExistantFile__").exists());
-}

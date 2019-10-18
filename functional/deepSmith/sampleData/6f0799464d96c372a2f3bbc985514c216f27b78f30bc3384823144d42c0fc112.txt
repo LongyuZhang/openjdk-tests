@@ -1,5 +1,0 @@
-private static int fn_A(int a,byte b){
-  int c=(((int)b) ^ a) & 0xFF;
-  c=(c ^ (c << 4)) & 0xFF;
-  return (a >> 8) ^ (c << 8) ^ (c << 3)^ (c >> 4);
-}

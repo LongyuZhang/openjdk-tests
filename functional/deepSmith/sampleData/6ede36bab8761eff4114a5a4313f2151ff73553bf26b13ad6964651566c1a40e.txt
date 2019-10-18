@@ -1,5 +1,0 @@
-static void fn_A(double[] a,double[] b,double[] c){
-  for (int d=0; d < a.length; d+=1) {
-    a[d]=(b[d] * c[d]);
-  }
-}

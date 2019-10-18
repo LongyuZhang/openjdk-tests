@@ -1,9 +1,0 @@
-public static String fn_A(byte[] a){
-  String b="";
-  try {
-    b=new String(a,Charset.forName("US-ASCII"));
-  }
- catch (  Exception c) {
-  }
-  return b;
-}

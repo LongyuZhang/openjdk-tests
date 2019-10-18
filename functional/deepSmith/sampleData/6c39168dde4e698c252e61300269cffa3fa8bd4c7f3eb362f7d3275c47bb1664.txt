@@ -1,7 +1,0 @@
-public static TimeZone fn_A(int a,boolean b,long c,String d){
-  if (d == null) {
-    return null;
-  }
-  TimeZone e=null;
-  return e;
-}

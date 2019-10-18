@@ -1,4 +1,0 @@
-private static void fn_A(){
-  System.err.println("Usage message");
-  System.exit(0);
-}

@@ -1,6 +1,0 @@
-static int fn_A(String a,int b){
-  if (b < 0 || b > 0xFF) {
-    throw new IllegalArgumentException("\"" + a + "\" "+ b+ " must be an unsigned 8 "+ "bit value");
-  }
-  return b;
-}

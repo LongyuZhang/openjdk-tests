@@ -1,6 +1,0 @@
-public static byte[] fn_A(final boolean a){
-  byte b;
-  if (a)   b=1;
- else   b=0;
-  return new byte[]{b};
-}

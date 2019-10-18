@@ -1,6 +1,0 @@
-public static boolean fn_A(short[] a){
-  if (null == a) {
-    return false;
-  }
-  return a.length > 0;
-}

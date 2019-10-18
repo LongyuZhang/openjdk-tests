@@ -1,9 +1,0 @@
-public static void fn_A(Object a,int b,byte c) throws Throwable {
-  if (a instanceof boolean[]) {
-    boolean d=c == 0 ? false : true;
-    ((boolean[])a)[b]=d;
-  }
- else {
-    ((byte[])a)[b]=c;
-  }
-}

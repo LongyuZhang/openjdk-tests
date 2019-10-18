@@ -1,8 +1,0 @@
-public static final void fn_A(int[] a,int[] b) throws NullPointerException {
-  int c=a.length, d;
-  if (a != b) {
-    if ((d=b.length) <= c)     c=d;
-    while (c-- > 0)     a[c]&=~b[c];
-  }
-  while (c-- > 0)   a[c]=0;
-}
