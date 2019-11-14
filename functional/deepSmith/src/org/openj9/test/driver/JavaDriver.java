@@ -718,19 +718,20 @@ public class JavaDriver {
 
 					try(BufferedReader bufferReader = new BufferedReader(new FileReader(curFileAbsolutePath))) {
 						String line = bufferReader.readLine();
-						System.out.println("Current TEST_CONTENT is: ");
+						System.out.println("Current TEST_CONTENT " + curTestNum + " is: ");
 						while (line != null) {
 							System.out.println(line);
 							inputString.append(line);
 							inputString.append("\n");
 							line = bufferReader.readLine();
 						}
+						System.out.println("Current TEST_EXCEPTION " + curTestNum + " is (may not exist): ");
 					} catch (IOException ex) {
 						System.out.println("Error reading file " + curFileAbsolutePath);
 					}
 
 					JavaDriverResult curOutput = javaDriver.Drive(tmpDir, inputString.toString());
-					System.out.println("Current TEST_OUTPUT is: \n" + curOutput.toString() + "\n");				
+					System.out.println("Current TEST_OUTPUT " + curTestNum + " is: \n" + curOutput.toString() + "\n");				
 				}
 			}
 		} else {
