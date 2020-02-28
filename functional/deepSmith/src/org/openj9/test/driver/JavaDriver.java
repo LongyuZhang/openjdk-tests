@@ -709,7 +709,7 @@ public class JavaDriver {
 		int curTestNum = 0;
 		if (listofTestFiles != null) {
 			for (File curFile : listofTestFiles) {				
-				if (curFile.isFile() && curFile.toString().contains(".txt")) {
+				if (curFile.isFile() && (curFile.toString().contains(".txt") || curFile.toString().contains(".java"))) {
 					curTestNum += 1;
 					String curFileName = curFile.getName();
 					System.out.println("Current TEST_NAME " + curTestNum + " is: " + curFileName);
