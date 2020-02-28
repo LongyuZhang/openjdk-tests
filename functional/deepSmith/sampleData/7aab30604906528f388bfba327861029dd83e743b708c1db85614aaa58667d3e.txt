@@ -1,8 +1,0 @@
-private static byte fn_A(byte a,byte[] b,int c,int d){
-  byte e=a;
-  int f=d + c;
-  for (int g=c; g < f; ++g) {
-    e=(byte)(e ^ b[g]);
-  }
-  return e;
-}
