@@ -541,7 +541,72 @@ def testBuild() {
 			if (!params.KEEP_WORKSPACE) {
 				// cleanWs() does not work in some cases, so set opts below
 				cleanWs notFailBuild: true, disableDeferredWipeout: true, deleteDirs: true
+				
+				echo "LZtest before doing anything"
+				// sh "ls -l"
+				sh "pwd"
+				sh "ls -al /cores"
+
+				if (fileExists("/cores")) {
+					dir("/cores") {
+						echo "LZtest before create core file"
+						// deleteDir()
+						writeFile file:'javacore.666', text:''						
+					}
+				}
+				echo "LZtest after write core to tmp folder"
+				sh "ls -al /cores"
+
+				sh "find /cores -name '*core*' -print 2>/dev/null -exec rm -f {} \\; || true" 
+				echo "LZtest after delete core in tmp folder"
+				sh "ls -al /cores"
+
+				// dir("/tmp") {
+				// 		echo "new tmp fodler"
+				// }
+
+				// dir("${WORKSPACE}/tmp") {
+				// 	sh "pwd"
+				// }
+
+				// sh "cd ../grinder"
+				// sh "pwd"
+				// sh "find /tmp/ -name *core* -exec rm -f {} \\;"
+
+				// sh "cd ../tmp"
+				// sh "pwd"
+				// sh "ls -l"
+
+				
+
+
+
+
+
+
+
+				// if (fileExists('/tmp')) {
+				// 	dir('/tmp') {
+				// 		echo "LZtest before create core file"
+				// 		sh "ls -al /tmp"
+				// 		sh "pwd"
+
+				// 		sh 'ls -l'
+						
+				// 		sh "touch javacore.20200227.002851.8061166.0002.txt"
+				// 		sh "touch javacore.20200228.002851.8061166.0002.txt"
+						
+				// 		echo "LZtest after create core file"
+				// 		sh 'ls -l'
+
+				// 		sh "rm .*core.*.txt"
+						
+				// 		echo "LZtest after delete created core file"
+				// 		sh 'ls -l'
+				// 	}
+				// }
 			}
+			
 		}
 
 	}
