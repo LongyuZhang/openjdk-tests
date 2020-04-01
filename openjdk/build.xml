@@ -168,7 +168,7 @@
 						</exec>
 					</then>
 					<else>
-						<echo message="git clone --depth 1 -q ${defaultBranch} ${regressionRepo}" />
+						<echo message="git sdfsdf clone --depth 1 -q ${defaultBranch} ${regressionRepo}" />
 						<exec executable="git" failonerror="true">
 							<arg line="clone --depth 1 -q ${defaultBranch} ${regressionRepo}" />
 						</exec>
@@ -187,7 +187,7 @@
 	</target>
 	
 	<target name="dist" depends="getJtreg, getOpenjdk" description="generate the distribution">
-		<copy todir="${DEST}">
+		<copy todir="fail${DEST}">
 			<fileset dir="${src}" includes="*.xml,ProblemList*.txt,*.mk"/>
 		</copy>
 	</target>
