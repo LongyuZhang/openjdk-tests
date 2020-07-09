@@ -565,7 +565,20 @@ def runTest( ) {
 						).trim()
 						env.DISPLAY = "${DISPLAY}"
 						echo "env.DISPLAY is ${env.DISPLAY}"
-						makeTest("${RUNTEST_CMD}")
+
+						// withEnv(["PATH+OC=${tool 'oc3.11'}"]) {
+						// openshift.withCluster( 'mycluster' ) {
+							// openshift.withCluster( 'https://api.carboys.cp.fyre.ibm.com:6443', 'ZDPPw5yiOxsZ0QwlhG2lZvUOH9ykVIn8krT3J9w3--c' ) {
+								// openshift.withProject( 'myproject' ) {
+									// echo "Hello from project ${openshift.project()} in cluster ${openshift.cluster()}"
+									makeTest("${RUNTEST_CMD}")
+								// }
+							// }
+						// }							
+
+
+
+						// makeTest("${RUNTEST_CMD}")
 					}
 				} 
 				else {
