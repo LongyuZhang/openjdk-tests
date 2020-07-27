@@ -568,7 +568,7 @@ def runTest( ) {
 
 
 
-						withEnv(["PATH+OC=${tool 'oc3.11'}"]) {
+						// withEnv(["PATH+OC=${tool 'oc3.11'}"]) {
 						// withEnv(["PATH+OC=${tool 'oc3.11'}"]) {
 						// openshift.withCluster( 'mycluster' ) {
 							// openshift.withCluster( 'https://api.carboys.cp.fyre.ibm.com:6443', 'ZDPPw5yiOxsZ0QwlhG2lZvUOH9ykVIn8krT3J9w3--c' ) {
@@ -578,7 +578,7 @@ def runTest( ) {
 								// }
 							// }
 						// }		
-						}					
+						// }					
 
 
 
