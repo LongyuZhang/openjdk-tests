@@ -51,7 +51,7 @@ pwd
 
 
 echo "Compile and run quarkus_openshift tests"
-oc login --token=Rc15wPUsD4M7ilW2fLB92n_h_9P8kIPbpYKhtBmvxK0 --server=https://api.diggers.cp.fyre.ibm.com:6443 --insecure-skip-tls-verify
+oc login --token=D5atcFoDmSHP2WTB_P4yJZu8MuiXfgorOZ6rZSsgDs8 --server=https://api.diggers.cp.fyre.ibm.com:6443 --insecure-skip-tls-verify
 oc whoami
 oc project
 
@@ -64,7 +64,7 @@ oc project
 
 
 
-./mvnw -pl \!microprofile,\!external-applications/todo-demo-app,\!deployment-strategies/quarkus clean verify -Dquarkus.s2i.base-jvm-image=docker.io/adoptopenjdk/openjdk11-openj9 -Dversion.quarkus=1.6.0.Final -Dts.use-ephemeral-namespaces
+./mvnw -pl \!microprofile,\!external-applications/todo-demo-app,\!deployment-strategies/quarkus clean verify -Dquarkus.s2i.base-jvm-image=docker.io/fabric8/s2i-java:latest-java11 -Dversion.quarkus=1.6.0.Final -Dts.use-ephemeral-namespaces
 test_exit_code=$?
 echo "Build quarkus_openshift completed"
 
