@@ -64,7 +64,7 @@ oc project
 
 
 
-./mvnw -pl \!microprofile,\!external-applications/todo-demo-app,\!deployment-strategies/quarkus clean verify -Dquarkus.s2i.base-jvm-image=docker.io/fabric8/s2i-java:latest-java11 -Dversion.quarkus=1.6.0.Final -Dts.use-ephemeral-namespaces
+./mvnw -pl \!microprofile,\!external-applications/todo-demo-app,\!deployment-strategies/quarkus clean verify -Dquarkus.s2i.base-jvm-image=docker.io/cosmoxiix/myjavas2i -Dversion.quarkus=1.6.0.Final -Dts.use-ephemeral-namespaces
 test_exit_code=$?
 echo "Build quarkus_openshift completed"
 
