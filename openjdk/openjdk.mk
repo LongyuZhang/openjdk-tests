@@ -121,6 +121,8 @@ ifneq ($(JDK_VERSION),8)
 	ifdef TESTIMAGE_PATH
 		ifneq ($(OS),OS/390)
 			JDK_NATIVE_OPTIONS := -nativepath:"$(TESTIMAGE_PATH)$(D)jdk$(D)jtreg$(D)native"
+		else
+			JDK_NATIVE_OPTIONS := -nativepath:"$(TEST_ROOT)$(D)openjdk$(D)jtreg$(D)lib$(D)native"
 		endif
 		ifeq ($(JDK_IMPL), hotspot)
 			JVM_NATIVE_OPTIONS := -nativepath:"$(TESTIMAGE_PATH)$(D)hotspot$(D)jtreg$(D)native"

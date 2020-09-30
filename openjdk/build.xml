@@ -249,6 +249,35 @@
 		<copy todir="${DEST}">
 			<fileset dir="${src}" includes="*.xml,ProblemList*.txt,*.mk"/>
 		</copy>
+
+		<if>
+			<available file="$(TESTIMAGE_PATH)/openj9/jtreg/native" type="dir" />
+			<then>
+				<echo message="$(TESTIMAGE_PATH)/openj9/jtreg/native exists" />
+			</then>
+			<elseif>
+				<available file="$(TESTIMAGE_PATH)/openj9/jtreg" type="dir" />
+				<then>
+					<echo message="$(TESTIMAGE_PATH)/openj9/jtreg exists" />
+				</then>
+			</elseif>
+			<else>
+				<echo message="$(TESTIMAGE_PATH)/openj9 no jtreg exists, $(TESTIMAGE_PATH)/openj9 exists folder is:" />
+				<dirset id="dist.contents" dir="$(TESTIMAGE_PATH)/openj9" includes="*"/> 
+				<property name="prop.dist.contents" refid="dist.contents"/>
+				<echo>jtreg folders ${prop.dist.contents}</echo>
+				<dirset id="dist.contents1" dir="${DEST}/jtreg/lib" includes="*"/> 
+				<property name="prop.dist.contents1" refid="dist.contents1"/>
+				<echo>lib folders ${prop.dist.contents1}</echo>
+				<dirset id="dist.contents2" dir="${DEST}/jtreg/bin" includes="*"/> 
+				<property name="prop.dist.contents2" refid="dist.contents2"/>
+				<echo>bin folders ${prop.dist.contents2}</echo>
+			</else>
+		</if>
+
+
+
+
 	</target>
 
 	<target name="build" >
