@@ -125,7 +125,7 @@ ifneq ($(JDK_VERSION),8)
 		ifeq ($(JDK_IMPL), hotspot)
 			JVM_NATIVE_OPTIONS := -nativepath:"$(TESTIMAGE_PATH)$(D)hotspot$(D)jtreg$(D)native"
 		else ifeq ($(JDK_IMPL), openj9)
-			JVM_NATIVE_OPTIONS := -nativepath:"$(TESTIMAGE_PATH)$(D)openj9"
+			JVM_NATIVE_OPTIONS := -nativepath:"$(TESTIMAGE_PATH)$(D)openj9$(D)jtreg$(D)native"
 		endif
 		ifneq (,$(findstring /hotspot/, $(JDK_CUSTOM_TARGET))) 
 			CUSTOM_NATIVE_OPTIONS := $(JVM_NATIVE_OPTIONS)
