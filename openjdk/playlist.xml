@@ -125,6 +125,7 @@
 		<!-- temporarily disable on openj9 due to https://github.com/eclipse/openj9/issues/10757 -->
 		<impls>
 			<impl>hotspot</impl>
+			<impl>openj9</impl>
 		</impls>
 		<groups>
 			<group>openjdk</group>
