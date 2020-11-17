@@ -32,6 +32,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>openj9_custom</testCaseName>
@@ -56,6 +57,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>hotspot_all</testCaseName>
@@ -79,6 +81,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jvm_native_sanity</testCaseName>
@@ -104,6 +107,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jvm_compiler</testCaseName>
@@ -129,6 +133,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>runtime_nestmate</testCaseName>
@@ -154,6 +159,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>hotspot_jre</testCaseName>
@@ -178,6 +184,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_awt</testCaseName>
@@ -201,6 +208,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_beans</testCaseName>
@@ -223,6 +231,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_io</testCaseName>
@@ -241,6 +250,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang</testCaseName>
@@ -262,6 +272,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang_native</testCaseName>
@@ -287,6 +298,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang_native_win</testCaseName>
@@ -313,6 +325,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang_j9</testCaseName>
@@ -339,6 +352,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang_native_j9</testCaseName>
@@ -368,6 +382,7 @@
 		<impls>
 			<impl>openj9</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang_native_j9_win</testCaseName>
@@ -399,6 +414,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_lang_ref_FinalizeOverride_j9</testCaseName>
@@ -425,6 +441,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_util_zip_ZipFile_TestCleaner_j9</testCaseName>
@@ -451,6 +468,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_math</testCaseName>
@@ -472,6 +490,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_math_j9</testCaseName>
@@ -498,6 +517,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_math_jre</testCaseName>
@@ -522,6 +542,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_other</testCaseName>
@@ -540,6 +561,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_net</testCaseName>
@@ -558,6 +580,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_nio</testCaseName>
@@ -576,6 +599,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_security1</testCaseName>
@@ -627,10 +651,6 @@
 		<levels>
 			<level>extended</level>
 		</levels>
-		<!-- temporarily disable on openj9 due to https://github.com/eclipse/openj9/issues/10757 -->
-		<impls>
-			<impl>hotspot</impl>
-		</impls>
 		<groups>
 			<group>openjdk</group>
 		</groups>
@@ -649,10 +669,6 @@
 		<levels>
 			<level>extended</level>
 		</levels>
-		<!-- temporarily disable on openj9 due to https://github.com/eclipse/openj9/issues/10757 -->
-		<impls>
-			<impl>hotspot</impl>
-		</impls>
 		<groups>
 			<group>openjdk</group>
 		</groups>
@@ -713,6 +729,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_util</testCaseName>
@@ -734,6 +751,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_util_j9</testCaseName>
@@ -760,6 +778,7 @@
 			<impl>openj9</impl>
 			<impl>ibm</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_time</testCaseName>
@@ -782,6 +801,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_management</testCaseName>
@@ -804,6 +824,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_jmx</testCaseName>
@@ -826,6 +847,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_rmi</testCaseName>
@@ -844,6 +866,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_tools</testCaseName>
@@ -866,6 +889,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<!-- exclude jdk_jdi on openj9: https://github.com/AdoptOpenJDK/openjdk-tests/issues/1071 -->
 	<test>
@@ -891,6 +915,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_jfr</testCaseName>
@@ -912,6 +937,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_foreign</testCaseName>
@@ -933,6 +959,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_foreign_native</testCaseName>
@@ -955,6 +982,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_instrument</testCaseName>
@@ -981,6 +1009,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<!-- exclude jdk_jdi on openj9: https://github.com/AdoptOpenJDK/openjdk-tests/issues/1071 -->
 	<!-- From jdk11 jdk_jdi is part of jdk_svc_sanity -->
@@ -1007,6 +1036,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<!-- exclude jdk_jdi on openj9: https://github.com/AdoptOpenJDK/openjdk-tests/issues/1071 -->
 	<test>
@@ -1032,6 +1062,7 @@
 		<impls>
 			<impl>hotspot</impl>
 		</impls>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>build</testCaseName>
@@ -1057,6 +1088,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_imageio</testCaseName>
@@ -1079,6 +1111,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_client_sanity</testCaseName>
@@ -1104,6 +1137,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_security_infra</testCaseName>
@@ -1122,10 +1156,6 @@
 		<levels>
 			<level>extended</level>
 		</levels>
-		<!-- temporarily disable on openj9 due to https://github.com/eclipse/openj9/issues/10757 -->
-		<impls>
-			<impl>hotspot</impl>
-		</impls>
 		<groups>
 			<group>openjdk</group>
 		</groups>
@@ -1150,6 +1180,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk_2d</testCaseName>
@@ -1176,6 +1207,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jfc_demo</testCaseName>
@@ -1201,6 +1233,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk11_tier1_cipher</testCaseName>
@@ -1222,6 +1255,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk11_tier1_buffer</testCaseName>
@@ -1243,6 +1277,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk11_tier1_iso8859</testCaseName>
@@ -1264,6 +1299,7 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 	<test>
 		<testCaseName>jdk11_tier1_pack200</testCaseName>
@@ -1285,5 +1321,6 @@
 		<groups>
 			<group>openjdk</group>
 		</groups>
+		<disabled>tmp</disabled>
 	</test>
 </playlist>
