@@ -166,6 +166,7 @@ java/net/httpclient/websocket/PendingPongBinaryClose.java https://github.com/ecl
 java/net/httpclient/websocket/PendingPongTextClose.java https://github.com/eclipse/openj9/issues/4298 macosx-all
 java/net/httpclient/websocket/PendingTextPingClose.java https://github.com/eclipse/openj9/issues/4298 macosx-all
 java/net/httpclient/websocket/PendingTextPongClose.java https://github.com/eclipse/openj9/issues/4298 macosx-all
+java/net/HttpURLConnection/HttpURLConWithProxy.java https://github.com/eclipse/openj9/issues/10860 generic-all
 # java/net/ipv6tests/B6521014.java on macosx-all issue	https://github.com/AdoptOpenJDK/openjdk-tests/issues/1524
 # java/net/ipv6tests/B6521014.java on macosx-all issue https://github.com/AdoptOpenJDK/openjdk-infrastructure/issues/1085
 java/net/ipv6tests/B6521014.java https://github.com/AdoptOpenJDK/openjdk-infrastructure/issues/1105 linux-all,macosx-all
